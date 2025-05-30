@@ -130,8 +130,5 @@ python eka_eval.py --model_name_or_path eka-ai/eka-7b --benchmark milu --languag
 
 **eka-eval: The open, ethical, and comprehensive LLM benchmarking suite for India and the world.**
 
-Citations:
-[1] https://eka.soket.ai
-
 ---
-Answer from Perplexity: pplx.ai/share
+
