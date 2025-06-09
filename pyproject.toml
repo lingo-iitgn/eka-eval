@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "eka-eval"
+version = "0.1.0"
+description = "Comprehensive evaluation framework suite"
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [
+  { name="Samridhi Raj", email="samridhiraj04@gmail.com" }
+]
+license = { file = "LICENSE" }
+dependencies = [
+  "numpy",
+  "torch",
+  "transformers",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
