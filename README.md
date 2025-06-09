@@ -1,5 +1,4 @@
 <div align="center">
-  <img src="[https://example.com/eka_eval_logo.png](https://example.com/eka_eval_logo.png)" alt="eka-eval Logo" width="200"/>
   <h1>eka-eval.</h1>
   <h2>The Unified LLM Evaluation Framework for India and the World.</h2>
 
