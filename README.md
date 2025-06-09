@@ -1,7 +1,23 @@
 <div align="center">
+  <!-- Eka Logo -->
+  <img width="118" alt="eka-eval logo" src="https://github.com/user-attachments/assets/2822b114-39bb-4c19-8808-accd8b415b3a" style="margin-bottom: 10px;" />
+
   <h1>eka-eval.</h1>
   <h2>The Unified LLM Evaluation Framework for India and the World.</h2>
 
+  <!-- Badges Row -->
+  <p>
+    <img src="https://img.shields.io/badge/release-v1.0-blue.svg" alt="Release v1.0" />
+    <img src="https://img.shields.io/badge/license-Apache%202.0-green.svg" alt="License Apache 2.0" />
+    <a href="https://colab.research.google.com/github/your_repo/eka-eval/blob/main/notebooks/quick_start.ipynb">
+      <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab" />
+    </a>
+    <a href="https://discord.gg/yourcommunitylink">
+      <img src="https://img.shields.io/discord/308323056592486420?label=Join%20Community&logo=discord&colorB=7289DA" alt="Discord Community" />
+    </a>
+  </p>
+
+  <!-- Navigation Links -->
   <p>
     <a href="#key-features">Key Features</a> •
     <a href="#supported-benchmarks-and-metrics">Supported Benchmarks</a> •
@@ -9,22 +25,8 @@
     <a href="#reporting-and-results">Reporting</a> •
     <a href="#project-ethos">Project Ethos</a>
   </p>
-
-  <p>
-    <!-- Release badge -->
-    <img src="https://img.shields.io/badge/release-v1.0-blue.svg" alt="Release v1.0">
-    <!-- License badge -->
-    <img src="https://img.shields.io/badge/license-Apache%202.0-green.svg" alt="License Apache 2.0">
-    <!-- Colab badge -->
-    <a href="https://colab.research.google.com/github/your_repo/eka-eval/blob/main/notebooks/quick_start.ipynb">
-      <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab">
-    </a>
-    <!-- Discord badge -->
-    <a href="https://discord.gg/yourcommunitylink">
-      <img src="https://img.shields.io/discord/308323056592486420?label=Join%20Community&logo=discord&colorB=7289DA" alt="Discord Community">
-    </a>
-  </p>
 </div>
+
 
 
 ---
