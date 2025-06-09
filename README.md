@@ -1,3 +1,29 @@
+<div align="center">
+  <img src="[https://example.com/eka_eval_logo.png](https://example.com/eka_eval_logo.png)" alt="eka-eval Logo" width="200"/>
+  <h1>eka-eval.</h1>
+  <h2>The Unified LLM Evaluation Framework for India and the World.</h2>
+
+  <p>
+    <a href="#key-features">Key Features</a> •
+    <a href="#supported-benchmarks-and-metrics">Supported Benchmarks</a> •
+    <a href="#script-usage">Getting Started</a> •
+    <a href="#reporting-and-results">Reporting</a> •
+    <a href="#project-ethos">Project Ethos</a>
+  </p>
+
+  <p>
+    <img src="[https://img.shields.io/badge/release-v1.0-blue.svg](https://img.shields.io/badge/release-v1.0-blue.svg)" alt="Release v1.0">
+    <img src="[https://img.shields.io/badge/license-Apache%202.0-green.svg](https://img.shields.io/badge/license-Apache%202.0-green.svg)" alt="License Apache 2.0">
+    <a href="[https://colab.research.google.com/github/your_repo/eka-eval/blob/main/notebooks/quick_start.ipynb](https://colab.research.google.com/github/your_repo/eka-eval/blob/main/notebooks/quick_start.ipynb)">
+      <img src="[https://colab.research.google.com/assets/colab-badge.svg](https://colab.research.google.com/assets/colab-badge.svg)" alt="Open In Colab">
+    </a>
+    <a href="[https://discord.gg/yourcommunitylink](https://discord.gg/yourcommunitylink)"> <img src="[https://img.shields.io/discord/1234567890.svg?label=Join%20Community&logo=discord&colorB=7289DA](https://img.shields.io/discord/1234567890.svg?label=Join%20Community&logo=discord&colorB=7289DA)" alt="Discord Community">
+    </a>
+  </p>
+</div>
+
+---
+
 # eka-eval: Benchmarking Pipeline Documentation
 
 ---
