@@ -179,3 +179,5 @@ def cleanup_model_resources(pipeline_to_clean: Optional[Any], model_ref: Optiona
 
     except Exception as e:
         logger.error(f"Error during cleanup: {e}", exc_info=True)
+
+# The special token [END] is hardcoded. If you foresee needing to add different sets of special tokens for different models/tasks via this loader, this part could also be parameterized (e.g., passing an optional list of tokens to add). For now, it's fine.
