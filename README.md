@@ -62,6 +62,58 @@ The **eka-eval** pipeline is modular and extensible:
 6. **Reporting:** Aggregates and logs raw scores, detailed outputs, and saves results in JSON/CSV.
 
 ---
+## **Directory Structure**
+
+eka_eval/
+├── core/
+│ ├── model_loader.py
+│ └── evaluator.py
+├── benchmarks/
+│ ├── benchmark_registry.py
+│ ├── base_benchmark.py
+│ └── tasks/
+│ ├── general/
+│ │ ├── mmlu.py
+│ │ └── ...
+│ ├── code/
+│ │ ├── humaneval.py
+│ │ └── mbpp.py
+│ ├── math/
+│ │ ├── gsm8k.py
+│ │ └── math_eval.py
+│ ├── reading_comprehension/
+│ │ ├── boolq.py
+│ │ ├── squad.py
+│ │ └── quac.py
+│ ├── indic/
+│ │ ├── init.py
+│ │ ├── boolq_in/
+│ │ │ ├── init.py
+│ │ │ ├── prompts.py
+│ │ │ ├── normalizers.py
+│ │ │ └── evaluator.py
+│ │ └── ... (other Indic benchmarks)
+│ └── custom_loader.py
+├── results/
+│ └── result_manager.py
+├── utils/
+│ ├── logging_setup.py
+│ └── gpu_utils.py
+├── scripts/
+│ ├── run_evaluation_suite.py
+│ └── evaluation_worker.py
+├── config/
+│ └── benchmark_definitions.json
+├── results_output/
+├── tests/
+├── .github/
+│ └── workflows/
+├── .gitattributes
+├── .gitignore
+├── LICENSE
+├── README.md
+├── pyproject.toml
+└── requirements.txt
 
 ## **Supported Benchmarks and Metrics**
 
