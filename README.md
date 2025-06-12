@@ -275,16 +275,6 @@ BENCHMARK_CONFIG = {
 | CUDA OOM errors                                   | Reduce `generation_batch_size`, use quantized models, or adjust config.           |
 | `code_eval` metric errors                         | Set `HF_ALLOW_CODE_EVAL=1` in your environment.                                   |
 
----
-
-## 🧪 Supported Benchmarks and Metrics
-
-Refer to your `benchmark_config.py` or project documentation for up-to-date supported benchmarks. Common metrics include:
-
-* **Accuracy**
-* **F1**
-* **Exact Match**
-* **pass\@k (for code generation)**
 
 ---
 
