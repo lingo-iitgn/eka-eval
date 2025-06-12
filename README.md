@@ -305,12 +305,96 @@ BENCHMARK_CONFIG = {
 | XorQA-IN             | F1, Exact Match         |
 
 ---
+ 
 
-## **Reporting and Results**
+## 📊 **Reporting and Results**
 
-- **All results are reported as raw scores** (no aggregation), per benchmark and per language.
-- Results include per-task accuracy, F1, EM, pass@1, BLEU, etc., as appropriate.
-- Output JSON includes detailed per-example outputs for transparency and error analysis.
+The `eka-eval` framework generates detailed and transparent results to support both high-level benchmarking and fine-grained error analysis.
+
+---
+
+### ✅ **Aggregated Results (CSV)**
+
+A primary CSV file named `calculated.csv` is generated in the directory specified via the `--results_dir` flag (default: `results_output/`). Each row represents a single benchmark evaluation for a model.
+
+**CSV Columns:**
+
+| Column      | Description                                                         |
+| ----------- | ------------------------------------------------------------------- |
+| `Model`     | Name or path of the evaluated model (e.g., `google/gemma-2b`)       |
+| `Size (B)`  | Approximate model parameter size (in billions), if determinable     |
+| `Task`      | Task group (e.g., `CODE GENERATION`, `MMLU`, `INDIC BENCHMARKS`)    |
+| `Benchmark` | Specific benchmark name (e.g., `HumanEval`, `GSM8K`, `BOOLQ-IN`)    |
+| `Score`     | Primary metric (e.g., `accuracy`, `pass@1`, `F1`)                   |
+| `Timestamp` | Date and time of the evaluation run                                 |
+| `Status`    | (Optional) Evaluation status (e.g., `Completed`, `EvaluationError`) |
+
+---
+
+### 📄 **Detailed Task Logs (JSONL)**
+
+For selected tasks that involve generation or require detailed analysis (e.g., `HumanEval`, `MBPP`, `IndicGenBench`), a JSONL file is created per benchmark in:
+
+```
+results_output/<benchmark_name>_detailed/
+```
+
+Each JSONL line typically includes:
+
+* Input prompt
+* Model output (raw prediction)
+* Ground truth / reference
+* Evaluation metrics (e.g., exact match, pass\@k)
+* Metadata (e.g., instance ID, language, model config)
+
+This format supports post-hoc error analysis and reproducibility.
+
+---
+
+### 🖥️ **Console Output**
+
+At the end of an evaluation run, results are printed to the terminal in a **Markdown-style table** showing model performance across all selected benchmarks.
+
+Example:
+
+```
+| Model           | Task Group       | Benchmark  | Score   |
+|----------------|------------------|------------|---------|
+| gemma-2b        | MMLU             | MMLU       | 44.7%   |
+| gemma-2b        | CODE GENERATION  | HumanEval  | 18.2%   |
+```
+
+---
+
+### 🧵 **Worker Logs**
+
+Each GPU worker process outputs logs in real time, with each log message prefixed by worker ID and GPU ID for easy debugging:
+
+```
+[Worker 0 (GPU 0)] Loading model: google/gemma-2b
+[Worker 0 (GPU 0)] Running benchmark: MMLU
+```
+
+These logs include:
+
+* Model/tokenizer loading status
+* Dataset loading and preprocessing
+* Evaluation progress per benchmark
+* Any encountered warnings or errors
+
+---
+
+### 🗃️ **Raw Scores**
+
+All reported results are **raw and per-task**, with no manual aggregation. Metrics include:
+
+* **Accuracy**: For multiple-choice and classification tasks
+* **F1 / Exact Match (EM)**: For reading comprehension and QA tasks (e.g., XQuAD-IN, BoolQ)
+* **Pass\@1 / Pass\@k**: For code generation tasks (e.g., HumanEval, MBPP)
+* **BLEU / ChrF**: For translation tasks (e.g., Flores-IN)
+* **Task-specific**: Metrics defined by custom benchmark logic (e.g., NeedleRecall for Multi-Needle)
+
+---
 
 ---
 ## 🛠️ Contribute
