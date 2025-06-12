@@ -256,9 +256,11 @@ If you have selected a code generation task group, you'll be prompted for additi
 
 * **Prompt**: `Enter comma-separated k values for pass@k (e.g., 1,5,10) [Default: 1]`
 * **Prompt**: `Enter generation batch size [Default: 1]`
-```
+
+---
 
 
+ 
 ## ➕ Adding Custom Benchmarks
 
 ### ✨ Interactive Mode
