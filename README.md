@@ -54,15 +54,6 @@
 *   **Customizable:** Allows users to add custom benchmarks and evaluation logic.
 
 ---
-
-## **Vision & Principles**
-
-- **Open, Ethical, and Inclusive:** Built to support India’s linguistic and cultural diversity, with open-source code and datasets.
-- **Global Standards, Local Relevance:** Benchmarks include both international and India-centric tasks.
-- **Transparent & Reproducible:** All evaluation scripts, metrics, and results are open and reproducible.
-- **Climate-Conscious (Aspirational):** We aim to optimize for efficient, large-scale evaluation with minimal energy use where possible.
-
----
 ## **Installation**
 
 1.  **Clone the Repository:**
@@ -111,6 +102,12 @@
 ## **🚀 Quick Start**
 
 To quickly evaluate a model (e.g., `google/gemma-2b`) on a small subset of a benchmark (e.g., MMLU):
+```bash
+# Ensure you are in the root directory of the eka-eval project
+# (the directory containing the 'scripts' and 'eka_eval' folders)
+
+python3 scripts/run_benchmarks.py
+```
 
 --- 
 
@@ -147,7 +144,7 @@ eka-eval/
 │       └── logging_setup.py
 ├── scripts/                      # Executables to run evaluations
 │   ├── __init__.py
-│   ├── run_evaluation_suite.py   # Main orchestrator
+│   ├── run_benchmarks.py   # Main orchestrator
 │   └── evaluation_worker.py      # Worker process logic
 ├── results_output/               # Default result directory
 │   └── calculated.csv            # Aggregated results
@@ -168,7 +165,7 @@ eka-eval/
 Use:
 
 ```bash
-python3 scripts/run_evaluation_suite.py
+python3 scripts/run_benchmarks.py
 ```
 
 You’ll be guided through the following interactive steps:
@@ -330,10 +327,6 @@ python eka_eval.py \
 - `--batch_size`: Batch size for inference.
 - `--shots`: Number of few-shot examples (0 for zero-shot, 3/5/7 as per protocol).
 - `--output_file`: Where to save the evaluation results.
-
----
-
-## **Example Usage**
 
 ---
 
