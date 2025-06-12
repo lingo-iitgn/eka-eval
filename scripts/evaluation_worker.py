@@ -6,17 +6,16 @@ from datetime import datetime
 import argparse
 import logging
 import sys
-import os  # <--- ADD
+import os  
+from datasets import disable_progress_bar
 
-# --- Add project root to sys.path for this worker process ---
-# This ensures that the eka_eval package can be found
-# __file__ is the path to the current script (scripts/evaluation_worker.py)
-# os.path.dirname(__file__) is the 'scripts' directory
-# os.path.dirname(os.path.dirname(__file__)) is the project root (TOP_LEVEL_eka_eval)
+""" For configuring project root path"""
+disable_progress_bar()
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 if PROJECT_ROOT not in sys.path:
     sys.path.insert(0, PROJECT_ROOT)
-# --- End of sys.path modification ---
+    
+    
 from eka_eval.core.model_loader import initialize_model_pipeline, cleanup_model_resources
 from eka_eval.benchmarks.benchmark_registry import BenchmarkRegistry
 from eka_eval.utils.logging_setup import setup_logging
