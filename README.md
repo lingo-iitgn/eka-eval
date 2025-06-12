@@ -101,7 +101,7 @@
 
 ## **🚀 Quick Start**
 
-To quickly evaluate a model (e.g., `google/gemma-2b`) on a small subset of a benchmark (e.g., MMLU):
+To evaluate a model (e.g., `tiiuae/falcon-7b`) on any benchmark (e.g., MMLU):
 ```bash
 # Ensure you are in the root directory of the eka-eval project
 # (the directory containing the 'scripts' and 'eka_eval' folders)
@@ -159,46 +159,105 @@ eka-eval/
 ```
 
 ---
-
 ## 🚀 How to Run Evaluations
 
-Use:
+To initiate the evaluation process, execute the following command:
 
 ```bash
 python3 scripts/run_benchmarks.py
 ```
 
-You’ll be guided through the following interactive steps:
+You will then be guided through a series of interactive prompts:
 
 ### 🔹 Model Selection
 
-* **Prompt**: `Enter model source ('1' for Hugging Face, '2' for Local Path):`
-* Examples:
+First, you'll specify the source of the model you wish to evaluate.
 
-  * Hugging Face: `google/gemma-2b`
-  * Local path: `/path/to/your/model`
+* **Prompt**: `Enter model source ('1' for Hugging Face, '2' for Local Path):`
+
+    * Select `1` for Hugging Face models.
+    * Select `2` for models stored on your local machine.
+
+* **Prompt**: `Enter Hugging Face model name (e.g., google/gemma-2b)` (if you selected Hugging Face)
+    * Example: `tiiuae/falcon-7b`
+
+* **Prompt**: `Enter local model path (e.g., /path/to/your/model)` (if you selected Local Path)
+    * Example: `/path/to/your/model`
+
+    ```
+    --- Model Selection ---
+    Enter model source ('1' for Hugging Face, '2' for Local Path): 1
+    Enter Hugging Face model name (e.g., google/gemma-2b): google/gemma-2b
+    ```
 
 ### 🔹 Custom Benchmarks
 
-* Prompt: `Do you want to add any custom/internal benchmarks for this session? (yes/no)`
-* Select `no` for quick start or `yes` to register a custom benchmark (see below).
+You'll be asked if you want to include any custom benchmarks.
+
+* **Prompt**: `Do you want to add any custom/internal benchmarks for this session? (yes/no):`
+    * Select `no` for a quick start.
+    * Select `yes` if you have custom benchmarks to register (refer to the documentation on registering custom benchmarks).
+
+    ```
+    Do you want to add any custom/internal benchmarks for this session? (yes/no): no
+    ```
 
 ### 🔹 Task Group Selection
 
-* Choose from available groups (e.g., CODE GENERATION, MMLU, INDIC BENCHMARKS).
-* Enter numbers (e.g., `1 3`) or `ALL`.
+Next, you'll choose the task group(s) for your evaluation.
+
+* **Prompt**: `Select task group #(s) (e.g., '1', '1 3', 'ALL'):`
+    * Enter the numbers corresponding to your desired task groups, separated by spaces (e.g., `1 3`).
+    * Type `ALL` to include all available task groups.
+
+    ```
+    --- Available Benchmark Task Groups ---
+    1. CODE GENERATION
+    2. MATH AND REASONING
+    3. READING COMPREHENSION
+    4. COMMONSENSE REASONING
+    5. WORLD KNOWLEDGE
+    6. LONG CONTEXT
+    7. MMLU
+    8. MMLU-Pro
+    9. IFEval
+    10. BBH
+    11. AGIEval
+    12. INDIC BENCHMARKS
+    13. ALL Task Groups
+    Select task group #(s) (e.g., '1', '1 3', 'ALL'):
+    ```
 
 ### 🔹 Benchmark Selection
 
-* For each selected group, select benchmarks or use `ALL` to include all in that group.
-* Single-benchmark groups (e.g., MMLU) are auto-selected.
+For each selected task group, you will specify which benchmarks to run.
+
+* **Prompt**: `Select benchmark #(s) for <TASK_GROUP_NAME> ('ALL', 'SKIP', nums):`
+    * Enter the numbers corresponding to your desired benchmarks within that group, separated by spaces.
+    * Type `ALL` to include all benchmarks within that group.
+    * Type `SKIP` to bypass the current task group.
+    * **Note**: For single-benchmark groups (e.g., MMLU), the benchmark will be auto-selected.
+
+    ```
+    --- Select benchmarks for Task Group: CODE GENERATION ---
+    1. HumanEval
+    2. MBPP
+    3. HumanEval+
+    4. MBPP EvalPlus
+    5. MultiPL-E
+    6. ALL (within CODE GENERATION)
+    7. SKIP THIS TASK GROUP
+    Select benchmark #(s) for CODE GENERATION ('ALL', 'SKIP', nums):
+    ```
 
 ### 🔹 Code Task Parameters (if applicable)
 
-* Prompt: `Enter comma-separated k values for pass@k (e.g., 1,5,10) [Default: 1]`
-* Prompt: `Enter generation batch size [Default: 1]`
+If you have selected a code generation task group, you'll be prompted for additional parameters.
 
----
+* **Prompt**: `Enter comma-separated k values for pass@k (e.g., 1,5,10) [Default: 1]`
+* **Prompt**: `Enter generation batch size [Default: 1]`
+```
+
 
 ## ➕ Adding Custom Benchmarks
 
