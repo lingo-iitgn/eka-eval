@@ -40,30 +40,253 @@
 **eka-eval** is the official evaluation pipeline for the EKA project ([eka.soket.ai](https://eka.soket.ai)), designed to benchmark large language models (LLMs) for India and the world. It supports a wide range of global and Indic benchmarks, ensuring rigorous, fair, and transparent evaluation for both English and Indian languages.
 
 ---
+## **Key Features**
+
+*   **Comprehensive Benchmark Suite:** Supports a wide range of global (MMLU, BBH, GSM8K, HumanEval, etc.) and India-centric (MMLU-IN, IndicGenBench, Flores-IN, etc.) benchmarks.
+*   **Multi-Lingual Support:** Designed for evaluating models in English and multiple Indian languages.
+*   **Modular Design:** Easily extendable with new benchmarks, tasks, models, and metrics.
+*   **Hugging Face Integration:** Seamlessly works with models and datasets from the Hugging Face Hub.
+*   **Quantization Support:** Built-in support for 4-bit/8-bit quantization (via `bitsandbytes`) for efficient evaluation of large models.
+*   **Batching & Parallelism:** Supports batched inference and multi-GPU evaluation for speed and scalability.
+*   **Few-Shot & Zero-Shot:** Configurable few-shot prompting as per benchmark protocols.
+*   **Detailed Reporting:** Generates comprehensive results in CSV format, including per-instance scores and detailed logs for error analysis (JSONL for some tasks).
+*   **Reproducibility:** Aims for reproducible evaluation runs through clear configuration and versioning.
+*   **Customizable:** Allows users to add custom benchmarks and evaluation logic.
+
+---
 
 ## **Vision & Principles**
 
 - **Open, Ethical, and Inclusive:** Built to support India’s linguistic and cultural diversity, with open-source code and datasets.
-- **Global Standards, Local Relevance:** Benchmarks include both international (MMLU, BBH, AGIEval, etc.) and India-centric (MMLU-IN, MILU, etc.) tasks.
+- **Global Standards, Local Relevance:** Benchmarks include both international and India-centric tasks.
 - **Transparent & Reproducible:** All evaluation scripts, metrics, and results are open and reproducible.
-- **Climate-Conscious:** Optimized for efficient, large-scale evaluation with minimal energy use.
+- **Climate-Conscious (Aspirational):** We aim to optimize for efficient, large-scale evaluation with minimal energy use where possible.
+
+---
+## **Installation**
+
+1.  **Clone the Repository:**
+    ```bash
+    git clone https://github.com/your-org/eka-eval.git # Replace with your actual repo URL
+    cd eka-eval
+    ```
+
+2.  **Create and Activate a Virtual Environment (Recommended):**
+    ```bash
+    python3 -m venv myenv
+    source myenv/bin/activate  # On Windows: myenv\Scripts\activate
+    ```
+
+3.  **Install Dependencies:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+    Ensure your `requirements.txt` includes:
+    ```
+    torch
+    transformers
+    datasets
+    evaluate
+    pandas
+    tqdm
+    accelerate
+    bitsandbytes # For quantization
+    # Add other specific dependencies your tasks might need (e.g., sentencepiece, protobuf for certain tokenizers/models)
+    ```
+    For CUDA support with `bitsandbytes` and PyTorch, ensure your CUDA toolkit is compatible with the versions you install.
+
+4.  **Hugging Face Authentication (Recommended for accessing private/gated models or some datasets):**
+    *   **CLI Login (Recommended):**
+        ```bash
+        huggingface-cli login
+        ```
+        Paste your Hugging Face access token (with read permissions, generate from [HF Settings](https://huggingface.co/settings/tokens)).
+    *   **Environment Variable:**
+        ```bash
+        export HF_TOKEN="your_hf_read_token_here"
+        ```
 
 ---
 
-## **Pipeline Theory**
+## **🚀 Quick Start**
 
-The **eka-eval** pipeline is modular and extensible:
+To quickly evaluate a model (e.g., `google/gemma-2b`) on a small subset of a benchmark (e.g., MMLU):
 
-1. **Task Loader:** Loads benchmarks from Hugging Face Datasets or local files.
-2. **Prompt Generator:** Formats prompts for zero-shot or few-shot (as per benchmark protocol).
-3. **Model Inference:** Supports any Hugging Face-compatible LLM, with batching and quantization.
-4. **Postprocessing:** Extracts and normalizes model outputs.
-5. **Metric Computation:** Computes benchmark-specific metrics (Accuracy, F1, EM, pass@1, BLEU, etc.).
-6. **Reporting:** Aggregates and logs raw scores, detailed outputs, and saves results in JSON/CSV.
+--- 
+
+## 🔧 Directory Structure
+
+```
+eka-eval/
+├── eka_eval/                     # Main library package
+│   ├── __init__.py
+│   ├── benchmarks/               # Benchmark-specific logic
+│   │   ├── __init__.py
+│   │   ├── benchmark_registry.py
+│   │   └── tasks/
+│   │       ├── __init__.py
+│   │       ├── code/             # Code generation tasks (e.g., HumanEval, MBPP)
+│   │       ├── indic/            # Indic language tasks
+│   │       ├── reasoning/        # Reasoning tasks
+│   │       └── general/          # General tasks (e.g., MMLU, BBH)
+│   ├── config/
+│   │   ├── __init__.py
+│   │   └── benchmark_config.py   # All supported benchmarks and their settings
+│   ├── core/
+│   │   ├── __init__.py
+│   │   ├── model_loader.py       # Loads models/tokenizers
+│   │   └── evaluator.py (optional)
+│   ├── results/
+│   │   ├── __init__.py
+│   │   └── result_manager.py     # For managing result aggregation/output
+│   └── utils/
+│       ├── __init__.py
+│       ├── constants.py
+│       ├── file_utils.py
+│       ├── gpu_utils.py
+│       └── logging_setup.py
+├── scripts/                      # Executables to run evaluations
+│   ├── __init__.py
+│   ├── run_evaluation_suite.py   # Main orchestrator
+│   └── evaluation_worker.py      # Worker process logic
+├── results_output/               # Default result directory
+│   └── calculated.csv            # Aggregated results
+├── checkpoints/                  # Task-specific checkpoints
+├── tests/                        # Tests (TODO)
+├── .github/                      # GitHub configs
+├── .gitignore
+├── LICENSE
+├── README.md
+├── pyproject.toml
+└── requirements.txt
+```
 
 ---
-## **Directory Structure**
 
+## 🚀 How to Run Evaluations
+
+Use:
+
+```bash
+python3 scripts/run_evaluation_suite.py
+```
+
+You’ll be guided through the following interactive steps:
+
+### 🔹 Model Selection
+
+* **Prompt**: `Enter model source ('1' for Hugging Face, '2' for Local Path):`
+* Examples:
+
+  * Hugging Face: `google/gemma-2b`
+  * Local path: `/path/to/your/model`
+
+### 🔹 Custom Benchmarks
+
+* Prompt: `Do you want to add any custom/internal benchmarks for this session? (yes/no)`
+* Select `no` for quick start or `yes` to register a custom benchmark (see below).
+
+### 🔹 Task Group Selection
+
+* Choose from available groups (e.g., CODE GENERATION, MMLU, INDIC BENCHMARKS).
+* Enter numbers (e.g., `1 3`) or `ALL`.
+
+### 🔹 Benchmark Selection
+
+* For each selected group, select benchmarks or use `ALL` to include all in that group.
+* Single-benchmark groups (e.g., MMLU) are auto-selected.
+
+### 🔹 Code Task Parameters (if applicable)
+
+* Prompt: `Enter comma-separated k values for pass@k (e.g., 1,5,10) [Default: 1]`
+* Prompt: `Enter generation batch size [Default: 1]`
+
+---
+
+## ➕ Adding Custom Benchmarks
+
+### ✨ Interactive Mode
+
+If you answered `yes` when asked about custom benchmarks, you'll be prompted:
+
+1. **Task Group Name**: e.g., `MY_INTERNAL_EVALS`
+2. **Benchmark Display Name**: e.g., `LogicTest`
+3. **Python Module Path**: e.g., `my_custom_evals.logic_test`
+4. **Function Name**: e.g., `evaluate_logic_test`
+
+The module must be importable (i.e., in your `PYTHONPATH` or part of the project).
+
+---
+
+### ✍️ Manual Addition (Optional)
+
+Edit `eka_eval/config/benchmark_config.py`:
+
+```python
+BENCHMARK_CONFIG = {
+    "MY_CUSTOM_TASKS": {
+        "MyLogicTest": {
+            "description": "Evaluates logic skills.",
+            "evaluation_function": "my_project.custom_evals.logic_test.evaluate_logic_test",
+            "is_custom": True,
+            "task_args": {
+                "dataset_path": "/path/to/data.jsonl",
+                "num_few_shot": 3,
+                "max_new_tokens": 128
+            }
+        }
+    }
+}
+```
+
+---
+
+## 📊 Results & Reporting
+
+### ✅ Aggregated CSV Output
+
+* Stored in `results_output/calculated.csv`
+* Columns:
+
+  * `Model`, `Size (B)`, `Task`, `Benchmark`, `Score`, `Timestamp`, `Status`
+
+### 📄 Detailed Logs
+
+* Some benchmarks (e.g., HumanEval) write JSONL logs in:
+
+  ```
+  results_output/<benchmark_name>_detailed/
+  ```
+
+### 🖥️ Console Output
+
+* Final results are printed as a **Markdown table**.
+* Worker logs are prefixed (e.g., `[Worker 0 (GPU 1)]`).
+
+---
+
+## ⚠️ Troubleshooting
+
+| Issue                                             | Fix                                                                               |
+| ------------------------------------------------- | --------------------------------------------------------------------------------- |
+| `ModuleNotFoundError: No module named 'eka_eval'` | Ensure you're running from the root directory.                                    |
+| Worker can't import your custom task              | Ensure correct `evaluation_function` path and `__init__.py` files exist.          |
+| Hugging Face 404                                  | Verify the model/dataset name and check authentication (`huggingface-cli login`). |
+| CUDA OOM errors                                   | Reduce `generation_batch_size`, use quantized models, or adjust config.           |
+| `code_eval` metric errors                         | Set `HF_ALLOW_CODE_EVAL=1` in your environment.                                   |
+
+---
+
+## 🧪 Supported Benchmarks and Metrics
+
+Refer to your `benchmark_config.py` or project documentation for up-to-date supported benchmarks. Common metrics include:
+
+* **Accuracy**
+* **F1**
+* **Exact Match**
+* **pass\@k (for code generation)**
+
+---
 
 ## **Supported Benchmarks and Metrics**
 
@@ -121,16 +344,6 @@ python eka_eval.py \
 ---
 
 ## **Example Usage**
-
-**Evaluate Falcon-7B on MMLU (English, zero-shot):**
-```bash
-python eka_eval.py --model_name_or_path tiiuae/falcon-7b --benchmark mmlu --language en --batch_size 8 --shots 0 --output_file results_mmlu_falcon7b.json
-```
-
-**Evaluate EKA model on MILU (Hindi, zero-shot):**
-```bash
-python eka_eval.py --model_name_or_path eka-ai/eka-7b --benchmark milu --language hi --batch_size 8 --shots 0 --output_file results_milu_eka7b.json
-```
 
 ---
 
