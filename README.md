@@ -37,7 +37,7 @@
 
 ## **Overview**
 
-**eka-eval** is the official evaluation pipeline for the EKA project ([eka.soket.ai](https://eka.soket.ai)), designed to benchmark large language models (LLMs) for India and the world. It supports a wide range of global and Indic benchmarks, ensuring rigorous, fair, and transparent evaluation for both English and Indian languages.
+**eka-eval** is the official evaluation pipeline for the EKA project ([eka.soket.ai](https://eka.soket.ai)), designed to benchmark large language models (LLMs). It supports a wide range of global and Indic benchmarks, ensuring rigorous, fair, and transparent evaluation for both English and Indian languages.
 
 ---
 ## **Key Features**
@@ -306,35 +306,21 @@ BENCHMARK_CONFIG = {
 
 ---
 
-## **Script Usage**
-
-The main script should take the following options:
-
-```bash
-python eka_eval.py \
-    --model_name_or_path  \
-    --benchmark  \
-    --language  \
-    --batch_size  \
-    --shots  \
-    --output_file 
-```
-
-**Arguments:**
-- `--model_name_or_path`: Hugging Face model identifier or path.
-- `--benchmark`: Name of the benchmark to run (e.g., mmlu, bbh, gsm8k, piqa, mmlu-in, milu).
-- `--language`: Language code (for Indic benchmarks).
-- `--batch_size`: Batch size for inference.
-- `--shots`: Number of few-shot examples (0 for zero-shot, 3/5/7 as per protocol).
-- `--output_file`: Where to save the evaluation results.
-
----
-
 ## **Reporting and Results**
 
 - **All results are reported as raw scores** (no aggregation), per benchmark and per language.
 - Results include per-task accuracy, F1, EM, pass@1, BLEU, etc., as appropriate.
 - Output JSON includes detailed per-example outputs for transparency and error analysis.
+
+---
+## 🛠️ Contribute
+
+### 🧪 Testing and Feedback
+
+We welcome contributions from the community to help test and improve this library.  
+If you encounter any issues or have suggestions for enhancements, please feel free to [open an issue](https://github.com/your-org/eka-eval/issues) on the GitHub repository.
+
+Your feedback helps make **eka-eval** better for everyone!
 
 ---
 
@@ -359,7 +345,7 @@ python eka_eval.py \
 
 ---
 
-**eka-eval: The open, ethical, and comprehensive LLM benchmarking suite for India and the world.**
+**eka-eval: The open, ethical, and comprehensive LLM benchmarking suite.**
 
 ---
 
