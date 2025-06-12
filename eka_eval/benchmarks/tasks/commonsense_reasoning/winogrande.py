@@ -15,11 +15,10 @@ import evaluate as hf_evaluate
 
 logger = logging.getLogger(__name__)
 
-# --- Constants and Helper Functions for Winogrande ---
 DEFAULT_DATASET_NAME_WINO = "winogrande"
-DEFAULT_CONFIG_WINO = "winogrande_xl" # Common config, can be 'winogrande_debiased', etc.
+DEFAULT_CONFIG_WINO = "winogrande_xl" 
 DEFAULT_SPLIT_WINO = "validation"
-DEFAULT_MAX_NEW_TOKENS_WINO = 5 # For "1" or "2"
+DEFAULT_MAX_NEW_TOKENS_WINO = 5 
 DEFAULT_CHECKPOINT_DIR_WINO = "checkpoints/winogrande_checkpoints"
 
 try:
@@ -31,7 +30,7 @@ except Exception as e:
 
 def _format_winogrande_prompt(item: Dict) -> str:
     """Formats a Winogrande problem into a prompt."""
-    sentence = item.get('sentence', '').replace('_', '_____') # Replace placeholder
+    sentence = item.get('sentence', '').replace('_', '_____') 
     option1 = item.get('option1', '')
     option2 = item.get('option2', '')
     
@@ -49,17 +48,16 @@ def _extract_winogrande_answer(generated_text: str, prompt_text_sent_to_llm: str
     if generated_text.startswith(prompt_text_sent_to_llm):
         completion_part = generated_text[len(prompt_text_sent_to_llm):]
     completion_part = completion_part.strip()
-    match = re.search(r'^\s*\b(1|2)\b', completion_part) # Look for 1 or 2 at the start
+    match = re.search(r'^\s*\b(1|2)\b', completion_part)
     if match:
         return match.group(1)
     logger.debug(f"Wino: Could not extract 1 or 2 from start of completion: '{completion_part[:20]}'")
     return "X"
 
-# --- Main Evaluation Function ---
 def evaluate_winogrande(
     pipe: Any, tokenizer: Any, model_name_for_logging: str, device: Any,
     dataset_name: str = DEFAULT_DATASET_NAME_WINO,
-    dataset_config_name: str = DEFAULT_CONFIG_WINO, # Winogrande has configs
+    dataset_config_name: str = DEFAULT_CONFIG_WINO,
     dataset_split: str = DEFAULT_SPLIT_WINO,
     max_new_tokens: int = DEFAULT_MAX_NEW_TOKENS_WINO,
     generation_batch_size: int = 8,
@@ -80,7 +78,6 @@ def evaluate_winogrande(
     logger.info(f"P{process_id}: Loaded Winogrande '{dataset_name}/{dataset_config_name}' (split: '{dataset_split}') with {len(full_data_for_split)} examples.")
 
     if num_gpus > 1:
-        # ... (Data splitting logic similar to PIQA/SQuAD) ...
         total_examples = len(full_data_for_split)
         examples_per_instance = total_examples // num_gpus
         start_idx = process_id * examples_per_instance
@@ -93,13 +90,8 @@ def evaluate_winogrande(
     if len(dataset_subset_to_process) == 0: return {"WinoGrande": 0.0}
 
     predictions_numeric, true_labels_numeric = [], []
-    # detailed_results_log = []
-
     prompts_for_batch, infos_for_batch = [], []
     for item_idx, item_data in enumerate(tqdm(dataset_subset_to_process, desc=f"P{process_id} - Wino Eval")):
-        # Winogrande 'answer' field is '1' or '2' (strings)
-        # 'label' might not exist directly, or 'answer' is the label index (0 or 1) for options.
-        # The 'answer' field in winogrande dataset IS the label index (1 or 2).
         true_label_str = item_data.get('answer')
         if true_label_str not in ['1', '2']:
             logger.warning(f"P{process_id}: Skipping Winogrande item with invalid answer/label '{true_label_str}'. Item: {item_data.get('sentence','')[:50]}")
@@ -122,14 +114,10 @@ def evaluate_winogrande(
                     original_item = infos_for_batch[k]
                     raw_gen = raw_output_list[0]['generated_text'] if raw_output_list and raw_output_list[0] else prompts_for_batch[k] + "X"
                     pred_str = _extract_winogrande_answer(raw_gen, prompts_for_batch[k])
-                    
-                    # Convert "1" to 0, "2" to 1 for 0-indexed comparison if needed by metric,
-                    # or keep as 1/2 if metric handles it. Accuracy metric handles numerical labels.
-                    # The dataset 'answer' is '1' or '2'. Our prediction should also be 1 or 2.
-                    pred_numeric = int(pred_str) if pred_str in ["1", "2"] else -1 # -1 for unparseable
-                    true_numeric = int(original_item['answer']) # Already 1 or 2
+                    pred_numeric = int(pred_str) if pred_str in ["1", "2"] else -1 
+                    true_numeric = int(original_item['answer']) 
 
-                    if pred_numeric == -1: pred_numeric = 3 - true_numeric # Assign the wrong one if unparseable (1->2, 2->1)
+                    if pred_numeric == -1: pred_numeric = 3 - true_numeric 
                     
                     predictions_numeric.append(pred_numeric)
                     true_labels_numeric.append(true_numeric)
@@ -146,10 +134,7 @@ def evaluate_winogrande(
     except Exception as e_metric: logger.error(f"P{process_id}: Error computing Wino accuracy: {e_metric}", exc_info=True)
 
     logger.info(f"P{process_id}(GPU{gpu_id}) - Final Winogrande Accuracy: {accuracy_score:.2f}% on {len(true_labels_numeric)} examples.")
-    return {"WinoGrande": accuracy_score} # Main key for this benchmark
-
-
-# Standalone test block
+    return {"WinoGrande": accuracy_score} 
 if __name__ == '__main__':
     current_script_path = os.path.abspath(__file__)
     project_root_for_test = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(current_script_path)))))
@@ -161,7 +146,6 @@ if __name__ == '__main__':
     test_parser_wino.add_argument("--dataset_split_test", type=str, default="validation[:10]")
     test_parser_wino.add_argument("--dataset_config_test", type=str, default="winogrande_xs") # Use xs for quick test
     test_parser_wino.add_argument("--gen_batch_size_test", type=int, default=2)
-    # ... other test args as needed ...
     w_args = test_parser_wino.parse_args()
     setup_logging(level=logging.DEBUG, worker_id="WinoFileTest")
     logger.info(f"--- Standalone Winogrande Test: {w_args.model_name_test} ---")
