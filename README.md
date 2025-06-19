@@ -12,7 +12,7 @@
     <a href="https://colab.research.google.com/github/your_repo/eka-eval/blob/main/notebooks/quick_start.ipynb">
       <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab" />
     </a>
-    <a href="https://discord.gg/yourcommunitylink">
+    <a href="https://discord.gg/pQaFJ857">
       <img src="https://img.shields.io/discord/308323056592486420?label=Join%20Community&logo=discord&colorB=7289DA" alt="Discord Community" />
     </a>
   </p>
@@ -20,477 +20,519 @@
   <!-- Navigation Links -->
   <p>
     <a href="#key-features">Key Features</a> •
-    <a href="#supported-benchmarks-and-metrics">Supported Benchmarks</a> •
-    <a href="#script-usage">Getting Started</a> •
-    <a href="#reporting-and-results">Reporting</a> •
+    <a href="#supported-benchmarks">Supported Benchmarks</a> •
+    <a href="#quick-start">Getting Started</a> •
+    <a href="#results-and-reporting">Reporting</a> •
     <a href="#project-ethos">Project Ethos</a>
   </p>
 </div>
-
-
-
----
-
-# eka-eval: Benchmarking Pipeline Documentation
 
 ---
 
 ## **Overview**
 
-**eka-eval** is the official evaluation pipeline for the EKA project ([eka.soket.ai](https://eka.soket.ai)), designed to benchmark large language models (LLMs). It supports a wide range of global and Indic benchmarks, ensuring rigorous, fair, and transparent evaluation for both English and Indian languages.
+**eka-eval** is the official evaluation pipeline for the EKA project ([eka.soket.ai](https://eka.soket.ai)), designed to provide comprehensive, fair, and transparent benchmarking for large language models (LLMs). Our framework supports both global and India-centric evaluations, with special emphasis on multilingual capabilities across Indian languages.
+
+### 🎯 **Why eka-eval?**
+
+- **🌏 Global + India-First**: Combines international benchmarks with India-specific evaluations
+- **🔬 Rigorous & Reproducible**: Standardized evaluation protocols with detailed logging
+- **🚀 Production-Ready**: Optimized for efficiency with quantization and multi-GPU support
+- **🔧 Extensible**: Easy integration of custom benchmarks and evaluation logic
+- **📊 Transparent**: Comprehensive reporting with detailed error analysis
 
 ---
+
 ## **Key Features**
 
-*   **Comprehensive Benchmark Suite:** Supports a wide range of global (MMLU, BBH, GSM8K, HumanEval, etc.) and India-centric (MMLU-IN, IndicGenBench, Flores-IN, etc.) benchmarks.
-*   **Multi-Lingual Support:** Designed for evaluating models in English and multiple Indian languages.
-*   **Modular Design:** Easily extendable with new benchmarks, tasks, models, and metrics.
-*   **Hugging Face Integration:** Seamlessly works with models and datasets from the Hugging Face Hub.
-*   **Quantization Support:** Built-in support for 4-bit/8-bit quantization (via `bitsandbytes`) for efficient evaluation of large models.
-*   **Batching & Parallelism:** Supports batched inference and multi-GPU evaluation for speed and scalability.
-*   **Few-Shot & Zero-Shot:** Configurable few-shot prompting as per benchmark protocols.
-*   **Detailed Reporting:** Generates comprehensive results in CSV format, including per-instance scores and detailed logs for error analysis (JSONL for some tasks).
-*   **Reproducibility:** Aims for reproducible evaluation runs through clear configuration and versioning.
-*   **Customizable:** Allows users to add custom benchmarks and evaluation logic.
+### 🎯 **Comprehensive Benchmark Coverage**
+- **17+ English Benchmarks**: MMLU, GSM8K, HumanEval, ARC-Challenge, and more
+- **12+ Indic Benchmarks**: MMLU-IN, BoolQ-IN, ARC-Challenge-IN, MILU, and others
+- **Specialized Tasks**: Code generation, mathematical reasoning, long-context understanding
+- **Multi-modal Support**: Text, code, and multilingual evaluation capabilities
+
+### 🌐 **Multilingual Excellence**
+- **11 Indian Languages**: Hindi, Bengali, Gujarati, Kannada, Malayalam, Marathi, Odia, Punjabi, Tamil, Telugu
+- **Smart Language Handling**: Automatic script recognition and Hindi-English letter mapping
+- **Per-Language Metrics**: Detailed breakdown of performance across languages
+
+### ⚡ **Performance & Scalability**
+- **Multi-GPU Support**: Distributed evaluation across multiple GPUs
+- **Quantization Ready**: 4-bit/8-bit quantization for efficient large model evaluation
+- **Batched Inference**: Optimized throughput with configurable batch sizes
+- **Memory Management**: Smart resource cleanup and CUDA cache management
+
+### 🔧 **Developer Experience**
+- **Modular Architecture**: Clean separation of concerns with extensible design
+- **Prompt System**: Template-based prompts with language-specific customization
+- **Rich Configuration**: JSON-based benchmark configs with validation
+- **Detailed Logging**: Comprehensive debug information and progress tracking
+
+### 📊 **Advanced Reporting**
+- **Multiple Output Formats**: CSV summaries, JSONL details, console tables
+- **Error Analysis**: Per-instance results for debugging and improvement
+- **Reproducibility**: Timestamped results with full configuration tracking
+- **Flexible Metrics**: Accuracy, F1, BLEU, pass@k, and custom metrics
 
 ---
+
 ## **Installation**
 
-1.  **Clone the Repository:**
-    ```bash
-    git clone https://github.com/your-org/eka-eval.git # Replace with your actual repo URL
-    cd eka-eval
-    ```
+### 1. **Clone the Repository**
+```bash
+git clone https://github.com/your-org/eka-eval.git
+cd eka-eval
+```
 
-2.  **Create and Activate a Virtual Environment (Recommended):**
-    ```bash
-    python3 -m venv myenv
-    source myenv/bin/activate  # On Windows: myenv\Scripts\activate
-    ```
+### 2. **Environment Setup**
+```bash
+# Create virtual environment
+python3 -m venv eka-env
+source eka-env/bin/activate  # On Windows: eka-env\Scripts\activate
 
-3.  **Install Dependencies:**
-    ```bash
-    pip install -r requirements.txt
-    ```
-    Ensure your `requirements.txt` includes:
-    ```
-    torch
-    transformers
-    datasets
-    evaluate
-    pandas
-    tqdm
-    accelerate
-    bitsandbytes # For quantization
-    # Add other specific dependencies your tasks might need (e.g., sentencepiece, protobuf for certain tokenizers/models)
-    ```
-    For CUDA support with `bitsandbytes` and PyTorch, ensure your CUDA toolkit is compatible with the versions you install.
+# Install dependencies
+pip install -r requirements.txt
+```
 
-4.  **Hugging Face Authentication (Recommended for accessing private/gated models or some datasets):**
-    *   **CLI Login (Recommended):**
-        ```bash
-        huggingface-cli login
-        ```
-        Paste your Hugging Face access token (with read permissions, generate from [HF Settings](https://huggingface.co/settings/tokens)).
-    *   **Environment Variable:**
-        ```bash
-        export HF_TOKEN="your_hf_read_token_here"
-        ```
+### 3. **Required Dependencies**
+```txt
+torch>=2.0.0
+transformers>=4.35.0
+datasets>=2.14.0
+evaluate>=0.4.0
+accelerate>=0.24.0
+bitsandbytes>=0.41.0  # For quantization
+pandas>=1.5.0
+tqdm>=4.64.0
+numpy>=1.24.0
+```
+
+### 4. **Authentication (Optional)**
+For private models or gated datasets:
+```bash
+huggingface-cli login
+# OR
+export HF_TOKEN="your_hf_token_here"
+```
 
 ---
 
 ## **🚀 Quick Start**
 
-To evaluate a model (e.g., `tiiuae/falcon-7b`) on any benchmark (e.g., MMLU):
+### **Basic Evaluation**
 ```bash
-# Ensure you are in the root directory of the eka-eval project
-# (the directory containing the 'scripts' and 'eka_eval' folders)
-
+# Run interactive evaluation
 python3 scripts/run_benchmarks.py
 ```
 
---- 
+### **Command Line Examples**
+```bash
+# Evaluate specific model on math benchmarks
+python3 scripts/run_benchmarks.py \
+    --model "google/gemma-2b" \
+    --task_groups "MATH AND REASONING" \
+    --benchmarks "GSM8K,MATH"
 
-## 🔧 Directory Structure
+# Multi-language evaluation
+python3 scripts/run_benchmarks.py \
+    --model "sarvamai/sarvam-1" \
+    --task_groups "INDIC BENCHMARKS" \
+    --languages "hi,bn,gu"
+
+# Code generation evaluation
+python3 scripts/run_benchmarks.py \
+    --model "microsoft/CodeT5-large" \
+    --task_groups "CODE GENERATION" \
+    --pass_k "1,5,10"
+```
+
+### **Standalone Benchmark Testing**
+```bash
+# Test individual benchmarks
+python eka_eval/benchmarks/tasks/math/gsm8k.py --model_name_test gpt2
+python eka_eval/benchmarks/tasks/indic/boolq_in.py --target_languages_test hi en
+python eka_eval/benchmarks/tasks/long_context/infinitebench.py --dataset_split_test longdialogue_qa_eng
+```
+
+---
+
+## **🏗️ Project Structure**
 
 ```
 eka-eval/
-├── eka_eval/                     # Main library package
-│   ├── __init__.py
-│   ├── benchmarks/               # Benchmark-specific logic
-│   │   ├── __init__.py
-│   │   ├── benchmark_registry.py
-│   │   └── tasks/
-│   │       ├── __init__.py
-│   │       ├── code/             # Code generation tasks (e.g., HumanEval, MBPP)
-│   │       ├── indic/            # Indic language tasks
-│   │       ├── reasoning/        # Reasoning tasks
-│   │       └── general/          # General tasks (e.g., MMLU, BBH)
-│   ├── config/
-│   │   ├── __init__.py
-│   │   └── benchmark_config.py   # All supported benchmarks and their settings
-│   ├── core/
-│   │   ├── __init__.py
-│   │   ├── model_loader.py       # Loads models/tokenizers
-│   │   └── evaluator.py (optional)
-│   ├── results/
-│   │   ├── __init__.py
-│   │   └── result_manager.py     # For managing result aggregation/output
-│   └── utils/
-│       ├── __init__.py
-│       ├── constants.py
-│       ├── file_utils.py
-│       ├── gpu_utils.py
-│       └── logging_setup.py
-├── scripts/                      # Executables to run evaluations
-│   ├── __init__.py
-│   ├── run_benchmarks.py   # Main orchestrator
-│   └── evaluation_worker.py      # Worker process logic
-├── results_output/               # Default result directory
-│   └── calculated.csv            # Aggregated results
-├── checkpoints/                  # Task-specific checkpoints
-├── tests/                        # Tests (TODO)
-├── .github/                      # GitHub configs
-├── .gitignore
-├── LICENSE
-├── README.md
-├── pyproject.toml
-└── requirements.txt
+├── 📦 eka_eval/                    # Core library
+│   ├── 🧪 benchmarks/              # Evaluation logic
+│   │   ├── tasks/
+│   │   │   ├── 💻 code/            # HumanEval, MBPP, etc.
+│   │   │   ├── 🧮 math/            # GSM8K, MATH, etc.
+│   │   │   ├── 🌏 indic/           # Indic language benchmarks
+│   │   │   ├── 🧠 reasoning/       # ARC, HellaSwag, etc.
+│   │   │   ├── 📚 long_context/    # InfiniteBench, etc.
+│   │   │   └── 🎯 general/         # MMLU, AGIEval, etc.
+│   │   └── benchmark_registry.py
+│   ├── ⚙️ core/                    # Model loading & evaluation
+│   ├── 🔧 utils/                   # Utilities & helpers
+│   └── 📋 config/                  # Benchmark configurations
+├── 🚀 scripts/                     # Execution scripts
+│   ├── run_benchmarks.py          # Main orchestrator
+│   └── evaluation_worker.py       # Worker process logic
+├── 📊 results_output/              # Evaluation results
+├── 🎯 prompts/                     # Prompt templates
+│   ├── math/                      # Math benchmark prompts
+│   ├── indic/                     # Indic benchmark prompts
+│   ├── general/                   # General benchmark prompts
+│   └── long_context/              # Long context prompts
+└── 📝 requirements.txt
 ```
 
 ---
-## 🚀 How to Run Evaluations
 
-To initiate the evaluation process, execute the following command:
+## **Supported Benchmarks**
 
-```bash
-python3 scripts/run_benchmarks.py
+### 🌍 **Global Benchmarks**
+
+| **Category** | **Benchmarks** | **Languages** | **Metrics** |
+|--------------|---------------|---------------|-------------|
+| **📚 Knowledge** | MMLU, MMLU-Pro, TriviaQA, NaturalQuestions | English | Accuracy |
+| **🧮 Mathematics** | GSM8K, MATH, GPQA, ARC-Challenge | English | Accuracy |
+| **💻 Code Generation** | HumanEval, MBPP, HumanEval+, MBPP+ | Python, Multi-PL | pass@1, pass@k |
+| **🧠 Reasoning** | BBH, AGIEval, HellaSwag, WinoGrande | English | Accuracy |
+| **📖 Reading** | SQuAD, QuAC, BoolQ, XQuAD | English + Others | F1, EM, Accuracy |
+| **📏 Long Context** | InfiniteBench, ZeroSCROLLS, Needle-in-Haystack | English | Task-specific |
+
+### 🇮🇳 **India-Centric Benchmarks**
+
+| **Benchmark** | **Languages** | **Description** | **Metrics** |
+|--------------|---------------|----------------|-------------|
+| **MMLU-IN** | 11 Indic + EN | Knowledge understanding across subjects | Accuracy |
+| **BoolQ-IN** | 11 Indic + EN | Yes/No question answering | Accuracy |
+| **ARC-Challenge-IN** | 11 Indic + EN | Science reasoning questions | Accuracy |
+| **MILU** | 11 Indic + EN | AI4Bharat's multilingual understanding | Accuracy |
+| **GSM8K-IN** | Hindi, Others | Math word problems in Indian languages | Accuracy |
+| **IndicGenBench** | Multiple | Generation tasks for Indic languages | Task-specific |
+| **Flores-IN** | 22 Languages | Translation quality assessment | BLEU, ChrF |
+| **XQuAD-IN** | 11 Languages | Cross-lingual reading comprehension | F1, EM |
+
+### **Supported Languages**
+- **English**: Primary evaluation language
+- **Hindi (hi)**: देवनागरी script with smart character mapping
+- **Bengali (bn)**: বাংলা script
+- **Gujarati (gu)**: ગુજરાતી script  
+- **Kannada (kn)**: ಕನ್ನಡ script
+- **Malayalam (ml)**: മലയാളം script
+- **Marathi (mr)**: मराठी script
+- **Odia (or)**: ଓଡ଼ିଆ script
+- **Punjabi (pa)**: ਪੰਜਾਬੀ script
+- **Tamil (ta)**: தமிழ் script
+- **Telugu (te)**: తెలుగు script
+
+---
+
+## **🔧 Interactive Evaluation Workflow**
+
+### **1. Model Selection**
+```
+Enter model source ('1' for Hugging Face, '2' for Local Path): 1
+Enter Hugging Face model name: google/gemma-2b
 ```
 
-You will then be guided through a series of interactive prompts:
+### **2. Task Group Selection**
+```
+--- Available Benchmark Task Groups ---
+1. CODE GENERATION          7. MMLU
+2. MATH AND REASONING       8. MMLU-Pro  
+3. READING COMPREHENSION    9. IFEval
+4. COMMONSENSE REASONING   10. BBH
+5. WORLD KNOWLEDGE         11. AGIEval
+6. LONG CONTEXT           12. INDIC BENCHMARKS
 
-### 🔹 Model Selection
+Select task group #(s): 2 12
+```
 
-First, you'll specify the source of the model you wish to evaluate.
+### **3. Benchmark Selection**
+```
+--- Select benchmarks for MATH AND REASONING ---
+1. GSM8K                    4. ARC-Challenge
+2. MATH                     5. ALL
+3. GPQA                     6. SKIP
 
-* **Prompt**: `Enter model source ('1' for Hugging Face, '2' for Local Path):`
+Select benchmark #(s): 1 2
+```
 
-    * Select `1` for Hugging Face models.
-    * Select `2` for models stored on your local machine.
+### **4. Execution & Results**
+```
+[Worker 0 (GPU 0)] Loading model: google/gemma-2b (2.0B parameters)
+[Worker 0 (GPU 0)] Running GSM8K evaluation...
+[Worker 0 (GPU 0)] GSM8K Accuracy: 42.3% (527/1247)
+[Worker 0 (GPU 0)] Running MATH evaluation...
+[Worker 0 (GPU 0)] MATH Accuracy: 12.1% (601/5000)
 
-* **Prompt**: `Enter Hugging Face model name (e.g., google/gemma-2b)` (if you selected Hugging Face)
-    * Example: `tiiuae/falcon-7b`
-
-* **Prompt**: `Enter local model path (e.g., /path/to/your/model)` (if you selected Local Path)
-    * Example: `/path/to/your/model`
-
-    ```
-    --- Model Selection ---
-    Enter model source ('1' for Hugging Face, '2' for Local Path): 1
-    Enter Hugging Face model name (e.g., google/gemma-2b): google/gemma-2b
-    ```
-
-### 🔹 Custom Benchmarks
-
-You'll be asked if you want to include any custom benchmarks.
-
-* **Prompt**: `Do you want to add any custom/internal benchmarks for this session? (yes/no):`
-    * Select `no` for a quick start.
-    * Select `yes` if you have custom benchmarks to register (refer to the documentation on registering custom benchmarks).
-
-    ```
-    Do you want to add any custom/internal benchmarks for this session? (yes/no): no
-    ```
-
-### 🔹 Task Group Selection
-
-Next, you'll choose the task group(s) for your evaluation.
-
-* **Prompt**: `Select task group #(s) (e.g., '1', '1 3', 'ALL'):`
-    * Enter the numbers corresponding to your desired task groups, separated by spaces (e.g., `1 3`).
-    * Type `ALL` to include all available task groups.
-
-    ```
-    --- Available Benchmark Task Groups ---
-    1. CODE GENERATION
-    2. MATH AND REASONING
-    3. READING COMPREHENSION
-    4. COMMONSENSE REASONING
-    5. WORLD KNOWLEDGE
-    6. LONG CONTEXT
-    7. MMLU
-    8. MMLU-Pro
-    9. IFEval
-    10. BBH
-    11. AGIEval
-    12. INDIC BENCHMARKS
-    13. ALL Task Groups
-    Select task group #(s) (e.g., '1', '1 3', 'ALL'):
-    ```
-
-### 🔹 Benchmark Selection
-
-For each selected task group, you will specify which benchmarks to run.
-
-* **Prompt**: `Select benchmark #(s) for <TASK_GROUP_NAME> ('ALL', 'SKIP', nums):`
-    * Enter the numbers corresponding to your desired benchmarks within that group, separated by spaces.
-    * Type `ALL` to include all benchmarks within that group.
-    * Type `SKIP` to bypass the current task group.
-    * **Note**: For single-benchmark groups (e.g., MMLU), the benchmark will be auto-selected.
-
-    ```
-    --- Select benchmarks for Task Group: CODE GENERATION ---
-    1. HumanEval
-    2. MBPP
-    3. HumanEval+
-    4. MBPP EvalPlus
-    5. MultiPL-E
-    6. ALL (within CODE GENERATION)
-    7. SKIP THIS TASK GROUP
-    Select benchmark #(s) for CODE GENERATION ('ALL', 'SKIP', nums):
-    ```
-
-### 🔹 Code Task Parameters (if applicable)
-
-If you have selected a code generation task group, you'll be prompted for additional parameters.
-
-* **Prompt**: `Enter comma-separated k values for pass@k (e.g., 1,5,10) [Default: 1]`
-* **Prompt**: `Enter generation batch size [Default: 1]`
+Results saved to: results_output/calculated.csv
+```
 
 ---
 
+## **🎯 Advanced Usage**
 
- 
-## ➕ Adding Custom Benchmarks
+### **Custom Benchmark Integration**
 
-### ✨ Interactive Mode
-
-If you answered `yes` when asked about custom benchmarks, you'll be prompted:
-
-1. **Task Group Name**: e.g., `MY_INTERNAL_EVALS`
-2. **Benchmark Display Name**: e.g., `LogicTest`
-3. **Python Module Path**: e.g., `my_custom_evals.logic_test`
-4. **Function Name**: e.g., `evaluate_logic_test`
-
-The module must be importable (i.e., in your `PYTHONPATH` or part of the project).
-
----
-
-### ✍️ Manual Addition (Optional)
-
-Edit `eka_eval/config/benchmark_config.py`:
-
+#### **1. Create Evaluation Function**
 ```python
-BENCHMARK_CONFIG = {
-    "MY_CUSTOM_TASKS": {
-        "MyLogicTest": {
-            "description": "Evaluates logic skills.",
-            "evaluation_function": "my_project.custom_evals.logic_test.evaluate_logic_test",
-            "is_custom": True,
-            "task_args": {
-                "dataset_path": "/path/to/data.jsonl",
-                "num_few_shot": 3,
-                "max_new_tokens": 128
-            }
-        }
+# my_benchmark.py
+def evaluate_my_task(pipe, tokenizer, model_name_for_logging, device, **kwargs):
+    # Your evaluation logic here
+    results = {"MyTask": accuracy_score}
+    return results
+```
+
+#### **2. Add Prompt Configuration**
+```json
+// prompts/custom/my_task.json
+{
+  "my_task_0shot": {
+    "template": "Question: {question}\nAnswer:",
+    "description": "Zero-shot prompt for my task"
+  },
+  "default_few_shot_examples": [
+    {"question": "Example question", "answer": "Example answer"}
+  ]
+}
+```
+
+#### **3. Register in Config**
+```python
+# Add to benchmark_config.py
+"MyTask": {
+    "description": "My custom evaluation task",
+    "evaluation_function": "my_project.my_benchmark.evaluate_my_task",
+    "task_args": {
+        "prompt_template_name_zeroshot": "my_task_0shot",
+        "prompt_file_benchmark_key": "my_task",
+        "prompt_file_category": "custom"
     }
+}
+```
+
+### **Quantization & Optimization**
+```python
+# Automatic 4-bit quantization for large models
+python3 scripts/run_benchmarks.py \
+    --model "meta-llama/Llama-2-70b-hf" \
+    --quantization "4bit" \
+    --batch_size 1
+```
+
+### **Multi-GPU Evaluation**
+```python
+# Distributed evaluation across GPUs
+CUDA_VISIBLE_DEVICES=0,1,2,3 python3 scripts/run_benchmarks.py \
+    --model "microsoft/DialoGPT-large" \
+    --task_groups "ALL" \
+    --num_gpus 4
+```
+
+---
+
+## **📊 Results and Reporting**
+
+### **📈 Aggregated Results (CSV)**
+Located at `results_output/calculated.csv`:
+
+| Model | Size (B) | Task | Benchmark | Score | Timestamp | Status |
+|-------|----------|------|-----------|-------|-----------|---------|
+| gemma-2b | 2.00 | MATH AND REASONING | GSM8K | 42.3% | 2024-01-15T10:30:45 | Completed |
+| gemma-2b | 2.00 | INDIC BENCHMARKS | BoolQ-IN | 67.8% | 2024-01-15T11:15:20 | Completed |
+
+### **📋 Detailed Analysis (JSONL)**
+Per-benchmark detailed results in `results_output/detailed_results/`:
+```json
+{
+  "question_id": 123,
+  "question": "What is 2+2?",
+  "correct_answer": "4",
+  "predicted_answer": "4", 
+  "is_correct": true,
+  "generated_text": "The answer is 4.",
+  "prompt_used": "Question: What is 2+2?\nAnswer:"
+}
+```
+
+### **🖥️ Console Output**
+```markdown
+| Model      | Task                | Benchmark      | Score   |
+|------------|--------------------|--------------------|---------|
+| gemma-2b   | MATH AND REASONING | GSM8K             | 42.3%   |
+| gemma-2b   | MATH AND REASONING | MATH              | 12.1%   |
+| gemma-2b   | INDIC BENCHMARKS   | BoolQ-IN          | 67.8%   |
+| gemma-2b   | INDIC BENCHMARKS   | MMLU-IN           | 39.2%   |
+```
+
+### **📊 Language-Specific Metrics**
+```json
+{
+  "BoolQ-IN": 67.8,
+  "BoolQ-IN_hi": 65.2,
+  "BoolQ-IN_bn": 70.1,
+  "BoolQ-IN_en": 74.5,
+  "BoolQ-IN_gu": 63.8
 }
 ```
 
 ---
 
-## 📊 Results & Reporting
+## **⚠️ Troubleshooting**
 
-### ✅ Aggregated CSV Output
+### **Common Issues & Solutions**
 
-* Stored in `results_output/calculated.csv`
-* Columns:
+| **Issue** | **Solution** |
+|-----------|-------------|
+| 🔴 `ModuleNotFoundError: eka_eval` | Run from project root directory |
+| 🔴 CUDA Out of Memory | Reduce `generation_batch_size` or use quantization |
+| 🔴 Hugging Face 404 Error | Check model name and authentication |
+| 🔴 `code_eval` metric error | Set `HF_ALLOW_CODE_EVAL=1` environment variable |
+| 🔴 Prompt template not found | Check prompt file exists in correct category folder |
+| 🔴 Dataset loading failure | Verify dataset name and internet connection |
 
-  * `Model`, `Size (B)`, `Task`, `Benchmark`, `Score`, `Timestamp`, `Status`
+### **Performance Optimization**
 
-### 📄 Detailed Logs
+```bash
+# For large models (>7B parameters)
+export CUDA_VISIBLE_DEVICES=0,1,2,3
+python3 scripts/run_benchmarks.py \
+    --model "meta-llama/Llama-2-70b-hf" \
+    --quantization "4bit" \
+    --batch_size 1 \
+    --max_new_tokens 256
 
-* Some benchmarks (e.g., HumanEval) write JSONL logs in:
-
-  ```
-  results_output/<benchmark_name>_detailed/
-  ```
-
-### 🖥️ Console Output
-
-* Final results are printed as a **Markdown table**.
-* Worker logs are prefixed (e.g., `[Worker 0 (GPU 1)]`).
-
----
-
-## ⚠️ Troubleshooting
-
-| Issue                                             | Fix                                                                               |
-| ------------------------------------------------- | --------------------------------------------------------------------------------- |
-| `ModuleNotFoundError: No module named 'eka_eval'` | Ensure you're running from the root directory.                                    |
-| Worker can't import your custom task              | Ensure correct `evaluation_function` path and `__init__.py` files exist.          |
-| Hugging Face 404                                  | Verify the model/dataset name and check authentication (`huggingface-cli login`). |
-| CUDA OOM errors                                   | Reduce `generation_batch_size`, use quantized models, or adjust config.           |
-| `code_eval` metric errors                         | Set `HF_ALLOW_CODE_EVAL=1` in your environment.                                   |
-
-
----
-
-## **Supported Benchmarks and Metrics**
-
-### **English Benchmarks**
-
-| Category                | Benchmark(s)                                 | Metric(s)                     |
-|-------------------------|----------------------------------------------|-------------------------------|
-| General                 | MMLU, MMLU-Pro, IFEval, BBH (3-shot), AGIEval (3–5 shot) | Accuracy                      |
-| Math & Reasoning        | GSM8K, MATH, GPQA, ARC-Challenge             | Accuracy                      |
-| Code                    | HumanEval, MBPP, HumanEval+, MBPP EvalPlus, MultiPL-E | Pass@1 (accuracy)             |
-| Multilinguality         | MGSM, Multilingual MMLU (internal)           | Accuracy                      |
-| Tool-use                | Nexus, API-Bank, API-Bench, BFCL             | Success Rate, Task-specific   |
-| Long Context            | ZeroSCROLLS, Needle-in-a-Haystack, InfiniteBench | Task-specific (Accuracy, F1, EM, Recall) |
-| Commonsense Reasoning   | PIQA, SIQA, HellaSwag, ARC (Easy/Chall), WinoGrande, CommonsenseQA (7-shot), OpenBookQA | Accuracy                      |
-| World Knowledge         | TriviaQA (5-shot), NaturalQuestions (5-shot) | Accuracy                      |
-| Reading Comprehension   | SQuAD (F1, EM), QuAC (F1, EM), BoolQ (Accuracy) | F1, Exact Match, Accuracy     |
-
-### **Indic Language Benchmarks**
-
-| Benchmark            | Metric(s)               |
-|----------------------|-------------------------|
-| MMLU-IN              | Accuracy                |
-| TriviaQA-IN          | Accuracy                |
-| MILU                 | Accuracy                |
-| GSM-8K-IN            | Accuracy                |
-| IndicGenBench        | Task Specific           |
-| Flores-IN            | BLEU, ChrF             |
-| XQuAD-IN             | F1, Exact Match         |
-| XorQA-IN             | F1, Exact Match         |
-
----
- 
-
-## 📊 **Reporting and Results**
-
-The `eka-eval` framework generates detailed and transparent results to support both high-level benchmarking and fine-grained error analysis.
-
----
-
-### ✅ **Aggregated Results (CSV)**
-
-A primary CSV file named `calculated.csv` is generated in the directory specified via the `--results_dir` flag (default: `results_output/`). Each row represents a single benchmark evaluation for a model.
-
-**CSV Columns:**
-
-| Column      | Description                                                         |
-| ----------- | ------------------------------------------------------------------- |
-| `Model`     | Name or path of the evaluated model (e.g., `google/gemma-2b`)       |
-| `Size (B)`  | Approximate model parameter size (in billions), if determinable     |
-| `Task`      | Task group (e.g., `CODE GENERATION`, `MMLU`, `INDIC BENCHMARKS`)    |
-| `Benchmark` | Specific benchmark name (e.g., `HumanEval`, `GSM8K`, `BOOLQ-IN`)    |
-| `Score`     | Primary metric (e.g., `accuracy`, `pass@1`, `F1`)                   |
-| `Timestamp` | Date and time of the evaluation run                                 |
-| `Status`    | (Optional) Evaluation status (e.g., `Completed`, `EvaluationError`) |
-
----
-
-### 📄 **Detailed Task Logs (JSONL)**
-
-For selected tasks that involve generation or require detailed analysis (e.g., `HumanEval`, `MBPP`, `IndicGenBench`), a JSONL file is created per benchmark in:
-
-```
-results_output/<benchmark_name>_detailed/
+# For faster evaluation
+python3 scripts/run_benchmarks.py \
+    --model "google/gemma-2b" \
+    --batch_size 16 \
+    --max_examples 100  # Limit dataset size for testing
 ```
 
-Each JSONL line typically includes:
-
-* Input prompt
-* Model output (raw prediction)
-* Ground truth / reference
-* Evaluation metrics (e.g., exact match, pass\@k)
-* Metadata (e.g., instance ID, language, model config)
-
-This format supports post-hoc error analysis and reproducibility.
-
----
-
-### 🖥️ **Console Output**
-
-At the end of an evaluation run, results are printed to the terminal in a **Markdown-style table** showing model performance across all selected benchmarks.
-
-Example:
-
-```
-| Model           | Task Group       | Benchmark  | Score   |
-|----------------|------------------|------------|---------|
-| gemma-2b        | MMLU             | MMLU       | 44.7%   |
-| gemma-2b        | CODE GENERATION  | HumanEval  | 18.2%   |
+### **Debug Mode**
+```bash
+# Enable detailed logging
+python3 scripts/run_benchmarks.py \
+    --model "google/gemma-2b" \
+    --log_level DEBUG \
+    --save_detailed true
 ```
 
 ---
 
-### 🧵 **Worker Logs**
+## **🤝 Contributing**
 
-Each GPU worker process outputs logs in real time, with each log message prefixed by worker ID and GPU ID for easy debugging:
+We welcome contributions from the community! Here's how you can help:
 
+### **🐛 Bug Reports**
+- Use our [issue template](https://github.com/your-org/eka-eval/issues/new?template=bug_report.md)
+- Include error logs, model names, and reproduction steps
+- Test with minimal examples when possible
+
+### **✨ Feature Requests**
+- Propose new benchmarks or evaluation metrics
+- Suggest performance improvements
+- Request additional language support
+
+### **🔧 Development**
+```bash
+# Fork the repository
+git clone https://github.com/your-username/eka-eval.git
+cd eka-eval
+
+# Create feature branch
+git checkout -b feature/amazing-feature
+
+# Make changes and test
+python3 -m pytest tests/
+
+# Submit pull request
 ```
-[Worker 0 (GPU 0)] Loading model: google/gemma-2b
-[Worker 0 (GPU 0)] Running benchmark: MMLU
+
+### **📚 Documentation**
+- Improve README examples
+- Add benchmark documentation
+- Create tutorial notebooks
+
+---
+
+## **📄 License**
+
+This project is licensed under the **Apache 2.0 License** - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## **📚 Citation**
+
+If you use eka-eval in your research, please cite:
+
+```bibtex
+@software{eka_eval_2024,
+  title={eka-eval: The Unified LLM Evaluation Framework for India and the World},
+  author={EKA Team},
+  year={2024},
+  url={https://github.com/your-org/eka-eval},
+  version={1.0}
+}
 ```
 
-These logs include:
+---
 
-* Model/tokenizer loading status
-* Dataset loading and preprocessing
-* Evaluation progress per benchmark
-* Any encountered warnings or errors
+## **🔗 References & Resources**
+
+### **Official Benchmark Papers**
+- [MMLU](https://arxiv.org/abs/2009.03300) - Hendrycks et al., ICLR 2021
+- [GSM8K](https://arxiv.org/abs/2110.14168) - Cobbe et al., 2021
+- [HumanEval](https://arxiv.org/abs/2107.03374) - Chen et al., 2021
+- [BBH](https://arxiv.org/abs/2210.09261) - Suzgun et al., 2022
+- [AGIEval](https://arxiv.org/abs/2304.06364) - Zhong et al., 2023
+
+### **Indic Language Resources**
+- [AI4Bharat](https://ai4bharat.org/) - IndicNLP toolkit and datasets
+- [MILU](https://github.com/AI4Bharat/MILU) - Multilingual Indic understanding
+- [IndicGLUE](https://indicnlp.ai4bharat.org/indic-glue/) - Indic language evaluation
+
+### **Related Projects**
+- [Hugging Face Evaluate](https://huggingface.co/docs/evaluate) - Evaluation library
+- [LM Evaluation Harness](https://github.com/EleutherAI/lm-evaluation-harness) - Alternative framework
+- [OpenCompass](https://github.com/InternLM/opencompass) - Comprehensive LLM evaluation
 
 ---
 
-### 🗃️ **Raw Scores**
+## **🌟 Project Ethos**
 
-All reported results are **raw and per-task**, with no manual aggregation. Metrics include:
+### **🔓 Open Source**
+- All code and evaluation protocols are freely available
+- Transparent methodology with detailed documentation
+- Community-driven development and improvement
 
-* **Accuracy**: For multiple-choice and classification tasks
-* **F1 / Exact Match (EM)**: For reading comprehension and QA tasks (e.g., XQuAD-IN, BoolQ)
-* **Pass\@1 / Pass\@k**: For code generation tasks (e.g., HumanEval, MBPP)
-* **BLEU / ChrF**: For translation tasks (e.g., Flores-IN)
-* **Task-specific**: Metrics defined by custom benchmark logic (e.g., NeedleRecall for Multi-Needle)
+### **⚖️ Ethical AI**
+- Fair and unbiased evaluation practices
+- Privacy-preserving evaluation methods
+- Responsible AI development guidelines
 
----
+### **🇮🇳 India-First Approach**
+- Comprehensive coverage of Indian languages
+- Cultural and linguistic sensitivity in evaluation
+- Supporting the growth of Indic AI capabilities
 
----
-## 🛠️ Contribute
-
-### 🧪 Testing and Feedback
-
-We welcome contributions from the community to help test and improve this library.  
-If you encounter any issues or have suggestions for enhancements, please feel free to [open an issue](https://github.com/your-org/eka-eval/issues) on the GitHub repository.
-
-Your feedback helps make **eka-eval** better for everyone!
-
----
-
-## **References**
-
-- [EKA Project](https://eka.soket.ai/)
-- [Hugging Face Datasets](https://huggingface.co/datasets)
-- [BBH Official](https://github.com/suzgunmirac/BIG-Bench-Hard)
-- [MMLU Official](https://github.com/hendrycks/test)
-- [AGIEval Official](https://github.com/THUDM/AGIEval)
-- [MILU Benchmark](https://github.com/AI4Bharat/MILU)
-- [IndicGenBench](https://github.com/AI4Bharat/IndicGenBench)
+### **🔬 Scientific Rigor**
+- Reproducible evaluation protocols
+- Standardized metrics and reporting
+- Peer-reviewed benchmark implementations
 
 ---
 
-## **Project Ethos**
-
-- **Open-source**: All code and model weights are freely available.
-- **Ethical**: Prioritizes fairness, transparency, and privacy.
-- **India-first**: Benchmarks and models for all Indian languages and use-cases.
-- **Community-driven**: Contributions and feedback are welcome.
-
----
-
-**eka-eval: The open, ethical, and comprehensive LLM benchmarking suite.**
-
----
-
+<div align="center">
+  <h3>🚀 <strong>eka-eval: Powering the Future of AI Evaluation</strong> 🚀</h3>
+  <p><em>Open • Ethical • Comprehensive • India-First</em></p>
+  
+  <p>
+    <a href="https://eka.soket.ai">🌐 Website</a> •
+    <a href="https://discord.gg/pQaFJ857">💬 Discord</a> •
+    <a href="https://github.com/your-org/eka-eval/issues">🐛 Issues</a> •
+    <a href="https://github.com/your-org/eka-eval/discussions">💡 Discussions</a>
+  </p>
+</div>
