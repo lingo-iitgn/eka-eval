@@ -1,0 +1,55 @@
+{
+  "mmlu_in_0shot": {
+    "template": "प्रश्न: {question}\n\nविकल्प:\n{choices_str}\n\nसही उत्तर का अक्षर (A, B, C, या D) क्या है?\nउत्तर:",
+    "description": "Zero-shot MMLU-Indic prompt in Hindi"
+  },
+  "mmlu_in_english": {
+    "template": "Question: {question}\n\nChoices:\n{choices_str}\n\nWhat is the letter of the correct answer (A, B, C, or D)?\nAnswer:",
+    "description": "English version for MMLU-Indic"
+  },
+  "mmlu_in_detailed": {
+    "template": "निम्नलिखित बहुविकल्पीय प्रश्न का उत्तर दें। सबसे उपयुक्त विकल्प का अक्षर चुनें।\n\nप्रश्न: {question}\n\nविकल्प:\n{choices_str}\n\nकृपया केवल सही उत्तर का अक्षर (A, B, C, या D) लिखें:\nउत्तर:",
+    "description": "Detailed MMLU-Indic prompt with clear instructions"
+  },
+  "mmlu_in_5shot": {
+    "template_prefix": "निम्नलिखित बहुविकल्पीय प्रश्नों के उत्तर दें। सबसे उपयुक्त विकल्प का अक्षर चुनें।\n\n",
+    "few_shot_example_template": "प्रश्न: {question}\n\nविकल्प:\n{choices_str}\n\nउत्तर: {answer_letter}",
+    "few_shot_separator": "\n\n",
+    "template_suffix": "प्रश्न: {question}\n\nविकल्प:\n{choices_str}\n\nउत्तर:",
+    "description": "Few-shot MMLU-Indic prompt template"
+  },
+  "language_specific_prompts": {
+    "hi": "प्रश्न: {question}\n\nविकल्प:\n{choices_str}\n\nसही उत्तर का अक्षर (A, B, C, या D) क्या है?\nउत्तर:",
+    "en": "Question: {question}\n\nChoices:\n{choices_str}\n\nWhat is the letter of the correct answer (A, B, C, or D)?\nAnswer:",
+    "bn": "প্রশ্ন: {question}\n\nবিকল্প:\n{choices_str}\n\nসঠিক উত্তরের অক্ষর (A, B, C, বা D) কী?\nউত্তর:",
+    "gu": "પ્રશ્ન: {question}\n\nવિકલ્પો:\n{choices_str}\n\nસાચા જવાબનો અક્ષર (A, B, C, કે D) શું છે?\nજવાબ:",
+    "default": "प्रश्न: {question}\n\nविकल्प:\n{choices_str}\n\nसही उत्तर का अक्षर (A, B, C, या D) क्या है?\nउत्तर:"
+  },
+  "hindi_to_english_mapping": {
+    "ए": "A", "अ": "A", "ए.": "A", "अ.": "A",
+    "बी": "B", "ब": "B", "बी.": "B", "ब.": "B",
+    "सी": "C", "स": "C", "सी.": "C", "स.": "C", 
+    "डी": "D", "द": "D", "डी.": "D", "द.": "D"
+  },
+  "target_languages": ["hi", "bn", "kn", "en", "gu", "ml", "mr", "or", "pa", "ta", "te"],
+  "default_few_shot_examples_mmlu_in": [
+    {
+      "question": "भारत की राजधानी क्या है?",
+      "choices": ["मुंबई", "दिल्ली", "कोलकाता", "चेन्नई"],
+      "choices_str": "A. मुंबई\nB. दिल्ली\nC. कोलकाता\nD. चेन्नई",
+      "answer_letter": "B"
+    },
+    {
+      "question": "गुरुत्वाकर्षण का नियम किसने दिया?",
+      "choices": ["आइंस्टाइन", "न्यूटन", "गैलीलियो", "केप्लर"],
+      "choices_str": "A. आइंस्टाइन\nB. न्यूटन\nC. गैलीलियो\nD. केप्लर",
+      "answer_letter": "B"
+    },
+    {
+      "question": "DNA का पूरा नाम क्या है?",
+      "choices": ["डीऑक्सीराइबोन्यूक्लिक एसिड", "डायरेक्ट न्यूक्लिक एसिड", "डाइनैमिक न्यूक्लिक एसिड", "डेटा न्यूक्लिक एसिड"],
+      "choices_str": "A. डीऑक्सीराइबोन्यूक्लिक एसिड\nB. डायरेक्ट न्यूक्लिक एसिड\nC. डाइनैमिक न्यूक्लिक एसिड\nD. डेटा न्यूक्लिक एसिड",
+      "answer_letter": "A"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "commonsenseqa_0shot": {
+    "template": "Answer the following commonsense question by selecting the most appropriate choice.\n\nQuestion: {question}\n\nChoices:\n{choices_str}\n\nAnswer:",
+    "description": "Zero-shot CommonsenseQA prompt"
+  },
+  "commonsenseqa_0shot_simple": {
+    "template": "Question: {question}\n\n{choices_str}\n\nAnswer:",
+    "description": "Simple CommonsenseQA prompt"
+  },
+  "commonsenseqa_5shot": {
+    "template_prefix": "Answer the following commonsense questions by selecting the most appropriate choice.\n\n",
+    "few_shot_example_template": "Question: {question}\n\nChoices:\n{choices_str}\n\nAnswer: {answer_letter}",
+    "few_shot_separator": "\n\n",
+    "template_suffix": "Question: {question}\n\nChoices:\n{choices_str}\n\nAnswer:",
+    "description": "Few-shot CommonsenseQA prompt template"
+  },
+  "commonsenseqa_7shot": {
+    "template_prefix": "Answer the following commonsense questions by selecting the most appropriate choice.\n\n",
+    "few_shot_example_template": "Question: {question}\n\nChoices:\n{choices_str}\n\nAnswer: {answer_letter}",
+    "few_shot_separator": "\n\n",
+    "template_suffix": "Question: {question}\n\nChoices:\n{choices_str}\n\nAnswer:",
+    "description": "7-shot CommonsenseQA prompt template"
+  },
+  "commonsenseqa_cot": {
+    "template": "Answer the following commonsense question by thinking step by step.\n\nQuestion: {question}\n\nChoices:\n{choices_str}\n\nLet me think about this step by step:\n1. I need to understand what the question is asking\n2. I'll consider each choice and its relevance\n3. I'll select the most logical answer\n\nThinking:",
+    "description": "Chain-of-thought CommonsenseQA prompt"
+  },
+  "default_few_shot_examples_commonsenseqa": [
+    {
+      "question": "What do people use to absorb body odor?",
+      "choices": ["deodorant", "perfume", "cologne", "soap", "water"],
+      "answer_letter": "A"
+    },
+    {
+      "question": "If you want to write a letter, what tool would you primarily use?",
+      "choices": ["hammer", "pen", "saw", "wrench", "screwdriver"],
+      "answer_letter": "B"
+    },
+    {
+      "question": "What is the primary purpose of a refrigerator?",
+      "choices": ["heating food", "storing clothes", "keeping food cold", "washing dishes", "cooking meals"],
+      "answer_letter": "C"
+    },
+    {
+      "question": "What object is typically used for drinking water?",
+      "choices": ["plate", "bowl", "fork", "cup", "knife"],
+      "answer_letter": "D"
+    },
+    {
+      "question": "Where would you most likely find a pillow?",
+      "choices": ["kitchen", "bathroom", "garage", "basement", "bedroom"],
+      "answer_letter": "E"
+    },
+    {
+      "question": "What do you typically use to cut paper?",
+      "choices": ["scissors", "hammer", "spoon", "brush", "pillow"],
+      "answer_letter": "A"
+    },
+    {
+      "question": "What do you use to clean your teeth?",
+      "choices": ["soap", "toothbrush", "towel", "comb", "fork"],
+      "answer_letter": "B"
+    },
+    {
+      "question": "What would you most likely use to measure temperature?",
+      "choices": ["ruler", "thermometer", "scale", "clock", "calculator"],
+      "answer_letter": "B"
+    },
+    {
+      "question": "Where do you typically store food to keep it fresh for a long time?",
+      "choices": ["oven", "dishwasher", "microwave", "freezer", "toaster"],
+      "answer_letter": "D"
+    },
+    {
+      "question": "What is the main purpose of an umbrella?",
+      "choices": ["decoration", "protection from rain", "measuring distance", "cooking food", "cleaning windows"],
+      "answer_letter": "B"
+    }
+  ]
+}

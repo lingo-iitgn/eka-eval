@@ -1,0 +1,79 @@
+{
+  "winogrande_likelihood": {
+    "template": "{completed_sentence}",
+    "description": "Likelihood-based Winogrande prompt for comparing sentence completions"
+  },
+  "winogrande_generation": {
+    "template": "Fill in the blank with the most appropriate option:\n\nSentence: {sentence}\n1) {option1}\n2) {option2}\nAnswer:",
+    "description": "Generation-based Winogrande prompt"
+  },
+  "winogrande_generation_simple": {
+    "template": "Sentence: {sentence}\n1) {option1}\n2) {option2}\nAnswer:",
+    "description": "Simple generation-based Winogrande prompt"
+  },
+  "winogrande_5shot_likelihood": {
+    "template_prefix": "",
+    "few_shot_example_template": "{correct_completion}",
+    "few_shot_separator": "\n\n",
+    "template_suffix": "{completed_sentence}",
+    "description": "Few-shot likelihood-based Winogrande prompt template"
+  },
+  "winogrande_5shot_generation": {
+    "template_prefix": "Fill in the blank with the most appropriate option:\n\n",
+    "few_shot_example_template": "Sentence: {sentence}\n1) {option1}\n2) {option2}\nAnswer: {answer}",
+    "few_shot_separator": "\n\n",
+    "template_suffix": "Sentence: {sentence}\n1) {option1}\n2) {option2}\nAnswer:",
+    "description": "Few-shot generation-based Winogrande prompt template"
+  },
+  "default_few_shot_examples_winogrande": [
+    {
+      "sentence": "The trophy doesn't fit into the brown suitcase because _____ is too large.",
+      "option1": "the trophy",
+      "option2": "the suitcase",
+      "answer": "1",
+      "correct_completion": "The trophy doesn't fit into the brown suitcase because the trophy is too large."
+    },
+    {
+      "sentence": "Joan made sure to thank Susan for all the help she had given her when _____ was going through a difficult time.",
+      "option1": "Joan",
+      "option2": "Susan",
+      "answer": "2",
+      "correct_completion": "Joan made sure to thank Susan for all the help she had given her when Susan was going through a difficult time."
+    },
+    {
+      "sentence": "The city councilmen refused the demonstrators a permit because _____ advocated violence.",
+      "option1": "the city councilmen",
+      "option2": "the demonstrators",
+      "answer": "2",
+      "correct_completion": "The city councilmen refused the demonstrators a permit because the demonstrators advocated violence."
+    },
+    {
+      "sentence": "The delivery truck crashed into the garden fence because _____ was going too fast.",
+      "option1": "the truck",
+      "option2": "the fence",
+      "answer": "1",
+      "correct_completion": "The delivery truck crashed into the garden fence because the truck was going too fast."
+    },
+    {
+      "sentence": "The students were excited about the field trip, but the teachers were worried because _____ had to supervise everyone.",
+      "option1": "the students",
+      "option2": "the teachers",
+      "answer": "2",
+      "correct_completion": "The students were excited about the field trip, but the teachers were worried because the teachers had to supervise everyone."
+    },
+    {
+      "sentence": "The chef added salt to the soup because _____ needed more flavor.",
+      "option1": "the chef",
+      "option2": "the soup",
+      "answer": "2",
+      "correct_completion": "The chef added salt to the soup because the soup needed more flavor."
+    },
+    {
+      "sentence": "The mechanic repaired the car quickly because _____ had experience with that model.",
+      "option1": "the mechanic",
+      "option2": "the car",
+      "answer": "1",
+      "correct_completion": "The mechanic repaired the car quickly because the mechanic had experience with that model."
+    }
+  ]
+}

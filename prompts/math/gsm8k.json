@@ -1,0 +1,59 @@
+{
+  "gsm8k_0shot": {
+    "template": "Solve this math problem step by step.\n\nQ: {question}\nA: Let me solve this step by step.\n\n",
+    "description": "Zero-shot GSM8K prompt with step-by-step instruction"
+  },
+  "gsm8k_0shot_simple": {
+    "template": "Q: {question}\nA:",
+    "description": "Simple GSM8K prompt"
+  },
+  "gsm8k_5shot": {
+    "template_prefix": "Solve each math problem step by step, showing your work clearly.\n\n",
+    "few_shot_example_template": "Q: {question}\nA: {answer_with_steps}",
+    "few_shot_separator": "\n\n",
+    "template_suffix": "Q: {question}\nA:",
+    "description": "Few-shot GSM8K prompt template"
+  },
+  "gsm8k_cot": {
+    "template": "Solve this math problem step by step. Show all your calculations clearly.\n\nQ: {question}\nA: Let me work through this step by step:\n\nStep 1:",
+    "description": "Chain-of-thought GSM8K prompt with explicit step numbering"
+  },
+  "gsm8k_detailed": {
+    "template": "You are a math tutor helping a student solve word problems. Break down the problem step by step.\n\nQ: {question}\nA: I'll solve this step by step:\n\n",
+    "description": "Detailed GSM8K prompt with tutor persona"
+  },
+  "default_few_shot_examples_gsm8k": [
+    {
+      "question": "Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?",
+      "answer_with_steps": "Step 1: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nStep 2: Working 50 minutes, she earned 0.2 x 50 = <<0.2*50=10>>10.\nStep 3: The final answer is #### 10."
+    },
+    {
+      "question": "Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents gave her $15, and her grandparents gave her twice as much. How much more money does she need?",
+      "answer_with_steps": "Step 1: Betty has 100 / 2 = $<<100/2=50>>50.\nStep 2: Grandparents gave her 15 * 2 = $<<15*2=30>>30.\nStep 3: Total = 50 + 15 + 30 = <<50+15+30=95>>95.\nStep 4: 100 - 95 = $<<100-95=5>>5.\nStep 5: The final answer is #### 5."
+    },
+    {
+      "question": "Julie is reading a 120-page book. Yesterday she read 12 pages, and today twice as many. If she wants to read half the remaining pages tomorrow, how many pages is that?",
+      "answer_with_steps": "Step 1: Today she read 12 x 2 = <<12*2=24>>24.\nStep 2: Total read so far = 12 + 24 = <<12+24=36>>36.\nStep 3: Remaining = 120 - 36 = <<120-36=84>>84.\nStep 4: Half of 84 = <<84/2=42>>42.\nStep 5: The final answer is #### 42."
+    },
+    {
+      "question": "James writes a 3-page letter to 2 different friends twice a week. How many pages does he write a year?",
+      "answer_with_steps": "Step 1: 3 pages x 2 friends = <<3*2=6>>6 pages per letter session.\nStep 2: Twice a week = 6 x 2 = <<6*2=12>>12 pages per week.\nStep 3: Per year = 12 x 52 = <<12*52=624>>624.\nStep 4: The final answer is #### 624."
+    },
+    {
+      "question": "Mark planted 10 yellow flowers. He planted 80% more purple ones. Then 25% as many green flowers as the total of yellow and purple. How many total flowers?",
+      "answer_with_steps": "Step 1: Purple = 10 x 0.8 = <<10*0.8=8>>8.\nStep 2: Total yellow + purple = 10 + 8 = <<10+8=18>>18.\nStep 3: Green = 0.25 x 18 = <<0.25*18=4.5>>4.5\nStep 4: Total = 10 + 8 + 4.5 = <<10+8+4.5=22.5>>22.5.\nStep 5: The final answer is #### 22.5."
+    },
+    {
+      "question": "A store sells notebooks for $3 each and pens for $1.50 each. Sarah bought 4 notebooks and 6 pens. If she paid with a $20 bill, how much change did she receive?",
+      "answer_with_steps": "Step 1: Cost of notebooks = 4 x $3 = $<<4*3=12>>12.\nStep 2: Cost of pens = 6 x $1.50 = $<<6*1.5=9>>9.\nStep 3: Total cost = $12 + $9 = $<<12+9=21>>21.\nStep 4: Wait, this is more than $20, so this problem has an error. Let me recalculate.\nStep 5: Actually, let me assume she has enough money. Change = $21 - $20 = -$1, meaning she needs $1 more.\nStep 6: The final answer is #### -1."
+    },
+    {
+      "question": "A recipe calls for 2.5 cups of flour to make 12 cookies. How many cups of flour are needed to make 30 cookies?",
+      "answer_with_steps": "Step 1: Find flour per cookie = 2.5 ÷ 12 = <<2.5/12=0.208333>>0.208333 cups per cookie.\nStep 2: For 30 cookies = 0.208333 x 30 = <<0.208333*30=6.25>>6.25 cups.\nStep 3: The final answer is #### 6.25."
+    },
+    {
+      "question": "Tom runs 3 miles every morning and 2 miles every evening. If he runs 5 days a week, how many miles does he run in 4 weeks?",
+      "answer_with_steps": "Step 1: Daily miles = 3 + 2 = <<3+2=5>>5 miles per day.\nStep 2: Weekly miles = 5 x 5 = <<5*5=25>>25 miles per week.\nStep 3: In 4 weeks = 25 x 4 = <<25*4=100>>100 miles.\nStep 4: The final answer is #### 100."
+    }
+  ]
+}

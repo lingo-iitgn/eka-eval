@@ -1,0 +1,87 @@
+{
+  "xorqa_0shot": {
+    "template": "You are an expert in answering factual questions. Answer the following question accurately and concisely.\n\nQuestion: {question}\n\nAnswer:",
+    "description": "Zero-shot XOR-QA prompt for open-domain question answering"
+  },
+  "xorqa_0shot_simple": {
+    "template": "Question: {question}\nAnswer:",
+    "description": "Simple XOR-QA prompt"
+  },
+  "xorqa_5shot": {
+    "template_prefix": "You are an expert in answering factual questions. Answer each question accurately and concisely.\n\n",
+    "few_shot_example_template": "Question: {question}\nAnswer: {answer}",
+    "few_shot_separator": "\n\n",
+    "template_suffix": "Question: {question}\nAnswer:",
+    "description": "Few-shot XOR-QA prompt template"
+  },
+  "xorqa_cot": {
+    "template": "You are an expert in answering factual questions. Think through this step by step.\n\nQuestion: {question}\n\nLet me think about this:\n1. First, I'll identify what the question is asking\n2. Then, I'll recall relevant facts\n3. Finally, I'll provide a clear, accurate answer\n\nAnswer:",
+    "description": "Chain-of-thought XOR-QA prompt"
+  },
+  "default_few_shot_examples_xorqa": [
+    {
+      "question": "What is the capital of France?",
+      "answer": "Paris"
+    },
+    {
+      "question": "Who wrote the novel 'Pride and Prejudice'?",
+      "answer": "Jane Austen"
+    },
+    {
+      "question": "What is the largest planet in our solar system?",
+      "answer": "Jupiter"
+    },
+    {
+      "question": "In which year did World War II end?",
+      "answer": "1945"
+    },
+    {
+      "question": "What is the chemical symbol for gold?",
+      "answer": "Au"
+    }
+  ],
+  "default_few_shot_examples_xorqa_hindi": [
+    {
+      "question": "फ्रांस की राजधानी क्या है?",
+      "answer": "पेरिस"
+    },
+    {
+      "question": "'प्राइड एंड प्रेज्यूडिस' उपन्यास किसने लिखा?",
+      "answer": "जेन ऑस्टन"
+    },
+    {
+      "question": "हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?",
+      "answer": "बृहस्पति"
+    },
+    {
+      "question": "द्वितीय विश्व युद्ध कब समाप्त हुआ?",
+      "answer": "1945"
+    },
+    {
+      "question": "सोने का रासायनिक प्रतीक क्या है?",
+      "answer": "Au"
+    }
+  ],
+  "default_few_shot_examples_xorqa_bengali": [
+    {
+      "question": "ফ্রান্সের রাজধানী কী?",
+      "answer": "প্যারিস"
+    },
+    {
+      "question": "'প্রাইড অ্যান্ড প্রেজুডিস' উপন্যাসটি কে লিখেছেন?",
+      "answer": "জেন অস্টেন"
+    },
+    {
+      "question": "আমাদের সৌরজগতের বৃহত্তম গ্রহ কোনটি?",
+      "answer": "বৃহস্পতি"
+    },
+    {
+      "question": "দ্বিতীয় বিশ্বযুদ্ধ কত সালে শেষ হয়?",
+      "answer": "1945"
+    },
+    {
+      "question": "স্বর্ণের রাসায়নিক প্রতীক কী?",
+      "answer": "Au"
+    }
+  ]
+}

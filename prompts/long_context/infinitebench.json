@@ -1,0 +1,36 @@
+{
+  "infinitebench_qa_0shot": {
+    "template": "Read the following text carefully and answer the question.\n\n{context}\n\nQuestion: {question}\nAnswer:",
+    "description": "Zero-shot English QA prompt for long context"
+  },
+  "infinitebench_choice_0shot": {
+    "template": "{input}\nSelect the best answer from the choices provided. Respond with only the letter (A, B, C, or D).\nAnswer:",
+    "description": "Zero-shot English multiple choice prompt"
+  },
+  "infinitebench_qa_detailed": {
+    "template": "Carefully read the long text below and answer the question at the end with a complete and accurate response.\n\n{context}\n\nQuestion: {question}\n\nProvide a detailed answer:",
+    "description": "Detailed English QA prompt for long context"
+  },
+  "infinitebench_choice_detailed": {
+    "template": "Read the following text and question carefully. Select the best answer from the multiple choice options.\n\n{input}\n\nChoose the correct answer (A, B, C, or D):",
+    "description": "Detailed English multiple choice prompt"
+  },
+  "task_specific_prompts": {
+    "longdialogue_qa_eng": "Read the following dialogue carefully and answer the question:\n\n{context}\n\nQuestion: {question}\nAnswer:",
+    "longbook_qa_eng": "Read the following text and answer the question:\n\n{context}\n\nQuestion: {question}\nAnswer:",
+    "longbook_choice_eng": "{input}\nBased on the text above, select the best answer (A, B, C, or D):\nAnswer:"
+  },
+  "default_few_shot_examples_infinitebench": [
+    {
+      "task": "longdialogue_qa_eng",
+      "context": "Speaker A: I went to the store yesterday. Speaker B: What did you buy? Speaker A: I bought some apples and oranges.",
+      "question": "What did Speaker A buy?",
+      "answer": "Apples and oranges"
+    },
+    {
+      "task": "longbook_choice_eng", 
+      "input": "The cat sat on the mat. The mat was red. Question: What color was the mat? A) Blue B) Red C) Green D) Yellow",
+      "answer": "B"
+    }
+  ]
+}

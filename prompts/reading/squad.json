@@ -1,0 +1,121 @@
+{
+  "squad_0shot": {
+    "template": "Based on the following passage, please answer the question.\n\nPassage: {context}\n\nQuestion: {question}\n\nAnswer:",
+    "description": "Zero-shot SQuAD prompt for reading comprehension"
+  },
+  "squad_0shot_simple": {
+    "template": "Context: {context}\n\nQuestion: {question}\n\nAnswer:",
+    "description": "Simple SQuAD prompt format"
+  },
+  "squad_instructional": {
+    "template": "Read the passage carefully and answer the question based only on the information provided.\n\nPassage: {context}\n\nQuestion: {question}\n\nProvide a concise answer:",
+    "description": "Instructional SQuAD prompt"
+  },
+  "squad_3shot": {
+    "template_prefix": "You are an expert at reading comprehension. Answer questions based on the given passages. Here are some examples:\n\n",
+    "few_shot_example_template": "Passage: {context}\nQuestion: {question}\nAnswer: {answer}",
+    "few_shot_separator": "\n\n",
+    "template_suffix": "Now answer this question:\n\nPassage: {context}\n\nQuestion: {question}\n\nAnswer:",
+    "description": "Few-shot SQuAD prompt template"
+  },
+  "quac_0shot": {
+    "template": "Answer the question based on the context.\n\nContext: {context}\n\nQuestion: {question}\n\nAnswer:",
+    "description": "Zero-shot QuAC prompt for conversational reading comprehension"
+  },
+  "quac_conversational": {
+    "template": "You are having a conversation about the following text. Answer the question based on the context provided.\n\nContext: {context}\n\nQuestion: {question}\n\nAnswer:",
+    "description": "Conversational QuAC prompt"
+  },
+  "quac_3shot": {
+    "template_prefix": "You are answering questions in a conversation about a text. Here are some examples:\n\n",
+    "few_shot_example_template": "Context: {context}\nQuestion: {question}\nAnswer: {answer}",
+    "few_shot_separator": "\n\n",
+    "template_suffix": "Continue the conversation:\n\nContext: {context}\n\nQuestion: {question}\n\nAnswer:",
+    "description": "Few-shot QuAC prompt template"
+  },
+  "quac_with_history": {
+    "template": "Based on the context and previous conversation, answer the question.\n\nContext: {context}\n\nPrevious conversation:\n{conversation_history}\n\nCurrent question: {question}\n\nAnswer:",
+    "description": "QuAC prompt with conversation history"
+  },
+  "default_few_shot_examples_squad": [
+    {
+      "context": "The Amazon rainforest, also known in English as Amazonia or the Amazon Jungle, is a moist broadleaf forest that covers most of the Amazon basin of South America. This basin encompasses 7,000,000 square kilometers (2,700,000 sq mi), of which 5,500,000 square kilometers (2,100,000 sq mi) are covered by the rainforest.",
+      "question": "How many square kilometers does the Amazon basin cover?",
+      "answer": "7,000,000 square kilometers"
+    },
+    {
+      "context": "Oxygen is a chemical element with symbol O and atomic number 8. It is a member of the chalcogen group on the periodic table and is a highly reactive nonmetal and oxidizing agent that readily forms compounds with most other elements.",
+      "question": "What is the atomic number of oxygen?",
+      "answer": "8"
+    },
+    {
+      "context": "The iPhone was released by Apple Inc. on June 29, 2007. It was the first smartphone to use a multi-touch interface and was initially available only in the United States through AT&T.",
+      "question": "When was the iPhone first released?",
+      "answer": "June 29, 2007"
+    }
+  ],
+  "default_few_shot_examples_quac": [
+    {
+      "context": "Marie Curie was a Polish-born physicist and chemist who conducted pioneering research on radioactivity. She was the first woman to win a Nobel Prize, the first person and only woman to win Nobel Prizes in two different sciences.",
+      "question": "What was Marie Curie known for?",
+      "answer": "pioneering research on radioactivity"
+    },
+    {
+      "context": "The Great Wall of China is a series of fortifications made of stone, brick, tamped earth, wood, and other materials. It was built along the northern borders of China to protect the Chinese states against invasions.",
+      "question": "What was the purpose of the Great Wall?",
+      "answer": "to protect Chinese states against invasions"
+    },
+    {
+      "context": "Basketball was invented by Dr. James Naismith in December 1891 in Springfield, Massachusetts. He was trying to create an indoor winter activity for his students at the YMCA International Training School.",
+      "question": "Who invented basketball?",
+      "answer": "Dr. James Naismith"
+    }
+  ],
+  "evaluation_settings": {
+    "default_max_new_tokens": 64,
+    "default_batch_size": 8,
+    "squad_settings": {
+      "max_new_tokens": 64,
+      "generation_params": {
+        "do_sample": false,
+        "temperature": 0.0,
+        "top_p": 1.0
+      }
+    },
+    "quac_settings": {
+      "max_new_tokens": 64,
+      "generation_params": {
+        "do_sample": false,
+        "temperature": 0.0,
+        "top_p": 1.0
+      }
+    },
+    "checkpoint_settings": {
+      "save_interval_batches": 50,
+      "resume_from_checkpoint": true
+    }
+  },
+  "answer_extraction_patterns": {
+    "common_prefixes": [
+      "Answer:",
+      "The answer is",
+      "Based on the passage,",
+      "According to the context,"
+    ],
+    "stop_sequences": [
+      "\n\nQuestion:",
+      "\n\nContext:",
+      "\n\nPassage:",
+      "Question:",
+      "Context:",
+      "Passage:"
+    ]
+  },
+  "normalization_settings": {
+    "remove_articles": true,
+    "remove_punctuation": true,
+    "lowercase": true,
+    "remove_extra_whitespace": true,
+    "articles_to_remove": ["a", "an", "the"]
+  }
+}

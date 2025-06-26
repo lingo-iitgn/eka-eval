@@ -1,0 +1,126 @@
+{
+  "multiple_0shot": {
+    "template": "Complete this {language} function. Write only the working implementation inside the function:\n\n{problem_prompt}",
+    "description": "Zero-shot MultiPL-E prompt for code completion"
+  },
+  "multiple_0shot_simple": {
+    "template": "{problem_prompt}",
+    "description": "Simple MultiPL-E prompt - just the function signature and docstring"
+  },
+  "multiple_0shot_focused": {
+    "template": "Implement the {language} function. Provide clean, working code:\n\n{problem_prompt}",
+    "description": "Focused zero-shot prompt for better code generation"
+  },
+  "multiple_3shot": {
+    "template_prefix": "You are an expert {language} programmer. Here are examples of how to complete functions:\n\n",
+    "few_shot_example_template": "{problem_prompt}{solution}",
+    "few_shot_separator": "\n\n",
+    "template_suffix": "Now complete this function with working code:\n\n{problem_prompt}",
+    "description": "Few-shot MultiPL-E prompt template"
+  },
+  "multiple_cot": {
+    "template": "Solve this {language} coding problem step by step:\n\n{problem_prompt}\n\n// Let me implement this step by step:\n",
+    "description": "Chain-of-thought MultiPL-E prompt"
+  },
+  "multiple_instruct": {
+    "template": "### Instruction:\nComplete the following {language} function according to its documentation:\n\n### Input:\n{problem_prompt}\n\n### Response:\n",
+    "description": "Instruction-following format for MultiPL-E"
+  },
+  "default_few_shot_examples_cpp": [
+    {
+      "problem_prompt": "bool has_close_elements(std::vector<float> numbers, float threshold) {\n",
+      "solution": "    for (int i = 0; i < numbers.size(); i++) {\n        for (int j = i + 1; j < numbers.size(); j++) {\n            if (std::abs(numbers[i] - numbers[j]) < threshold) {\n                return true;\n            }\n        }\n    }\n    return false;\n}\n"
+    },
+    {
+      "problem_prompt": "float truncate_number(float number) {\n",
+      "solution": "    return number - std::floor(number);\n}\n"
+    },
+    {
+      "problem_prompt": "std::vector<std::string> separate_paren_groups(std::string paren_string) {\n",
+      "solution": "    std::vector<std::string> result;\n    std::string current_group = \"\";\n    int depth = 0;\n    \n    for (char c : paren_string) {\n        if (c == '(') {\n            current_group += c;\n            depth++;\n        } else if (c == ')') {\n            current_group += c;\n            depth--;\n            if (depth == 0) {\n                result.push_back(current_group);\n                current_group = \"\";\n            }\n        }\n    }\n    return result;\n}\n"
+    }
+  ],
+  "default_few_shot_examples_java": [
+    {
+      "problem_prompt": "public boolean hasCloseElements(List<Float> numbers, float threshold) {\n",
+      "solution": "        for (int i = 0; i < numbers.size(); i++) {\n            for (int j = i + 1; j < numbers.size(); j++) {\n                float distance = Math.abs(numbers.get(i) - numbers.get(j));\n                if (distance < threshold) {\n                    return true;\n                }\n            }\n        }\n        return false;\n    }\n"
+    },
+    {
+      "problem_prompt": "public float truncateNumber(float number) {\n",
+      "solution": "        return number % 1.0f;\n    }\n"
+    }
+  ],
+  "default_few_shot_examples_js": [
+    {
+      "problem_prompt": "const hasCloseElements = (numbers, threshold) => {\n",
+      "solution": "    for (let i = 0; i < numbers.length; i++) {\n        for (let j = i + 1; j < numbers.length; j++) {\n            const distance = Math.abs(numbers[i] - numbers[j]);\n            if (distance < threshold) {\n                return true;\n            }\n        }\n    }\n    return false;\n}\n"
+    },
+    {
+      "problem_prompt": "const truncateNumber = (number) => {\n",
+      "solution": "    return number % 1.0;\n}\n"
+    }
+  ],
+  "default_few_shot_examples_ts": [
+    {
+      "problem_prompt": "function hasCloseElements(numbers: number[], threshold: number): boolean {\n",
+      "solution": "    for (let i = 0; i < numbers.length; i++) {\n        for (let j = i + 1; j < numbers.length; j++) {\n            const distance = Math.abs(numbers[i] - numbers[j]);\n            if (distance < threshold) {\n                return true;\n            }\n        }\n    }\n    return false;\n}\n"
+    },
+    {
+      "problem_prompt": "function truncateNumber(number: number): number {\n",
+      "solution": "    return number % 1.0;\n}\n"
+    }
+  ],
+  "default_few_shot_examples_go": [
+    {
+      "problem_prompt": "func HasCloseElements(numbers []float64, threshold float64) bool {\n",
+      "solution": "    for i := 0; i < len(numbers); i++ {\n        for j := i + 1; j < len(numbers); j++ {\n            distance := math.Abs(numbers[i] - numbers[j])\n            if distance < threshold {\n                return true\n            }\n        }\n    }\n    return false\n}\n"
+    },
+    {
+      "problem_prompt": "func TruncateNumber(number float64) float64 {\n",
+      "solution": "    return number - math.Floor(number)\n}\n"
+    }
+  ],
+  "default_few_shot_examples_cs": [
+    {
+      "problem_prompt": "public bool HasCloseElements(List<float> numbers, float threshold) {\n",
+      "solution": "        for (int i = 0; i < numbers.Count; i++) {\n            for (int j = i + 1; j < numbers.Count; j++) {\n                float distance = Math.Abs(numbers[i] - numbers[j]);\n                if (distance < threshold) {\n                    return true;\n                }\n            }\n        }\n        return false;\n    }\n"
+    },
+    {
+      "problem_prompt": "public float TruncateNumber(float number) {\n",
+      "solution": "        return number % 1.0f;\n    }\n"
+    }
+  ],
+  "default_few_shot_examples_php": [
+    {
+      "problem_prompt": "function has_close_elements($numbers, $threshold) {\n",
+      "solution": "    for ($i = 0; $i < count($numbers); $i++) {\n        for ($j = $i + 1; $j < count($numbers); $j++) {\n            $distance = abs($numbers[$i] - $numbers[$j]);\n            if ($distance < $threshold) {\n                return true;\n            }\n        }\n    }\n    return false;\n}\n"
+    },
+    {
+      "problem_prompt": "function truncate_number($number) {\n",
+      "solution": "    return $number - floor($number);\n}\n"
+    }
+  ],
+  "default_few_shot_examples_rs": [
+    {
+      "problem_prompt": "fn has_close_elements(numbers: Vec<f32>, threshold: f32) -> bool {\n",
+      "solution": "    for i in 0..numbers.len() {\n        for j in (i + 1)..numbers.len() {\n            let distance = (numbers[i] - numbers[j]).abs();\n            if distance < threshold {\n                return true;\n            }\n        }\n    }\n    false\n}\n"
+    },
+    {
+      "problem_prompt": "fn truncate_number(number: f32) -> f32 {\n",
+      "solution": "    number % 1.0\n}\n"
+    }
+  ],
+  "evaluation_settings": {
+    "default_max_new_tokens": 512,
+    "default_batch_size": 1,
+    "default_samples_per_task": 1,
+    "default_k_values": [1, 5, 10],
+    "generation_params": {
+      "do_sample": true,
+      "temperature": 0.1,
+      "top_p": 0.9,
+      "repetition_penalty": 1.1
+    },
+    "timeout_seconds": 30
+  }
+}

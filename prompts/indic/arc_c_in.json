@@ -1,0 +1,53 @@
+{
+  "arc_c_in_0shot": {
+    "template": "प्रश्न: {question}\n\nविकल्प:\n{choices_str}\n\nसही उत्तर का अक्षर (A, B, C, या D) क्या है?\nउत्तर:",
+    "description": "Zero-shot ARC-Challenge-Indic prompt in Hindi"
+  },
+  "arc_c_in_english": {
+    "template": "Question: {question}\n\nChoices:\n{choices_str}\n\nWhat is the letter of the correct answer (A, B, C, or D)?\nAnswer:",
+    "description": "English version for ARC-Challenge-Indic"
+  },
+  "arc_c_in_detailed": {
+    "template": "नीचे दिया गया विज्ञान का प्रश्न ध्यान से पढ़िए और सबसे उपयुक्त उत्तर चुनिए।\n\nप्रश्न: {question}\n\nविकल्प:\n{choices_str}\n\nकृपया केवल सही उत्तर का अक्षर (A, B, C, या D) लिखें:\nउत्तर:",
+    "description": "Detailed ARC-Challenge-Indic prompt with instructions"
+  },
+  "arc_c_in_5shot": {
+    "template_prefix": "निम्नलिखित विज्ञान के प्रश्नों के उत्तर दें। सबसे उपयुक्त विकल्प का अक्षर चुनें।\n\n",
+    "few_shot_example_template": "प्रश्न: {question}\n\nविकल्प:\n{choices_str}\n\nउत्तर: {answer_letter}",
+    "few_shot_separator": "\n\n",
+    "template_suffix": "प्रश्न: {question}\n\nविकल्प:\n{choices_str}\n\nउत्तर:",
+    "description": "Few-shot ARC-Challenge-Indic prompt template"
+  },
+  "language_specific_prompts": {
+    "hi": "प्रश्न: {question}\n\nविकल्प:\n{choices_str}\n\nसही उत्तर का अक्षर (A, B, C, या D) क्या है?\nउत्तर:",
+    "en": "Question: {question}\n\nChoices:\n{choices_str}\n\nWhat is the letter of the correct answer (A, B, C, or D)?\nAnswer:",
+    "bn": "প্রশ্ন: {question}\n\nবিকল্প:\n{choices_str}\n\nসঠিক উত্তরের অক্ষর (A, B, C, বা D) কী?\nউত্তর:",
+    "default": "प्रश्न: {question}\n\nविकल्प:\n{choices_str}\n\nसही उत्तर का अक्षर (A, B, C, या D) क्या है?\nउत्तर:"
+  },
+  "hindi_to_english_mapping": {
+    "ए": "A", "अ": "A", "ए.": "A", "अ.": "A",
+    "बी": "B", "ब": "B", "बी.": "B", "ब.": "B", 
+    "सी": "C", "स": "C", "सी.": "C", "स.": "C",
+    "डी": "D", "द": "D", "डी.": "D", "द.": "D"
+  },
+  "default_few_shot_examples_arc_c_in": [
+    {
+      "question": "पानी के उबलने का तापमान क्या है?",
+      "choices": ["50°C", "75°C", "100°C", "125°C"],
+      "choices_str": "A. 50°C\nB. 75°C\nC. 100°C\nD. 125°C",
+      "answer_letter": "C"
+    },
+    {
+      "question": "प्रकाश संश्लेषण की प्रक्रिया में कौन सी गैस निकलती है?",
+      "choices": ["कार्बन डाइऑक्साइड", "ऑक्सीजन", "नाइट्रोजन", "हाइड्रोजन"],
+      "choices_str": "A. कार्बन डाइऑक्साइड\nB. ऑक्सीजन\nC. नाइट्रोजन\nD. हाइड्रोजन",
+      "answer_letter": "B"
+    },
+    {
+      "question": "पृथ्वी के सबसे निकट कौन सा ग्रह है?",
+      "choices": ["मंगल", "शुक्र", "बुध", "बृहस्पति"],
+      "choices_str": "A. मंगल\nB. शुक्र\nC. बुध\nD. बृहस्पति",
+      "answer_letter": "B"
+    }
+  ]
+}

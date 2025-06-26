@@ -1,0 +1,78 @@
+{
+  "agieval_0shot": {
+    "template": "You are an expert in LSAT analytical reasoning. Analyze this problem step by step.\n\nQuestion:\n{question}\n\nChoices:\n{choices_str}\n\nAnalyze each option carefully and provide your answer as a single letter (A, B, C, D, or E).\n\nAnswer:",
+    "description": "Zero-shot AGIEval prompt with analysis instruction"
+  },
+  "agieval_0shot_simple": {
+    "template": "Question:\n{question}\n\n{choices_str}\n\nAnswer:",
+    "description": "Simple AGIEval prompt"
+  },
+  "agieval_5shot": {
+    "template_prefix": "You are an expert in LSAT analytical reasoning. Analyze each problem step by step.\n\n",
+    "few_shot_example_template": "Question:\n{question}\n\nChoices:\n{choices_str}\n\nAnswer: {answer_letter}",
+    "few_shot_separator": "\n\n",
+    "template_suffix": "Question:\n{question}\n\nChoices:\n{choices_str}\n\nAnswer:",
+    "description": "Few-shot AGIEval prompt template"
+  },
+  "agieval_cot": {
+    "template": "You are an expert in LSAT analytical reasoning. Think through this step by step.\n\nQuestion:\n{question}\n\nChoices:\n{choices_str}\n\nLet me think through this:\n1. First, I'll identify the constraints\n2. Then, I'll test each option\n3. Finally, I'll select the correct answer\n\nAnalysis:",
+    "description": "Chain-of-thought AGIEval prompt"
+  },
+  "default_few_shot_examples_agieval": [
+    {
+      "question": "A group of five friends—Alan, Brenda, Carlos, Dana, and Ethan—are seated in a row. Alan must sit immediately next to Brenda. Carlos cannot sit next to Ethan. If Dana is in the middle seat, which of the following must be true?",
+      "choices": [
+        "A. Alan is on the far left.",
+        "B. Brenda is to the immediate right of Alan.",
+        "C. Carlos is not next to Brenda.",
+        "D. Ethan is at one of the ends.",
+        "E. Dana is next to Carlos."
+      ],
+      "answer_letter": "D"
+    },
+    {
+      "question": "Three committees—X, Y, and Z—must be formed from seven employees. Each employee must serve on exactly one committee. Committee X must have at least two members. Committee Y cannot include both Alice and Bob. If Charlie is on committee Z, which of the following must be true?",
+      "choices": [
+        "A. Alice is on committee X.",
+        "B. Bob is on committee Y.",
+        "C. Committee X has exactly two members.",
+        "D. Charlie is the only member of committee Z.",
+        "E. Committee Y includes at least one member besides Alice and Bob."
+      ],
+      "answer_letter": "E"
+    },
+    {
+      "question": "A conference schedule includes five talks—A, B, C, D, and E—each in a different time slot. Talk A must be scheduled before B and C. Talk D cannot be scheduled last. If talk E is scheduled third, which of the following could be true?",
+      "choices": [
+        "A. Talk A is first.",
+        "B. Talk B is scheduled second.",
+        "C. Talk C is scheduled last.",
+        "D. Talk D is scheduled before talk A.",
+        "E. Talk E is scheduled before talk A."
+      ],
+      "answer_letter": "A"
+    },
+    {
+      "question": "In a debate competition, five teams (A, B, C, D, E) must each debate exactly once. Team A must debate before team D. Team E cannot debate immediately after team B. If team C debates second, which of the following must be true?",
+      "choices": [
+        "A. Team A debates first.",
+        "B. Team B debates last.",
+        "C. Team D debates after team C.",
+        "D. Team E debates third.",
+        "E. Team A debates before team B."
+      ],
+      "answer_letter": "C"
+    },
+    {
+      "question": "Six employees—F, G, H, I, J, and K—must be assigned to three projects: P, Q, and R, with exactly two employees per project. F and G cannot work on the same project. H must be assigned to project Q. Which of the following must be true?",
+      "choices": [
+        "A. F is on project P or R.",
+        "B. G is on project Q.",
+        "C. H and I are on different projects.",
+        "D. J is not on project R.",
+        "E. K is with F on the same project."
+      ],
+      "answer_letter": "A"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "xquad_0shot": {
+    "template": "You are an expert in reading comprehension. Based on the given context, answer the question accurately and concisely.\n\nContext: {context}\n\nQuestion: {question}\n\nAnswer:",
+    "description": "Zero-shot XQuAD prompt for reading comprehension"
+  },
+  "xquad_0shot_simple": {
+    "template": "Context: {context}\n\nQuestion: {question}\n\nAnswer:",
+    "description": "Simple XQuAD prompt"
+  },
+  "xquad_5shot": {
+    "template_prefix": "You are an expert in reading comprehension. Based on the given context, answer each question accurately and concisely.\n\n",
+    "few_shot_example_template": "Context: {context}\nQuestion: {question}\nAnswer: {answer}",
+    "few_shot_separator": "\n\n",
+    "template_suffix": "Context: {context}\nQuestion: {question}\nAnswer:",
+    "description": "Few-shot XQuAD prompt template"
+  },
+  "xquad_cot": {
+    "template": "You are an expert in reading comprehension. Think through this step by step.\n\nContext: {context}\n\nQuestion: {question}\n\nLet me analyze this:\n1. First, I'll understand what the question is asking\n2. Then, I'll find the relevant information in the context\n3. Finally, I'll provide the accurate answer\n\nAnswer:",
+    "description": "Chain-of-thought XQuAD prompt"
+  },
+  "default_few_shot_examples_xquad": [
+    {
+      "context": "The Amazon rainforest is a moist broadleaf forest that covers most of the Amazon basin of South America. This basin encompasses 7,000,000 square kilometers, of which 5,500,000 square kilometers are covered by the rainforest. The majority of the forest is contained within Brazil, with 60% of the rainforest, followed by Peru with 13%, Colombia with 10%, and with minor amounts in Venezuela, Ecuador, Bolivia, Guyana, Suriname and French Guiana.",
+      "question": "How many square kilometers does the Amazon basin cover?",
+      "answer": "7,000,000 square kilometers"
+    },
+    {
+      "context": "Basketball is a team sport in which two teams, most commonly of five players each, opposing one another on a rectangular court, compete with the primary objective of shooting a basketball through the defender's hoop while preventing the opposing team from shooting through their own hoop.",
+      "question": "How many players are typically on each basketball team?",
+      "answer": "five players"
+    },
+    {
+      "context": "The Great Wall of China is a series of fortifications made of stone, brick, tamped earth, wood, and other materials, generally built along an east-to-west line across the historical northern borders of China to protect the Chinese states and empires against invasions. The wall was built over many centuries, with most of the existing structure dating from the Ming Dynasty (1368–1644).",
+      "question": "During which dynasty was most of the existing Great Wall structure built?",
+      "answer": "Ming Dynasty"
+    },
+    {
+      "context": "The human brain contains approximately 86 billion neurons. These neurons communicate with each other through electrical and chemical signals. The brain uses about 20% of the body's total energy consumption, despite representing only about 2% of body weight.",
+      "question": "What percentage of the body's energy does the brain consume?",
+      "answer": "20%"
+    },
+    {
+      "context": "Mount Everest, known in Nepali as Sagarmatha and in Tibetan as Chomolungma, is Earth's highest mountain above sea level, located in the Mahalangur Himal sub-range of the Himalayas. The China–Nepal border runs across its summit point. Its elevation of 8,848.86 m was most recently established in 2020.",
+      "question": "What is the current official height of Mount Everest?",
+      "answer": "8,848.86 m"
+    }
+  ],
+  "default_few_shot_examples_xquad_hindi": [
+    {
+      "context": "अमेज़न वर्षावन एक नम चौड़ी पत्ती वाला जंगल है जो दक्षिण अमेरिका के अमेज़न बेसिन के अधिकांश हिस्से को कवर करता है। यह बेसिन 7,000,000 वर्ग किलोमीटर में फैला है, जिसमें से 5,500,000 वर्ग किलोमीटर वर्षावन से ढका है।",
+      "question": "अमेज़न बेसिन कितने वर्ग किलोमीटर में फैला है?",
+      "answer": "7,000,000 वर्ग किलोमीटर"
+    },
+    {
+      "context": "बास्केटबॉल एक टीम खेल है जिसमें दो टीमें, आमतौर पर पांच खिलाड़ियों की, एक आयताकार कोर्ट पर एक दूसरे का सामना करती हैं।",
+      "question": "बास्केटबॉल की प्रत्येक टीम में आमतौर पर कितने खिलाड़ी होते हैं?",
+      "answer": "पांच खिलाड़ी"
+    }
+  ],
+  "default_few_shot_examples_xquad_bengali": [
+    {
+      "context": "আমাজন রেইনফরেস্ট একটি আর্দ্র বিস্তৃত পাতার বন যা দক্ষিণ আমেরিকার আমাজন অববাহিকার বেশিরভাগ অংশ জুড়ে রয়েছে। এই অববাহিকা ৭,০০০,০০০ বর্গ কিলোমিটার জুড়ে বিস্তৃত, যার মধ্যে ৫,৫০০,০০০ বর্গ কিলোমিটার রেইনফরেস্ট দ্বারা আবৃত।",
+      "question": "আমাজন অববাহিকা কত বর্গ কিলোমিটার জুড়ে বিস্তৃত?",
+      "answer": "৭,০০০,০০০ বর্গ কিলোমিটার"
+    },
+    {
+      "context": "বাস্কেটবল একটি দলগত খেলা যেখানে দুটি দল, সাধারণত প্রতিটিতে পাঁচজন খেলোয়াড়, একটি আয়তাকার কোর্টে একে অপরের মুখোমুখি হয়।",
+      "question": "বাস্কেটবলের প্রতিটি দলে সাধারণত কতজন খেলোয়াড় থাকে?",
+      "answer": "পাঁচজন খেলোয়াড়"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "boolq_in_0shot": {
+    "template": "निम्नलिखित गद्यांश को पढ़ें और प्रश्न का उत्तर 'हाँ' या 'नहीं' में दें।\n\nगद्यांश:\n{passage}\n\nप्रश्न:\n{question}\n\nउत्तर (हाँ/नहीं):",
+    "description": "Zero-shot BoolQ-Indic prompt in Hindi"
+  },
+  "boolq_in_english": {
+    "template": "Read the following passage and answer the question with 'Yes' or 'No'.\n\nPassage:\n{passage}\n\nQuestion:\n{question}\n\nAnswer (Yes/No):",
+    "description": "English version for BoolQ-Indic"
+  },
+  "boolq_in_detailed": {
+    "template": "नीचे दिया गया गद्यांश ध्यान से पढ़िए और उसके आधार पर प्रश्न का उत्तर दीजिए। केवल 'हाँ' या 'नहीं' में उत्तर दें।\n\nगद्यांश:\n{passage}\n\nप्रश्न:\n{question}\n\nकृपया केवल 'हाँ' या 'नहीं' में उत्तर दें:\nउत्तर:",
+    "description": "Detailed BoolQ-Indic prompt with clear instructions"
+  },
+  "boolq_in_simple": {
+    "template": "गद्यांश: {passage}\n\nप्रश्न: {question}\n\nउत्तर:",
+    "description": "Simple BoolQ-Indic prompt"
+  },
+  "language_specific_prompts": {
+    "hi": "निम्नलिखित गद्यांश को पढ़ें और प्रश्न का उत्तर 'हाँ' या 'नहीं' में दें।\n\nगद्यांश:\n{passage}\n\nप्रश्न:\n{question}\n\nउत्तर (हाँ/नहीं):",
+    "en": "Read the following passage and answer the question with 'Yes' or 'No'.\n\nPassage:\n{passage}\n\nQuestion:\n{question}\n\nAnswer (Yes/No):",
+    "bn": "নিম্নলিখিত অনুচ্ছেদটি পড়ুন এবং প্রশ্নের উত্তর 'হ্যাঁ' বা 'না' দিয়ে দিন।\n\nঅনুচ্ছেদ:\n{passage}\n\nপ্রশ্ন:\n{question}\n\nউত্তর (হ্যাঁ/না):",
+    "default": "निम्नलिखित गद्यांश को पढ़ें और प्रश्न का उत्तर 'हाँ' या 'नहीं' में दें।\n\nगद्यांश:\n{passage}\n\nप्रश्न:\n{question}\n\nउत्तर (हाँ/नहीं):"
+  },
+  "answer_mapping": {
+    "yes_strings": {
+      "english": ["yes", "true", "correct", "affirmative"],
+      "hindi": ["हाँ", "हां", "सही", "सत्य"],
+      "bengali": ["হ্যাঁ", "সঠিক", "সত্য"]
+    },
+    "no_strings": {
+      "english": ["no", "false", "incorrect", "negative"],
+      "hindi": ["नहीं", "नही", "गलत", "असत्य"],
+      "bengali": ["না", "ভুল", "মিথ্যা"]
+    }
+  },
+  "default_few_shot_examples_boolq_in": [
+    {
+      "passage": "भारत दक्षिण एशिया में स्थित एक देश है। यह दुनिया का सातवां सबसे बड़ा देश है।",
+      "question": "क्या भारत एशिया में है?",
+      "answer": "हाँ"
+    },
+    {
+      "passage": "सूर्य पृथ्वी के चारों ओर घूमता है। यह हमारे सौर मंडल का केंद्र है।",
+      "question": "क्या सूर्य पृथ्वी के चारों ओर घूमता है?", 
+      "answer": "नहीं"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "milu_in_0shot": {
+    "template": "प्रश्न: {question}\n\nविकल्प:\n{choices_str}\n\nसही उत्तर का अक्षर (A, B, C, या D) क्या है?\nउत्तर:",
+    "description": "Zero-shot MILU-Indic prompt in Hindi"
+  },
+  "milu_in_english": {
+    "template": "Question: {question}\n\nChoices:\n{choices_str}\n\nWhat is the letter of the correct answer (A, B, C, or D)?\nAnswer:",
+    "description": "English version for MILU-Indic"
+  },
+  "milu_in_detailed": {
+    "template": "निम्नलिखित प्रश्न का उत्तर दें। चार विकल्पों में से सबसे उपयुक्त का चयन करें।\n\nप्रश्न: {question}\n\nविकल्प:\n{choices_str}\n\nकृपया केवल सही उत्तर का अक्षर (A, B, C, या D) लिखें:\nउत्तर:",
+    "description": "Detailed MILU-Indic prompt with clear instructions"
+  },
+  "milu_in_5shot": {
+    "template_prefix": "निम्नलिखित प्रश्नों के उत्तर दें। सबसे उपयुक्त विकल्प का अक्षर चुनें।\n\n",
+    "few_shot_example_template": "प्रश्न: {question}\n\nविकल्प:\n{choices_str}\n\nउत्तर: {answer_letter}",
+    "few_shot_separator": "\n\n",
+    "template_suffix": "प्रश्न: {question}\n\nविकल्प:\n{choices_str}\n\nउत्तर:",
+    "description": "Few-shot MILU-Indic prompt template"
+  },
+  "language_specific_prompts": {
+    "Hindi": "प्रश्न: {question}\n\nविकल्प:\n{choices_str}\n\nसही उत्तर का अक्षर (A, B, C, या D) क्या है?\nउत्तर:",
+    "English": "Question: {question}\n\nChoices:\n{choices_str}\n\nWhat is the letter of the correct answer (A, B, C, or D)?\nAnswer:",
+    "Bengali": "প্রশ্ন: {question}\n\nবিকল্প:\n{choices_str}\n\nসঠিক উত্তরের অক্ষর (A, B, C, বা D) কী?\nউত্তর:",
+    "Gujarati": "પ્રશ્ન: {question}\n\nવિકલ્પો:\n{choices_str}\n\nસાચા જવાબનો અક્ષર (A, B, C, કે D) શું છે?\nજવાબ:",
+    "default": "प्रश्न: {question}\n\nविकल्प:\n{choices_str}\n\nसही उत्तर का अक्षर (A, B, C, या D) क्या है?\nउत्तर:"
+  },
+  "hindi_to_english_mapping": {
+    "ए": "A", "अ": "A", "ए.": "A", "अ.": "A",
+    "बी": "B", "ब": "B", "बी.": "B", "ब.": "B",
+    "सी": "C", "स": "C", "सी.": "C", "स.": "C",
+    "डी": "D", "द": "D", "डी.": "D", "द.": "D"
+  },
+  "target_languages": [
+    "Bengali", "English", "Gujarati", "Hindi", "Kannada", 
+    "Malayalam", "Marathi", "Odia", "Punjabi", "Tamil", "Telugu"
+  ],
+  "option_mapping": {
+    "option1": "A",
+    "option2": "B", 
+    "option3": "C",
+    "option4": "D"
+  },
+  "default_few_shot_examples_milu_in": [
+    {
+      "question": "भारत का राष्ट्रीय खेल क्या है?",
+      "option1": "क्रिकेट",
+      "option2": "हॉकी", 
+      "option3": "फुटबॉल",
+      "option4": "बैडमिंटन",
+      "choices_str": "A. क्रिकेट\nB. हॉकी\nC. फुटबॉल\nD. बैडमिंटन",
+      "answer_letter": "B",
+      "target": "option2"
+    },
+    {
+      "question": "सूर्य एक क्या है?",
+      "option1": "ग्रह",
+      "option2": "चांद",
+      "option3": "तारा",
+      "option4": "धूमकेतु",
+      "choices_str": "A. ग्रह\nB. चांद\nC. तारा\nD. धूमकेतु",
+      "answer_letter": "C",
+      "target": "option3"
+    },
+    {
+      "question": "विश्व का सबसे बड़ा महासागर कौन सा है?",
+      "option1": "अटलांटिक",
+      "option2": "हिंद",
+      "option3": "आर्कटिक", 
+      "option4": "प्रशांत",
+      "choices_str": "A. अटलांटिक\nB. हिंद\nC. आर्कटिक\nD. प्रशांत",
+      "answer_letter": "D",
+      "target": "option4"
+    }
+  ]
+}

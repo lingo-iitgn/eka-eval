@@ -1,0 +1,26 @@
+{
+  "ifeval_basic": {
+    "template": "Please follow the instructions exactly as given.\n\n{prompt}\n\nResponse:",
+    "description": "Basic IFEval prompt template"
+  },
+  "ifeval_strict": {
+    "template": "You must follow the instructions below precisely. Do not deviate from the requirements.\n\nInstructions:\n{prompt}\n\nYour response:",
+    "description": "Strict IFEval prompt emphasizing precision"
+  },
+  "ifeval_detailed": {
+    "template": "I will give you a task with specific requirements. Please read the instructions carefully and follow them exactly. Pay attention to any constraints mentioned.\n\nTask:\n{prompt}\n\nPlease provide your response following all the specified requirements:",
+    "description": "Detailed IFEval prompt with emphasis on requirements"
+  },
+  "ifeval_simple": {
+    "template": "{prompt}",
+    "description": "Simple IFEval prompt without additional instructions"
+  },
+  "ifeval_step_by_step": {
+    "template": "Instructions: {prompt}\n\nI will follow these instructions step by step:\n1. First, I'll identify all the requirements\n2. Then, I'll craft my response to meet each requirement\n3. Finally, I'll verify my response meets all constraints\n\nMy response:",
+    "description": "Step-by-step IFEval prompt template"
+  },
+  "ifeval_constraint_aware": {
+    "template": "Task: {prompt}\n\nI must carefully follow all specified constraints and requirements. Let me provide a response that adheres to every instruction given.\n\nResponse:",
+    "description": "Constraint-aware IFEval prompt template"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "mmlu_0shot": {
+    "template": "You are an expert in {subject}. Answer the following multiple choice question by selecting the correct option.\n\nQuestion: {question}\n{choices_str}\n\nAnswer:",
+    "description": "Zero-shot MMLU prompt template"
+  },
+  "mmlu_5shot": {
+    "template_prefix": "You are an expert in {subject}. Answer the following multiple choice questions by selecting the correct option.\n\n",
+    "few_shot_example_template": "Question: {question}\n{choices_str}\nAnswer: {answer_letter}",
+    "few_shot_separator": "\n\n",
+    "template_suffix": "Question: {question}\n{choices_str}\nAnswer:",
+    "description": "Few-shot MMLU prompt template with examples"
+  },
+  "mmlu_cot": {
+    "template": "You are an expert in {subject}. Answer the following multiple choice question by thinking step by step.\n\nQuestion: {question}\n{choices_str}\n\nLet's think step by step:\n",
+    "description": "Chain-of-thought MMLU prompt template"
+  },
+  "mmlu_simple": {
+    "template": "{question}\n{choices_str}\nAnswer:",
+    "description": "Simple MMLU prompt template without instructions"
+  },
+  "default_few_shot_examples_mmlu": [
+    {
+      "question": "What is the capital of France?",
+      "choices": ["A. London", "B. Berlin", "C. Paris", "D. Madrid"],
+      "answer_letter": "C"
+    },
+    {
+      "question": "Which element has the chemical symbol 'O'?",
+      "choices": ["A. Gold", "B. Oxygen", "C. Silver", "D. Iron"],
+      "answer_letter": "B"
+    },
+    {
+      "question": "What is 2 + 2?",
+      "choices": ["A. 3", "B. 4", "C. 5", "D. 6"],
+      "answer_letter": "B"
+    },
+    {
+      "question": "Who wrote 'Romeo and Juliet'?",
+      "choices": ["A. Charles Dickens", "B. William Shakespeare", "C. Jane Austen", "D. Mark Twain"],
+      "answer_letter": "B"
+    },
+    {
+      "question": "What is the largest planet in our solar system?",
+      "choices": ["A. Earth", "B. Mars", "C. Jupiter", "D. Saturn"],
+      "answer_letter": "C"
+    }
+  ]
+}
