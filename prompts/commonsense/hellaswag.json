@@ -1,0 +1,170 @@
+{
+  "hellaswag_0shot": {
+    "template": "Complete the scenario by choosing the most logical continuation:\n\n{query}\nA. {choiceA}\nB. {choiceB}\nC. {choiceC}\nD. {choiceD}\n\nAnswer:",
+    "description": "Zero-shot HellaSwag prompt"
+  },
+  "hellaswag_0shot_simple": {
+    "template": "{query}\nA. {choiceA}\nB. {choiceB}\nC. {choiceC}\nD. {choiceD}\nAnswer:",
+    "description": "Simple zero-shot HellaSwag prompt"
+  },
+  "hellaswag_10shot": {
+    "template_prefix": "",
+    "few_shot_example_template": "{query}\nA. {choiceA}\nB. {choiceB}\nC. {choiceC}\nD. {choiceD}\nAnswer: {answer_letter}",
+    "few_shot_separator": "\n\n",
+    "template_suffix": "{query}\nA. {choiceA}\nB. {choiceB}\nC. {choiceC}\nD. {choiceD}\nAnswer:",
+    "description": "10-shot HellaSwag prompt template"
+  },
+  "hellaswag_5shot": {
+    "template_prefix": "",
+    "few_shot_example_template": "{query}\nA. {choiceA}\nB. {choiceB}\nC. {choiceC}\nD. {choiceD}\nAnswer: {answer_letter}",
+    "few_shot_separator": "\n\n",
+    "template_suffix": "{query}\nA. {choiceA}\nB. {choiceB}\nC. {choiceC}\nD. {choiceD}\nAnswer:",
+    "description": "5-shot HellaSwag prompt template"
+  },
+  "hellaswag_cot": {
+    "template": "Complete the scenario by thinking step by step about what would logically happen next:\n\n{query}\nA. {choiceA}\nB. {choiceB}\nC. {choiceC}\nD. {choiceD}\n\nLet me think about this step by step:\n1. I need to consider the context and what action would logically follow\n2. I'll evaluate each option for plausibility\n3. I'll choose the most reasonable continuation\n\nThinking:",
+    "description": "Chain-of-thought HellaSwag prompt"
+  },
+  "default_few_shot_examples_hellaswag": [
+    {
+      "query": "Making a cake: A woman is in a kitchen mixing ingredients in a large bowl. She adds flour and sugar, then",
+      "choices": [
+        "cracks eggs into the mixture and stirs everything together.",
+        "puts the bowl in the refrigerator for several hours.",
+        "throws the mixture away and starts over.",
+        "paints her nails while waiting for the oven."
+      ],
+      "answer_letter": "A",
+      "choiceA": "cracks eggs into the mixture and stirs everything together.",
+      "choiceB": "puts the bowl in the refrigerator for several hours.",
+      "choiceC": "throws the mixture away and starts over.",
+      "choiceD": "paints her nails while waiting for the oven."
+    },
+    {
+      "query": "Playing basketball: A player dribbles the ball down the court towards the basket. As he approaches the free throw line, he",
+      "choices": [
+        "sits down and takes a break from the game.",
+        "jumps up and shoots the ball towards the hoop.",
+        "passes the ball to a teammate behind him.",
+        "walks off the court without finishing the play."
+      ],
+      "answer_letter": "B",
+      "choiceA": "sits down and takes a break from the game.",
+      "choiceB": "jumps up and shoots the ball towards the hoop.",
+      "choiceC": "passes the ball to a teammate behind him.",
+      "choiceD": "walks off the court without finishing the play."
+    },
+    {
+      "query": "Washing dishes: A person stands at the kitchen sink with dirty plates and cups. They turn on the water and",
+      "choices": [
+        "leave the kitchen to watch television.",
+        "put all the dishes in the trash can.",
+        "squirt soap onto a sponge and begin scrubbing.",
+        "fill a bucket with water for mopping."
+      ],
+      "answer_letter": "C",
+      "choiceA": "leave the kitchen to watch television.",
+      "choiceB": "put all the dishes in the trash can.",
+      "choiceC": "squirt soap onto a sponge and begin scrubbing.",
+      "choiceD": "fill a bucket with water for mopping."
+    },
+    {
+      "query": "Getting dressed: Someone opens their closet in the morning to choose an outfit. After looking at several options, they",
+      "choices": [
+        "close the closet and go back to bed.",
+        "call a friend to ask for fashion advice.",
+        "rearrange all the clothes by color.",
+        "select a shirt and pants to wear for the day."
+      ],
+      "answer_letter": "D",
+      "choiceA": "close the closet and go back to bed.",
+      "choiceB": "call a friend to ask for fashion advice.",
+      "choiceC": "rearrange all the clothes by color.",
+      "choiceD": "select a shirt and pants to wear for the day."
+    },
+    {
+      "query": "Brushing teeth: A person stands in front of the bathroom mirror holding a toothbrush. They",
+      "choices": [
+        "apply toothpaste to the brush and begin brushing.",
+        "use the toothbrush to comb their hair.",
+        "throw the toothbrush in the garbage.",
+        "brush their shoes with the toothbrush."
+      ],
+      "answer_letter": "A",
+      "choiceA": "apply toothpaste to the brush and begin brushing.",
+      "choiceB": "use the toothbrush to comb their hair.",
+      "choiceC": "throw the toothbrush in the garbage.",
+      "choiceD": "brush their shoes with the toothbrush."
+    },
+    {
+      "query": "Riding a bicycle: A cyclist pedals along a park path on a sunny day. When they see a hill ahead, they",
+      "choices": [
+        "abandon the bike and walk home.",
+        "shift to a lower gear and continue pedaling up the hill.",
+        "turn around and go back the way they came.",
+        "stop and call for a taxi."
+      ],
+      "answer_letter": "B",
+      "choiceA": "abandon the bike and walk home.",
+      "choiceB": "shift to a lower gear and continue pedaling up the hill.",
+      "choiceC": "turn around and go back the way they came.",
+      "choiceD": "stop and call for a taxi."
+    },
+    {
+      "query": "Reading a book: Someone sits in a comfortable chair with an open novel. As they finish a chapter, they",
+      "choices": [
+        "close the book and put it on the shelf.",
+        "tear out the pages they just read.",
+        "bookmark their place and continue reading the next chapter.",
+        "throw the book across the room."
+      ],
+      "answer_letter": "C",
+      "choiceA": "close the book and put it on the shelf.",
+      "choiceB": "tear out the pages they just read.",
+      "choiceC": "bookmark their place and continue reading the next chapter.",
+      "choiceD": "throw the book across the room."
+    },
+    {
+      "query": "Making coffee: A person fills a coffee maker with water and ground coffee beans. After pressing the start button, they",
+      "choices": [
+        "pour orange juice into their mug.",
+        "sit down and check their phone messages.",
+        "immediately unplug the coffee maker.",
+        "wait for the coffee to finish brewing and pour a cup."
+      ],
+      "answer_letter": "D",
+      "choiceA": "pour orange juice into their mug.",
+      "choiceB": "sit down and check their phone messages.",
+      "choiceC": "immediately unplug the coffee maker.",
+      "choiceD": "wait for the coffee to finish brewing and pour a cup."
+    },
+    {
+      "query": "Walking a dog: Someone clips a leash onto their dog's collar before heading outside. Once they reach the sidewalk, they",
+      "choices": [
+        "begin walking at a steady pace with the dog.",
+        "take off the leash and run in circles.",
+        "carry the dog instead of letting it walk.",
+        "tie the leash to a tree and leave."
+      ],
+      "answer_letter": "A",
+      "choiceA": "begin walking at a steady pace with the dog.",
+      "choiceB": "take off the leash and run in circles.",
+      "choiceC": "carry the dog instead of letting it walk.",
+      "choiceD": "tie the leash to a tree and leave."
+    },
+    {
+      "query": "Grocery shopping: A shopper pushes a cart through the produce section of a store. When they see fresh apples, they",
+      "choices": [
+        "ignore the apples and continue walking.",
+        "pick up several apples and put them in their cart.",
+        "taste all the apples before buying any.",
+        "complain to the manager about apple prices."
+      ],
+      "answer_letter": "B",
+      "choiceA": "ignore the apples and continue walking.",
+      "choiceB": "pick up several apples and put them in their cart.",
+      "choiceC": "taste all the apples before buying any.",
+      "choiceD": "complain to the manager about apple prices."
+    }
+  ]
+}

@@ -1,0 +1,317 @@
+{
+  "crosssum_0shot": {
+    "template": "Article: {article_text}\nSummary in {target_language}:",
+    "description": "Zero-shot cross-lingual summarization prompt",
+    "use_few_shot": false,
+    "language_specific_prompts": {
+      "en_to_hi": "Article: {article_text}\nSummary in Hindi:",
+      "en_to_bn": "Article: {article_text}\nSummary in Bengali:",
+      "en_to_gu": "Article: {article_text}\nSummary in Gujarati:",
+      "en_to_ta": "Article: {article_text}\nSummary in Tamil:",
+      "en_to_te": "Article: {article_text}\nSummary in Telugu:",
+      "en_to_kn": "Article: {article_text}\nSummary in Kannada:",
+      "en_to_ml": "Article: {article_text}\nSummary in Malayalam:",
+      "en_to_mr": "Article: {article_text}\nSummary in Marathi:",
+      "en_to_pa": "Article: {article_text}\nSummary in Punjabi:",
+      "en_to_or": "Article: {article_text}\nSummary in Odia:",
+      "en_to_as": "Article: {article_text}\nSummary in Assamese:",
+      "en_to_ur": "Article: {article_text}\nSummary in Urdu:",
+      "default": "Article: {article_text}\nSummary in {target_language}:"
+    },
+    "generation_config": {
+      "max_new_tokens": 256,
+      "do_sample": true,
+      "temperature": 0.7,
+      "top_p": 0.9,
+      "repetition_penalty": 1.1,
+      "early_stopping": true
+    }
+  },
+  "crosssum_3shot": {
+    "template": "Article: {article_text}\nSummary in {target_language}:",
+    "description": "Few-shot cross-lingual summarization prompt with examples",
+    "use_few_shot": true,
+    "num_few_shot_examples": 3,
+    "language_specific_prompts": {
+      "en_to_hi": "Article: {article_text}\nSummary in Hindi:",
+      "en_to_bn": "Article: {article_text}\nSummary in Bengali:",
+      "en_to_gu": "Article: {article_text}\nSummary in Gujarati:",
+      "en_to_ta": "Article: {article_text}\nSummary in Tamil:",
+      "en_to_te": "Article: {article_text}\nSummary in Telugu:",
+      "en_to_kn": "Article: {article_text}\nSummary in Kannada:",
+      "en_to_ml": "Article: {article_text}\nSummary in Malayalam:",
+      "en_to_mr": "Article: {article_text}\nSummary in Marathi:",
+      "en_to_pa": "Article: {article_text}\nSummary in Punjabi:",
+      "en_to_or": "Article: {article_text}\nSummary in Odia:",
+      "en_to_as": "Article: {article_text}\nSummary in Assamese:",
+      "en_to_ur": "Article: {article_text}\nSummary in Urdu:",
+      "default": "Article: {article_text}\nSummary in {target_language}:"
+    },
+    "few_shot_examples": {
+      "en_to_hi": [
+        {
+          "source_text": "The Indian Space Research Organisation (ISRO) successfully launched its latest satellite mission today. The rocket carried multiple communication satellites into orbit, marking another milestone in India's space program. The mission was completed without any technical difficulties and all systems are functioning normally.",
+          "target_text": "भारतीय अंतरिक्ष अनुसंधान संगठन (इसरो) ने आज अपना नवीनतम उपग्रह मिशन सफलतापूर्वक लॉन्च किया। रॉकेट ने कई संचार उपग्रहों को कक्षा में पहुंचाया, जो भारत के अंतरिक्ष कार्यक्रम में एक और मील का पत्थर है।"
+        },
+        {
+          "source_text": "Climate change continues to affect weather patterns globally. Scientists report increased frequency of extreme weather events including floods, droughts, and hurricanes. International cooperation is essential to address these environmental challenges effectively.",
+          "target_text": "जलवायु परिवर्तन का वैश्विक मौसम पैटर्न पर प्रभाव जारी है। वैज्ञानिकों की रिपोर्ट के अनुसार बाढ़, सूखा और तूफान जैसी चरम मौसमी घटनाओं की आवृत्ति बढ़ रही है।"
+        },
+        {
+          "source_text": "Technology companies are investing heavily in artificial intelligence research. New developments in machine learning are expected to transform various industries in the coming years. The focus is on creating more efficient and ethical AI systems.",
+          "target_text": "प्रौद्योगिकी कंपनियां कृत्रिम बुद्धिमत्ता अनुसंधान में भारी निवेश कर रही हैं। मशीन लर्निंग के नए विकास से आने वाले वर्षों में विभिन्न उद्योगों में बदलाव की उम्मीद है।"
+        }
+      ],
+      "en_to_bn": [
+        {
+          "source_text": "The Indian Space Research Organisation (ISRO) successfully launched its latest satellite mission today. The rocket carried multiple communication satellites into orbit, marking another milestone in India's space program.",
+          "target_text": "ভারতীয় মহাকাশ গবেষণা সংস্থা (ইসরো) আজ তাদের সর্বশেষ স্যাটেলাইট মিশন সফলভাবে উৎক্ষেপণ করেছে। রকেটটি একাধিক যোগাযোগ স্যাটেলাইট কক্ষপথে পৌঁছে দিয়েছে।"
+        },
+        {
+          "source_text": "Technology companies are investing heavily in artificial intelligence research. New developments in machine learning are expected to transform various industries in the coming years.",
+          "target_text": "প্রযুক্তি কোম্পানিগুলো কৃত্রিম বুদ্ধিমত্তা গবেষণায় ব্যাপক বিনিয়োগ করছে। মেশিন লার্নিংয়ের নতুন উন্নয়ন আগামী বছরগুলোতে বিভিন্ন শিল্পকে রূপান্তরিত করবে।"
+        },
+        {
+          "source_text": "Climate change affects global weather patterns significantly. Scientists are working on solutions to reduce carbon emissions and protect the environment.",
+          "target_text": "জলবায়ু পরিবর্তন বিশ্বব্যাপী আবহাওয়ার ধরনকে উল্লেখযোগ্যভাবে প্রভাবিত করে। বিজ্ঞানীরা কার্বন নিঃসরণ কমাতে এবং পরিবেশ রক্ষার সমাধানে কাজ করছেন।"
+        }
+      ],
+      "en_to_gu": [
+        {
+          "source_text": "The Indian government announced new policies to promote renewable energy. Solar and wind power projects will receive additional funding and tax incentives.",
+          "target_text": "ભારત સરકારે નવીનીકરણીય ઊર્જાને પ્રોત્સાહન આપવા માટે નવી નીતિઓની જાહેરાત કરી છે। સૌર અને પવન ઊર્જા પ્રોજેક્ટ્સને વધારાનું ફંડિંગ અને કર લાભ મળશે।"
+        },
+        {
+          "source_text": "Education technology is revolutionizing how students learn. Online platforms and digital tools are making quality education more accessible to remote areas.",
+          "target_text": "શિક્ષણ તકનીક વિદ્યાર્થીઓ કેવી રીતે શીખે છે તેમાં ક્રાંતિ લાવી રહી છે। ઓનલાઈન પ્લેટફોર્મ અને ડિજિટલ સાધનો દૂરવર્તી વિસ્તારોમાં ગુણવત્તાયુક્ત શિક્ષણને વધુ સુલભ બનાવી રહ્યાં છે।"
+        },
+        {
+          "source_text": "Healthcare innovations are improving patient outcomes. Telemedicine and AI-powered diagnostic tools are helping doctors provide better care.",
+          "target_text": "આરોગ્યસેવાની નવીનતાઓ દર્દીઓના પરિણામોમાં સુધારો કરી રહી છે। ટેલિમેડિસિન અને AI-સંચાલિત ડાયગ્નોસ્ટિક સાધનો ડોકટરોને વધુ સારી સંભાળ આપવામાં મદદ કરી રહ્યાં છે।"
+        }
+      ],
+      "en_to_ta": [
+        {
+          "source_text": "The Tamil Nadu government launched a new initiative to digitize rural healthcare. Mobile health units equipped with telemedicine technology will serve remote villages.",
+          "target_text": "தமிழ்நாடு அரசு கிராமப்புற சுகாதாரத்தை டிஜிட்டல் மயமாக்க புதிய முயற்சியைத் தொடங்கியது. தொலைமருத்துவ தொழில்நுட்பம் கொண்ட மொபைல் சுகாதார அலகுகள் தொலைதூர கிராமங்களுக்கு சேவை செய்யும்।"
+        },
+        {
+          "source_text": "Artificial intelligence is transforming manufacturing processes. Smart factories use AI to optimize production and reduce waste significantly.",
+          "target_text": "செயற்கை நுண்ணறிவு உற்பத்தி செயல்முறைகளை மாற்றி அமைக்கிறது. ஸ்மார்ட் தொழிற்சாலைகள் உற்பத்தியை மேம்படுத்தவும் கழிவுகளை கணிசமாக குறைக்கவும் AI ஐ பயன்படுத்துகின்றன।"
+        },
+        {
+          "source_text": "Renewable energy projects are gaining momentum across India. Solar power installations have increased dramatically in recent years.",
+          "target_text": "இந்தியா முழுவதும் புதுப்பிக்கத்தக்க எரிசக்தி திட்டங்கள் வேகம் பெறுகின்றன। சமீபத்திய ஆண்டுகளில் சூரிய சக்தி நிறுவல்கள் வியத்தகு அளவில் அதிகரித்துள்ளன।"
+        }
+      ],
+      "en_to_te": [
+        {
+          "source_text": "The Telangana government introduced digital farming techniques to help farmers increase crop yields. Modern technology and data analytics are being used to optimize agricultural practices.",
+          "target_text": "తెలంగాణ ప్రభుత్వం రైతులకు పంట దిగుబడిని పెంచడంలో సహాయపడటానికి డిజిటల్ వ్యవసాయ పద్ధతులను ప్రవేశపెట్టింది। వ్యవసాయ పద్ధతులను మెరుగుపరచడానికి ఆధునిక సాంకేతికత మరియు డేటా విశ్లేషణలు ఉపయోగించబడుతున్నాయి।"
+        },
+        {
+          "source_text": "Electric vehicles are becoming more popular in Indian cities. Government incentives and improving charging infrastructure are driving adoption.",
+          "target_text": "భారతీయ నగరాల్లో ఎలక్ట్రిక్ వాహనాలు మరింత ప్రాచుర్యం పొందుతున్నాయి. ప్రభుత్వ ప్రోత్సాహకాలు మరియు మెరుగైన ఛార్జింగ్ మౌలిక సదుపాయాలు దత్తత పెంచుతున్నాయి।"
+        },
+        {
+          "source_text": "IT companies in Hyderabad are expanding their operations. The city continues to be a major hub for technology and innovation in India.",
+          "target_text": "హైదరాబాద్‌లోని IT కంపెనీలు తమ కార్యకలాపాలను విస్తరిస్తున్నాయి. నగరం భారతదేశంలో సాంకేతికత మరియు ఆవిష్కరణలకు ప్రధాన కేంద్రంగా కొనసాగుతోంది।"
+        }
+      ],
+      "en_to_kn": [
+        {
+          "source_text": "Bangalore's startup ecosystem continues to grow rapidly. The city attracts entrepreneurs and investors from around the world with its innovative culture.",
+          "target_text": "ಬೆಂಗಳೂರಿನ ಸ್ಟಾರ್ಟ್‌ಅಪ್ ಪರಿಸರ ವ್ಯವಸ್ಥೆಯು ವೇಗವಾಗಿ ಬೆಳೆಯುತ್ತಲೇ ಇದೆ. ನಗರವು ತನ್ನ ನವೀನ ಸಂಸ್ಕೃತಿಯೊಂದಿಗೆ ಪ್ರಪಂಚದಾದ್ಯಂತದ ಉದ್ಯಮಿಗಳು ಮತ್ತು ಹೂಡಿಕೆದಾರರನ್ನು ಆಕರ್ಷಿಸುತ್ತದೆ।"
+        },
+        {
+          "source_text": "Renewable energy initiatives in Karnataka are showing promising results. Wind and solar power generation has increased significantly in the state.",
+          "target_text": "ಕರ್ನಾಟಕದಲ್ಲಿ ನವೀಕರಿಸಬಹುದಾದ ಇಂಧನ ಉಪಕ್ರಮಗಳು ಭರವಸೆಯ ಫಲಿತಾಂಶಗಳನ್ನು ತೋರಿಸುತ್ತಿವೆ. ರಾಜ್ಯದಲ್ಲಿ ಗಾಳಿ ಮತ್ತು ಸೌರ ವಿದ್ಯುತ್ ಉತ್ಪಾದನೆ ಗಣನೀಯವಾಗಿ ಹೆಚ್ಚಾಗಿದೆ।"
+        },
+        {
+          "source_text": "Digital education platforms are helping students in rural areas access quality learning resources. Online courses and virtual classrooms are bridging the education gap.",
+          "target_text": "ಡಿಜಿಟಲ್ ಶಿಕ್ಷಣ ವೇದಿಕೆಗಳು ಗ್ರಾಮೀಣ ಪ್ರದೇಶಗಳ ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ ಗುಣಮಟ್ಟದ ಕಲಿಕೆಯ ಸಂಪನ್ಮೂಲಗಳನ್ನು ಪ್ರವೇಶಿಸಲು ಸಹಾಯ ಮಾಡುತ್ತಿವೆ। ಆನ್‌ಲೈನ್ ಕೋರ್ಸ್‌ಗಳು ಮತ್ತು ವರ್ಚುವಲ್ ತರಗತಿಗಳು ಶಿಕ್ಷಣದ ಅಂತರವನ್ನು ಕಡಿಮೆ ಮಾಡುತ್ತಿವೆ।"
+        }
+      ],
+      "en_to_ml": [
+        {
+          "source_text": "Kerala's healthcare system is being modernized with new digital initiatives. Electronic health records and telemedicine services are improving patient care across the state.",
+          "target_text": "കേരളത്തിന്റെ ആരോഗ്യസംരക്ഷണ സംവിധാനം പുതിയ ഡിജിറ്റൽ സംരംഭങ്ങളിലൂടെ ആധുനികവൽക്കരിക്കപ്പെടുന്നു. ഇലക്ട്രോണിക് ആരോഗ്യ രേഖകളും ടെലിമെഡിസിൻ സേവനങ്ങളും സംസ്ഥാനത്തുടനീളം രോഗി പരിചരണം മെച്ചപ്പെടുത്തുന്നു।"
+        },
+        {
+          "source_text": "Sustainable tourism practices are being promoted in Kerala's backwaters. Eco-friendly resorts and responsible travel initiatives are protecting the natural environment.",
+          "target_text": "കേരളത്തിലെ കായലുകളിൽ സുസ്ഥിര ടൂറിസം രീതികൾ പ്രോത്സാഹിപ്പിക്കപ്പെടുന്നു. പരിസ്ഥിതി സൗഹൃദ റിസോർട്ടുകളും ഉത്തരവാദിത്ത യാത്രാ സംരംഭങ്ങളും പ്രകൃതി പരിസ്ഥിതിയെ സംരക്ഷിക്കുന്നു।"
+        },
+        {
+          "source_text": "Spice farming in Kerala is adopting modern agricultural techniques. Farmers are using precision agriculture and organic methods to improve crop quality.",
+          "target_text": "കേരളത്തിലെ സുഗന്ധവ്യഞ്ജന കൃഷി ആധുനിക കാർഷിക സാങ്കേതിക വിദ്യകൾ സ്വീകരിക്കുന്നു. വിളകളുടെ ഗുണനിലവാരം മെച്ചപ്പെടുത്താൻ കർഷകർ കൃത്യമായ കൃഷിയും ജൈവിക രീതികളും ഉപയോഗിക്കുന്നു।"
+        }
+      ],
+      "en_to_mr": [
+        {
+          "source_text": "Maharashtra's agricultural sector is embracing digital transformation. Smart farming techniques and data analytics are helping farmers optimize their crop production.",
+          "target_text": "महाराष्ट्राचे कृषी क्षेत्र डिजिटल परिवर्तन स्वीकारत आहे. स्मार्ट शेती तंत्र आणि डेटा अॅनालिटिक्स शेतकऱ्यांना त्यांचे पीक उत्पादन अनुकूल करण्यासाठी मदत करत आहे."
+        },
+        {
+          "source_text": "Mumbai's public transportation system is being upgraded with modern technology. Metro rail expansion and smart traffic management are reducing congestion.",
+          "target_text": "मुंबईची सार्वजनिक वाहतूक व्यवस्था आधुनिक तंत्रज्ञानाने सुधारली जात आहे. मेट्रो रेल्वे विस्तार आणि स्मार्ट रहदारी व्यवस्थापनामुळे गर्दी कमी होत आहे."
+        },
+        {
+          "source_text": "Renewable energy projects in Maharashtra are gaining momentum. Solar parks and wind farms are contributing significantly to the state's clean energy goals.",
+          "target_text": "महाराष्ट्रातील नवीकरणीय ऊर्जा प्रकल्पांना वेग येत आहे. सौर उद्यान आणि पवन फार्म राज्याच्या स्वच्छ ऊर्जा उद्दिष्टांमध्ये महत्त्वपूर्ण योगदान देत आहेत."
+        }
+      ],
+      "en_to_pa": [
+        {
+          "source_text": "Punjab's farmers are adopting sustainable agriculture practices. Organic farming and water conservation techniques are being promoted to improve soil health.",
+          "target_text": "ਪੰਜਾਬ ਦੇ ਕਿਸਾਨ ਟਿਕਾਊ ਖੇਤੀ ਦੇ ਤਰੀਕੇ ਅਪਣਾ ਰਹੇ ਹਨ। ਮਿੱਟੀ ਦੀ ਸਿਹਤ ਸੁਧਾਰਨ ਲਈ ਜੈਵਿਕ ਖੇਤੀ ਅਤੇ ਪਾਣੀ ਸੰਭਾਲ ਤਕਨੀਕਾਂ ਨੂੰ ਉਤਸ਼ਾਹਿਤ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ।"
+        },
+        {
+          "source_text": "Educational infrastructure in Punjab is being modernized. Digital classrooms and online learning platforms are enhancing the quality of education.",
+          "target_text": "ਪੰਜਾਬ ਵਿੱਚ ਵਿਦਿਅਕ ਢਾਂਚੇ ਦਾ ਆਧੁਨਿਕੀਕਰਨ ਹੋ ਰਿਹਾ ਹੈ। ਡਿਜੀਟਲ ਕਲਾਸਰੂਮ ਅਤੇ ਔਨਲਾਈਨ ਸਿੱਖਿਆ ਪਲੇਟਫਾਰਮ ਸਿੱਖਿਆ ਦੀ ਗੁਣਵੱਤਾ ਵਧਾ ਰਹੇ ਹਨ।"
+        },
+        {
+          "source_text": "Industrial development in Punjab is focusing on clean technology. Manufacturing units are adopting environment-friendly processes to reduce pollution.",
+          "target_text": "ਪੰਜਾਬ ਵਿੱਚ ਉਦਯੋਗਿਕ ਵਿਕਾਸ ਸਾਫ਼ ਤਕਨੀਕ 'ਤੇ ਕੇਂਦਰਿਤ ਹੈ। ਪ੍ਰਦੂਸ਼ਣ ਘਟਾਉਣ ਲਈ ਨਿਰਮਾਣ ਇਕਾਈਆਂ ਵਾਤਾਵਰਣ-ਅਨੁਕੂਲ ਪ੍ਰਕਿਰਿਆਵਾਂ ਅਪਣਾ ਰਹੀਆਂ ਹਨ।"
+        }
+      ],
+      "en_to_or": [
+        {
+          "source_text": "Odisha's coastal areas are implementing climate resilience measures. Sea wall construction and mangrove restoration are protecting communities from natural disasters.",
+          "target_text": "ଓଡ଼ିଶାର ଉପକୂଳବର୍ତ୍ତୀ ଅଞ୍ଚଳଗୁଡ଼ିକ ଜଳବାୟୁ ସ୍ଥିରତା ପଦକ୍ଷେପ ଗ୍ରହଣ କରୁଛନ୍ତି। ସମୁଦ୍ର କାନ୍ଥ ନିର୍ମାଣ ଏବଂ ମ୍ୟାଙ୍ଗ୍ରୋଭ ପୁନରୁଦ୍ଧାର ସମ୍ପ୍ରଦାୟକୁ ପ୍ରାକୃତିକ ବିପର୍ଯ୍ୟୟରୁ ରକ୍ଷା କରୁଛି।"
+        },
+        {
+          "source_text": "Traditional handicrafts in Odisha are gaining international recognition. Artisans are using modern marketing techniques to reach global customers.",
+          "target_text": "ଓଡ଼ିଶାର ପାରମ୍ପରିକ ହସ୍ତଶିଳ୍ପ ଆନ୍ତର୍ଜାତୀୟ ସ୍ୱୀକୃତି ପାଇବାରେ ଲାଗିଛି। କାରିଗରମାନେ ବିଶ୍ୱବ୍ୟାପୀ ଗ୍ରାହକଙ୍କ ନିକଟରେ ପହଞ୍ଚିବା ପାଇଁ ଆଧୁନିକ ମାର୍କେଟିଂ କୌଶଳ ବ୍ୟବହାର କରୁଛନ୍ତି।"
+        },
+        {
+          "source_text": "Mining activities in Odisha are being regulated for environmental protection. Sustainable mining practices and forest conservation are being prioritized.",
+          "target_text": "ପରିବେଶ ସଂରକ୍ଷଣ ପାଇଁ ଓଡ଼ିଶାରେ ଖଣି କାର୍ଯ୍ୟକଳାପ ନିୟନ୍ତ୍ରିତ ହେଉଛି। ସ୍ଥାୟୀ ଖଣି ଅଭ୍ୟାସ ଏବଂ ଜଙ୍ଗଲ ସଂରକ୍ଷଣକୁ ପ୍ରାଥମିକତା ଦିଆଯାଉଛି।"
+        }
+      ],
+      "en_to_as": [
+        {
+          "source_text": "Assam's tea industry is modernizing its production processes. New technology and sustainable farming methods are improving the quality of tea exports.",
+          "target_text": "অসমৰ চাহ উদ্যোগে ইয়াৰ উৎপাদন প্ৰক্ৰিয়া আধুনিকীকৰণ কৰিছে। নতুন প্ৰযুক্তি আৰু বহনক্ষম কৃষি পদ্ধতিয়ে চাহ ৰপ্তানিৰ মান উন্নত কৰিছে।"
+        },
+        {
+          "source_text": "Wildlife conservation efforts in Assam are showing positive results. National parks and wildlife sanctuaries are protecting endangered species effectively.",
+          "target_text": "অসমত বন্যপ্ৰাণী সংৰক্ষণৰ প্ৰচেষ্টাই ইতিবাচক ফলাফল দেখুৱাইছে। ৰাষ্ট্ৰীয় উদ্যান আৰু বন্যপ্ৰাণী অভয়াৰণ্যই বিপন্ন প্ৰজাতিসমূহক কাৰ্যকৰীভাৱে সুৰক্ষা দিছে।"
+        },
+        {
+          "source_text": "Flood management systems in Assam are being upgraded. Early warning systems and improved drainage infrastructure are reducing flood damage.",
+          "target_text": "অসমত বানপানী ব্যৱস্থাপনা প্ৰণালী উন্নীতকৰণ কৰা হৈছে। আগতীয়া সতৰ্কবাণী ব্যৱস্থা আৰু উন্নত নিষ্কাশন আন্তঃগাঁথনিয়ে বানপানীৰ ক্ষতি হ্ৰাস কৰিছে।"
+        }
+      ],
+      "en_to_ur": [
+        {
+          "source_text": "Pakistan's digital payment systems are expanding rapidly. Mobile banking and e-wallets are making financial services more accessible to rural populations.",
+          "target_text": "پاکستان کے ڈیجیٹل پیمنٹ سسٹم تیزی سے پھیل رہے ہیں۔ موبائل بینکنگ اور ای ویلٹس دیہی آبادی کے لیے مالی خدمات کو زیادہ قابل رسائی بنا رہے ہیں۔"
+        },
+        {
+          "source_text": "Educational reforms in Pakistan are focusing on technology integration. Digital literacy programs and online courses are improving learning outcomes.",
+          "target_text": "پاکستان میں تعلیمی اصلاحات ٹیکنالوجی کے انضمام پر توجہ مرکوز کر رہی ہیں۔ ڈیجیٹل خواندگی کے پروگرام اور آن لائن کورسز تعلیمی نتائج بہتر بنا رہے ہیں۔"
+        },
+        {
+          "source_text": "Renewable energy initiatives in Pakistan are gaining government support. Solar and wind power projects are helping reduce dependence on fossil fuels.",
+          "target_text": "پاکستان میں قابل تجدید توانائی کے اقدامات کو حکومتی حمایت حاصل ہو رہی ہے۔ سولر اور ونڈ پاور پروجیکٹس جیواشم ایندھن پر انحصار کم کرنے میں مدد کر رہے ہیں۔"
+        }
+      ]
+    },
+    "generation_config": {
+      "max_new_tokens": 256,
+      "do_sample": true,
+      "temperature": 0.7,
+      "top_p": 0.9,
+      "repetition_penalty": 1.1,
+      "early_stopping": true
+    }
+  },
+  "crosssum_enhanced": {
+    "template": "Summarize the following {source_language} article in {target_language}:\n\nArticle: {article_text}\n\nSummary in {target_language}:",
+    "description": "Enhanced cross-lingual summarization with explicit language specification",
+    "use_few_shot": false,
+    "language_specific_prompts": {
+      "en_to_hi": "निम्नलिखित अंग्रेजी लेख को हिंदी में संक्षेप में प्रस्तुत करें:\n\nलेख: {article_text}\n\nहिंदी में सारांश:",
+      "en_to_bn": "নিম্নলিখিত ইংরেজি নিবন্ধটি বাংলায় সংক্ষেপে উপস্থাপন করুন:\n\nনিবন্ধ: {article_text}\n\nবাংলায় সারাংশ:",
+      "en_to_gu": "નીચેના અંગ્રેજી લેખનો ગુજરાતીમાં સારાંશ આપો:\n\nલેખ: {article_text}\n\nગુજરાતીમાં સારાંશ:",
+      "en_to_ta": "கீழே உள்ள ஆங்கிலக் கட்டுரையை தமிழில் சுருக்கமாக வழங்கவும்:\n\nகட்டுரை: {article_text}\n\nதமிழில் சுருக்கம்:",
+      "en_to_te": "క్రింది ఆంగ్ల వ్యాసాన్ని తెలుగులో సంక్షిప్తంగా ప్రస్తుతపరచండి:\n\nవ్యాసం: {article_text}\n\nతెలుగులో సారాంశం:",
+      "en_to_kn": "ಕೆಳಗಿನ ಇಂಗ್ಲಿಷ್ ಲೇಖನವನ್ನು ಕನ್ನಡದಲ್ಲಿ ಸಂಕ್ಷಿಪ್ತವಾಗಿ ಪ್ರಸ್ತುತಪಡಿಸಿ:\n\nಲೇಖನ: {article_text}\n\nಕನ್ನಡದಲ್ಲಿ ಸಾರಾಂಶ:",
+      "en_to_ml": "ചുവടെയുള്ള ഇംഗ്ലീഷ് ലേഖനം മലയാളത്തിൽ സംക്ഷിപ്തമായി അവതരിപ്പിക്കുക:\n\nലേഖനം: {article_text}\n\nമലയാളത്തിൽ സംഗ്രഹം:",
+      "en_to_mr": "खालील इंग्रजी लेख मराठीत संक्षिप्तपणे मांडा:\n\nलेख: {article_text}\n\nमराठीत सारांश:",
+      "en_to_pa": "ਹੇਠਾਂ ਦਿੱਤੇ ਅੰਗਰੇਜ਼ੀ ਲੇਖ ਨੂੰ ਪੰਜਾਬੀ ਵਿੱਚ ਸੰਖੇਪ ਵਿੱਚ ਪੇਸ਼ ਕਰੋ:\n\nਲੇਖ: {article_text}\n\nਪੰਜਾਬੀ ਵਿੱਚ ਸਾਰ:",
+      "en_to_or": "ନିମ୍ନଲିଖିତ ଇଂରାଜୀ ଲେଖାକୁ ଓଡ଼ିଆରେ ସଂକ୍ଷେପରେ ଉପସ୍ଥାପନ କରନ୍ତୁ:\n\nଲେଖା: {article_text}\n\nଓଡ଼ିଆରେ ସାରାଂଶ:",
+      "en_to_as": "তলৰ ইংৰাজী প্ৰবন্ধটো অসমীয়াত সংক্ষেপে উপস্থাপন কৰক:\n\nপ্ৰবন্ধ: {article_text}\n\nঅসমীয়াত সাৰাংশ:",
+      "en_to_ur": "درج ذیل انگریزی مضمون کا اردو میں خلاصہ پیش کریں:\n\nمضمون: {article_text}\n\nاردو میں خلاصہ:",
+      "default": "Summarize the following {source_language} article in {target_language}:\n\nArticle: {article_text}\n\nSummary in {target_language}:"
+    },
+    "generation_config": {
+      "max_new_tokens": 256,
+      "do_sample": true,
+      "temperature": 0.6,
+      "top_p": 0.85,
+      "repetition_penalty": 1.15,
+      "early_stopping": true,
+      "num_beams": 3
+    }
+  },
+  "post_processing": {
+    "cleanup_patterns": [
+      "^(Summary in [A-Za-z]+|Summary|सारांश|সারাংশ|સારાંશ|ಸಾರಾಂಶ|സംഗ്রഹം|सारांश|ସାରାଂଶ|ਸਾਰ|सारांश|சுருக்கம்|సారాంశం|خلاصہ):\\s*",
+      "^(Output|Result|Answer|लेख|নিবন্ধ|Article):\\s*",
+      "\\n\\n.*$",
+      "\\n[A-Z][a-z]+:.*$"
+    ],
+    "stop_sequences": [
+      "\n\nArticle:",
+      "\n\nSummary:",
+      "\n\nOutput:",
+      "\n\nExample:",
+      "\n\nलेख:",
+      "\n\nসারাংশ:",
+      "\n\nસારાંશ:"
+    ],
+    "max_summary_length": 500,
+    "min_summary_length": 10
+  },
+  "evaluation_config": {
+    "num_samples_per_lang": 100,
+    "batch_size": 2,
+    "rouge_settings": {
+      "use_stemmer": false,
+      "metrics": ["rouge1", "rouge2", "rougeL"]
+    }
+  },
+  "language_mappings": {
+    "as": "Assamese",
+    "bn": "Bengali", 
+    "gu": "Gujarati",
+    "hi": "Hindi",
+    "kn": "Kannada",
+    "ml": "Malayalam",
+    "mr": "Marathi",
+    "or": "Odia",
+    "pa": "Punjabi",
+    "ta": "Tamil",
+    "te": "Telugu",
+    "ur": "Urdu",
+    "en": "English"
+  },
+  "default_few_shot_examples_crosssum": [
+    {
+      "source_text": "The Indian Space Research Organisation (ISRO) successfully launched its latest satellite mission today. The rocket carried multiple communication satellites into orbit, marking another milestone in India's space program.",
+      "target_text_hi": "भारतीय अंतरिक्ष अनुसंधान संगठन (इसरो) ने आज अपना नवीनतम उपग्रह मिशन सफलतापूर्वक लॉन्च किया। रॉकेट ने कई संचार उपग्रहों को कक्षा में पहुंचाया।",
+      "target_text_bn": "ভারতীয় মহাকাশ গবেষণা সংস্থা (ইসরো) আজ তাদের সর্বশেষ স্যাটেলাইট মিশন সফলভাবে উৎক্ষেপণ করেছে। রকেটটি একাধিক যোগাযোগ স্যাটেলাইট কক্ষপথে পৌঁছে দিয়েছে।"
+    },
+    {
+      "source_text": "Climate change continues to affect weather patterns globally. Scientists report increased frequency of extreme weather events including floods, droughts, and hurricanes.",
+      "target_text_hi": "जलवायु परिवर्तन का वैश्विक मौसम पैटर्न पर प्रभाव जारी है। वैज्ञानिकों की रिपोर्ट के अनुसार बाढ़, सूखा और तूफान जैसी चरम मौसमी घटनाओं की आवृत्ति बढ़ रही है।",
+      "target_text_bn": "জলবায়ু পরিবর্তন বিশ্বব্যাপী আবহাওয়ার ধরনকে প্রভাবিত করে চলেছে। বিজ্ঞানীরা বন্যা, খরা এবং হারিকেন সহ চরম আবহাওয়া ঘটনার ক্রমবর্ধমান ঘটনার রিপোর্ট করেছেন।"
+    },
+    {
+      "source_text": "Technology companies are investing heavily in artificial intelligence research. New developments in machine learning are expected to transform various industries in the coming years.",
+      "target_text_hi": "प्रौद्योगिकी कंपनियां कृत्रिम बुद्धिमत्ता अनुसंधान में भारी निवेश कर रही हैं। मशीन लर्निंग के नए विकास से आने वाले वर्षों में विभिन्न उद्योगों में बदलाव की उम्मीद है।",
+      "target_text_bn": "প্রযুক্তি কোম্পানিগুলো কৃত্রিম বুদ্ধিমত্তা গবেষণায় ব্যাপক বিনিয়োগ করছে। মেশিন লার্নিংয়ের নতুন উন্নয়ন আগামী বছরগুলোতে বিভিন্ন শিল্পকে রূপান্তরিত করবে বলে প্রত্যাশিত।"
+    }
+  ]
+}

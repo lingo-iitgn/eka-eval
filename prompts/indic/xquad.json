@@ -1,72 +1,247 @@
 {
   "xquad_0shot": {
-    "template": "You are an expert in reading comprehension. Based on the given context, answer the question accurately and concisely.\n\nContext: {context}\n\nQuestion: {question}\n\nAnswer:",
-    "description": "Zero-shot XQuAD prompt for reading comprehension"
-  },
-  "xquad_0shot_simple": {
-    "template": "Context: {context}\n\nQuestion: {question}\n\nAnswer:",
-    "description": "Simple XQuAD prompt"
-  },
-  "xquad_5shot": {
-    "template_prefix": "You are an expert in reading comprehension. Based on the given context, answer each question accurately and concisely.\n\n",
-    "few_shot_example_template": "Context: {context}\nQuestion: {question}\nAnswer: {answer}",
-    "few_shot_separator": "\n\n",
-    "template_suffix": "Context: {context}\nQuestion: {question}\nAnswer:",
-    "description": "Few-shot XQuAD prompt template"
-  },
-  "xquad_cot": {
-    "template": "You are an expert in reading comprehension. Think through this step by step.\n\nContext: {context}\n\nQuestion: {question}\n\nLet me analyze this:\n1. First, I'll understand what the question is asking\n2. Then, I'll find the relevant information in the context\n3. Finally, I'll provide the accurate answer\n\nAnswer:",
-    "description": "Chain-of-thought XQuAD prompt"
-  },
-  "default_few_shot_examples_xquad": [
-    {
-      "context": "The Amazon rainforest is a moist broadleaf forest that covers most of the Amazon basin of South America. This basin encompasses 7,000,000 square kilometers, of which 5,500,000 square kilometers are covered by the rainforest. The majority of the forest is contained within Brazil, with 60% of the rainforest, followed by Peru with 13%, Colombia with 10%, and with minor amounts in Venezuela, Ecuador, Bolivia, Guyana, Suriname and French Guiana.",
-      "question": "How many square kilometers does the Amazon basin cover?",
-      "answer": "7,000,000 square kilometers"
+    "template": "Context: {context}\nQuestion: {question}\nAnswer:",
+    "description": "Zero-shot reading comprehension prompt",
+    "use_few_shot": false,
+    "language_specific_prompts": {
+      "hi": "संदर्भ: {context}\nप्रश्न: {question}\nउत्तर:",
+      "bn": "প্রসঙ্গ: {context}\nপ্রশ্ন: {question}\nউত্তর:",
+      "gu": "સંદર્ભ: {context}\nપ્રશ્ન: {question}\nજવાબ:",
+      "ta": "சூழல்: {context}\nகேள்வி: {question}\nபதில்:",
+      "te": "సందర్భం: {context}\nప్రశ్న: {question}\nసమాధానం:",
+      "kn": "ಸಂದರ್ಭ: {context}\nಪ್ರಶ್ನೆ: {question}\nಉತ್ತರ:",
+      "ml": "സന്ദർഭം: {context}\nചോദ്യം: {question}\nഉത്തരം:",
+      "mr": "संदर्भ: {context}\nप्रश्न: {question}\nउत्तर:",
+      "pa": "ਸੰਦਰਭ: {context}\nਸਵਾਲ: {question}\nਜਵਾਬ:",
+      "or": "ପ୍ରସଙ୍ଗ: {context}\nପ୍ରଶ୍ନ: {question}\nଉତ୍ତର:",
+      "as": "প্ৰসংগ: {context}\nপ্ৰশ্ন: {question}\nউত্তৰ:",
+      "ur": "سیاق: {context}\nسوال: {question}\nجواب:",
+      "en": "Context: {context}\nQuestion: {question}\nAnswer:",
+      "default": "Context: {context}\nQuestion: {question}\nAnswer:"
     },
-    {
-      "context": "Basketball is a team sport in which two teams, most commonly of five players each, opposing one another on a rectangular court, compete with the primary objective of shooting a basketball through the defender's hoop while preventing the opposing team from shooting through their own hoop.",
-      "question": "How many players are typically on each basketball team?",
-      "answer": "five players"
-    },
-    {
-      "context": "The Great Wall of China is a series of fortifications made of stone, brick, tamped earth, wood, and other materials, generally built along an east-to-west line across the historical northern borders of China to protect the Chinese states and empires against invasions. The wall was built over many centuries, with most of the existing structure dating from the Ming Dynasty (1368–1644).",
-      "question": "During which dynasty was most of the existing Great Wall structure built?",
-      "answer": "Ming Dynasty"
-    },
-    {
-      "context": "The human brain contains approximately 86 billion neurons. These neurons communicate with each other through electrical and chemical signals. The brain uses about 20% of the body's total energy consumption, despite representing only about 2% of body weight.",
-      "question": "What percentage of the body's energy does the brain consume?",
-      "answer": "20%"
-    },
-    {
-      "context": "Mount Everest, known in Nepali as Sagarmatha and in Tibetan as Chomolungma, is Earth's highest mountain above sea level, located in the Mahalangur Himal sub-range of the Himalayas. The China–Nepal border runs across its summit point. Its elevation of 8,848.86 m was most recently established in 2020.",
-      "question": "What is the current official height of Mount Everest?",
-      "answer": "8,848.86 m"
+    "generation_config": {
+      "max_new_tokens": 128,
+      "do_sample": true,
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "top_k": 50,
+      "repetition_penalty": 1.1,
+      "early_stopping": true
     }
-  ],
-  "default_few_shot_examples_xquad_hindi": [
-    {
-      "context": "अमेज़न वर्षावन एक नम चौड़ी पत्ती वाला जंगल है जो दक्षिण अमेरिका के अमेज़न बेसिन के अधिकांश हिस्से को कवर करता है। यह बेसिन 7,000,000 वर्ग किलोमीटर में फैला है, जिसमें से 5,500,000 वर्ग किलोमीटर वर्षावन से ढका है।",
-      "question": "अमेज़न बेसिन कितने वर्ग किलोमीटर में फैला है?",
-      "answer": "7,000,000 वर्ग किलोमीटर"
+  },
+  "xquad_3shot": {
+    "template": "Context: {context}\nQuestion: {question}\nAnswer:",
+    "description": "Few-shot reading comprehension with examples",
+    "use_few_shot": true,
+    "num_few_shot_examples": 3,
+    "language_specific_prompts": {
+      "hi": "संदर्भ: {context}\nप्रश्न: {question}\nउत्तर:",
+      "bn": "প্রসঙ্গ: {context}\nপ্রশ্ন: {question}\nউত্তর:",
+      "gu": "સંદર્ભ: {context}\nપ્રશ્ન: {question}\nજવાબ:",
+      "ta": "சூழல்: {context}\nகேள்வி: {question}\nபதில்:",
+      "te": "సందర్భం: {context}\nప్రశ్న: {question}\nసమాధానం:",
+      "kn": "ಸಂದರ್ಭ: {context}\nಪ್ರಶ್ನೆ: {question}\nಉತ್ತರ:",
+      "ml": "സന്ദർഭം: {context}\nചോദ്യം: {question}\nഉത്തരം:",
+      "mr": "संदर्भ: {context}\nप्रश्न: {question}\nउत्तर:",
+      "pa": "ਸੰਦਰਭ: {context}\nਸਵਾਲ: {question}\nਜਵਾਬ:",
+      "or": "ପ୍ରସଙ୍ଗ: {context}\nପ୍ରଶ୍ନ: {question}\nଉତ୍ତର:",
+      "as": "প্ৰসংগ: {context}\nপ্ৰশ্ন: {question}\nউত্তৰ:",
+      "ur": "سیاق: {context}\nسوال: {question}\nجواب:",
+      "en": "Context: {context}\nQuestion: {question}\nAnswer:",
+      "default": "Context: {context}\nQuestion: {question}\nAnswer:"
     },
-    {
-      "context": "बास्केटबॉल एक टीम खेल है जिसमें दो टीमें, आमतौर पर पांच खिलाड़ियों की, एक आयताकार कोर्ट पर एक दूसरे का सामना करती हैं।",
-      "question": "बास्केटबॉल की प्रत्येक टीम में आमतौर पर कितने खिलाड़ी होते हैं?",
-      "answer": "पांच खिलाड़ी"
-    }
-  ],
-  "default_few_shot_examples_xquad_bengali": [
-    {
-      "context": "আমাজন রেইনফরেস্ট একটি আর্দ্র বিস্তৃত পাতার বন যা দক্ষিণ আমেরিকার আমাজন অববাহিকার বেশিরভাগ অংশ জুড়ে রয়েছে। এই অববাহিকা ৭,০০০,০০০ বর্গ কিলোমিটার জুড়ে বিস্তৃত, যার মধ্যে ৫,৫০০,০০০ বর্গ কিলোমিটার রেইনফরেস্ট দ্বারা আবৃত।",
-      "question": "আমাজন অববাহিকা কত বর্গ কিলোমিটার জুড়ে বিস্তৃত?",
-      "answer": "৭,০০০,০০০ বর্গ কিলোমিটার"
+    "few_shot_examples": {
+      "hi": [
+        {
+          "context": "अमेज़न वर्षावन एक नम चौड़ी पत्ती वाला जंगल है जो दक्षिण अमेरिका के अमेज़न बेसिन के अधिकांश हिस्से को कवर करता है। यह बेसिन 7,000,000 वर्ग किलोमीटर में फैला है, जिसमें से 5,500,000 वर्ग किलोमीटर वर्षावन से ढका है।",
+          "question": "अमेज़न बेसिन कितने वर्ग किलोमीटर में फैला है?",
+          "answer": "7,000,000 वर्ग किलोमीटर"
+        },
+        {
+          "context": "बास्केटबॉल एक टीम खेल है जिसमें आमतौर पर प्रत्येक टीम में पांच खिलाड़ी होते हैं, जो एक आयताकार कोर्ट पर एक दूसरे के खिलाफ खेलते हैं।",
+          "question": "बास्केटबॉल टीम में आमतौर पर कितने खिलाड़ी होते हैं?",
+          "answer": "पांच खिलाड़ी"
+        },
+        {
+          "context": "टाइटैनिक एक ब्रिटिश यात्री जहाज था जो 15 अप्रैल 1912 को उत्तरी अटलांटिक महासागर में डूब गया था। यह अपनी पहली यात्रा के दौरान एक हिमखंड से टकराने के बाद डूब गया।",
+          "question": "टाइटैनिक कब डूबा था?",
+          "answer": "15 अप्रैल 1912"
+        }
+      ],
+      "bn": [
+        {
+          "context": "আমাজন রেইনফরেস্ট একটি আর্দ্র বিস্তৃত পাতার বন যা দক্ষিণ আমেরিকার আমাজন অববাহিকার বেশিরভাগ অংশ জুড়ে রয়েছে। এই অববাহিকা ৭,০০০,০০০ বর্গ কিলোমিটার জুড়ে বিস্তৃত।",
+          "question": "আমাজন অববাহিকা কত বর্গ কিলোমিটার জুড়ে বিস্তৃত?",
+          "answer": "৭,০০০,০০০ বর্গ কিলোমিটার"
+        },
+        {
+          "context": "বাস্কেটবল একটি দলীয় খেলা যেখানে সাধারণত প্রতিটি দলে পাঁচজন খেলোয়াড় থাকে, যারা একটি আয়তাকার কোর্টে একে অপরের বিপক্ষে খেলে।",
+          "question": "বাস্কেটবল দলে সাধারণত কতজন খেলোয়াড় থাকে?",
+          "answer": "পাঁচজন খেলোয়াড়"
+        },
+        {
+          "context": "টাইটানিক একটি ব্রিটিশ যাত্রীবাহী জাহাজ ছিল যা ১৫ এপ্রিল ১৯১২ সালে উত্তর আটলান্টিক মহাসাগরে ডুবে যায়। এটি তার প্রথম যাত্রায় একটি বরফের পাহাড়ের সাথে সংঘর্ষের পর ডুবে যায়।",
+          "question": "টাইটানিক কবে ডুবেছিল?",
+          "answer": "১৫ এপ্রিল ১৯১২"
+        }
+      ],
+      "gu": [
+        {
+          "context": "એમેઝોન વરસાદી જંગલ એક ભેજવાળું પહોળા પાંદડાવાળું જંગલ છે જે દક્ષિણ અમેરિકાના એમેઝોન બેસિનના મોટાભાગના વિસ્તારને આવરે છે। આ બેસિન ૭,૦૦૦,૦૦૦ ચોરસ કિલોમીટરમાં ફેલાયેલું છે।",
+          "question": "એમેઝોન બેસિન કેટલા ચોરસ કિલોમીટરમાં ફેલાયેલું છે?",
+          "answer": "૭,૦૦૦,૦૦૦ ચોરસ કિલોમીટર"
+        },
+        {
+          "context": "બાસ્કેટબોલ એક ટીમ રમત છે જેમાં સામાન્ય રીતે દરેક ટીમમાં પાંચ ખેલાડીઓ હોય છે, જેઓ લંબચોરસ કોર્ટ પર એક બીજાની સામે રમે છે।",
+          "question": "બાસ્કેટબોલ ટીમમાં સામાન્ય રીતે કેટલા ખેલાડીઓ હોય છે?",
+          "answer": "પાંચ ખેલાડીઓ"
+        },
+        {
+          "context": "ટાઇટેનિક એક બ્રિટિશ પેસેન્જર શિપ હતું જે ૧૫ એપ્રિલ ૧૯૧૨ના રોજ ઉત્તર એટલાન્ટિક મહાસાગરમાં ડૂબી ગયું હતું।",
+          "question": "ટાઇટેનિક ક્યારે ડૂબ્યું હતું?",
+          "answer": "૧૫ એપ્રિલ ૧૯૧૨"
+        }
+      ],
+      "ta": [
+        {
+          "context": "அமேசான் மழைக்காடு தென் அமெரிக்காவின் அமேசான் படுகையின் பெரும்பகுதியை உள்ளடக்கிய ஒரு ஈரமான அகன்ற இலை காடு ஆகும். இந்த படுகை 7,000,000 சதுர கிலோமீட்டர் பரப்பளவு கொண்டது।",
+          "question": "அமேசான் படுகை எத்தனை சதுர கிலோமீட்டர் பரப்பளவு கொண்டது?",
+          "answer": "7,000,000 சதுர கிலோமீட்டர்"
+        },
+        {
+          "context": "கூடைப்பந்து ஒரு அணி விளையாட்டு ஆகும், இதில் பொதுவாக ஒவ்வொரு அணியிலும் ஐந்து வீரர்கள் இருப்பர், அவர்கள் ஒரு செவ்வக மைதானத்தில் ஒருவருக்கொருவர் எதிராக விளையாடுவர்।",
+          "question": "கூடைப்பந்து அணியில் பொதுவாக எத்தனை வீரர்கள் இருப்பார்கள்?",
+          "answer": "ஐந்து வீரர்கள்"
+        },
+        {
+          "context": "டைட்டானிக் ஒரு பிரிட்டிஷ் பயணிகள் கப்பல் ஆகும், இது ஏப்ரல் 15, 1912 அன்று வடக்கு அட்லாண்டிக் பெருங்கடலில் மூழ்கியது।",
+          "question": "டைட்டானிக் எப்போது மூழ்கியது?",
+          "answer": "ஏப்ரல் 15, 1912"
+        }
+      ],
+      "te": [
+        {
+          "context": "అమెజాన్ వర్షారణ్యం దక్షిణ అమెరికాలోని అమెజాన్ బేసిన్‌లో ఎక్కువ భాగాన్ని కప్పే తేమతో కూడిన విశాల ఆకుల అడవి. ఈ బేసిన్ 7,000,000 చదరపు కిలోమీటర్లలో విస్తరించి ఉంది।",
+          "question": "అమెజాన్ బేసిన్ ఎంత చదరపు కిలోమీటర్లలో విస్తరించి ఉంది?",
+          "answer": "7,000,000 చదరపు కిలోమీటర్లు"
+        },
+        {
+          "context": "బాస్కెట్‌బాల్ ఒక జట్టు క్రీడ, ఇందులో సాధారణంగా ప్రతి జట్టులో ఐదుగురు ఆటగాళ్ళు ఉంటారు, వారు దీర్ఘచతురస్రాకార కోర్టులో ఒకరికొకరు వ్యతిరేకంగా ఆడతారు।",
+          "question": "బాస్కెట్‌బాల్ జట్టులో సాధారణంగా ఎంతమంది ఆటగాళ్ళు ఉంటారు?",
+          "answer": "ఐదుగురు ఆటగాళ్ళు"
+        },
+        {
+          "context": "టైటానిక్ ఒక బ్రిటిష్ ప్రయాణీకుల నౌక, ఇది ఏప్రిల్ 15, 1912న ఉత్తర అట్లాంటిక్ మహాసముద్రంలో మునిగిపోయింది।",
+          "question": "టైటానిక్ ఎప్పుడు మునిగిపోయింది?",
+          "answer": "ఏప్రిల్ 15, 1912"
+        }
+      ],
+      "en": [
+        {
+          "context": "The Amazon rainforest is a moist broadleaf forest that covers most of the Amazon basin of South America. This basin encompasses 7,000,000 square kilometers, of which 5,500,000 square kilometers are covered by the rainforest.",
+          "question": "How many square kilometers does the Amazon basin cover?",
+          "answer": "7,000,000 square kilometers"
+        },
+        {
+          "context": "Basketball is a team sport in which two teams, most commonly of five players each, opposing one another on a rectangular court, compete with the primary objective of shooting a basketball through the defender's hoop.",
+          "question": "How many players are typically on each basketball team?",
+          "answer": "five players"
+        },
+        {
+          "context": "The Titanic was a British passenger liner that sank in the North Atlantic Ocean on 15 April 1912, after striking an iceberg during her maiden voyage.",
+          "question": "When did the Titanic sink?",
+          "answer": "15 April 1912"
+        }
+      ]
     },
-    {
-      "context": "বাস্কেটবল একটি দলগত খেলা যেখানে দুটি দল, সাধারণত প্রতিটিতে পাঁচজন খেলোয়াড়, একটি আয়তাকার কোর্টে একে অপরের মুখোমুখি হয়।",
-      "question": "বাস্কেটবলের প্রতিটি দলে সাধারণত কতজন খেলোয়াড় থাকে?",
-      "answer": "পাঁচজন খেলোয়াড়"
+    "generation_config": {
+      "max_new_tokens": 128,
+      "do_sample": true,
+      "temperature": 0.2,
+      "top_p": 0.8,
+      "top_k": 40,
+      "repetition_penalty": 1.15,
+      "early_stopping": true
     }
-  ]
+  },
+  "xquad_enhanced": {
+    "template": "Read the following context carefully and answer the question based only on the information provided:\n\nContext: {context}\n\nQuestion: {question}\n\nAnswer:",
+    "description": "Enhanced reading comprehension with explicit instruction",
+    "use_few_shot": false,
+    "language_specific_prompts": {
+      "hi": "निम्नलिखित संदर्भ को ध्यान से पढ़ें और केवल दी गई जानकारी के आधार पर प्रश्न का उत्तर दें:\n\nसंदर्भ: {context}\n\nप्रश्न: {question}\n\nउत्तर:",
+      "bn": "নিম্নলিখিত প্রসঙ্গটি মনোযোগ সহকারে পড়ুন এবং শুধুমাত্র প্রদত্ত তথ্যের ভিত্তিতে প্রশ্নের উত্তর দিন:\n\nপ্রসঙ্গ: {context}\n\nপ্রশ্ন: {question}\n\nউত্তর:",
+      "gu": "નીચેના સંદર્ભને કાળજીપૂર્વક વાંચો અને ફક્ત આપેલી માહિતીના આધારે પ્રશ્નનો જવાબ આપો:\n\nસંદર્ભ: {context}\n\nપ્રશ્ન: {question}\n\nજવાબ:",
+      "ta": "பின்வரும் சூழலை கவனமாக படித்து, வழங்கப்பட்ட தகவலின் அடிப்படையில் மட்டுமே கேள்விக்கு பதிலளிக்கவும்:\n\nசூழல்: {context}\n\nகேள்வி: {question}\n\nபதில்:",
+      "te": "క్రింది సందర్భాన్ని జాగ్రత్తగా చదివి, అందించిన సమాచారం ఆధారంగా మాత్రమే ప్రశ్నకు సమాధానం ఇవ్వండి:\n\nసందర్భం: {context}\n\nప్రశ్న: {question}\n\nసమాధానం:",
+      "kn": "ಕೆಳಗಿನ ಸಂದರ್ಭವನ್ನು ಎಚ್ಚರಿಕೆಯಿಂದ ಓದಿ ಮತ್ತು ಒದಗಿಸಿದ ಮಾಹಿತಿಯ ಆಧಾರದಲ್ಲಿ ಮಾತ್ರ ಪ್ರಶ್ನೆಗೆ ಉತ್ತರಿಸಿ:\n\nಸಂದರ್ಭ: {context}\n\nಪ್ರಶ್ನೆ: {question}\n\nಉತ್ತರ:",
+      "ml": "ഇനിപ്പറയുന്ന സന്ദർഭം ശ്രദ്ധാപൂർവ്വം വായിക്കുകയും നൽകിയിരിക്കുന്ന വിവരങ്ങളുടെ അടിസ്ഥാനത്തിൽ മാത്രം ചോദ്യത്തിന് ഉത്തരം നൽകുകയും ചെയ്യുക:\n\nസന്ദർഭം: {context}\n\nചോദ്യം: {question}\n\nഉത്തരം:",
+      "mr": "खालील संदर्भ काळजीपूर्वक वाचा आणि फक्त दिलेल्या माहितीच्या आधारावर प्रश्नाचे उत्तर द्या:\n\nसंदर्भ: {context}\n\nप्रश्न: {question}\n\nउत्तर:",
+      "pa": "ਹੇਠਲੇ ਸੰਦਰਭ ਨੂੰ ਧਿਆਨ ਨਾਲ ਪੜ੍ਹੋ ਅਤੇ ਸਿਰਫ਼ ਦਿੱਤੀ ਗਈ ਜਾਣਕਾਰੀ ਦੇ ਆਧਾਰ 'ਤੇ ਸਵਾਲ ਦਾ ਜਵਾਬ ਦਿਓ:\n\nਸੰਦਰਭ: {context}\n\nਸਵਾਲ: {question}\n\nਜਵਾਬ:",
+      "or": "ନିମ୍ନଲିଖିତ ପ୍ରସଙ୍ଗକୁ ଯତ୍ନରେ ପଢ଼ନ୍ତୁ ଏବଂ କେବଳ ପ୍ରଦତ୍ତ ସୂଚନା ଆଧାରରେ ପ୍ରଶ୍ନର ଉତ୍ତର ଦିଅନ୍ତୁ:\n\nପ୍ରସଙ୍ଗ: {context}\n\nପ୍ରଶ୍ନ: {question}\n\nଉତ୍ତର:",
+      "as": "তলৰ প্ৰসংগটো সযতনে পঢ়ক আৰু কেৱল প্ৰদান কৰা তথ্যৰ ভিত্তিত প্ৰশ্নটোৰ উত্তৰ দিয়ক:\n\nপ্ৰসংগ: {context}\n\nপ্ৰশ্ন: {question}\n\nউত্তৰ:",
+      "ur": "مندرجہ ذیل سیاق و سباق کو احتیاط سے پڑھیں اور صرف فراہم کردہ معلومات کی بنیاد پر سوال کا جواب دیں:\n\nسیاق: {context}\n\nسوال: {question}\n\nجواب:",
+      "en": "Read the following context carefully and answer the question based only on the information provided:\n\nContext: {context}\n\nQuestion: {question}\n\nAnswer:",
+      "default": "Read the following context carefully and answer the question based only on the information provided:\n\nContext: {context}\n\nQuestion: {question}\n\nAnswer:"
+    },
+    "generation_config": {
+      "max_new_tokens": 128,
+      "do_sample": true,
+      "temperature": 0.1,
+      "top_p": 0.7,
+      "top_k": 20,
+      "repetition_penalty": 1.2,
+      "early_stopping": true,
+      "num_beams": 3
+    }
+  },
+  "post_processing": {
+    "cleanup_patterns": [
+      "^(Answer|उत्तर|উত্তর|જવાબ|பதில்|సమాధానం|ಉತ್ತರ|ഉത്തരം|उत्तर|ଉତ୍ତର|ਜਵਾਬ|উত্তৰ|جواب):\\s*",
+      "^(Response|Output|Result):\\s*",
+      "^(Context|संदर्भ|প্রসঙ্গ|સંદર્ભ|சூழல்|సందర్భం|ಸಂದರ್ಭ|സന്ദർഭം|संदर्भ|ପ୍ରସଙ୍ଗ|ਸੰਦਰਭ|প্ৰসংগ|سیاق):.*",
+      "^(Question|प्रश्न|প্রশ্ন|પ્રશ્ન|கேள்வி|ప్రశ్న|ಪ್ರಶ್ನೆ|ചോദ്യം|प्रश्न|ପ୍ରଶ୍ନ|ਸਵਾਲ|প্ৰশ্ন|سوال):.*",
+      "\\n\\n.*$",
+      "\\n[A-Z][a-z]+:.*$"
+    ],
+    "stop_sequences": [
+      "\n\nContext:",
+      "\n\nQuestion:",
+      "\n\nAnswer:",
+      "\n\nसंदर्भ:",
+      "\n\nप्रश्न:",
+      "\n\nउत्तर:",
+      "\n\nপ্রসঙ্গ:",
+      "\n\nপ্রশ্ন:",
+      "\n\nউত্তর:",
+      "\n\nExample:"
+    ],
+    "max_answer_length": 128,
+    "min_answer_length": 1
+  },
+  "evaluation_config": {
+    "num_samples_per_lang": 100,
+    "batch_size": 4,
+    "f1_settings": {
+      "normalize_text": true,
+      "remove_articles": true,
+      "remove_punctuation": true
+    },
+    "primary_metric": "f1"
+  },
+  "language_mappings": {
+    "as": "Assamese",
+    "bn": "Bengali", 
+    "gu": "Gujarati",
+    "hi": "Hindi",
+    "kn": "Kannada",
+    "ml": "Malayalam",
+    "mr": "Marathi",
+    "or": "Odia",
+    "pa": "Punjabi",
+    "ta": "Tamil",
+    "te": "Telugu",
+    "ur": "Urdu",
+    "en": "English"
+  }
 }
