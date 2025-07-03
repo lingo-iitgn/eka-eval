@@ -1,6 +1,14 @@
 <div align="center">
   <!-- Eka Logo -->
-  <img width="118" alt="eka-eval logo" src="https://github.com/user-attachments/assets/2822b114-39bb-4c19-8808-accd8b415b3a" style="margin-bottom: 10px;" />
+  <a href="https://eka.soket.ai/" target="_blank">
+    <img 
+      width="118" 
+      alt="eka-eval logo" 
+      src="https://github.com/user-attachments/assets/2822b114-39bb-4c19-8808-accd8b415b3a" 
+      style="margin-bottom: 10px;" 
+    />
+  </a>
+<!--    <img width="118" alt="eka-eval logo" src="https://github.com/user-attachments/assets/2822b114-39bb-4c19-8808-accd8b415b3a" style="margin-bottom: 10px;" /> -->
 
   <h1>Eka-Eval.</h1>
   <h2>A Comprehensive Evaluation Framework for Large Language Models in Indian Languages.</h2>
