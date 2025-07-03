@@ -8,7 +8,7 @@
       style="margin-bottom: 10px;" 
     />
   </a>
-  <h1 style="display: inline; margin: 0; vertical-align: middle;">Eka-Eval.</h1>
+  <h1>Eka-Eval</h1>
   <h2>A Comprehensive Evaluation Framework for Large Language Models in Indian Languages.</h2>
 
   <!-- Badges Row -->
