@@ -464,30 +464,6 @@ python3 -m pytest tests/
 
 ---
 
-## **📄 License**
-
-This project is licensed under the **Apache 2.0 License** - see the [LICENSE](LICENSE) file for details.
-
----
-
-## **📚 Citation**
-
-If you use Eka-Eval in your research, please cite:
-
-```bibtex
-@misc{sinha2025ekaevalcomprehensiveevaluation,
-      title={Eka-Eval : A Comprehensive Evaluation Framework for Large Language Models in Indian Languages}, 
-      author={Samridhi Raj Sinha and Rajvee Sheth and Abhishek Upperwal and Mayank Singh},
-      year={2025},
-      eprint={2507.01853},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2507.01853}, 
-}
-```
-
----
-
 ## **🔗 References & Resources**
 
 ### **Official Benchmark Papers**
@@ -530,6 +506,29 @@ If you use Eka-Eval in your research, please cite:
 - Reproducible evaluation protocols
 - Standardized metrics and reporting
 - Peer-reviewed benchmark implementations
+
+---
+## **📄 License**
+
+This project is licensed under the **Apache 2.0 License** - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## **📚 Citation**
+
+If you use Eka-Eval in your research, please cite:
+
+```bibtex
+@misc{sinha2025ekaevalcomprehensiveevaluation,
+      title={Eka-Eval : A Comprehensive Evaluation Framework for Large Language Models in Indian Languages}, 
+      author={Samridhi Raj Sinha and Rajvee Sheth and Abhishek Upperwal and Mayank Singh},
+      year={2025},
+      eprint={2507.01853},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2507.01853}, 
+}
+```
 
 ---
 
