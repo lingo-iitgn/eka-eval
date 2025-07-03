@@ -37,9 +37,9 @@
 
 ## **Overview**
 
-**eka-eval** is the official evaluation pipeline for the EKA project ([eka.soket.ai](https://eka.soket.ai)), designed to provide comprehensive, fair, and transparent benchmarking for large language models (LLMs). Our framework supports both global and India-centric evaluations, with special emphasis on multilingual capabilities across Indian languages.
+**Eka-Eval** is the official evaluation pipeline for the EKA project ([eka.soket.ai](https://eka.soket.ai)), designed to provide comprehensive, fair, and transparent benchmarking for large language models (LLMs). Our framework supports both global and India-centric evaluations, with special emphasis on multilingual capabilities across Indian languages.
 
-### 🎯 **Why eka-eval?**
+### 🎯 **Why Eka-Eval?**
 
 - **🌏 Global + India-First**: Combines international benchmarks with India-specific evaluations
 - **🔬 Rigorous & Reproducible**: Standardized evaluation protocols with detailed logging
@@ -472,7 +472,7 @@ This project is licensed under the **Apache 2.0 License** - see the [LICENSE](LI
 
 ## **📚 Citation**
 
-If you use eka-eval in your research, please cite:
+If you use Eka-Eval in your research, please cite:
 
 ```bibtex
 @misc{sinha2025ekaevalcomprehensiveevaluation,
@@ -534,7 +534,7 @@ If you use eka-eval in your research, please cite:
 ---
 
 <div align="center">
-  <h3>🚀 <strong>eka-eval: Powering the Future of AI Evaluation</strong> 🚀</h3>
+  <h3>🚀 <strong>Eka-Eval: Powering the Future of AI Evaluation</strong> 🚀</h3>
   <p><em>Open • Ethical • Comprehensive • India-First</em></p>
   
   <p>
