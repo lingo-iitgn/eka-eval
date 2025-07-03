@@ -2,7 +2,7 @@
   <!-- Eka Logo -->
   <img width="118" alt="eka-eval logo" src="https://github.com/user-attachments/assets/2822b114-39bb-4c19-8808-accd8b415b3a" style="margin-bottom: 10px;" />
 
-  <h1>eka-eval.</h1>
+  <h1>Eka-Eval.</h1>
   <h2>The Unified LLM Evaluation Framework for India and the World.</h2>
 
   <!-- Badges Row -->
