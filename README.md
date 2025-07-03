@@ -3,7 +3,7 @@
   <img width="118" alt="eka-eval logo" src="https://github.com/user-attachments/assets/2822b114-39bb-4c19-8808-accd8b415b3a" style="margin-bottom: 10px;" />
 
   <h1>Eka-Eval.</h1>
-  <h2>The Unified LLM Evaluation Framework for India and the World.</h2>
+  <h2>A Comprehensive Evaluation Framework for Large Language Models in Indian Languages.</h2>
 
   <!-- Badges Row -->
   <p>
@@ -469,12 +469,14 @@ This project is licensed under the **Apache 2.0 License** - see the [LICENSE](LI
 If you use eka-eval in your research, please cite:
 
 ```bibtex
-@software{eka_eval_2024,
-  title={eka-eval: The Unified LLM Evaluation Framework for India and the World},
-  author={EKA Team},
-  year={2024},
-  url={https://github.com/your-org/eka-eval},
-  version={1.0}
+@misc{sinha2025ekaevalcomprehensiveevaluation,
+      title={Eka-Eval : A Comprehensive Evaluation Framework for Large Language Models in Indian Languages}, 
+      author={Samridhi Raj Sinha and Rajvee Sheth and Abhishek Upperwal and Mayank Singh},
+      year={2025},
+      eprint={2507.01853},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2507.01853}, 
 }
 ```
 
