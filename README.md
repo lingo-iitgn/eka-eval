@@ -1,9 +1,15 @@
 <div align="center">
   <!-- Eka Logo -->
-  <img width="118" alt="eka-eval logo" src="https://github.com/user-attachments/assets/2822b114-39bb-4c19-8808-accd8b415b3a" style="margin-bottom: 10px;" />
-
-  <h1>eka-eval.</h1>
-  <h2>The Unified LLM Evaluation Framework for India and the World.</h2>
+  <a href="https://eka.soket.ai/" target="_blank">
+    <img 
+      width="118" 
+      alt="eka-eval logo" 
+      src="https://github.com/user-attachments/assets/2822b114-39bb-4c19-8808-accd8b415b3a" 
+      style="margin-bottom: 10px;" 
+    />
+  </a>
+  <h1>Eka-Eval</h1>
+  <h2>A Comprehensive Evaluation Framework for Large Language Models in Indian Languages.</h2>
 
   <!-- Badges Row -->
   <p>
@@ -31,9 +37,9 @@
 
 ## **Overview**
 
-**eka-eval** is the official evaluation pipeline for the EKA project ([eka.soket.ai](https://eka.soket.ai)), designed to provide comprehensive, fair, and transparent benchmarking for large language models (LLMs). Our framework supports both global and India-centric evaluations, with special emphasis on multilingual capabilities across Indian languages.
+**Eka-Eval** is the official evaluation pipeline for the EKA project ([eka.soket.ai](https://eka.soket.ai)), designed to provide comprehensive, fair, and transparent benchmarking for large language models (LLMs). Our framework supports both global and India-centric evaluations, with special emphasis on multilingual capabilities across Indian languages.
 
-### 🎯 **Why eka-eval?**
+### 🎯 **Why Eka-Eval?**
 
 - **🌏 Global + India-First**: Combines international benchmarks with India-specific evaluations
 - **🔬 Rigorous & Reproducible**: Standardized evaluation protocols with detailed logging
@@ -458,28 +464,6 @@ python3 -m pytest tests/
 
 ---
 
-## **📄 License**
-
-This project is licensed under the **Apache 2.0 License** - see the [LICENSE](LICENSE) file for details.
-
----
-
-## **📚 Citation**
-
-If you use eka-eval in your research, please cite:
-
-```bibtex
-@software{eka_eval_2024,
-  title={eka-eval: The Unified LLM Evaluation Framework for India and the World},
-  author={EKA Team},
-  year={2024},
-  url={https://github.com/your-org/eka-eval},
-  version={1.0}
-}
-```
-
----
-
 ## **🔗 References & Resources**
 
 ### **Official Benchmark Papers**
@@ -524,9 +508,32 @@ If you use eka-eval in your research, please cite:
 - Peer-reviewed benchmark implementations
 
 ---
+## **📄 License**
+
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## **📚 Citation**
+
+If you use Eka-Eval in your research, please cite:
+
+```bibtex
+@misc{sinha2025ekaevalcomprehensiveevaluation,
+      title={Eka-Eval : A Comprehensive Evaluation Framework for Large Language Models in Indian Languages}, 
+      author={Samridhi Raj Sinha and Rajvee Sheth and Abhishek Upperwal and Mayank Singh},
+      year={2025},
+      eprint={2507.01853},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2507.01853}, 
+}
+```
+
+---
 
 <div align="center">
-  <h3>🚀 <strong>eka-eval: Powering the Future of AI Evaluation</strong> 🚀</h3>
+  <h3>🚀 <strong>Eka-Eval: Powering the Future of AI Evaluation</strong> 🚀</h3>
   <p><em>Open • Ethical • Comprehensive • India-First</em></p>
   
   <p>
