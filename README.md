@@ -293,7 +293,7 @@ def evaluate_my_task(pipe, tokenizer, model_name_for_logging, device, **kwargs):
 
 #### **2. Add Prompt Configuration**
 ```json
-// prompts/custom/my_task.json
+ prompts/custom/my_task.json
 {
   "my_task_0shot": {
     "template": "Question: {question}\nAnswer:",
