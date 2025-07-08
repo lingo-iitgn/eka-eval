@@ -539,8 +539,8 @@ If you use Eka-Eval in your research, please cite:
   
   <p>
     <a href="https://eka.soket.ai">🌐 Website</a> •
-    <a href="https://discord.gg/pQaFJ857">💬 Discord</a> •
+<!--     <a href="https://discord.gg/pQaFJ857">💬 Discord</a> •
     <a href="https://github.com/your-org/eka-eval/issues">🐛 Issues</a> •
-    <a href="https://github.com/your-org/eka-eval/discussions">💡 Discussions</a>
+    <a href="https://github.com/your-org/eka-eval/discussions">💡 Discussions</a> -->
   </p>
 </div>
