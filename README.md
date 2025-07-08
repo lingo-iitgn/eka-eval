@@ -14,10 +14,10 @@
   <!-- Badges Row -->
   <p>
     <img src="https://img.shields.io/badge/release-v1.0-blue.svg" alt="Release v1.0" />
-    <img src="https://img.shields.io/badge/license-Apache%202.0-green.svg" alt="License Apache 2.0" />
+<!--     <img src="https://img.shields.io/badge/license-Apache%202.0-green.svg" alt="License MIT" /> -->
     <a href="https://colab.research.google.com/github/your_repo/eka-eval/blob/main/notebooks/quick_start.ipynb">
-      <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab" />
-    </a>
+<!--       <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab" />
+    </a> -->
 <!--     <a href="https://discord.gg/pQaFJ857">
       <img src="https://img.shields.io/discord/308323056592486420?label=Join%20Community&logo=discord&colorB=7289DA" alt="Discord Community" />
     </a> -->
@@ -539,8 +539,8 @@ If you use Eka-Eval in your research, please cite:
   
   <p>
     <a href="https://eka.soket.ai">🌐 Website</a> •
-    <a href="[https://discord.gg/pQaFJ857](https://bit.ly/Eka-Eval)">💬 Demo</a> •
-    <a href="[https://discord.gg/pQaFJ857](https://arxiv.org/pdf/2507.01853)">💡 Paper</a>
+    <a href="https://bit.ly/Eka-Eval">💬 Demo</a> •
+    <a href="https://arxiv.org/pdf/2507.01853">💡 Paper</a>
 <!--     <a href="https://discord.gg/pQaFJ857">💬 Discord</a> •
     <a href="https://github.com/your-org/eka-eval/issues">🐛 Issues</a> •
     <a href="https://github.com/your-org/eka-eval/discussions">💡 Discussions</a> -->
