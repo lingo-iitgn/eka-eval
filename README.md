@@ -23,16 +23,6 @@
     </a> -->
   </p>
 
-  <!-- Navigation Links -->
-  <p>
-    <a href="#key-features">Key Features</a> •
-    <a href="#supported-benchmarks">Supported Benchmarks</a> •
-    <a href="#quick-start">Getting Started</a> •
-    <a href="#results-and-reporting">Reporting</a> •
-    <a href="#project-ethos">Project Ethos</a>
-  </p>
-</div>
-
 ---
 
 ## **Overview**
@@ -541,8 +531,4 @@ If you use Eka-Eval in your research, please cite:
     <a href="https://eka.soket.ai">🌐 Website</a> •
     <a href="https://bit.ly/Eka-Eval">💬 Demo</a> •
     <a href="https://arxiv.org/pdf/2507.01853">💡 Paper</a>
-<!--     <a href="https://discord.gg/pQaFJ857">💬 Discord</a> •
-    <a href="https://github.com/your-org/eka-eval/issues">🐛 Issues</a> •
-    <a href="https://github.com/your-org/eka-eval/discussions">💡 Discussions</a> -->
-  </p>
-</div>
+
