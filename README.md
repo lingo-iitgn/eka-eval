@@ -18,7 +18,7 @@
     <a href="https://colab.research.google.com/github/your_repo/eka-eval/blob/main/notebooks/quick_start.ipynb">
       <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab" />
     </a> -->
-<!--     <a href="https://discord.gg/pQaFJ857">
+ <a href="https://discord.gg/pQaFJ857">
       <img src="https://img.shields.io/discord/308323056592486420?label=Join%20Community&logo=discord&colorB=7289DA" alt="Discord Community" />
     </a>
   </p>
