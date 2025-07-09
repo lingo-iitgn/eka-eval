@@ -71,7 +71,14 @@
 - **Flexible Metrics**: Accuracy, F1, BLEU, pass@k, and custom metrics
 
 ---
+### ** Video Demonstration **
 
+
+
+https://github.com/user-attachments/assets/19d06f37-2308-4138-a5d8-c155833d201d
+
+
+---
 ## **Installation**
 
 ### 1. **Clone the Repository**
