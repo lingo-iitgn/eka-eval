@@ -11,7 +11,6 @@
   <h1>Eka-Eval</h1>
   <h2>A Comprehensive Evaluation Framework for Large Language Models in Indian Languages.</h2>
 </div>
----
 
 ## **Overview**
 
