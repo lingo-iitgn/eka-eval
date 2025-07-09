@@ -1,4 +1,4 @@
-<div align="center">
+
   <!-- Eka Logo -->
   <a href="https://eka.soket.ai/" target="_blank">
     <img 
