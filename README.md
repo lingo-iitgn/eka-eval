@@ -11,18 +11,6 @@
   <h1>Eka-Eval</h1>
   <h2>A Comprehensive Evaluation Framework for Large Language Models in Indian Languages.</h2>
 
-  <!-- Badges Row -->
-  <p>
-    <img src="https://img.shields.io/badge/release-v1.0-blue.svg" alt="Release v1.0" />
-    <img src="https://img.shields.io/badge/license-Apache%202.0-green.svg" alt="License MIT" />
-    <a href="https://colab.research.google.com/github/your_repo/eka-eval/blob/main/notebooks/quick_start.ipynb">
-      <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab" />
-    </a> 
- <a href="https://discord.gg/pQaFJ857">
-      <img src="https://img.shields.io/discord/308323056592486420?label=Join%20Community&logo=discord&colorB=7289DA" alt="Discord Community" />
-    </a>
-  </p>
-
 ---
 
 ## **Overview**
