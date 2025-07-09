@@ -120,11 +120,13 @@ export HF_TOKEN="your_hf_token_here"
 python3 scripts/run_benchmarks.py
 ```
 ---
-### ** Video Demonstration **
+### Video Demonstration
 
 
 
-https://github.com/user-attachments/assets/19d06f37-2308-4138-a5d8-c155833d201d
+https://github.com/user-attachments/assets/44192d82-0cf8-499c-9ae9-750e0a00e415
+
+
 
 
 ---
