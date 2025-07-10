@@ -4,7 +4,15 @@ import torch
 from transformers import pipeline, AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig
 import gc
 import logging
-from typing import Tuple, Optional, Any
+from typing import Tuple, Optional, Any, Union
+
+from .api_loader import (
+    initialize_api_model_pipeline, 
+    cleanup_api_model_resources, 
+    get_available_api_models,
+    get_api_key_from_env,
+    set_api_key_env
+)
 
 logger = logging.getLogger(__name__)
 
@@ -12,11 +20,63 @@ def initialize_model_pipeline(
     model_name_or_path: str,
     target_device_id: int = 0,
     trust_remote_code: bool = True,
+    is_api_model: bool = False,
+    api_provider: Optional[str] = None,
+    api_key: Optional[str] = None,
 ) -> Tuple[Optional[Any], str]:
     """
-    Initialize Hugging Face model and pipeline for text generation.
+    Initialize model pipeline for both local and API models.
+    
+    Args:
+        model_name_or_path: Model name/path or API model identifier
+        target_device_id: Target device ID for local models
+        trust_remote_code: Whether to trust remote code for local models
+        is_api_model: Whether this is an API model
+        api_provider: API provider ('openai', 'gemini', 'claude')
+        api_key: API key for authentication
+    
+    Returns:
+        Tuple of (pipeline, parameter_count_string)
     """
-    logger.info(f"Initializing model: {model_name_or_path} on device_id: {target_device_id}")
+    
+    if is_api_model:
+        return _initialize_api_model(model_name_or_path, api_provider, api_key)
+    else:
+        return _initialize_local_model(model_name_or_path, target_device_id, trust_remote_code)
+
+def _initialize_api_model(
+    model_name: str, 
+    api_provider: str, 
+    api_key: str
+) -> Tuple[Optional[Any], str]:
+    """Initialize API model pipeline"""
+    logger.info(f"Initializing API model: {api_provider}/{model_name}")
+    
+    try:
+        # Initialize API pipeline
+        api_pipeline = initialize_api_model_pipeline(api_provider, model_name, api_key)
+        
+        if api_pipeline is None:
+            logger.error(f"Failed to initialize API model: {api_provider}/{model_name}")
+            return None, 'N/A'
+        
+        # Estimate parameter count based on model name (for display purposes)
+        param_count_str = _estimate_api_model_size(model_name)
+        
+        logger.info(f"Successfully initialized API model: {api_provider}/{model_name}")
+        return api_pipeline, param_count_str
+        
+    except Exception as e:
+        logger.error(f"Error initializing API model {api_provider}/{model_name}: {e}", exc_info=True)
+        return None, 'N/A'
+
+def _initialize_local_model(
+    model_name_or_path: str,
+    target_device_id: int,
+    trust_remote_code: bool
+) -> Tuple[Optional[Any], str]:
+    """Initialize local model pipeline (original implementation)"""
+    logger.info(f"Initializing local model: {model_name_or_path} on device_id: {target_device_id}")
 
     if torch.cuda.is_available():
         device_map_arg = {'': f'cuda:{target_device_id}'}
@@ -143,11 +203,53 @@ def initialize_model_pipeline(
 
     return hf_pipeline, param_count_str
 
+def _estimate_api_model_size(model_name: str) -> str:
+    """Estimate parameter count for API models based on model name"""
+    model_name_lower = model_name.lower()
+    
+    # OpenAI models
+    if "gpt-4" in model_name_lower:
+        if "turbo" in model_name_lower:
+            return "175.00"  # Estimated
+        return "1750.00"  # GPT-4 estimated
+    elif "gpt-3.5" in model_name_lower:
+        return "175.00"
+    elif "gpt-4o" in model_name_lower:
+        if "mini" in model_name_lower:
+            return "8.00"
+        return "200.00"  # Estimated
+    
+    # Gemini models
+    elif "gemini-pro" in model_name_lower:
+        return "540.00"  # Estimated
+    elif "gemini-1.5" in model_name_lower:
+        if "flash" in model_name_lower:
+            return "20.00"  # Smaller variant
+        return "1000.00"  # Pro variant estimated
+    
+    # Claude models
+    elif "claude-3" in model_name_lower:
+        if "haiku" in model_name_lower:
+            return "20.00"  # Smallest Claude 3
+        elif "sonnet" in model_name_lower:
+            return "200.00"  # Medium Claude 3
+        elif "opus" in model_name_lower:
+            return "400.00"  # Largest Claude 3
+    
+    return "Unknown"
+
 def cleanup_model_resources(pipeline_to_clean: Optional[Any], model_ref: Optional[Any] = None):
     """
-    Clean up model and pipeline resources.
+    Clean up model and pipeline resources for both local and API models.
     """
     logger.info("Cleaning up model and pipeline resources...")
+    
+    # Check if this is an API model
+    if hasattr(pipeline_to_clean, 'device') and pipeline_to_clean.device == "api":
+        cleanup_api_model_resources(pipeline_to_clean)
+        return
+    
+    # Original cleanup logic for local models
     cleaned_something = False
     try:
         model_to_delete = model_ref
@@ -180,4 +282,111 @@ def cleanup_model_resources(pipeline_to_clean: Optional[Any], model_ref: Optiona
     except Exception as e:
         logger.error(f"Error during cleanup: {e}", exc_info=True)
 
-# The special token [END] is hardcoded. If you foresee needing to add different sets of special tokens for different models/tasks via this loader, this part could also be parameterized (e.g., passing an optional list of tokens to add). For now, it's fine.
+def get_model_selection_interface():
+    """
+    Interactive interface for model selection (local vs API)
+    
+    Returns:
+        Tuple of (model_info_dict, is_api_model)
+    """
+    print("\n--- Model Selection ---")
+    print("1. Local Model (Hugging Face/Local Path)")
+    print("2. API Model (OpenAI/Gemini/Claude)")
+    
+    choice = input("Enter model type (1 or 2): ").strip()
+    
+    if choice == "1":
+        # Local model selection (existing logic)
+        source_choice = input("Enter model source ('1' for Hugging Face, '2' for Local Path): ").strip()
+        
+        if source_choice == '1':
+            model_path = input("Enter Hugging Face model name (e.g., google/gemma-2b): ").strip()
+        elif source_choice == '2':
+            model_path = input("Enter the full local path to the model directory: ").strip()
+        else:
+            raise ValueError("Invalid model source choice")
+        
+        return {
+            "model_name": model_path,
+            "is_api": False
+        }, False
+        
+    elif choice == "2":
+        # API model selection
+        available_models = get_available_api_models()
+        
+        print("\n--- Available API Providers ---")
+        providers = list(available_models.keys())
+        for i, provider in enumerate(providers):
+            print(f"{i+1}. {provider}")
+        
+        provider_choice = input(f"Select provider (1-{len(providers)}): ").strip()
+        try:
+            selected_provider = providers[int(provider_choice) - 1]
+        except (ValueError, IndexError):
+            raise ValueError("Invalid provider choice")
+        
+        print(f"\n--- Available {selected_provider} Models ---")
+        models = available_models[selected_provider]
+        for i, model in enumerate(models):
+            print(f"{i+1}. {model}")
+        
+        model_choice = input(f"Select model (1-{len(models)}): ").strip()
+        try:
+            selected_model = models[int(model_choice) - 1]
+        except (ValueError, IndexError):
+            raise ValueError("Invalid model choice")
+        
+        # Get API key
+        existing_key = get_api_key_from_env(selected_provider)
+        if existing_key:
+            use_existing = input(f"Found existing {selected_provider} API key. Use it? (y/n): ").strip().lower()
+            if use_existing == 'y':
+                api_key = existing_key
+            else:
+                api_key = input(f"Enter your {selected_provider} API key: ").strip()
+        else:
+            api_key = input(f"Enter your {selected_provider} API key: ").strip()
+        
+        if not api_key:
+            raise ValueError("API key is required for API models")
+        
+        # Set the API key in environment for this session
+        set_api_key_env(selected_provider, api_key)
+        
+        return {
+            "model_name": selected_model,
+            "provider": selected_provider,
+            "api_key": api_key,
+            "is_api": True
+        }, True
+    
+    else:
+        raise ValueError("Invalid model type choice")
+
+# Helper function for backward compatibility
+def initialize_model_pipeline_interactive(target_device_id: int = 0) -> Tuple[Optional[Any], str]:
+    """
+    Initialize model pipeline with interactive selection
+    """
+    try:
+        model_info, is_api = get_model_selection_interface()
+        
+        if is_api:
+            return initialize_model_pipeline(
+                model_info["model_name"],
+                target_device_id=target_device_id,
+                is_api_model=True,
+                api_provider=model_info["provider"],
+                api_key=model_info["api_key"]
+            )
+        else:
+            return initialize_model_pipeline(
+                model_info["model_name"],
+                target_device_id=target_device_id,
+                is_api_model=False
+            )
+            
+    except Exception as e:
+        logger.error(f"Error in interactive model initialization: {e}")
+        return None, 'N/A'
