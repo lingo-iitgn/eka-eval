@@ -2,10 +2,12 @@
 
 import torch
 import re
+import sys
+import os
+import argparse
 from datasets import load_dataset
 from tqdm import tqdm
 import json
-import os
 from datetime import datetime
 from collections import defaultdict
 from dataclasses import dataclass, asdict
@@ -305,3 +307,71 @@ def evaluate_humaneval(
 
     logger.info(f"HumanEval evaluation finished. Final scores: {final_scores}")
     return final_scores
+
+
+# Test function for standalone execution
+if __name__ == '__main__':
+    # Set GPU constraint for testing
+    os.environ["CUDA_VISIBLE_DEVICES"] = "0"
+    
+    # Add project root to path for imports
+    current_script_path = os.path.abspath(__file__)
+    project_root_for_test = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(current_script_path)))))
+    if project_root_for_test not in sys.path:
+        sys.path.insert(0, project_root_for_test)
+    
+    # Import required modules for testing
+    from eka_eval.utils.logging_setup import setup_logging
+    from eka_eval.core.model_loader import initialize_model_pipeline, cleanup_model_resources
+    
+    # Parse command line arguments for testing
+    test_parser = argparse.ArgumentParser(description="Standalone Test HumanEval")
+    test_parser.add_argument("--model_name_test", type=str, default="google/gemma-2-2b", help="Model to test")
+    test_parser.add_argument("--dataset_split_test", type=str, default="test[:10]", help="Dataset split to test")
+    test_parser.add_argument("--gen_batch_size_test", type=int, default=1, help="Generation batch size")
+    test_parser.add_argument("--num_samples_test", type=int, default=1, help="Number of samples per task")
+    test_parser.add_argument("--k_values_test", type=int, nargs='+', default=[1], help="k values for Pass@k")
+    test_parser.add_argument("--use_fewshot", action="store_true", help="Use few-shot prompting")
+    test_parser.add_argument("--max_new_tokens", type=int, default=384, help="Maximum new tokens to generate")
+    
+    humaneval_args = test_parser.parse_args()
+    
+    # Setup logging
+    setup_logging(level=logging.DEBUG, worker_id="HumanEvalTest")
+    logger.info(f"--- Standalone HumanEval Test: {humaneval_args.model_name_test} ---")
+    
+    # Initialize model pipeline
+    humaneval_pipe, _ = initialize_model_pipeline(humaneval_args.model_name_test, target_device_id=0)
+    
+    if humaneval_pipe:
+        # Prepare evaluation arguments
+        humaneval_eval_args = {
+            "pipe": humaneval_pipe,
+            "tokenizer": humaneval_pipe.tokenizer,
+            "model_name_for_logging": humaneval_args.model_name_test,
+            "device": humaneval_pipe.device,
+            "dataset_split": humaneval_args.dataset_split_test,
+            "num_samples_per_task": humaneval_args.num_samples_test,
+            "k_values": humaneval_args.k_values_test,
+            "use_fewshot": humaneval_args.use_fewshot,
+            "max_new_tokens_completion": humaneval_args.max_new_tokens,
+            "generation_batch_size": humaneval_args.gen_batch_size_test,
+            "results_dir": "test_results"
+        }
+        
+        try:
+            # Run evaluation and print results
+            results = evaluate_humaneval(**humaneval_eval_args)
+            print("\n" + "="*50)
+            print("HUMANEVAL TEST RESULTS:")
+            print("="*50)
+            print(json.dumps(results, indent=2))
+        except Exception as e:
+            logger.error(f"Error during HumanEval evaluation: {e}")
+            print(f"Evaluation failed: {e}")
+        finally:
+            # Clean up resources
+            cleanup_model_resources(humaneval_pipe, getattr(humaneval_pipe, 'model', None))
+    else:
+        logger.error(f"Failed to initialize model {humaneval_args.model_name_test} for HumanEval test.")
+        print("Model initialization failed!")
