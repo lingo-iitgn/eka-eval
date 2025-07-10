@@ -276,11 +276,10 @@ def evaluate_my_task(pipe, tokenizer, model_name_for_logging, device, **kwargs):
     results = {"MyTask": accuracy_score}
     return results
 ```
-
 #### **2. Add Prompt Configuration**
-```
-prompts/custom/my_task.json
+`prompts/custom/my_task.json`
 
+```json
 {
   "my_task_0shot": {
     "template": "Question: {question}\nAnswer:",
@@ -290,7 +289,7 @@ prompts/custom/my_task.json
     {"question": "Example question", "answer": "Example answer"}
   ]
 }
-```
+
 
 #### **3. Register in Config**
 ```python
