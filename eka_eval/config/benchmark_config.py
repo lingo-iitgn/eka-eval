@@ -1,8 +1,8 @@
 BENCHMARK_CONFIG = {
-   "CODE GENERATION": {
+    "CODE GENERATION": {
         "HumanEval": {
             "description": "Pass@k accuracy for HumanEval (Chen et al., 2021)",
-            "evaluation_function": "code.humaneval.evaluate_humaneval",  
+            "evaluation_function": "code.humaneval.evaluate_humaneval",
             "task_args": {
                 "dataset_name": "openai_humaneval",
                 "dataset_split": "test",
@@ -27,7 +27,7 @@ BENCHMARK_CONFIG = {
         },
         "HumanEval+": {
             "description": "Pass@k accuracy for HumanEval+ (Liu et al., 2024a)",
-            "evaluation_function": "code.humanevalplus.evaluate_humanevalplus",
+            "evaluation_function": "code.humaneval_plus.evaluate_humaneval_plus",
             "task_args": {
                 "dataset_name": "evalplus/humanevalplus",
                 "dataset_split": "test",
@@ -37,7 +37,7 @@ BENCHMARK_CONFIG = {
         },
         "MBPP EvalPlus": {
             "description": "Pass@k accuracy for MBPP EvalPlus (Liu et al., 2024a)",
-            "evaluation_function": "code.mbppplus.evaluate_mbpp_plus",
+            "evaluation_function": "code.mbpp_plus.evaluate_mbpp_plus",
             "task_args": {
                 "dataset_name_primary": "evalplus/mbppplus",
                 "dataset_config_primary": None,
@@ -45,39 +45,16 @@ BENCHMARK_CONFIG = {
                 "num_samples_per_task": 1,
                 "max_new_tokens_completion": 512
             }
-        }
-   },
-        
-        "Tool use": {
-            "API-Bank": {
-            "description": "API function calling accuracy on API-Bank dataset",
-            "evaluation_function": "tool_use.apibank.evaluate_apibank",
-            "task_args": {
-                "dataset_name": "liminghao1630/API-Bank",
-                "dataset_split": "test",
-                "max_new_tokens": 512,
-                "generation_batch_size": 1,
-                "num_few_shot": 0,
-                "save_outputs": True,
-                "resume": False
-            }
         },
-        "APIBench": {
-            "description": "API call generation accuracy on APIBench dataset",
-            "evaluation_function": "tool_use.apibench.evaluate_apibench",
+        "MultiPL-E": {
+            "description": "Pass@k accuracy for MultiPL-E (Cassano et al., 2023)",
+            "evaluation_function": "code.multiple.evaluate_multiple",
             "task_args": {
-                "dataset_name": "gorilla-llm/APIBench",
-                "dataset_split": "test",
-                "max_new_tokens": 256,
-                "generation_batch_size": 1,
-                "num_few_shot": 0,
-                "save_outputs": True,
-                "resume": False
+                "target_language": "py"
             }
         }
-        },
-        
-    "MATH": {
+    },
+    "MATH AND REASONING": {
         "GSM8K": {
             "description": "Accuracy on GSM8K (Cobbe et al., 2021)",
             "evaluation_function": "math.gsm8k.evaluate_gsm8k",
@@ -168,25 +145,14 @@ BENCHMARK_CONFIG = {
     },
     "COMMONSENSE REASONING": {
         "PIQA": {
-        "description": "Accuracy on PIQA (Bisk et al., 2020)",
-        "evaluation_function": "commonsense_reasoning.piqa.evaluate_piqa",
-        "task_args": {
-            "dataset_name": "piqa",
-            "dataset_split": "validation",
-            "max_new_tokens": 10,
-            "generation_batch_size": 16,
-            "num_few_shot": 5,
-            "evaluation_method": "likelihood",  # Options: "likelihood" or "generation"
-            "save_outputs": False,
-            "disable_progress_bar": False,
-            # Prompt template configuration
-            "prompt_template_key_likelihood": "piqa_likelihood",
-            "prompt_template_key_generation": "piqa_generation", 
-            "prompt_template_key_few_shot_likelihood": "piqa_5shot_likelihood",
-            "prompt_template_key_few_shot_generation": "piqa_5shot_generation",
-            "prompt_file_benchmark_key": "piqa",
-            "prompt_file_category": "reasoning"
-        }
+            "description": "Accuracy on PIQA (Bisk et al., 2020)",
+            "evaluation_function": "reasoning.piqa.evaluate_piqa",
+            "task_args": {
+                "dataset_name": "piqa",
+                "dataset_split": "validation",
+                "max_new_tokens": 5,
+                "generation_batch_size": 16
+            }
         },
         "SIQA": {
             "description": "Accuracy on SIQA (Sap et al., 2019)",
@@ -295,8 +261,6 @@ BENCHMARK_CONFIG = {
             "task_args": {}
         }
     },
-    "General":
-        {
     "MMLU": {
         "description": "5-shot Accuracy on MMLU (Hendrycks et al., 2021a)",
         "evaluation_function": "general.mmlu.evaluate_mmlu",
@@ -351,7 +315,7 @@ BENCHMARK_CONFIG = {
             "max_new_tokens": 10,
             "generation_batch_size": 8
         }
-    } },
+    },
     "INDIC BENCHMARKS": {
         "MMLU-IN": {
             "description": "Accuracy on MMLU-Indic",
@@ -393,22 +357,11 @@ BENCHMARK_CONFIG = {
                 "max_new_tokens": 10
             }
         },
-            "ARC-Challenge-Indic": {
-        "description": "Zero-shot ARC-Challenge-Indic evaluation across 11 languages",
-        "evaluation_function": "indic.arc_c_in.evaluate_arc_c_in",
-        "task_args": {
-            "dataset_name": "sarvamai/arc-challenge-indic",
-            "target_languages": ["bn", "en", "gu", "hi", "kn", "ml", "mr", "or", "pa", "ta", "te"],
-            "dataset_split": "validation[:50]",
-            "num_few_shot": 0,
-            "max_new_tokens": 10,
-            "generation_batch_size": 8,
-            "prompt_template_name_zeroshot": "arc_c_in_0shot",
-            "prompt_template_name_fewshot": "arc_c_in_5shot",
-            "prompt_file_benchmark_key": "arc_c_in",
-            "prompt_file_category": "indic",
-        }
-    },
+        "ARC-IN": {
+            "description": "Accuracy",
+            "evaluation_function": "indic.arc_in.evaluate_arc_in",
+            "task_args": {}
+        },
         "Flores-IN": {
             "description": "BLEU, ChrF",
             "evaluation_function": "indic.flores_in.evaluate_flores_in",

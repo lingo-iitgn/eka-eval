@@ -11,7 +11,7 @@ from typing import Dict, List, Any, Optional
 
 logger = logging.getLogger(__name__)
 
-DEFAULT_DATASET_NAME_MATH = "nlile/hendrycks-MATH-benchmark"
+DEFAULT_DATASET_NAME_MATH = "hendrycks/competition_math"
 DEFAULT_SPLIT_MATH = "test"
 DEFAULT_MAX_NEW_TOKENS_MATH = 384
 DEFAULT_GENERATION_BATCH_SIZE_MATH = 4
@@ -51,50 +51,21 @@ def _format_math_prompt(question: str, subject: str, fewshot_examples: List[Dict
     return prompt
 
 def _extract_math_final_answer(text: Optional[str]) -> Optional[str]:
-    if text is None: 
-        return None
-    
-    # Look for boxed answer first
+    if text is None: return None
     match_boxed = re.search(r'\\boxed\{([\s\S]*?)\}', text)
     if match_boxed:
         ans_str = match_boxed.group(1).strip()
         ans_str = ans_str.replace("\\%", "%").replace("\\$", "$")
-        try: 
-            return str(float(ans_str))
-        except ValueError: 
-            return ans_str
-    
-    # Look for "Final answer:" pattern
+        try: return str(float(ans_str))
+        except ValueError: return ans_str
     match_final_answer = re.search(r'[Ff]inal\s*answer\s*:\s*([\s\S]+)', text)
     if match_final_answer:
         ans_str = match_final_answer.group(1).strip()
-        if ans_str.endswith('.'): 
-            ans_str = ans_str[:-1].strip()
-        try: 
-            return str(float(ans_str))
-        except ValueError: 
-            return ans_str
-    
+        if ans_str.endswith('.'): ans_str = ans_str[:-1].strip()
+        try: return str(float(ans_str))
+        except ValueError: return ans_str
     logger.debug(f"MATH: Could not extract final answer from: '{text[-100:]}'")
     return None
-
-def _post_process_generated_text(generated_text: str, stop_sequences: List[str]) -> str:
-    """Post-process generated text to simulate stop sequence behavior."""
-    if not stop_sequences:
-        return generated_text
-    
-    # Find the earliest occurrence of any stop sequence
-    min_pos = len(generated_text)
-    for stop_seq in stop_sequences:
-        pos = generated_text.find(stop_seq)
-        if pos != -1 and pos < min_pos:
-            min_pos = pos
-    
-    # Truncate at the stop sequence if found
-    if min_pos < len(generated_text):
-        return generated_text[:min_pos]
-    
-    return generated_text
 
 def evaluate_math(
     pipe: Any, tokenizer: Any, model_name_for_logging: str, device: Any,
@@ -117,31 +88,21 @@ def evaluate_math(
         full_data = load_dataset(dataset_name, split=dataset_split, trust_remote_code=True)
     except Exception as e:
         return {"MATH": 0.0, "error_message": f"DatasetLoadFailed MATH: {e}"}
-    
     logger.info(f"P{process_id}: Loaded MATH '{dataset_name}' ({len(full_data)} examples) for split '{dataset_split}'.")
 
-    # Handle multi-GPU processing
     if num_gpus > 1:
-        total = len(full_data)
-        per_gpu = total // num_gpus
+        total = len(full_data); per_gpu = total // num_gpus
         start, end = process_id * per_gpu, (process_id + 1) * per_gpu
-        if process_id == num_gpus - 1: 
-            end = total
+        if process_id == num_gpus - 1: end = total
         subset_to_process = full_data.select(range(start, end))
     else:
         subset_to_process = full_data
-    
-    if len(subset_to_process) == 0: 
-        return {"MATH": 0.0}
-    
+    if len(subset_to_process) == 0: return {"MATH": 0.0}
     logger.info(f"P{process_id}: Processing {len(subset_to_process)} MATH examples.")
 
     correct_predictions = 0
     total_evaluated = 0
     prompts_for_batch, original_items_for_batch = [], []
-
-    # Define stop sequences for post-processing
-    stop_sequences = ["\n\nProblem:", "\n\nsubject:", "Final answer is often enough"]
 
     for item_idx, item_data in enumerate(tqdm(subset_to_process, desc=f"P{process_id} - MATH Eval")):
         question = item_data.get('problem')
@@ -161,31 +122,20 @@ def evaluate_math(
         prompts_for_batch.append(prompt_text)
         original_items_for_batch.append({'true_final_answer_str': true_final_answer_str, 'question': question})
 
-        # Process batch when full or at end
         if len(prompts_for_batch) == generation_batch_size or item_idx == len(subset_to_process) - 1:
-            # Fixed generation config - removed stop_sequences
             gen_config = {
                 "do_sample": False,
                 "max_new_tokens": max_new_tokens,
                 "pad_token_id": tokenizer.pad_token_id if tokenizer.pad_token_id is not None else tokenizer.eos_token_id,
                 "eos_token_id": tokenizer.eos_token_id,
+                "stop_sequences": ["\n\nProblem:", "\n\nsubject:", "Final answer is often enough"],
                 "return_full_text": False
             }
-            
             try:
-                with torch.no_grad(): 
-                    batch_raw_outputs = pipe(prompts_for_batch, **gen_config)
-                
+                with torch.no_grad(): batch_raw_outputs = pipe(prompts_for_batch, **gen_config)
                 for k, raw_out_list in enumerate(batch_raw_outputs):
                     original_item_info = original_items_for_batch[k]
-                    
-                    if raw_out_list and raw_out_list[0] and 'generated_text' in raw_out_list[0]:
-                        raw_gen_solution = raw_out_list[0]['generated_text']
-                        # Apply stop sequence post-processing
-                        raw_gen_solution = _post_process_generated_text(raw_gen_solution, stop_sequences)
-                    else:
-                        raw_gen_solution = "#GenFail"
-                    
+                    raw_gen_solution = raw_out_list[0]['generated_text'] if raw_out_list and raw_out_list[0] else "#GenFail"
                     pred_final_answer_str = _extract_math_final_answer("solution: " + raw_gen_solution)
                     
                     logger.debug(f"MATH Q: ...{original_item_info['question'][-50:]}\nPred Raw Sol: {raw_gen_solution[:100]}...\nPred Final Ans: {pred_final_answer_str}, True Final Ans: {original_item_info['true_final_answer_str']}")
@@ -193,12 +143,9 @@ def evaluate_math(
                     if pred_final_answer_str is not None and pred_final_answer_str == original_item_info['true_final_answer_str']:
                         correct_predictions += 1
                     total_evaluated += 1
-                        
             except Exception as e_batch_math:
                 logger.error(f"P{process_id}: Error in MATH gen batch: {e_batch_math}", exc_info=True)
                 total_evaluated += len(prompts_for_batch)
-            
-            # Reset batch lists
             prompts_for_batch, original_items_for_batch = [], []
 
     accuracy_score = (correct_predictions / total_evaluated) * 100 if total_evaluated > 0 else 0.0
@@ -206,19 +153,14 @@ def evaluate_math(
     return {"MATH": accuracy_score}
 
 if __name__ == '__main__':
-    import os
-    os.environ["CUDA_VISIBLE_DEVICES"]="1,2,3"
     current_script_path = os.path.abspath(__file__)
     project_root_for_test = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(current_script_path)))))
-    if project_root_for_test not in sys.path: 
-        sys.path.insert(0, project_root_for_test)
-    
+    if project_root_for_test not in sys.path: sys.path.insert(0, project_root_for_test)
     from eka_eval.utils.logging_setup import setup_logging
     from eka_eval.core.model_loader import initialize_model_pipeline, cleanup_model_resources
-    
     test_parser = argparse.ArgumentParser(description="Standalone Test Hendrycks MATH")
-    test_parser.add_argument("--model_name_test", type=str, default="google/gemma-2-2b")
-    test_parser.add_argument("--dataset_split_test", type=str, default="test")
+    test_parser.add_argument("--model_name_test", type=str, default="gpt2")
+    test_parser.add_argument("--dataset_split_test", type=str, default="test[:5]")
     test_parser.add_argument("--gen_batch_size_test", type=int, default=1)
     test_parser.add_argument("--num_few_shot_test", type=int, default=2)
 
@@ -229,18 +171,11 @@ if __name__ == '__main__':
     math_pipe, _ = initialize_model_pipeline(math_args.model_name_test, target_device_id=0)
     if math_pipe:
         math_eval_args = {
-            "pipe": math_pipe, 
-            "tokenizer": math_pipe.tokenizer, 
-            "model_name_for_logging": math_args.model_name_test,
-            "device": math_pipe.device, 
-            "dataset_split": math_args.dataset_split_test,
+            "pipe": math_pipe, "tokenizer": math_pipe.tokenizer, "model_name_for_logging": math_args.model_name_test,
+            "device": math_pipe.device, "dataset_split": math_args.dataset_split_test,
             "num_few_shot": math_args.num_few_shot_test,
             "generation_batch_size": math_args.gen_batch_size_test,
-            "process_id": 0, 
-            "gpu_id": 0, 
-            "num_gpus": 1
+            "process_id": 0, "gpu_id": 0, "num_gpus": 1
         }
-        try: 
-            print(json.dumps(evaluate_math(**math_eval_args), indent=2))
-        finally: 
-            cleanup_model_resources(math_pipe, getattr(math_pipe, 'model', None))
+        try: print(json.dumps(evaluate_math(**math_eval_args), indent=2))
+        finally: cleanup_model_resources(math_pipe, getattr(math_pipe, 'model', None))

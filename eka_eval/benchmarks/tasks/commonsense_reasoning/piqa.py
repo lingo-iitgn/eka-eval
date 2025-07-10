@@ -187,7 +187,6 @@ def evaluate_piqa(
     num_gpus: int = 1,
     results_dir: str = "results_output", 
     save_outputs: bool = False,
-    disable_progress_bar: bool = False,  # NEW: Option to disable progress bar
     **kwargs
 ) -> Dict[str, float]:
 
@@ -216,24 +215,8 @@ def evaluate_piqa(
     predictions_numeric, true_labels_numeric = [], []
     outputs_dump = []
 
-    # Configure progress bar based on multi-worker setup
-    if disable_progress_bar or (num_gpus > 1 and process_id > 0):
-        # Disable progress bar for worker processes or when explicitly requested
-        progress_bar_config = {"disable": True}
-    else:
-        # Show progress bar only for single worker or main worker (process_id == 0)
-        worker_prefix = f"Worker {process_id}" if num_gpus > 1 else "PIQA"
-        progress_bar_config = {
-            "desc": f"{worker_prefix} - {evaluation_method.title()} Eval",
-            "disable": False,
-            "position": process_id if num_gpus > 1 else 0,  # Different positions for multiple workers
-            "leave": False if num_gpus > 1 else True  # Don't leave progress bars for workers
-        }
-
     if evaluation_method == "likelihood":
-        iterator = tqdm(dataset_subset_to_process, **progress_bar_config) if not progress_bar_config.get("disable") else dataset_subset_to_process
-        
-        for item_idx, item_data in enumerate(iterator):
+        for item_idx, item_data in enumerate(tqdm(dataset_subset_to_process, desc=f"P{process_id} - PIQA Likelihood Eval")):
             true_label = item_data.get('label', -1)
             if true_label not in [0, 1]:
                 continue
@@ -274,12 +257,10 @@ def evaluate_piqa(
                 predictions_numeric.append(wrong_choice)
                 true_labels_numeric.append(true_choice)
                 
-    else:  # generation method
+    else:
         prompts_for_batch, infos_for_batch = [], []
         
-        iterator = tqdm(dataset_subset_to_process, **progress_bar_config) if not progress_bar_config.get("disable") else dataset_subset_to_process
-        
-        for item_idx, item_data in enumerate(iterator):
+        for item_idx, item_data in enumerate(tqdm(dataset_subset_to_process, desc=f"P{process_id} - PIQA Generation Eval")):
             true_label = item_data.get('label', -1)
             if true_label not in [0, 1]:
                 continue
@@ -395,7 +376,6 @@ if __name__ == '__main__':
     test_parser_piqa.add_argument("--num_few_shot_test", type=int, default=3)
     test_parser_piqa.add_argument("--evaluation_method", type=str, default="likelihood", choices=["likelihood", "generation"])
     test_parser_piqa.add_argument("--save_outputs", action="store_true")
-    test_parser_piqa.add_argument("--disable_progress_bar", action="store_true")  # NEW: Option to disable progress bar
 
     pi_args = test_parser_piqa.parse_args()
     setup_logging(level=logging.DEBUG, worker_id="PIQAFileTest")
@@ -414,8 +394,7 @@ if __name__ == '__main__':
             "process_id": 0,
             "gpu_id": 0,
             "num_gpus": 1,
-            "save_outputs": pi_args.save_outputs,
-            "disable_progress_bar": pi_args.disable_progress_bar
+            "save_outputs": pi_args.save_outputs
         }
         try:
             print(json.dumps(evaluate_piqa(**pi_eval_args), indent=2))

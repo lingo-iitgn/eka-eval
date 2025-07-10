@@ -71,7 +71,7 @@ class BenchmarkRegistry:
             return group_content.get(benchmark_name, {})
         return {}
 
-    def get_evaluation_function_path_str(self, task_group_name: str, benchmark_name: str) -> str:
+    def get_evaluation_function_path_str(self, task_group_name: str, benchmark_name: str) -> str | None:
         """Get the evaluation function string path for a benchmark."""
         details = self.get_benchmark_details(task_group_name, benchmark_name)
         return details.get("evaluation_function") if isinstance(details, dict) else None
@@ -82,60 +82,24 @@ class BenchmarkRegistry:
         if not details:
             logger.error(f"No details for {task_group_name} - {benchmark_name}.")
             return None
-        
         eval_function_path_str = details.get("evaluation_function")
         if not eval_function_path_str:
             logger.error(f"No 'evaluation_function' path for {task_group_name} - {benchmark_name}.")
             return None
-        
-        logger.debug(f"Raw evaluation_function string: '{eval_function_path_str}'")
-        
         try:
             if details.get("is_custom"):
-                # Custom benchmark - use path as-is
                 module_name, function_name = eval_function_path_str.rsplit('.', 1)
                 logger.debug(f"Loading custom function: {module_name}.{function_name}")
             else:
-                # Standard benchmark - check if it already includes function name
-                if eval_function_path_str.startswith("eka_eval.benchmarks.tasks."):
-                    # Old format: "eka_eval.benchmarks.tasks.code.humaneval" (missing function name)
-                    # Need to add the function name
-                    parts = eval_function_path_str.split('.')
-                    if len(parts) >= 5:  # eka_eval.benchmarks.tasks.category.module
-                        module_file = parts[-1]  # e.g., "humaneval"
-                        function_name = f"evaluate_{module_file}"  # e.g., "evaluate_humaneval"
-                        module_name = eval_function_path_str
-                    else:
-                        logger.error(f"Invalid full path format: {eval_function_path_str}")
-                        return None
-                else:
-                    # New format: "code.humaneval.evaluate_humaneval" (relative path with function)
-                    full_path = f"eka_eval.benchmarks.tasks.{eval_function_path_str}"
-                    module_name, function_name = full_path.rsplit('.', 1)
-                
+                full_path = f"eka_eval.benchmarks.tasks.{eval_function_path_str}"
+                module_name, function_name = full_path.rsplit('.', 1)
                 logger.debug(f"Loading standard function: {module_name}.{function_name}")
-            
-            # Import the module
             module = importlib.import_module(module_name)
-            
-            # Get the function
-            if not hasattr(module, function_name):
-                logger.error(f"Function '{function_name}' not found in module '{module_name}'")
-                logger.debug(f"Available functions in module: {[name for name in dir(module) if callable(getattr(module, name)) and not name.startswith('_')]}")
-                return None
-            
             function_callable = getattr(module, function_name)
-            logger.info(f"Successfully resolved: {module_name}.{function_name}")
+            logger.info(f"Resolved evaluation function '{function_name}' from '{module_name}'.")
             return function_callable
-            
-        except ImportError as e:
-            logger.error(f"ImportError loading module '{module_name}': {e}")
-            return None
-        except (AttributeError, ValueError) as e:
-            logger.error(f"Error resolving function from '{eval_function_path_str}': {e}")
-            return None
-        except Exception as e:
-            logger.error(f"Unexpected error resolving '{eval_function_path_str}': {e}")
+        except (ImportError, AttributeError, ValueError) as e:
+            logger.error(f"Could not load evaluation function from '{eval_function_path_str}'. Error: {e}", exc_info=True)
             return None
 
     def add_custom_benchmark_definition(self, task_group: str, bm_name: str,
