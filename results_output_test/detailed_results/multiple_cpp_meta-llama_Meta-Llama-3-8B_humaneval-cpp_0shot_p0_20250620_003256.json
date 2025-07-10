@@ -1,0 +1,112 @@
+{
+  "summary": {
+    "model_name": "meta-llama/Meta-Llama-3-8B",
+    "language": "cpp",
+    "dataset_name": "humaneval-cpp",
+    "num_few_shot": 0,
+    "total_problems": 5,
+    "passed_problems": 0,
+    "pass_at_1": 0.0,
+    "timestamp": "2025-06-20T00:32:56.968577",
+    "process_id": 0,
+    "generation_failures": 0,
+    "compilation_failures": 0
+  },
+  "detailed_results": [
+    {
+      "name": "HumanEval_0_has_close_elements",
+      "language": "cpp",
+      "sample_index": 0,
+      "problem_prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n// Check if in given vector of numbers, are any two numbers closer to each other than\n// given threshold.\n// >>> has_close_elements((std::vector<float>({(float)1.0f, (float)2.0f, (float)3.0f})), (0.5f))\n// (false)\n// >>> has_close_elements((std::vector<float>({(float)1.0f, (float)2.8f, (float)3.0f, (float)4.0f, (float)5.0f, (float)2.0f})), (0.3f))\n// (true)\nbool has_close_elements(std::vector<float> numbers, float threshold) {\n",
+      "entry_point": "has_close_elements",
+      "full_llm_prompt": "Complete this CPP function. Write only the working implementation inside the function:\n\n#include<assert.h>\n#include<bits/stdc++.h>\n// Check if in given vector of numbers, are any two numbers closer to each other than\n// given threshold.\n// >>> has_close_elements((std::vector<float>({(float)1.0f, (float)2.0f, (float)3.0f})), (0.5f))\n// (false)\n// >>> has_close_elements((std::vector<float>({(float)1.0f, (float)2.8f, (float)3.0f, (float)4.0f, (float)5.0f, (float)2.0f})), (0.3f))\n// (true)\nbool has_close_elements(std::vector<float> numbers, float threshold) {\n",
+      "raw_generation": "    // Your code here...\n}\n",
+      "extracted_completion": "    // Your code here...\n    }",
+      "full_code_for_eval": "#include<assert.h>\n#include<bits/stdc++.h>\n// Check if in given vector of numbers, are any two numbers closer to each other than\n// given threshold.\n// >>> has_close_elements((std::vector<float>({(float)1.0f, (float)2.0f, (float)3.0f})), (0.5f))\n// (false)\n// >>> has_close_elements((std::vector<float>({(float)1.0f, (float)2.8f, (float)3.0f, (float)4.0f, (float)5.0f, (float)2.0f})), (0.3f))\n// (true)\nbool has_close_elements(std::vector<float> numbers, float threshold) {\n    // Your code here...\n    }",
+      "test_script": "}\nint main() {\n    auto candidate = has_close_elements;\n    assert(candidate((std::vector<float>({(float)1.0f, (float)2.0f, (float)3.9f, (float)4.0f, (float)5.0f, (float)2.2f})), (0.3f)) == (true));\n    assert(candidate((std::vector<float>({(float)1.0f, (float)2.0f, (float)3.9f, (float)4.0f, (float)5.0f, (float)2.2f})), (0.05f)) == (false));\n    assert(candidate((std::vector<float>({(float)1.0f, (float)2.0f, (float)5.9f, (float)4.0f, (float)5.0f})), (0.95f)) == (true));\n    assert(candidate((std::vector<float>({(float)1.0f, (float)2.0f, (float)5.9f, (float)4.0f, (float)5.0f})), (0.8f)) == (false));\n    assert(candidate((std::vector<float>({(float)1.0f, (float)2.0f, (float)3.0f, (float)4.0f, (float)5.0f, (float)2.0f})), (0.1f)) == (true));\n    assert(candidate((std::vector<float>({(float)1.1f, (float)2.2f, (float)3.1f, (float)4.1f, (float)5.1f})), (1.0f)) == (true));\n    assert(candidate((std::vector<float>({(float)1.1f, (float)2.2f, (float)3.1f, (float)4.1f, (float)5.1f})), (0.5f)) == (false));\n}\n",
+      "stop_tokens": [
+        "\n}"
+      ],
+      "generation_successful": true,
+      "compilation_successful": null,
+      "passed": null,
+      "error_message": ""
+    },
+    {
+      "name": "HumanEval_1_separate_paren_groups",
+      "language": "cpp",
+      "sample_index": 0,
+      "problem_prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n// Input to this function is a string containing multiple groups of nested parentheses. Your goal is to\n// separate those group into separate strings and return the vector of those.\n// Separate groups are balanced (each open brace is properly closed) and not nested within each other\n// Ignore any spaces in the input string.\n// >>> separate_paren_groups((\"( ) (( )) (( )( ))\"))\n// (std::vector<std::string>({(std::string)\"()\", (std::string)\"(())\", (std::string)\"(()())\"}))\nstd::vector<std::string> separate_paren_groups(std::string paren_string) {\n",
+      "entry_point": "balanced",
+      "full_llm_prompt": "Complete this CPP function. Write only the working implementation inside the function:\n\n#include<assert.h>\n#include<bits/stdc++.h>\n// Input to this function is a string containing multiple groups of nested parentheses. Your goal is to\n// separate those group into separate strings and return the vector of those.\n// Separate groups are balanced (each open brace is properly closed) and not nested within each other\n// Ignore any spaces in the input string.\n// >>> separate_paren_groups((\"( ) (( )) (( )( ))\"))\n// (std::vector<std::string>({(std::string)\"()\", (std::string)\"(())\", (std::string)\"(()())\"}))\nstd::vector<std::string> separate_paren_groups(std::string paren_string) {\n",
+      "raw_generation": "    std::vector<std::string> result;\n    // TODO: Complete this function\n    return result;\n}\n",
+      "extracted_completion": "    std::vector<std::string> result;",
+      "full_code_for_eval": "#include<assert.h>\n#include<bits/stdc++.h>\n// Input to this function is a string containing multiple groups of nested parentheses. Your goal is to\n// separate those group into separate strings and return the vector of those.\n// Separate groups are balanced (each open brace is properly closed) and not nested within each other\n// Ignore any spaces in the input string.\n// >>> separate_paren_groups((\"( ) (( )) (( )( ))\"))\n// (std::vector<std::string>({(std::string)\"()\", (std::string)\"(())\", (std::string)\"(()())\"}))\nstd::vector<std::string> separate_paren_groups(std::string paren_string) {\n    std::vector<std::string> result;",
+      "test_script": "}\nint main() {\n    auto candidate = separate_paren_groups;\n    assert(candidate((\"(()()) ((())) () ((())()())\")) == (std::vector<std::string>({(std::string)\"(()())\", (std::string)\"((()))\", (std::string)\"()\", (std::string)\"((())()())\"})));\n    assert(candidate((\"() (()) ((())) (((())))\")) == (std::vector<std::string>({(std::string)\"()\", (std::string)\"(())\", (std::string)\"((()))\", (std::string)\"(((())))\"})));\n    assert(candidate((\"(()(())((())))\")) == (std::vector<std::string>({(std::string)\"(()(())((())))\"})));\n    assert(candidate((\"( ) (( )) (( )( ))\")) == (std::vector<std::string>({(std::string)\"()\", (std::string)\"(())\", (std::string)\"(()())\"})));\n}\n",
+      "stop_tokens": [
+        "\n}"
+      ],
+      "generation_successful": true,
+      "compilation_successful": null,
+      "passed": null,
+      "error_message": ""
+    },
+    {
+      "name": "HumanEval_2_truncate_number",
+      "language": "cpp",
+      "sample_index": 0,
+      "problem_prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n// Given a positive floating point number, it can be decomposed into\n// and integer part (largest integer smaller than given number) and decimals\n// (leftover part always smaller than 1).\n// Return the decimal part of the number.\n// >>> truncate_number((3.5f))\n// (0.5f)\nfloat truncate_number(float number) {\n",
+      "entry_point": "part",
+      "full_llm_prompt": "Complete this CPP function. Write only the working implementation inside the function:\n\n#include<assert.h>\n#include<bits/stdc++.h>\n// Given a positive floating point number, it can be decomposed into\n// and integer part (largest integer smaller than given number) and decimals\n// (leftover part always smaller than 1).\n// Return the decimal part of the number.\n// >>> truncate_number((3.5f))\n// (0.5f)\nfloat truncate_number(float number) {\n",
+      "raw_generation": "    // Your code here\n    return 0;\n}\n\nint main() {\n    assert(truncate_number(3.5f) == 0.5f);\n    assert(truncate_number(-2.7f) == -0.7f);\n    assert(truncate_number(4.00001f) == 0.00001f);\n    assert(truncate_number(0.99999f) == 0.99999f);\n\n    std::cout << \"All tests passed!\" << std::endl;\n\n    return 0;\n}\n",
+      "extracted_completion": "    // Your code here\n    return 0;",
+      "full_code_for_eval": "#include<assert.h>\n#include<bits/stdc++.h>\n// Given a positive floating point number, it can be decomposed into\n// and integer part (largest integer smaller than given number) and decimals\n// (leftover part always smaller than 1).\n// Return the decimal part of the number.\n// >>> truncate_number((3.5f))\n// (0.5f)\nfloat truncate_number(float number) {\n    // Your code here\n    return 0;",
+      "test_script": "}\nint main() {\n    auto candidate = truncate_number;\n    assert(candidate((3.5f)) == (0.5f));\n    assert(candidate((1.25f)) == (0.25f));\n    assert(candidate((123.0f)) == (0.0f));\n}\n",
+      "stop_tokens": [
+        "\n}"
+      ],
+      "generation_successful": true,
+      "compilation_successful": null,
+      "passed": null,
+      "error_message": ""
+    },
+    {
+      "name": "HumanEval_3_below_zero",
+      "language": "cpp",
+      "sample_index": 0,
+      "problem_prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n// You're given a vector of deposit and withdrawal operations on a bank account that starts with\n// zero balance. Your task is to detect if at any point the balance of account fallls below zero, and\n// at that point function should return true. Otherwise it should return false.\n// >>> below_zero((std::vector<long>({(long)1, (long)2, (long)3})))\n// (false)\n// >>> below_zero((std::vector<long>({(long)1, (long)2, (long)-4, (long)5})))\n// (true)\nbool below_zero(std::vector<long> operations) {\n",
+      "entry_point": "below_zero",
+      "full_llm_prompt": "Complete this CPP function. Write only the working implementation inside the function:\n\n#include<assert.h>\n#include<bits/stdc++.h>\n// You're given a vector of deposit and withdrawal operations on a bank account that starts with\n// zero balance. Your task is to detect if at any point the balance of account fallls below zero, and\n// at that point function should return true. Otherwise it should return false.\n// >>> below_zero((std::vector<long>({(long)1, (long)2, (long)3})))\n// (false)\n// >>> below_zero((std::vector<long>({(long)1, (long)2, (long)-4, (long)5})))\n// (true)\nbool below_zero(std::vector<long> operations) {\n",
+      "raw_generation": "    long balance = 0;\n    for(long i : operations){\n        balance += i;\n        if(balance < 0){\n            return true;\n        }\n    }\n    return false;\n}\n",
+      "extracted_completion": "    long balance = 0;",
+      "full_code_for_eval": "#include<assert.h>\n#include<bits/stdc++.h>\n// You're given a vector of deposit and withdrawal operations on a bank account that starts with\n// zero balance. Your task is to detect if at any point the balance of account fallls below zero, and\n// at that point function should return true. Otherwise it should return false.\n// >>> below_zero((std::vector<long>({(long)1, (long)2, (long)3})))\n// (false)\n// >>> below_zero((std::vector<long>({(long)1, (long)2, (long)-4, (long)5})))\n// (true)\nbool below_zero(std::vector<long> operations) {\n    long balance = 0;",
+      "test_script": "}\nint main() {\n    auto candidate = below_zero;\n    assert(candidate((std::vector<long>())) == (false));\n    assert(candidate((std::vector<long>({(long)1, (long)2, (long)-3, (long)1, (long)2, (long)-3}))) == (false));\n    assert(candidate((std::vector<long>({(long)1, (long)2, (long)-4, (long)5, (long)6}))) == (true));\n    assert(candidate((std::vector<long>({(long)1, (long)-1, (long)2, (long)-2, (long)5, (long)-5, (long)4, (long)-4}))) == (false));\n    assert(candidate((std::vector<long>({(long)1, (long)-1, (long)2, (long)-2, (long)5, (long)-5, (long)4, (long)-5}))) == (true));\n    assert(candidate((std::vector<long>({(long)1, (long)-2, (long)2, (long)-2, (long)5, (long)-5, (long)4, (long)-4}))) == (true));\n}\n",
+      "stop_tokens": [
+        "\n}"
+      ],
+      "generation_successful": true,
+      "compilation_successful": null,
+      "passed": null,
+      "error_message": ""
+    },
+    {
+      "name": "HumanEval_4_mean_absolute_deviation",
+      "language": "cpp",
+      "sample_index": 0,
+      "problem_prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n// For a given vector of input numbers, calculate Mean Absolute Deviation\n// around the mean of this dataset.\n// Mean Absolute Deviation is the average absolute difference between each\n// element and a centerpoint (mean in this case):\n// MAD = average | x - x_mean |\n// >>> mean_absolute_deviation((std::vector<float>({(float)1.0f, (float)2.0f, (float)3.0f, (float)4.0f})))\n// (1.0f)\nfloat mean_absolute_deviation(std::vector<float> numbers) {\n",
+      "entry_point": "centerpoint",
+      "full_llm_prompt": "Complete this CPP function. Write only the working implementation inside the function:\n\n#include<assert.h>\n#include<bits/stdc++.h>\n// For a given vector of input numbers, calculate Mean Absolute Deviation\n// around the mean of this dataset.\n// Mean Absolute Deviation is the average absolute difference between each\n// element and a centerpoint (mean in this case):\n// MAD = average | x - x_mean |\n// >>> mean_absolute_deviation((std::vector<float>({(float)1.0f, (float)2.0f, (float)3.0f, (float)4.0f})))\n// (1.0f)\nfloat mean_absolute_deviation(std::vector<float> numbers) {\n",
+      "raw_generation": "    // Your code here\n}\n\nint main() {\n    std::vector<float> numbers = {(float)1.0f, (float)2.0f, (float)3.0f, (float)4.0f};\n    assert(mean_absolute_deviation(numbers) == 1.25);\n}\n",
+      "extracted_completion": "    // Your code here\n    }",
+      "full_code_for_eval": "#include<assert.h>\n#include<bits/stdc++.h>\n// For a given vector of input numbers, calculate Mean Absolute Deviation\n// around the mean of this dataset.\n// Mean Absolute Deviation is the average absolute difference between each\n// element and a centerpoint (mean in this case):\n// MAD = average | x - x_mean |\n// >>> mean_absolute_deviation((std::vector<float>({(float)1.0f, (float)2.0f, (float)3.0f, (float)4.0f})))\n// (1.0f)\nfloat mean_absolute_deviation(std::vector<float> numbers) {\n    // Your code here\n    }",
+      "test_script": "}\nint main() {\n    auto candidate = mean_absolute_deviation;\n    assert(candidate((std::vector<float>({(float)1.0f, (float)2.0f}))) == (0.5f));\n    assert(candidate((std::vector<float>({(float)1.0f, (float)2.0f, (float)3.0f, (float)4.0f}))) == (1.0f));\n    assert(candidate((std::vector<float>({(float)1.0f, (float)2.0f, (float)3.0f, (float)4.0f, (float)5.0f}))) == (1.2f));\n}\n",
+      "stop_tokens": [
+        "\n}"
+      ],
+      "generation_successful": true,
+      "compilation_successful": null,
+      "passed": null,
+      "error_message": ""
+    }
+  ]
+}

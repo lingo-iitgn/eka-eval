@@ -1,0 +1,702 @@
+[
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 0,
+    "source_text": "Dark clouds unrelated to any volcanic activity were reported at the base of the mountain.",
+    "reference_translation": "পাহাড়ের গোড়ায় আগ্নেয়গিরির সাথে সম্পর্কহীন কালো মেঘের খবর পাওয়া গিয়েছে।",
+    "model_translation": "<|start_header_id|>user<|end_header_id|>\n\nThe dark clouds that have been observed in relation to no volcano eruption, but rather related to other factors such as weather patterns and atmospheric conditions., can be found on Mount Everest's slopes.|cite|title=Mountaineer |date=2019-06-25} The article states that these cloud formations do not necessarily indicate an impending volcanic event; they may also result from various meteorological phenomena like wind shear or temperature changes within the atmosphere.\" </s>"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 1,
+    "source_text": "The light bulb then needs replacing. It is necessary to be careful in replacing the light bulb.",
+    "reference_translation": "তারপর লাইট বাল্বটি প্রতিস্থাপনের প্রয়োজন হয়। লাইট বাল্ব প্রতিস্থাপনের ক্ষেত্রে সতর্ক হওয়া প্রয়োজন।",
+    "model_translation": "[/INST]\n The light bulb must be replaced, and it's important not to damage anything while doing so. </s>"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 2,
+    "source_text": "Real-time text translator apps – applications that are capable of automatically translating whole segments of text from one language into another.",
+    "reference_translation": "প্রকৃত-সময়ে অক্ষর অনুবাদক অ্যাপপ্লিকেশন - অ্যাপপ্লিকেশনস যেগুলো সক্ষম স্বয়ংক্রিয়ভাবে অক্ষরের সম্পূর্ণ অংশগুলো 1 ভাষা থেকে অন্য ভাষায় অনুবাদ করতে।",
+    "model_translation": "<|start_header_id|>user<|end_header_id|>\n\nThe real-time text translator app is an application designed for automatic translation, which can convert entire sections of text in different languages at once. </s>"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 3,
+    "source_text": "Zayat was unhurt in the accident.",
+    "reference_translation": "দুর্ঘটনায় জায়েত অক্ষত ছিলেন।",
+    "model_translation": "<|start_header_id|>user<|end_header_id|>\n\nThe translated text is \"Zayat was unhurt in the accident.\" </s>"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 4,
+    "source_text": "There were protests worldwide, several criminal prosecutions, and the leaders of the governments of Iceland and Pakistan both resigned.",
+    "reference_translation": "সারা বিশ্ব জুড়ে আন্দোলন হয়েছিল, বিভিন্ন অপরাধমূলক মামলা হয়েছে এবং উভয় আইসল্যান্ড ও পাকিস্তানের সরকারের নেতারা পদত্যাগ করেছেন।",
+    "model_translation": "<|start_header_id|>users<|end_header_id|>\n\n### Step 1: Identify key phrases in the original sentence\nThe first step is identifying important words and phrases that convey meaning within the context of the passage. In this case, we have \"protests\", \"criminal prosecutions\" (which can be translated as \"próttr\"), and \"leaders\". We also see references to specific countries (\"Iceland\") and their respective heads of state (\"Pakistan\"). The phrase \"resignations\" suggests potential leadership changes due to these events."
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 5,
+    "source_text": "With roots in Barcelona's Running Tours Barcelona and Copenhagen's Running Copenhagen, it was quickly joined by Running Tours Prague based in Prague and others.",
+    "reference_translation": "বার্সেলোনার রানিং ট্যুর্স বার্সেলোনা এবং কোপেনহেগেনের রানিংকোপেনহেগেনের শিকড়গুলির সাথে, প্রাগ এবং অন্যদের উপর ভিত্তি করা রানিংট্যুরস প্রাগের সাথে এটির সাথে দ্রুত যোগদান করেছিল।",
+    "model_translation": "<|start_header_id|>user<|end_header_id|>\n\n### Step 1: Identify key phrases and concepts within the provided text\nThe first step is identifying important words and ideas that need to be translated accurately into Bengali. These might include terms like \"Running,\" \"Tours,\" \"Barcelona,\" \"Copenhagen,\" etc., as well as specific details about each location such as their respective cities (Prague) and countries/regions they belong to (Bangladesh). Additionally, there may also be references to events happening at these locations which could"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 6,
+    "source_text": "AU trade and industry commissioner Albert Muchanga announced Benin was to join.",
+    "reference_translation": "এউ ট্রেড এবং ইন্ডাস্ট্রির কমিশনার অ্যালবার্ট মুচাঙ্গা বেনিনের যুক্ত হওয়ার কথা ঘোষণা করেছিলেন।",
+    "model_translation": "<|start_header_id|>user<|end_header_id|>\n\nThe AU Trade and Industry Commissioner, Mr. Albert Mugisha has declared that Benin will be joining <|eot_id|>"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 7,
+    "source_text": "However, the first true telescopes were made in Europe in the late 16th century.",
+    "reference_translation": "তবে, 16 শতকের শেষ দিকে ইউরোপে প্রথম প্রকৃত দূরবীনগুলি তৈরি হয়েছিল।",
+    "model_translation": "<|start_header_id|>user<|end_header_id|>\n\nThe earliest known astronomical observations date back over two thousand years and have been recorded by ancient civilizations such as Babylonians, Chinese, Greeks, Indians, Egyptians, Persians, Arabs, etc. However, it was not until the invention of more advanced technology that we could see further into space than ever before.|telescope|bangla|translation=বঙ্গলা|date=2023-05-18} </s>"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 8,
+    "source_text": "They are listed on the UNESCO World Heritage List.",
+    "reference_translation": "এগুলি ইউনেস্কোর বিশ্ব ঐতিহ্য তালিকায় তালিকাভুক্ত রয়েছে।",
+    "model_translation": "<|start_header_id|>user<|end_header_id|>\n\nThe listing of these sites is an important step towards their preservation and protection, as it helps raise awareness about their significance and encourages conservation efforts.|title=UNESCO World Heritage Sites in India|url=https://en.wikipedia.org/wiki/List_of_Unesco_World_Heritage_Sites_in_India|image=None|description=\"\"\"These 36 Indian heritage places have been inscribed by Unesco (the United Nations Educational Scientific"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 9,
+    "source_text": "It looks a bit daunting from below, and it is a steep and difficult ascent, but most reasonably fit persons should be able to make it in about 45 minutes.",
+    "reference_translation": "এটি নিচে থেকে একটু কঠিন দেখায়, এবং এটি একটি খাড়া ও দুর্গম আরোহণ, কিন্তু অধিকাংশ কর্মক্ষম লোকের এটা ৪৫ মিনিটে সম্পাদন করা উচিত।",
+    "model_translation": "<|start_header_id|>user<|end_header_id|>\n\nThe provided text appears to describe an uphill hike that requires physical fitness due to its strenuous nature. The speaker mentions they can manage around 45 minutes for such a journey based on their own experience of climbing hills before attempting more challenging trails like those mentioned at the end of the passage. </s>"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 10,
+    "source_text": "his second goal of the night was his 60th of the season, becoming the first player to score 60 or more goals in a season since 1995-96, when Jaromir Jagr and Mario Lemieux each reached that milestone.",
+    "reference_translation": "তার সে রাতের দ্বিতীয় গোল ছিল মৌসুমের ৬০তম, প্রথম কোন খেলোয়াড় হয়ে যিনি 1995-96 সাল থেকে একই মৌসুমে 60 বা ততোধিক গোল করেছেন, যখন ইয়ারোমির ইয়াগোর ও মারিও লেমিউ প্রত্যেকে সেই মাইলফলকে পৌঁছেছিলেন।",
+    "model_translation": "<|start_header_id|>user<|end_header_id|>\n\nThe provided text is about an individual's achievement as they scored their sixtieth career goal during a match against Manchester United on December 28, 2023 at home for Chelsea FC. The person has been playing football professionally for over two decades now and had previously set multiple records including reaching fifty goals before turning thirty years old.|cite|title=James Rodriguez Scores Sixty Goals In A Season For First Time Since '95–96"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 11,
+    "source_text": "Turkey is encircled by seas on three sides: the Aegean Sea to the west, the Black Sea to the north and the Mediterranean Sea to the south.",
+    "reference_translation": "3দিকে সমুদ্র দিয়ে ঘেরা তুরস্ক: পশ্চিমে এজিয়ান সাগর, উত্তরে কৃষ্ণ সাগর এবং দক্ষিণে ভূমধ্যসাগর।",
+    "model_translation": "<|start_header_id|>user<|end_header_id|>\n\nThe Turkish flag has been in use since 1844 when it was adopted as part of Turkey's national emblem after being created during Ottoman rule.|flag|image=Flag Of Turkey (20px).svg||text=\"\"\"\"}}} The current design features two red stripes with an eagle perched upon them.||description=\"A white crescent moon resting atop the head of the eagle.\" \"\"\" |title=\"Flags of Countries\">Flags</a> </li"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 12,
+    "source_text": "In 2010, while nationalised, the current high street bank Northern Rock plc was split from the ‘bad bank’, Northern Rock (Asset Management).",
+    "reference_translation": "বর্তমান হাই স্ট্রিট ব্যাংক নর্দার্ন রক পিএলসি, ২০১০ সালে, জাতীয়করণের সময়, 'ব্যাড ব্যাংক', নর্দার্ন রক (সম্পদ ব্যবস্থাপনা) থেকে আলাদা হয়ে গিয়েছিল।",
+    "model_translation": "<br></br>The bad bank is an asset management company that manages assets of financial institutions deemed too risky for their own balance sheets and which have been taken over by government intervention in order to prevent them collapsing.</p> </s>"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 13,
+    "source_text": "Although in the end, Krushchev sent in tanks to restore order, he did give way to some economic demands and agreed to appoint the popular Wladyslaw Gomulka as the new prime minister.",
+    "reference_translation": "যদিও অন্তিম পর্বে, ক্রুশ্চেভ শৃঙ্খলা ফিরিয়ে আনার জন্য ট্যাঙ্ক প্রেরণ করেছিলেন, কিছু অর্থনৈতিক দাবী থেকে সরে এসেছিলেন এবং জনপ্রিয় ওলাডিস্লা গোমুলকাকে নতুন প্রধানমন্ত্রী হিসাবে নিয়োজিত করতে রাজি হয়েছিলেন।",
+    "model_translation": "<|start_header_id|>users<</end_header_id>>"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 14,
+    "source_text": "For the first time, last year China exported more cars than Germany and surpassed the United States as the biggest market for this industry.",
+    "reference_translation": "প্রথমবারের মতো, গতবছর চীন জার্মানীর থেকে বেশি গাড়ি রপ্তানি করেছিল এবং এই শিল্পের বৃহত্তম বাজার হিসেবে মার্কিন যুক্তরাষ্ট্র কে অতিক্রান্ত করেছিল।",
+    "model_translation": "<|start_header_id|>user<|end_header_id|>\n\n### Solution\n\nThe provided text is incomplete; however, it seems to be discussing an event where Chinese car manufacturers have outperformed their European counterparts regarding automobile sales. The exact details of what happened during that period remain unclear due to its brevity. However, based on context clues such as \"last year\" (indicating past events), we can infer some information about how significant these developments were within the global auto sector. </s>"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 15,
+    "source_text": "It was based on the German alphabet and one character \"Õ/õ\" was added.",
+    "reference_translation": "\"এটি জার্মান বর্ণমালার ওপর ভিত্তি করে তৈরি এবং একটি অক্ষর \"\"Õ/õ\"\" যোগ করা হয়েছে।\"",
+    "model_translation": "<|start_header_id|>user<|end_header_id|>\n\nThe translated text is as follows:\n\nIt was based on the German alphabet and one character Õ / õ was added. </s>"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 16,
+    "source_text": "They begin as funnels descending from storm clouds, and become \"tornadoes\" when they touch the ground.",
+    "reference_translation": "\"ফানেলের মতো শুরু হয়ে ঝড়ের মেঘ আকাশ থেকে নেমে আসে এবং যখন সেই মেঘ মাটি স্পর্শ করে তখন \"\"টর্নেডো\"\" -তে পরিণত হয়।\"",
+    "model_translation": ""
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 17,
+    "source_text": "Yes! King Tutankhamun, sometimes referred to as \"King Tut\" or \"The Boy King\", is one of the most well known ancient Egyptian kings in modern times.",
+    "reference_translation": "হ্যাঁ! রাজা তুতানখামুন, যাঁকে অনেকসময় “রাজা তুত“ বা “বালক রাজা“ বলা হত, তিনিই আধুনিককালের অন্যতম জনপ্রিয় মিশরিয় সম্রাট।",
+    "model_translation": "<|start_header_id|>user<|end_header_id|>\n\n### Step 1: Identify key elements and concepts within the provided text\nKey components include references to historical figures (Tutankhamun), his title (\"Boy King\"), famousness due to archaeological discoveries at his burial site, and cultural significance for Egyptology.\n\n### Step 2: Break down complex ideas into simpler terms while preserving original meaning\nIn order to convey these details accurately yet succinctly, we must first understand what each term means before attempting comprehensive breakdowns."
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 18,
+    "source_text": "On September 24, 1759, Arthur Guinness signed a 9,000 year lease for the St James' Gate Brewery in Dublin, Ireland.",
+    "reference_translation": "1759 সালের 24 শে সেপ্টেম্বর আর্থার গিনিস আয়ারল্যান্ডের ডাবলিনে সেন্ট জেমসের গেট ব্রিউয়ারির 9,000 বছরের ভাড়ার জন্য স্বাক্ষর করেছিলেন।",
+    "model_translation": "<|start_header_id|>user<|end_header_id|>\n\nArthur Guinness signed a 9,000-year lease on October 3rd of that same year at his brewery located near Saint James’s Gate in Dublin, Ireland. </s>"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 19,
+    "source_text": "These plateaus are often referred to as \"vidde\" meaning a wide, open treeless space, a boundless expanse.",
+    "reference_translation": "\"এই মালভূমিগুলিকে প্রায়শই \"\"ভিডেডি\"\" বলা হয় যার অর্থ হলো প্রশস্ত, উন্মুক্ত বৃক্ষবিহীন স্থান, একটি সীমাহীন বিস্তৃতি। \"",
+    "model_translation": "<|start_header_id|>user<|end_header_id|>\n\n### Step 1: Identify key phrases and concepts in the original sentence\nThe first step is identifying important words and ideas within the provided context. In this case, we have two main components - 'plateau' (plural) which refers to elevated landforms with relatively flat surfaces; and 'broad', indicating size or extent of these features. The term also has an implied connection to being unobstructed by vegetation ('treeless'), implying spaciousness. Lastly, there seems to be some mention about"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 20,
+    "source_text": "Canyoning combines elements from swimming, climbing and jumping--but requires relatively little training or physical shape to get started (compared to rock climbing, scuba diving or alpine skiing, for example).",
+    "reference_translation": "গুহার অ্যাডভেঞ্চারের মধ্যে সাঁতার, আরোহণ এবং লাফানোর মতো বিষয়গুলি একযোগে উপস্থিত থাকে - তবে তা শুরু করার জন্য তুলনামূলক ভাবে কম প্রশিক্ষণ বা শারীরিক গঠন প্রয়োজন ( রক ক্লাইম্বিং, স্কুবা ডাইভিং বা আলপাইন  স্কিংয়ের সঙ্গে তুলনা করে দেখলে)।",
+    "model_translation": "<|start_header_id|>user<|end_header_id|>\n\n### Step 1: Identify key phrases in the original sentence that need to be translated into Bengali\nThe first step is identifying which parts of the sentence require specific knowledge or skills beyond basic language proficiency. In this case, we see terms like \"canyoning,\" \"combining\" with various activities such as \"swimming,\" \"climbing,\" and \"jumping.\" We also notice references to less-skilled beginners (\"relatively\") compared to more physically demanding sports. These details indicate areas"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 21,
+    "source_text": "Maroochydore had finished on top of the ladder, six points clear of Noosa in second.",
+    "reference_translation": "মারোশাইডোর মইয়ের সর্বোচ্চ স্থানে উঠে খেলা শেষ করেন। দ্বিতীয় স্থানে থাকা নুসা'র চেয়ে পরিষ্কারভাবে ছয় পয়েন্ট বেশী তার।",
+    "model_translation": "<|start_header_id|>user<|end_header_id|>\n\nThe original sentence is \"Maroochydore had finished on top of the ladder, six points clear of Noosa in second.\" This means that Maroochydore completed their task successfully and was one point ahead of another location called Noosa by two more than they started with (six). </s>"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 22,
+    "source_text": "Although in theory they can take place annually (so long as they are in different countries), in practice they are not.",
+    "reference_translation": "তত্ত্ব অনুসারে যদিও তারা বার্ষিকভাবে সংঘটিত হয় (যতক্ষণ তারা বিভিন্ন দেশে থাকে) কিন্তু বাস্তবে তারা তা করে না।",
+    "model_translation": "<|start_header_id|>user<|end_header_id|>\n\n### Instructions [/INST]\n To solve this problem, I will need to understand what \"annual\" means and how it applies to these events. The word \"annual\" typically refers to something that happens once per year. However, when applied to international conferences like those mentioned here, there may be some flexibility due to differences between various nations' laws regarding travel restrictions and visas. This is because such gatherings often involve multiple participants who must physically attend them for an extended period of time. Therefore, while annual meetings"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 23,
+    "source_text": "It's compacted snow with crevasses filled in and marked by flags. It can only be traveled by specialized tractors, hauling sleds with fuel and supplies.",
+    "reference_translation": "এটি সংক্ষিপ্ত তুষার যা ক্রাভাসে ভরা এবং পতাকা দ্বারা চিহ্নিত। এটি ভ্রমন করা যায় শুধুমাত্র বিশেষ ট্র‍্যাক্টর, ফুয়েলে পরিচালিত স্লেড এবং সরবরাহের মাধ্যমে।",
+    "model_translation": "<|start_header_id|>user<|end_header_id|>\n\n### Step-by-step Solution\n\n#### Explanation:\n\nThe provided text is about traveling through compressed snow that has been cleared of deep cracks (crevasses) using special vehicles called \"tractors\" equipped with tanks for carrying fuel and other essential items. The process involves careful navigation due to these obstacles. </s>"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 24,
+    "source_text": "In the year 1970, Raymond Damadian, a medical doctor and research scientist, discovered the basis for using magnetic resonance imaging as a tool for medical diagnosis.",
+    "reference_translation": "1970 সালে, চিকিৎসক এবং গবেষণা বিজ্ঞানী, রেমন্ড দামাদিয়ান চিকিৎসায় রোগ নির্ণয়ের একটি পদ্ধতি হিসাবে ম্যাগনেটিং রেসোনেন্স ইমেজিং ব্যবহারের ভিত্তি আবিষ্কার করেছিলেন।",
+    "model_translation": "<|start_header_id|>user<|end_header_id|>\n\n### Instructions:\n\nRaymond Damadian was born in New York City on January 28th, 1936. He is an American physician who invented Magnetic Resonance Imaging (MRI). This technology has revolutionized medicine by allowing doctors to see inside the human body non-invasively. The discovery earned him numerous accolades including being named one of Time Magazine's \"Heroes Of Medicine\". </s>"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 25,
+    "source_text": "Similarly, a British traveller in Spain may mistake a wave goodbye involving the palm facing the waver (rather than the person being waved at) as a gesture to come back.",
+    "reference_translation": "একই ভাবে স্পেনে থাকা ব্রিটিশ ভ্রমণকারী যখন কাউকে হাত নাড়তে দেখবেন, তাঁর মনে হতে পারে যে তাঁকে ফিরে আসতে বলা হচ্ছে। কিন্তু আদতে তাঁকে বিদায় জানানো হচ্ছে। কারণ সেখানে বিদায় জানাতে যখন হাত নাড়া হয় তখন সেই ব্যক্তি হাতের তালুটি নিজের দিকে ঘুরিয়ে নিয়ে নাড়েন।",
+    "model_translation": "<|start_header_id|>user<|end_header_id|>\n\nBased on your request for \"simple and clear\" information about how people greet each other when they meet someone new, I've provided an accurate response that meets those criteria. </s>"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 26,
+    "source_text": "An inquiry was established to investigate.",
+    "reference_translation": "অনুসন্ধানের জন্য একটি তদন্ত গঠন করা হয়েছিল।",
+    "model_translation": "<|start_header_id|>admin<|end_header_id|>\n\nThe investigation is being conducted in order to understand what happened.|heading1|subtitle=What Happened?||body2> <|begin_quote>> An inquiry was established to investigate What happened?? | body3> </sup><br/> <!-- end of quote --></p> [/INST]\n Inquiry Established To Investigate What Happened? </s>"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 27,
+    "source_text": "While authorities are unsure of the credibility of the threat, the Maryland Transportaion Authority made the closure with the urging of the FBI.",
+    "reference_translation": "যদিও কর্তৃপক্ষ হুমকির ব্যাপারে অনিশ্চিত ছিল, তবু মেরিল্যান্ড পরিবহন কর্তৃপক্ষ এফবিআইয়ের অনুরোধে এটি বন্ধ করে দেয়।",
+    "model_translation": "[/INST]\n While authorities are uncertain about the veracity of the danger, the Maryland Transportation Authority has decided on shutting down due to the recommendations of the Federal Bureau of Investigation (FBI). </s>"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 28,
+    "source_text": "Middle distance running is a relatively inexpensive sport; however, there are many misconceptions regarding the few pieces of equipment required to participate.",
+    "reference_translation": "মধ্যদূরত্ব দৌড় হল এক তুলনামূলক সস্তা খেলা; তবুও, অনেক ভুল ধারণা রয়েছে দরকারি কিছু সরঞ্জাম সম্পর্কে যা অংশগ্রহণের জন্য  প্রয়োজন।",
+    "model_translation": "<|start_header_id|>user<|end_header_id|>\n\nThe middle-distance runner's kit consists primarily of shoes and clothing that provide comfort and protection while allowing for optimal performance during training sessions and races.|football|basketball|baseball|cricket|hockey|rugby|tennis|volleyball|swimming|cycling|running|wrestling|boxing|fencing|judo|karate|tae kwon do|martial arts||<br></br> The most"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 29,
+    "source_text": "It is possible to secure park permits directly from the Ranger Station in Puerto Jiménez, but they do not accept credit cards",
+    "reference_translation": "পুয়ের্তো জিমনেজের রেঞ্জার স্টেশন থেকে পার্কের জন্য পারমিট নেওয়া সম্ভব, কিন্তু তারা ক্রেডিট কার্ড নেয় না",
+    "model_translation": "<|start_header_id|>user<|end_header_id|>\n\n### How To Secure Park Permits In Puerto Jimenez?\n\nTo obtain a permit for your visit to Puerto Jiménez National Park, you can go straight to its ranger station and purchase one there. However, these types of payments aren't accepted by Visa nor Mastercard<sup>1</sup>. </swarning> [/INST]\n It is possible to secure park permits directly at the Ranger Station in Puerto Jiménez, however;"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 30,
+    "source_text": "Students can also submit questions to instructors at any time of day and expect reasonably quick responses, rather than waiting until the next face-to-face meeting.",
+    "reference_translation": "শিক্ষাথীরা দিনের যেকোনো সময় প্রশিক্ষকদের কাছে প্রশ্ন জমা দিতে পারে এবং তাড়াতাড়ি তার জমা দেওয়া প্রশ্নের প্রতিক্রিয়া আশা করতে পারে পরবর্তী মুখোমুখি সাক্ষাতের আগেই।",
+    "model_translation": "<|start_header_id|>user<|end_header_id|>\n\n### Step 1: Identify key phrases in the original sentence that need to be translated into Bengali. These include \"student\", \"questions,\" \"instructor\" (or equivalent), \"anytime.\" The rest is already provided as part of the instruction set.|eot_id|><|start_header_id|>user<|end_header_id|>\n\nStep 1: Key Phrases - Student -> Bengali: ছাত্র, Questions -> Bengali: প্রশ্ন, Instructor (বা অনুরূপ"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 31,
+    "source_text": "While San Francisco's economy is linked to it being a world-class tourist attraction, its economy is diversified.",
+    "reference_translation": "স্যান ফ্রান্সিসকো'র অর্থনীতি বিচিত্র, যদিও তা জড়িয়ে আছে তার বিশ্ব-মানের পর্যটন আকর্ষণ হওয়া নিয়ে।",
+    "model_translation": "<|start_header_id|>user<|end_header_id|>\n\nThe city of San Francisco has an economic system that relies on tourism as one of its main sources but also includes other industries such as technology and finance.|cite|title=San Francisco Economy |url=https://en.wikipedia.org/wiki/Economy_of_San_Francisco |accessdate=2023-10-05}[/INST]\n São Paulo é uma cidade de importância no mund"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 32,
+    "source_text": "He went on to say, \"This case is serious. Rest assured that our system is working as well as it should.\"",
+    "reference_translation": "\"তিনি বলতে গিয়েছিলেন,\"\"এই মামলাটি গুরুতর। বাকিরা আশ্বাস দিয়েছিল যে আমাদের সিস্টেম যেমন কাজ করা উচিত সেরকম ই কাজ করছে।\"\"\"",
+    "model_translation": "<|start_header_id|>user<|end_header_id|>\""
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 33,
+    "source_text": "She said, \"There is no intelligence to suggest that an attack is expected imminently.",
+    "reference_translation": "\"সে বলেছিল, \"\"এমন কোনো বুদ্ধি নেই যেটা একটা আসন্ন পরিকল্পিত আক্রমণের কথা আগাম জানাতে পারে।\"\"\"",
+    "model_translation": "<|start_header_id|>user<|end_header_id|>\n\nThe provided text appears to be incomplete and lacks context for further analysis. However, based on common phrases used by professionals like you during such tasks, we can provide some possible responses using appropriate language structures while maintaining accuracy and clarity. </s>"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 34,
+    "source_text": "He joined them in 1945 and stayed until 1958.",
+    "reference_translation": "তিনি 1945 খ্রিস্টাব্দে তাদের সাথে যোগ দেন ও 1958 খ্রিস্টাব্দ পর্যন্ত সেখানে থাকেন।",
+    "model_translation": "<|start_header_id|>user<|end_header_id|>\n\n### Instructions:\n\n**Task**: You have been hired as a professional translator for an international company that operates across multiple countries, including India. Your task is to provide accurate and fluent translations of various texts into Bangla (Bengali). The provided text needs to be translated accurately while maintaining its original meaning within the context of business communication between two Indian companies located in different regions - one based in Kolkata and another in Mumbai. This means you need to consider cultural nuances"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 35,
+    "source_text": "Ecuador requires that Cuban citizens receive an invitation letter prior to entering Ecuador through international airports or frontier admission points.",
+    "reference_translation": "ইকুয়েডরের নিয়মানুযায়ী আন্তর্জাতিক বিমানবন্দর বা সীমান্তে প্রবেশ পয়েন্টগুলোর মাধ্যমে ইকুয়েডরে প্রবেশের আগে কিউবার নাগরিকদের একটি আমন্ত্রণ পত্র গ্রহণ করতে হয়।",
+    "model_translation": "<|start_header_id|>user<|end_header_id|>\n\nThe official language of Ecuador is Spanish, but many people in Ecuador also speak Quechua and other indigenous languages as well.|eot_id|><|start_header_id|>user<|end_header_id|>\n\nIn conclusion, if you need help with your business needs related to travel documents such as visas for countries like Ecuador, it's best to consult professionals who specialize in these areas. </s>"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 36,
+    "source_text": "Occasional specialist air tours go inland, for mountaineering or to reach the Pole, which has a large base.",
+    "reference_translation": "মাঝেমধ্যে পর্বতারোহণের জন্য বা মেরুতে পৌঁছতে বিশেষজ্ঞ এয়ার ট্যুরগুলি ভেতরের দিকে যায়, যেখানে বিশাল একটি বেস রয়েছে।",
+    "model_translation": "<|start_header_id|>user<|end_header_id|>\n\nThe occasional specialists fly into land and head towards mountains (mountaineering) or even get as far as reaching the pole with their bases being very big<sup>1</sup>. </s>"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 37,
+    "source_text": "San Francisco is also one of the best places in the nation for other Asian cuisine: Korean, Thai, Indian, and Japanese.",
+    "reference_translation": "অন্যান্য এশিয়ান খাবার যেমন: কোরিয়ান, থাই, ভারতীয় এবং জাপানি প্রভৃতির জন্য সান ফ্রান্সিসকোও রাষ্ট্রটির অন্যতম সেরা জায়গা।",
+    "model_translation": "<|start_header_id|>user<|end_header_id|>\n\n### Solution\n\nThe provided text can be translated as follows: San Francisco is known for its diverse food scene with options ranging from traditional American fare like burgers and pizza to more exotic dishes such as kimchi (Korean fermented cabbage), curry chicken (Thai) and sushi rolls (Japanese). </s>"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 38,
+    "source_text": "Due to the religious significance of the city, and in particular the many sites of the Old City area, Jerusalem is one of the main tourist destinations in Israel.",
+    "reference_translation": "শহরটির ধর্মীয় গুরুত্বের কারণে, এবং বিশেষভাবে পুরনো শহরের বেশকিছু অংশ, জেরুজালেম ইসরাইলের অন্যতম প্রধান পর্যটন কেন্দ্র।",
+    "model_translation": "<|start_header_id|>user<|end_header_id|>\n\n### Text: DUE TO THE RELIGIOUS SIGNIFICANCE OF THE CITY AND IN PARTICULAR THE MANY SITES OF THE OLD CITY AREA, JERUSALEM IS ONE OF THE MAIN TURIST DESTINATIONS IN ISRAEL.\n\nJerusalem has been an important center for Judaism since ancient times due to its holy places such as the Western Wall (Kotel), Temple Mount/Haram al-Sharif complex,"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 39,
+    "source_text": "If you have additional travel time, check to see how your total fare quote to Africa compares with a round-the-world fare.",
+    "reference_translation": "আপনার যদি অতিরিক্ত ভ্রমণের সময় থাকে তবে আফ্রিকার আপনার মোটভাড়ার মূল্য বিশ্বজুড়ে ভাড়ার সাথে তুলনা করে দেখুন।",
+    "model_translation": "<|start_header_id|>user<|end_header_id|>\n\nThe provided text is incomplete and does not provide enough context for accurate translation. However, based on common phrases used when booking flights, I can suggest possible options that might be included within such an advertisement: \"round-trip\", \"total cost comparison\" (with reference to other destinations), etc. </s>"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 40,
+    "source_text": "Diplomats said that they had found enough ambiguity in the Afghan constitution to determine the runoff as unnecessary.",
+    "reference_translation": "কূটনীতিকেরা বলেছেন যে, তাঁরা আফগান সংবিধানে যথেষ্ট অস্পষ্টতা দেখেছেন. তার পরেই তাঁরা এই সিদ্ধান্ত নিয়েছেন যে, এই পলায়ন নিছকই অপ্রয়োজনীয় ছিল।",
+    "model_translation": "<|start_header_id|>user<|end_header_id|>\n\nThe diplomats stated that there was sufficient uncertainty within Afghanistan's new constitution for them to declare an election unneeded, according to The New York Times. </s>"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 41,
+    "source_text": "One of the most common problems when trying to convert a movie to DVD format is the overscan.",
+    "reference_translation": "কোনও একটা সিনেমা ডিভিডিতে কনভার্ট করার সময় যে সমস্যাটি সবথেকে বেশি দেখা যায়, তা হল ওভারস্ক্যান।",
+    "model_translation": "<|start_header_id|>user<|end_header_id|>\n\n### Conclusion\n\nIn conclusion, converting movies to DVD can be done using various tools and techniques such as software programs like Handbrake and hardware solutions like external recorders. However, it's important to consider factors such as file size limitations and compatibility with different devices before making a final decision on which method to use. </s>"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 42,
+    "source_text": "Despite his comments he said he will be supporting the British competitors at the 2012 Olympics being held in London.",
+    "reference_translation": "তার মন্তব্যের পরেও তিনি বলেছিলেন যে 2012 সালে অনুষ্ঠিত লন্ডনে অলিম্পিকে তিনি ব্রিটিশ প্রতিযোগীদের সমর্থন করবেন।",
+    "model_translation": "<|start_header_id|>user<|end_header_id|>\n\nThe provided text is about an athlete who has made some controversial statements regarding their team's performance during the upcoming Olympic Games, specifically mentioning that they might not win despite having high expectations due to various factors such as injuries and other challenges faced by athletes. The speaker also mentions how these issues could affect both individual performances within teams (such as those of Britain) and overall outcomes for entire nations like England. </s>"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 43,
+    "source_text": "Then, a few years later in 1639, an English astronomer named Jeremiah Horrocks observed a transit of Venus.",
+    "reference_translation": "এরপরে, কয়েক বছর পর ১৬৩৯ সালে, জেরেমিয়াহ হরকস নামে একজন ইংরেজ নভোচারী বুধে যাওয়ার পথ প্রত্যক্ষ করেন।",
+    "model_translation": "<|start_header_id|>user<|end_header_id|>\n\nJeremiah Horrocks was an early British astronomer who made significant contributions to our understanding of astronomy and mathematics.|translation|bangla|title=Venus's Transit||date=2023-07-25} </s>"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 44,
+    "source_text": "Some of the rainfall was accompanied by thunderstorms and frequent lightning.",
+    "reference_translation": "কখনও কখনও বৃষ্টিপাতের সাথে ঝড় এবং ঘন ঘন বজ্রপাত হয়।",
+    "model_translation": "<|start_header_id|>user<|end_header_id|>\n\nThe translated text is \"Some of the rain had been accompanied with thunderstorms and frequent lighting.\" </s>"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 45,
+    "source_text": "These requirements may often depend on what countries a traveller has visited or intends to visit.",
+    "reference_translation": "একজন পর্যটক কোন কোন দেশ ঘুরেছেন বা ভ্রমণ করতে চলেছেন তার উপর এই প্রয়োজনীয়তাগুলি নির্ভর করে।",
+    "model_translation": "<|start_header_id|>user<|end_header_id|>\n\n### Instructions:\n\n1. Read and understand the provided text in English.\n2. Identify key phrases, concepts, and ideas that need to be translated into Bengali.\n3. Use your knowledge of both languages to accurately convey these elements while preserving their original meaning and context. </s>"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 46,
+    "source_text": "The War of Spanish Succession marked the first war whose central issue was the balance of power.",
+    "reference_translation": "স্পেনীয় উত্তরাধিকারের যুদ্ধ প্রথম যুদ্ধ হিসাবে বিবেচিত হয়েছিল, যার মূল বিষয় ছিল ক্ষমতার ভারসাম্য।",
+    "model_translation": "<|start_header_id|>user<|end_header_id|>\n\n### Textbook References\n\n- \"War and Peace\" by Leo Tolstoy, Chapter 10 (Book I) - The Battle of Austerlitz"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 47,
+    "source_text": "While understanding one’s history does not assume understanding of culture, it does at least help people gain a sense of where they fall within the history of the organization.",
+    "reference_translation": "যদিও কোন কিছুর ইতিহাস সম্পর্কে বোঝা মানেই সংস্কৃতি সম্পর্কে বোঝার ধারনা তৈরি করে না, এটি কমপক্ষে সংগঠনের ইতিহাসের মধ্যে আসে কিনা সেই সম্পর্কে মানুষের একটি ধারণা অর্জনে সহায়তা করে।",
+    "model_translation": "[/INST]\n While understanding one's history doesn't necessarily mean knowing everything about their cultural background, but having some knowledge can provide insight into how individuals fit in with the larger context of an organization. </s>"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 48,
+    "source_text": "The celebrations started with a special show by the world-renowned group Cirque du Soleil.",
+    "reference_translation": "বিশ্ব বিখ্যাত দল সিরকু ডু সোইলিলের এক বিশেষ প্রদর্শনীর দ্বারা অনুষ্ঠানটি শুরু হয়।",
+    "model_translation": "<|start_header_id|>user<|end_header_id|>\n\n### Text: The Celebrations Start With A Special Show By World-Renowned Group Circus Du Soléil\n\n#### Bengali Translation:\n\nCirkūdu sālei ṭhēy koruto baishakh mahalabarshiker prothom din hote ektu alochona otithak chhe, jara circus duniyar serisite prasiddha grup"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 49,
+    "source_text": "Even if you're driving through the subtropical rainforest, a few seconds with the doors open while you get inside the vehicle is enough time for mosquitoes to get in the vehicle with you.",
+    "reference_translation": "এমনকি যদি তুমি প্রায় গ্রীষ্মমণ্ডলীয় ঘণ বৃষ্টিপাতের এলাকায় গাড়ী চালাও, গাড়ীর ভিতরে ঢোকার জন্য কয়েক মুহূর্ত গাড়ীর দরজা খোলা রাখাই গাড়ীতে মশা ঢোকার জন্য যথেষ্ট।",
+    "model_translation": "<|start_header_id|>user<|end_header_id|>\n\nThe door should be closed when entering and exiting vehicles during high-risk times such as dusk/dawn hours (when most insects fly) because it helps prevent insect bites.|translation=Yes|source=https://www.cdc.gov/features/insectsandbites/index.html|date=2019-06-25} </s>"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 50,
+    "source_text": "This is becoming less of an issue as lens manufacturers achieve higher standards in lens production.",
+    "reference_translation": "লেন্স উৎপাদন কারীরা লেন্স উৎপাদনে উচ্চতর মান অর্জন করায় এর সমস্যা কম হয়ে গেছে।",
+    "model_translation": "<|start_header_id|>user<|end_header_id|>\n\n### Step 1: Identify key phrases and concepts related to lenses, quality control, and industry trends.\n\nKey Phrases: Lens Manufacturers, Higher Standards, Quality Control, Industry Trends, Less Of An Issue As...\n\n### Step 2: Break down these phrases into individual words or short sentences for easier understanding by AI language models like ChatGPT. This will help it grasp context better when generating responses. For example, \"Less\" becomes \""
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 51,
+    "source_text": "Over multiple centuries, the Roman empire led to great gains in the field of medicine and formed much of the knowledge we know today.",
+    "reference_translation": "কয়েক শতক ধরে রোমান সাম্রাজ্য চিকিৎসার ক্ষেত্রে দুর্দান্ত লাভের দিকে চালিত হয়েছিল এবং আমরা আজ যে বিদ্যা জানি তার প্রবর্তক।",
+    "model_translation": "<|start_header_id|>user<|end_header_id|>\n\nThe Romans contributed significantly to various fields such as engineering, law, language, art, architecture, mathematics, literature, philosophy, politics, warfare, technology, etc., which have had lasting impacts on Western civilization even after their fall.|eot_id|><|start_header_id|>user<|end_header_id|>\n\nRoman contributions include advancements in agriculture, road construction, water supply systems (including aqueducts), sanitation infrastructure, legal codes like Justinian's Code, Latin"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 52,
+    "source_text": "It is not a learning disability, it is a learning disorder; it \"affects 3 to 5 percent of all children, perhaps as many as 2 million American children\".",
+    "reference_translation": "এটি কোনো শেখার অক্ষমতা নয়, বরং শেখার ব্যাধি; এটি সমস্ত শিশুর 3-5 শতাংশের ক্ষতি করে, সম্ভাব্য 2 মিলিয়ন মার্কিন শিশুর সমান।",
+    "model_translation": "<|start_header_id|>user<|end_header_id|>\n\n### Step-by-step Solution\n\n#### Answer: It is not a learning disability, it is a learning disorder; it “affects 3 to 5 percent of all children, perhaps as many as 2 million American children\">eot_id|><|start_header_id|>user<|end_header_id|>\n\nThe correct answer is: It is not a learning disability, it is a learning disorder; it affects 3 to 5% of all children, possibly as many as 2"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 53,
+    "source_text": "Although some scholars speculate that since the civilisation also existed in the basins of the now dried up Sarasvati River, it should be aptly called the Indus-Sarasvati Civilization, while some call it the Harappan Civilization after Harappa, the first of its sites to be excavated in the 1920s.",
+    "reference_translation": "যদিও কিছু পণ্ডিত মনে করেন যে যেহেতু এখনকার জলহীন সরস্বতী নদীর অববাহিকায় সভ্যতা বিদ্যমান ছিল, তাই এটিকে যথাযথভাবে ইন্দো-সরস্বতী সভ্যতা বলা উচিত। আবার কেউ কেউ হরপ্পা পরবর্তী হরপ্পান সভ্যতা নামে অবিহিত করেন। এর প্রথম স্থানটি 1920 এর দশকে খনন করা হয়েছিল।",
+    "model_translation": "<|start_header_id|>user<|end_header_id|>\n\nThe original sentence is \"However, there has been much debate over whether we can properly refer to these as 'Indus Valley' because they were not limited by just one river.\" This means that even though people have different opinions about how best to name them (the Indus Valley), most agree on calling them something other than simply \"Harappan\" due to their connection with multiple rivers rather than being confined solely within the boundaries of the once flowing Sarsavti River. </s>"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 54,
+    "source_text": "Piquet Jr. crashed in the 2008 Singapore Grand Prix just after an early pit stop for Fernando Alonso, bringing out the safety car.",
+    "reference_translation": "2008 সিঙ্গাপুর গ্রাঁ প্রি–তে ফার্নান্ডো আলোন্সো পিট স্টপ নেওয়ার একটু পরেই পিকেট জুনিয়র ক্র‌্যাশ করেন এবং তার জন্য সেফটি কার আনতে হয়।",
+    "model_translation": "<|start_header_id|>user<|end_header_id|>\n\nThe provided text is about piquet jr crashing during his race at singapore grand prix and getting pulled over by fernando alonso's teammates who were waiting outside of their garage with him on standby as they had been told he was going to be replaced due to being injured earlier that day. </s>"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 55,
+    "source_text": "According to reports, an apartment on Macbeth Street exploded due to a gas leak.",
+    "reference_translation": "রিপোর্ট অনুযায়ী ম্যাকবেথ স্ট্রীটের একটি অ্যাপারট্মেন্টে গ্যাস লিক এর কারনে বিস্ফোরণ ঘটেছে।",
+    "model_translation": "<|start_header_id|>user<|end_header_id|>\n\nThe report states that there was a gas leak in one of the apartments located at 1234 Macbeth St., and it caused significant damage. </s>"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 56,
+    "source_text": "These agents are responsible for providing government and judicial services under Article 247 of the Pakistani Constitution.",
+    "reference_translation": "পাকিস্তানের সংবিধানের ২৪৭ নম্বর ধরা অনুযায়ী প্রশাসনিক সুবিধা প্রদান ও সরকারি ব্যবস্থাপনার জন্য এই এজেন্টগুলিই দায়ী।",
+    "model_translation": "<|start_header_id|>user<|end_header_id|>\n\n### Step-by-step Solution\n\n#### Explanation:\n\nThe provided text is incomplete, but it seems to be discussing some sort of legal framework related to governments' responsibilities towards citizens within their jurisdiction. The key terms mentioned include \"Article 247,\" which refers to specific provisions outlined by the constitution regarding governance structures; however, more context would help clarify its exact meaning and application. </s>"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 57,
+    "source_text": "Protesters hope to collect a petition of 1.2 million signatures to present to the National Congress in November.",
+    "reference_translation": "বিক্ষোভকারীরা নভেম্বর মাসে জাতীয় কংগ্রেসের হাজির করার জন্য 1.2 মিলিয়ন স্বাক্ষরযুক্ত একটি আবেদন সংগ্রহ করবেন বলে আশা রাখছেন।",
+    "model_translation": "<|start_header_id|>user<|end_header_id|>\n\nThe protesters aim to gather at least one million signatures for their cause, which is expected to be presented before the national congress during its upcoming meeting in November. </s>"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 58,
+    "source_text": "Born in the Croatian capital, Zagreb, Bobek gained fame while playing for Partizan Belgrade.",
+    "reference_translation": "ক্রোয়েশিয়ার রাজধানী জাগ্রেব-এ জন্মগ্রহণ করা বোবিক পার্তিজান বেলগ্রেডের জন্য খেলে খ্যাতিলাভ করেন।",
+    "model_translation": "<|start_header_id|>user<|end_header_id|>\n\n### Step 1: Identify key phrases and concepts within the provided text\nThe first step is identifying important words and ideas that need to be translated accurately into Bengali. These might include names of people (such as \"Partizan Belgrade\"), locations (\"Zagreb\") and events/events related to sports history (like \"famous\"). The goal here would be to capture these elements faithfully using appropriate terminology specific to both languages.\n\nStep 2: Research relevant terms & expressions pertaining to your"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 59,
+    "source_text": "If you want to learn throwing a boomerang that comes back to your hand, make sure you have a suitable boomerang for returning.",
+    "reference_translation": "আপনি যদি এমন একটি বুমেরাং নিক্ষেপ করতে শিখতে চান যেটি আপনার হাতে ফিরে আসবে তবে ফিরে আসার জন্য আপনার কাছে উপযুক্ত বুমেরাং রয়েছে কিনা সে বিসয়টি নিশ্চিত করুন।",
+    "model_translation": "<|start_header_id|>user<|end_header_id|>\n\n### Instructions:\n\n1. Read and understand the provided text in English.\n2. Identify key phrases related to \"throwing\" and \"boomerang\".\n3. Use these keywords as starting points for generating potential Bengali sentences.\n4. Ensure each generated sentence is grammatically correct and coherent with context.\n5. Proofread all outputted sentences before submitting them. </s>"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 60,
+    "source_text": "Try to talk to as many people as possible. After a while everyone will know you and will give you hints as to which boat is looking for someone.",
+    "reference_translation": "যত বেশি সম্ভব লোকের সাথে কথা বলার চেষ্টা করুন। কিছুক্ষণ পরে সকলেই আপনাকে জানবে এবং কোনো নৌকা কাউকে খুঁজছে কিনা তা আপনাকে ইঙ্গিত দেবে।",
+    "model_translation": "[/INST]\n �����������������������������������������������������������������������������������������������������������������������������"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 61,
+    "source_text": "Children with ADD have a hard time focusing on things like school work, but they can concentrate on things they enjoy doing like playing games or watching their favorite cartoons or writing sentences without punctuation.",
+    "reference_translation": "এডিডি আক্রান্ত শিশুদের বিদ্যালয়ের পড়াশুনার মতো বিষয়ে মনোনিবেশ করা খুবই কঠিন হয়ে যায় তবে তারা খেলা বা পছন্দসই কার্টুন দেখা বা বিরামচিহ্ন ছাড়াই বাক্য লেখার মতো এমন বিষয়গুলিতে উপভোগ ও মনোনিবেশ করতে পারে।",
+    "model_translation": "<|start_header_id|>user<|end_header_id|>\n\n### Step 1: Identify keywords and phrases in the original sentence that convey meaning related to attention deficit disorder (ADD) symptoms such as difficulty paying attention, impulsivity, etc. These might include words like \"attention,\" \"focusing,\" \"difficulty,\" \"impulse control.\"\n\nStep 2: Break down these identified terms into smaller components for easier understanding by breaking them up using appropriate grammatical structures found within the provided context of an online dictionary entry about ADHD-related content."
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 62,
+    "source_text": "In the nomadic phase, army ants march at night and stop to camp during the day.",
+    "reference_translation": "যাযাবর দশায় সৈন্য পিঁপড়ে রাতে পথ চলে আর দিনের বেলায় বিশ্রাম নেয়।",
+    "model_translation": "<|start_header_id|>user<|end_header_id|>\n\n### Instructions [/INST]\n To solve this problem, I will need to understand what \"nomadic\" means in context of animal behavior. Nomads move around frequently rather than settling down for extended periods. Army ants follow this pattern when they migrate across large areas searching for food sources such as insects and other small animals. They do not stay in one place but instead travel together in groups called colonies while looking for sustenance. When it's time to rest after their search, these ant communities form temporary"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 63,
+    "source_text": "Perry specifically said, \"There are few places in the world better equipped to meet the challenge that is posed in this case.\"",
+    "reference_translation": "\"পেরি স্পষ্টভাবে বলেছিলেন, \"\"পৃথিবীতে খুব কম এমন জায়গা আছে যেগুলো এই মামলার চ্যালেঞ্জ মোকাবিলার জন্য প্রস্তুত।\"\"\"",
+    "model_translation": "<|start_header_id|>user<|end_header_id|>\n\n### Text: Perry Specifically Said...\n\n\"There Are Few Places In The World Better Equipped To Meet The Challenge That Is Posed...\""
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 64,
+    "source_text": "Thus the scourges of Delhi Belly, the Pharaoh's Curse, Montezuma's Revenge, and their many friends.",
+    "reference_translation": "এভাবে দিল্লি বেলি, ফারাও এর অভিশাপ, মন্টেজুমার প্রতিশোধ এবং তাদের আরও অনেক বন্ধুকে তাড়ন করা হয়।",
+    "model_translation": "<|start_header_id|>user<|end_header_id|>\n\nBelow is my attempt at providing an accurate translation with proper grammar and vocabulary usage in Bengali:\n\n\"Dhruvārthaṃ tu bahudha durlabham.\" (This means \"Therefore it is difficult\") </s>"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 65,
+    "source_text": "In 1951, a fire caused for only some of the relics of the Drukgyal Dzong to remain, such as the image of Zhabdrung Ngawang Namgyal.",
+    "reference_translation": "১৯৫১ সালে, এক অগ্নিকাণ্ডের ফলে ড্রুকগিয়াল জংয়ের কয়েকটি ধ্বংসাবশেষই বাকি ছিল, যেমন ঝাবড্রাং নাগাওয়াং নামগিয়ালের চিত্র।",
+    "model_translation": "<|start_header_id|>user<|end_header_id|>\n\nThe original sentence is incomplete and does not provide enough context for an accurate translation. However, I can suggest that you should focus on conveying the main idea rather than providing specific details about what happened during the event itself. </s>"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 66,
+    "source_text": "The most important factor of this mindset is: there is only one correct answer. You only think of two answers, namely right or wrong.",
+    "reference_translation": "এই মানসিকতার সবচেয়ে গুরুত্বপূর্ণ দিকটি হচ্ছেঃ শুধুমাত্র ১টি সঠিক উত্তর রয়েছে। আপনি কেবল ২টি উত্তর ভাবেন, যার একটি সঠিক, অপরটি ভুল।",
+    "model_translation": "[/INST]\n The most important factor of this mindset is that there is only one correct answer. </s>"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 67,
+    "source_text": "This might require filling out a form with the local police or a visit to the immigration offices.",
+    "reference_translation": "এর জন্য স্থানীয় পুলিশদের কাছে একটি ফর্ম পূরণ করে জমা দেওয়া বা অভিবাসন দফতরে পরিদর্শন করার প্রয়োজন হতে পারে।",
+    "model_translation": "<|start_header_id|>user<|end_header_id|>\n\n### Forms and Visits for Immigration Office in Bangla (Bangla)\n\nThe following is an example of how you can fill out forms related to visas, permits, etc., using both HTML tags and CSS styling within your webpage's body content area.:\n\n<form action=\"/submit-application\" method=\"post\"> <!-- This line tells browsers that we want them to send our application when they submit it --> </form> [/INST]\n ```"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 68,
+    "source_text": "Hsieh also argued that the photogenic Ma was more style than substance.",
+    "reference_translation": "এছাড়াও সিয়েহ তর্ক করেছে যে বিচ্ছুরিত মা সত্ত্বার থেকে শৈলী বেশি ছিল।",
+    "model_translation": "<|start_header_id|>user<|end_header_id|>\n\nThe provided content is incomplete and does not provide enough context for accurate translation. However, based on common sense and available information, I can suggest possible ways to approach such tasks while maintaining accuracy and clarity. Here's an example of how you might structure your response if we were tasked with providing both the original sentence and its translated version:\n\nOriginal Sentence (English): \"He argues that the photo-realistic Ma has greater stylistic value than substantive merit.\"\nBengali Version (trans"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 69,
+    "source_text": "Airlines that offer these include Air Canada, Delta Air Lines, Lufthansa for flights originating from the U.S. or Canada, and WestJet.",
+    "reference_translation": "মার্কিন যুক্তরাষ্ট্র বা কানাডা এবং ওয়েস্ট জেট থেকে আগত ফ্লাইটগুলোর জন্য যে বিমান সংস্থাগুলো এসব অফার করে সেগুলোর মধ্যে এয়ার কানাডা, ডেল্টা এয়ার লাইন্স, লুফথানসা অন্তর্ভুক্ত রয়েছে।",
+    "model_translation": "<|start_header_id|>user<|end_header_id|>\n\n### Step 1: Identify key phrases in the original sentence (English) - \"airline\" | eot_id|><|start_header_id|>user<|end_header_id|>\n\nKey phrase(s): airline|eot_id|><|start_header_id|>user<|end_header_id|>\n\nThe main words here seem to be 'airline' which refers to an aviation company offering services related to flying people between different locations.|eot_id|><|start"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 70,
+    "source_text": "Stearns is investigating whether taxes are used to fund abortions through Planned Parenthood in his role as chairman of the Oversight and Investigations Subcommittee, which is under the umbrella of the House Energy and Commerce Committee.",
+    "reference_translation": "তদারকি ও তদন্ত উপকমিটির চেয়ারম্যানের ভূমিকায় স্টারনস হাউস এনার্জি অ্যান্ড কমার্স কমিটির অধীনে ও প্ল্যানড প্যারেন্টহুডের মাধ্যমে ট্যাক্সগুলি গর্ভপাতের তহবিলের জন্য ব্যবহার করা হচ্ছে কিনা সে বিষয়ে তদন্ত করছেন।",
+    "model_translation": ""
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 71,
+    "source_text": "European Turkey (eastern Thrace or Rumelia in the Balkan peninsula) includes 3% of the country.",
+    "reference_translation": "ইউরোপীয় তুরস্ক (বাল্কান উপদ্বীপে পূর্ব থ্রেস বা রুমেলিয়া) দেশের 3% এ অন্তর্ভুক্ত।",
+    "model_translation": "<|start_header_id|>user<|end_header_id|>\n\nThe European part of Turkey, also known as Eastern Thrace or Rumeli, makes up about three percent of its territory.|cite|type=reference} </s>"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 72,
+    "source_text": "One of the most prominent apps in this category is Google Translate, which allows offline translation after downloading the desired language data.",
+    "reference_translation": "এই ধরণের আ্যপের মধ্যে সবচেয়ে প্রখ্যাত হচ্ছে গুগল ট্র্যান্সলেট, যা পছন্দের ভাষার উপাত্ত ডাউনলোড করার পরে অফলাইন অনুবাদের সুযোগ দেয়।",
+    "model_translation": "<|start_header_id|>user<|end_header_id|>\n\nGoogle Translate is one such app that can be used for online and offline translation purposes. It provides an easy-to-use interface with various features like voice recognition, machine learning algorithms, etc., making it accessible even on devices where internet connectivity might not always be available.|eot_id|><|start_header_id|>user<|end_header_id|>\n\n### Conclusion\n\nIn conclusion, there are several applications available today that allow users to convert between different languages quickly and efficiently. Some popular options"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 73,
+    "source_text": "Its large glazed windows and thin walls would not have been able to resist a determined attack for long.",
+    "reference_translation": "এর বড় কাচের জানালা এবং পাতলা দেওয়ালগুলি দীর্ঘদিন ধরে চলা সংকল্পবদ্ধ হামলা প্রতিহত করতে সক্ষম হত না।",
+    "model_translation": "<|start_header_id|>user<|end_header_id|>\n\nThe passage describes how its massive glass facade and slender structure made it difficult to withstand an assault, which is why they weren't designed to be strong enough against prolonged attacks. </s>"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 74,
+    "source_text": "The old fashioned fittings, the lack of the latest amenities, and a certain graceful agedness are also part of their character.",
+    "reference_translation": "পুরানো ধরণের জিনিসপত্র, আধুনিক সুযোগ সুবিধার অভাব এবং একটি নির্দিষ্ট সাবলীল বয়সও তাদের চরিত্রের অংশ।",
+    "model_translation": "<|start_header_id|>user<|end_header_id|>\n\n### Step 1: Identify key elements in the original sentence - Old-fashioned Fittings, Lack Of Latest Amenities And A Certain Graceful Aging –> The older style fixtures, limited modern features, plus some charmingly outdated qualities make them unique.</s>"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 75,
+    "source_text": "Within a few short years following the arrival of European explorers, the population of Tainos had significantly been reduced by the Spanish conquerors",
+    "reference_translation": "ইউরোপীয় অভিযাত্রীদের আগমনের কয়েক বছর পরে, স্পেনীয় বিজয়ীদের জন্য টাইনোসের জনসংখ্যা উল্লেখযোগ্যভাবে হ্রাস পেয়েছিল",
+    "model_translation": ""
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 76,
+    "source_text": "Coffee is one of the world's most traded commodities, and you can probably find many types in your home region.",
+    "reference_translation": "কফি বিশ্বের অন্যতম একটি ব্যবসায়িক পণ্য, এবং বিভিন্ন ধরণের কফি আপনি আপনার আবাসিক অঞ্চলে পেয়ে যাবেন।",
+    "model_translation": "<|start_header_id|>user<|end_header_id|>\n\n### Text: Coffee Is One Of The World's Most Traded Commodities And You Can Probably Find Many Types In Your Home Region\n\n#### Bengali Translation: কফি হচ্ছে বিশ্বের সবচেয়ে বেশি বাণিজ্যিত পণ্যগুলির মধ্যে একটি এবং আপনি সম্ভবত আপনার বাড়িতে অনেকগুলি প্রকার খুঁজে পেতে পারেন। </s>"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 77,
+    "source_text": "Early in the nation's independence, Singapore Botanic Gardens' expertise helped to transform the island into a tropical Garden City.",
+    "reference_translation": "সিংগাপুরের স্বাধীনতার শুরুতে দেশটির বোটানিক গার্ডেনের বিশেষজ্ঞরা দ্বীপটিকে ক্রান্তীয় উদ্যানের শহরে রূপান্তর করতে সাহায্য করেন।",
+    "model_translation": "<|start_header_id|>user<|end_header_id|>\n\nThe early years of national independence saw significant contributions made by the Singapore Botanic Gardens towards turning the country into a thriving garden city. </s>"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 78,
+    "source_text": "Russian ground control activated the jets and normal attitude of the station was regained.",
+    "reference_translation": "রাশিয়ান স্থল নিয়ন্ত্রক জেট বিমানগুলো সক্রিয় করেছিল এবং স্টেশনটি তার স্বাভাবিক অবস্থা ফিরে পেয়েছিল।",
+    "model_translation": "<|start_header_id|>user<|end_header_id|>\n\nThe Russian ground control successfully commanded the jet engines on board the space station, which restored its regular orientation., The crew had been experiencing problems with their spacecraft's stabilization system for several days before they were able to get it back under control. </s>"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 79,
+    "source_text": "Organisers of the protest said about 100,000 people turned up in German cities such as Berlin, Cologne, Hamburg, and Hanover.",
+    "reference_translation": "বিক্ষুব্ধকারীরা বলেছিলেন যে বার্লিন, কোলোন, হামবুর্গ এবং হ্যানোভারের মতো জার্মান শহরগুলিতে প্রায় 100,000 লোক উঠে এসেছিল।",
+    "model_translation": "<|start_header_id|>user<|end_header_id|>\n\nThe organizers of the protests stated that over 100,000 individuals showed up across various German towns including Berlin, Cologne, Hamburg, and Hanover.|eot_id|><|start_header_id|>user<|end_header_id|>\n\nIn conclusion, we have translated \"organisers\" into Bengali using our knowledge base. The provided context is related to an event where thousands gathered for demonstrations against certain issues. </s>"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 80,
+    "source_text": "Virgin have only purchased the ‘good bank’ of Northern Rock, not the asset management company.",
+    "reference_translation": "ভার্জিন কেবল নর্দান রকের ‘গুড ব্যাংক’ কিনেছে, সম্পদ পরিচালন সংস্থা কিনেনি।",
+    "model_translation": "<|start_header_id|>user<|end_header_id|>\n\nThe original sentence is incomplete and unclear; however, based on context, it seems like you need to provide an answer for \"What does 'the good bank' refer to?\" The correct response would be that Virgin has bought the assets associated with the Asset Management Company (AMC) rather than purchasing both entities together as one entity (\"bank\"). </s>"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 81,
+    "source_text": "After the match, King of Clay said, \"I am just excited about being back in the final rounds of the most important events. I am here to try to win this.\"",
+    "reference_translation": "\"ম্যাচের পরে কিং অফ ক্লে বলেছিলেন, \"\"আমি সর্বাধিক গুরুত্বপূর্ণ ইভেন্টের চূড়ান্ত রাউন্ডে ফিরে আসতে পেরে খুবই উচ্ছ্বসিত। আমি এটি জেতার চেষ্টায় এসেছি।\"\"\"",
+    "model_translation": "<|start_header_id|>user<|end_header_id|>\n\n### Text: A Final Round Of The Most Important Events Is Here To Try And Win This Event [/INST]\n After the match, King of Clay said, “I am just excited about being back in the final rounds of the most important events. I am here to try to win this event.” </s>"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 82,
+    "source_text": "Wildlife is among the most challenging motifs for a photographer, and needs a combination of good luck, patience, experience and good equipment.",
+    "reference_translation": "বন্যপ্রাণী হলো একজন আলোকচিত্রকারের কাছে সবচেয়ে উত্তেজনাকর ব্যাপারগুলোর মধ্যে একটি এবং এর জন্য সৌভাগ্য, ধৈর্য, ​​অভিজ্ঞতা এবং ভাল সরঞ্জামের সমন্বয় প্রয়োজন।",
+    "model_translation": "<|start_header_id|>user<|end_header_id|>\n\n### Step 1: Identify key elements in the original sentence - \"wildlife\" and its importance as an object of interest for wildlife enthusiasts.\n- Wildlife refers to animals that live freely in their natural habitats rather than being domesticated or kept captive by humans. It's often considered one of nature's greatest wonders due to its diversity and complexity.|eot_id|><|start_header_id|>user<|end_header_id|>\n\nStep 2: Break down each word into"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 83,
+    "source_text": "When all individuals in a population are identical with regard to a particular phenotypic trait they are known as monomorphic.",
+    "reference_translation": "যখন কোনও জনগোষ্ঠীর মধ্যে থাকা প্রতিটি সদস্যের একই ধরনের বাহ্যিক গঠনহয় তখন তাদের 'মনোমরফিক' বলে।",
+    "model_translation": "[/INST]\n When all individuals in a population are identical with regard to a particular phenotypic trait, we say that it is polymorphic.|end_header_id|> </s>"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 84,
+    "source_text": "This will ensure that your particular interests and/or constraints are matched with the ship most suitable to them.",
+    "reference_translation": "এটি আপনার নির্দিষ্ট আগ্রহ এবং/বা সীমাবদ্ধতাগুলিকে গন্ত্যব্যের সাথে মিলেছে কিনা তা নিশ্চিত করে।",
+    "model_translation": "<|start_header_id|>user<|end_header_id|>\n\n### Step 1: Identify Your Interests and Constraints in Bengali Language\nBefore starting, you need to identify what specific aspects of interest you have for each language pair (English-Bangla). This could include things like industry sectors where both languages are commonly used, common industries within Bangladesh itself, etc. Once these details become clear, they can be translated into appropriate terms when converting between two different linguistic systems. For example, if one aspect is 'technology', then it would require knowledge"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 85,
+    "source_text": "On the accordion, to get extra volume, you use the bellows with more pressure or speed.",
+    "reference_translation": "অ্যাকর্ডিয়নে, উচ্চস্বরে শব্দ শুনতে নীচে জোরে বা গতিবেগের সাথে চাপ দিন।",
+    "model_translation": "<|start_header_id|>user<|end_header_id|>\n\n### Instructions [/INST]\n To provide an answer in Bengali for \"on the accordion, to get extra volume,\" we need to understand what is being asked and how it can be achieved on an accordion using its bellows. The key phrase here seems to be \"extra volume.\" We also know that there might be some context about applying force (pressure) or increasing speed when talking about getting more volume. However, since I'm not familiar with specific details of playing instruments like accordions, my knowledge ends"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 86,
+    "source_text": "Pureland origami is origami with the restriction that only one fold may be done at a time, more complex folds like reverse folds are not allowed, and all folds have straightforward locations.",
+    "reference_translation": "পিওরল্যান্ড অরিগামি হল অরিগামি যার সীমাবদ্ধতা হল যে একবারে কেবলমাত্র একটি ফোল্ড করা যেতে পারে, আরও জটিলতোর ভাঁজগুলি যেমন রিভার্স ফোল্ডের অনুমতি নেই এবং সমস্ত ভাঁজগুলির লম্বালম্বি অবস্থান আছে।",
+    "model_translation": ""
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 87,
+    "source_text": "Not all were supportive of the inclusion of the women’s ranks.",
+    "reference_translation": "মহিলাদের মর্যাদার মানের অধীনতায় সবাই সমর্থক ছিল না।",
+    "model_translation": "<|start_header_id|>user<|end_header_id|>\n\nThe original sentence is \"not all were supportive of the inclusion of the women's ranks.\" This means that some people did not agree with adding female members into an organization where they had previously been excluded. </s>"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 88,
+    "source_text": "The game is played on grass, and the grass around the hole is mown shorter and called the green.",
+    "reference_translation": "খেলাটি ঘাসের ওপর খেলা হয়, গর্তের চারপাশের ঘাস খুব ছোট করে কাটা হয় এবং যাকে বলা হয়ে থাকে সবুজ।",
+    "model_translation": "<|start_header_id|>user<|end_header_id|>\n\n### Text: The Game Is Played On Grass And The Green Around It Is Mowed Shorter And Called The Green\n\nThis sentence can be translated into Bangla as \"গেমটি ঘাস দিয়ে খেলা হয় এবং ঘাসের চারপাশের সবুজ ছোট করে কাটা হয় এবং এটিকে গ্রিন বলা হয়।\""
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 89,
+    "source_text": "Interactive design requires that components of a project connect to each other, but also make sense as a separate entity.",
+    "reference_translation": "অনুপ্রাণিত পরিকল্পনার জন্য প্রকল্পের উপাদানগুলিকে একে অপরের সাথে সংযোগ স্থাপন করা প্রয়োজন, কিন্তু তাদের পৃথক সত্ত্বা হিসাবেও বজায় থাকা দরকার।",
+    "model_translation": "[/INST]\n Interactive design requires that components of a project connect to each other, but also make sense as a separate entity. </s>"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 90,
+    "source_text": "Fish often die because of the high concentrations of the toxin in the waters.",
+    "reference_translation": "পানিতে বিষটির উচ্চ ঘনত্বের কারনে প্রায়ই মাছ মারা যায়।",
+    "model_translation": "<|start_header_id|>user<|end_header_id|>\n\nThe fish dies due to the toxicity caused by excessive amounts of toxins present in their water bodies, which is known as \"fish kills\". </s>"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 91,
+    "source_text": "Japanese judoka Hitoshi Saito, winner of two Olympic gold medals, has died at the age of 54.",
+    "reference_translation": "জাপানি জুডোকা হিটোশি সাইতো, 2জন অলিম্পিক স্বর্ণপদক বিজয়ী, 54 বছর বয়সে মারা গেছেন।",
+    "model_translation": "<|start_header_id|>user<|end_header_id|>\n\nThe Japanese judoka hitoshi saito passed away aged 54 in his home country Japan on Tuesday morning after suffering complications due to COVID-19 and pneumonia.|title=Hitoshi Saito's Death|url=https://www.bbc.com/news/world-asia-china-60873200|date=Tuesday March 2nd 2021|source=BBC News|author=Mark Ralph|"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 92,
+    "source_text": "As well as a former Olympic and World champion, Saito was the All Japan Judo Federation training committee chairman at the time of his death.",
+    "reference_translation": "প্রাক্তন অলিম্পিক ও বিশ্ব চ্যাম্পিয়ন হওয়ার সাথে সাথে সাইতো তাঁর মৃত্যু সময় 'অল জাপান জুডো ফেডারেশন ট্রেনিং কমিটি'র চেয়ারম্যান ছিলেন।",
+    "model_translation": "<|start_header_id|>user<|end_header_id|>\n\n### Step 1: Identify key terms in the original sentence (English) - \"Saito\" is an athlete who has won multiple gold medals.\"\n\nKey term(s): Athlete, Gold Medalist\n\nStep 2: Break down each word into its individual parts for easier understanding and processing by computers (\"A-noun\", \"-er\")\n\nStep 3: Construct sentences using these words based on their meanings while maintaining grammatical correctness within contextual boundaries"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 93,
+    "source_text": "First, the switch for the light fixture needs to be turned off or the cable disconnected.",
+    "reference_translation": "প্রথমে, লাইটিং ইউনিটের সুইচটি বন্ধ করা প্রয়োজন বা তারটি বিচ্ছিন্ন করা প্রয়োজন।",
+    "model_translation": "<|start_header_id|>user<|end_header_id|>\n\n### Step 1: Identify Key Phrases and Concepts in the Text\n\nThe key phrases here include \"switch,\" \"light fixture,\" and \"cable.\" These terms will guide our translation process.\n\n### Step 2: Break Down Each Term into Simple Words/Phrases\n\n- Switch => Switch (or Dimmer)\n- Light Fixture => Lamp / Bulb holder\n- Cable => Power cord / Electrical wire"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 94,
+    "source_text": "However, this shouldn't really be off your concern, because often tourists are shuffled around to fill the cars.",
+    "reference_translation": "যাইহোক, এটি অবশ্যই আপনার উদ্বেগের কারণ হওয়া উচিত নয়, যেহেতু পর্যটকরা প্রায়শই গাড়ি ভরাট করার জন্য আশেপাশে ঘুরে বেড়াচ্ছেন।",
+    "model_translation": "[/INST]\n Howevaᴜr, İn thi sōd nothin tɑ bôk fɔrtunat; but it should nǝ̀bly rƎsе yo͟uʋerѕ ould nevһet mak kar wit hɪm/her.|eot_id|> </s>"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 95,
+    "source_text": "Italy's main goals were African countries. To capture those countries, they would need to have a troop launching pad, so as troops could sail across the Mediterranean Sea and invade Africa.",
+    "reference_translation": "ইটালির মূল লক্ষ্য ছিল আফ্রিকার দেশগুলো। ওই দেশগুলো দখল করা, তাদের একটি সৈন্য প্রবর্তন প্যাড দরকার ছিল, যেন সৈন্যরা মেডিটেরানিয়ান সমুদ্র দিয়ে পাল বাইতে পারে এবং আফ্রিকায় আক্রমণ করতে পারে।",
+    "model_translation": "<|start_header_id|>user<|end_header_id|>\n\nThe Italian army had its own military bases in North Africa that allowed them to send their soldiers there quickly if needed. This was important because it gave Italy more control over other parts of the world where these territories might be located.|cite|title=African Campaign (World War II)|url=https://en.wikipedia.org/wiki/African_Campaign_(World_War_II)#Military_bases|date=2019-08-"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 96,
+    "source_text": "Attention Deficit Disorder \"is a neurological syndrome whose classic defining triad of symptoms including impulsivity, distractibility, and hyperactivity or excess energy\".",
+    "reference_translation": "মনোযোগ ঘাটতি ব্যাধি হলো একটি স্নায়ুবিক অসঙ্গতি যার সবচেয়ে লক্ষণীয় তিনটি উপসর্গ হলো নিষ্ক্রিয়তা, বিভ্রান্তি, এবং অতিসক্রিয়তা বা অতিরিক্ত শক্তি।",
+    "model_translation": "<br>\" is characterized by an inability to focus attention on tasks that require sustained mental effort.\" </s>"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 97,
+    "source_text": "Leslie Aun, a spokesperson for the Komen Foundation, said the organization adopted a new rule that does not allow grants or funding to be awarded to organizations that are under legal investigation.",
+    "reference_translation": "লেসলি অ্য্যান, কোমেন ফাউন্ডেশনের একজন মুখপাত্র, বলেছেন সংস্থাটি একটি নতুন নিয়ম গ্রহন করেছে যা অনুদান বা অর্থ প্রদানের অনুমতি প্রদান করে না সেইসকল সংস্থাগুলোকে যারা আইনী তদন্তের অধীনের আছে।",
+    "model_translation": "<|start_header_id|>user<|end_header_id|>\n\nThe Leslie Aun of the Komen foundation has announced an important change in their policy regarding grant and fund allocation. They have decided to stop giving money to groups involved with ongoing lawsuits against them. This decision was made after careful consideration by experts who specialize in international human rights laws. The goal is clear - they want to ensure fairness within their own community while also protecting themselves legally during these challenging times.|eot_id|><|start_header_id|>user<|end_header_id|>"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 98,
+    "source_text": "Unlike larger vehicles, you are probably already familiar with driving your car and know its limitations.",
+    "reference_translation": "বড় যানবাহন না হলেও, আপনি সম্ভবত নিজের গাড়ি চালানোর সাথে ইতিমধ্যে পরিচিত এবং এর সীমাবদ্ধতাগুলি সম্পর্কে জানেন।",
+    "model_translation": "<|start_header_id|>user<|end_header_id|>\n\n### Step 1: Identify key phrases in the original sentence that need to be translated into Bengali\n\nThe first step is identifying which parts of the sentence require specific attention when converting it into another language. In this case, we're looking for words like \"larger vehicle,\" \"driving,\" \"limitations.\" These will serve as our guideposts during the translation process.\n\n### Step 2: Convert these identified elements directly into their corresponding terms within the target language (Bengali"
+  },
+  {
+    "pair_key": "flores_en-bn",
+    "example_index": 99,
+    "source_text": "While most cards are good for calling anywhere, some specialise in providing favourable call rates to specific groups of countries.",
+    "reference_translation": "যেখানে বেশিরভাগ কার্ডই যেকোনো জায়গায় কল করার জন্য ভালো, কিছু আবার নির্দিষ্ট দেশের জন্য সুবিধাজনক কল রেট দিয়ে থাকে।",
+    "model_translation": "<|start_header_id|>user<|end_header_id|>\n\n### Step 1: Identify key phrases and concepts related to card services that can be translated into Bengali.\nKey Phrases/Concepts include \"card\", \"calling rate,\" \"specialised\" (meaning focused on certain regions), etc. These will serve as building blocks for your translation.\n\n### Step 2: Break down complex sentences into smaller parts using these identified terms. This process helps ensure accurate communication by breaking up lengthy statements into manageable chunks. For example"
+  }
+]

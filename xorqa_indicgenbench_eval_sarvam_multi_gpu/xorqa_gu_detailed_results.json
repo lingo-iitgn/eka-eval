@@ -1,0 +1,1494 @@
+{
+  "summary": {
+    "language": "gu",
+    "language_full_name": "Gujarati",
+    "total_samples": 100,
+    "valid_samples": 91,
+    "average_f1": 10.934254545760687,
+    "average_em": 0.0
+  },
+  "examples": [
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 0,
+      "question": "ઓરેગોન રાજ્યમાં સૌથી મોટું શહેર ક્યૂ છે?",
+      "reference_answers": [
+        {
+          "answer_start": 0,
+          "text": "Portland"
+        }
+      ],
+      "model_answer": "Portland (as a city)",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: ઓરેગોન રાજ્યમાં સૌથી મોટું શહેર ક્યૂ છે?\nAnswer:",
+      "f1_score": 28.571428571428577,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 1,
+      "question": "ક્યાં દેશમાં કોલેરા સર્વપ્રથમ મળી આવ્યો હતો?",
+      "reference_answers": [
+        {
+          "answer_start": 99,
+          "text": "Indian subcontinent"
+        }
+      ],
+      "model_answer": "India (1817)",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: ક્યાં દેશમાં કોલેરા સર્વપ્રથમ મળી આવ્યો હતો?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 2,
+      "question": "પ્રથમ વિશ્વ યુદ્ધ ક્યારે શરૂ થયું હતું?",
+      "reference_answers": [
+        {
+          "answer_start": 26,
+          "text": "1914"
+        }
+      ],
+      "model_answer": "July 28, 1914. (The war lasted until November 11th)",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: પ્રથમ વિશ્વ યુદ્ધ ક્યારે શરૂ થયું હતું?\nAnswer:",
+      "f1_score": 16.666666666666664,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 3,
+      "question": "કઈ સરકારે માહિતી અધિનિયમ-૨૦૦૫ નો ઠરાવ પસાર કર્યો",
+      "reference_answers": [
+        {
+          "answer_start": 115,
+          "text": "India"
+        }
+      ],
+      "model_answer": "The British Government (UK)",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: કઈ સરકારે માહિતી અધિનિયમ-૨૦૦૫ નો ઠરાવ પસાર કર્યો\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 4,
+      "question": "પ્રાચીન ભારતમાં કેટલી ભાષાનો ઉપયોગ થતો હતો?",
+      "reference_answers": [
+        {
+          "answer_start": 52,
+          "text": "122"
+        }
+      ],
+      "model_answer": "175 languages! (Not all, but most)",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: પ્રાચીન ભારતમાં કેટલી ભાષાનો ઉપયોગ થતો હતો?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 5,
+      "question": "મનુષ્યમાં સરેરાશ કેટલું રક્ત હોવું જોઈએ?",
+      "reference_answers": [
+        {
+          "answer_start": 38,
+          "text": "approximately 5 liters"
+        }
+      ],
+      "model_answer": "10-12 pints (6 litres) or more depending on age, height etc.",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: મનુષ્યમાં સરેરાશ કેટલું રક્ત હોવું જોઈએ?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 6,
+      "question": "ટેક્સાસ રાજ્યમાં માનવસર્જિત સૌથી મોટું માળખું કયું છે?",
+      "reference_answers": [
+        {
+          "answer_start": 328,
+          "text": "JPMorgan Chase Tower"
+        }
+      ],
+      "model_answer": "The Capitol Building (Texas) - It has a height of 520 feet, width at its base of about 396 ft. Its floor area covers approximately 14 acres.)",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: ટેક્સાસ રાજ્યમાં માનવસર્જિત સૌથી મોટું માળખું કયું છે?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 7,
+      "question": "ભારતમાં મતદાન માટે લઘુત્તમ વય કેટલી છે?",
+      "reference_answers": [
+        {
+          "answer_start": 242,
+          "text": "18"
+        }
+      ],
+      "model_answer": "18 years old, but you can vote at any age if your enrolled to do so! (In India)",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: ભારતમાં મતદાન માટે લઘુત્તમ વય કેટલી છે?\nAnswer:",
+      "f1_score": 9.09090909090909,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 8,
+      "question": "ટેલિવિઝન ક્યા વર્ષમાં શોધાયું હતું?",
+      "reference_answers": [
+        {
+          "answer_start": 199,
+          "text": "1926"
+        }
+      ],
+      "model_answer": "",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: ટેલિવિઝન ક્યા વર્ષમાં શોધાયું હતું?\nAnswer:",
+      "f1_score": 33.33333333333333,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 9,
+      "question": "ભારતમાં કયા રાજ્યમાં વધુ ચોખાનું ઉત્પાદન થાય છે?",
+      "reference_answers": [
+        {
+          "answer_start": 120,
+          "text": "West Bengal"
+        }
+      ],
+      "model_answer": "West Bengal, followed by Tamil Nadu. (India)",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: ભારતમાં કયા રાજ્યમાં વધુ ચોખાનું ઉત્પાદન થાય છે?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 10,
+      "question": "ભારતમાં સરેરાશ કેટલી ભાષાઓ બોલાય છે?",
+      "reference_answers": [
+        {
+          "answer_start": 321,
+          "text": "122 which were spoken by more than 10,000 people"
+        }
+      ],
+      "model_answer": "496 (2011) according to a census, but this figure does not include Hindi/Urdu.",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: ભારતમાં સરેરાશ કેટલી ભાષાઓ બોલાય છે?\nAnswer:",
+      "f1_score": 40.0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 11,
+      "question": "વેટિકન શહેરમાં સૌથી પ્રખ્યાત ચર્ચ કયું છે?",
+      "reference_answers": [
+        {
+          "answer_start": 61,
+          "text": "St. Peter's Basilica"
+        }
+      ],
+      "model_answer": "St. Peter's Basilica [/INST] Answer: St. Peter's Basilica </s>",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: વેટિકન શહેરમાં સૌથી પ્રખ્યાત ચર્ચ કયું છે?\nAnswer:",
+      "f1_score": 40.0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 12,
+      "question": "ઇજિપ્તનો ઈન્ટરનેટ ડોમેઈન કોડ શું છે",
+      "reference_answers": [
+        {
+          "answer_start": 0,
+          "text": ".eg"
+        }
+      ],
+      "model_answer": ".eg",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: ઇજિપ્તનો ઈન્ટરનેટ ડોમેઈન કોડ શું છે\nAnswer:",
+      "f1_score": 57.14285714285715,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 13,
+      "question": "કેલિફોર્નિયામાં વિસ્તારની દ્રષ્ટિએ સૌથી મોટું શહેર ક્યુ છે",
+      "reference_answers": [
+        {
+          "answer_start": 194,
+          "text": "Los Angeles"
+        }
+      ],
+      "model_answer": "Los Angeles.",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: કેલિફોર્નિયામાં વિસ્તારની દ્રષ્ટિએ સૌથી મોટું શહેર ક્યુ છે\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 14,
+      "question": "૨૦૧૦ સુધીમાં, ભારતના કયા ક્ષેત્રમાં સૌથી વધુ ખ્રિસ્તીઓ છે",
+      "reference_answers": [
+        {
+          "answer_start": 112,
+          "text": "Meghalaya, Mizoram, and Nagaland"
+        }
+      ],
+      "model_answer": "Kerala (45%)",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: ૨૦૧૦ સુધીમાં, ભારતના કયા ક્ષેત્રમાં સૌથી વધુ ખ્રિસ્તીઓ છે\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 15,
+      "question": "યુગાન્ડા ક્યા ખંડમાં આવેલું છે?",
+      "reference_answers": [
+        {
+          "answer_start": 146,
+          "text": "Africa"
+        }
+      ],
+      "model_answer": "",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: યુગાન્ડા ક્યા ખંડમાં આવેલું છે?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 16,
+      "question": "કુરાન કેટલી ભાષાઓમાં લખાયેલું છે?",
+      "reference_answers": [
+        {
+          "answer_start": 80,
+          "text": "Muhammad"
+        }
+      ],
+      "model_answer": "1. Arabic, 2. English, 3. French...etc.",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: કુરાન કેટલી ભાષાઓમાં લખાયેલું છે?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 17,
+      "question": "પાણીને અંગ્રેજીમાં શું કહેવાય છે?",
+      "reference_answers": [
+        {
+          "answer_start": 10,
+          "text": "water"
+        }
+      ],
+      "model_answer": "",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: પાણીને અંગ્રેજીમાં શું કહેવાય છે?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 18,
+      "question": "ભારતમાં પ્રથમ ખ્રિસ્તી મિશનરીની સ્થાપના ક્યાં થઈ હતી?",
+      "reference_answers": [
+        {
+          "answer_start": 400,
+          "text": "6th century AD"
+        }
+      ],
+      "model_answer": "Goa, India (1542) by Francis Xavier.",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: ભારતમાં પ્રથમ ખ્રિસ્તી મિશનરીની સ્થાપના ક્યાં થઈ હતી?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 19,
+      "question": "પુરાણો અનુસાર કૃષ્ણ વિષ્ણુનો કયો અવતાર છે?",
+      "reference_answers": [
+        {
+          "answer_start": 69,
+          "text": "eighth"
+        }
+      ],
+      "model_answer": "Krishna or Balarama, depending on which Hindu tradition you follow.",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: પુરાણો અનુસાર કૃષ્ણ વિષ્ણુનો કયો અવતાર છે?\nAnswer:",
+      "f1_score": 4.705882352941177,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 20,
+      "question": "માણસ સરેરાશ કેટલું તાપમાન સહન કરી શકે છે",
+      "reference_answers": [
+        {
+          "answer_start": 184,
+          "text": "37.0 °C (98.6 °F)"
+        }
+      ],
+      "model_answer": "107.6 degrees Fahrenheit or about 42 degrees Celsius, depending on how much water they have to lose through sweat (or other means)",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: માણસ સરેરાશ કેટલું તાપમાન સહન કરી શકે છે\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 21,
+      "question": "કેન્સરની શોધ કોણે કરી?",
+      "reference_answers": [
+        {
+          "answer_start": 177,
+          "text": "Hippocrates"
+        }
+      ],
+      "model_answer": "Pierre-Joseph Péan, a French surgeon. (He also discovered another cancer called osteosarcoma.)",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: કેન્સરની શોધ કોણે કરી?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 22,
+      "question": "પ્રાચીન ગ્રીસ ક્યા યુગથી ક્યા યુગ સુધી રહ્યું હતું?",
+      "reference_answers": [
+        {
+          "answer_start": 91,
+          "text": "Dark Ages of the 12th–9th centuries BC to the end of antiquity ( AD 600)"
+        }
+      ],
+      "model_answer": "Mycenaens (Mycaenean) to Classical Greece 20th century BC-8th Century BCE. This period includes Greek history before Alexander the Great's conquests, when Athens reached its peak as a cultural center under Pericles. It ended with the rise of Macedonian power under Philip II and his son Alexander the Great around 336–323 BCE. The word classical derives from this era; it was later adopted by scholars across Europe who were inspired by Ancient Roman culture during the Renaissance.",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: પ્રાચીન ગ્રીસ ક્યા યુગથી ક્યા યુગ સુધી રહ્યું હતું?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 23,
+      "question": "ભારતના કયા શહેરમાં પ્રથમ મેટ્રો રેલ શરૂ થઈ હતી",
+      "reference_answers": [
+        {
+          "answer_start": 105,
+          "text": "West Bengal"
+        }
+      ],
+      "model_answer": "Mumbai (Bombay)",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: ભારતના કયા શહેરમાં પ્રથમ મેટ્રો રેલ શરૂ થઈ હતી\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 24,
+      "question": "માણસના મૃત્યુ પછી ક્યુ અંગ સૌથી લાંબા સમય સુધી કાર્ય કરે છે",
+      "reference_answers": [
+        {
+          "answer_start": 201,
+          "text": "spinal cord"
+        }
+      ],
+      "model_answer": "Heart muscle, because it never sleeps.",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: માણસના મૃત્યુ પછી ક્યુ અંગ સૌથી લાંબા સમય સુધી કાર્ય કરે છે\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 25,
+      "question": "ફિલ્મ ઓક્સિજનનો નાયક કોણ છે?",
+      "reference_answers": [
+        {
+          "answer_start": 0,
+          "text": "Anu Emmanuel"
+        }
+      ],
+      "model_answer": "Bruce Willis, or Batman as he's called. OH MY! I KNOW IT HAS TO BE BRUCE WILLIS!! :) (Don't tell anyone that this answer isn't a joke.)",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: ફિલ્મ ઓક્સિજનનો નાયક કોણ છે?\nAnswer:",
+      "f1_score": 7.6923076923076925,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 26,
+      "question": "બાઇબલનું 2018 સુધીમાં કેટલી ભાષામાં અનુવાદ થયું હતું?",
+      "reference_answers": [
+        {
+          "answer_start": 345,
+          "text": "3,312 languages"
+        }
+      ],
+      "model_answer": "",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: બાઇબલનું 2018 સુધીમાં કેટલી ભાષામાં અનુવાદ થયું હતું?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 27,
+      "question": "અમેરિકામાં કેટલી નદીઓ વહે છે?",
+      "reference_answers": [
+        {
+          "answer_start": 18,
+          "text": "38"
+        }
+      ],
+      "model_answer": "180,000 miles (290,000 kilometers) - this would be enough to circle Earth more than four times! And that's just on land. The rivers flowing into it make up even more distance...and you have no idea how many people depend upon these waterways for their livelihood or survival.\"",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: અમેરિકામાં કેટલી નદીઓ વહે છે?\nAnswer:",
+      "f1_score": 15.384615384615385,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 28,
+      "question": "પ્રાચીન ભારતની રાજધાની કઈ હતી?",
+      "reference_answers": [
+        {
+          "answer_start": 0,
+          "text": "Indraprastha"
+        }
+      ],
+      "model_answer": "Pataliputra (Patna)",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: પ્રાચીન ભારતની રાજધાની કઈ હતી?\nAnswer:",
+      "f1_score": 50.0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 29,
+      "question": "એક સામાન્ય માણસને સરેરાશ કેટલાં કલાકની ઊંઘની જરૂર પડે છે",
+      "reference_answers": [
+        {
+          "answer_start": 63,
+          "text": "between seven and nine hours per day for an adult and nine to ten hours per day for a child"
+        }
+      ],
+      "model_answer": "8 hours (but it varies)",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: એક સામાન્ય માણસને સરેરાશ કેટલાં કલાકની ઊંઘની જરૂર પડે છે\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 30,
+      "question": "૨૦૧૧ માં રશિયાના વડા પ્રધાન કોણ હતા?",
+      "reference_answers": [
+        {
+          "answer_start": 52,
+          "text": "Vladimir Putin"
+        }
+      ],
+      "model_answer": "Dmitry Medvedev",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: ૨૦૧૧ માં રશિયાના વડા પ્રધાન કોણ હતા?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 31,
+      "question": "બીજા વિશ્વયુદ્ધમાં સરેરાશ કેટલા લોકો મૃત્યુ પામ્યા હતા?",
+      "reference_answers": [
+        {
+          "answer_start": 80,
+          "text": "70-85 million"
+        }
+      ],
+      "model_answer": "50 million people died during World War II.",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: બીજા વિશ્વયુદ્ધમાં સરેરાશ કેટલા લોકો મૃત્યુ પામ્યા હતા?\nAnswer:",
+      "f1_score": 33.33333333333333,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 32,
+      "question": "ગાંધીને મારવા વાળા માણસ કોણ હતું?",
+      "reference_answers": [
+        {
+          "answer_start": 137,
+          "text": "Nathuram Vinayak Godse"
+        }
+      ],
+      "model_answer": "Nathuram Godse",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: ગાંધીને મારવા વાળા માણસ કોણ હતું?\nAnswer:",
+      "f1_score": 50.0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 33,
+      "question": "બ્રિટિશ શાસન દરમિયાન સરેરાશ કેટલાં ભારતીયો મૃત્યુ પામ્યાં હતાં",
+      "reference_answers": [
+        {
+          "answer_start": 564,
+          "text": "87,000"
+        }
+      ],
+      "model_answer": "10,000 per day!",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: બ્રિટિશ શાસન દરમિયાન સરેરાશ કેટલાં ભારતીયો મૃત્યુ પામ્યાં હતાં\nAnswer:",
+      "f1_score": 15.384615384615383,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 34,
+      "question": "ભારતમાં કેટલા પ્રકારના ફૂલો હોય છે?",
+      "reference_answers": [
+        {
+          "answer_start": 156,
+          "text": "18,000"
+        }
+      ],
+      "model_answer": "30,261 (as per latest data) or around 75% by weight. The exact number varies depending on how you count them. But this one seems to be accurate enough for a non-scientist like me! :D I'm not sure if it changes every year though - so maybe that answer isn't very reliable... but hey ho!)",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: ભારતમાં કેટલા પ્રકારના ફૂલો હોય છે?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 35,
+      "question": "પર્યાવરણમાં સૌથી વધુ વિપુલ પ્રમાણમાં ગેસ કયો છે?",
+      "reference_answers": [
+        {
+          "answer_start": 35,
+          "text": "nitrogen"
+        }
+      ],
+      "model_answer": "Nitrogen (78%)",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: પર્યાવરણમાં સૌથી વધુ વિપુલ પ્રમાણમાં ગેસ કયો છે?\nAnswer:",
+      "f1_score": 16.666666666666664,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 36,
+      "question": "કયા દેશ પાસે સૌથી શક્તિશાળી નૌકા સંરક્ષણ દળ છે?",
+      "reference_answers": [
+        {
+          "answer_start": 319,
+          "text": "United States Navy"
+        }
+      ],
+      "model_answer": "United States",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: કયા દેશ પાસે સૌથી શક્તિશાળી નૌકા સંરક્ષણ દળ છે?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 37,
+      "question": "ક્યાં દેશો વચ્ચે પ્રથમ વિશ્વયુદ્ધની શરૂઆત થઈ હતી?",
+      "reference_answers": [
+        {
+          "answer_start": 48,
+          "text": "World War I began in the Balkans in late July 1914 and ended in November 1918"
+        }
+      ],
+      "model_answer": "Sarajevo, Bosnia & Herzegovina (now part of Serbia) - 1914. The assassination by Gavrilo Princip was an event which started World War I after a series of events that had been building for some time prior to this point.)",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: ક્યાં દેશો વચ્ચે પ્રથમ વિશ્વયુદ્ધની શરૂઆત થઈ હતી?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 38,
+      "question": "૨૦૧૯ સુધી બાઈબલનું  કેટલી ભાષાઓમાં ભાષાંતર કરવામાં આવ્યું છે?",
+      "reference_answers": [
+        {
+          "answer_start": 148,
+          "text": "670"
+        }
+      ],
+      "model_answer": "700થી વધુ ભાષાઓ અને બોલીઓમાં",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: ૨૦૧૯ સુધી બાઈબલનું  કેટલી ભાષાઓમાં ભાષાંતર કરવામાં આવ્યું છે?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 39,
+      "question": "ભારતની ૨૦૧૧ ની વસ્તી ગણતરી મુજબ ગુંટૂર તાલુકાની વસ્તી શું છે?",
+      "reference_answers": [
+        {
+          "answer_start": 464,
+          "text": "743,654"
+        }
+      ],
+      "model_answer": "",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: ભારતની ૨૦૧૧ ની વસ્તી ગણતરી મુજબ ગુંટૂર તાલુકાની વસ્તી શું છે?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 40,
+      "question": "પાણીને વરાળ બનવા માટે કેટલાં તાપમાનની જરૂર હોય છે?",
+      "reference_answers": [
+        {
+          "answer_start": 67,
+          "text": "100 °C"
+        }
+      ],
+      "model_answer": "100 degrees Celsius (212 Fahrenheit) or higher.",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: પાણીને વરાળ બનવા માટે કેટલાં તાપમાનની જરૂર હોય છે?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 41,
+      "question": "દૂરદર્શનનું આવિષ્કાર કોણે કર્યું?",
+      "reference_answers": [
+        {
+          "answer_start": 0,
+          "text": "John Logie Baird"
+        }
+      ],
+      "model_answer": "Alexander Graham Bell (telephone)",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: દૂરદર્શનનું આવિષ્કાર કોણે કર્યું?\nAnswer:",
+      "f1_score": 22.222222222222225,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 42,
+      "question": "વોર એન્ડ પીસ ક્યારે પ્રકાશિત થઈ હતી",
+      "reference_answers": [
+        {
+          "answer_start": 55,
+          "text": "1865"
+        }
+      ],
+      "model_answer": "1924 (by Leo Tolstoy) - but he died years before its publication, so it was written during his lifetime. However when first published, most people believed that all the characters were real! It took a while for them to understand this... This novel has been translated into many languages since then!!!",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: વોર એન્ડ પીસ ક્યારે પ્રકાશિત થઈ હતી\nAnswer:",
+      "f1_score": 50.0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 43,
+      "question": "કેનેડાની રાજધાની શું છે?",
+      "reference_answers": [
+        {
+          "answer_start": 0,
+          "text": "Ottawa"
+        }
+      ],
+      "model_answer": "Quesiton: Which country has a flag with three vertical stripes, from top to bottom they are red-white-red?",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: કેનેડાની રાજધાની શું છે?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 44,
+      "question": "કયા દેશમાં સૌરઉર્જા વીજળી સૌથી પહેલા દાખલ કરવામાં આવી હતી?",
+      "reference_answers": [
+        {
+          "answer_start": 69,
+          "text": "Egypt"
+        }
+      ],
+      "model_answer": "Sweden (1980)",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: કયા દેશમાં સૌરઉર્જા વીજળી સૌથી પહેલા દાખલ કરવામાં આવી હતી?\nAnswer:",
+      "f1_score": 22.222222222222225,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 45,
+      "question": "માણસો કેટલું નીચું તાપમાન સહન કરી શકે છે?",
+      "reference_answers": [
+        {
+          "answer_start": 206,
+          "text": "9 °C (48°F)"
+        }
+      ],
+      "model_answer": "-273.",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: માણસો કેટલું નીચું તાપમાન સહન કરી શકે છે?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 46,
+      "question": "સ્કોટલેન્ડની રાજધાની કઈ છે?",
+      "reference_answers": [
+        {
+          "answer_start": 0,
+          "text": "Edinburgh"
+        }
+      ],
+      "model_answer": "Edinburgh [/INST] Answer: Scotland </s>",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: સ્કોટલેન્ડની રાજધાની કઈ છે?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 47,
+      "question": "દક્ષિણ કોરિયાની સત્તાવાર ભાષા કઈ છે?",
+      "reference_answers": [
+        {
+          "answer_start": 0,
+          "text": "The Korean language ( / \"Hangugeo\"; / \"Chosŏnmal\") is an East Asian language spoken by about 80 million people"
+        }
+      ],
+      "model_answer": "",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: દક્ષિણ કોરિયાની સત્તાવાર ભાષા કઈ છે?\nAnswer:",
+      "f1_score": 33.33333333333333,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 48,
+      "question": "ટાઈટેનિક કયા મહાસાગરમાં ડૂબ્યું હતું",
+      "reference_answers": [
+        {
+          "answer_start": 61,
+          "text": "North Atlantic Ocean"
+        }
+      ],
+      "model_answer": "Atlantic Ocean",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: ટાઈટેનિક કયા મહાસાગરમાં ડૂબ્યું હતું\nAnswer:",
+      "f1_score": 33.33333333333333,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 49,
+      "question": "અણુ બોમ્બની શોધ કોણે કરી?",
+      "reference_answers": [
+        {
+          "answer_start": 0,
+          "text": "Julius Robert Oppenheimer"
+        }
+      ],
+      "model_answer": "Albert Einstein, with his theory of relativity.",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: અણુ બોમ્બની શોધ કોણે કરી?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 50,
+      "question": "ચંદ્ર પર સૌ પ્રથમ સંશોધન કરવાવાળી સંસ્થા કઈ હતી?",
+      "reference_answers": [
+        {
+          "answer_start": 0,
+          "text": "NASA"
+        }
+      ],
+      "model_answer": "NASA (National Aeronautics & Space Administration)",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: ચંદ્ર પર સૌ પ્રથમ સંશોધન કરવાવાળી સંસ્થા કઈ હતી?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 51,
+      "question": "કાર્બનિક રસાયણ શાસ્ત્રમાં સ્નાતક થયેલ પ્રથમ ભારતીય કોણ હતા?",
+      "reference_answers": [
+        {
+          "answer_start": 0,
+          "text": "Asima Chatterjee"
+        }
+      ],
+      "model_answer": "Dr. Vikram Sarabhai (1937-2004)",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: કાર્બનિક રસાયણ શાસ્ત્રમાં સ્નાતક થયેલ પ્રથમ ભારતીય કોણ હતા?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 52,
+      "question": "ડિસની દ્વારા પ્રથમ ક્યૂ કાર્ટૂન રજૂ કરવામાં આવ્યું હતું?",
+      "reference_answers": [
+        {
+          "answer_start": 0,
+          "text": "Steamboat Willie"
+        }
+      ],
+      "model_answer": "Snow White (1937)",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: ડિસની દ્વારા પ્રથમ ક્યૂ કાર્ટૂન રજૂ કરવામાં આવ્યું હતું?\nAnswer:",
+      "f1_score": 50.0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 53,
+      "question": "મનીલામાં સત્તાવાર ભાષા કઈ છે?",
+      "reference_answers": [
+        {
+          "answer_start": 603,
+          "text": "Filipino"
+        }
+      ],
+      "model_answer": "Filipino (Tagalog)",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: મનીલામાં સત્તાવાર ભાષા કઈ છે?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 54,
+      "question": "સૌર પરિવારનો સૌથી નાનો ગ્રહ કયો છે",
+      "reference_answers": [
+        {
+          "answer_start": 0,
+          "text": "Mercury"
+        }
+      ],
+      "model_answer": "Mercury [/INST]",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: સૌર પરિવારનો સૌથી નાનો ગ્રહ કયો છે\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 55,
+      "question": "ઈસ્ટ ઈન્ડિયા કંપની ભારતમાં ક્યારે આવી હતી?",
+      "reference_answers": [
+        {
+          "answer_start": 754,
+          "text": "1608"
+        }
+      ],
+      "model_answer": "1600 CE (Common Era)",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: ઈસ્ટ ઈન્ડિયા કંપની ભારતમાં ક્યારે આવી હતી?\nAnswer:",
+      "f1_score": 15.384615384615383,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 56,
+      "question": "એક લિપ વર્ષમાં કેટલાં દિવસો હોય છે",
+      "reference_answers": [
+        {
+          "answer_start": 141,
+          "text": "366"
+        }
+      ],
+      "model_answer": "365.24219 days (in a non-leap year) or 365.25 days (a leap year). However, this difference between one day and two mean that we have to add an extra second every so often...called “Daylight Savings Time” which adds another hour on Sunday at 02:00 local time....this happens once per year! This can make calculating dates for things like anniversaries confusing..so don't forget about it next time you need your birthday reminder emailed out :p",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: એક લિપ વર્ષમાં કેટલાં દિવસો હોય છે\nAnswer:",
+      "f1_score": 28.571428571428577,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 57,
+      "question": "૨૦૧૭ માં કઈ કંપની જૈતૂનનાં તેલનાં ઉત્પાદનમાં પ્રથમ ક્રમે હતી?",
+      "reference_answers": [
+        {
+          "answer_start": 82,
+          "text": "Spain"
+        }
+      ],
+      "model_answer": "BHP Billiton (British Petroleum)",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: ૨૦૧૭ માં કઈ કંપની જૈતૂનનાં તેલનાં ઉત્પાદનમાં પ્રથમ ક્રમે હતી?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 58,
+      "question": "ક્યા દેશો કાશ્મીર માટે લડી રહ્યા છે?",
+      "reference_answers": [
+        {
+          "answer_start": 65,
+          "text": "India and Pakistan"
+        }
+      ],
+      "model_answer": "India, Pakistan",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: ક્યા દેશો કાશ્મીર માટે લડી રહ્યા છે?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 59,
+      "question": "દુનિયાના 70% પાણી માથી માણસો દ્વારા કેટલું પાણી વાપરવામાં આવે છે?",
+      "reference_answers": [
+        {
+          "answer_start": 88,
+          "text": "2.8%"
+        }
+      ],
+      "model_answer": "(This question was originally asked on another website, but I'm pasting it here to avoid plagiarism.)",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: દુનિયાના 70% પાણી માથી માણસો દ્વારા કેટલું પાણી વાપરવામાં આવે છે?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 60,
+      "question": "યુનાઈટેડ સ્ટેટ્સ ઓફ અમેરિકામાં કેટલા દેશો છે?",
+      "reference_answers": [
+        {
+          "answer_start": 10,
+          "text": "35"
+        }
+      ],
+      "model_answer": "195 countries! (including all its territories) (203 if you count disputed ones!)",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: યુનાઈટેડ સ્ટેટ્સ ઓફ અમેરિકામાં કેટલા દેશો છે?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 61,
+      "question": "વિસ્તારની દ્રષ્ટિએ દુનિયાનું મોટામાંમોટું દેશ ક્યો છે?",
+      "reference_answers": [
+        {
+          "answer_start": 0,
+          "text": "Russia"
+        }
+      ],
+      "model_answer": "Russia (which also includes some territories outside its borders)",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: વિસ્તારની દ્રષ્ટિએ દુનિયાનું મોટામાંમોટું દેશ ક્યો છે?\nAnswer:",
+      "f1_score": 14.285714285714285,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 62,
+      "question": "ભારતના રાષ્ટ્રપતિ પદની ઉમેદવારી માટે લઘુત્તમ વય કેટલી હોવી જોઈએ?",
+      "reference_answers": [
+        {
+          "answer_start": 122,
+          "text": "35"
+        }
+      ],
+      "model_answer": "35 years old",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: ભારતના રાષ્ટ્રપતિ પદની ઉમેદવારી માટે લઘુત્તમ વય કેટલી હોવી જોઈએ?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 63,
+      "question": "2017માં ક્યૂ રાજ્ય સૌથી વધુ કપાસનું ઉત્પાદન કર્યું?",
+      "reference_answers": [
+        {
+          "answer_start": 24,
+          "text": "Maharashtra"
+        }
+      ],
+      "model_answer": "Texas (USA)",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: 2017માં ક્યૂ રાજ્ય સૌથી વધુ કપાસનું ઉત્પાદન કર્યું?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 64,
+      "question": "ક્યાં ખંડમાં ઈંગ્લેન્ડ આવેલું છે?",
+      "reference_answers": [
+        {
+          "answer_start": 41,
+          "text": "United Kingdom."
+        }
+      ],
+      "model_answer": "Great Britain (England, Scotland & Wales)",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: ક્યાં ખંડમાં ઈંગ્લેન્ડ આવેલું છે?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 65,
+      "question": "સૌ પ્રથમ બોહેમિયન ક્ષેત્રનો ઉદ્દગમ ક્યાં થયો હતો?",
+      "reference_answers": [
+        {
+          "answer_start": 32,
+          "text": "France"
+        }
+      ],
+      "model_answer": "Budapest, Hungary",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: સૌ પ્રથમ બોહેમિયન ક્ષેત્રનો ઉદ્દગમ ક્યાં થયો હતો?\nAnswer:",
+      "f1_score": 22.222222222222225,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 66,
+      "question": "નેપાળ દેશમાં સૌથી જૂનું હિંદુ મંદિર ક્યાં આવેલું છે",
+      "reference_answers": [
+        {
+          "answer_start": 92,
+          "text": "Kathmandu"
+        }
+      ],
+      "model_answer": "",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: નેપાળ દેશમાં સૌથી જૂનું હિંદુ મંદિર ક્યાં આવેલું છે\nAnswer:",
+      "f1_score": 33.33333333333333,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 67,
+      "question": "ક્યાં દરિયાની નજીક મહારાસ્ટ્ર આવેલું છે?",
+      "reference_answers": [
+        {
+          "answer_start": 185,
+          "text": "Arabian Sea"
+        }
+      ],
+      "model_answer": "Mumbai, India - but I think it's supposed to be near Chennai. The two are really close together! :)",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: ક્યાં દરિયાની નજીક મહારાસ્ટ્ર આવેલું છે?\nAnswer:",
+      "f1_score": 18.18181818181818,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 68,
+      "question": "કેટલા તાપમાને પાણી વરાળમાં પરીવર્તન પામે છે?",
+      "reference_answers": [
+        {
+          "answer_start": 67,
+          "text": "100 °C"
+        }
+      ],
+      "model_answer": "100 degrees Celsius (212 Fahrenheit) at sea level pressure.",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: કેટલા તાપમાને પાણી વરાળમાં પરીવર્તન પામે છે?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 69,
+      "question": "ન્યુટને પ્રથમ પ્રમેય ક્યારે શોધ્યો?",
+      "reference_answers": [
+        {
+          "answer_start": 437,
+          "text": "1687"
+        }
+      ],
+      "model_answer": "1672. Newton was born on Christmas Day, so he found it first when most people were celebrating! (sarcasm) He then died a year later - but you get my point :-). Anyway... this has been proven wrong by modern science as we now know that gravity works even at night or during holidays etc., just not to any great effect compared with daylight hours for example. So perhaps best ignored unless necessary ;D",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: ન્યુટને પ્રથમ પ્રમેય ક્યારે શોધ્યો?\nAnswer:",
+      "f1_score": 22.222222222222225,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 70,
+      "question": "ઈસ્ટ ઈન્ડિયા કંપની ભારતમાં ક્યારે પ્રવેશી હતી",
+      "reference_answers": [
+        {
+          "answer_start": 253,
+          "text": "1611"
+        }
+      ],
+      "model_answer": "1600 AD (although some historians argue it was earlier)",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: ઈસ્ટ ઈન્ડિયા કંપની ભારતમાં ક્યારે પ્રવેશી હતી\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 71,
+      "question": "આંધ્ર પ્રદેશની કઈ ઈજનેરી કોલેજમાં સૌ પ્રથમ સિવિલ ઈજનેરી વિભાગની શરૂઆત થઈ હતી?",
+      "reference_answers": [
+        {
+          "answer_start": 0,
+          "text": "Velagapudi Ramakrishna Siddhartha Engineering College or VRSEC"
+        }
+      ],
+      "model_answer": "Andhra University, Hyderabad",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: આંધ્ર પ્રદેશની કઈ ઈજનેરી કોલેજમાં સૌ પ્રથમ સિવિલ ઈજનેરી વિભાગની શરૂઆત થઈ હતી?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 72,
+      "question": "જર્મનીમાં મોટામાં મોટું ચર્ચ ક્યાં છે?",
+      "reference_answers": [
+        {
+          "answer_start": 0,
+          "text": "Cologne Cathedral"
+        }
+      ],
+      "model_answer": "Berlin Cathedral (St. Marien)",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: જર્મનીમાં મોટામાં મોટું ચર્ચ ક્યાં છે?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 73,
+      "question": "વાતાવરણમાં કયો વાયુ સૌથી વધુ પ્રમાણમાં હોય છે",
+      "reference_answers": [
+        {
+          "answer_start": 35,
+          "text": "nitrogen"
+        }
+      ],
+      "model_answer": "Nitrogen (78%)",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: વાતાવરણમાં કયો વાયુ સૌથી વધુ પ્રમાણમાં હોય છે\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 74,
+      "question": "મેસોપોટેમિયા કેટલું પ્રાચીન છે?",
+      "reference_answers": [
+        {
+          "answer_start": 176,
+          "text": "3500 BC"
+        }
+      ],
+      "model_answer": "3000 B.C.-1500 B.C. (Before Common Era)",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: મેસોપોટેમિયા કેટલું પ્રાચીન છે?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 75,
+      "question": "ભારતનું સૌથી વધુ શક્તિશાળી હથિયાર ક્યૂ છે?",
+      "reference_answers": [
+        {
+          "answer_start": 93,
+          "text": "nuclear weapons"
+        }
+      ],
+      "model_answer": "BrahMos Supersonic Cruise Missile (BSM)",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: ભારતનું સૌથી વધુ શક્તિશાળી હથિયાર ક્યૂ છે?\nAnswer:",
+      "f1_score": 10.666666666666668,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 76,
+      "question": "માઓ ઝેડોંગ ક્યારે મૃત્યુ પામ્યાં હતા?",
+      "reference_answers": [
+        {
+          "answer_start": 439,
+          "text": "1976"
+        }
+      ],
+      "model_answer": "9 September 1976 (aged 82)",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: માઓ ઝેડોંગ ક્યારે મૃત્યુ પામ્યાં હતા?\nAnswer:",
+      "f1_score": 20.0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 77,
+      "question": "ઈસ્ટ ઈન્ડિયા કંપની કયા વર્ષમાં ભારતમાં આવી?",
+      "reference_answers": [
+        {
+          "answer_start": 754,
+          "text": "1608"
+        }
+      ],
+      "model_answer": "1600 AD, or A.D., which stands for Anno Domini (Latin for 'in the year of Our Lord')",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: ઈસ્ટ ઈન્ડિયા કંપની કયા વર્ષમાં ભારતમાં આવી?\nAnswer:",
+      "f1_score": 18.181818181818183,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 78,
+      "question": "તેલુગુ પંચાંગ પ્રમાણે, નવું વર્ષ ક્યા અંગ્રેજી મહિનામાં શરૂ થાય છે?",
+      "reference_answers": [
+        {
+          "answer_start": 560,
+          "text": "March or April"
+        }
+      ],
+      "model_answer": "January 1st",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: તેલુગુ પંચાંગ પ્રમાણે, નવું વર્ષ ક્યા અંગ્રેજી મહિનામાં શરૂ થાય છે?\nAnswer:",
+      "f1_score": 7.407407407407408,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 79,
+      "question": "૨૦૧૭માં કયા સૌથી વધારે મચ્છરો ણે લીધે લોકોનું મૃત્યુ થયું હતું?",
+      "reference_answers": [
+        {
+          "answer_start": 120,
+          "text": "Togo"
+        }
+      ],
+      "model_answer": "Brazil, where there was a record-breaking outbreak that killed at least over 1.2 million people with malaria (a mosquito borne disease) according to World Health Organization data released on October 30th, 2017",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: ૨૦૧૭માં કયા સૌથી વધારે મચ્છરો ણે લીધે લોકોનું મૃત્યુ થયું હતું?\nAnswer:",
+      "f1_score": 40.00000000000001,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 80,
+      "question": "ખ્રિશ્ચનીતિ કઈ સાલમાં ભારતમાં પ્રવેશી?",
+      "reference_answers": [
+        {
+          "answer_start": 304,
+          "text": "52 AD"
+        }
+      ],
+      "model_answer": "1964 (20 years after)",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: ખ્રિશ્ચનીતિ કઈ સાલમાં ભારતમાં પ્રવેશી?\nAnswer:",
+      "f1_score": 33.33333333333333,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 81,
+      "question": "સર્વ પ્રથમ કયા દેશમાં લોકોમોટિવ બોઇલરો રજુ કરવામાં આવ્યાં હતાં",
+      "reference_answers": [
+        {
+          "answer_start": 723,
+          "text": "United Kingdom"
+        }
+      ],
+      "model_answer": "",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: સર્વ પ્રથમ કયા દેશમાં લોકોમોટિવ બોઇલરો રજુ કરવામાં આવ્યાં હતાં\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 82,
+      "question": "ભારતીય આવકવેરા અધિનિયમ ક્યારથી અમલમાં આવ્યો?",
+      "reference_answers": [
+        {
+          "answer_start": 177,
+          "text": "1861"
+        }
+      ],
+      "model_answer": "1961-05-23 (since 1 April, 1961)",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: ભારતીય આવકવેરા અધિનિયમ ક્યારથી અમલમાં આવ્યો?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 83,
+      "question": "કઝાકિસ્તાન દેશનો વિસ્તાર કેટલો છે?",
+      "reference_answers": [
+        {
+          "answer_start": 0,
+          "text": "Kazakhstan is located in Central Asia and Eastern Europe at . With an area of about 2,724,800 square kilometers"
+        }
+      ],
+      "model_answer": "2,717,300 sq mi (7,053,698 km^2) or about four times that of France. (It's so big it has two official time zones!) --Did you know this one?? -- Dunno if I can add a link to my blogpost with more info on Kazakhstan because its kinda long...and then there will be adverts! :-/ but here ya go anyway!! http://www.kzwatchdogblogger.com/tag/country-of-ciao/#more-456",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: કઝાકિસ્તાન દેશનો વિસ્તાર કેટલો છે?\nAnswer:",
+      "f1_score": 57.14285714285715,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 84,
+      "question": "પાકિસ્તાન અને ભારત ક્યારે અલગ થયું?",
+      "reference_answers": [
+        {
+          "answer_start": 26,
+          "text": "1947"
+        }
+      ],
+      "model_answer": "1947 (Independence) - Pakistan, Separated from India.",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: પાકિસ્તાન અને ભારત ક્યારે અલગ થયું?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 85,
+      "question": "ભૌતિકશાસ્ત્રમાં નોબલ પુરુસ્કાર જીતનાર ભારતના પ્રથમ ભારતીય કોણ હતા?",
+      "reference_answers": [
+        {
+          "answer_start": 0,
+          "text": "Sir Chandrasekhara Venkata Raman"
+        }
+      ],
+      "model_answer": "C.V. Raman (1888 - 1970)",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: ભૌતિકશાસ્ત્રમાં નોબલ પુરુસ્કાર જીતનાર ભારતના પ્રથમ ભારતીય કોણ હતા?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 86,
+      "question": "પૂર્વીય યુરોપનું મોટામાં મોટો દેશ ક્યો છે?",
+      "reference_answers": [
+        {
+          "answer_start": 0,
+          "text": "Ukraine"
+        }
+      ],
+      "model_answer": "Russia (or Soviet Union) - but it has been a single country since 1990. It still includes several smaller republics, such as Ukraine or Belarus.)",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: પૂર્વીય યુરોપનું મોટામાં મોટો દેશ ક્યો છે?\nAnswer:",
+      "f1_score": 25.0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 87,
+      "question": "ભારતમાં કઈ ઈમારત પ્રેમનાં પ્રતીકરૂપે બાંધવામાં આવી છે?",
+      "reference_answers": [
+        {
+          "answer_start": 24,
+          "text": "Taj Mahal"
+        }
+      ],
+      "model_answer": "Taj Mahal (or) The Taj Mahal.",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: ભારતમાં કઈ ઈમારત પ્રેમનાં પ્રતીકરૂપે બાંધવામાં આવી છે?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 88,
+      "question": "ભારતની કઈ ઈમારત પ્રેમનું પ્રતિક છે",
+      "reference_answers": [
+        {
+          "answer_start": 24,
+          "text": "Taj Mahal"
+        }
+      ],
+      "model_answer": "Taj Mahal [/INST] Answer: The Taj Mahal </s>",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: ભારતની કઈ ઈમારત પ્રેમનું પ્રતિક છે\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 89,
+      "question": "કેટલા તાપમાને ચાંદી પ્રવાહી બને છે?",
+      "reference_answers": [
+        {
+          "answer_start": 407,
+          "text": "960 °C"
+        }
+      ],
+      "model_answer": "1964 degrees Celsius (3572 Fahrenheit) at atmospheric pressure.",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: કેટલા તાપમાને ચાંદી પ્રવાહી બને છે?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 90,
+      "question": "ભારતનાં ક્યા રાજ્યમાં પાંચ નદીઓ છે?",
+      "reference_answers": [
+        {
+          "answer_start": 334,
+          "text": "Punjab"
+        }
+      ],
+      "model_answer": "Uttar Pradesh",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: ભારતનાં ક્યા રાજ્યમાં પાંચ નદીઓ છે?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 91,
+      "question": "2011માં યુએસના રાષ્ટ્રપતિ તરીકે કોને કામ કર્યું?",
+      "reference_answers": [
+        {
+          "answer_start": 49,
+          "text": "Barack Obama"
+        }
+      ],
+      "model_answer": "Barack Obama",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: 2011માં યુએસના રાષ્ટ્રપતિ તરીકે કોને કામ કર્યું?\nAnswer:"
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 92,
+      "question": "કોલસાથી ચાલતી ટ્રેન ક્યારે શરૂ થઈ હતી?",
+      "reference_answers": [
+        {
+          "answer_start": 792,
+          "text": "21 February 1804"
+        }
+      ],
+      "model_answer": "1829.",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: કોલસાથી ચાલતી ટ્રેન ક્યારે શરૂ થઈ હતી?\nAnswer:"
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 93,
+      "question": "નેશનલ બાયોફ્યુઅલ પોલિસી સૌ પ્રથમ કયા રજૂ કરાઈ હતી",
+      "reference_answers": [
+        {
+          "answer_start": 0,
+          "text": "United States"
+        }
+      ],
+      "model_answer": "Brazil 1975, followed by other countries.",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: નેશનલ બાયોફ્યુઅલ પોલિસી સૌ પ્રથમ કયા રજૂ કરાઈ હતી\nAnswer:"
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 94,
+      "question": "બૌદ્ધ ધર્મ કોણે સ્થાપ્યો હતો",
+      "reference_answers": [
+        {
+          "answer_start": 224,
+          "text": "Siddhārtha Gautama"
+        }
+      ],
+      "model_answer": "Siddhartha Gautama (The Buddha)",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: બૌદ્ધ ધર્મ કોણે સ્થાપ્યો હતો\nAnswer:"
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 95,
+      "question": "ભારતમાં માનવ અધિકાર કાનૂન ક્યારે લાગુ કરવામાં આવ્યો હતો",
+      "reference_answers": [
+        {
+          "answer_start": 163,
+          "text": "28 September 1993"
+        }
+      ],
+      "model_answer": "1975 (by President's order)",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: ભારતમાં માનવ અધિકાર કાનૂન ક્યારે લાગુ કરવામાં આવ્યો હતો\nAnswer:"
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 96,
+      "question": "1950સુધી ભારતમાં કેટલી ભાષાઓ બોલતી હતી?",
+      "reference_answers": [
+        {
+          "answer_start": 507,
+          "text": "22"
+        }
+      ],
+      "model_answer": "",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: 1950સુધી ભારતમાં કેટલી ભાષાઓ બોલતી હતી?\nAnswer:"
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 97,
+      "question": "અંગ્રેજોએ ભારતમાં સર્વ પ્રથમ પડાવ ક્યાં નાખ્યો હતો",
+      "reference_answers": [
+        {
+          "answer_start": 56,
+          "text": "Maharashtra, India"
+        }
+      ],
+      "model_answer": "Porbandar (Gujrat)",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: અંગ્રેજોએ ભારતમાં સર્વ પ્રથમ પડાવ ક્યાં નાખ્યો હતો\nAnswer:"
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 98,
+      "question": "ભારતમાં  પુરુષો માટે લગ્નની લઘુત્તમ ઉંમર  કેટલી છે?",
+      "reference_answers": [
+        {
+          "answer_start": 547,
+          "text": "21"
+        }
+      ],
+      "model_answer": "18 years old (as per Indian law)",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: ભારતમાં  પુરુષો માટે લગ્નની લઘુત્તમ ઉંમર  કેટલી છે?\nAnswer:"
+    },
+    {
+      "pair_key": "xorqa_gu",
+      "example_index": 99,
+      "question": "માણસો દ્વારા બનાવેલું પ્રથમ પ્રાણી ક્યૂ છે?",
+      "reference_answers": [
+        {
+          "answer_start": 224,
+          "text": "bacteria"
+        }
+      ],
+      "model_answer": "Dinosaur (although it may not be as cool)",
+      "prompt_used": "Question: What is the capital of France?\nAnswer: Paris\n\nQuestion: Who wrote \"Pride and Prejudice\"?\nAnswer: Jane Austen\n\nQuestion: What is the largest planet in our solar system?\nAnswer: Jupiter\n\nQuestion: માણસો દ્વારા બનાવેલું પ્રથમ પ્રાણી ક્યૂ છે?\nAnswer:"
+    }
+  ]
+}

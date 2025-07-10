@@ -1,0 +1,199 @@
+{
+  "evaluation_metadata": {
+    "timestamp": "2025-06-27T01:33:26.594006",
+    "model_name": "sarvamai/sarvam-1",
+    "translation_direction": "enxx",
+    "total_language_pairs": 12,
+    "total_samples": 1200,
+    "config": {
+      "model_name": "sarvamai/sarvam-1",
+      "dataset_name": "google/IndicGenBench_flores_in",
+      "translation_direction": "enxx",
+      "target_languages": [
+        "as",
+        "bn",
+        "gu",
+        "hi",
+        "kn",
+        "ml",
+        "mr",
+        "or",
+        "pa",
+        "ta",
+        "te",
+        "ur"
+      ],
+      "num_samples_per_lang": 100,
+      "batch_size": 4,
+      "max_new_tokens": 128,
+      "output_dir": "flores_enhanced_eval_results",
+      "use_few_shot": true,
+      "num_few_shot_examples": 3
+    }
+  },
+  "overall_results": {
+    "average_chrf": 34.43252744983396,
+    "std_chrf": 21.221477387376247,
+    "min_chrf": 0.3232062055591468,
+    "max_chrf": 67.07635890118878,
+    "median_chrf": 37.484390640501054
+  },
+  "language_pair_results": {
+    "flores_en-as": {
+      "chrf++": 1.5804036574847757,
+      "valid_samples": 100,
+      "total_samples": 100,
+      "validity_rate": 1.0,
+      "quality_analysis": {
+        "avg_prediction_length": 12.11,
+        "avg_reference_length": 18.37,
+        "length_ratio": 0.6592270005443658,
+        "empty_predictions": 0,
+        "very_short_predictions": 33
+      }
+    },
+    "flores_en-bn": {
+      "chrf++": 28.615962310059096,
+      "valid_samples": 100,
+      "total_samples": 100,
+      "validity_rate": 1.0,
+      "quality_analysis": {
+        "avg_prediction_length": 18.29,
+        "avg_reference_length": 18.44,
+        "length_ratio": 0.9918655097613882,
+        "empty_predictions": 0,
+        "very_short_predictions": 1
+      }
+    },
+    "flores_en-gu": {
+      "chrf++": 37.22412625422827,
+      "valid_samples": 100,
+      "total_samples": 100,
+      "validity_rate": 1.0,
+      "quality_analysis": {
+        "avg_prediction_length": 20.16,
+        "avg_reference_length": 21.02,
+        "length_ratio": 0.9590865842055186,
+        "empty_predictions": 0,
+        "very_short_predictions": 0
+      }
+    },
+    "flores_en-hi": {
+      "chrf++": 67.07635890118878,
+      "valid_samples": 100,
+      "total_samples": 100,
+      "validity_rate": 1.0,
+      "quality_analysis": {
+        "avg_prediction_length": 25.8,
+        "avg_reference_length": 26.25,
+        "length_ratio": 0.9828571428571429,
+        "empty_predictions": 0,
+        "very_short_predictions": 0
+      }
+    },
+    "flores_en-kn": {
+      "chrf++": 37.74465502677384,
+      "valid_samples": 100,
+      "total_samples": 100,
+      "validity_rate": 1.0,
+      "quality_analysis": {
+        "avg_prediction_length": 14.84,
+        "avg_reference_length": 15.7,
+        "length_ratio": 0.9452229299363057,
+        "empty_predictions": 0,
+        "very_short_predictions": 1
+      }
+    },
+    "flores_en-ml": {
+      "chrf++": 56.99124071811964,
+      "valid_samples": 100,
+      "total_samples": 100,
+      "validity_rate": 1.0,
+      "quality_analysis": {
+        "avg_prediction_length": 13.36,
+        "avg_reference_length": 13.87,
+        "length_ratio": 0.9632299927901947,
+        "empty_predictions": 0,
+        "very_short_predictions": 0
+      }
+    },
+    "flores_en-mr": {
+      "chrf++": 56.46741329414715,
+      "valid_samples": 100,
+      "total_samples": 100,
+      "validity_rate": 1.0,
+      "quality_analysis": {
+        "avg_prediction_length": 16.79,
+        "avg_reference_length": 18.22,
+        "length_ratio": 0.9215148188803512,
+        "empty_predictions": 0,
+        "very_short_predictions": 0
+      }
+    },
+    "flores_en-or": {
+      "chrf++": 0.3232062055591468,
+      "valid_samples": 100,
+      "total_samples": 100,
+      "validity_rate": 1.0,
+      "quality_analysis": {
+        "avg_prediction_length": 17.61,
+        "avg_reference_length": 19.17,
+        "length_ratio": 0.9186228482003129,
+        "empty_predictions": 0,
+        "very_short_predictions": 9
+      }
+    },
+    "flores_en-pa": {
+      "chrf++": 49.29985237846127,
+      "valid_samples": 100,
+      "total_samples": 100,
+      "validity_rate": 1.0,
+      "quality_analysis": {
+        "avg_prediction_length": 23.57,
+        "avg_reference_length": 24.51,
+        "length_ratio": 0.9616483068135454,
+        "empty_predictions": 0,
+        "very_short_predictions": 2
+      }
+    },
+    "flores_en-ta": {
+      "chrf++": 40.45823494140727,
+      "valid_samples": 100,
+      "total_samples": 100,
+      "validity_rate": 1.0,
+      "quality_analysis": {
+        "avg_prediction_length": 15.44,
+        "avg_reference_length": 16.68,
+        "length_ratio": 0.9256594724220624,
+        "empty_predictions": 0,
+        "very_short_predictions": 0
+      }
+    },
+    "flores_en-te": {
+      "chrf++": 30.885697589275406,
+      "valid_samples": 100,
+      "total_samples": 100,
+      "validity_rate": 1.0,
+      "quality_analysis": {
+        "avg_prediction_length": 14.84,
+        "avg_reference_length": 16.15,
+        "length_ratio": 0.9188854489164088,
+        "empty_predictions": 0,
+        "very_short_predictions": 0
+      }
+    },
+    "flores_en-ur": {
+      "chrf++": 6.523178121302873,
+      "valid_samples": 100,
+      "total_samples": 100,
+      "validity_rate": 1.0,
+      "quality_analysis": {
+        "avg_prediction_length": 14.91,
+        "avg_reference_length": 27.27,
+        "length_ratio": 0.5467546754675467,
+        "empty_predictions": 0,
+        "very_short_predictions": 0
+      }
+    }
+  }
+}

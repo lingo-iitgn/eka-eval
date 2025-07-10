@@ -1,0 +1,84 @@
+{
+  "model_name": "sarvamai/sarvam-1",
+  "dataset": "XOR-QA-IN",
+  "num_samples_per_lang": 100,
+  "languages_evaluated": 12,
+  "overall_scores": {
+    "xorqa_as": {
+      "f1": 6.001546597956979,
+      "exact_match": 0.0,
+      "valid_samples": 62,
+      "total_samples": 100
+    },
+    "xorqa_bn": {
+      "f1": 10.949816401417012,
+      "exact_match": 0.0,
+      "valid_samples": 64,
+      "total_samples": 100
+    },
+    "xorqa_gu": {
+      "f1": 11.241013552809829,
+      "exact_match": 0.0,
+      "valid_samples": 89,
+      "total_samples": 100
+    },
+    "xorqa_hi": {
+      "f1": 9.890633646041,
+      "exact_match": 0.0,
+      "valid_samples": 73,
+      "total_samples": 100
+    },
+    "xorqa_kn": {
+      "f1": 10.65503974955393,
+      "exact_match": 0.0,
+      "valid_samples": 85,
+      "total_samples": 100
+    },
+    "xorqa_ml": {
+      "f1": 12.428949662931355,
+      "exact_match": 0.0,
+      "valid_samples": 92,
+      "total_samples": 100
+    },
+    "xorqa_mr": {
+      "f1": 11.271964913053448,
+      "exact_match": 0.0,
+      "valid_samples": 82,
+      "total_samples": 100
+    },
+    "xorqa_or": {
+      "f1": 5.219040362670045,
+      "exact_match": 0.0,
+      "valid_samples": 93,
+      "total_samples": 100
+    },
+    "xorqa_pa": {
+      "f1": 10.680335459666006,
+      "exact_match": 0.0,
+      "valid_samples": 86,
+      "total_samples": 100
+    },
+    "xorqa_ta": {
+      "f1": 7.660909726608733,
+      "exact_match": 0.0,
+      "valid_samples": 77,
+      "total_samples": 100
+    },
+    "xorqa_te": {
+      "f1": 13.020243106524385,
+      "exact_match": 0.0,
+      "valid_samples": 61,
+      "total_samples": 100
+    },
+    "xorqa_ur": {
+      "f1": 0.3918996539723615,
+      "exact_match": 0.0,
+      "valid_samples": 97,
+      "total_samples": 100
+    }
+  },
+  "averages": {
+    "f1": 9.117616069433758,
+    "exact_match": 0.0
+  }
+}

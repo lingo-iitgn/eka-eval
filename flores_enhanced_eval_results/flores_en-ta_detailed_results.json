@@ -1,0 +1,1030 @@
+{
+  "evaluation_metadata": {
+    "pair_name": "flores_en-ta",
+    "timestamp": "2025-06-27T00:57:59.749285",
+    "model_name": "sarvamai/sarvam-1",
+    "translation_direction": "enxx",
+    "num_samples": 100,
+    "config": {
+      "batch_size": 4,
+      "max_new_tokens": 128,
+      "use_few_shot": true,
+      "num_few_shot_examples": 3
+    }
+  },
+  "results": {
+    "chrf++": 40.45823494140727,
+    "valid_samples": 100,
+    "total_samples": 100,
+    "validity_rate": 1.0,
+    "quality_analysis": {
+      "avg_prediction_length": 15.44,
+      "avg_reference_length": 16.68,
+      "length_ratio": 0.9256594724220624,
+      "empty_predictions": 0,
+      "very_short_predictions": 0
+    }
+  },
+  "detailed_logs": [
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 0,
+      "source_text": "The artistic event is also part of a campaign by the Bucharest City Hall that seeks to relaunch the image of the Romanian capital as a creative and colourful metropolis.",
+      "reference_translation": "இந்த கலை நிகழ்ச்சி புக்கரெஸ்ட் நகர மண்டபத்தின் பிரச்சாரத்தின் ஒரு பங்காகும். அது ரோமானிய தலைநகரத்தின் மீதான பார்வையை கற்பனையோடும் வண்ண மயமாகவும் பிரதிபலிக்க எண்ணுகிறது.",
+      "model_translation": "கலை நிகழ்ச்சி என்பது புக்கரெஸ்ட் நகர அரசின் ஒரு பிரச்சாரத்தின் ஒரு பகுதியாகும், இது புக்கரேஸ்டை ஒரு படைப்பு மற்றும் வண்ணமயமான பெருநகரமாக மீண்டும் தோற்றுவிக்க முயற்சிக்கிறது.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: The artistic event is also part of a campaign by the Bucharest City Hall that seeks to relaunch the image of the Romanian capital as a creative and colourful metropolis.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 1,
+      "source_text": "Diplomats said that they had found enough ambiguity in the Afghan constitution to determine the runoff as unnecessary.",
+      "reference_translation": "ரன் - ஆஃப்கள் தேவையற்றவை என்பதைத் தீர்மானிப்பதற்கு, ஆப்கன் அரசியலமைப்பில் போதுமான தெளிவின்மையைக் கண்டறிந்ததாக அரசுப் பிரதிநிதிகள் தெரிவித்தனர்.",
+      "model_translation": "இராஜதந்திரிகள் ஆப்கானிஸ்தான் அரசியலமைப்பில் போதுமான நிச்சயமற்ற தன்மையைக் கண்டறிந்துள்ளனர், இதனால் ரன்-ஆஃப் தேவையில்லை என்று முடிவு செய்துள்ளனர்.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: Diplomats said that they had found enough ambiguity in the Afghan constitution to determine the runoff as unnecessary.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 2,
+      "source_text": "The native inhabitants of Greenland call themselves Inuit in Canada and Kalaalleq (plural Kalaallit), a Greenlander, in Greenland.",
+      "reference_translation": "கிரீன்லாந்தின் குடிமக்கள், அவர்களை இன்யுயிட் என்று கனடாவிலும் மற்றும் காலலிக் (பன்மை காலலித்), ஒரு கிரீன்லாந்து நாட்டவர், என்று கிரீன்லாந்திலும் அழைத்துக் கொள்கிறார்கள்.",
+      "model_translation": "Greenland இன் பூர்வீக மக்கள் Inuit என்று அழைக்கப்படுகிறார்கள், கனடாவில் உள்ள கிரீன்லாந்து மற்றும் கிரீன்லாந்தில் உள்ளவர்கள்.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: The native inhabitants of Greenland call themselves Inuit in Canada and Kalaalleq (plural Kalaallit), a Greenlander, in Greenland.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 3,
+      "source_text": "While you may not need a visa for short visits to certain countries as a tourist or for business, going there as an international student generally requires a longer stay than going there just as a casual tourist.",
+      "reference_translation": "சில நாடுகளுக்கு சுற்றுலாப் பயணியாகவோ அல்லது வணிக ரீதியாகவோ குறுகிய கால வருகைகளுக்கு விசா தேவைப்படாதென்றாலும், சாதாரண சுற்றுலா பயணி போல அல்லாமல், சர்வதேச மாணவராக அங்கே செல்லும்போது பொதுவாக நீண்ட காலம் தங்க வேண்டி இருக்கலாம்.",
+      "model_translation": "சுற்றுலாப் பயணிகளுக்கு சில நாடுகளுக்குச் செல்ல விசா தேவையில்லை, ஆனால் சர்வதேச மாணவர்களுக்கு அங்கு நீண்ட நேரம் தங்க வேண்டியிருக்கும்.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: While you may not need a visa for short visits to certain countries as a tourist or for business, going there as an international student generally requires a longer stay than going there just as a casual tourist.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 4,
+      "source_text": "These can be dangerous if the traveler pursue the mirage, wasting precious energy and remaining water.",
+      "reference_translation": "ஆற்றலை வீணாக்கி மீதம் நீர் போன்று தோற்றமளிக்கும் கானல் காட்சியை பயணி பின்தொடர்ந்தால் அவை ஆபத்தானவை.",
+      "model_translation": "இந்த பயணிகள் மிராஜைப் பின்தொடர்ந்தால், அவர்கள் மதிப்புமிக்க ஆற்றலை வீணடித்து, தண்ணீரை இழக்க நேரிடும்.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: These can be dangerous if the traveler pursue the mirage, wasting precious energy and remaining water.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 5,
+      "source_text": "Last month, there were major protests in Poland when that country signed ACTA, which has led to the Polish government deciding not to ratify the agreement, for now.",
+      "reference_translation": "கடந்த மாதம், ACTA வில் கையெழுத்திட்டபோது போலந்தில் பெரும் போராட்டங்கள் நடந்தன, இதனால் போலந்து அரசாங்கம் இப்போது ஒப்பந்தத்தை ஒப்புக் கொள்ள வேண்டாம் என்று முடிவு செய்ய வழிவகுத்தது.",
+      "model_translation": "கடந்த மாதம் போலந்தில் ஏ.சி.டி.ஏ-க்கு எதிராக பெரிய போராட்டங்கள் நடைபெற்றன, இதனால் போலந்தின் அரசாங்கம் இந்த ஒப்பந்தத்தில் கையெழுத்திட வேண்டாம் என்று முடிவெடுத்தது, இப்போது வரை.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: Last month, there were major protests in Poland when that country signed ACTA, which has led to the Polish government deciding not to ratify the agreement, for now.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 6,
+      "source_text": "On the accordion, to get extra volume, you use the bellows with more pressure or speed.",
+      "reference_translation": "அக்கார்டியனில் அதிக ஒலியினைப் பெறுவதற்கு, நீங்கள் அதிக அழுத்தம் அல்லது வேகமுடைய துருத்திகளைப் பயன்படுத்தலாம்.",
+      "model_translation": "accordion இல், கூடுதல் ஒலியைப் பெற, நீங்கள் அதிக அழுத்தம் அல்லது வேகத்துடன் பெல்லோக்களைப் பயன்படுத்துகிறீர்கள்.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: On the accordion, to get extra volume, you use the bellows with more pressure or speed.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 7,
+      "source_text": "The gas becomes thinner as you go farther from the center of the Sun.",
+      "reference_translation": "சூரியனின் மையத்திலிருந்து தொலைவில் செல்லச் செல்ல, வாயு மெல்லியதாகிறது.",
+      "model_translation": "சூரியனின் மையத்திலிருந்து நீங்கள் விலகிச் செல்லும்போது வாயுவின் தடிமன் குறைகிறது.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: The gas becomes thinner as you go farther from the center of the Sun.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 8,
+      "source_text": "These events normally last anywhere between three and six months, and are held on sites no smaller than 50 hectares.",
+      "reference_translation": "இந்த நிகழ்வுகள் பொதுவாக மூன்று முதல் ஆறு மாதங்கள் வரை நீடிக்கும், மேலும் அவை 50 ஹெக்டேருக்குக் குறையாத தளங்களில் நடைபெறும்.",
+      "model_translation": "இந்த நிகழ்வுகள் பொதுவாக 3 முதல் 6 மாதங்கள் வரை நீடிக்கும், மேலும் இவை சிறிய தளங்களான 100 ஹெக்டேருக்கும் குறைவான நிலப்பரப்பில் நடத்தப்படுகின்றன.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: These events normally last anywhere between three and six months, and are held on sites no smaller than 50 hectares.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 9,
+      "source_text": "The invention of spoke wheels made Assyrian chariots lighter, faster, and better prepared to outrun soldiers and other chariots.",
+      "reference_translation": "ஆரைக்காலின் கண்டுபிடிப்பு, அசிரியர்களின் தேர்களை இலகுவாகவும் வேகமாகவும் மற்றும் வீரர்களையும் மற்ற தேர்களையும் முந்திச்செல்லத் தயாராகவும் ஆக்கியது.",
+      "model_translation": "அசிரியர்கள் சக்கரங்களை உருவாக்கியதால், அவர்களின் சக்கரக் குதிரைகள் இலகுவாகவும், வேகமாகவும், போர்களில் வெற்றிபெறவும் தயாராகவும் இருந்தன.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: The invention of spoke wheels made Assyrian chariots lighter, faster, and better prepared to outrun soldiers and other chariots.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 10,
+      "source_text": "If you visit Greenland during cold seasons (considering that the further north you go, the colder it will be), it is essential to bring warm enough clothing.",
+      "reference_translation": "தாங்கள் கிரீன்லாந்திற்கு குளிர்காலங்களில் சென்றடைய நேர்ந்தால் கதகதப்பான உடல் சூட்டைத் தக்கவைத்துக்கொள்ளும் ஆடைகளை எடுத்துச் செல்ல வேண்டும் (வடக்கு நோக்கிச் செல்லச்செல்ல குளிர் அதிகரிக்கும் இதை கருத்தில் கொள்ள வேண்டும்).",
+      "model_translation": "குளிர் காலங்களில் கிரீன்லாந்துக்குச் செல்லும்போது சூடாக உடை அணிவது அவசியம்.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: If you visit Greenland during cold seasons (considering that the further north you go, the colder it will be), it is essential to bring warm enough clothing.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 11,
+      "source_text": "The pattern should be deep enough, 5 mm (1/5 inch) or more, and the material soft enough in cold temperatures.",
+      "reference_translation": "பேட்டர்ன் போதுமான ஆழமானதாக  5 மிமீ (1/5 அங்குல) அல்லது அதற்கு மேற்பட்டதாக இருக்க வேண்டும், மற்றும் குளிர் காலநிலையில் போதுமான மென்மையானதாக பொருள் இருக்க வேண்டும்.",
+      "model_translation": "ஊடுருவல் ஆழம் 5 மிமீ (1⁄5 அங்குலம்) அல்லது அதற்கு மேல் இருக்க வேண்டும், மேலும் குளிர்ந்த வெப்பநிலையில் பொருள் மென்மையாக இருக்க வேண்டும்.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: The pattern should be deep enough, 5 mm (1/5 inch) or more, and the material soft enough in cold temperatures.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 12,
+      "source_text": "At 11:20, the police asked the protesters to move back on to the pavement, stating that they needed to balance the right to protest with the traffic building up.",
+      "reference_translation": "11:20 க்கு போலீசார், அதிகரிக்கும் போக்குவரத்து நெரிசலையும் அவர்கள் போராடும் உரிமையையும் சமமாகப் பாவிக்கக் கூறி, போராட்டக்காரர்களை நடைபாதைக்கு செல்லும்படி உத்தரவிட்டனர்.",
+      "model_translation": "ஊரடங்கு உத்தரவை மீறி ஆர்ப்பாட்டத்தில் ஈடுபட்டவர்களை போலீசார் திரும்பிச் செல்லுமாறு கேட்டுக் கொண்டனர். அவர்கள் போக்குவரத்து நெரிசலை சமநிலைப்படுத்த வேண்டும் என்று கூறினர்.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: At 11:20, the police asked the protesters to move back on to the pavement, stating that they needed to balance the right to protest with the traffic building up.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 13,
+      "source_text": "Humans are by far the most talented species in reading the minds of others.",
+      "reference_translation": "மனிதன்தான், இதுவரையிலும் மற்றவர்களின் மனதைப் படிப்பதில் மிகவும் திறமையான இனம்.",
+      "model_translation": "மனுஷங்க தான் மத்தவங்களோட மனசுல என்ன இருக்குன்னு புரிஞ்சுக்கறதுல ரொம்ப நல்லவங்க.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: Humans are by far the most talented species in reading the minds of others.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 14,
+      "source_text": "This might require filling out a form with the local police or a visit to the immigration offices.",
+      "reference_translation": "இதற்கு உள்ளூர் காவல் நிலையத்தில் ஒரு படிவத்தை நிரப்பவோ அல்லது குடிவரவு அலுவலகங்களுக்குச் செல்லவோ வேண்டி இருக்கும்.",
+      "model_translation": "இது உள்ளூர் காவல்துறையிடம் ஒரு படிவத்தை நிரப்ப வேண்டியிருக்கலாம் அல்லது குடியேற்ற அலுவலகங்களுக்குச் செல்ல வேண்டியிருக்கலாம்.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: This might require filling out a form with the local police or a visit to the immigration offices.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 15,
+      "source_text": "Written words are often easier to understand than spoken words, also. This is especially true of addresses, which are often difficult to pronounce intelligibly.",
+      "reference_translation": "பொதுவாக எழுதப்பட்ட வார்த்தைகள், பேசப்பட்டவைகளை விட எளிதாகப் புரிந்து கொள்ளப் படுகின்றன. இது முக்கியமாக முகவரிகளுக்கு, குறிப்பாக, புரியும்படி சொல்வது சாதாரணமாக கடினமாக உள்ளது.",
+      "model_translation": "எழுதப்பட்ட வார்த்தைகள் பேசும் வார்த்தைகளை விட புரிந்துகொள்வது எளிது, குறிப்பாக முகவரிகள், அவை பெரும்பாலும் உச்சரிக்க கடினமாக இருக்கும்.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: Written words are often easier to understand than spoken words, also. This is especially true of addresses, which are often difficult to pronounce intelligibly.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 16,
+      "source_text": "How would Io's gravity pull on me? If you stood on the surface of Io, you would weigh less than you do on Earth.",
+      "reference_translation": "லோ வின் புவியீர்ப்பு எப்படி என்னை இழுக்க முடியும்? நீங்கள் லோ வின் பரப்பில் நின்றால், பூமியில் இருப்பதை விட எடை குறைவாக இருப்பீர்கள்.",
+      "model_translation": "ஐயோவின் ஈர்ப்பு விசை என்னை எப்படி பாதிக்கும்? நீங்கள் ஐயோவில் நின்று கொண்டிருந்தால், நீங்கள் பூமியில் இருப்பதை விட குறைவான எடையை உணருவீர்கள்.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: How would Io's gravity pull on me? If you stood on the surface of Io, you would weigh less than you do on Earth.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 17,
+      "source_text": "Fire captain Scott Kouns said, \"It was a hot day in the Santa Clara with temperatures in the 90s.",
+      "reference_translation": "\"\"\"தீயணைப்பு கேப்டன் ஸ்காட் கௌன்ஸ், \"\"\"\"வெப்பநிலை 90களில் சாண்டா கிளாராவில் இது ஒரு சூடான நாள்.\"\"\"\"\"",
+      "model_translation": "சாண்டா கிளாராவில் வெப்பநிலை அதிகமாக இருந்தது என்று ஸ்காட் கௌன்ஸ் கூறினார்.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: Fire captain Scott Kouns said, \"It was a hot day in the Santa Clara with temperatures in the 90s.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 18,
+      "source_text": "The Dominican Republic (Spanish: República Dominicana) is a Caribbean country that occupies the eastern half of the island of Hispaniola, which it shares with Haiti",
+      "reference_translation": "டொமினிக்கன் ரிபப்ளிக் ( ஸ்பானிஷ் : ரிபப்ளிக் கா டோமினிக் கானா) என்ற கரீபியன் நாடு ஹிஸ்பானிய ஓலா தீவின் கிழக்குப் பகுதியில் அமைந்துள்ளது. அப்பகுதியை ஹைட்டி ஹை டிவிடெண்ட் இந்நாடு பகிர்ந்துள்ளது.",
+      "model_translation": "டொமினிக்கன் ரிபப்ளிக் (ஸ்பானிஷ்: ரெபப்ளிகா டொமினிகானா) என்பது ஹிஸ்பானியோலா தீவின் கிழக்குப் பகுதியில் அமைந்துள்ள ஒரு கரீபியன் நாடு. இது ஹைய்ட்டுடன் தனது எல்லையைப் பகிர்ந்து கொள்கிறது.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: The Dominican Republic (Spanish: República Dominicana) is a Caribbean country that occupies the eastern half of the island of Hispaniola, which it shares with Haiti\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 19,
+      "source_text": "After hundreds of hours of operation the filament in the bulb eventually burns out and the light bulb no longer works.",
+      "reference_translation": "நூற்றுக்கணக்கான மணிநேர செயல்பாட்டிற்குப் பிறகு பல்பிலிருக்கும் இழை எரிந்து போகிறது மற்றும் விளக்கு பல்ப் அதன் பிறகு வேலை செய்வதில்லை.",
+      "model_translation": "நூற்றுக்கணக்கான மணிநேரம் இயக்கப்பட்ட பிறகு, ஒளி விளக்கில் உள்ள ஃபிலமெண்ட் இறுதியில் எரிந்துவிடுகிறது மற்றும் ஒளி விளக்கு இனி வேலை செய்யாது.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: After hundreds of hours of operation the filament in the bulb eventually burns out and the light bulb no longer works.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 20,
+      "source_text": "A tornado is a spinning column of very low-pressure air, which sucks the surrounding air inward and upward.",
+      "reference_translation": "ஒரு சூறாவளி என்பது மிகக் குறைந்த காற்றழுத்தத்தின் ஒரு சுழலைக் குறிப்பதாகும், இது சுற்றியுள்ள காற்றை உள்நோக்கியும் மேல்நோக்கியும் இழுக்கிறது.",
+      "model_translation": "ஒரு சூறாவளி என்பது மிகக் குறைந்த அழுத்தம் கொண்ட காற்றின் சுழலும் நெடுவரிசை, இது சுற்றியுள்ள காற்றை உள்ளே இழுத்து மேலே தூக்கிச் செல்கிறது.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: A tornado is a spinning column of very low-pressure air, which sucks the surrounding air inward and upward.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 21,
+      "source_text": "Australia's former conservative government refused to ratify Kyoto, saying it would damage the economy with its heavy reliance on coal exports, while countries like India and China were not bound by emissions targets.",
+      "reference_translation": "ஆஸ்திரேலியாவின் முன்னாள் பழமைவாத அரசாங்கம் கியோட்டோவை அங்கீகரிக்க மறுத்து, நிலக்கரி ஏற்றுமதியை அதிக அளவில் நம்பியிருப்பதால் பொருளாதாரத்தைச் சேதப்படுத்தும் என்று தெரிவித்தது, அதே நேரத்தில் இந்தியா, சீனா போன்ற நாடுகள் எமிஷன் இலக்குகளுக்குக் கட்டுப்படவில்லை.",
+      "model_translation": "ஆஸ்திரேலியாவின் முன்னாள் கன்சர்வேடிவ் அரசாங்கம், நிலக்கரி ஏற்றுமதியை பெரிதும் சார்ந்திருப்பதால், அதன் பொருளாதாரத்திற்கு தீங்கு விளைவிக்கும் என்று கூறி, கியோட்டோ ஒப்பந்தத்தில் கையெழுத்திட மறுத்துவிட்டது.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: Australia's former conservative government refused to ratify Kyoto, saying it would damage the economy with its heavy reliance on coal exports, while countries like India and China were not bound by emissions targets.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 22,
+      "source_text": "As the cars ahead of Alonso went in for fuel under the safety car, he moved up the pack to take victory.",
+      "reference_translation": "அலோன்ஸாவிற்கு முன்னால் சென்று கொண்டிருந்த கார்கள், பாதுகாப்பு கார் வந்ததும், எரிபொருள் நிரப்பச் சென்றதும், அவர் அந்த கூட்டத்தின் முன்னிலைக்குச் சென்று வெற்றி பெற்றார்.",
+      "model_translation": "ஆலன்சோவின் முன்னால் இருந்த கார்கள் எரிபொருளை நிரப்பிக் கொண்டிருந்தபோது, அவர் பாதுகாப்பு காரின் கீழ் பந்தயத்தில் வெற்றி பெற முன்னேறினார்.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: As the cars ahead of Alonso went in for fuel under the safety car, he moved up the pack to take victory.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 23,
+      "source_text": "It can also be a good way to stretch a budget to allow a longer stay somewhere since many volunteer jobs provide room and board and a few pay a small salary.",
+      "reference_translation": "இது ஒரு இடத்தில் அதிக நாள் தங்க உங்கள் செலவுத் திட்டத்தை நீட்டுவதற்கு  ஒரு நல்ல வழி ஏனெனில் பல தன்னார்வப் பணிகள், தங்க அறை மற்றும் உணவு மற்றும் சில ஒரு சிறிய சம்பளமும் தரக் கூடியவை.",
+      "model_translation": "தன்னார்வப் பணிகளில் ஈடுபடுவதன் மூலம் ஒருவரின் வரவு செலவு கணக்கை நீட்டிக்க முடியும், இதனால் நீண்ட காலம் தங்குவதற்கு வசதியாக இருக்கும், ஏனெனில் பல தன்னார்வ வேலைகள் தங்குமிடம் மற்றும் உணவை வழங்குகின்றன, மேலும் ஒரு சிறிய ஊதியத்தை வழங்குகின்றன.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: It can also be a good way to stretch a budget to allow a longer stay somewhere since many volunteer jobs provide room and board and a few pay a small salary.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 24,
+      "source_text": "It is not known at this time what charges will be laid or what led authorities to the boy but juvenile proceedings have begun in federal court.",
+      "reference_translation": "இந்த நேரத்தில் என்ன குற்றச்சாட்டுகள் சிறுவன் மீது சுமத்தப்படும் அல்லது அதிகாரிகள் சிறுவனைக் குற்றம் சுமத்த என்ன வழிவகுத்தது என்பது தெரியவில்லை, ஆனால் கூட்டாட்சி நீதிமன்றத்தில் சிறார் வழக்கு விசாரணை தொடங்கியுள்ளது.",
+      "model_translation": "கூட்டாட்சி நீதிமன்றத்தில் இளைஞர் வழக்குகள் தொடங்கப்பட்டுள்ளன, ஆனால் எந்தக் குற்றச்சாட்டுகள் சுமத்தப்படும் என்பது இன்னும் தெரியவில்லை.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: It is not known at this time what charges will be laid or what led authorities to the boy but juvenile proceedings have begun in federal court.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 25,
+      "source_text": "A contagious disease is a disease which is easily transmitted by being in the vicinity of an infected person.",
+      "reference_translation": "தொற்றால் பாதிக்கப்பட்டவருக்கு அருகில் உள்ள மற்றொருவருக்கு எளிதாகப் பரவகூடிய நோய் தொடுவதால் பரவும் நோய் என்று அழைக்கப்படுகிறது.",
+      "model_translation": "தொற்று நோய் என்பது ஒருவரிடமிருந்து மற்றொருவருக்கு எளிதில் பரவும் ஒரு நோய்.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: A contagious disease is a disease which is easily transmitted by being in the vicinity of an infected person.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 26,
+      "source_text": "Each country also has unique laws requiring what emergency items need to be in the car.",
+      "reference_translation": "ஒவ்வொரு நாட்டிற்கும் உங்கள் காரில் என்ன ஆபத்துக் காலப் பொருள்கள் இருக்க வேண்டும் என்பது குறித்து தனிச் சட்டங்கள் உள்ளன.",
+      "model_translation": "ஒவ்வொரு நாட்டிலும் அவசரகாலப் பொருட்களைக் கொண்ட ஒரு கார் இருக்க வேண்டும் என்று சட்டங்கள் உள்ளன.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: Each country also has unique laws requiring what emergency items need to be in the car.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 27,
+      "source_text": "The band canceled the show at Maui's War Memorial Stadium, which was set to be attended by 9,000 people, and apologized to fans.",
+      "reference_translation": "மௌய் யின் போர் நினைவு அரங்கத்தில் 9,000 பேர் பார்க்க நிகழ்வதாக இருந்த நிகழ்ச்சியை அந்த பாண்ட் ரத்து செய்தது மற்றும் ரசிகர்களிடம் அதற்காக மன்னிப்பும் கேட்டது.",
+      "model_translation": "பேண்ட் மவுய் வார் மெமோரியல் ஸ்டேடியத்தில் நடைபெற்ற நிகழ்ச்சியை ரத்து செய்தது, இது 900 பேர் கலந்துகொள்ளும் என்று எதிர்பார்க்கப்பட்டது, மேலும் ரசிகர்களுக்கு மன்னிப்பு கேட்டது.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: The band canceled the show at Maui's War Memorial Stadium, which was set to be attended by 9,000 people, and apologized to fans.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 28,
+      "source_text": "The algae produces a neurotoxin that can disable nerves in both humans and fish.",
+      "reference_translation": "பாசி, மனிதர்கள் மற்றும் மீன்களின் நரம்புகளை முடக்கும் நியூரோடாக்சின் எனப்படும் நச்சை உற்பத்தி செய்கிறது.",
+      "model_translation": "ஆல்கா ஒரு நரம்பு நச்சுப்பொருளை உற்பத்தி செய்கிறது, இது மனிதர்கள் மற்றும் மீன்களில் உள்ள நரம்புகளை செயலிழக்கச் செய்யும்.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: The algae produces a neurotoxin that can disable nerves in both humans and fish.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 29,
+      "source_text": "maybe you'll discover a simple beverage that you can make for breakfast when you're back to your daily routine.",
+      "reference_translation": "ஒருவேளை நீங்கள் உங்கள் தினசரி வேலைக்கு மீண்டும் திரும்பும்போது காலை உணவாகச் செய்யக்கூடிய ஒரு எளிய பானத்தைக் கண்டுபிடிப்பீர்கள்.",
+      "model_translation": "ஒருவேளை நீங்கள் உங்கள் தினசரி செயல்பாடுகளுக்குத் திரும்பும்போது காலை உணவிற்கு நீங்கள் செய்யக்கூடிய எளிய பானத்தை நீங்கள் கண்டுபிடிக்கலாம்.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: maybe you'll discover a simple beverage that you can make for breakfast when you're back to your daily routine.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 30,
+      "source_text": "Protesters hope to collect a petition of 1.2 million signatures to present to the National Congress in November.",
+      "reference_translation": "போராளிகள் நவம்பர் மாதம் தேசிய காங்கிரசுக்கு சமர்ப்பிப்பதற்கு 1.2 மில்லியன் கையொப்பங்களின் மனுவை சேகரிப்பார்கள் என நம்பப்படுகின்றனர்.",
+      "model_translation": "ஆர்ப்பாட்டக்காரர்கள் நவம்பர் மாதத்தில் தேசிய காங்கிரசுக்கு 1,200,000 கையொப்பங்களைக் கொண்ட ஒரு மனு சமர்ப்பிக்க எதிர்பார்க்கிறார்கள்.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: Protesters hope to collect a petition of 1.2 million signatures to present to the National Congress in November.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 31,
+      "source_text": "Children with ADD have a hard time focusing on things like school work, but they can concentrate on things they enjoy doing like playing games or watching their favorite cartoons or writing sentences without punctuation.",
+      "reference_translation": "ஏ டி டி உள்ள குழந்தைகள், பள்ளி வேலை போன்ற ஒரு பொருளில் கவனம் செலுத்தக் கஷ்டப்படுவார்கள் ஆனால் அவர்கள் விரும்பும் விளையாட்டு அல்லது அவர்கள் விரும்பும் கேலிச் சித்திரங்கள் பார்ப்பது  அல்லது சொற்றொடர்களை நிறுத்தக் குறியீடுகளில்லாமல் எழுதுவது போன்றவற்றில் பெருங்கவனம் செலுத்துவார்கள்.",
+      "model_translation": "ADD குழந்தைகளுக்கு பள்ளிப் பாடங்களில் கவனம் செலுத்துவது கடினம், ஆனால் அவர்கள் விரும்பும் விஷயங்களைச் செய்யும்போது அவர்கள் கவனம் செலுத்த முடியும், அதாவது விளையாட்டுகளை விளையாடுவது அல்லது தங்கள் விருப்பமான கார்ட்டூன்களைப் பார்ப்பது அல்லது வாக்கியங்கள் இல்லாமல் எழுதுவது.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: Children with ADD have a hard time focusing on things like school work, but they can concentrate on things they enjoy doing like playing games or watching their favorite cartoons or writing sentences without punctuation.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 32,
+      "source_text": "Phases happen because only the side of Venus (or of the Moon) facing the Sun is lighted. The phases of Venus supported the theory of Copernicus that the planets go around the Sun.",
+      "reference_translation": "வெள்ளியின் (அல்லது நிலவின்) சூரியனைப் பார்த்த பக்கம் மட்டுமே ஒளிர்வதால் கட்டங்கள் ஏற்படுகின்றன. வெள்ளியின் கட்டங்கள், கோள்கள் சூரியனைச் சுற்றுகின்றன என்ற கோப்பார்னிகசின் தேற்றத்தை உறுதிப் படுத்துகின்றன.",
+      "model_translation": "Venus phases happen because the side facing the sun is lit, and the other side is dark. This supports the Copernican theory of the planets going around the sun.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: Phases happen because only the side of Venus (or of the Moon) facing the Sun is lighted. The phases of Venus supported the theory of Copernicus that the planets go around the Sun.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 33,
+      "source_text": "However, new evidence suggests that the Moriori were a group of mainland Maori who migrated from New Zealand to the Chatham Islands, developing their own distinctive, peaceful culture.",
+      "reference_translation": "இருப்பினும், மோரியோரி என்பது நியூஜிலாந்தின் பிரதான பகுதியான மாஓரி குழு சத்தாம் தீவிற்கு  குடிபெயர்ந்து தமக்கென தனித்துவமிக்க அமைதியான கலாசாரத்தை வளர்த்தனர் என புதிய சான்றுகள் தெரிவிக்கின்றன.",
+      "model_translation": "எனினும், புதிய சான்றுகள் மோரியோரி மக்கள் பிரதான நிலப்பகுதியைச் சேர்ந்த மாவோரிகள் என்று கூறுகின்றன, அவர்கள் தங்கள் சொந்த தனித்துவமான, அமைதியான கலாச்சாரத்தை உருவாக்கினர். </s>",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: However, new evidence suggests that the Moriori were a group of mainland Maori who migrated from New Zealand to the Chatham Islands, developing their own distinctive, peaceful culture.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 34,
+      "source_text": "The country's supreme leader, Ayatollah Ali Khamenei, has described the dependency on oil as \"a trap\" dating from before Iran's Islamic revolution in 1979 and from which the country should free itself.",
+      "reference_translation": "\"நாட்டின் உயர்ந்த தலைவர், அயதுல்லா அலி கமேனி, 1979-ஆம் ஆண்டு ஈரானின் இஸ்லாமிய புரட்சிக்கு முந்தைய காலத்திலிருந்து எண்ணெய்யைச் சார்ந்து இருப்பது, \"\"ஒரு பொறி\"\" என்று விவரித்தார், அதிலிருந்து நாடு தன்னை விடுவித்துக் கொள்ளவேண்டும் என்றும் கூறினார்.\"",
+      "model_translation": "அயதுல்லா அலி கமேனி நாட்டின் உச்ச தலைவர், எண்ணெய் மீதான சார்பை \"ஒரு வலையம்\" என்று குறிப்பிட்டுள்ளார், இது ஈரானின் இஸ்லாமிய புரட்சிக்கு முந்தையது, அதிலிருந்து நாடு விடுபட வேண்டும் என்று கூறியுள்ளார். </s>",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: The country's supreme leader, Ayatollah Ali Khamenei, has described the dependency on oil as \"a trap\" dating from before Iran's Islamic revolution in 1979 and from which the country should free itself.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 35,
+      "source_text": "They are superior to web proxies for several reasons: They re-route all Internet traffic, not only http.",
+      "reference_translation": "பல காரணங்களுக்காக அவை உயர்தர இணைய பரொக்ஸிகள் ஆகும். அவை ஹெச் டி டி பி யை மட்டுமல்லாமல் எல்லா இணைய போக்குவரத்தை மட்டுமல்லாமல் திருப்பி விடுகின்றன.",
+      "model_translation": "வெப் ப்ராக்ஸிகளை விட அவை பல நன்மைகளைக் கொண்டுள்ளன: அவை அனைத்து இணைய போக்குவரத்தையும் திருப்பிவிடுகின்றன, வெறும் http ஐ மட்டும் அல்ல.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: They are superior to web proxies for several reasons: They re-route all Internet traffic, not only http.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 36,
+      "source_text": "At a minimum, you need footwear with suitable soles. Summer shoes are usually very slippery on ice and snow, even some winter boots are deficient.",
+      "reference_translation": "குறைந்தபட்சமாக, உங்கள் உள்ளங்கால்களைப் பாதுகாக்க ஏற்ற விதமான காலணிகள் உங்களுக்குத் தேவை. வெயில் கால பாதணிகள் பனி மற்றும் பனிக் கட்டியில் வழுக்கும் தன்மையுடையதாக இருக்கும், சில குளிர்கால பூட்டுகளும் குறையுடையவாகவே உள்ளன.",
+      "model_translation": "ஒரு குறைந்தபட்சம், நீங்கள் பொருத்தமான சாக்ஸ் கொண்ட காலணிகளை அணிய வேண்டும். கோடை கால ஷூக்கள் பொதுவாக பனி மற்றும் பனியில் மிகவும் ஒட்டும் தன்மை கொண்டவை, சில குளிர்கால பூட்ஸ்கள் போதுமானதாக இல்லை.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: At a minimum, you need footwear with suitable soles. Summer shoes are usually very slippery on ice and snow, even some winter boots are deficient.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 37,
+      "source_text": "Robert Hooke, a biologist from England, saw small squares in cork with a microscope.",
+      "reference_translation": "இங்கிலாந்தைச் சேர்ந்த உயிரியலாளர் ராபர்ட் ஹூக், நுண்ணோக்கியில், கார்க்கில் சிறிய சதுரங்களைக் கண்டார்.",
+      "model_translation": "ராபர்ட் ஹூக் என்பவர் இங்கிலாந்தைச் சேர்ந்த ஒரு விஞ்ஞானி, அவர் நுண்ணோக்கியைப் பயன்படுத்தி கார்க் துண்டுகளில் சிறிய சதுரங்களைப் பார்த்தார்.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: Robert Hooke, a biologist from England, saw small squares in cork with a microscope.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 38,
+      "source_text": "Families with children are a rare sight, but some hostels do allow them in private rooms.",
+      "reference_translation": "குழந்தைகள் உடனான குடும்பத்தை பார்ப்பது ஓர் அரிய காட்சி, இருப்பினும் சில தங்கும் விடுதிகள் அவர்களை தனி தங்கும் அறைகளில் அனுமதிக்கின்றன.",
+      "model_translation": "குழந்தைகளுடன் கூடிய குடும்பங்கள் அரிதாகவே காணப்படுகின்றன, ஆனால் சில விடுதிகள் அவற்றை தனி அறைகளில் தங்க அனுமதிக்கின்றன.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: Families with children are a rare sight, but some hostels do allow them in private rooms.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 39,
+      "source_text": "Although its physical state may change, its chemical state remains the same.",
+      "reference_translation": "அதன் உருவத்தின் நிலை மாறக்கூடும் என்றாலும், அதன் வேதிநிலை அப்படியே இருக்கிறது.",
+      "model_translation": "அதன் இயற்பியல் நிலை மாறலாம், ஆனால் வேதியியல் நிலை ஒரே மாதிரியாக இருக்கும்.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: Although its physical state may change, its chemical state remains the same.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 40,
+      "source_text": "Also, in warmer climates bacteria both grow more quickly and survive longer outside the body.",
+      "reference_translation": "மேலும், மிதமான காலநிலைகளில் உடலுக்கு வெளியே பாக்டீரியாவின் வளர்ச்சி விரைவாகவும் நீடித்து வாழக்கூடியதாகவும் இருக்கும்.",
+      "model_translation": "மேலும், வெப்பமான காலநிலைகளில், பாக்டீரியாக்கள் வேகமாக வளர்கின்றன மற்றும் உடலுக்கு வெளியே அதிக நேரம் உயிர்வாழ்கின்றன. </s>",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: Also, in warmer climates bacteria both grow more quickly and survive longer outside the body.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 41,
+      "source_text": "Do not sleep on a mattress or pad on the ground in areas where you do not know the local fauna.",
+      "reference_translation": "அந்தப் பகுதியில் வாழும் விலங்குகளைப் பற்றி நீங்கள் அறிந்திருக்காவிட்டால் வெறும் தரையில் பாயிலோ அல்லது ஏதேனும் துணியை விரித்தோ படுத்து உறங்க வேண்டாம்.",
+      "model_translation": "உள்ளூர் வனவிலங்குகள் பற்றி உங்களுக்குத் தெரியாவிட்டால், தரையில் அல்லது படுக்கையில் தூங்குவதைத் தவிர்க்கவும்.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: Do not sleep on a mattress or pad on the ground in areas where you do not know the local fauna.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 42,
+      "source_text": "There are many theories to how Sanskrit came into existence. One of them is about an Aryan migration from the west into India who brought their language with them.",
+      "reference_translation": "சமஸ்கிருதம் எப்படி தோன்றியது என்பதற்கு பல வாதங்கள் உள்ளன. அதில் ஒன்று (one) மேற்கிலிருந்து இடம்பெயர்ந்து வந்த ஆரியர்கள், அவர்களுடன் கொண்டு வந்த மொழி என்பதாகும்.",
+      "model_translation": "சம்ஸ்கிருதத்தின் தோற்றம் குறித்து பல கோட்பாடுகள் உள்ளன. அவற்றில் ஒன்று, மேற்கு நாடுகளிலிருந்து வந்த ஆரியர்கள் தங்கள் மொழியை இந்தியாவுக்கு கொண்டு வந்தனர் என்பதாகும்.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: There are many theories to how Sanskrit came into existence. One of them is about an Aryan migration from the west into India who brought their language with them.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 43,
+      "source_text": "Especially in your initial days, consider splurging on Western-style and -quality hotels, food, and services to help acclimatize.",
+      "reference_translation": "உனது துவக்க நாட்களில், மேற்கத்திய பாணியில் ஆடம்பரமாக இருப்பதையும், பழக்கத்தில் கொண்டு வர தரமான ஹோட்டல்கள், உணவு மற்றும் சேவைகளை கருத்தில் கொள்.",
+      "model_translation": "குறிப்பாக உங்கள் ஆரம்ப நாட்களில், மேற்கத்திய பாணியிலான மற்றும் தரமான ஹோட்டல்கள், உணவு மற்றும் சேவைகளில் முதலீடு செய்யுங்கள், அதனால் நீங்கள் அதற்கேற்ப மாற்றிக் கொள்ளலாம்.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: Especially in your initial days, consider splurging on Western-style and -quality hotels, food, and services to help acclimatize.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 44,
+      "source_text": "Animals are made of many cells. They eat things and digest them inside. Most animals can move.",
+      "reference_translation": "விலங்குகள் பல செல்களால் ஆனவை. அவைகள் உணவுகளைச் சாப்பிட்டு மற்றும் உள்ளே அவற்றை ஜீரணிக்கிறது. பெரும்பாலான விலங்குகளால் நகரமுடியும்.",
+      "model_translation": "விலங்குகள் பல உயிரணுக்களால் ஆனவை. அவை உணவை உட்கொள்கின்றன மற்றும் செரிமானம் செய்கின்றன. பெரும்பாலான விலங்குகள் நகர முடியும்.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: Animals are made of many cells. They eat things and digest them inside. Most animals can move.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 45,
+      "source_text": "Hostels cater primarily to young people – a typical guest is in their twenties – but you can often find older travellers there too.",
+      "reference_translation": "விடுதிகள் முதன்மையாக இளையவர்களுக்கே உதவுகின்றன  ஆனால் நீங்கள் அங்கே வயதான பயணிகளையும் பலமுறை காண முடியும்.",
+      "model_translation": "ஹாஸ்டல்கள் முதன்மையாக இளைஞர்களுக்கு சேவை செய்கின்றன - ஒரு வழக்கமான விருந்தினர் இருபதுகளின் பிற்பகுதியில் இருப்பார் - ஆனால் நீங்கள் பெரும்பாலும் வயதான பயணிகளையும் காணலாம்.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: Hostels cater primarily to young people – a typical guest is in their twenties – but you can often find older travellers there too.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 46,
+      "source_text": "Every year around October nearly 1.5 million herbivores travel towards the southern plains, crossing the Mara River, from the northern hills for the rains.",
+      "reference_translation": "ஒவ்வொரு ஆண்டும் அக்டோபரில் சுமார் 1.5 மில்லியன் தாவர உண்ணிகள், தெற்கு சமவெளியை நோக்கி, மாரா நதியைக் கடந்து, வடக்கு மலைகளிலிருந்து மழைக்காகப் பயணிக்கின்றன.",
+      "model_translation": "ஒவ்வொரு ஆண்டும் அக்டோபர் மாதத்தில் சுமார் 1,500,000 தாவர உண்ணிகள் வடக்கு மலைகளிலிருந்து தெற்கு சமவெளிகளுக்கு பயணம் செய்கின்றன, மாரா நதியைக் கடக்கின்றன.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: Every year around October nearly 1.5 million herbivores travel towards the southern plains, crossing the Mara River, from the northern hills for the rains.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 47,
+      "source_text": "It is believed by some, including John Grant, that both the funding crunch and a shift in the philosophy of educational television programming contributed to ending the series.",
+      "reference_translation": "ஜான் கிராண்ட் உட்பட சிலர், நிதி நெருக்கடி மற்றும் கல்வி தொலைக்காட்சி நிகழ்ச்சித் தத்துவத்தில் ஏற்பட்ட மாற்றம் ஆகியவை இந்தத் தொடரை முடிவுக்குக் கொண்டு வர காரணமாக இருந்தவை என்று நம்பப்படுகிறது.",
+      "model_translation": "கல்வி தொலைக்காட்சியின் தத்துவத்தில் ஏற்பட்ட மாற்றம் மற்றும் நிதி நெருக்கடி காரணமாக கல்வி தொலைக்காட்சி நிகழ்ச்சிகள் நிறுத்தப்பட்டதாக நம்பப்படுகிறது.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: It is believed by some, including John Grant, that both the funding crunch and a shift in the philosophy of educational television programming contributed to ending the series.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 48,
+      "source_text": "Seven points behind, Johnson is second with 2,243.",
+      "reference_translation": "7 புள்ளிகளுக்கு பின்னால் ஜான்சன் 2,243 புள்ளிகளுடன் இரண்டாவது இடத்தில் உள்ளார்.",
+      "model_translation": "ஜான்சன் ஏழு புள்ளிகளால் பின்தங்கியிருக்கிறார், அவர் இரண்டாவது இடத்தில் உள்ளார், அவருக்கு 2242 புள்ளிகளும் உள்ளன.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: Seven points behind, Johnson is second with 2,243.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 49,
+      "source_text": "Convergent thinking patterns are problem solving techniques that unite different ideas or fields to find a solution.",
+      "reference_translation": "ஒருங்கிணைந்த சிந்தனை முறைகள் என்பது பல்வேறு யோசனைகளை பற்றி தீர்வு காண்பது அல்லது புலங்கள் பற்றிய ஒன்றிணைக்கும் சிக்கல்களை தீர்க்கும் நுட்பங்கள் ஆகும்.",
+      "model_translation": "ஒருங்கிணைந்த சிந்தனை வடிவங்கள் சிக்கல்களைத் தீர்க்கும் நுட்பங்கள், அவை வெவ்வேறு யோசனைகள் அல்லது துறைகளை ஒன்றிணைத்து ஒரு தீர்வைக் கண்டறிகின்றன.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: Convergent thinking patterns are problem solving techniques that unite different ideas or fields to find a solution.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 50,
+      "source_text": "This is becoming less of an issue as lens manufacturers achieve higher standards in lens production.",
+      "reference_translation": "லென்ஸ் உற்பத்தியாளர்கள் உயர்தரமான  லென்ஸ் உற்பத்தி செய்வதால் இதில் பிரச்சினை குறைவாக உள்ளது.",
+      "model_translation": "இந்த பிரச்சினை குறைந்துவருகிறது, ஏனெனில் லென்ஸ் உற்பத்தியாளர்கள் சிறந்த தரமான லென்ஸ்களை உற்பத்தி செய்கிறார்கள்.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: This is becoming less of an issue as lens manufacturers achieve higher standards in lens production.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 51,
+      "source_text": "Until now, AOL has been able to move and develop the IM market at its own pace, due to its widespread use within the United States.",
+      "reference_translation": "இப்போது வரை, AOL அமெரிக்காவிற்குள் பரவலாகப் பயன்படுத்தப்படுவதால், IM சந்தையை அதனுடைய வேகத்தில் நகர்த்தவும் மேம்படுத்தவும் முடிகிறது.",
+      "model_translation": "ஏஓஎல் அதன் சொந்த வேகத்தில் ஐஎம் சந்தையை நகர்த்தவும் வளரவும் முடிந்தது, ஏனெனில் இது அமெரிக்காவில் பரவலாகப் பயன்படுத்தப்படுகிறது.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: Until now, AOL has been able to move and develop the IM market at its own pace, due to its widespread use within the United States.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 52,
+      "source_text": "Most of the temple festivals is celebrated as part of temple's anniversary or presiding deity's birthday or any other major event associated with the temple.",
+      "reference_translation": "அநேகமான கோயில் திருவிழாக்கள், கோயிலின் ஆண்டு விழாவையோ, முக்கிய கடவுளின் பிறந்த நாளையோ அல்லது அந்த கோயிலுடன் தொடர்புடைய பெரிய நிகழ்வையோ கொண்டாடுகின்றன.",
+      "model_translation": "பெரும்பாலான கோயில் திருவிழாக்கள் கோயிலின் ஆண்டு நிறைவு அல்லது தலைமை தெய்வத்தின் பிறந்த நாள் அல்லது வேறு ஏதேனும் முக்கிய நிகழ்வுடன் தொடர்புடையவை.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: Most of the temple festivals is celebrated as part of temple's anniversary or presiding deity's birthday or any other major event associated with the temple.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 53,
+      "source_text": "For most countries, you will need an offer letter from the institution you wish to study at, and also evidence of funds to support yourself for at least the first year of your course.",
+      "reference_translation": "பல நாடுகளில், நீங்கள் படிக்க இருக்கும் நிறுவனத்திடமிருந்து ஒரு அழைப்புக் கடிதம் மற்றும் குறைந்த பட்சம் உங்கள் பாடத்திட்டத்தின் முதல் வருடத்திற்கு உங்கள் செலவுக்கான நிதி ஆதாரத்தின் நிரூபணம் தேவைப்படும்.",
+      "model_translation": "பெரும்பாலான நாடுகளுக்கு, நீங்கள் விண்ணப்பிக்கும் நிறுவனத்திடமிருந்து ஒரு வேலை வாய்ப்பு கடிதம் தேவைப்படும், மேலும் முதல் ஆண்டிற்கான உங்கள் சொந்த செலவுகளை ஈடு செய்ய போதுமான நிதி ஆதாரம் தேவைப்படும்.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: For most countries, you will need an offer letter from the institution you wish to study at, and also evidence of funds to support yourself for at least the first year of your course.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 54,
+      "source_text": "Most of the items buried with Tutankhamun have been well preserved, including thousands of artefacts made from precious metals and rare stones.",
+      "reference_translation": "புதைக்கப்பட்ட பெரும்பாலான பொருட்கள், துட்டன்காமூனுடன் நன்கு பாதுகாக்கப்பட்டுள்ளன, இதில் விலைமதிப்பற்ற உலோகங்கள் மற்றும் அரிய கற்களால் ஆன ஆயிரக்கணக்கான கலைப்பொருட்கள் உள்ளன.",
+      "model_translation": "தட்ன்காமுன் கல்லறையில் கண்டுபிடிக்கப்பட்ட பெரும்பாலான பொருட்கள் நன்கு பாதுகாக்கப்பட்டுள்ளன, அவற்றில் ஆயிரக்கணக்கான பொருட்கள் விலையுயர்ந்த உலோகங்கள் மற்றும் அரிய கற்கள் ஆகியவற்றால் செய்யப்பட்டுள்ளன.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: Most of the items buried with Tutankhamun have been well preserved, including thousands of artefacts made from precious metals and rare stones.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 55,
+      "source_text": "Blood goes away from the heart in tubes called arteries and comes back to the heart in tubes called veins. The smallest tubes are called capillaries.",
+      "reference_translation": "ரத்தம் இதயத்திலிருந்து தமணிகள் என்ற குழாய் மூலம் செல்கின்றன மற்றும் நரம்புகள் எனும் குழாய்கள் வழியே திரும்ப இதயத்திற்கு வருகின்றன. அவற்றின் மிகச்சிறிய குழாய்கள் தந்துகிகள் என அழைக்கப் படுகின்றன.",
+      "model_translation": "இரத்தம் தமனிகள் வழியாக இதயத்திலிருந்து வெளியே சென்று நரம்புகள் வழியாக இதயத்திற்குத் திரும்புகிறது. மிகச்சிறிய குழாய்கள் கேபில்லரிஸ் ஆகும்.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: Blood goes away from the heart in tubes called arteries and comes back to the heart in tubes called veins. The smallest tubes are called capillaries.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 56,
+      "source_text": "Internationally, there are nearly 200 running tour organizations. Most of them operate independently.",
+      "reference_translation": "சர்வதேச அளவில், ஏறத்தாழ 200 சுற்றுப்பயண நிர்வாக நிறுவனங்கள் உள்ளன. அவற்றில் பெரும்பாலானவை சுயாதீனமாக இயங்குகின்றன.",
+      "model_translation": "சர்வதேச அளவில், 190க்கும் மேற்பட்ட ரன்னிங் டூர் அமைப்புகள் இயங்கி வருகின்றன. அவற்றில் பெரும்பாலானவை சுயாதீனமாக இயங்குகின்றன.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: Internationally, there are nearly 200 running tour organizations. Most of them operate independently.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 57,
+      "source_text": "News spread in the Red Lake community today as funerals for Jeff Weise and three of the nine victims were held that another student was arrested in connection with the school shootings of March 21.",
+      "reference_translation": "மார்ச் 21-ஆம் தேதி நடந்த பள்ளிக்கூடத் துப்பாக்கிச் சூடு தொடர்பாக மற்றொரு மாணவர் கைது செய்யப்பட்டதாக, ஜெஃப் வெயிஸ் மற்றும் பாதிக்கப்பட்ட ஒன்பது பேரில் 3 பேர் இறுதிச் சடங்குகளில், இன்று ரெட் லேக் சமூகத்தில் செய்தி பரவியது.",
+      "model_translation": "ரெட் லேக் சமூகத்தில் இன்று செய்திகள் வேகமாகப் பரவியது, ஏனெனில் ஜெஃப் வெயிஸ் மற்றும் ஒன்பது பாதிக்கப்பட்டவர்களில் மூன்று பேருக்கான இறுதிச் சடங்குகள் நடத்தப்பட்டன, மேலும் மற்றொரு மாணவர் பள்ளி துப்பாக்கிச் சூடு தொடர்பாக கைது செய்யப்பட்டார்.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: News spread in the Red Lake community today as funerals for Jeff Weise and three of the nine victims were held that another student was arrested in connection with the school shootings of March 21.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 58,
+      "source_text": "Helicopters rescued the twelve crewmembers and the only injury was a broken nose.",
+      "reference_translation": "மூக்கு மட்டும் அடிபட்ட பன்னிரண்டு நபர்கள் உடைய குழுக்களை ஹெலிகாப்டர்கள் மீட்டது.",
+      "model_translation": "ஹெலிகாப்டர்கள் பன்னிரண்டு ஊழியர்களையும், ஒரே ஒரு காயத்தையும் மீட்டன.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: Helicopters rescued the twelve crewmembers and the only injury was a broken nose.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 59,
+      "source_text": "Luxembourg has a long history but its independence dates from 1839.",
+      "reference_translation": "லக்சம்பர்க் ஒரு நீண்ட வரலாற்றைக் கொண்டுள்ளது, ஆனால் அதன் சுதந்திரம் 1839-ஆம் ஆண்டு முதல் தொடங்குகிறது.",
+      "model_translation": "லக்சம்பர்க் ஒரு நீண்ட வரலாற்றைக் கொண்டுள்ளது, ஆனால் அதன் சுதந்திரம் 19ஆம் நூற்றாண்டில் இருந்து வருகிறது.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: Luxembourg has a long history but its independence dates from 1839.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 60,
+      "source_text": "He has also been accused previously of copyright infringement, but was not charged.",
+      "reference_translation": "அவர் இதற்கு முன்னரும் பதிப்புரிமையை  மீறியதாக குற்றம் சாட்டப்பட்டிருந்தாலும், தண்டிக்கப் படவில்லை.",
+      "model_translation": "அவர் முன்பு பதிப்புரிமை மீறலுக்காக குற்றம் சாட்டப்பட்டார், ஆனால் அவர் மீது குற்றம் சாட்டப்படவில்லை.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: He has also been accused previously of copyright infringement, but was not charged.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 61,
+      "source_text": "For a day hike along an easy trail little preparations are needed, and any moderately fit person can enjoy them.",
+      "reference_translation": "வாழ்க்கைப்பாதையில் ஒரு நாளைக் கடக்க சிறு முன்னேற்பாடுகள் தேவை, மற்றும் மிதமான தகுதியுள்ள எந்த நபரும் அவற்றை செய்ய முடியும்.",
+      "model_translation": "ஒரு நாள் எளிதான பாதையில் ஹைகிங் செய்ய, சிறிய ஏற்பாடுகள் மட்டுமே தேவை, மேலும் மிதமான உடற்தகுதி கொண்ட எவரும் அவற்றை அனுபவிக்க முடியும்.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: For a day hike along an easy trail little preparations are needed, and any moderately fit person can enjoy them.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 62,
+      "source_text": "That said, expect to be out of breath, and take care in the steeper portions, especially when wet, as it can become dangerous quickly.",
+      "reference_translation": "மூச்சுத் விடுவதில் சிரமம் வரலாம், மற்றும் குறிப்பாக ஈரமாக இருக்கும் போது செங்குத்தான பகுதிகளில் கவனமாக இருங்கள், ஏனெனில் அது விரைவாக ஆபத்தானதாக மாறக்கூடும்.",
+      "model_translation": "அது கூறுவது போல், நீங்கள் மூச்சுத்திணறல் ஏற்படும் என்று எதிர்பார்க்கலாம், மேலும் செங்குத்தான பகுதிகளில், குறிப்பாக ஈரமாக இருக்கும்போது, கவனமாக இருக்க வேண்டும், ஏனெனில் அது விரைவாக ஆபத்தானதாக மாறும்.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: That said, expect to be out of breath, and take care in the steeper portions, especially when wet, as it can become dangerous quickly.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 63,
+      "source_text": "These requirements may often depend on what countries a traveller has visited or intends to visit.",
+      "reference_translation": "இந்த தேவைகள் பெரும்பாலும் ஒரு பயணி எந்த நாடுகளுக்கு பயணம் செய்துள்ளார் அல்லது பயணிக்க விரும்புகிறார் என்பதைப் பொறுத்து இருக்கலாம்.",
+      "model_translation": "இந்த நிபந்தனைகள் பெரும்பாலும் பயணிகள் பார்வையிட்ட அல்லது பார்வையிடத் திட்டமிட்டுள்ள நாடுகளைப் பொறுத்தது.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: These requirements may often depend on what countries a traveller has visited or intends to visit.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 64,
+      "source_text": "While this is a very common activity, it is prohibited by Disney: the tickets are non-transferable.",
+      "reference_translation": "இது ஒரு சாதாரண செயலாக இருப்பினும், Disney ஆல் தடைசெய்யப்பட்டுள்ளது: டிக்கெட்டுகள் மாற்ற முடியாதவைகளாகும்.",
+      "model_translation": "இந்த டிக்கெட்டுகள் மாற்றமுடியாதவை.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: While this is a very common activity, it is prohibited by Disney: the tickets are non-transferable.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 65,
+      "source_text": "Cold weather is perhaps the only real danger the unprepared will face.",
+      "reference_translation": "ஆயத்தமில்லாதவர்கள் எதிர்கொள்ளும் உண்மையான ஆபத்து குளிர்கால வானிலை மட்டுமே.",
+      "model_translation": "குளிர் காலநிலை என்பது தயாராக இல்லாதவர்களுக்கு மட்டுமே உண்மையான ஆபத்து.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: Cold weather is perhaps the only real danger the unprepared will face.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 66,
+      "source_text": "Nowadays air travel is only rarely booked directly through the airline without first searching and comparing prices.",
+      "reference_translation": "இப்போதெல்லாம் விமானப் பயணமானது மற்ற விமான நிறுவனங்களின் விலைகளுடன் ஒப்பிடாமல் நேரடியாக மட்டுமே முன்பதிவு செய்யப்படுவது மிகவும் குறைவாகிவிட்டது.",
+      "model_translation": "இன்றைய காலகட்டத்தில் விமான டிக்கெட்டுகளை முன்பதிவு செய்வதற்கு முன்பாக விமான நிறுவனங்களின் விலைகளை முதலில் தேடி ஒப்பிட்டுப் பார்ப்பது வழக்கம் இல்லை.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: Nowadays air travel is only rarely booked directly through the airline without first searching and comparing prices.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 67,
+      "source_text": "Turkey's area makes it the world's 37th-largest country, and is about the size of Metropolitan France and the United Kingdom combined.",
+      "reference_translation": "துருக்கியின் பரப்பளவு அதை உலகின் 37 வது பெரிய நாடாக ஆக்குகிறது மற்றும் ஏறத்தாழ பிரான்சின் பெருநகரம் மற்றும் பிரிட்டிஷ் கூட்டரசு இரண்டும் சேர்ந்த அளவு உள்ளது.",
+      "model_translation": "துருக்கியின் பரப்பளவு மெட்ரோபாலிடன் ஃபிரான்சு மற்றும் ஐக்கிய இராச்சியம் ஆகிய இரண்டையும் விடப் பெரியது.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: Turkey's area makes it the world's 37th-largest country, and is about the size of Metropolitan France and the United Kingdom combined.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 68,
+      "source_text": "This is the first time a conviction has been gained using the legislation enacted in 2003 to curb bulk e-mail, aka spam, from unsolicited distribution into users mailboxes.",
+      "reference_translation": "பயனர்களின் மின்னஞ்சல் பெட்டிகளில் அடையாளம் தெரியாத அஞ்சல் வரவுகள், குவியும் மின்னஞ்சல், அல்லது ஸ்பேம் ஆகியவற்றைக் கட்டுப்படுத்துவதற்கு, 2003-ஆம் ஆண்டில் இயற்றப்பட்ட சட்டத்தைப் பயன்படுத்தி ஒரு தண்டனை அளிக்கப்படுவது இதுவே முதல் முறை.",
+      "model_translation": "இதுதான் முதல் முறையாக bulk email, அதாவது ஸ்பேம் என்று அழைக்கப்படும் தேவையற்ற மின்னஞ்சல்களை அனுப்புவதைத் தடுக்கும் சட்டத்தை அமல்படுத்தியதன் மூலம் ஒரு குற்றவாளி குற்றவாளியாக நிரூபிக்கப்பட்டுள்ளது.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: This is the first time a conviction has been gained using the legislation enacted in 2003 to curb bulk e-mail, aka spam, from unsolicited distribution into users mailboxes.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 69,
+      "source_text": "Auxiliary languages are artificial or constructed languages created with the intent of facilitating communication between peoples who would otherwise have difficulty communicating.",
+      "reference_translation": "துணை மொழிகள் தொடர்புகொள்வதில் சிரமம் உள்ள மக்களிடையே தகவல் தொடர்புகளை எளிதாக்கும் நோக்கத்துடன் உருவாக்கப்பட்ட செயற்கையான அல்லது வடிவமைக்கப்பட்ட மொழியாகும்.",
+      "model_translation": "உதவி மொழிகள் என்பது செயற்கை அல்லது உருவாக்கப்பட்ட மொழிகள் ஆகும், அவை மற்றவர்களுக்குத் தொடர்புகொள்வதை எளிதாக்குவதற்காகவே உருவாக்கப்படுகின்றன.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: Auxiliary languages are artificial or constructed languages created with the intent of facilitating communication between peoples who would otherwise have difficulty communicating.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 70,
+      "source_text": "Around 11:29, the protest moved up Whitehall, past Trafalgar Square, along the Strand, passing by Aldwych and up Kingsway towards Holborn where the Conservative Party were holding their Spring Forum in the Grand Connaught Rooms hotel.",
+      "reference_translation": "11:29 அளவில் அந்த போராட்டம், ஒயிட்ஹாலிலிருந்து ட்ரஃபால்கர் சதுக்கத்தைத் தாண்டி, ஸ்ட்ரான்ட், ஆல்ட்விச், கிங்ஸ் வே வழியாக ஹால்பார்ன் நோக்கிச் சென்றது. அங்கே கிராண்ட் கன்னாட் ரூம்ஸ் ஓட்டலில் கன்சர்வேட்டிவ் கட்சியினர் அவர்களது வசந்த கால மாநாட்டை நடத்திக் கொண்டிருந்தனர்.",
+      "model_translation": "ஊரடங்கு உத்தரவு அமல்படுத்தப்பட்ட பிறகு, ஆர்ப்பாட்டக்காரர்கள் வெள்ளை மாளிகை நோக்கி நகர்ந்தனர், டிராஃபால்கர் சதுக்கத்தைக் கடந்து, ஸ்ட்ராண்ட் வழியாக, ஏல்ட்விச்சைக் கடந்து, கிங்ஸ்வே வழியாக ஹோல்போர்னுக்குச் சென்றனர், அங்கு கன்சர்வேடிவ் கட்சி தங்கள் வசந்தகால மன்றத்தை நடத்திக் கொண்டிருந்தது.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: Around 11:29, the protest moved up Whitehall, past Trafalgar Square, along the Strand, passing by Aldwych and up Kingsway towards Holborn where the Conservative Party were holding their Spring Forum in the Grand Connaught Rooms hotel.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 71,
+      "source_text": "Many governments require visitors entering, or residents leaving, their countries to be vaccinated for a range of diseases.",
+      "reference_translation": "பல அரசாங்கங்களில் வருகையாளர்கள் நுழையும் போது அல்லது குடியிறுப்பாளர்கள் வெளியேறும் போது பல்வேறு வகையான நோய் தடுப்பூசிகளை தங்கள் நாடுகளில் போட வேண்டும்.",
+      "model_translation": "பல நாடுகள் தங்கள் நாடுகளுக்குள் நுழையும் அல்லது வெளியேறும் பார்வையாளர்களுக்கு பல்வேறு நோய்களுக்கு எதிராக தடுப்பூசி போட வேண்டும் என்று கோருகின்றன.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: Many governments require visitors entering, or residents leaving, their countries to be vaccinated for a range of diseases.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 72,
+      "source_text": "With this arrangement in place, this freedom might end.",
+      "reference_translation": "இந்த ஏற்பாடு நடைமுறையில் இருப்பதால், இந்தச் சுதந்திரம் முடிவுக்கு வரக்கூடும்.",
+      "model_translation": "இந்த ஏற்பாட்டின் கீழ், இந்த சுதந்திரம் முடிவுக்கு வரலாம்.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: With this arrangement in place, this freedom might end.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 73,
+      "source_text": "His name is still unknown to authorities, although they do know he is a member of the Uighur ethnic group.",
+      "reference_translation": "அதிகாரிகளுக்கு, அவர் உய்குர் இனக் குழுவின் உறுப்பினர் என்று அறிந்திருந்த போதிலும், அவரின் பெயர் இன்னும் தெரியவில்லை.",
+      "model_translation": "அவரது பெயர் இன்னும் அதிகாரிகளால் அறியப்படவில்லை, இருப்பினும் அவர் உய்குர் இனக்குழுவைச் சேர்ந்தவர் என்பதை அவர்கள் அறிவார்கள்.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: His name is still unknown to authorities, although they do know he is a member of the Uighur ethnic group.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 74,
+      "source_text": "Bird flu, or more formally avian influenza, can infect both birds and mammals.",
+      "reference_translation": "பறவைக் காய்ச்சல், அல்லது முறையாகக் கூறவேண்டுமாயின் ஏவியன் இன்ஃப்லூயன்ஃஜா, பறவை மற்றும் பாலூட்டிகாள் இராண்டையும் பாதிக்கும்.",
+      "model_translation": "பறவை காய்ச்சல், அல்லது அதிகாரப்பூர்வமாக ஏவியன் இன்ஃப்ளூயன்ஸா, பறவைகள் மற்றும் பாலூட்டிகள் இரண்டையும் பாதிக்கலாம். </s>",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: Bird flu, or more formally avian influenza, can infect both birds and mammals.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 75,
+      "source_text": "Natural factors can intersect to produce ideal conditions, allowing this algae to increase in number dramatically.",
+      "reference_translation": "இயற்கை காரணிகள் சிறந்த நிலையினை உருவாக்க குறுக்கிடுவதன் காரணமாக பாசிகள் வியத்தகு அளவில் அதிகரிக்க அனுமதிக்கிறது.",
+      "model_translation": "இயற்கை காரணிகள் ஒன்றிணைந்து, இந்த ஆல்காக்களின் எண்ணிக்கையை வியக்கத்தக்க வகையில் அதிகரிக்கும் சூழ்நிலைகளை உருவாக்குகின்றன.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: Natural factors can intersect to produce ideal conditions, allowing this algae to increase in number dramatically.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 76,
+      "source_text": "A traveller with piles of money might consider a round the world flight, broken up with stays in many of these hotels.",
+      "reference_translation": "இந்த ஹோட்டல்களில் பலவற்றில் தங்கி பணத்தைக் காலியாக்குவதை விட, பணக் குவியல்களை தன்னிடம் கொண்ட ஒரு பயணி உலகத்தைச் சுற்றி வருவதைக் கருத்தில் கொள்ளலாம்.",
+      "model_translation": "ஒரு பணக்கார பயணியர் பல ஹோட்டல்களில் தங்கி பல நாடுகளில் சுற்றிப் பார்க்க ஒரு சுற்று உலகப் பயணத்தை மேற்கொள்ளலாம்.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: A traveller with piles of money might consider a round the world flight, broken up with stays in many of these hotels.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 77,
+      "source_text": "An official with the gas company was reporting to the scene after a neighbor called about a gas leak.",
+      "reference_translation": "அருகில் உள்ள வீட்டுக்காரர் ஒருவர் எரிவாயு கசிவு பற்றி தகவல் தெரிவித்தவுடன் எரிவாயு நிறுவனத்தின் அதிகாரி அந்த இடத்திற்கு விரைந்தார்.",
+      "model_translation": "எரிவாயு நிறுவனத்தின் அதிகாரி ஒருவர் எரிவாயுவில் ஏற்பட்ட கசிவைப் பற்றி ஒரு அண்டை வீட்டுக்காரர் அழைத்த பிறகு சம்பவ இடத்திற்கு வந்தார்.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: An official with the gas company was reporting to the scene after a neighbor called about a gas leak.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 78,
+      "source_text": "Hesperonychus elizabethae is a species of the family Dromaeosauridae and is a cousin of Velociraptor .",
+      "reference_translation": "ஹெஸ்பெரோனிகஸ் எலிசபெதே, ட்ரோமேயோசாவ்ரிடே இனத்தைச் சேர்ந்தது மற்றும் வேலோசிராப்டரின் குடும்பம்.",
+      "model_translation": "ஹெஸ்பெரோனிச்சஸ் எலிசாபேட்டே என்பது ஒரு வகை பறக்கும் ஊர்வன மற்றும் வெலோசிராப்டரின் உறவினராகும்.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: Hesperonychus elizabethae is a species of the family Dromaeosauridae and is a cousin of Velociraptor .\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 79,
+      "source_text": "Apple CEO Steve Jobs unveiled the device by walking onto the stage and taking the iPhone out of his jeans pocket.",
+      "reference_translation": "ஆப்பிள் தலைமை நிர்வாக அதிகாரி ஸ்டீவ் ஜாப்ஸ், மேடை மீது வந்து தனது ஜீன்ஸ் பேண்ட் பாக்கெட்டிலிருந்து ஐபோனை வெளியே எடுத்து அதை வெளியிட்டார்.",
+      "model_translation": "ஆப்பிள் நிறுவனத்தின் தலைமை நிர்வாக அதிகாரியான ஸ்டீவ் ஜாப்ஸ், தனது பேண்ட் பாக்கெட்டில் இருந்து ஐபோனை எடுத்து மேடையில் ஏறி அதை வெளிப்படுத்தினார்.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: Apple CEO Steve Jobs unveiled the device by walking onto the stage and taking the iPhone out of his jeans pocket.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 80,
+      "source_text": "This is believed to be the fifth time in history that people have observed what turned out to be chemically confirmed martian material falling to Earth.",
+      "reference_translation": "வரலாற்றில் ஐந்தாவது முறையாக பூமியில் விழும் வேதியியலால் உறுதிப்படுத்தப்பட்ட செவ்வாய் கிரகப் பொருளை மக்கள் கவனித்துள்ளனர்.",
+      "model_translation": "இது வேதியியல் ரீதியாக உறுதிப்படுத்தப்பட்ட செவ்வாய்ப் பொருள் பூமியில் விழுந்ததாக நம்பப்படும் ஐந்தாவது சந்தர்ப்பம் என்று கருதப்படுகிறது. </s>",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: This is believed to be the fifth time in history that people have observed what turned out to be chemically confirmed martian material falling to Earth.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 81,
+      "source_text": "This makes inexpensive zoom lenses hard to use in low-light conditions without a flash.",
+      "reference_translation": "இந்த விலை குறைவான பெரிதாக்கு லென்ஸ்கள் வெளிச்சம் இல்லாமல் குறைந்த வெளிச்சத்தில் பயன்படுத்த கடினமானதாக ஆக்குகிறது.",
+      "model_translation": "இந்த குறைந்த வெளிச்சத்தில் ஃபிளாஷ் இல்லாமல் மலிவான ஜூம் லென்ஸ்களைப் பயன்படுத்துவது கடினம்.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: This makes inexpensive zoom lenses hard to use in low-light conditions without a flash.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 82,
+      "source_text": "He graduated from the College of Arts & Sciences of the University of Virginia in 1950 and was a significant donor to that institution.",
+      "reference_translation": "அவர் 1950-இல் வர்ஜீனியா பல்கலைக்கழகத்தின் கலை மற்றும் அறிவியல் கல்லூரியில் பட்டம் பெற்றார், மேலும் அந்த நிறுவனத்திற்குக் குறிப்பிடத்தகுந்த நன்கொடையாளராக இருந்தார்.",
+      "model_translation": "கலை மற்றும் அறிவியலின் பல்கலைக்கழகத்தின் கலை மற்றும் அறிவியல் கல்லூரியிலிருந்து அவர் பட்டம் பெற்றார், மேலும் அந்த நிறுவனத்திற்கு குறிப்பிடத்தக்க நன்கொடையாளராக இருந்தார்.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: He graduated from the College of Arts & Sciences of the University of Virginia in 1950 and was a significant donor to that institution.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 83,
+      "source_text": "Unlike other primates, hominids no longer use their hands in locomotion or bearing weight or swinging through the trees.",
+      "reference_translation": "மற்ற விலங்கினங்களைப் போலல்லாமல், மனிதப் பேரினம் இனி தங்கள் கைகளை இடப்பெயர்வுக்கு அல்லது எடையைத் தாங்குவதற்கு அல்லது மரங்களில் தொங்குவதற்கும் பயன்படுத்துவதில்லை.",
+      "model_translation": "மற்ற குரங்குகளைப் போலல்லாமல், மனிதர்கள் இனி தங்கள் கைகளைப் பயன்படுத்தி நடக்கவோ, நிற்கவோ அல்லது மரங்களை ஏறிச் செல்லவோ மாட்டார்கள்.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: Unlike other primates, hominids no longer use their hands in locomotion or bearing weight or swinging through the trees.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 84,
+      "source_text": "Moose (also known as elk) aren't inherently aggressive, but will defend themselves if they perceive a threat.",
+      "reference_translation": "கடமான்கள் (எல்க் என்றும் அழைக்கப் படுகிறது) இயல்பாக வலியச் சென்று தாக்குதல் நடத்தாது ஆனால் ஒரு ஆபத்து என்று தோன்றினால் தற்காத்துக் கொள்ளும்.",
+      "model_translation": "மவுஸ் (எல்க் என்றும் அழைக்கப்படுகிறது) இயல்பாகவே ஆக்ரோஷமாக இருப்பதில்லை, ஆனால் அச்சுறுத்தலுக்கு ஆளானால் தன்னைப் பாதுகாத்துக் கொள்ளும்.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: Moose (also known as elk) aren't inherently aggressive, but will defend themselves if they perceive a threat.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 85,
+      "source_text": "Jardín de la Unión. This space was built as the atrium for a 17th-century convent, of which the Templo de San Diego is the sole surviving building.",
+      "reference_translation": "ஜார்டின் டி லா யூனியன். இந்த இடம் 17 ஆம் நூற்றாண்டில் கிறிஸ்தவ கன்னியாஸ்திரிகள் தங்குவதற்கான அறையாகக் கட்டப்பட்டது, அதில் டெம்ப்லோ டி சான் டியாகோ மட்டுமே இன்று எஞ்சியிருக்கும் ஒரே கட்டிடமாகும்.",
+      "model_translation": "ஜர்தின் டி லா யூனிஓன். இந்த இடம் 16ஆம் நூற்றாண்டைச் சேர்ந்த ஒரு கான்வென்ட்டிற்காக கட்டப்பட்டது, அதில் சான் டியாகோவின் கோயில் மட்டுமே எஞ்சியுள்ளது.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: Jardín de la Unión. This space was built as the atrium for a 17th-century convent, of which the Templo de San Diego is the sole surviving building.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 86,
+      "source_text": "Batten was ranked 190th on the 2008 400 Richest Americans list with an estimated fortune of $2.3 billion.",
+      "reference_translation": "2008ஆம் ஆண்டின் 400 பணக்கார அமெரிக்கர்கள் பட்டியலில் பேட்டன் $2.3 பில்லியன் சொத்து மதிப்புடன் 190வது இடத்தைப் பிடித்தார்.",
+      "model_translation": "பேட்டனின் சொத்து மதிப்பு 2 பில்லியன் டாலர் என்று மதிப்பிடப்பட்டுள்ளது.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: Batten was ranked 190th on the 2008 400 Richest Americans list with an estimated fortune of $2.3 billion.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 87,
+      "source_text": "Komen's policy disqualified Planned Parenthood due to a pending investigation on how Planned Parenthood spends and reports its money that is being conducted by Representative Cliff Stearns.",
+      "reference_translation": "பெற்றோர்களாக பொறுப்பேற்று எவ்வாறு இருப்பது மற்றும் எப்படி பணத்தை செலவழிப்பது என்பது குறித்து பிரதிநிதி கிளிஃப் ஸ்டேர்ன்ஸ் விசாரணை நடத்தி வருவது நிலுவையில் இருப்பதால் கோமனின் பெற்றோராக பொறுப்பேற்கும் திட்டம் தகுதி நீக்கம் செய்யப்பட்டது.",
+      "model_translation": "Planned parenthood disqualifed by komens policy due to pending investigate on how planned parenhood spend and report its money.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: Komen's policy disqualified Planned Parenthood due to a pending investigation on how Planned Parenthood spends and reports its money that is being conducted by Representative Cliff Stearns.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 88,
+      "source_text": "The human hand is shorter than the foot, with straighter phalanges.",
+      "reference_translation": "மனிதக் கை அவர்களது காலை விடச் சிறியதாகவும் நீளமான விரல் எலும்புகளுடனும் உள்ளது.",
+      "model_translation": "மனிதக் கை, பாதத்தை விடச் சிறியது, நேராக இருக்கும் எலும்புகளைக் கொண்டது.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: The human hand is shorter than the foot, with straighter phalanges.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 89,
+      "source_text": "After initial military setbacks, Ethelred was able to agree to terms with Olaf, who returned to Norway to try to gain his kingdom with mixed success.",
+      "reference_translation": "ஆரம்ப படைப் பின்னடைவுகளுக்குப் பிறகு ஏதெல்ரெட்டால், தன் ராஜ்ஜியத்தை மீட்க நார்வேயிற்குத் திரும்பி, அதில் ஓரளவு வெற்றியும் கண்டிருந்த ஓலாஃப்பின் நிபந்தனைகளை ஏற்றுக்கொள்ள முடிந்தது.",
+      "model_translation": "ஆரம்பகட்ட இராணுவத் தோல்விகளுக்குப் பிறகு, எதெல்ட்ரெட், ஓலாஃப் உடன் ஒரு உடன்பாட்டை எட்ட முடிந்தது, அவர் தனது ராஜ்யத்தை மீண்டும் பெற முயன்றார், ஆனால் ஓரளவு வெற்றி பெற்றார். </s>",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: After initial military setbacks, Ethelred was able to agree to terms with Olaf, who returned to Norway to try to gain his kingdom with mixed success.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 90,
+      "source_text": "Sanskrit is an ancient language and is comparable to the Latin language spoken in Europe.",
+      "reference_translation": "சமஸ்கிருதம் ஒரு பழமையான மொழி மற்றும் ஐரோப்பாவில் பேசப்படும் லத்தீன் மொழியுடன் ஒப்பிடக் கூடியது.",
+      "model_translation": "சமஸ்கிருதம் ஒரு பண்டைய மொழி மற்றும் ஐரோப்பாவில் பேசப்படும் லத்தீன் மொழியைப் போன்றதே.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: Sanskrit is an ancient language and is comparable to the Latin language spoken in Europe.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 91,
+      "source_text": "This page can easily be accessed by providing just one web address, which makes it easy to remember and easy to type in for students who may have trouble using the keyboard or with spelling.",
+      "reference_translation": "ஒரு இணைய முகவரியை வழங்குவதன் மூலம் இந்த பக்கத்தை எளிதாக அணுக முடியும், இது கீபோர்டு அல்லது எழுத்துக்களை பயன்படுத்துவதில் சிக்கல் உள்ள மாணவர்களுக்கு நினைவில் வைத்திருப்பதும் டைப் செய்வதும் எளிதானதாகும்.",
+      "model_translation": "இந்த பக்கத்தை ஒரு வலை முகவரியைக் கொடுப்பதன் மூலம் எளிதாக அணுகலாம், இது மாணவர்களுக்கு கீபோர்டைப் பயன்படுத்துவதில் சிரமம் அல்லது எழுத்துப்பிழை இருந்தால் நினைவில் வைத்துக் கொள்வதற்கும் தட்டச்சு செய்வதற்கும் எளிதாக்குகிறது.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: This page can easily be accessed by providing just one web address, which makes it easy to remember and easy to type in for students who may have trouble using the keyboard or with spelling.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 92,
+      "source_text": "Architecture is concerned with the design and construction of buildings. The architecture of a place is often a tourist attraction in its own right.",
+      "reference_translation": "கட்டடக் கலை என்பது ஒரு கட்டிடத்தின் வடிவமைப்பு மற்றும் கட்டுதல் சம்பந்தப் பட்டது. ஒரு இடத்தின் கட்டிடக்கலை பெரும்பாலும் அதன் தகுதியிலேயே சுற்றுலா ஈர்ப்பாக இருக்கும்.",
+      "model_translation": "ஆர்க்கிடெக்சர் என்பது கட்டிடங்களின் வடிவமைப்பு மற்றும் கட்டுமானத்தைக் குறிக்கிறது. ஒரு இடத்தின் கட்டிடக்கலை பெரும்பாலும் ஒரு சுற்றுலாத் தலமாக உள்ளது.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: Architecture is concerned with the design and construction of buildings. The architecture of a place is often a tourist attraction in its own right.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 93,
+      "source_text": "Drink alcoholic drinks with moderation. Alcohol affects everyone differently, and knowing your limit is very important.",
+      "reference_translation": "ஆல்கஹால் பானத்தை மிதமான அளவில் குடிக்கவும். ஆல்கஹாலின் பாதிப்பு ஒருவருக்கொருவர் மாறுபடும், ஆகையால் உங்கள் வரம்பை நீங்கள் அறிந்திருத்தல் அவசியம்.",
+      "model_translation": "மது அருந்துவதை மிதமாகவே உட்கொள்ள வேண்டும். மதுபானம் அனைவரையும் வெவ்வேறு விதமாக பாதிக்கிறது, மேலும் உங்கள் வரம்பை அறிந்து கொள்வது மிகவும் முக்கியம்.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: Drink alcoholic drinks with moderation. Alcohol affects everyone differently, and knowing your limit is very important.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 94,
+      "source_text": "The report showed test scores had increased implausibly fast, and alleged the school internally detected problems but didn't act on the findings.",
+      "reference_translation": "தேர்வு மதிப்பெண்கள் நம்ப முடியாத அளவிற்கு வேகமாக அதிகரித்துள்ளதாகவும், பள்ளி உள்பிரச்சனைகளை அடையாளம் கண்டுள்ளதாகவும் ஆனால் அதில் செயல்படவில்லை என்றும் அறிக்கை காட்டியது.",
+      "model_translation": "தணிக்கை அறிக்கையில் சோதனை மதிப்பெண்கள் அதிவேகமாக அதிகரித்து வருவதாகவும், பள்ளி உள்நாட்டில் சிக்கல்களைக் கண்டறிந்ததாகவும் கூறப்பட்டுள்ளது, ஆனால் அவற்றைச் சரிசெய்ய நடவடிக்கை எடுக்கவில்லை என்றும் கூறப்பட்டுள்ளது.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: The report showed test scores had increased implausibly fast, and alleged the school internally detected problems but didn't act on the findings.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 95,
+      "source_text": "Turkey's area, including lakes, occupies 783,562 square kilometres (300,948 sq mi), of which 755,688 square kilometres (291,773 sq mi) are in south west Asia and 23,764 square kilometres (9,174 sq mi) in Europe.",
+      "reference_translation": "ஏரிகள் உட்பட துருக்கியின் பரப்பளவு 7,83,562 சதுர கிலோமீட்டர் (3,00,948 சதுர மைல்) ஆக்கிரமித்துள்ளது, இதில் 7,55,688 சதுர கிலோமீட்டர் (2,91,773 சதுர மைல்) தென்மேற்கு ஆசியாவிலும் 23,764 சதுர கிலோமீட்டர் (9,174 சதுர மைல்) ஐரோப்பாவிலும் உள்ளன.",
+      "model_translation": "துருக்கியின் பரப்பளவு, ஏரிகளை உள்ளடக்கியது, 301,382 சதுர கிலோமீட்டர் (116,100 சதுர மைல்) ஆகும், இதில் 198,330 சதுரம் கிலோமீட்டர் (76,670 சதுர மை) ஆசியாவிலும் 113,052 சதுரம் கிலோமீட்டர்கள் (44,090 சதுக்க மைல்) ஐரோப்பாவிலும் உள்ளது.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: Turkey's area, including lakes, occupies 783,562 square kilometres (300,948 sq mi), of which 755,688 square kilometres (291,773 sq mi) are in south west Asia and 23,764 square kilometres (9,174 sq mi) in Europe.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 96,
+      "source_text": "Tourists may visit different landmarks of a particular country or they may simply opt to focus on just one area.",
+      "reference_translation": "சுற்றுலாப் பயணிகள் ஒரு நாட்டில் உள்ள பல வித்தியாசமான இடங்களுக்குச் செல்லலாம் அல்லது ஒரே ஒரு இடத்தை பார்க்க விரும்பலாம்.",
+      "model_translation": "சுற்றுலாப் பயணிகள் ஒரு குறிப்பிட்ட நாட்டில் உள்ள பல்வேறு அடையாளங்களைப் பார்வையிடலாம் அல்லது ஒரு குறிப்பிட்ட பகுதியில் கவனம் செலுத்தலாம்.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: Tourists may visit different landmarks of a particular country or they may simply opt to focus on just one area.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 97,
+      "source_text": "Since Pakistani independence from British rule in 1947, the Pakistani President has appointed \"Political Agents\" to govern FATA, who exercise near-complete autonomous control over the areas.",
+      "reference_translation": "\"1947 ஆம் ஆண்டில் பிரிட்டிஷ் ஆட்சியிலிருந்து பாகிஸ்தானி சுதந்திரம் பெற்றதிலிருந்து, அவர்கள் பகுதியில் முழு தன்னாட்சி கட்டுப்பாட்டை கொண்டுள்ள FATA வை நிர்வகிக்க பாகிஸ்தானி ஜனாதிபதி \"\"அரசியல் பிரமுகர்களை\"\" நியமித்துள்ளார்.\"",
+      "model_translation": "2018-ல் பாகிஸ்தான் சுதந்திரம் அடைந்ததிலிருந்து, பாகிஸ்தானின் ஜனாதிபதி FATA-வில் \"அரசியல் முகவர்கள்\" நியமித்துள்ளார், அவர்கள் FATA பகுதிகளில் கிட்டத்தட்ட முழுமையான சுயாட்சியை செயல்படுத்தியுள்ளனர்.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: Since Pakistani independence from British rule in 1947, the Pakistani President has appointed \"Political Agents\" to govern FATA, who exercise near-complete autonomous control over the areas.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 98,
+      "source_text": "A power failure following a routine fire-command system test caused relief valves to open and crude oil overflowed near the Fort Greely pump station 9.",
+      "reference_translation": "வழக்கமான ஃபையர்-கமாண்ட் அமைப்பு சோதனையைத் தொடர்ந்து ஏற்பட்ட மின்சார செயலிழப்பு, ரிலீவ் வால்வுகள் திறந்து, ஃபோர்ட் க்ரீலி பம்ப் ஸ்டேஷன் 9-க்கு அருகில் கச்சா எண்ணெய் நிரம்பிவழியக் காரணமாக அமைந்தது.",
+      "model_translation": "ஒரு வழக்கமான தீயணைப்பு கட்டுப்பாட்டு அமைப்பு சோதனைக்குப் பிறகு மின்சாரம் துண்டிக்கப்பட்டதால், கசிவு வால்வுகள் திறந்து கச்சா எண்ணெய் வெளியே பாய்ந்தது, இது ஃபோர்ட் கிரீலி பம்ப் நிலையத்திற்கு அருகில் நிகழ்ந்தது.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: A power failure following a routine fire-command system test caused relief valves to open and crude oil overflowed near the Fort Greely pump station 9.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    },
+    {
+      "pair_key": "flores_en-ta",
+      "example_index": 99,
+      "source_text": "Before the Spanish arrived in the 16th century, northern Chile was under Inca rule while the indigenous Araucanians (Mapuche) inhabited central and southern Chile.",
+      "reference_translation": "16 ம் நூற்றாண்டில் ஸ்பானியர்கள்  வருவதற்கு முன், மத்திய, தெற்கு சிலியில் பூர்வீகக் குடிகளான அரகாணியர்கள் (மாபுசி ) வாழ்ந்த போதிலும், வடக்கு சிலி,  இன்காவின் ஆட்சியில் இருந்தது.",
+      "model_translation": "அதற்கு முன்பு, வடக்கு சிலி இன்கா பேரரசின் ஒரு பகுதியாக இருந்தது, அதே நேரத்தில் மத்திய மற்றும் தெற்கு சிலி அராவுக்கானியர்களால் ஆக்கிரமிக்கப்பட்டிருந்தது.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nTamil: வேகமான பழுப்பு நிற நரி சோம்பேறி நாயின் மேல் குதிக்கிறது।\n\nEnglish: I love learning new languages.\nTamil: புதிய மொழிகளைக் கற்றுக்கொள்வது எனக்குப் பிடிக்கும்।\n\nEnglish: Technology is advancing rapidly.\nTamil: தொழில்நுட்பம் வேகமாக முன்னேறி வருகிறது।\n\nEnglish: Before the Spanish arrived in the 16th century, northern Chile was under Inca rule while the indigenous Araucanians (Mapuche) inhabited central and southern Chile.\nTamil:",
+      "source_lang": "en",
+      "target_lang": "ta"
+    }
+  ]
+}

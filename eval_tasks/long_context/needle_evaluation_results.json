@@ -1,0 +1,561 @@
+{
+  "results": [
+    {
+      "context_length": 1024,
+      "recall": 1.0,
+      "prediction": "1. [SPECIAL_NEEDLE_1_3589]\n2. [SPECIAL_NEEDLE_2_5266]\n3. [SPECIAL_NEEDLE_3_8717]\n4. [SPECIAL_NEEDLE_4_5411]",
+      "expected": [
+        "SPECIAL_NEEDLE_1_3589",
+        "SPECIAL_NEEDLE_2_5266",
+        "SPECIAL_NEEDLE_3_8717",
+        "SPECIAL_NEEDLE_4_5411"
+      ]
+    },
+    {
+      "context_length": 1024,
+      "recall": 1.0,
+      "prediction": "1. [SPECIAL_NEEDLE_1_7144]\n2. [SPECIAL_NEEDLE_2_9283]\n3. [SPECIAL_NEEDLE_3_3842]\n4. [SPECIAL_NEEDLE_4_6777]",
+      "expected": [
+        "SPECIAL_NEEDLE_1_7144",
+        "SPECIAL_NEEDLE_2_9283",
+        "SPECIAL_NEEDLE_3_3842",
+        "SPECIAL_NEEDLE_4_6777"
+      ]
+    },
+    {
+      "context_length": 1024,
+      "recall": 1.0,
+      "prediction": "1. [SPECIAL_NEEDLE_1_3857um]\n2. [SPECIAL_NEEDLE_2_3468]\n3. [SPECIAL_NEEDLE_3_9626]\n4. [SPECIAL_NEEDLE_4_4211]",
+      "expected": [
+        "SPECIAL_NEEDLE_1_3857",
+        "SPECIAL_NEEDLE_2_3468",
+        "SPECIAL_NEEDLE_3_9626",
+        "SPECIAL_NEEDLE_4_4211"
+      ]
+    },
+    {
+      "context_length": 1024,
+      "recall": 1.0,
+      "prediction": "1. [SPECIAL_NEEDLE_1_2105]\n2. [SPECIAL_NEEDLE_2_2461]\n3. [SPECIAL_NEEDLE_3_3776]\n4. [SPECIAL_NEEDLE_4_6952]",
+      "expected": [
+        "SPECIAL_NEEDLE_1_2105",
+        "SPECIAL_NEEDLE_2_2461",
+        "SPECIAL_NEEDLE_3_3776",
+        "SPECIAL_NEEDLE_4_6952"
+      ]
+    },
+    {
+      "context_length": 1024,
+      "recall": 1.0,
+      "prediction": "1. [SPECIAL_NEEDLE_1_7091]\n2. [SPECIAL_NEEDLE_2_8791]\n3. [SPECIAL_NEEDLE_3_4819]\n4. [SPECIAL_NEEDLE_4_2993]",
+      "expected": [
+        "SPECIAL_NEEDLE_1_7091",
+        "SPECIAL_NEEDLE_2_8791",
+        "SPECIAL_NEEDLE_3_4819",
+        "SPECIAL_NEEDLE_4_2993"
+      ]
+    },
+    {
+      "context_length": 1024,
+      "recall": 1.0,
+      "prediction": "1. [SPECIAL_NEEDLE_1_2207]\n2. [SPECIAL_NEEDLE_2_1201]\n3. [SPECIAL_NEEDLE_3_5003]\n4. [SPECIAL_NEEDLE_4_8721]",
+      "expected": [
+        "SPECIAL_NEEDLE_1_2207",
+        "SPECIAL_NEEDLE_2_1201",
+        "SPECIAL_NEEDLE_3_5003",
+        "SPECIAL_NEEDLE_4_8721"
+      ]
+    },
+    {
+      "context_length": 1024,
+      "recall": 1.0,
+      "prediction": "1. [SPECIAL_NEEDLE_1_6753]\n2. [SPECIAL_NEEDLE_2_2076]\n3. [SPECIAL_NEEDLE_3_6832]\n4. [SPECIAL_NEEDLE_4_3737]",
+      "expected": [
+        "SPECIAL_NEEDLE_1_6753",
+        "SPECIAL_NEEDLE_2_2076",
+        "SPECIAL_NEEDLE_3_6832",
+        "SPECIAL_NEEDLE_4_3737"
+      ]
+    },
+    {
+      "context_length": 1024,
+      "recall": 1.0,
+      "prediction": "1. [SPECIAL_NEEDLE_1_3339]\n2. [SPECIAL_NEEDLE_2_4963]\n3. [SPECIAL_NEEDLE_3_2998]\n4. [SPECIAL_NEEDLE_4_8325]",
+      "expected": [
+        "SPECIAL_NEEDLE_1_3339",
+        "SPECIAL_NEEDLE_2_4963",
+        "SPECIAL_NEEDLE_3_2998",
+        "SPECIAL_NEEDLE_4_8325"
+      ]
+    },
+    {
+      "context_length": 1024,
+      "recall": 1.0,
+      "prediction": "1. [SPECIAL_NEEDLE_1_8570]\n2. [SPECIAL_NEEDLE_2_2663]\n3. [SPECIAL_NEEDLE_3_3671]\n4. [SPECIAL_NEEDLE_4_4249]",
+      "expected": [
+        "SPECIAL_NEEDLE_1_8570",
+        "SPECIAL_NEEDLE_2_2663",
+        "SPECIAL_NEEDLE_3_3671",
+        "SPECIAL_NEEDLE_4_4249"
+      ]
+    },
+    {
+      "context_length": 1024,
+      "recall": 1.0,
+      "prediction": "1. [SPECIAL_NEEDLE_1_5878]\n2. [SPECIAL_NEEDLE_2_4954]\n3. [SPECIAL_NEEDLE_3_4800]\n4. [SPECIAL_NEEDLE_4_2520]",
+      "expected": [
+        "SPECIAL_NEEDLE_1_5878",
+        "SPECIAL_NEEDLE_2_4954",
+        "SPECIAL_NEEDLE_3_4800",
+        "SPECIAL_NEEDLE_4_2520"
+      ]
+    },
+    {
+      "context_length": 8192,
+      "recall": 1.0,
+      "prediction": "1. [SPECIAL_NEEDLE_1_9309]\n2. [SPECIAL_NEEDLE_2_3908]\n3. [SPECIAL_NEEDLE_3_2657]\n4. [SPECIAL_NEEDLE_4_5168]",
+      "expected": [
+        "SPECIAL_NEEDLE_1_9309",
+        "SPECIAL_NEEDLE_2_3908",
+        "SPECIAL_NEEDLE_3_2657",
+        "SPECIAL_NEEDLE_4_5168"
+      ]
+    },
+    {
+      "context_length": 8192,
+      "recall": 1.0,
+      "prediction": "1. [SPECIAL_NEEDLE_1_1311]\n2. [SPECIAL_NEEDLE_2_3305]\n3. [SPECIAL_NEEDLE_3_5713]\n4. [SPECIAL_NEEDLE_4_1126]",
+      "expected": [
+        "SPECIAL_NEEDLE_1_1311",
+        "SPECIAL_NEEDLE_2_3305",
+        "SPECIAL_NEEDLE_3_5713",
+        "SPECIAL_NEEDLE_4_1126"
+      ]
+    },
+    {
+      "context_length": 8192,
+      "recall": 1.0,
+      "prediction": "1. [SPECIAL_NEEDLE_1_5739]\n2. [SPECIAL_NEEDLE_2_8163]\n3. [SPECIAL_NEEDLE_3_2499]\n4. [SPECIAL_NEEDLE_4_6401]",
+      "expected": [
+        "SPECIAL_NEEDLE_1_5739",
+        "SPECIAL_NEEDLE_2_8163",
+        "SPECIAL_NEEDLE_3_2499",
+        "SPECIAL_NEEDLE_4_6401"
+      ]
+    },
+    {
+      "context_length": 8192,
+      "recall": 1.0,
+      "prediction": "1. [SPECIAL_NEEDLE_1_1468]\n2. [SPECIAL_NEEDLE_2_5663]\n3. [SPECIAL_NEEDLE_3_2648]\n4. [SPECIAL_NEEDLE_4_8917]",
+      "expected": [
+        "SPECIAL_NEEDLE_1_1468",
+        "SPECIAL_NEEDLE_2_5663",
+        "SPECIAL_NEEDLE_3_2648",
+        "SPECIAL_NEEDLE_4_8917"
+      ]
+    },
+    {
+      "context_length": 8192,
+      "recall": 1.0,
+      "prediction": "1. [SPECIAL_NEEDLE_1_9998]\n2. [SPECIAL_NEEDLE_2_6536]\n3. [SPECIAL_NEEDLE_3_4815]\n4. [SPECIAL_NEEDLE_4_2429]",
+      "expected": [
+        "SPECIAL_NEEDLE_1_9998",
+        "SPECIAL_NEEDLE_2_6536",
+        "SPECIAL_NEEDLE_3_4815",
+        "SPECIAL_NEEDLE_4_2429"
+      ]
+    },
+    {
+      "context_length": 8192,
+      "recall": 1.0,
+      "prediction": "1. [SPECIAL_NEEDLE_1_8377um]\n2. [SPECIAL_NEEDLE_2_8600]\n3. [SPECIAL_NEEDLE_3_1234]\n4. [SPECIAL_NEEDLE_4_3710]",
+      "expected": [
+        "SPECIAL_NEEDLE_1_8377",
+        "SPECIAL_NEEDLE_2_8600",
+        "SPECIAL_NEEDLE_3_1234",
+        "SPECIAL_NEEDLE_4_3710"
+      ]
+    },
+    {
+      "context_length": 8192,
+      "recall": 1.0,
+      "prediction": "1. [SPECIAL_NEEDLE_1_4814]\n2. [SPECIAL_NEEDLE_2_8711]\n3. [SPECIAL_NEEDLE_3_5641]\n4. [SPECIAL_NEEDLE_4_1509]",
+      "expected": [
+        "SPECIAL_NEEDLE_1_4814",
+        "SPECIAL_NEEDLE_2_8711",
+        "SPECIAL_NEEDLE_3_5641",
+        "SPECIAL_NEEDLE_4_1509"
+      ]
+    },
+    {
+      "context_length": 8192,
+      "recall": 1.0,
+      "prediction": "1. [SPECIAL_NEEDLE_1_8602]\n2. [SPECIAL_NEEDLE_2_2317]\n3. [SPECIAL_NEEDLE_3_4554]\n4. [SPECIAL_NEEDLE_4_5323]",
+      "expected": [
+        "SPECIAL_NEEDLE_1_8602",
+        "SPECIAL_NEEDLE_2_2317",
+        "SPECIAL_NEEDLE_3_4554",
+        "SPECIAL_NEEDLE_4_5323"
+      ]
+    },
+    {
+      "context_length": 8192,
+      "recall": 1.0,
+      "prediction": "1. [SPECIAL_NEEDLE_1_3085]\n2. [SPECIAL_NEEDLE_2_2558]\n3. [SPECIAL_NEEDLE_3_2235]\n4. [SPECIAL_NEEDLE_4_2914]",
+      "expected": [
+        "SPECIAL_NEEDLE_1_3085",
+        "SPECIAL_NEEDLE_2_2558",
+        "SPECIAL_NEEDLE_3_2235",
+        "SPECIAL_NEEDLE_4_2914"
+      ]
+    },
+    {
+      "context_length": 8192,
+      "recall": 1.0,
+      "prediction": "1. [SPECIAL_NEEDLE_1_2413]\n2. [SPECIAL_NEEDLE_2_2007]\n3. [SPECIAL_NEEDLE_3_6676]\n4. [SPECIAL_NEEDLE_4_7430]",
+      "expected": [
+        "SPECIAL_NEEDLE_1_2413",
+        "SPECIAL_NEEDLE_2_2007",
+        "SPECIAL_NEEDLE_3_6676",
+        "SPECIAL_NEEDLE_4_7430"
+      ]
+    },
+    {
+      "context_length": 32768,
+      "recall": 0.0,
+      "prediction": "1. [SPECIAL_NEEDLE_1_2413]\n2. [SPECIAL_NEEDLE_2_2007]\n3. [SPECIAL_NEEDLE_3_6676]\n4. [SPECIAL_NEEDLE_4_7430]",
+      "expected": [
+        "SPECIAL_NEEDLE_1_9516",
+        "SPECIAL_NEEDLE_2_3897",
+        "SPECIAL_NEEDLE_3_6063",
+        "SPECIAL_NEEDLE_4_2319"
+      ]
+    },
+    {
+      "context_length": 32768,
+      "recall": 0.0,
+      "prediction": "1. [SPECIAL_NEEDLE_1_2413]\n2. [SPECIAL_NEEDLE_2_2007]\n3. [SPECIAL_NEEDLE_3_6676]\n4. [SPECIAL_NEEDLE_4_7430]",
+      "expected": [
+        "SPECIAL_NEEDLE_1_9161",
+        "SPECIAL_NEEDLE_2_3352",
+        "SPECIAL_NEEDLE_3_5968",
+        "SPECIAL_NEEDLE_4_8289"
+      ]
+    },
+    {
+      "context_length": 32768,
+      "recall": 0.0,
+      "prediction": "1. [SPECIAL_NEEDLE_1_2413]\n2. [SPECIAL_NEEDLE_2_2007]\n3. [SPECIAL_NEEDLE_3_6676]\n4. [SPECIAL_NEEDLE_4_7430]",
+      "expected": [
+        "SPECIAL_NEEDLE_1_1133",
+        "SPECIAL_NEEDLE_2_2335",
+        "SPECIAL_NEEDLE_3_1618",
+        "SPECIAL_NEEDLE_4_8479"
+      ]
+    },
+    {
+      "context_length": 32768,
+      "recall": 0.0,
+      "prediction": "1. [SPECIAL_NEEDLE_1_2413]\n2. [SPECIAL_NEEDLE_2_2007]\n3. [SPECIAL_NEEDLE_3_6676]\n4. [SPECIAL_NEEDLE_4_7430]",
+      "expected": [
+        "SPECIAL_NEEDLE_1_2146",
+        "SPECIAL_NEEDLE_2_2619",
+        "SPECIAL_NEEDLE_3_9118",
+        "SPECIAL_NEEDLE_4_9555"
+      ]
+    },
+    {
+      "context_length": 32768,
+      "recall": 0.0,
+      "prediction": "1. [SPECIAL_NEEDLE_1_2413]\n2. [SPECIAL_NEEDLE_2_2007]\n3. [SPECIAL_NEEDLE_3_6676]\n4. [SPECIAL_NEEDLE_4_7430]",
+      "expected": [
+        "SPECIAL_NEEDLE_1_1595",
+        "SPECIAL_NEEDLE_2_3746",
+        "SPECIAL_NEEDLE_3_4525",
+        "SPECIAL_NEEDLE_4_7906"
+      ]
+    },
+    {
+      "context_length": 32768,
+      "recall": 0.0,
+      "prediction": "1. [SPECIAL_NEEDLE_1_2413]\n2. [SPECIAL_NEEDLE_2_2007]\n3. [SPECIAL_NEEDLE_3_6676]\n4. [SPECIAL_NEEDLE_4_7430]",
+      "expected": [
+        "SPECIAL_NEEDLE_1_9590",
+        "SPECIAL_NEEDLE_2_9154",
+        "SPECIAL_NEEDLE_3_2884",
+        "SPECIAL_NEEDLE_4_4590"
+      ]
+    },
+    {
+      "context_length": 32768,
+      "recall": 0.0,
+      "prediction": "1. [SPECIAL_NEEDLE_1_2413]\n2. [SPECIAL_NEEDLE_2_2007]\n3. [SPECIAL_NEEDLE_3_6676]\n4. [SPECIAL_NEEDLE_4_7430]",
+      "expected": [
+        "SPECIAL_NEEDLE_1_8848",
+        "SPECIAL_NEEDLE_2_4893",
+        "SPECIAL_NEEDLE_3_2823",
+        "SPECIAL_NEEDLE_4_4352"
+      ]
+    },
+    {
+      "context_length": 32768,
+      "recall": 0.0,
+      "prediction": "1. [SPECIAL_NEEDLE_1_2413]\n2. [SPECIAL_NEEDLE_2_2007]\n3. [SPECIAL_NEEDLE_3_6676]\n4. [SPECIAL_NEEDLE_4_7430]",
+      "expected": [
+        "SPECIAL_NEEDLE_1_5779",
+        "SPECIAL_NEEDLE_2_6151",
+        "SPECIAL_NEEDLE_3_2084",
+        "SPECIAL_NEEDLE_4_4018"
+      ]
+    },
+    {
+      "context_length": 32768,
+      "recall": 0.0,
+      "prediction": "1. [SPECIAL_NEEDLE_1_2413]\n2. [SPECIAL_NEEDLE_2_2007]\n3. [SPECIAL_NEEDLE_3_6676]\n4. [SPECIAL_NEEDLE_4_7430]",
+      "expected": [
+        "SPECIAL_NEEDLE_1_9676",
+        "SPECIAL_NEEDLE_2_9925",
+        "SPECIAL_NEEDLE_3_2633",
+        "SPECIAL_NEEDLE_4_5627"
+      ]
+    },
+    {
+      "context_length": 32768,
+      "recall": 0.0,
+      "prediction": "1. [SPECIAL_NEEDLE_1_2413]\n2. [SPECIAL_NEEDLE_2_2007]\n3. [SPECIAL_NEEDLE_3_6676]\n4. [SPECIAL_NEEDLE_4_7430]",
+      "expected": [
+        "SPECIAL_NEEDLE_1_2843",
+        "SPECIAL_NEEDLE_2_2003",
+        "SPECIAL_NEEDLE_3_6081",
+        "SPECIAL_NEEDLE_4_8407"
+      ]
+    },
+    {
+      "context_length": 65536,
+      "recall": 0.0,
+      "prediction": "1. [SPECIAL_NEEDLE_1_2413]\n2. [SPECIAL_NEEDLE_2_2007]\n3. [SPECIAL_NEEDLE_3_6676]\n4. [SPECIAL_NEEDLE_4_7430]",
+      "expected": [
+        "SPECIAL_NEEDLE_1_4752",
+        "SPECIAL_NEEDLE_2_2528",
+        "SPECIAL_NEEDLE_3_1358",
+        "SPECIAL_NEEDLE_4_1121"
+      ]
+    },
+    {
+      "context_length": 65536,
+      "recall": 0.0,
+      "prediction": "1. [SPECIAL_NEEDLE_1_2413]\n2. [SPECIAL_NEEDLE_2_2007]\n3. [SPECIAL_NEEDLE_3_6676]\n4. [SPECIAL_NEEDLE_4_7430]",
+      "expected": [
+        "SPECIAL_NEEDLE_1_3406",
+        "SPECIAL_NEEDLE_2_2891",
+        "SPECIAL_NEEDLE_3_8024",
+        "SPECIAL_NEEDLE_4_1210"
+      ]
+    },
+    {
+      "context_length": 65536,
+      "recall": 0.0,
+      "prediction": "1. [SPECIAL_NEEDLE_1_2413]\n2. [SPECIAL_NEEDLE_2_2007]\n3. [SPECIAL_NEEDLE_3_6676]\n4. [SPECIAL_NEEDLE_4_7430]",
+      "expected": [
+        "SPECIAL_NEEDLE_1_6624",
+        "SPECIAL_NEEDLE_2_9528",
+        "SPECIAL_NEEDLE_3_3661",
+        "SPECIAL_NEEDLE_4_5996"
+      ]
+    },
+    {
+      "context_length": 65536,
+      "recall": 0.0,
+      "prediction": "1. [SPECIAL_NEEDLE_1_2413]\n2. [SPECIAL_NEEDLE_2_2007]\n3. [SPECIAL_NEEDLE_3_6676]\n4. [SPECIAL_NEEDLE_4_7430]",
+      "expected": [
+        "SPECIAL_NEEDLE_1_3145",
+        "SPECIAL_NEEDLE_2_6019",
+        "SPECIAL_NEEDLE_3_8732",
+        "SPECIAL_NEEDLE_4_6309"
+      ]
+    },
+    {
+      "context_length": 65536,
+      "recall": 0.0,
+      "prediction": "1. [SPECIAL_NEEDLE_1_2413]\n2. [SPECIAL_NEEDLE_2_2007]\n3. [SPECIAL_NEEDLE_3_6676]\n4. [SPECIAL_NEEDLE_4_7430]",
+      "expected": [
+        "SPECIAL_NEEDLE_1_5263",
+        "SPECIAL_NEEDLE_2_3639",
+        "SPECIAL_NEEDLE_3_6510",
+        "SPECIAL_NEEDLE_4_3244"
+      ]
+    },
+    {
+      "context_length": 65536,
+      "recall": 0.0,
+      "prediction": "1. [SPECIAL_NEEDLE_1_2413]\n2. [SPECIAL_NEEDLE_2_2007]\n3. [SPECIAL_NEEDLE_3_6676]\n4. [SPECIAL_NEEDLE_4_7430]",
+      "expected": [
+        "SPECIAL_NEEDLE_1_6498",
+        "SPECIAL_NEEDLE_2_4238",
+        "SPECIAL_NEEDLE_3_7178",
+        "SPECIAL_NEEDLE_4_5180"
+      ]
+    },
+    {
+      "context_length": 65536,
+      "recall": 0.0,
+      "prediction": "1. [SPECIAL_NEEDLE_1_2413]\n2. [SPECIAL_NEEDLE_2_2007]\n3. [SPECIAL_NEEDLE_3_6676]\n4. [SPECIAL_NEEDLE_4_7430]",
+      "expected": [
+        "SPECIAL_NEEDLE_1_2899",
+        "SPECIAL_NEEDLE_2_7603",
+        "SPECIAL_NEEDLE_3_1461",
+        "SPECIAL_NEEDLE_4_7048"
+      ]
+    },
+    {
+      "context_length": 65536,
+      "recall": 0.0,
+      "prediction": "1. [SPECIAL_NEEDLE_1_2413]\n2. [SPECIAL_NEEDLE_2_2007]\n3. [SPECIAL_NEEDLE_3_6676]\n4. [SPECIAL_NEEDLE_4_7430]",
+      "expected": [
+        "SPECIAL_NEEDLE_1_9975",
+        "SPECIAL_NEEDLE_2_5890",
+        "SPECIAL_NEEDLE_3_3234",
+        "SPECIAL_NEEDLE_4_6223"
+      ]
+    },
+    {
+      "context_length": 65536,
+      "recall": 0.0,
+      "prediction": "1. [SPECIAL_NEEDLE_1_2413]\n2. [SPECIAL_NEEDLE_2_2007]\n3. [SPECIAL_NEEDLE_3_6676]\n4. [SPECIAL_NEEDLE_4_7430]",
+      "expected": [
+        "SPECIAL_NEEDLE_1_8150",
+        "SPECIAL_NEEDLE_2_9130",
+        "SPECIAL_NEEDLE_3_3129",
+        "SPECIAL_NEEDLE_4_7758"
+      ]
+    },
+    {
+      "context_length": 65536,
+      "recall": 0.0,
+      "prediction": "1. [SPECIAL_NEEDLE_1_2413]\n2. [SPECIAL_NEEDLE_2_2007]\n3. [SPECIAL_NEEDLE_3_6676]\n4. [SPECIAL_NEEDLE_4_7430]",
+      "expected": [
+        "SPECIAL_NEEDLE_1_7015",
+        "SPECIAL_NEEDLE_2_9489",
+        "SPECIAL_NEEDLE_3_8800",
+        "SPECIAL_NEEDLE_4_3602"
+      ]
+    },
+    {
+      "context_length": 128000,
+      "recall": 0.0,
+      "prediction": "1. [SPECIAL_NEEDLE_1_2413]\n2. [SPECIAL_NEEDLE_2_2007]\n3. [SPECIAL_NEEDLE_3_6676]\n4. [SPECIAL_NEEDLE_4_7430]",
+      "expected": [
+        "SPECIAL_NEEDLE_1_4420",
+        "SPECIAL_NEEDLE_2_4906",
+        "SPECIAL_NEEDLE_3_3263",
+        "SPECIAL_NEEDLE_4_1353"
+      ]
+    },
+    {
+      "context_length": 128000,
+      "recall": 0.0,
+      "prediction": "1. [SPECIAL_NEEDLE_1_2413]\n2. [SPECIAL_NEEDLE_2_2007]\n3. [SPECIAL_NEEDLE_3_6676]\n4. [SPECIAL_NEEDLE_4_7430]",
+      "expected": [
+        "SPECIAL_NEEDLE_1_5249",
+        "SPECIAL_NEEDLE_2_1460",
+        "SPECIAL_NEEDLE_3_6714",
+        "SPECIAL_NEEDLE_4_6609"
+      ]
+    },
+    {
+      "context_length": 128000,
+      "recall": 0.0,
+      "prediction": "1. [SPECIAL_NEEDLE_1_2413]\n2. [SPECIAL_NEEDLE_2_2007]\n3. [SPECIAL_NEEDLE_3_6676]\n4. [SPECIAL_NEEDLE_4_7430]",
+      "expected": [
+        "SPECIAL_NEEDLE_1_1018",
+        "SPECIAL_NEEDLE_2_1453",
+        "SPECIAL_NEEDLE_3_6478",
+        "SPECIAL_NEEDLE_4_6187"
+      ]
+    },
+    {
+      "context_length": 128000,
+      "recall": 0.0,
+      "prediction": "1. [SPECIAL_NEEDLE_1_2413]\n2. [SPECIAL_NEEDLE_2_2007]\n3. [SPECIAL_NEEDLE_3_6676]\n4. [SPECIAL_NEEDLE_4_7430]",
+      "expected": [
+        "SPECIAL_NEEDLE_1_4669",
+        "SPECIAL_NEEDLE_2_7282",
+        "SPECIAL_NEEDLE_3_4511",
+        "SPECIAL_NEEDLE_4_2685"
+      ]
+    },
+    {
+      "context_length": 128000,
+      "recall": 0.0,
+      "prediction": "1. [SPECIAL_NEEDLE_1_2413]\n2. [SPECIAL_NEEDLE_2_2007]\n3. [SPECIAL_NEEDLE_3_6676]\n4. [SPECIAL_NEEDLE_4_7430]",
+      "expected": [
+        "SPECIAL_NEEDLE_1_2755",
+        "SPECIAL_NEEDLE_2_1459",
+        "SPECIAL_NEEDLE_3_8527",
+        "SPECIAL_NEEDLE_4_4223"
+      ]
+    },
+    {
+      "context_length": 128000,
+      "recall": 0.0,
+      "prediction": "1. [SPECIAL_NEEDLE_1_2413]\n2. [SPECIAL_NEEDLE_2_2007]\n3. [SPECIAL_NEEDLE_3_6676]\n4. [SPECIAL_NEEDLE_4_7430]",
+      "expected": [
+        "SPECIAL_NEEDLE_1_9168",
+        "SPECIAL_NEEDLE_2_2555",
+        "SPECIAL_NEEDLE_3_6258",
+        "SPECIAL_NEEDLE_4_1027"
+      ]
+    },
+    {
+      "context_length": 128000,
+      "recall": 0.0,
+      "prediction": "1. [SPECIAL_NEEDLE_1_2413]\n2. [SPECIAL_NEEDLE_2_2007]\n3. [SPECIAL_NEEDLE_3_6676]\n4. [SPECIAL_NEEDLE_4_7430]",
+      "expected": [
+        "SPECIAL_NEEDLE_1_2734",
+        "SPECIAL_NEEDLE_2_3900",
+        "SPECIAL_NEEDLE_3_8080",
+        "SPECIAL_NEEDLE_4_3903"
+      ]
+    },
+    {
+      "context_length": 128000,
+      "recall": 0.0,
+      "prediction": "1. [SPECIAL_NEEDLE_1_2413]\n2. [SPECIAL_NEEDLE_2_2007]\n3. [SPECIAL_NEEDLE_3_6676]\n4. [SPECIAL_NEEDLE_4_7430]",
+      "expected": [
+        "SPECIAL_NEEDLE_1_2503",
+        "SPECIAL_NEEDLE_2_1604",
+        "SPECIAL_NEEDLE_3_7354",
+        "SPECIAL_NEEDLE_4_8841"
+      ]
+    },
+    {
+      "context_length": 128000,
+      "recall": 0.0,
+      "prediction": "1. [SPECIAL_NEEDLE_1_2413]\n2. [SPECIAL_NEEDLE_2_2007]\n3. [SPECIAL_NEEDLE_3_6676]\n4. [SPECIAL_NEEDLE_4_7430]",
+      "expected": [
+        "SPECIAL_NEEDLE_1_8395",
+        "SPECIAL_NEEDLE_2_6395",
+        "SPECIAL_NEEDLE_3_8988",
+        "SPECIAL_NEEDLE_4_4573"
+      ]
+    },
+    {
+      "context_length": 128000,
+      "recall": 0.0,
+      "prediction": "1. [SPECIAL_NEEDLE_1_2413]\n2. [SPECIAL_NEEDLE_2_2007]\n3. [SPECIAL_NEEDLE_3_6676]\n4. [SPECIAL_NEEDLE_4_7430]",
+      "expected": [
+        "SPECIAL_NEEDLE_1_5700",
+        "SPECIAL_NEEDLE_2_9523",
+        "SPECIAL_NEEDLE_3_4256",
+        "SPECIAL_NEEDLE_4_5342"
+      ]
+    }
+  ],
+  "average_recalls": {
+    "1024": 1.0,
+    "8192": 1.0,
+    "32768": 0.0,
+    "65536": 0.0,
+    "128000": 0.0
+  }
+}

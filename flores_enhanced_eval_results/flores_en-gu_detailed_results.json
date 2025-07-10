@@ -1,0 +1,1030 @@
+{
+  "evaluation_metadata": {
+    "pair_name": "flores_en-gu",
+    "timestamp": "2025-06-26T22:49:41.139745",
+    "model_name": "sarvamai/sarvam-1",
+    "translation_direction": "enxx",
+    "num_samples": 100,
+    "config": {
+      "batch_size": 4,
+      "max_new_tokens": 128,
+      "use_few_shot": true,
+      "num_few_shot_examples": 3
+    }
+  },
+  "results": {
+    "chrf++": 37.22412625422827,
+    "valid_samples": 100,
+    "total_samples": 100,
+    "validity_rate": 1.0,
+    "quality_analysis": {
+      "avg_prediction_length": 20.16,
+      "avg_reference_length": 21.02,
+      "length_ratio": 0.9590865842055186,
+      "empty_predictions": 0,
+      "very_short_predictions": 0
+    }
+  },
+  "detailed_logs": [
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 0,
+      "source_text": "Real-time text translator apps – applications that are capable of automatically translating whole segments of text from one language into another.",
+      "reference_translation": "વાસ્તવિક સમયે લખાણનો અનુવાદ કરતી ઍપ - ઍપ્લિકેશનો કે જે લખાણના આખા વિભાગનો એકમાંથી બીજી ભાષામાં આપમેળે અનુવાદ કરી શકે છે.",
+      "model_translation": "રિયલ-ટાઈમ ટેક્સ્ટ ટ્રાન્સલેટર એપ્સ – એપ્લિકેશન્સ કે જે આપમેળે એક ભાષામાંથી બીજી ભાષામાં સમગ્ર લખાણનું ભાષાંતર કરી શકે છે.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: Real-time text translator apps – applications that are capable of automatically translating whole segments of text from one language into another.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 1,
+      "source_text": "This authentic community is located in Howe Sound just off Vancouver, and is easily accessed via scheduled water taxis departing Granville Island in downtown Vancouver.",
+      "reference_translation": "આ પ્રામાણિક સમુદાય વાનકુવરથી થોડે દૂર હોવ સાઉન્ડમાં સ્થિત છે, અને ત્યાં ડાઉનટાઉન વાનકુવર ના ગ્રેનવિલે ટાપુ તરફ જતી ટેક્સી ના માધ્યમ થી જય શકાય છે.",
+      "model_translation": "આ અધિકૃત સમુદાય હોવે સાઉન્ડમાં સ્થિત છે, જે વાનકુવરની નજીક છે, અને ડાઉનટાઉન વાનકુવરથી નિયમિત વોટર ટેક્સી દ્વારા સુલભ છે. </s>",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: This authentic community is located in Howe Sound just off Vancouver, and is easily accessed via scheduled water taxis departing Granville Island in downtown Vancouver.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 2,
+      "source_text": "The 30-year-old husband, who was born in Buffalo, was one of the four killed in the shooting, but his wife was not hurt.",
+      "reference_translation": "બફેલોમાં જન્મેલો 30 વર્ષીય પતિ શૂટિંગમાં માર્યા ગયેલા ચાર લોકોમાંનો એક હતો, પરંતુ તેની પત્નીને ઇજા પહોંચી ન હતી.",
+      "model_translation": "૩૦ વર્ષીય પતિ, જે બફેલોનો જન્મ થયો હતો, તે ગોળીબારમાં માર્યા ગયેલા ચાર લોકોમાંનો એક હતો, પરંતુ તેની પત્નીને કોઈ ઈજા થઈ ન હતી. </s>",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: The 30-year-old husband, who was born in Buffalo, was one of the four killed in the shooting, but his wife was not hurt.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 3,
+      "source_text": "Arias tested positive for a mild case of the virus, Presidential Minister Rodrigo Arias said.",
+      "reference_translation": "એરિઆસ વાયરસનાં કેસ માટેનાં ટેસ્ટમાં હળવા પોઝિટિવ આવ્યાં હોવાનું નિદાન થયું હતું, રાષ્ટ્રપતિ પ્રધાન રોડરિગો એરિયાસે જણાવ્યું હતું",
+      "model_translation": "આરિયાસે વાયરસના હળવા કેસ માટે પોઝિટિવ ટેસ્ટ કર્યો છે, રાષ્ટ્રપતિના મંત્રી રોડ્રિગો આરિયાસએ જણાવ્યું હતું.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: Arias tested positive for a mild case of the virus, Presidential Minister Rodrigo Arias said.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 4,
+      "source_text": "Alexander, as king, offered to pay to rebuild the temple, but his offer was denied. Later, after Alexander died, the temple was rebuilt in 323 BCE.",
+      "reference_translation": "રાજા તરીકે એલેક્ઝાંડરે મંદિરના પુનર્નિર્માણ માટે આર્થિક સહાય આપવાનો પ્રસ્તાવ મૂક્યો હતો, પણ તેનો અસ્વીકાર થયો હતો. પછીથી, એલેક્ઝાંડરના મૃત્યુ પછી ઈસ્વી સન પૂર્વે 323માં મંદિરનું પુનર્નિર્માણ થયું હતું.",
+      "model_translation": "અલેક્ઝાન્ડર, રાજા તરીકે, મંદિરનું પુનર્નિર્માણ કરવા માટે ચૂકવણી કરવાની ઓફર કરી હતી, પરંતુ તેની ઓફર નકારી કાઢવામાં આવી હતી. બાદમાં, જ્યારે એલેક્ઝાન્ડર મૃત્યુ પામ્યો, ત્યારે મંદિર ફરીથી બનાવવામાં આવ્યું હતું.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: Alexander, as king, offered to pay to rebuild the temple, but his offer was denied. Later, after Alexander died, the temple was rebuilt in 323 BCE.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 5,
+      "source_text": "Joining such a network usually just requires filling out an online form; although some networks offer or require additional verification.",
+      "reference_translation": "આવા નેટવર્કમાં જોડાવા માટે સામાન્ય રીતે ફક્ત ઓનલાઇન ફોર્મ ભરવું જરૂરી છે; જોકે કેટલાક નેટવર્ક્સ અતિરિક્ત ચકાસણી પ્રદાન કરે છે અથવા તેની માગણી કરે છે.",
+      "model_translation": "આવા નેટવર્કમાં જોડાવું સામાન્ય રીતે ઓનલાઈન ફોર્મ ભરવા જેટલું જ સરળ છે; જો કે, કેટલાક નેટવર્ક વધારાની ચકાસણીની જરૂર પડી શકે છે. </s>",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: Joining such a network usually just requires filling out an online form; although some networks offer or require additional verification.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 6,
+      "source_text": "Batten was ranked 190th on the 2008 400 Richest Americans list with an estimated fortune of $2.3 billion.",
+      "reference_translation": "2008 માં 400 અમીર અમેરિકનોની યાદીમાં 2.3 અબજ ડોલરની અંદાજીત સંપત્તિ સાથે બેટન 190 માં ક્રમે હતો.",
+      "model_translation": "બૅટન ૨૦૧૮માં સૌથી ધનવાન અમેરિકનોની યાદીમાં �����������������������������������������������������������������������������������������������������",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: Batten was ranked 190th on the 2008 400 Richest Americans list with an estimated fortune of $2.3 billion.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 7,
+      "source_text": "Some of the rainfall was accompanied by thunderstorms and frequent lightning.",
+      "reference_translation": "કેટલોક વરસાદ ગાજવીજ અને વારંવાર વીજળી પડવા સાથે થયો હતો.",
+      "model_translation": "કેટલાક વરસાદમાં વીજળીના કડાકા-ભડાકા થયા હતા અને વારંવાર વીજળી પડતી હતી.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: Some of the rainfall was accompanied by thunderstorms and frequent lightning.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 8,
+      "source_text": "Dump trucks were used to block tube entrances and assistance of 80 police were on hand to direct motorists to detours.",
+      "reference_translation": "કચરાની ટ્રકનો ઉપયોગ નળીના પ્રવેશદ્વારને અવરોધવા માટે કરવામાં આવતો હતો અને વાહનચાલકોને બીજા રસ્તેથી જવા માટેનું નિર્દેશન કરવા 80 પોલીસમેન  તૈનાત હતા.",
+      "model_translation": "ડમ્પ ટ્રક ટ્યુબ પ્રવેશદ્વારોને અવરોધિત કરવા અને મોટરચાલકોને દિશા નિર્દેશ કરવા માટે સહાય કરવા માટે ઉપયોગમાં લેવાયા હતા.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: Dump trucks were used to block tube entrances and assistance of 80 police were on hand to direct motorists to detours.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 9,
+      "source_text": "These agents are responsible for providing government and judicial services under Article 247 of the Pakistani Constitution.",
+      "reference_translation": "આ એજન્ટો પાકિસ્તાની બંધારણની કલમ 247 હેઠળ સરકારી અને ન્યાયિક સેવાઓ આપવા માટે જવાબદાર છે.",
+      "model_translation": "આ એજન્ટો સરકારી અને ન્યાયિક સેવાઓ પૂરી પાડવા માટે પાકિસ્તાની બંધારણની કલમ ૨૪૭ હેઠળ જવાબદાર છે. </s>",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: These agents are responsible for providing government and judicial services under Article 247 of the Pakistani Constitution.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 10,
+      "source_text": "Yes! King Tutankhamun, sometimes referred to as \"King Tut\" or \"The Boy King\", is one of the most well known ancient Egyptian kings in modern times.",
+      "reference_translation": "\"હા! રાજા તુતનખામુન, કે જેનો કોઈકવાર \"\"રાજા તુત\"\" અથવા \"\"બોય કિંગ\"\" તરીકે ઉલ્લેખ કરવામાં આવતો હતો તે, આધુનિક સમયમાં સૌથી વધુ જાણીતા પ્રાચીન ઈજીપ્તના રાજાઓ પૈકીનો એક રાજા છે.\"",
+      "model_translation": "હા! રાજા તુતનખમુન, જેને \"કિંગ તુટ\" અથવા \"ધ બોય કિંગ\" તરીકે પણ ઓળખવામાં આવે છે, તે આધુનિક સમયમાં સૌથી વધુ જાણીતા પ્રાચીન ઇજિપ્તના રાજાઓમાંનો એક છે.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: Yes! King Tutankhamun, sometimes referred to as \"King Tut\" or \"The Boy King\", is one of the most well known ancient Egyptian kings in modern times.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 11,
+      "source_text": "A tornado is a spinning column of very low-pressure air, which sucks the surrounding air inward and upward.",
+      "reference_translation": "ચક્રવાત એ નીચા દબાણવાળી હવાના ઊભા વમળ છે, જે આસપાસની હવાને અંદર અને ઉપરની તરફ ખેંચે છે.",
+      "model_translation": "ટોર્નાડો એક સ્પિનિંગ કોલમ ઓફ વેરી લો-પ્રેશર એર છે, જે આસપાસની હવાને અંદર ખેંચે છે અને ઉપરની તરફ ધકેલે છે. </s>",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: A tornado is a spinning column of very low-pressure air, which sucks the surrounding air inward and upward.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 12,
+      "source_text": "Following the process, HJR-3 will be reviewed again by the next elected legislature in either 2015 or 2016 to remain in process.",
+      "reference_translation": "પ્રક્રિયાને અનુસરીરહ્યા છીએ, પ્રક્રિયામાં રહેવા માટે એચજેઆર -3 ની આગામી ચૂંટાયેલી ધારાસભ્યો દ્વારા 2015 અથવા 2016 માં ફરીથી સમીક્ષા કરવામાં આવશે.",
+      "model_translation": "પ્રક્રિયાને અનુસરીને, એચ.જે.આર.-૩ ને આગામી ચૂંટાયેલી વિધાનસભા દ્વારા ૨૦૧૫ અથવા ઑગસ્ટમાં ફરીથી સમીક્ષા કરવામાં આવશે.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: Following the process, HJR-3 will be reviewed again by the next elected legislature in either 2015 or 2016 to remain in process.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 13,
+      "source_text": "Your hotel or hosts (if staying in a guesthouse or private home) will likely have wifi or an internet connected PC, and all settlements have an internet cafe or some location with public wifi.",
+      "reference_translation": "તમારી હોટલ અથવા હોસ્ટ્સ (જો કોઈ ગેસ્ટહાઉસ અથવા ખાનગી મકાનમાં રહેવું હોય તો) વાઇ-ફાઇ અથવા ઇન્ટરનેટથી કનેક્ટેડ કોમ્પ્યુટર હશે, અને બધી વસાહતોમાં ઇન્ટરનેટ કાફે છે અથવા કેટલીક જગ્યાએ જાહેર વાઇ-ફાઇ હશે.",
+      "model_translation": "તમારું હોટેલ અથવા યજમાન (જો તમે ગેસ્ટ હાઉસ અથવા ખાનગી ઘરમાં રહો છો) કદાચ વાઇફાઇ અથવા ઇન્ટરનેટ સાથે જોડાયેલ પીસી ધરાવે છે, અને તમામ વસાહતોમાં જાહેર વાઇ-ફાઇ છે. </s>",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: Your hotel or hosts (if staying in a guesthouse or private home) will likely have wifi or an internet connected PC, and all settlements have an internet cafe or some location with public wifi.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 14,
+      "source_text": "Robert Hooke, a biologist from England, saw small squares in cork with a microscope.",
+      "reference_translation": "ઇંગ્લેન્ડનાં જીવ વિજ્ઞાની રોબર્ટ હૂકે એક સૂક્ષ્મ દર્શક યંત્ર વડે એક બૂચમાં નાના ચોરસો જોયા હતા.",
+      "model_translation": "રોબર્ટ હોક, એક અંગ્રેજી જીવવિજ્ઞાની, સૂક્ષ્મદર્શક યંત્ર દ્વારા કોર્કમાં નાના ચોરસ જોયા.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: Robert Hooke, a biologist from England, saw small squares in cork with a microscope.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 15,
+      "source_text": "With fewer REMs per night, this state in which you experience actual sleep and your body recovers becomes infrequent enough to become a problem.",
+      "reference_translation": "દર રાત્રે ઓછા આરઈએમ સાથે, જે અવસ્થામાં તમે વાસ્તવિક રીતે ઊંઘવાનો અનુભવ કરો છો અને તમારું શરીર વિશ્રામની અવસ્થામાં આવે છે, એની માત્રા એટલી ઓછી થઇ જાય છે કે જે સમસ્યા બનવા માટે પૂરતું છે.",
+      "model_translation": "REM (Rapid Eye Movement) sleep is a stage of sleep characterized by rapid eye movements, increased brain activity, and vivid dreaming. A decrease in the amount of REM sleep can lead to problems such as insomnia or other sleep disorders.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: With fewer REMs per night, this state in which you experience actual sleep and your body recovers becomes infrequent enough to become a problem.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 16,
+      "source_text": "He would need to be judged differently if he had lost his car keys and it was his own car that he was trying to break into.",
+      "reference_translation": "જો તેણે તેની કારની ચાવીઓ ગુમાવી હોત અને આ તેની પોતાની કાર હતી કે જેમાં તે દાખલ થવા માટેનો પ્રયત્ન કરી રહ્યો હતો તો તેણે તેનો નિર્ણય અલગ રીતે કરવાની જરૂર પડી હોત.",
+      "model_translation": "જો તે તેની પોતાની કારને તોડવાનો પ્રયાસ કરી રહ્યો હોય તો તેને કારની ચાવીઓ ગુમાવવી પડે તો તેને જુદી રીતે નિર્ણય કરવામાં આવશે.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: He would need to be judged differently if he had lost his car keys and it was his own car that he was trying to break into.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 17,
+      "source_text": "Many exotic animals are hard to find, and parks sometimes have rules about taking photographs for commercial purposes.",
+      "reference_translation": "ઘણા વિદેશી પ્રાણીઓ શોધવા મુશ્કેલ હોય છે, અને ઉદ્યાનોમાં કેટલીક વાર વાણિજ્યક હેતુઓ માટે ફોટોગ્રાફ લેવા અંગેના નિયમો હોય છે.",
+      "model_translation": "Animals from other countries are difficult to see, and some parks may have restrictions on taking photos for business reasons.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: Many exotic animals are hard to find, and parks sometimes have rules about taking photographs for commercial purposes.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 18,
+      "source_text": "When the tenants started sharing what had occurred to them, most of the families involved suddenly realized that Carolyn Wilson of the OHA had stolen their security deposits, and skipped out of town.",
+      "reference_translation": "જ્યારે ભાડૂતોએ પોતાની રામકથા તેમને વર્ણવવાની શરૂઆત કરી, ત્યારે બધાં સંબંધિત કુટુંબોને અચાનક ભાન થયું કે ઓએચએના કેરોલિન વિલ્સને તેમની સિક્યુરિટી ડિપોઝિટો ચોરી લીધી હતી અને શહેરમાંથી પલાયન કર્યું હતું.",
+      "model_translation": "Jyaare tenants shuru karya hata, temna badha parivaaro ne samjayu ke karolyn wilson of the oha ae temna security deposit ni chori kari hati ane bhagi gai hati.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: When the tenants started sharing what had occurred to them, most of the families involved suddenly realized that Carolyn Wilson of the OHA had stolen their security deposits, and skipped out of town.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 19,
+      "source_text": "Beijing will host the opening and closing ceremonies and the indoor ice events.",
+      "reference_translation": "બેઇજિંગ ઉદ્ઘાટન અને સમાપન સમારોહ અને ઇન્ડોર આઈસ ઇવેંટ્સનું આયોજન કરશે.",
+      "model_translation": "બેઇજિંગ ઓપનિંગ અને ક્લોઝિંગ સમારોહ અને ઇન્ડોર આઇસ ઇવેન્ટ્સનું આયોજન કરશે.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: Beijing will host the opening and closing ceremonies and the indoor ice events.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 20,
+      "source_text": "No one else has ever made more appearances or scored more goals for the club than Bobek.",
+      "reference_translation": "આજ સુધી કોઈએ પણ કલબ માટે બોબેક કરતા વધુ દેખાવ કર્યા નથી અથવા વધુ ગોલ કર્યા નથી.",
+      "model_translation": "Bobek has made the most appearances and scored the most goals for this club.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: No one else has ever made more appearances or scored more goals for the club than Bobek.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 21,
+      "source_text": "The proposed amendment already passed both houses in 2011.",
+      "reference_translation": "પ્રસ્તાવિત સુધારો 2011માં બન્ને સદનોમાં પસાર થઈ ચૂક્યો હતો.",
+      "model_translation": "પ્રસ્તાવિત સુધારાને ૨૦૧૩માં બંને ગૃહો દ્વારા મંજૂરી આપવામાં આવી હતી. </s>",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: The proposed amendment already passed both houses in 2011.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 22,
+      "source_text": "Be assured that once you hit the marinas everything will be pretty obvious. You will meet other boat hitchhikers and they will share their information with you.",
+      "reference_translation": "ખાતરી રાખો કે એકવાર તમે વિહારનૌકાઓને બાંધી રાખવાની સગવડવાળી જગ્યાએ જશો એટલે બધું થઈ રહેશે. તમને બીજા બોટ હિચહાઇકરો મળશે અને તેઓ તેમની માહિતી તમારી સાથે શેર કરશે.",
+      "model_translation": "ખાતરી કરો કે એકવાર તમે બંદરો પર પહોંચી જાઓ પછી બધું સ્પષ્ટ થઈ જશે. તમે અન્ય હોડી હિકર્સ સાથે મુલાકાત કરશો અને તેઓ તમને તેમની માહિતી આપશે.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: Be assured that once you hit the marinas everything will be pretty obvious. You will meet other boat hitchhikers and they will share their information with you.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 23,
+      "source_text": "If you have additional travel time, check to see how your total fare quote to Africa compares with a round-the-world fare.",
+      "reference_translation": "જો તમારી પાસે મુસાફરી માટે વધુ સમય છે, તો તમારા આફ્રિકા  પર્યટનનની કુલ કિંમતને વિશ્વ પરિભ્રમણની કુલ કિંમત સાથે સરખાવી જોજો.",
+      "model_translation": "જો તમારી પાસે વધારાની મુસાફરીનો સમય હોય, તો તપાસો કે આફ્રિકા માટે રાઉન્ડ-ટ્રિપ ભાડું તમારા કુલ ભાડા ક્વોટ સાથે કેવી રીતે સરખામણી કરે છે.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: If you have additional travel time, check to see how your total fare quote to Africa compares with a round-the-world fare.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 24,
+      "source_text": "When low tide opened a gap along the Mystic River along the northeast of the peninsula, they quickly extended the fence with a short stone wall to the north ending at the water's edge on a small beach.",
+      "reference_translation": "જ્યારે ઓછી ભરતીએ દ્વિપકલ્પના ઉત્તરપૂર્વમાં રહસ્યમય નદી પર અંતર ખોલ્યું. તેઓએ ટૂંકા પથ્થરની દિવાલવાળી વાડ ઝડપથી નાના બીચ પર પાણીની ધારથી અંત સુધી વિસ્તૃત કરી.",
+      "model_translation": "જ્યારે નીચા ભરતીએ મૈન્ટિક નદીના ઉત્તરપૂર્વના દ્વીપકલ્પ પર એક અંતર ખોલ્યું, ત્યારે તેઓ ઝડપથી એક ટૂંકી પથ્થરની દીવાલ સાથે ફેન્સીંગ વિસ્તારનો વિસ્તાર કરતા હતા, જે પાણીની ધાર પર એક નાના બીચ પર સમાપ્ત થતો હતો.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: When low tide opened a gap along the Mystic River along the northeast of the peninsula, they quickly extended the fence with a short stone wall to the north ending at the water's edge on a small beach.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 25,
+      "source_text": "In the nomadic phase, army ants march at night and stop to camp during the day.",
+      "reference_translation": "ભ્રમણશીલ અવસ્થામાં, કીડીઓની સેના રાત્રિના સમયે કૂચ કરે છે અને દિવસ દરમિયાન રોકાણ કરવા માટે રોકાય છે.",
+      "model_translation": "Nomadic ants marches at night અને દિવસ દરમિયાન camp કરે છે.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: In the nomadic phase, army ants march at night and stop to camp during the day.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 26,
+      "source_text": "Other scientists argue that these plants are very poisonous so it is unlikely that any dinosaur ate them, even though today the sloth and other animals like the parrot (a descendant of the dinosaurs) can eat poisonous leaves or fruit.",
+      "reference_translation": "બીજા વૈજ્ઞાનિકો એવી દલીલ કરે છે કે આ વનસ્પતિઓ ખૂબ ઝેરી છે તેથી કોઇપણ ડાઈનોસોર તેને ખાતા હોય તેની સંભાવના નથી, તો પણ આજે  સ્લોથ અને પોપટ જેવા અન્ય પ્રાણીઓ (ડાયનોસોરનાં  વંશજ)  ઝેરી પાંદડાઓ અથવા ફળ ખાઈ શકે છે.",
+      "model_translation": "અન્ય વૈજ્ઞાનિકો દલીલ કરે છે કે આ છોડ ખૂબ ઝેરી છે, તેથી તે શક્ય નથી કે કોઈ ડાયનાસોરએ તેમને ખાધા હોય, ભલે આજે સ્લોથ અને અન્ય પ્રાણીઓ જેમ કે પેરાકીટ (ડાયનોસોરના વંશજો) ઝેરી પાંદડા અથવા ફળો ખાય છે.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: Other scientists argue that these plants are very poisonous so it is unlikely that any dinosaur ate them, even though today the sloth and other animals like the parrot (a descendant of the dinosaurs) can eat poisonous leaves or fruit.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 27,
+      "source_text": "One of the panes finally broke, and they started to get out by the window,\" said survivor Franciszek Kowal.",
+      "reference_translation": "\"Eએક વિંડોપેન આખરે તૂટી ગઈ, અને તેઓ બારીમાંથી બહાર આવવા લાગ્યા,\"\" બચી ગયેલા ફ્રાન્સિસઝેક કોવાલે કહ્યું.\"",
+      "model_translation": "એક પેનલ આખરે તૂટી ગયું, અને તેઓ બારી દ્વારા બહાર નીકળી ગયા, \"સર્વાઇવર ફ્રાન્સિઝેક કોવાલે કહ્યું.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: One of the panes finally broke, and they started to get out by the window,\" said survivor Franciszek Kowal.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 28,
+      "source_text": "That means we are able to successfully predict what other humans perceive, intend, believe, know or desire.",
+      "reference_translation": "તેનો અર્થ થાય છે આપણે બીજા માણસો શું ધારે છે, ઈરાદો રાખે છે, માને છે, જાણે છે કે ઈચ્છા રાખે છે તેની સફળતાપૂર્વક ધારણા બાંધવા માટે સક્ષમ છીએ.",
+      "model_translation": "એનો મતલબ આપણે બીજા માણસો ને perceive કરવા, intend, believe, know કે want કરે છે એ predict કરી શકીએ છીએ.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: That means we are able to successfully predict what other humans perceive, intend, believe, know or desire.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 29,
+      "source_text": "Evidence thereafter indicated test papers were tampered with Hall, along with 34 other education officials, was indicted in 2013.",
+      "reference_translation": "ત્યાર બાદનાં પુરાવાંએ એવું સૂચવ્યું કે પરીક્ષાના પેપરમાં હૉલ અને તેમના ઉપરાંત 34 અન્ય શિક્ષણ અધિકારીઓ દ્વારા ચેડાં કરવામાં આવ્યા હતા,જે 2013 માં સૂચવવામાં આવ્યું હતું.",
+      "model_translation": "૨૦૧૩માં હૉલ સહિત અન્ય ઍડ્યુકેશન ઓફિસરો સામે ટેસ્ટ પેપર્સ સાથે ચેડા કરવા બદલ આરોપ મૂકવામાં આવ્યો હતો.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: Evidence thereafter indicated test papers were tampered with Hall, along with 34 other education officials, was indicted in 2013.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 30,
+      "source_text": "It can be better to use an agent who frequently books similar trips to yours.",
+      "reference_translation": "એવા ટ્રાવેલ એજન્ટની મદદ લેવી વધુ સારી રહેશે જે તમારી યાત્રા જેવી સમાન  યાત્રાઓનું વારંવાર બુકિંગ કરતા હોય.",
+      "model_translation": "ઍજન્ટ વારંવાર તમારા જેવા જ પ્રવાસો બુક કરી શકે છે તે વધુ સારું છે.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: It can be better to use an agent who frequently books similar trips to yours.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 31,
+      "source_text": "The Park Service (MINAE) does not issue park permits more than one month in advance of anticipated arrival.",
+      "reference_translation": "પાર્ક સેવા (MINAE) પાર્ક અપેક્ષિત આગમનના એક મહિના અગાઉથી પરવાનગીઓ જારી કરતી નથી.",
+      "model_translation": "પાર્ક્સ સર્વિસ (મિનએ) એક મહિનાથી વધુ અગાઉથી અપેક્ષિત આગમનના આધારે પાર્ક પરમિટ જારી કરતી નથી. </s>",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: The Park Service (MINAE) does not issue park permits more than one month in advance of anticipated arrival.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 32,
+      "source_text": "To finish, Turkish dance group Fire of Anatolia performed the show \"Troy\".",
+      "reference_translation": "\"પૂર્ણ કરવા માટે, તુર્કીશ નૃત્ય સમૂહ ફાયર ઓફ અનાતોલિયાએ \"\"ટ્રોય\"\" નામનો શો ભજવ્યો હતો. \"",
+      "model_translation": "તુર્કિશ ડાન્સ ગ્રુપ ફાયર ઓફ એનાટોલિયા એ શો \"ટ્રોય\" રજૂ કર્યો હતો.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: To finish, Turkish dance group Fire of Anatolia performed the show \"Troy\".\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 33,
+      "source_text": "The failure of the second sentence, which proposes to ban same-sex civil unions, could possibly open the door for civil unions in the future.",
+      "reference_translation": "બીજા વાક્યની નિષ્ફળતા,જેમાં સમલૈંગિક નાગરિક લગ્ન પર પ્રતિબંધ મૂકવાનો પ્રસ્તાવ છે,સંભવત: ભવિષ્યમાં સિવિલ યુનિયનસ માટે માર્ગ ખોલી શકે છે.",
+      "model_translation": "બીજા વાક્યની નિષ્ફળતા, જે સમલૈંગિક સિવિલ યુનિયનોને પ્રતિબંધિત કરવાની દરખાસ્ત કરે છે, તે સંભવિત રીતે ભવિષ્યમાં સિવિલ યુનિયનની મંજૂરી તરફ દોરી શકે છે.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: The failure of the second sentence, which proposes to ban same-sex civil unions, could possibly open the door for civil unions in the future.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 34,
+      "source_text": "This includes waiting in line, as drug-sniffing dogs could be used at any time without notice.",
+      "reference_translation": "આમાં, હરોળ માં રાહ જોતાં ઊભા હોવ, એ રીતે કોઈ પણ સમયે સૂચના વગર ડ્રગ સૂંઘતા કુતરાઓના ઉપયોગનો સમાવેશ થાય છે.",
+      "model_translation": "આમાં લાઈનમાં રાહ જોવાનો સમાવેશ થાય છે, કારણ કે ડ્રગ-સ્નિફિંગ કૂતરાઓ કોઈપણ સમયે નોટિસ વગર ઉપયોગમાં લઈ શકાય છે.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: This includes waiting in line, as drug-sniffing dogs could be used at any time without notice.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 35,
+      "source_text": "In addition to the crushing ice, extreme weather conditions have been hampering rescue efforts.",
+      "reference_translation": "બરફને કચડી નાખવા ઉપરાંત, અતિભારે હવામાનને કારણે બચાવ કાર્યમાં અવરોધ ઉભા થયા.",
+      "model_translation": "અતિશય હવામાનની સ્થિતિએ બચાવ કામગીરીમાં અવરોધ ઊભો કર્યો છે.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: In addition to the crushing ice, extreme weather conditions have been hampering rescue efforts.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 36,
+      "source_text": "The valves opening allowed a pressure release for the system and oil flowed on a pad to a tank that can hold 55,000 barrels (2.3 million gallons).",
+      "reference_translation": "વાલ્વ ખૂલવાથી સિસ્ટમ પરનું દબાણ રિલીઝ થયું અને તેલ એ ટૅંક પરના પૅડ પર ઢોળાયું જે 55,000 બૅરલ (2.3 મિલિયન ગૅલન) સમાવી શકે છે.",
+      "model_translation": "વાલ્વ ખોલવાથી સિસ્ટમમાં પ્રેશર રિલીઝ થયો અને ઓઈલ પેડ પર એક ટાંકીમાં ગયું જે 23 લાખ ગેલન (87 લાખ લિટર) સુધી પકડી શકે છે.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: The valves opening allowed a pressure release for the system and oil flowed on a pad to a tank that can hold 55,000 barrels (2.3 million gallons).\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 37,
+      "source_text": "During his 2 hour speech he stated that \"Today Apple is going to reinvent the phone, We are going to make history today\".",
+      "reference_translation": "પોતાના 2 કલાકના ભાષણ દરમિયાન તેમણે જણાવ્યું હતું કે,'આજે એપલ ફોનને ફરીથી જીવંત કરવા જઈ રહ્યું છે, અમે આજે ઇતિહાસ રચીશું.''",
+      "model_translation": "તે 2 કલાકના ભાષણમાં જણાવ્યું હતું કે \"આજે એપલ ફોનનું પુનર્ગઠન કરશે, અમે આજે ઇતિહાસ બનાવી રહ્યા છીએ\".",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: During his 2 hour speech he stated that \"Today Apple is going to reinvent the phone, We are going to make history today\".\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 38,
+      "source_text": "It was followed by the Istanbul State Symphony Orchestra, a Janissary band, and the singers Fatih Erkoç and Müslüm Gürses.",
+      "reference_translation": "ત્યારબાદ હતું ઇસ્તંબુલ સ્ટેટ સિમ્ફની ઓર્કેસ્ટ્રા, એક જેનિસરી બેન્ડ અને ગાયકો ફાતિહ એર્કોઈ અને મસ્લેમ ગોર્સેસ.",
+      "model_translation": "તે ઇસ્તંબુલ સ્ટેટ સિમ્ફની ઓર્કેસ્ટ્રા, જાનિસરી બેન્ડ અને ગાયકો ફાતિહ એર્કોસ અને મુસલીમ ગુર્સસ દ્વારા અનુસરવામાં આવ્યું હતું.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: It was followed by the Istanbul State Symphony Orchestra, a Janissary band, and the singers Fatih Erkoç and Müslüm Gürses.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 39,
+      "source_text": "At its peak, Tropical Cyclone Gonu, named for a bag of palm leaves in the language of the Maldives, reached sustained winds of 240 kilometers an hour (149 miles per hour) .",
+      "reference_translation": "તેની ચરમસીમાએ, ઉષ્ણકટિબંધીય ચક્રવાત ગોનુ, જેનું નામ માલદીવની ભાષામાં તાડના પાનની થેલી માટે રાખવામાં આવ્યું, 240 કિલોમીટર પ્રતિ કલાક (149 માઇલ પ્રતિ કલાક)ની ઝડપે પવન ફૂંકાઈ રહ્યો.",
+      "model_translation": "Tropical cyclone gonu reached its peak wind speed of 140 mph (225 km/h).",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: At its peak, Tropical Cyclone Gonu, named for a bag of palm leaves in the language of the Maldives, reached sustained winds of 240 kilometers an hour (149 miles per hour) .\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 40,
+      "source_text": "The Icelandic Meteorological Office also reported no earthquake activity in the Hekla area in the past 48 hours.",
+      "reference_translation": "આઇસલેન્ડિક હવામાન સંબંધિત ઓફિસે પણ છેલ્લાં 48 કલાકમાં હેકલા વિસ્તારમાં ભૂકંપ સક્રિયતાની જાણ કરી નથી.",
+      "model_translation": "આઇસલેન્ડિક હવામાન વિજ્ઞાન કાર્યાલય એ પણ અહેવાલ આપ્યો છે કે હેકલા વિસ્તારમાં ભૂકંપની કોઈ પ્રવૃત્તિ નથી, જે છેલ્લા ૪૮ કલાકમાં થઈ છે.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: The Icelandic Meteorological Office also reported no earthquake activity in the Hekla area in the past 48 hours.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 41,
+      "source_text": "The postmodern approach to learning offers the freedom from absolutes. There is no one good way to learn.",
+      "reference_translation": "શીખવાનો આધુનિક અભિગમ સંપૂર્ણપણે મુક્તિ આપે.શીખવાનો કોઈ સારો રસ્તો નથી.",
+      "model_translation": "પોસ્ટમોર્ડન અપ્રોચ ટુ લર્નિંગ ઓફર્સ ફ્રીડમ ફ્રોમ એબ્સોલ્યુટ્સ. ધેર ઇઝ નો વન ગુડ વે ટુ લર્ન્સ.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: The postmodern approach to learning offers the freedom from absolutes. There is no one good way to learn.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 42,
+      "source_text": "These children tend to get into a lot of trouble, because they \"engage in risky behaviors, get into fights, and challenge authority\" in order to stimulate their brain, since their brain can not be stimulated by normal methods.",
+      "reference_translation": "\"તેમના મગજને ઉત્તેજીત કરવા માટે, આ બાળકો ઘણી મુશ્કેલીમાં મુકાઈ જાય છે, જેમકે તેઓ \"\"જોખમી વર્તણૂંક દાખવે છે, ઝઘડા કરે છે, અને સત્તાને પડકાર આપે છે\"\" કારણ કે તેમના મગજ સામાન્ય પદ્ધતિઓ દ્વારા ઉત્તેજિત થઈ શકાતા નથી. \"",
+      "model_translation": "આ બાળકો ઘણી વાર મુશ્કેલીમાં મુકાઈ જાય છે, કારણ કે તેઓ \"જોખમી વર્તણૂકમાં વ્યસ્ત રહે છે, ઝઘડામાં ઉતરે છે અને સત્તાને પડકાર ફેંકે છે\" તેમના મગજને ઉત્તેજિત કરવા માટે, તેમના મગજ સામાન્ય પદ્ધતિઓ દ્વારા ઉત્તેજીત થઈ શકતા નથી. </s>",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: These children tend to get into a lot of trouble, because they \"engage in risky behaviors, get into fights, and challenge authority\" in order to stimulate their brain, since their brain can not be stimulated by normal methods.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 43,
+      "source_text": "One of the most prominent apps in this category is Google Translate, which allows offline translation after downloading the desired language data.",
+      "reference_translation": "આ કેટેગરીમાં સૌથી અગ્રણી એપ્સમાંની 1 ગૂગલ ટ્રાન્સલેટ છે, જે ઇચ્છિત ભાષાના ડેટાને ડાઉનલોડ કર્યા પછી ઓફલાઇન અનુવાદ કરવા દે છે.",
+      "model_translation": "આ કેટેગરીમાં સૌથી વધુ પ્રચલિત એપ્લિકેશન ગૂગલ ટ્રાન્સલેટ છે, જે ડાઉનલોડ કરવા માટે ઇચ્છિત ભાષા ડેટા મેળવ્યા પછી ઓફલાઇન અનુવાદને સપોર્ટ કરે છે. </s>",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: One of the most prominent apps in this category is Google Translate, which allows offline translation after downloading the desired language data.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 44,
+      "source_text": "Submarines were used in World War I and World War II. Back then they were very slow and had a very limited shooting range.",
+      "reference_translation": "પ્રથમ વિશ્વયુદ્ધ અને બીજા વિશ્વ યુધ્ધમાં સબમરીનોનો ઉપયોગ કરવામાં આવ્યો હતો, ત્યારબાદ તે ખૂબ ધીમી રહી હતી અને ખૂબ સીમિત શુટિંગ રેંજ ધરાવતી હતી.",
+      "model_translation": "સબમરીન વિશ્વ યુદ્ધ I અને વિશ્વ યુદ્ધ II માં ઉપયોગમાં લેવાતી હતી. તે સમયે તેઓ ખૂબ જ ધીમા હતા અને તેમની શૂટિંગ રેન્જ ખૂબ જ મર્યાદિત હતી. </s>",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: Submarines were used in World War I and World War II. Back then they were very slow and had a very limited shooting range.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 45,
+      "source_text": "It can usually be replenished fairly easily if you run out, and gives resolution roughly comparable to a current DSLR.",
+      "reference_translation": "જો ખલાસ થઈ જાય તો તેને બહુ સરળતાથી ફરી ભરી શકાય છે અને હાલના DSLR સાથે લગભગ સરખામણી કરી શકાય તેવું રેઝલૂશન આપે છે.",
+      "model_translation": "તે સામાન્ય રીતે સરળતાથી ફરી ભરી શકાય છે જો તમે બહાર નીકળી જાઓ, અને લગભગ વર્તમાન DSLઆર જેટલું જ સમાધાન આપે છે.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: It can usually be replenished fairly easily if you run out, and gives resolution roughly comparable to a current DSLR.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 46,
+      "source_text": "It is an archipelago with 15 islands spread out over 2.2 million km2 of ocean.",
+      "reference_translation": "મહાસાગરમાં 20.2 લાખ વર્ગ કિલોમીટરના વિસ્તારમાં ફેલાયેલા આ દ્વીપસમૂહમાં 15 ટાપુઓ છે.",
+      "model_translation": "એ એક દ્વીપસમૂહ છે જેમાં ૧૫ દ્વીપો ફેલાયેલા છે.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: It is an archipelago with 15 islands spread out over 2.2 million km2 of ocean.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 47,
+      "source_text": "The Health Minister expressed concern both for the welfare of individuals taking advantage of the temporary legality of the substances involved, and for drug-related convictions handed down since the now-unconstitutional changes came into effect.",
+      "reference_translation": "હાલના ગેરબંધારણીય ફેરફારો અમલી બન્યા ત્યારથી તેમાં સામેલ પદાર્થોની કામચલાઉ કાયદેસરતાનો લાભ લેતી વ્યક્તિઓના ફાયદા અને નશીલા દ્રવ્યોને લગતી સજાઓ માટે આરોગ્ય મંત્રીએ ચિંતા વ્યક્ત કરી હતી.",
+      "model_translation": "આરોગ્ય મંત્રીએ આ પદાર્થોનો ઉપયોગ કરતા વ્યક્તિઓ માટે કામચલાઉ કાયદેસરતાના લાભો અને ડ્રગ-સંબંધિત દોષિત ચુકાદાઓની સંખ્યા અંગે ચિંતા વ્યક્ત કરી છે, જે હવે બંધારણીય રીતે ગેરબંધારણીય છે.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: The Health Minister expressed concern both for the welfare of individuals taking advantage of the temporary legality of the substances involved, and for drug-related convictions handed down since the now-unconstitutional changes came into effect.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 48,
+      "source_text": "Zayat was unhurt in the accident.",
+      "reference_translation": "ઝાયત અકસ્માતમાં સહીસલામત રહ્યો હતો.",
+      "model_translation": "ઝાયત અકસ્માતમાં ઘાયલ થયો ન હતો.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: Zayat was unhurt in the accident.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 49,
+      "source_text": "Tourist visits are costly, demand physical fitness, can only take place in summer Nov-Feb, and are largely limited to the Peninsula, Islands and Ross Sea.",
+      "reference_translation": "પ્રવાસીઓની મુલાકાત મોંઘી છે, શારીરિક તંદુરસ્તીની માંગ છે, તે માત્ર ઉનાળાની નવેમ્બર-ફેબ્રુઆરીમાં જ થઈ શકે છે અને તે મોટા ભાગે દ્વીપકલ્પ, ટાપુઓ અને રોસ સી સુધી જ મર્યાદિત.",
+      "model_translation": "ટુરિસ્ટ મુલાકાતો મોંઘી છે, શારીરિક તંદુરસ્તીની જરૂર છે, માત્ર ઉનાળામાં નવેમ્બર-ફેબ્રુઆરીમાં જ થઈ શકે છે, અને મોટે ભાગે પેનિન્સુલા, ટાપુઓ અને રોસ સી સુધી મર્યાદિત છે.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: Tourist visits are costly, demand physical fitness, can only take place in summer Nov-Feb, and are largely limited to the Peninsula, Islands and Ross Sea.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 50,
+      "source_text": "Although in theory they can take place annually (so long as they are in different countries), in practice they are not.",
+      "reference_translation": "જો કે, સૈદ્ધાંતિક રીતે તે વાર્ષિક ધોરણે (તે ભિન્ન દેશોમાં હોય એ શરતે) થઈ શકે છે, પણ વાસ્તવમાં તે થતાં નથી.",
+      "model_translation": "જો કે સૈદ્ધાંતિક રીતે તેઓ દર વર્ષે થઈ શકે છે (એટલે કે તેઓ અલગ-અલગ દેશોમાં થાય છે), વ્યવહારમાં તેઓ નથી.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: Although in theory they can take place annually (so long as they are in different countries), in practice they are not.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 51,
+      "source_text": "The protest started around 11:00 local time (UTC+1) on Whitehall opposite the police-guarded entrance to Downing Street, the Prime Minister's official residence.",
+      "reference_translation": "પ્રધાન મંત્રીના સરકારી સરનામા એટલે કે પોલીસ દ્વારા રક્ષિત ડોઈંગ સ્ટ્રીટ ના સામે વાળા વ્હાઇટ હોલમાં ત્યાંના સ્થાનિક સમય અનુસાર 11:00 (યુ. ટી. સી.+1) કલાકે વિરોધ પ્રદર્શન ની શરૂઆત થઇ.",
+      "model_translation": "પ્રૉટેસ્ટ શરૂ થયો ૧૦:૫૯ સ્થાનિક સમય (યુટીસી+૨) વ્હાઇટહૅલ સામે વડાપ્રધાનના સત્તાવાર નિવાસસ્થાન, ડાઉનિંગ સ્ટ્રીટના પોલીસ-સંરક્ષિત પ્રવેશદ્વાર પર.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: The protest started around 11:00 local time (UTC+1) on Whitehall opposite the police-guarded entrance to Downing Street, the Prime Minister's official residence.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 52,
+      "source_text": "Things did not go well for the Italians in North Africa almost from the start. Within a week of Italy's declaration of war on June 10, 1940, the British 11th Hussars had seized Fort Capuzzo in Libya.",
+      "reference_translation": "ઉત્તર આફ્રિકામાં ઈટાલીવાસીઓ માટે શરૂઆતથી જ પરિસ્થિતિ સારી નહોતી. 10 જૂન, 1940ના રોજ ઇટાલીએ યુદ્ધની જાહેરાત કરી તેના એક સપ્તાહમાં, બ્રિટિશ 11મા સૈનિકોએ લીબિયામાં કાપુઝો કિલ્લા પર કબજો કરી લીધો.",
+      "model_translation": "ઈટાલિયનોને ઉત્તર આફ્રિકામાં શરૂઆતથી જ મુશ્કેલીઓનો સામનો કરવો પડ્યો. ઈટાલીએ ૧૦ જૂનના રોજ યુદ્ધ જાહેર કર્યાના એક અઠવાડિયામાં જ ઈટાલિયન ઍડમિરલ કાર્લો બર્ગામોની આગેવાની હેઠળના બ્રિટિશ દળોએ લિબિયાના ફોર્ટ કેપુઝ્ઝો પર કબજો કરી લીધો હતો.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: Things did not go well for the Italians in North Africa almost from the start. Within a week of Italy's declaration of war on June 10, 1940, the British 11th Hussars had seized Fort Capuzzo in Libya.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 53,
+      "source_text": "If the objective of one’s visit to a particular place is to get to know its history and culture then this type of tourism is known as cultural tourism.",
+      "reference_translation": "જો કોઈ ચોક્કસ સ્થાનની મુલાકાત લેવા માટેનો એક વ્યક્તિનો હેતુ તેના ઈતિહાસ અને સંસ્કૃતિનો પરીચય મેળવવાનો હોય તો આ પ્રકારનું પ્રવાસન એક સાંસ્કૃતિક પ્રવાસન તરીકે ઓળખાય છે.",
+      "model_translation": "કલ્ચરલ ટુરિઝમનો મતલબ એ છે કે કોઈ ચોક્કસ સ્થળના ઇતિહાસ અને સંસ્કૃતિ વિશે જાણવાની ઈચ્છા હોય તો આ પ્રકારનું ટુરિઝમ થાય છે. </s>",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: If the objective of one’s visit to a particular place is to get to know its history and culture then this type of tourism is known as cultural tourism.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 54,
+      "source_text": "John Grant, from WNED Buffalo (Reading Rainbow's home station) said \"Reading Rainbow taught kids why to read,... the love of reading — [the show] encouraged kids to pick up a book and to read.\"",
+      "reference_translation": "\"WNED બફેલો (રીડીંગ રેંબોઝ હોમ સ્ટેશન) ના જોન ગ્રાન્ટ એ કહ્યું, \"\"રાઇડિંગ રેંબોઝએ છોકરાઓને વાચન નું મહત્વ શીખવ્યુ છે,.... વાચન માટે નો પ્રેમ - [શો] છોકરાઓ ને પુસ્તકો વાચવા માટે પ્રોત્સાહિત કરતુ આવ્યુ છે.\"",
+      "model_translation": "જ્હોન ગ્રાન્ટ, વેનેડ બફેલો (રીડિંગ રેઇન્બોના હોમ સ્ટેશન) એ કહ્યું હતું કે \"રીડિંગ રાઇમ્બોએ બાળકોને શા માટે વાંચવું તે શીખવ્યું,... ધ લવ ઓફ રીડિંગ - [શો] બાળકોને એક પુસ્તક લેવા અને વાંચવા માટે પ્રોત્સાહિત કરે છે.\"",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: John Grant, from WNED Buffalo (Reading Rainbow's home station) said \"Reading Rainbow taught kids why to read,... the love of reading — [the show] encouraged kids to pick up a book and to read.\"\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 55,
+      "source_text": "Its a very complex entity which consists, according to a simplified Bohr model, of a central nucleus orbited by electrons, somewhat similar to planets orbiting the sun - see Figure 1.1.",
+      "reference_translation": "તે એક ખૂબ જ જટિલ અસ્તિત્વ છે જેમાં ઇલેક્ટ્રોન દ્વારા પરિભ્રમણ કરાયેલા સેન્ટ્રલ ન્યુક્લિયસના, કંઈક અંશે સૂર્યની પરિક્રમા કરતા ગ્રહોની જેમ સરળ બોહર મોડેલ મુજબ સમાવવામાં આવેલ છે  - આકૃતિ 1.1 જુઓ.",
+      "model_translation": "એ એક ખૂબ જ જટિલ અસ્તિત્વ છે જે, બોહર મોડેલ અનુસાર, એક કેન્દ્રીય ન્યુક્લિયસ દ્વારા ઘેરાયેલા ઇલેક્ટ્રોનથી બનેલું છે, જે સૂર્યની આસપાસ ગ્રહોની જેમ ફરે છે - જુઓ આકૃતિ 1-1. </s>",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: Its a very complex entity which consists, according to a simplified Bohr model, of a central nucleus orbited by electrons, somewhat similar to planets orbiting the sun - see Figure 1.1.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 56,
+      "source_text": "Seven points behind, Johnson is second with 2,243.",
+      "reference_translation": "સાત પૉઇન્ટ ઓછા મેળવનાર, જોહ્નસન 2,243 સાથે બીજા ક્રમે છે.",
+      "model_translation": "સાત પોઈન્ટ પાછળ, જ્હોનસન બીજા ક્રમે છે, ૨૦૪૩.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: Seven points behind, Johnson is second with 2,243.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 57,
+      "source_text": "When people don't see moose as potentially dangerous, they may approach too closely and put themselves at risk.",
+      "reference_translation": "જયારે લોકો જંગલી હરણને સંભવિત જોખમ નથી માનતા, અને તેમની ખુબ નજીક જવાનો પ્રયત્ન કરે છે અને પોતાની જાતને જોખમમાં મૂકે દે છે.",
+      "model_translation": "જ્યારે લોકો મૂઝને સંભવિત રીતે જોખમી નથી માનતા, ત્યારે તેઓ ખૂબ નજીક આવી શકે છે અને પોતાને જોખમમાં મૂકી શકે છે. </s>",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: When people don't see moose as potentially dangerous, they may approach too closely and put themselves at risk.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 58,
+      "source_text": "Leonov, also known as \"cosmonaut No. 11\", was part of the Soviet Union's original team of cosmonauts.",
+      "reference_translation": "\"\"\"અવકાશયાત્રી 11\"\" તરીકે પણ જાણીતા લીયોનોવ સોવિયેત યુનિયનની અવકાશયાત્રીઓની મૂળભૂત ટીમનો ભાગ હતા.\"",
+      "model_translation": "લિયોનોવ, જેને \"કોસ્મોનૉટ નં. \"11\" સોવિયેત યુનિયનના મૂળ કોસ્મોનૌટ્સમાંનો એક હતો.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: Leonov, also known as \"cosmonaut No. 11\", was part of the Soviet Union's original team of cosmonauts.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 59,
+      "source_text": "Student visas generally have different requirements and application procedures from normal tourist or business visas.",
+      "reference_translation": "સામાન્ય રીતે વિદ્યાર્થી વિઝામાં સામાન્ય પ્રવાસી અથવા બિઝનેસ વિઝાથી અલગ જરૂરિયાતો અને અરજી પ્રક્રિયાઓ હોય છે.",
+      "model_translation": "વિદ્યાર્થી વિઝા સામાન્ય પ્રવાસી અથવા વ્યાપાર વિઝા કરતાં અલગ જરૂરિયાતો અને અરજી પ્રક્રિયાઓ ધરાવે છે.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: Student visas generally have different requirements and application procedures from normal tourist or business visas.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 60,
+      "source_text": "On the other hand, it is precisely because the volume of water is so high that your viewing of the actual Falls will be obscured—by all the water!",
+      "reference_translation": "બીજી બાજુ, આવું ખાસ કરીને એટલા માટે થાય છે કારણ કે પાણીનો જથો એટલો વિપુલ હોય છે કે તમારી આંખ સામે વાસ્તવિક ધોધનું દૃશ્ય ધૂંધળું થઈ જાય છે-એ પાણીના કારણે જ!",
+      "model_translation": "બીજી બાજુ, પાણીનો જથ્થો એટલો વધારે છે કે તમે ખરેખર ધોધને જોઈ શકશો નહીં કારણ કે તે બધા પાણીથી ઢંકાયેલો છે.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: On the other hand, it is precisely because the volume of water is so high that your viewing of the actual Falls will be obscured—by all the water!\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 61,
+      "source_text": "If traveling in a developing country for the first time – or in a new part of the world – don't underestimate the potential culture shock.",
+      "reference_translation": "વિકસિત દેશોમાં - અથવા દુનિયાના નવા ભાગમાં પ્રથમ વખત પ્રવાસ દરમ્યાન - સંભવિત સાંસ્કૃતિક આઘાતનું અવમૂલ્યન કરવું નહીં.",
+      "model_translation": "જો તમે કોઈ વિકાસશીલ દેશમાં પહેલી વાર મુસાફરી કરી રહ્યા છો અથવા કોઈ નવા ભાગમાં જઈ રહ્યા છો, તો કલ્ચરલ શોક માટે તૈયાર રહો.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: If traveling in a developing country for the first time – or in a new part of the world – don't underestimate the potential culture shock.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 62,
+      "source_text": "At 1:15 a.m. Saturday, according to witnesses, the bus was going through a green light when the car made a turn in front of it.",
+      "reference_translation": "શનિવારે સવારે 1: 15 વાગ્યે, સાક્ષીઓના જણાવ્યા મુજબ, બસ લીલી લાઇટથી પસાર થઈ રહી હતી ત્યારે કારે તેની સામે વળાંક લીધો.",
+      "model_translation": "શનિવારે સવારે ૧૨:૩૫ વાગ્યે, સાક્ષીઓના જણાવ્યા અનુસાર, બસ લીલા પ્રકાશમાંથી પસાર થઈ રહી હતી જ્યારે કાર તેની સામે આવી ગઈ.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: At 1:15 a.m. Saturday, according to witnesses, the bus was going through a green light when the car made a turn in front of it.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 63,
+      "source_text": "However, Star Alliance covers everything except the eastern South Pacific from Santiago de Chile to Tahiti, which is a LATAM Oneworld flight.",
+      "reference_translation": "જો કે, સ્ટાર એલાયન્સ પૂર્વી દક્ષિણ પેસિફિક સિવાય, સેન્ટિયાગો દ ચિલીથી તહિટી સુધીનો બધો વિસ્તાર આવરી લે છે, જે લટામ વનવર્લ્ડની એક ફ્લાઇટ છે.",
+      "model_translation": "જોકે, સ્ટાર એલાયન્સ સેંટિયાગો ડી ચિલીથી તાહિતી સુધીની બધી વસ્તુને આવરી લે છે, જે એલએટીએએમ વનવર્લ્ડ ફ્લાઇટ છે.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: However, Star Alliance covers everything except the eastern South Pacific from Santiago de Chile to Tahiti, which is a LATAM Oneworld flight.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 64,
+      "source_text": "Setting up a tent on private property or in a town of any size can easily attract unwanted attention.",
+      "reference_translation": "ખાનગી મિલકત પર અથવા કોઈ પણ કદના શહેરમાં તંબુ સ્થાપિત કરવાથી સરળતાથી ધ્યાન આકર્ષિત કરી શકે છે.",
+      "model_translation": "ખાનગી મિલકત અથવા કોઈપણ કદના નગરમાં તંબુ ગોઠવવાથી અનિચ્છનીય ધ્યાન આકર્ષિત થઈ શકે છે.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: Setting up a tent on private property or in a town of any size can easily attract unwanted attention.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 65,
+      "source_text": "About three thousand years later, in 1610, Italian astronomer Galileo Galilei used a telescope to observe that Venus has phases, just as the moon does.",
+      "reference_translation": "લગભગ ત્રણ હજાર વર્ષ પછી, 1610 માં, ઇટાલિયન ખગોળશાસ્ત્રી ગેલીલિયો ગેલીલીએ એક ટેલિસ્કોપનો ઉપયોગ કરીને તે જોવા માટે શુક્રના તબક્કાઓ ચંદ્રની જેમ મળ્યા '.",
+      "model_translation": "લગભગ ત્રણ હજાર વર્ષ પછી, ઈટાલિયન ખગોળશાસ્ત્રી ગેલિલિયો ગેલિલીએ એક ટેલિસ્કોપનો ઉપયોગ કરીને અવલોકન કર્યું કે શુક્ર પાસે તબક્કાઓ છે, જેમ કે ચંદ્ર કરે છે. </s>",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: About three thousand years later, in 1610, Italian astronomer Galileo Galilei used a telescope to observe that Venus has phases, just as the moon does.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 66,
+      "source_text": "He had 2 goals and 2 assists in Washington's 5-3 win over the Atlanta Thrashers.",
+      "reference_translation": "એટલાન્ટા થ્રેશર સામે વોશિંગ્ટનની 5-3 થી જીતમાં તેના 2 ગોલ અને 2 સહાય હતી.",
+      "model_translation": "તે વોશિંગ્ટનની 5 - 3 જીતમાં 2 ગોલ અને 2 સહાય કરી હતી.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: He had 2 goals and 2 assists in Washington's 5-3 win over the Atlanta Thrashers.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 67,
+      "source_text": "The theory then established the idea that the Maori people migrated from Polynesia in a Great Fleet and took New Zealand from the Moriori, establishing an agricultural society.",
+      "reference_translation": "થિયરી દ્વારા પછી આ માન્યતા સ્થાપિત કરવામાં આવી  કે માઓરી લોકોનો એક મોટો સમૂહ પોલિનેશિયામાંથી સ્થળાંતર કરી અને મોરીઓરીમાંથી ન્યૂઝીલેન્ડમાં આવ્યો અને ત્યાં એક કૃષિ સમાજ વિકસાવ્યો.",
+      "model_translation": "થિયરી એ છે કે માઓરી લોકો પોલિનેશિયાથી ગ્રેટ ફ્લીટ પર ન્યૂઝીલેન્ડ ગયા હતા અને મોરિયોરી પાસેથી તેને કબજે કર્યું હતું, એક કૃષિ સમાજની સ્થાપના કરી હતી.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: The theory then established the idea that the Maori people migrated from Polynesia in a Great Fleet and took New Zealand from the Moriori, establishing an agricultural society.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 68,
+      "source_text": "Eighteen percent of Venezuelans are unemployed, and most of those who are employed work in the informal economy.",
+      "reference_translation": "વેનેઝુએલાના અઢાર ટકા લોકો બેરોજગાર છે, અને મોટાભાગના લોકો જેમની પાસે રોજગાર છે તેઓ છૂટક અર્થવ્યવસ્થામાં કામ કરે છે.",
+      "model_translation": "વેનેઝુએલાના ૧૮ ટકા લોકો બેરોજગાર છે, અને તેમાંના મોટાભાગના લોકો અનૌપચારિક અર્થતંત્રમાં કામ કરે છે.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: Eighteen percent of Venezuelans are unemployed, and most of those who are employed work in the informal economy.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 69,
+      "source_text": "Vautier's achievements outside of directing include a hunger strike in 1973 against what he viewed as political censorship.",
+      "reference_translation": "વૉટિયરની નિર્દેશન સિવાયની સિદ્ધિઓમાં, તેમના મતે રાજકીય સેન્સરશિપ લાગતી બાબત સામે 1973માં કરેલી ભૂખ હડતાલનો સમાવેશ થાય છે.",
+      "model_translation": "વૌટિયરની સિદ્ધિઓ બહારની દિશામાં દિગ્દર્શનમાં સામેલ નથી, જેમાં ૧૯૭૩માં રાજકીય સેન્સરશીપ સામે ભૂખ હડતાળનો સમાવેશ થાય છે. </s>",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: Vautier's achievements outside of directing include a hunger strike in 1973 against what he viewed as political censorship.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 70,
+      "source_text": "Try to talk to as many people as possible. After a while everyone will know you and will give you hints as to which boat is looking for someone.",
+      "reference_translation": "શક્ય તેટલા લોકો સાથે વાત કરવાનો પ્રયાસ કરો.થોડીવાર પછી, બધા તમને ઓળખી જશે અને એ પણ જણાવશે કે કઈ હોડી કોઈની શોધકરી રહી.",
+      "model_translation": "અવારનવાર લોકો સાથે વાત કરવાનો પ્રયત્ન કરો. થોડા સમય પછી, બધાને ખબર પડી જશે કે તમે કોણ છો અને તેઓ તમને સંકેતો આપશે કે કઈ હોડી તમને શોધી રહી છે.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: Try to talk to as many people as possible. After a while everyone will know you and will give you hints as to which boat is looking for someone.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 71,
+      "source_text": "The storm, located approximately 3,000 miles from Miami, Florida, has maximum sustained winds of 40 mph (64 kph).",
+      "reference_translation": "ફ્લોરિડાના મિયામીથી આશરે 3,000 માઇલ દૂર આવેલા આ વાવાઝોડામાં પવન મહત્તમ 40 mph (64 kph)ની ઝડપે ફૂંકાય છે.",
+      "model_translation": "વાવાઝોડું, જે મિયામી, ફ્લોરિડાથી લગભગ 3 હજાર માઈલ દૂર સ્થિત છે, તે 64 કિમી પ્રતિ કલાકની મહત્તમ ઝડપે પવન ફૂંકી રહ્યું છે. </s>",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: The storm, located approximately 3,000 miles from Miami, Florida, has maximum sustained winds of 40 mph (64 kph).\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 72,
+      "source_text": "That said, expect to be out of breath, and take care in the steeper portions, especially when wet, as it can become dangerous quickly.",
+      "reference_translation": "તેણે કહ્યું કે, શ્વાસને બહાર રાખવાની અપેક્ષા રાખો અને આકરા ભાગની સંભાળ રાખો, ખાસ કરીને જ્યારે ભીનું હોય, કારણ કે તે ઝડપથી ખતરનાક બની શકે.",
+      "model_translation": "તે કહે છે કે, શ્વાસ બહાર કાઢવા માટે તૈયાર રહો, અને ભીના ભાગોમાં, ખાસ કરીને જ્યારે ભીના હોય ત્યારે, સાવચેતી રાખો, કારણ કે તે ઝડપથી જોખમી બની શકે છે. </s>",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: That said, expect to be out of breath, and take care in the steeper portions, especially when wet, as it can become dangerous quickly.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 73,
+      "source_text": "The sign was not physically damaged; the modification was done using black tarpaulins decorated with signs of peace and heart to alter the \"O\" to read lowercase \"e\".",
+      "reference_translation": "\"સાઈનને ભૌતિક દ્રિષ્ટીએ કોઈ નુકસાન થયુ નહોતુ; સુધારો કાળા રંગની તાડપત્રી ઉપર શાંતિ અને દિલ ના ચિન્હ વાપરી \"\"ઓ\"\" ને નાના અક્ષર ના \"\"ઈ\"\"માં બદલાવા હતુ .\"",
+      "model_translation": "ઢાંકણ નું ભૌતિક નુકસાન ન થયું, પણ એને બદલી નાખવામાં આવ્યું હતું.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: The sign was not physically damaged; the modification was done using black tarpaulins decorated with signs of peace and heart to alter the \"O\" to read lowercase \"e\".\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 74,
+      "source_text": "The gloomy atmosphere of the temple and the view over the Tonle Sap lake make the climb to the hill worthwhile.",
+      "reference_translation": "મંદિરના ઉદાસ વાતાવરણ અને ટોન્લે સૅપ લેક પરના દૃશ્ય માટે ટેકરી પર ચઢવું ઇચ્છવા યોગ્ય છે.",
+      "model_translation": "મંદિરનો ઘેરો વાતાવરણ અને ટોનલે સપ તળાવ પરનું દૃશ્ય તેને ચઢવા લાયક બનાવે છે.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: The gloomy atmosphere of the temple and the view over the Tonle Sap lake make the climb to the hill worthwhile.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 75,
+      "source_text": "The \"typical\" visit involves flying into Orlando International Airport, busing to an on-site Disney hotel, spending about a week without leaving Disney property, and returning home.",
+      "reference_translation": "\"\"\"વિશિષ્ટ\"\" મુલાકાતમાં ઓરલન્ડો ઇન્ટરનેશનલ એરપોર્ટ સુધીની ઉડાન, બસ દ્વારા ડિઝની ની હોટેલ સુધી, ડિઝનીની મિલકત છોડ્યા વગર એક સપ્તાહ વિતાવવાનું, અને પરત ઘરે.\"",
+      "model_translation": "સામાન્ય મુલાકાતમાં ઓર્લાન્ડો આંતરરાષ્ટ્રીય હવાઈમથક પર ઉડાન ભરવાનો સમાવેશ થાય છે, હોટલ સુધી બસ લેવાનો, ત્યાં એક અઠવાડિયું વિતાવવાનો અને પછી ઘરે પરત ફરવાનો.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: The \"typical\" visit involves flying into Orlando International Airport, busing to an on-site Disney hotel, spending about a week without leaving Disney property, and returning home.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 76,
+      "source_text": "At the top end, B&Bs obviously compete mainly on two main things: bedding and breakfast.",
+      "reference_translation": "સર્વોચ્ચ સ્થાને B&B સ્વાભાવિક રીતે મુખ્ય બે મુદ્દે સ્પર્ધા કરે છે: સૂવાની સગવડ અને બ્રેકફાસ્ટ.",
+      "model_translation": "Bed and Breakfast (B&B) hotels compete primarily on two key factors: bed and breakfast services.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: At the top end, B&Bs obviously compete mainly on two main things: bedding and breakfast.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 77,
+      "source_text": "Moreover, top judge Evangelos Kalousis is imprisoned as he found guilty of corruption and degenerate behaviour.",
+      "reference_translation": "વધુમાં, ટોચના ન્યાયાધીશ ઇવાન્જેલોસ કૅલોસિસને જેલની સજા થઈ કારણ કે તેઓ ભ્રષ્ટાચારના અને પતિત વ્યવહારના ગુનામાં દોષી ઠર્યા.",
+      "model_translation": "વધુમાં, ટોચના ન્યાયાધીશ ઇવેન્ગલોસ કાલોસિસને ભ્રષ્ટાચાર અને અધોગતિશીલ વર્તનને કારણે જેલમાં ધકેલી દેવામાં આવ્યા છે.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: Moreover, top judge Evangelos Kalousis is imprisoned as he found guilty of corruption and degenerate behaviour.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 78,
+      "source_text": "Latvia and Slovakia have both delayed the process of joining ACTA.",
+      "reference_translation": "લેટવિયા અને સ્લોવાકિયા બંનેએ એસીટીએમાં જોડાવાની પ્રક્રિયામાં વિલંબ કર્યો.",
+      "model_translation": "લેતવિયા અને સ્લોવાકિયાએ એસીટીએમાં જોડાવાની પ્રક્રિયાને મુલતવી રાખી છે.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: Latvia and Slovakia have both delayed the process of joining ACTA.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 79,
+      "source_text": "A population is the collection of organisms of a particular species within a given geographic area.",
+      "reference_translation": "વસ્તી એ અમુક ભૌગોલિક વિસ્તારમાં વિશેષ જાતિના જીવોનો સંગ્રહ છે.",
+      "model_translation": "એક વસ્તી એ ચોક્કસ ભૌગોલિક વિસ્તારમાં એક જ પ્રજાતિના જીવોનો સંગ્રહ છે.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: A population is the collection of organisms of a particular species within a given geographic area.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 80,
+      "source_text": "While on his warm-up lap, Lenz fell off his bike, and was then struck by fellow racer Xavier Zayat.",
+      "reference_translation": "વૉર્મ-અપ લૅપ દરમિયાન લેન્ઝ પોતાની બાઇક પરથી પડી ગયો અને પછી તેને સાથી રેસર ઝેવિયર ઝયાતની ટક્કર વાગી.",
+      "model_translation": "જ્યારે લેન્ઝ તેના વોર્મ-અપ લૅપ પર હતો, ત્યારે લેન્ઝ તેની બાઇક પરથી પડી ગયો અને પછી એક્સાવિયર ઝાયેટ દ્વારા ફટકારવામાં આવ્યો.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: While on his warm-up lap, Lenz fell off his bike, and was then struck by fellow racer Xavier Zayat.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 81,
+      "source_text": "Scientists at the National Hurricane Center predict that Danielle will strengthen to a hurricane by Wednesday.",
+      "reference_translation": "નેશનલ હરિકેન સેન્ટરના વૈજ્ઞાનિકોએ આગાહી કરી છે કે બુધવાર સુધીમાં ડેનિયેલ ભારે વાવાઝોડાની તાકાત મેળવી લેશે.",
+      "model_translation": "નેશનલ હરિકેન સેન્ટરના વૈજ્ઞાનિકો આગાહી કરે છે કે ડેનિયલ મજબૂત બનશે અને બુધવાર સુધીમાં હરિકેનમાં ફેરવાશે.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: Scientists at the National Hurricane Center predict that Danielle will strengthen to a hurricane by Wednesday.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 82,
+      "source_text": "ADD affects relationships with other peers because other children can not understand why they act the way that they do or why they spell they way they do or that their maturity level is different.",
+      "reference_translation": "એડીડી સમાન સ્તરના બાળકો સાથેના સંબંધોને અસર કરે. કારણ કે અન્ય બાળકો તેઓ જે રીતે કરે છે તે શા માટે નથી સમજી શકતા અથવા તેઓ જે રીતે કરે છે તે શા માટે કરે છે અથવા જે રીતે જોડણી કરે છે અને તેમની પરિપક્વતાનું સ્તર અલગ.",
+      "model_translation": "અન્ય બાળકો સાથે સંબંધો ADD દ્વારા પ્રભાવિત થાય છે કારણ કે અન્ય બાળકો સમજી શકતા નથી કે તેઓ શા માટે ચોક્કસ રીતે વર્તે છે, શા માટે તેઓ ચોક્કસ રીતે લખે છે અથવા શા માટે તેમની પરિપક્વતાનું સ્તર અલગ છે.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: ADD affects relationships with other peers because other children can not understand why they act the way that they do or why they spell they way they do or that their maturity level is different.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 83,
+      "source_text": "He received the \"Hero of the Soviet Union\", the Soviet Union's highest honor, for his work.",
+      "reference_translation": "\"તેમના કાર્ય માટે, તેમને સોવિયેત સંઘનું સર્વોચ્ચ સન્માન \"\"હીરો ઑફ ધી સોવિયેત યુનિયન\"\" મળ્યું હતું.\"",
+      "model_translation": "તે સોવિયેત યુનિયનનો સર્વોચ્ચ સન્માન, હીરો ઓફ ધ સોવિયેટ યુનિયન, એનાયત કરવામાં આવ્યો હતો. </s>",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: He received the \"Hero of the Soviet Union\", the Soviet Union's highest honor, for his work.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 84,
+      "source_text": "With the battle for France over, Germany began to get ready to invade the island of Britain.",
+      "reference_translation": "ફ્રાંસ માટેની લડાઈ પૂરી થવા સાથે, જર્મનીએ બ્રિટનના ટાપુ ઉપર હુમલો કરવા માટે તૈયારી શરુ કરી હતી.",
+      "model_translation": "ફ્રાન્સ માટેની લડાઈ સમાપ્ત થતાં, જર્મનીએ બ્રિટન પર આક્રમણ કરવા માટે તૈયારી શરૂ કરી.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: With the battle for France over, Germany began to get ready to invade the island of Britain.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 85,
+      "source_text": "A cell is the smallest structural and functional unit of a living (things) organism.",
+      "reference_translation": "કોશ એ જીવંત સજીવોનો સૌથી નાનામાં નાનો રચનાત્મક અને કાર્યકારી એકમ છે.",
+      "model_translation": "સેલ એ જીવંત (વસ્તુઓ) જીવતંત્રનો સૌથી નાનો માળખાગત અને કાર્યાત્મક એકમ છે. </s>",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: A cell is the smallest structural and functional unit of a living (things) organism.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 86,
+      "source_text": "The most common cause for accidents in winter is slippery roads, pavements (sidewalks) and especially steps.",
+      "reference_translation": "શિયાળામાં અકસ્માતોનું સૌથી સામાન્ય કારણ લપસણો રસ્તાઓ, પેવમેન્ટ (ફૂટપાથ) અને ખાસ કરીને પગથિયા.",
+      "model_translation": "શિયાળાની ઋતુમાં સૌથી સામાન્ય અકસ્માત રસ્તાઓ, પગદંડીઓ (પગપાળા ચાલવાના માર્ગો) અને ખાસ કરીને પગથિયાં પર લપસી જવાને કારણે થાય છે. </s>",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: The most common cause for accidents in winter is slippery roads, pavements (sidewalks) and especially steps.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 87,
+      "source_text": "Last month, there were major protests in Poland when that country signed ACTA, which has led to the Polish government deciding not to ratify the agreement, for now.",
+      "reference_translation": "પોલેન્ડ એ ગયા મહિને એસીટીએ કરાર પર હસ્તાક્ષર કર્યા ત્યારે ત્યાં ઘણા વિરોધ પ્રદર્શનો થયેલા, જેના કારણે પોલેન્ડની સરકારે એ કરારોને મંજૂરી આપવાનો  નિર્ણય અત્યાર પૂરતો મોકૂફ રાખ્યો છે.",
+      "model_translation": "ગયા મહિને, પોલેન્ડમાં એસીટીએ પર હસ્તાક્ષર કરવા સામે મોટા વિરોધ પ્રદર્શનો થયા હતા, જેના કારણે પોલિશ સરકારે આ કરાર પર હસ્તાક્ષર ન કરવાનો નિર્ણય લીધો હતો, પરંતુ હવે માટે.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: Last month, there were major protests in Poland when that country signed ACTA, which has led to the Polish government deciding not to ratify the agreement, for now.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 88,
+      "source_text": "Jarque was practicing during pre-season training at Coverciano in Italy earlier in the day. He was staying in the team hotel ahead of a match planned for Sunday against Bolonia.",
+      "reference_translation": "જાર્કે દિવસની શરૂઆતના સમયે ઇટલીમાં કોવર્સિઆનો ખાતે પ્રિ-સિઝન ટ્રેનિંગ દરમિયાન પ્રૅક્ટિસ કરી રહ્યા હતા. તેઓ બોલોનિયા સામે રવિવારના રોજ રમાનારી મૅચ પહેલાં ટીમ હોટલમાં રોકાયા હતા.",
+      "model_translation": "Járque foi práticando durante o treinamento de pré-seção no Covaciano em Itália anteriormente no dia sexto. Ele estava no hotel do equipamento para um partido planejado no sábado contra Bologna.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: Jarque was practicing during pre-season training at Coverciano in Italy earlier in the day. He was staying in the team hotel ahead of a match planned for Sunday against Bolonia.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 89,
+      "source_text": "Seeing the sites and wildlife of the Galapagos is best done by boat, just as Charles Darwin did it in 1835.",
+      "reference_translation": "ગાલાપાગોસ નું જંગલજીવન અને સ્થળો નૌકા દ્વારા જોવા ઉત્તમ રહેશે, ચાર્લ્સ ડાર્વિને 1835 માં કર્યું હતું એકદમ તેવીજ રીતે.",
+      "model_translation": "ગેલાપાગોસ ટાપુઓની મુલાકાત હોડી દ્વારા લેવી શ્રેષ્ઠ છે, જેમ કે ચાર્લ્સ ડાર્વિને ૧૮૩૫માં કર્યું હતું.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: Seeing the sites and wildlife of the Galapagos is best done by boat, just as Charles Darwin did it in 1835.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 90,
+      "source_text": "The aircraft had been headed to Irkutsk and was being operated by interior troops.",
+      "reference_translation": "વિમાન ઇરકુત્સ્ક તરફ જઈ રહ્યું હતું અને આંતરિક દળો દ્વારા તેનું સંચાલન કરવામાં આવી રહ્યું હતું.",
+      "model_translation": "વિમાને ઇર્કુત્સ્ક તરફ ઉડાન ભરી હતી અને તે આંતરિક સૈનિકો દ્વારા સંચાલિત હતું.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: The aircraft had been headed to Irkutsk and was being operated by interior troops.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 91,
+      "source_text": "Of course a first-class half-miler, a man who can beat two minutes, must be possessed of a fair amount of speed, but endurance must be cultivated at all hazards.",
+      "reference_translation": "અલબત્ત, પ્રથમ વર્ગનો અર્ધ માઇલર, એક માણસ, જે બે મિનિટમાં હરાવી શકે છે, તેની ઝડપ ઘણી ઓછી હોવી જોઈએ, પરંતુ તે બધા જોખમોમાં ધૈર્ય વિકસાવવું આવશ્યક છે.",
+      "model_translation": "પહેલા વર્ગનો અડધો માઈલ દોડવીર, જે બે મિનિટમાં દોડી શકે છે, તેને ઝડપ હોવી જરૂરી છે, પરંતુ સહનશક્તિ પણ હોવી જોઈએ.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: Of course a first-class half-miler, a man who can beat two minutes, must be possessed of a fair amount of speed, but endurance must be cultivated at all hazards.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 92,
+      "source_text": "Sometimes the same flight can have vastly differing prices at various agregators and it pays to compare search results and to also look at the website of the airline itself before booking.",
+      "reference_translation": "કેટલીક વાર એક જ ફ્લાઇટની વિવિધ એગ્રીગેટર પર ભારે તફાવત હોઈ શકે અને તે સર્ચ રિઝલ્ટની સરખામણી કરવા અને બુકિંગ પહેલાં એરલાઇનની વેબસાઇટ પણ જોવા માટે ચૂકવે.",
+      "model_translation": "ક્યારેક એક જ ફ્લાઈટ અલગ અલગ એગ્રીગેટર્સ પર અલગ અલગ કિંમતે મળી શકે છે અને તે માટે સરખામણી શોધ પરિણામો અને એરલાઈનની વેબસાઈટ પણ જોવી જોઈએ તે પહેલાં બુકિંગ કરવું જોઈએ. </s>",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: Sometimes the same flight can have vastly differing prices at various agregators and it pays to compare search results and to also look at the website of the airline itself before booking.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 93,
+      "source_text": "Scientists call this process \"stimulated emission of radiation\" because the atoms are stimulated by the bright light, causing the emission of a photon of light, and light is a type of radiation.",
+      "reference_translation": "\"વૈજ્ઞાનિકો આ પ્રકિયાને \"\"કિરણોત્સર્ગનો પ્રદીપ્ત સ્ત્રાવ\"\" કહે છે કારણ કે પરમાણુઓ તેજસ્વી પ્રકાશથી પ્રદીપ્ત થાય છે જે પ્રકાશના ફોટોનનાં સ્ત્રાવનું કારણ બને છે, અને પ્રકાશ એ કિરણોત્સર્ગનો એક પ્રકાર છે.\"",
+      "model_translation": "વૈજ્ઞાનિકો આ પ્રક્રિયાને \"ઉત્તેજિત ઉત્સર્જન ઓફ રેડિયેશન\" કહે છે કારણ કે અણુઓ તેજસ્વી પ્રકાશ દ્વારા ઉત્તેજિત થાય છે, જેના પરિણામે ફોટોન ઓફ લાઇટનું ઉત્પાદન થાય છે અને પ્રકાશ એ કિરણોત્સર્ગનો એક પ્રકાર છે. </s>",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: Scientists call this process \"stimulated emission of radiation\" because the atoms are stimulated by the bright light, causing the emission of a photon of light, and light is a type of radiation.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 94,
+      "source_text": "Convergent thinking patterns are problem solving techniques that unite different ideas or fields to find a solution.",
+      "reference_translation": "સમન્વયિત વિચારપદ્ધતિઓ સમસ્યા નિવારણ પદ્ધતિઓ છે જે વિવિધ વિચારો અથવા ક્ષેત્રોને એક જૂથ કરીને ઉકેલ શોધવા માટે એક કરે.",
+      "model_translation": "કન્વર્જન્ટ થિંકિંગ પેટર્ન એ સમસ્યાનું સમાધાન કરવાની તકનીકો છે જે વિવિધ વિચારો અથવા ક્ષેત્રોને એકીકૃત કરે છે.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: Convergent thinking patterns are problem solving techniques that unite different ideas or fields to find a solution.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 95,
+      "source_text": "This type of thinking is associated with certain science or standard procedures.",
+      "reference_translation": "વિચારધારાનાં પ્રકાર એ અમુક વિજ્ઞાન કે પ્રમાણભૂત પ્રક્રિયાઓ સાથે જોડાયેલા હોય છે.",
+      "model_translation": "આ પ્રકારની વિચારસરણી ચોક્કસ વિજ્ઞાન અથવા પ્રમાણભૂત પ્રક્રિયાઓ સાથે સંકળાયેલી છે.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: This type of thinking is associated with certain science or standard procedures.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 96,
+      "source_text": "Enceladus is the most reflective object in the solar system, reflecting about 90 percent of the sunlight that hits it.",
+      "reference_translation": "એન્સીલેડસ સૂર્ય મંડળનો સહુથી ચમકતો ભાગ છે જે તેને અથડાતા 90 ટકા સૂર્યકિરણોને પરાવર્તિત કરે છે.",
+      "model_translation": "Enceladus એ સૌર મંડળમાં સૌથી વધુ પ્રતિબિંબિત પદાર્થ છે, જે તેના પર પડતા લગભગ ૯૦ ટકા સૂર્યપ્રકાશને પ્રતિબિંબિત કરે છે. </s>",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: Enceladus is the most reflective object in the solar system, reflecting about 90 percent of the sunlight that hits it.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 97,
+      "source_text": "If you want to fly around the world completely in the Southern Hemisphere, the choice of flights and destinations is limited due to the lack of transoceanic routes.",
+      "reference_translation": "જો તમે સંપૂર્ણપણે દક્ષિણ ગોળાર્ધના વિશ્વમાં ફરવા માગતા હો, તો દરિયાપારના માર્ગોના અભાવને કારણે ફ્લાઇટ તથા ગંતવ્યોની પસંદગી સીમિત છે.",
+      "model_translation": "જો તમે આખી દુનિયામાં દક્ષિણ ગોળાર્ધમાં ઉડાન ભરવા માંગતા હો, તો ટ્રાન્સઓસિનિક માર્ગોની ગેરહાજરીને કારણે ફ્લાઇટ્સ અને ગંતવ્યોની પસંદગી મર્યાદિત છે. </s>",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: If you want to fly around the world completely in the Southern Hemisphere, the choice of flights and destinations is limited due to the lack of transoceanic routes.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 98,
+      "source_text": "At home, due to this constant exposure to the local germs, odds are very high that you're already immune to them.",
+      "reference_translation": "ઘરે, સ્થાનિક જંતુઓના સતત સંપર્ક ના લીધે, શક્યતાઓ ઘણી વધારે છે કે તમે તેના માટે રોગ પ્રતિકારકતા ધરાવતા હોવ.",
+      "model_translation": "ઘરના વાતાવરણમાં સતત સ્થાનિક જીવાણુઓના સંપર્કમાં રહેવાને કારણે, તમે પહેલેથી જ રોગપ્રતિકારક શક્તિ ધરાવો છો તેવી શક્યતા ઘણી વધારે છે. </s>",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: At home, due to this constant exposure to the local germs, odds are very high that you're already immune to them.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    },
+    {
+      "pair_key": "flores_en-gu",
+      "example_index": 99,
+      "source_text": "The capsule will look much like a shooting star going across the sky.",
+      "reference_translation": "આ કેપ્સ્યુલ આકાશમાં થી પસાર થઈ રહેલા શૂટિંગ સ્ટાર જેવી જ લાગશે.",
+      "model_translation": "કેપ્સ્યુલ આકાશમાં તારોની જેમ દેખાશે.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nGujarati: ઝડપી ભૂરો શિયાળ આળસુ કુતરાની ઉપર કૂદે છે।\n\nEnglish: I love learning new languages.\nGujarati: મને નવી ભાષાઓ શીખવાનું ગમે છે।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: The capsule will look much like a shooting star going across the sky.\nGujarati:",
+      "source_lang": "en",
+      "target_lang": "gu"
+    }
+  ]
+}

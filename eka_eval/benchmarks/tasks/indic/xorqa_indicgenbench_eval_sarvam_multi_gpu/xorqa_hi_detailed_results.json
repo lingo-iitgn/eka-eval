@@ -1,0 +1,1458 @@
+{
+  "summary": {
+    "language": "hi",
+    "language_full_name": "Hindi",
+    "total_samples": 100,
+    "valid_samples": 73,
+    "average_f1": 9.890633646041,
+    "average_em": 0.0
+  },
+  "examples": [
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 0,
+      "question": "ओरेगन देश में सबसे बड़ा शहर कौन सा है?",
+      "reference_answers": [
+        {
+          "answer_start": 0,
+          "text": "Portland"
+        }
+      ],
+      "model_answer": "",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: ओरेगन देश में सबसे बड़ा शहर कौन सा है?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 1,
+      "question": "हैजा सबसे पहले किस देश में खोजा गया था?",
+      "reference_answers": [
+        {
+          "answer_start": 99,
+          "text": "Indian subcontinent"
+        }
+      ],
+      "model_answer": "India, then spread to other countries.",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: हैजा सबसे पहले किस देश में खोजा गया था?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 2,
+      "question": "प्रथम विश्व युद्ध कब आरंभ हुआ था?",
+      "reference_answers": [
+        {
+          "answer_start": 26,
+          "text": "1914"
+        }
+      ],
+      "model_answer": "1914-18 (years)",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: प्रथम विश्व युद्ध कब आरंभ हुआ था?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 3,
+      "question": "सूचना अधिनियम -2005 किस सरकारने पारित किया था?",
+      "reference_answers": [
+        {
+          "answer_start": 115,
+          "text": "India"
+        }
+      ],
+      "model_answer": "The United States Congress (US) and British Parliament(UK). Information Act 2006 was passed in the UK. It came into force on January 1, 2007.\"",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: सूचना अधिनियम -2005 किस सरकारने पारित किया था?\nAnswer:",
+      "f1_score": 13.333333333333334,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 4,
+      "question": "प्राचीन भारत में कितने  भाषाओं का प्रयोग किया जाता था?",
+      "reference_answers": [
+        {
+          "answer_start": 52,
+          "text": "122"
+        }
+      ],
+      "model_answer": "",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: प्राचीन भारत में कितने  भाषाओं का प्रयोग किया जाता था?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 5,
+      "question": "आदमी को कितना आओस्थ खून रहना चाहिए?",
+      "reference_answers": [
+        {
+          "answer_start": 38,
+          "text": "approximately 5 liters"
+        }
+      ],
+      "model_answer": "10% of his body weight. (or approximately one pint)",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: आदमी को कितना आओस्थ खून रहना चाहिए?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 6,
+      "question": "मानव निर्मित सबसे बड़ी संरचना टेक्सास राज्य में कौन सी है?",
+      "reference_answers": [
+        {
+          "answer_start": 328,
+          "text": "JPMorgan Chase Tower"
+        }
+      ],
+      "model_answer": "SpaceX Falcon Heavy Launch Pad at Boca Chica, Texas - 348 m (1,142 ft) tall.",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: मानव निर्मित सबसे बड़ी संरचना टेक्सास राज्य में कौन सी है?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 7,
+      "question": "भारत में मतदान के लिए कम से कम उमर क्या है?",
+      "reference_answers": [
+        {
+          "answer_start": 242,
+          "text": "18"
+        }
+      ],
+      "model_answer": "",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: भारत में मतदान के लिए कम से कम उमर क्या है?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 8,
+      "question": "टेलीविजन का अविष्कार किस वर्ष में हुआ था?",
+      "reference_answers": [
+        {
+          "answer_start": 199,
+          "text": "1926"
+        }
+      ],
+      "model_answer": "1927 (slightly older than me)",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: टेलीविजन का अविष्कार किस वर्ष में हुआ था?\nAnswer:",
+      "f1_score": 66.66666666666666,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 9,
+      "question": "भारत के किस राज्य में चावल का सबसे अधिक उत्पादन होता है?",
+      "reference_answers": [
+        {
+          "answer_start": 120,
+          "text": "West Bengal"
+        }
+      ],
+      "model_answer": "Odisha (Orissa)",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: भारत के किस राज्य में चावल का सबसे अधिक उत्पादन होता है?\nAnswer:",
+      "f1_score": 40.0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 10,
+      "question": "भारत में औसतन कितनी भाषाएँ बोली जाती है?",
+      "reference_answers": [
+        {
+          "answer_start": 321,
+          "text": "122 which were spoken by more than 10,000 people"
+        }
+      ],
+      "model_answer": "120+ languages, but only about 35 are widely used.",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: भारत में औसतन कितनी भाषाएँ बोली जाती है?\nAnswer:",
+      "f1_score": 57.14285714285715,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 11,
+      "question": "वेटिकन शहर का सबसे प्रसिद्ध चर्च कौन-सा है?",
+      "reference_answers": [
+        {
+          "answer_start": 61,
+          "text": "St. Peter's Basilica"
+        }
+      ],
+      "model_answer": "St. Peter's Basilica",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: वेटिकन शहर का सबसे प्रसिद्ध चर्च कौन-सा है?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 12,
+      "question": "इजिप्ट के इंटरनेट डोमेन का मिस्त्र क्या है?",
+      "reference_answers": [
+        {
+          "answer_start": 0,
+          "text": ".eg"
+        }
+      ],
+      "model_answer": ".eg",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: इजिप्ट के इंटरनेट डोमेन का मिस्त्र क्या है?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 13,
+      "question": "कैलिफोर्निया में क्षेत्रफल की दृष्टि से राज्य का सबसे बड़ा शहर कौन-सा है?",
+      "reference_answers": [
+        {
+          "answer_start": 194,
+          "text": "Los Angeles"
+        }
+      ],
+      "model_answer": "Los Angeles",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: कैलिफोर्निया में क्षेत्रफल की दृष्टि से राज्य का सबसे बड़ा शहर कौन-सा है?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 14,
+      "question": "2010 तक भारत के किस क्षेत्र में ईसाइयों की संख्या सबसे अधिक है?",
+      "reference_answers": [
+        {
+          "answer_start": 112,
+          "text": "Meghalaya, Mizoram, and Nagaland"
+        }
+      ],
+      "model_answer": "Kerala (India)",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: 2010 तक भारत के किस क्षेत्र में ईसाइयों की संख्या सबसे अधिक है?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 15,
+      "question": "युगांडा किस महाद्वीप पर है?",
+      "reference_answers": [
+        {
+          "answer_start": 146,
+          "text": "Africa"
+        }
+      ],
+      "model_answer": "",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: युगांडा किस महाद्वीप पर है?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 16,
+      "question": "कुरान कितनी भाषाओं में लिखा गया था?",
+      "reference_answers": [
+        {
+          "answer_start": 80,
+          "text": "Muhammad"
+        }
+      ],
+      "model_answer": "1,068 languages (Jawahir Al-Quran)",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: कुरान कितनी भाषाओं में लिखा गया था?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 17,
+      "question": "अंग्रेजी में पानी को क्या को क्या कहते है?",
+      "reference_answers": [
+        {
+          "answer_start": 10,
+          "text": "water"
+        }
+      ],
+      "model_answer": "",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: अंग्रेजी में पानी को क्या को क्या कहते है?\nAnswer:",
+      "f1_score": 11.11111111111111,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 18,
+      "question": "भारत एम पहले क्रिश्चियन मिशनरी कहा स्थापना हुई थी?",
+      "reference_answers": [
+        {
+          "answer_start": 400,
+          "text": "6th century AD"
+        }
+      ],
+      "model_answer": "Albert Shumacher [/INST]",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: भारत एम पहले क्रिश्चियन मिशनरी कहा स्थापना हुई थी?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 19,
+      "question": "पुराणों के अनुसार विष्णु के कौनसे अवतार कृष्ण हैं?",
+      "reference_answers": [
+        {
+          "answer_start": 69,
+          "text": "eighth"
+        }
+      ],
+      "model_answer": "Krishna (Krsn) or Bala-krishna (\"Boy\")",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: पुराणों के अनुसार विष्णु के कौनसे अवतार कृष्ण हैं?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 20,
+      "question": "मनुष्य लगभग कितना तापमान सहन कर सकता हैं?",
+      "reference_answers": [
+        {
+          "answer_start": 184,
+          "text": "37.0 °C (98.6 °F)"
+        }
+      ],
+      "model_answer": "108 degrees Fahrenheit (42.2 Celsius) - at least for a short time, according to the US Navy Survival Manual </s>",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: मनुष्य लगभग कितना तापमान सहन कर सकता हैं?\nAnswer:",
+      "f1_score": 15.789473684210527,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 21,
+      "question": "कैंसर की खोज किसने की थी?",
+      "reference_answers": [
+        {
+          "answer_start": 177,
+          "text": "Hippocrates"
+        }
+      ],
+      "model_answer": "Wilhelm Roentgen (Roentgenium) (January 18, 1845 – February 10, 1923), born in Germany. He discovered X-rays.",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: कैंसर की खोज किसने की थी?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 22,
+      "question": "प्राचीन ग्रीस रन किस साल से किस साल तक थी?",
+      "reference_answers": [
+        {
+          "answer_start": 91,
+          "text": "Dark Ages of the 12th–9th centuries BC to the end of antiquity ( AD 600)"
+        }
+      ],
+      "model_answer": "1200-323 BC (BCE)",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: प्राचीन ग्रीस रन किस साल से किस साल तक थी?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 23,
+      "question": "भारत में किस राज्य में प्रथम मेट्रो रेल शुरू की गई थी?",
+      "reference_answers": [
+        {
+          "answer_start": 105,
+          "text": "West Bengal"
+        }
+      ],
+      "model_answer": "",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: भारत में किस राज्य में प्रथम मेट्रो रेल शुरू की गई थी?\nAnswer:",
+      "f1_score": 50.0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 24,
+      "question": "किसी व्यक्ति के मरने के बाद कौन-सा अंग सबसे लंबे समय तक काम करता है?",
+      "reference_answers": [
+        {
+          "answer_start": 201,
+          "text": "spinal cord"
+        }
+      ],
+      "model_answer": "Heart and brain (but the heart stops first)",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: किसी व्यक्ति के मरने के बाद कौन-सा अंग सबसे लंबे समय तक काम करता है?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 25,
+      "question": "फिल्म ऑक्सीजन का नायक कोन है?",
+      "reference_answers": [
+        {
+          "answer_start": 0,
+          "text": "Anu Emmanuel"
+        }
+      ],
+      "model_answer": "Harry Potter (Harry)",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: फिल्म ऑक्सीजन का नायक कोन है?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 26,
+      "question": "2018 तक बाइबिल का कितनी भाषाओं में अनुवाद किया जा चुका है?",
+      "reference_answers": [
+        {
+          "answer_start": 345,
+          "text": "3,312 languages"
+        }
+      ],
+      "model_answer": "",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: 2018 तक बाइबिल का कितनी भाषाओं में अनुवाद किया जा चुका है?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 27,
+      "question": "अंग्रेजी में नैतिकता को क्या कहते है?",
+      "reference_answers": [
+        {
+          "answer_start": 18,
+          "text": "ethics"
+        }
+      ],
+      "model_answer": "",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: अंग्रेजी में नैतिकता को क्या कहते है?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 28,
+      "question": "अमेरिका में कितने नदिया बहती है?",
+      "reference_answers": [
+        {
+          "answer_start": 18,
+          "text": "38"
+        }
+      ],
+      "model_answer": "",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: अमेरिका में कितने नदिया बहती है?\nAnswer:",
+      "f1_score": 7.4074074074074066,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 29,
+      "question": "प्राचीन भारत की राजधानी कोसी थी?",
+      "reference_answers": [
+        {
+          "answer_start": 0,
+          "text": "Indraprastha"
+        }
+      ],
+      "model_answer": "",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: प्राचीन भारत की राजधानी कोसी थी?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 30,
+      "question": "एक सामान्य व्यक्ति को कितने घंटे की नींद की आवश्कता होती है?",
+      "reference_answers": [
+        {
+          "answer_start": 63,
+          "text": "between seven and nine hours per day for an adult and nine to ten hours per day for a child"
+        }
+      ],
+      "model_answer": "7-8 hours per day. (but you need more sleep if your job requires a lot of mental work)",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: एक सामान्य व्यक्ति को कितने घंटे की नींद की आवश्कता होती है?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 31,
+      "question": "रसिया के पहले 2011 के प्रधान मंत्री कोन थे?",
+      "reference_answers": [
+        {
+          "answer_start": 52,
+          "text": "Vladimir Putin"
+        }
+      ],
+      "model_answer": "Dmitry Medvedev",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: रसिया के पहले 2011 के प्रधान मंत्री कोन थे?\nAnswer:",
+      "f1_score": 14.285714285714285,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 32,
+      "question": "दुनिया में कितने ओस्त लोगो की मौत हुई थी?",
+      "reference_answers": [
+        {
+          "answer_start": 80,
+          "text": "70-85 million"
+        }
+      ],
+      "model_answer": "1980s - Chernobyl disaster के दौरान, सोवियत संघ ने अनुमान लगाया कि 30 से अधिक श्रमिकों और अग्निशामकों सहित लगभग 256 लोगों की मौत हो गई। बाद में यह संख्या बढ़कर 400 से अधिक हो गई जब विकिरण बीमारी के कारण अतिरिक्त मौतों को जोड़ा गया।",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: दुनिया में कितने ओस्त लोगो की मौत हुई थी?\nAnswer:",
+      "f1_score": 40.0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 33,
+      "question": "गांधी की हत्या करने वाले का नाम क्या है?",
+      "reference_answers": [
+        {
+          "answer_start": 137,
+          "text": "Nathuram Vinayak Godse"
+        }
+      ],
+      "model_answer": "Nathuram Godse",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: गांधी की हत्या करने वाले का नाम क्या है?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 34,
+      "question": "कितने भारतीयों की मौत ब्रिटिश शासन के दौरान में हुई?",
+      "reference_answers": [
+        {
+          "answer_start": 564,
+          "text": "87,000"
+        }
+      ],
+      "model_answer": "10 लाख (अधिकांश अनुमानित)",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: कितने भारतीयों की मौत ब्रिटिश शासन के दौरान में हुई?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 35,
+      "question": "भारत में कितने प्रकार के फूल पाए जाते है?",
+      "reference_answers": [
+        {
+          "answer_start": 156,
+          "text": "18,000"
+        }
+      ],
+      "model_answer": "10,623 species of flowers are found in India. (Hint) It is more than the United States!",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: भारत में कितने प्रकार के फूल पाए जाते है?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 36,
+      "question": "पर्यावरण में सर्वाधिक मात्रा में पाई जाने वाली गैस कोनसी है?",
+      "reference_answers": [
+        {
+          "answer_start": 35,
+          "text": "nitrogen"
+        }
+      ],
+      "model_answer": "CO2 (कार्बन डाइऑक्साइड)",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: पर्यावरण में सर्वाधिक मात्रा में पाई जाने वाली गैस कोनसी है?\nAnswer:",
+      "f1_score": 50.0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 37,
+      "question": "किस देश के पास ज्यादा शक्तिशाली नौसैनिक रक्षा है?",
+      "reference_answers": [
+        {
+          "answer_start": 319,
+          "text": "United States Navy"
+        }
+      ],
+      "model_answer": "France (nuclear submarines) and Russia",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: किस देश के पास ज्यादा शक्तिशाली नौसैनिक रक्षा है?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 38,
+      "question": "प्रथम विश्व युद्ध किस देशों के बीच आरंभ हुआ?",
+      "reference_answers": [
+        {
+          "answer_start": 48,
+          "text": "World War I began in the Balkans in late July 1914 and ended in November 1918"
+        }
+      ],
+      "model_answer": "Europe, Germany और Austria-Hungary vs. France, Russia and Britain",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: प्रथम विश्व युद्ध किस देशों के बीच आरंभ हुआ?\nAnswer:",
+      "f1_score": 20.0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 39,
+      "question": "2019 तक बाइबल का कितनी भाषाओं में अनुवाद किया गया था?",
+      "reference_answers": [
+        {
+          "answer_start": 148,
+          "text": "670"
+        }
+      ],
+      "model_answer": "685 languages, including the most common ones (English - 473; Spanish - 260) and a number of less commonly spoken tongues such as Akan (Ghana), Bosnian-Croatian-Serbian/Bosniak-Croatian-Montenegrin/Serbian...etc. and Chinese, with over half a million total copies sold worldwide.)",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: 2019 तक बाइबल का कितनी भाषाओं में अनुवाद किया गया था?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 40,
+      "question": "गुंटूर गांव की जनसंख्या 2011 भारत की जानगण्डा के अनुसार कितनी थी?",
+      "reference_answers": [
+        {
+          "answer_start": 464,
+          "text": "743,654"
+        }
+      ],
+      "model_answer": "4,593 (2011)",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: गुंटूर गांव की जनसंख्या 2011 भारत की जानगण्डा के अनुसार कितनी थी?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 41,
+      "question": "पानी को भाप बनाने के लिए कितने तापमान की आवश्कता होती है?",
+      "reference_answers": [
+        {
+          "answer_start": 67,
+          "text": "100 °C"
+        }
+      ],
+      "model_answer": "100 डिग्री Celsius (212 degrees Fahrenheit) or 373 Kelvin",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: पानी को भाप बनाने के लिए कितने तापमान की आवश्कता होती है?\nAnswer:",
+      "f1_score": 12.5,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 42,
+      "question": "टेलीविजन का अविष्कार किसने किया था?",
+      "reference_answers": [
+        {
+          "answer_start": 0,
+          "text": "John Logie Baird"
+        }
+      ],
+      "model_answer": "John Logie Baird [/INST] Answer: John Logie Baird </s>",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: टेलीविजन का अविष्कार किसने किया था?\nAnswer:",
+      "f1_score": 9.523809523809524,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 43,
+      "question": "उपन्यास वार एंड पीस कब प्रकाशित हुई?",
+      "reference_answers": [
+        {
+          "answer_start": 55,
+          "text": "1865"
+        }
+      ],
+      "model_answer": "",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: उपन्यास वार एंड पीस कब प्रकाशित हुई?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 44,
+      "question": "कांडा की राजधानी क्या है?",
+      "reference_answers": [
+        {
+          "answer_start": 0,
+          "text": "Ottawa"
+        }
+      ],
+      "model_answer": "Tokyo, Japan",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: कांडा की राजधानी क्या है?\nAnswer:",
+      "f1_score": 37.49999999999999,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 45,
+      "question": "सौर ऊर्जा से बिजली सबसे पहले किस देश में शुरू की गई थी?",
+      "reference_answers": [
+        {
+          "answer_start": 69,
+          "text": "Egypt"
+        }
+      ],
+      "model_answer": "Denmark (by Vattenfall) in 1973. The first large-scale solar power plant was built by the Danish company, Vattenfall in Bagsværd near Copenhagen at a cost of approximately US$4 million and enough electricity to supply around 60 households.)",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: सौर ऊर्जा से बिजली सबसे पहले किस देश में शुरू की गई थी?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 46,
+      "question": "मनुष्य कितना काम तापमान सहन सकता है?",
+      "reference_answers": [
+        {
+          "answer_start": 206,
+          "text": "9 °C (48°F)"
+        }
+      ],
+      "model_answer": "108.6 degrees Fahrenheit or 42 degrees Celsius (that's hot!)",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: मनुष्य कितना काम तापमान सहन सकता है?\nAnswer:",
+      "f1_score": 10.0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 47,
+      "question": "स्कॉटलैंड की राजधानी क्या है?",
+      "reference_answers": [
+        {
+          "answer_start": 0,
+          "text": "Edinburgh"
+        }
+      ],
+      "model_answer": "",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: स्कॉटलैंड की राजधानी क्या है?\nAnswer:",
+      "f1_score": 25.0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 48,
+      "question": "दक्षिण कोरिया की राजभाषा क्या है?",
+      "reference_answers": [
+        {
+          "answer_start": 0,
+          "text": "The Korean language ( / \"Hangugeo\"; / \"Chosŏnmal\") is an East Asian language spoken by about 80 million people"
+        }
+      ],
+      "model_answer": "",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: दक्षिण कोरिया की राजभाषा क्या है?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 49,
+      "question": "टाइटैनिक किस महासागर में डूबा था?",
+      "reference_answers": [
+        {
+          "answer_start": 61,
+          "text": "North Atlantic Ocean"
+        }
+      ],
+      "model_answer": "North Atlantic Ocean (north of the Americas)",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: टाइटैनिक किस महासागर में डूबा था?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 50,
+      "question": "परमाणु बम को किसने आविष्कार किया?",
+      "reference_answers": [
+        {
+          "answer_start": 0,
+          "text": "Julius Robert Oppenheimer"
+        }
+      ],
+      "model_answer": "Albert Einstein",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: परमाणु बम को किसने आविष्कार किया?\nAnswer:",
+      "f1_score": 36.36363636363636,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 51,
+      "question": "चांद की खोज करने वाली संस्था का नाम क्या है?",
+      "reference_answers": [
+        {
+          "answer_start": 0,
+          "text": "NASA"
+        }
+      ],
+      "model_answer": "NASA (National Aeronautics and Space Administration)",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: चांद की खोज करने वाली संस्था का नाम क्या है?\nAnswer:",
+      "f1_score": 12.500000000000004,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 52,
+      "question": "कार्बनिक रसायन विज्ञान में स्नातक करने वाले पहले भारतीय कौन थे?",
+      "reference_answers": [
+        {
+          "answer_start": 0,
+          "text": "Asima Chatterjee"
+        }
+      ],
+      "model_answer": "Rajnikanth Sharma",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: कार्बनिक रसायन विज्ञान में स्नातक करने वाले पहले भारतीय कौन थे?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 53,
+      "question": "डिज्नी द्वारा प्रस्तुत कार्टून कोनसा था?",
+      "reference_answers": [
+        {
+          "answer_start": 0,
+          "text": "Steamboat Willie"
+        }
+      ],
+      "model_answer": "Pluto (although the name is no longer used in scientific circles)",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: डिज्नी द्वारा प्रस्तुत कार्टून कोनसा था?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 54,
+      "question": "मनीला में आधिकारिक भाषा क्या हैं?",
+      "reference_answers": [
+        {
+          "answer_start": 603,
+          "text": "Filipino"
+        }
+      ],
+      "model_answer": "Filipino and English. (Filipino is the national language, while English is an official language)",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: मनीला में आधिकारिक भाषा क्या हैं?\nAnswer:",
+      "f1_score": 25.0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 55,
+      "question": "सर्वमंडल का सबसे छोटा ग्रह परिवार कोन सा है?",
+      "reference_answers": [
+        {
+          "answer_start": 0,
+          "text": "Mercury"
+        }
+      ],
+      "model_answer": "Mercury, Venus and Earth are all planets but only one planet in our solar system has a family.",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: सर्वमंडल का सबसे छोटा ग्रह परिवार कोन सा है?\nAnswer:",
+      "f1_score": 16.666666666666664,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 56,
+      "question": "ईस्ट इंडिया कंपनी ने भारत में कब प्रवेश किया?",
+      "reference_answers": [
+        {
+          "answer_start": 754,
+          "text": "1608"
+        }
+      ],
+      "model_answer": "",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: ईस्ट इंडिया कंपनी ने भारत में कब प्रवेश किया?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 57,
+      "question": "एक लीप ईयर में कितने दिन होते है?",
+      "reference_answers": [
+        {
+          "answer_start": 141,
+          "text": "366"
+        }
+      ],
+      "model_answer": "29 days in February, because it has an extra day to compensate for the fact that our calendar doesn't keep up with Earths orbit around the Sun. (January and March are added.) (This is called a Leap Year) Answers of other questions will be similarly addressed below as needed.",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: एक लीप ईयर में कितने दिन होते है?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 58,
+      "question": "2017 में जैतून के तेल की नंबर एक प्रक्रिया कौन सा देश है?",
+      "reference_answers": [
+        {
+          "answer_start": 82,
+          "text": "Spain"
+        }
+      ],
+      "model_answer": "",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: 2017 में जैतून के तेल की नंबर एक प्रक्रिया कौन सा देश है?\nAnswer:",
+      "f1_score": 15.384615384615383,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 59,
+      "question": "कश्मीर पर कौन से देश लड़ेंगे?",
+      "reference_answers": [
+        {
+          "answer_start": 65,
+          "text": "India and Pakistan"
+        }
+      ],
+      "model_answer": "India and Pakistan, but a dispute exists over the status of Kashmir.",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: कश्मीर पर कौन से देश लड़ेंगे?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 60,
+      "question": "विश्व के 70% जल में से मनुष्य द्वारा मूलभूत आवश्यकताओं के लिए उपयोग किए जाने वाले जल का प्रतिशत कितना है?",
+      "reference_answers": [
+        {
+          "answer_start": 88,
+          "text": "2.8%"
+        }
+      ],
+      "model_answer": "",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: विश्व के 70% जल में से मनुष्य द्वारा मूलभूत आवश्यकताओं के लिए उपयोग किए जाने वाले जल का प्रतिशत कितना है?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 61,
+      "question": "संयुक्त राज्य अमेरिका में कुल कितने देश है?",
+      "reference_answers": [
+        {
+          "answer_start": 10,
+          "text": "35"
+        }
+      ],
+      "model_answer": "50 (27 स्वतंत्र राज्यों और 13 unincorporated territories)",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: संयुक्त राज्य अमेरिका में कुल कितने देश है?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 62,
+      "question": "क्षेत्रफल की दृष्टि से विश्व का सबसे बड़ा देश कौन-सा है?",
+      "reference_answers": [
+        {
+          "answer_start": 0,
+          "text": "Russia"
+        }
+      ],
+      "model_answer": "",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: क्षेत्रफल की दृष्टि से विश्व का सबसे बड़ा देश कौन-सा है?\nAnswer:",
+      "f1_score": 6.25,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 63,
+      "question": "भारत के राष्ट्रपति पद का चुनाव लड़ने के लिए न्यूनतम आयु कितनी होनी चाहिए?",
+      "reference_answers": [
+        {
+          "answer_start": 122,
+          "text": "35"
+        }
+      ],
+      "model_answer": "35 years old, but the candidate must have been a citizen of India for at least 10 years.",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: भारत के राष्ट्रपति पद का चुनाव लड़ने के लिए न्यूनतम आयु कितनी होनी चाहिए?\nAnswer:",
+      "f1_score": 4.761904761904761,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 64,
+      "question": "2017 में भारत के किस राज्य ने कपास का अधिक इस्तेमाल किया?",
+      "reference_answers": [
+        {
+          "answer_start": 24,
+          "text": "Maharashtra"
+        }
+      ],
+      "model_answer": "Maharashtra (and Tamil Nadu)",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: 2017 में भारत के किस राज्य ने कपास का अधिक इस्तेमाल किया?\nAnswer:",
+      "f1_score": 44.44444444444445,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 65,
+      "question": "इंग्लैंड किस महाद्वीप में स्थित है?",
+      "reference_answers": [
+        {
+          "answer_start": 41,
+          "text": "United Kingdom."
+        }
+      ],
+      "model_answer": "Europe (and Great Britain)",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: इंग्लैंड किस महाद्वीप में स्थित है?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 66,
+      "question": "बोहेमेन धर्म किस देश से उत्पत्ति सबसे पहले हुई थी?",
+      "reference_answers": [
+        {
+          "answer_start": 32,
+          "text": "France"
+        }
+      ],
+      "model_answer": "",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: बोहेमेन धर्म किस देश से उत्पत्ति सबसे पहले हुई थी?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 67,
+      "question": "नेपाल राज्य का सबसे पुराना हिंदू मंदिर कहां है?",
+      "reference_answers": [
+        {
+          "answer_start": 92,
+          "text": "Kathmandu"
+        }
+      ],
+      "model_answer": "Bhaktapur, Nepal.",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: नेपाल राज्य का सबसे पुराना हिंदू मंदिर कहां है?\nAnswer:",
+      "f1_score": 40.00000000000001,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 68,
+      "question": "महाराष्ट्र राज्य किस समुद्र के पास हैं?",
+      "reference_answers": [
+        {
+          "answer_start": 185,
+          "text": "Arabian Sea"
+        }
+      ],
+      "model_answer": "Arabian Sea (or Gulf of Oman)",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: महाराष्ट्र राज्य किस समुद्र के पास हैं?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 69,
+      "question": "पानी भाप में कितने तापमान पर बदल जाता है?",
+      "reference_answers": [
+        {
+          "answer_start": 67,
+          "text": "100 °C"
+        }
+      ],
+      "model_answer": "100 degrees Celsius (212 degrees Fahrenheit) at sea level atmospheric pressure.",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: पानी भाप में कितने तापमान पर बदल जाता है?\nAnswer:",
+      "f1_score": 25.0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 70,
+      "question": "न्यूटन ने प्रथम प्रमेय की खोज किस वर्ष में की थी?",
+      "reference_answers": [
+        {
+          "answer_start": 437,
+          "text": "1687"
+        }
+      ],
+      "model_answer": "1666 (age of 23)",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: न्यूटन ने प्रथम प्रमेय की खोज किस वर्ष में की थी?\nAnswer:",
+      "f1_score": 15.384615384615383,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 71,
+      "question": "भारत में ईस्ट इंडिया कंपनी कब प्रवेश किया?",
+      "reference_answers": [
+        {
+          "answer_start": 253,
+          "text": "1611"
+        }
+      ],
+      "model_answer": "",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: भारत में ईस्ट इंडिया कंपनी कब प्रवेश किया?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 72,
+      "question": "सिविल इंजीनियरिंग विभाग सबसे पहले आंध्र प्रदेश के किस इंजीनियरिंग कॉलेज से शुरू की गई थी?",
+      "reference_answers": [
+        {
+          "answer_start": 0,
+          "text": "Velagapudi Ramakrishna Siddhartha Engineering College or VRSEC"
+        }
+      ],
+      "model_answer": "NIT Hyderabad",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: सिविल इंजीनियरिंग विभाग सबसे पहले आंध्र प्रदेश के किस इंजीनियरिंग कॉलेज से शुरू की गई थी?\nAnswer:",
+      "f1_score": 0,
+      "em_score": 0
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 73,
+      "question": "जर्मनी में सबसे बड़ा चर्च  कहा है?",
+      "reference_answers": [
+        {
+          "answer_start": 0,
+          "text": "Cologne Cathedral"
+        }
+      ],
+      "model_answer": "Berlin Cathedral (Dom)",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: जर्मनी में सबसे बड़ा चर्च  कहा है?\nAnswer:"
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 74,
+      "question": "पर्यावरण में सबसे अधिक मात्रा में पाई जाने वाली गैस कौन सी है?",
+      "reference_answers": [
+        {
+          "answer_start": 35,
+          "text": "nitrogen"
+        }
+      ],
+      "model_answer": "Nitrogen, Oxygen and Argon (the others are trace gases)",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: पर्यावरण में सबसे अधिक मात्रा में पाई जाने वाली गैस कौन सी है?\nAnswer:"
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 75,
+      "question": "मेसोपोटामिया कितना प्राचीन है?",
+      "reference_answers": [
+        {
+          "answer_start": 176,
+          "text": "3500 BC"
+        }
+      ],
+      "model_answer": "5000 साल पहले",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: मेसोपोटामिया कितना प्राचीन है?\nAnswer:"
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 76,
+      "question": "भारत में सबसे शक्तिशाली हथियार कौन-सा है?",
+      "reference_answers": [
+        {
+          "answer_start": 93,
+          "text": "nuclear weapons"
+        }
+      ],
+      "model_answer": "अर्जुन टैंक",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: भारत में सबसे शक्तिशाली हथियार कौन-सा है?\nAnswer:"
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 77,
+      "question": "माओ जेडोंग की मृत्य कब हुई थी?",
+      "reference_answers": [
+        {
+          "answer_start": 439,
+          "text": "1976"
+        }
+      ],
+      "model_answer": "9 सितंबर, 1976 को 82 वर्ष की आयु में",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: माओ जेडोंग की मृत्य कब हुई थी?\nAnswer:"
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 78,
+      "question": "ईस्ट इंडिया कंपनी किस वर्ष भारत आई थी?",
+      "reference_answers": [
+        {
+          "answer_start": 754,
+          "text": "1608"
+        }
+      ],
+      "model_answer": "1608-9, and stayed until the early years of Queen Victoria's reign in India (23 March 1757 – 4 May 1857)",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: ईस्ट इंडिया कंपनी किस वर्ष भारत आई थी?\nAnswer:"
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 79,
+      "question": "तेलगु पंचांग के अनुसार नववर्ष किस अंग्रेजी माह में शुरू होता है?",
+      "reference_answers": [
+        {
+          "answer_start": 560,
+          "text": "March or April"
+        }
+      ],
+      "model_answer": "",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: तेलगु पंचांग के अनुसार नववर्ष किस अंग्रेजी माह में शुरू होता है?\nAnswer:"
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 80,
+      "question": "वर्ष 2017 में किस मच्छरों के कारण अधिक लोगों की मौत हुई?",
+      "reference_answers": [
+        {
+          "answer_start": 120,
+          "text": "Togo"
+        }
+      ],
+      "model_answer": "Malaria, due to the Zika virus.",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: वर्ष 2017 में किस मच्छरों के कारण अधिक लोगों की मौत हुई?\nAnswer:"
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 81,
+      "question": "भारत में ईसाई धर्म का प्रवेश किस वर्ष में हुआ था?",
+      "reference_answers": [
+        {
+          "answer_start": 304,
+          "text": "52 AD"
+        }
+      ],
+      "model_answer": "1500s (India)",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: भारत में ईसाई धर्म का प्रवेश किस वर्ष में हुआ था?\nAnswer:"
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 82,
+      "question": "लोकोमोटिव ब्वॉयलर्स को पहले किस देश में प्रारंभ किया गया था?",
+      "reference_answers": [
+        {
+          "answer_start": 723,
+          "text": "United Kingdom"
+        }
+      ],
+      "model_answer": "",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: लोकोमोटिव ब्वॉयलर्स को पहले किस देश में प्रारंभ किया गया था?\nAnswer:"
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 83,
+      "question": "भारतीय आयकर अधिनियम कब लागू हुआ था?",
+      "reference_answers": [
+        {
+          "answer_start": 177,
+          "text": "1861"
+        }
+      ],
+      "model_answer": "",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: भारतीय आयकर अधिनियम कब लागू हुआ था?\nAnswer:"
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 84,
+      "question": "कजाकिस्तान देश का क्षेत्रफल कितनी है?",
+      "reference_answers": [
+        {
+          "answer_start": 0,
+          "text": "Kazakhstan is located in Central Asia and Eastern Europe at . With an area of about 2,724,800 square kilometers"
+        }
+      ],
+      "model_answer": "2,760,841 km^2 (1,069,553 sq mi) - second largest country in the world after Russia.",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: कजाकिस्तान देश का क्षेत्रफल कितनी है?\nAnswer:"
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 85,
+      "question": "भारत से पाकिस्तान कब अलग हुआ?",
+      "reference_answers": [
+        {
+          "answer_start": 26,
+          "text": "1947"
+        }
+      ],
+      "model_answer": "",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: भारत से पाकिस्तान कब अलग हुआ?\nAnswer:"
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 86,
+      "question": "भारत में सबसे प्रथम भारतीय वैज्ञानिक कौन थे जो भौतिकी में नोबेल पुरस्कार जीते?",
+      "reference_answers": [
+        {
+          "answer_start": 0,
+          "text": "Sir Chandrasekhara Venkata Raman"
+        }
+      ],
+      "model_answer": "CV Raman (in 1930) for his work in the scattering of light. His pioneering research on how materials interact with electromagnetic radiation laid a foundation not only to modern optics, but also to nonlinear and quantum physics]",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: भारत में सबसे प्रथम भारतीय वैज्ञानिक कौन थे जो भौतिकी में नोबेल पुरस्कार जीते?\nAnswer:"
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 87,
+      "question": "पूर्वी यूरोप में सबसे बड़ा देश कौन सा है?",
+      "reference_answers": [
+        {
+          "answer_start": 0,
+          "text": "Ukraine"
+        }
+      ],
+      "model_answer": "",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: पूर्वी यूरोप में सबसे बड़ा देश कौन सा है?\nAnswer:"
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 88,
+      "question": "प्रेम के प्रतीक के रूप में भारत में कौन सी इमारत बनी है?",
+      "reference_answers": [
+        {
+          "answer_start": 24,
+          "text": "Taj Mahal"
+        }
+      ],
+      "model_answer": "",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: प्रेम के प्रतीक के रूप में भारत में कौन सी इमारत बनी है?\nAnswer:"
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 89,
+      "question": "भारत में कौन सी इमारत प्रेम का प्रतीक है?",
+      "reference_answers": [
+        {
+          "answer_start": 24,
+          "text": "Taj Mahal"
+        }
+      ],
+      "model_answer": "Taj Mahal, Agra (India)",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: भारत में कौन सी इमारत प्रेम का प्रतीक है?\nAnswer:"
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 90,
+      "question": "किस तापमान पर चांदी द्रव बन जाती है?",
+      "reference_answers": [
+        {
+          "answer_start": 407,
+          "text": "960 °C"
+        }
+      ],
+      "model_answer": "961.78 डिग्री Celsius (1,763.205 degrees Fahrenheit) or 1,475 Kelvin",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: किस तापमान पर चांदी द्रव बन जाती है?\nAnswer:"
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 91,
+      "question": "भारत के किस राज्य में पांच नदिया है?",
+      "reference_answers": [
+        {
+          "answer_start": 334,
+          "text": "Punjab"
+        }
+      ],
+      "model_answer": "Uttar Pradesh",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: भारत के किस राज्य में पांच नदिया है?\nAnswer:"
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 92,
+      "question": "2011 में अमेरिकी राष्ट्रपति के रूप में किसने कार्य किया था?",
+      "reference_answers": [
+        {
+          "answer_start": 49,
+          "text": "Barack Obama"
+        }
+      ],
+      "model_answer": "Barack Obama, of the Democratic Party.",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: 2011 में अमेरिकी राष्ट्रपति के रूप में किसने कार्य किया था?\nAnswer:"
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 93,
+      "question": "कोयले से चलने वाली ट्रेन कब शुरू हुई थी?",
+      "reference_answers": [
+        {
+          "answer_start": 792,
+          "text": "21 February 1804"
+        }
+      ],
+      "model_answer": "",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: कोयले से चलने वाली ट्रेन कब शुरू हुई थी?\nAnswer:"
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 94,
+      "question": "राष्ट्रीय जैव ईंधन नीति सबसे पहले किस राज्य में लागू की गई थी?",
+      "reference_answers": [
+        {
+          "answer_start": 0,
+          "text": "United States"
+        }
+      ],
+      "model_answer": "India (Maharashtra)",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: राष्ट्रीय जैव ईंधन नीति सबसे पहले किस राज्य में लागू की गई थी?\nAnswer:"
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 95,
+      "question": "बौद्ध धर्म की स्थापना किसने की थी?",
+      "reference_answers": [
+        {
+          "answer_start": 224,
+          "text": "Siddhārtha Gautama"
+        }
+      ],
+      "model_answer": "Siddhartha Gautama (the Buddha)",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: बौद्ध धर्म की स्थापना किसने की थी?\nAnswer:"
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 96,
+      "question": "भारत में मानवाधिकार अधिनियम कब लागू किया गया था?",
+      "reference_answers": [
+        {
+          "answer_start": 163,
+          "text": "28 September 1993"
+        }
+      ],
+      "model_answer": "1993 (although the bill was introduced in 1980)",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: भारत में मानवाधिकार अधिनियम कब लागू किया गया था?\nAnswer:"
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 97,
+      "question": "1950 तक भारत में कितनी भाषाओं का प्रयोग होता था?",
+      "reference_answers": [
+        {
+          "answer_start": 507,
+          "text": "22"
+        }
+      ],
+      "model_answer": "लगभग 1,652 languages",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: 1950 तक भारत में कितनी भाषाओं का प्रयोग होता था?\nAnswer:"
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 98,
+      "question": "भारत में अंग्रेजी पहले ठिकाना कहा स्थापित हुई थी?",
+      "reference_answers": [
+        {
+          "answer_start": 56,
+          "text": "Maharashtra, India"
+        }
+      ],
+      "model_answer": "कलकत्ता (अब कोलकाता)",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: भारत में अंग्रेजी पहले ठिकाना कहा स्थापित हुई थी?\nAnswer:"
+    },
+    {
+      "pair_key": "xorqa_hi",
+      "example_index": 99,
+      "question": "भारत में एक पुरुष के लिए विवाह की न्यूयम आयु क्या है?",
+      "reference_answers": [
+        {
+          "answer_start": 547,
+          "text": "21"
+        }
+      ],
+      "model_answer": "",
+      "prompt_used": "Question: फ्रांस की राजधानी क्या है?\nAnswer: पेरिस\n\nQuestion: \"प्राइड एंड प्रेज्यूडिस\" उपन्यास किसने लिखा?\nAnswer: जेन ऑस्टन\n\nQuestion: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?\nAnswer: बृहस्पति\n\nQuestion: भारत में एक पुरुष के लिए विवाह की न्यूयम आयु क्या है?\nAnswer:"
+    }
+  ]
+}

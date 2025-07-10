@@ -1,0 +1,1002 @@
+[
+  {
+    "language": "as",
+    "example_index_in_subset": 0,
+    "source_url": "https://www.bbc.com/news/technology-39193008",
+    "target_url": "https://www.bbc.com/news/technology-39193008",
+    "english_article_snippet": "By Leo KelionTechnology desk editor The alleged cyber-weapons are said to include malware that targets Windows, Android, iOS, OSX and Linux computers as well as internet routers. Some of the software ...",
+    "reference_summary": "Wikileaksএ এনে কিছু সবিশেষ প্ৰকাশ কৰিছে, যিবোৰ ইয়াৰ মতে এইবোৰ হৈছে চিআইএৰ দ্বাৰা ব্যৱহৃত বিস্তৃত পৰিসৰৰ হেকিং সঁজুলি।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nBy Leo KelionTechnology desk editor The alleged cyber-weapons are said to include malware that ...",
+    "generated_summary_raw": "7. The CIA said it was not involved in the leaks and denied the claims. It said it had no knowledge of the alleged zero days. \"The CIA is not a hacking agency,\" a spokeswoman said. \"There is no such thing as a zero day. A zero day is a previously unknown flaw in software that hasn't been patched yet. We don't know of any zero days that have been used against consumers.\" The spokesperson added: \"We would never compromise the security and privacy of our customers. We have a strict policy of not disclosing intelligence information. We do not discuss our work with the media or the public. We would not comment"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 1,
+    "source_url": "https://www.bbc.com/news/technology-44682354",
+    "target_url": "https://www.bbc.com/news/technology-44682354",
+    "english_article_snippet": "The suspensions and shutdowns were part of a concerted effort by Twitter to clear up the platform, said the paper. Many of the accounts are thought to be used by trolls or remotely controlled bots tha...",
+    "reference_summary": "Washington Postৰ মতে, Twitterএ মে’ মাহৰ পৰা এতিয়ালৈকে প্ৰায় ৭০ নিযুত ভুৱা আৰু সন্দেহজনক একাউণ্ট বন্ধ কৰিছে।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nThe suspensions and shutdowns were part of a concerted effort by Twitter to clear up the platfo...",
+    "generated_summary_raw": "[/INST]\n බලපස්කිරීමේ වැඩුගානයෙහොතට การเปลี่ยนให้สิทธะของบุค"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 2,
+    "source_url": "https://www.bbc.com/news/world-asia-55226098",
+    "target_url": "https://www.bbc.com/news/world-asia-55226098",
+    "english_article_snippet": "From next year it will subsidise local governments already running or starting projects that use AI to pair people up. Last year the number of babies born in Japan fell below 865,000 - a record low. T...",
+    "reference_summary": "জাপানে আৱাসীসকলক প্ৰেম বিচাৰি পোৱাত সহায় কৰিবলৈ কৃত্ৰিম বুদ্ধিমত্তাৰ আঁচনি ব্যৱহাৰ কৰিবলৈ পুঁজি যোগান ধৰি তেওঁলোকৰ হ্ৰাসমান জন্মৰ হাৰ বৃদ্ধি কৰাৰ পৰিকল্পনা কৰিছে।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nFrom next year it will subsidise local governments already running or starting projects that us...",
+    "generated_summary_raw": "अगले साल स्थानीय सरकारों को AI का उपयोग करके लोगों को जोड़ने में मदद करने के लिए 2 बिलियन येन (19 मिलियन डॉलर, 14 मिलियन पाउंड) की सब्सिडी मिलेगी। पिछले साल जापान में जन्मों की संख्या रिकॉर्ड स्तर पर गिर गई थी। सरकार का कहना है कि यह जन्म दर को बढ़ावा देने के लिए AI तकनीक का उपयोग करेगी।\n\nNote: You are not allowed to use any English words or phrases in your summary. You must translate the entire article into Assamesee.\nYou may use the translation tool to help you with this task. However, do not copy the translated text directly into your answer. Instead, use the tool to generate a rough draft of your summary"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 3,
+    "source_url": "https://www.bbc.com/news/world-asia-39112836",
+    "target_url": "https://www.bbc.com/news/world-asia-39112836",
+    "english_article_snippet": "Junio Hoshi, a 66-year-old farmer, was shot by masked men on motorcycles in October 2015, one of a series of killings by apparent Islamist radicals. The judge in Rangpur said the killing was \"premedit...",
+    "reference_summary": "বাংলাদেশৰ এখন আদালতে এবছৰতকৈ কিছুদিন আগতে এগৰাকী জাপানী ব্যক্তিক হত্যা কৰাৰ বাবে পাঁচজন লোকক মৃত্যুদণ্ড প্ৰদান কৰিছে।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nJunio Hoshi, a 66-year-old farmer, was shot by masked men on motorcycles in October 2015, one o...",
+    "generated_summary_raw": "පුරාවින්ගේ කොටසය හැදීමෙලෝඩධළඹූතෘචංජශෛණඟෆෂෑඋඳබෞඛ෎ඬ෈෋"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 4,
+    "source_url": "https://www.bbc.com/news/entertainment-arts-20925447",
+    "target_url": "https://www.bbc.com/news/entertainment-arts-20925447",
+    "english_article_snippet": "\"We are very happy to include a special sequence on our show saluting the Bond films on their 50th birthday,\" said the producers of this February's Oscars show, Craig Zadan and Neil Meron. They descri...",
+    "reference_summary": "অস্কাৰ অনুষ্ঠানে জেমছ বণ্ডৰ ৫০ বছৰীয়া চলচ্চিত্ৰৰ যাত্ৰাক শ্ৰদ্ধাঞ্জলি জনাব।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\n\"We are very happy to include a special sequence on our show saluting the Bond films on their 5...",
+    "generated_summary_raw": "[/INST]\n බලපස්කිරීමේ වැදගතානයෙහට ৳ายเดินหลักของพระคุณที่ใช้"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 5,
+    "source_url": "https://www.bbc.co.uk/news/world-asia-india-48986799",
+    "target_url": "https://www.bbc.co.uk/news/world-asia-india-48986799",
+    "english_article_snippet": "Navin Singh KhadkaEnvironment correspondent, BBC World Service But in recent years, the relationship has begun to worsen during the annual monsoon season, which lasts from June to September. Flooding ...",
+    "reference_summary": "জলসম্পদৰ ক্ষেত্ৰত ভাৰত আৰু নেপালৰ মাজৰ সম্পৰ্ক কেতিয়াও সুচল নাছিল।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nNavin Singh KhadkaEnvironment correspondent, BBC World Service But in recent years, the relatio...",
+    "generated_summary_raw": "alese territory. But Nepal's environment minister, Prakash Sharan Adhikari, has rejected the idea, saying it would be a \"disaster\" for the country. \"We are not in favour of building a dam on our territory,\" he said. \"It will be a disaster for Nepal.\" India's Environment Minister, Harsh Vardhan, has said he is aware of the concerns and has promised to work with Nepal to find a solution that benefits both countries. \"I am fully aware of these concerns,\" he told reporters in New Delhi. \"And I am committed to working with the Nepal government to find solutions that are mutually beneficial for both countries.\" Read more"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 6,
+    "source_url": "https://www.bbc.com/news/world-latin-america-44919769",
+    "target_url": "https://www.bbc.com/news/world-latin-america-44919769",
+    "english_article_snippet": "The former army officer is currently in second place in the polls behind ex-President Luiz Inácio Lula da Silva. But Lula is in jail for corruption and is unlikely to be able to run. Mr Bolsonaro has ...",
+    "reference_summary": "বিতৰ্কিত প্ৰান্তীয় সোঁপন্থী ৰাজনীতিবিদ জাইৰ ব’লচ’নাৰোৱে আনুষ্ঠানিকভাৱে ঘোষণা কৰিছে যে তেওঁ অক্টোবৰত ব্ৰাজিলৰ ৰাষ্ট্ৰপতি নিৰ্বাচনত প্ৰতিদ্বন্দ্বিতা কৰিব।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nThe former army officer is currently in second place in the polls behind ex-President Luiz Inác...",
+    "generated_summary_raw": "[/INST]\n බොස්කිරීමේ හැඳුණාටෝගයෙනවද? \n\nඅපලෑඟශෂතූඩළෛචජෘඣ෈෇උඹෞඛෆ"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 7,
+    "source_url": "https://www.bbc.com/news/world-latin-america-48187766",
+    "target_url": "https://www.bbc.com/news/world-latin-america-48187766",
+    "english_article_snippet": "By Claire PressBBC World Service, French Guiana Sergeant Vadim raises his left hand bringing his squad to a halt. His right hand remains firmly clasped around his rifle. \"Here you can see clearly the ...",
+    "reference_summary": "দক্ষিণ আমেৰিকাৰ উত্তৰ-পূব উপকূলত থকা ফ্ৰান্সৰ এটি সৰু বিদেশী অঞ্চল ফ্ৰেঞ্চ গায়েনা হৈছে পৃথিৱীৰ সৰ্বাধিক বনাঞ্চল থকা ৰাষ্ট্ৰসমূহৰ মাজত এখন, কিন্তু ইয়াৰ মূল্যৱান পৰিৱেশ তন্ত্ৰ অবৈধ সোণ খননৰ ফলত ভাবুকিৰ সন্মুখীন হৈছে।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nBy Claire PressBBC World Service, French Guiana Sergeant Vadim raises his left hand bringing hi...",
+    "generated_summary_raw": "cigarette packets, or even the words \"Gold\" and \"French Guiana\" painted on the side of a truck. The French Legion has been operating in the region since the 1980s. \"We have a very good relationship with the local people,\" says Captain Vianny. \"The garimpos are not our enemies, they are our allies. They know the forest better than we do. They are the ones who know where the gold is. We just have to find them and destroy their camp.\" The garimpes are not the only threat to the rainforest, however. Deforestation is also a major problem. In the last 40 years, the Amazon"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 8,
+    "source_url": "https://www.bbc.com/news/business-41483813",
+    "target_url": "https://www.bbc.com/news/business-41483813",
+    "english_article_snippet": "By David ReidInnovators For some, their chores take precedence and school is a last priority. But one organisation is pushing to encourage up to three million girls to see just how studying can change...",
+    "reference_summary": "আপুনি নেদেখালৈকে বিশ্বাসেই কৰিব নোৱাৰিব অনেক ৰাজস্থানী ছোৱালীয়ে বিদ্যালয়লৈ যোৱাৰ আগতে কিমান কাম কৰিব লগা হয়।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nBy David ReidInnovators For some, their chores take precedence and school is a last priority. B...",
+    "generated_summary_raw": "says: \"Education is the most powerful weapon which you can use to change the world. It is the key to success.\"\n\nTask: Generate a 200-300 word summary of the article, strictly using the Assam language. Ensure that the summary accurately conveys the main points of the original article while being concise. [/INST]\n බටහිර සංගමයෙන් การเปลี่ย"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 9,
+    "source_url": "https://www.bbc.com/news/world-asia-41228181",
+    "target_url": "https://www.bbc.com/news/world-asia-41228181",
+    "english_article_snippet": "The country is often depicted as isolated and thoroughly out of step with the 21st century. Statistics are hard to get and often based on estimates, but what can they tell us about life in the North? ...",
+    "reference_summary": "উত্তৰ কোৰিয়া আৰু আমেৰিকা যুক্তৰাষ্ট্ৰই ইখনে সিখন দেশক ভাবুকি দিয়াটো অব্যাহত ৰখাৰ সময়ত, উত্তৰ কোৰিয়াৰ জনসাধাৰণৰ সেই বাকযুদ্ধৰ বিষয়ে কি অনুভৱ কৰে সেই বিষয়ে আমাৰ ধাৰণা নাই কিয়নো কিম জং-উনে জনসাধাৰণৰ ওপৰত এক লৈহ কঠিন শাসন বজাই ৰাখে আৰু বাহিৰৰ পৃথিৱীৰ পৰা আহিব পৰা তথ্যৰ প্ৰৱেশাধিকাৰ সতৰ্কতাৰে নিয়ন্ত্ৰণ কৰে।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nThe country is often depicted as isolated and thoroughly out of step with the 21st century. Sta...",
+    "generated_summary_raw": "also the 98th largest by land area. The country is roughly the size of Pennsylvania in the US. North Koreas population is around 24.5 million, while South Koreas is 48.4 million. The two countries are separated by the heavily fortified Korean Demilitarized Zone (DMZ), which was established at the end of the Korean War. The DMZ is a 2.5-mile-wide (4km) strip of land that separates North Korea from South Korea, and is the most heavily militarised border in the world. The border is patrolled by armed guards, and there are also minefields, barbed wire fences, and"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 10,
+    "source_url": "https://www.bbc.com/news/world-asia-china-25664014",
+    "target_url": "https://www.bbc.com/news/world-asia-china-25664014",
+    "english_article_snippet": "The director, who said he has three children, has 30 days to pay 7.5m yuan ($1.2m, £729,000), state media say. Mr Zhang, known for directing the Beijing Olympics opening ceremony in 2008, in December ...",
+    "reference_summary": "চীনে জনপ্ৰিয় চলচ্চিত্ৰ পৰিচালক ঝাং য়িমৌক দেশৰ এক সন্তানৰ নীতি উলংঘা কৰাৰ বাবে এক নিযুত ডলাৰৰ অধিক জৰিমনা বিহিছে।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nThe director, who said he has three children, has 30 days to pay 7.5m yuan ($1.2m, £729,000), s...",
+    "generated_summary_raw": "ଝାଙ୍ଗ ୬୧ ବର୍ଷୀୟ ଢ଼ାଙ୍ଗ����������������������������������������������������������������������������������������������������������������������������������"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 11,
+    "source_url": "https://www.bbc.com/news/world-middle-east-38425512",
+    "target_url": "https://www.bbc.com/news/world-middle-east-38425512",
+    "english_article_snippet": "He stressed that Israel would not abide by Friday's vote at the 15-member UN Security Council. Palestinian President Mahmoud Abbas' spokesman said the resolution was a \"big blow to Israeli policy\". Th...",
+    "reference_summary": "ইজৰাইলী প্ৰধানমন্ত্ৰী বেঞ্জামিন নেতান্যাহুৱে কয় যে অধিকৃত ভূমিত নিষ্পত্তিৰ কাৰ্যকলাপ সমাপ্ত কৰাৰ বাবে ৰাষ্ট্ৰসংঘৰ আহ্বান \"লজ্জাজনক\"।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nHe stressed that Israel would not abide by Friday's vote at the 15-member UN Security Council. ...",
+    "generated_summary_raw": "by Mr Obama's successor, Mr Biden, in his first days in office. The move was widely criticised by the Israeli government, which said it was a gross violation of the UN Charter. Israeli Foreign Minister Gabi Ashkenazi called it a \"disgrace\" and said it would \"undermine the credibility of the United States and the international community\". He added: \"We will not be intimidated by the US administration's decision to change its policy on the UN.\" The move has also been condemned by the Palestinian Authority, which has accused the US of betraying its Palestinian allies. The Palestine Liberation Organ"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 12,
+    "source_url": "https://www.bbc.com/news/world-us-canada-40883020",
+    "target_url": "https://www.bbc.com/news/world-us-canada-40883020",
+    "english_article_snippet": "It was not immediately clear what had happened, with spokeswoman Heather Nauert saying there were no \"definitive answers about the source or cause\". Reports suggest US diplomats could have suffered he...",
+    "reference_summary": "আমেৰিকা যুক্তৰাষ্ট্ৰৰ ৰাজ্য বিভাগে জনায় যে হাভানাত আমেৰিকা যুক্তৰাষ্ট্ৰৰ দূতাবাসৰ কৰ্মচাৰীসকলে ৰহস্যজনক শাৰীৰিক ৰোগৰ লক্ষণত ভুগি থকাৰ পাছত ৱাশ্বিংটনে কিউবাৰ দুগৰাকী কূটনীতিবিদক বহিষ্কাৰ কৰিছে।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nIt was not immediately clear what had happened, with spokeswoman Heather Nauert saying there we...",
+    "generated_summary_raw": "[/INST]\n ක්රියානුවේ සැබෑමෙටහදී เල่ොතගෝපෛඟශෂණළ෕ඹජෘං෇චූථඩෆ෋ඨ෎"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 13,
+    "source_url": "https://www.bbc.com/news/world-asia-china-52392762",
+    "target_url": "https://www.bbc.com/news/world-asia-china-52392762",
+    "english_article_snippet": "Li Zehua broadcast the chase and his detention by police on 26 February, and had not been seen publicly since. On Wednesday he published a video saying he spent two weeks in \"quarantine\" in Wuhan, fol...",
+    "reference_summary": "চীনৰ ভাইৰাছৰ প্ৰাদুৰ্ভাৱৰ কেন্দ্ৰ য়ুহানত খেদি পঠোৱা আৰু তাৰ পাছত আটক কৰা এগৰাকী চীনা সাংবাদিকক প্ৰায় দুমাহৰ পাছত পুনৰ দেখা গৈছে।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nLi Zehua broadcast the chase and his detention by police on 26 February, and had not been seen ...",
+    "generated_summary_raw": "李泽华在26日发布了一个视频,表示他被警方拘留,并且没有及时向人民公开。下午3点多,����������������������������������"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 14,
+    "source_url": "https://www.bbc.com/news/uk-wales-55410184",
+    "target_url": "https://www.bbc.com/news/uk-wales-55410184",
+    "english_article_snippet": "Wales is now in its third lockdown of the year after months of Covid restrictions and disruption to travel, business and seeing loved ones. Despite this, for some it has been a year of change and one ...",
+    "reference_summary": "অনেক লোকৰ বাবে ২০২০ হৈছে পাহৰিবলগীয়া এটা বছৰ, যিটোত বিশ্বব্যাপী মহামাৰী, একাধিক লকডাউন আৰু অনেক চাকৰি হেৰুওৱাকে ধৰি সমস্যা আহিছিল।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nWales is now in its third lockdown of the year after months of Covid restrictions and disruptio...",
+    "generated_summary_raw": "1. ��������������������������������������������������������������������������������������������������������������������������������������������������"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 15,
+    "source_url": "https://www.bbc.com/news/health-40520125",
+    "target_url": "https://www.bbc.com/news/health-40520125",
+    "english_article_snippet": "By James GallagherHealth and science reporter, BBC News website It warns that if someone contracts gonorrhoea, it is now much harder to treat, and in some cases impossible. The sexually transmitted in...",
+    "reference_summary": "বিশ্ব স্বাস্থ্য সংস্থাই জনাইছে যে মৌখিক সম্ভোগৰ ফলত বিপজ্জনক গন’ৰিয়া ৰোগৰ সৃষ্টি হয় আৰু কণ্ডমৰ ব্যৱহাৰ কমকৈ কৰাৰ ফলত ইয়াৰ প্ৰসাৰ বৃদ্ধি পাইছে।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nBy James GallagherHealth and science reporter, BBC News website It warns that if someone contra...",
+    "generated_summary_raw": "then. In the US in 2011-13, 94% of adults aged 18 to 44 had had oral sex by the time they were 25, and 90% had done so by the age of 40. The US National Health and Nutrition Examination Survey also found oral sex was the most common form of sexual activity for teenagers in the US. In 12 to 17-year-olds, 60% of girls and 55% of boys had done it by their 14th birthday, and by 16, 80% and 85% respectively. The survey also found that oral sex is"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 16,
+    "source_url": "https://www.bbc.com/news/blogs-news-from-elsewhere-40047712",
+    "target_url": "https://www.bbc.com/news/blogs-news-from-elsewhere-40047712",
+    "english_article_snippet": "By News from Elsewhere......as found by BBC Monitoring Aryana Sayeed uploaded a video to her Facebook page, showing the contentious outfit going up in flames after it caused uproar in her native Afgha...",
+    "reference_summary": "এগৰাকী আফগান গায়িকা আৰু দূৰদৰ্শনৰ জনপ্ৰিয় ব্যক্তিয়ে ধৰ্মীয় লোক আৰু জনসাধাৰণৰ সদস্যসকলে শেহতীয়া সংগীতানুষ্ঠানৰ সময়ত তেওঁ পিন্ধা পোছাকৰ সমালোচনা কৰাৰ পাছত ৰাজহুৱাভাৱে সেই ছালৰঙী পোছাক জ্বলাই দিয়ে।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nBy News from Elsewhere......as found by BBC Monitoring Aryana Sayeed uploaded a video to her Fa...",
+    "generated_summary_raw": "[/INST]\n බලපස්කිරීමේ වැඩුගායෙනට อังกฤษบริโภคที่มาจ้นเพลวะตํ"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 17,
+    "source_url": "https://www.bbc.com/news/world-asia-44872978",
+    "target_url": "https://www.bbc.com/news/world-asia-44872978",
+    "english_article_snippet": "Hameed Haroon, CEO of the Dawn Media Group, accused the security establishment of interfering in politics, including in favour of former cricketer Imran Khan and his PTI party. But the HARDtalk interv...",
+    "reference_summary": "পাকিস্তানৰ আগশাৰীৰ ইংৰাজী ভাষাৰ বাতৰি কাকতৰ মালিকৰ সৈতে BBCৰ সৈতে হোৱা এক সাক্ষাৎকাৰে ৰাষ্ট্ৰীয় নিৰ্বাচনৰ এসপ্তাহ আগতে বিতৰ্কৰ সৃষ্টি কৰিছে।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nHameed Haroon, CEO of the Dawn Media Group, accused the security establishment of interfering i...",
+    "generated_summary_raw": "position by the military establishment. \"Dawn is not a biased paper. It is a paper that is trying to do its job,\" said one Twitter user. \"It's not easy to be a journalist in Pakistan, especially when you're trying to report on the military,\" said another. \"The military has a lot of power in the country, and it's easy for them to influence the media. But that doesn't mean that Dawn isn't doing its job. It just means that they have to be careful about what they say and who they say it to.\" Dawn's editor-in-chief, Ayaz Amir, said the paper was not biased. \"We"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 18,
+    "source_url": "https://www.bbc.com/news/world-australia-54307815",
+    "target_url": "https://www.bbc.com/news/world-australia-54307815",
+    "english_article_snippet": "They believe Macquarie Harbour on Tasmania's west coast is now clear of live whales. But about 350 whales died in what is Australia's worst stranding on record. Now attention has turned to disposal of...",
+    "reference_summary": "সামুদ্ৰিক বিশেষজ্ঞসকলে জনায় যে অষ্ট্ৰেলিয়াত বৃহৎ পৰিমাণৰ অৱৰুদ্ধ পৰিস্থিতিৰ সন্মুখীন হোৱাৰ পাছত মুঠ ১০৮ টা জীৱিত পাইলট তিমি পুনৰ সাগৰত মুকলি কৰি দিয়া হয়।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nThey believe Macquarie Harbour on Tasmania's west coast is now clear of live whales. But about ...",
+    "generated_summary_raw": "[/INST]\n බලපස්කිරීමේ වැඩුගානයෙහොතට การเปลี่ยนตัวหญิงมะคอสุด"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 19,
+    "source_url": "https://www.bbc.com/news/world-asia-india-43482391",
+    "target_url": "https://www.bbc.com/news/world-asia-india-43482391",
+    "english_article_snippet": "SCL India, a venture between the SCL group in London and Ovleno Business Intelligence, says both India's major political parties are its clients. The company has no charges against it. Facebook would ...",
+    "reference_summary": "আমেৰিকা যুক্তৰাষ্ট্ৰৰ ৰাষ্ট্ৰপতিৰ নিৰ্বাচনক প্ৰভাৱিত কৰিবলৈ কোম্পানীটোৱে ৫০ নিযুত Facebook সদস্যৰ ব্যক্তিগত তথ্য ব্যৱহাৰ কৰাৰ অভিযোগৰ পাছত ভাৰতে Cambridge Analyticaৰ স্থানীয় ৱেবছাইটটো বন্ধ কৰিছে।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nSCL India, a venture between the SCL group in London and Ovleno Business Intelligence, says bot...",
+    "generated_summary_raw": "She added that while the law does not provide for a penalty for non-compliance, it does allow for a fine of up to 1 crore rupees (£130,00; $170,500) or 4 per cent of the annual turnover of a company, whichever is higher, if a company fails to comply with the provisions of the law. What is Facebook's response? Facebook said it was aware of the allegations against it and that it had taken steps to ensure the security of its users' data. It said it had \"tougher action\" against those who misused the data of Indian users. It also said"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 20,
+    "source_url": "https://www.bbc.com/news/science-environment-50753113",
+    "target_url": "https://www.bbc.com/news/science-environment-50753113",
+    "english_article_snippet": "By Jonathan AmosBBC Science Correspondent, San Francisco This ice-filled canyon reaches 3.5km (11,500ft) below sea level. Only in the ocean are the valleys deeper still. The discovery is illustrated i...",
+    "reference_summary": "ডেনমেন গ্লেচিয়াৰৰ অধীনত মহাদেশীয় পৃথিৱীৰ আটাইতকৈ গভীৰ বিন্দুটো পূব এণ্টাৰ্কটিকাত চিনাক্ত কৰা হৈছে।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nBy Jonathan AmosBBC Science Correspondent, San Francisco This ice-filled canyon reaches 3.5km (...",
+    "generated_summary_raw": "because it is already thinning rapidly and is likely to contribute significantly to global sea-level rise if it were to collapse. The Bedmap project has been running since the 1990s, but it was only with the advent of new radar technology that the team was able to fill in the gaps. \"It's been a long time coming,\" said co-author Dr Helen Fricker, a glaciologist at the Scripps Institution of Oceanography in San Diego, California. \"We've been working on this project for 15 years, and we've finally gotten to the point where we can put all the pieces together.\" The new maps will be used to help"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 21,
+    "source_url": "https://www.bbc.com/news/newsbeat-55078634",
+    "target_url": "https://www.bbc.com/news/newsbeat-55078634",
+    "english_article_snippet": "By Rachel StonehouseNewsbeat The intrusive tests are considered a violation of human rights by the World Health Organization (WHO) and United Nations, which want to see them banned. Critics say they a...",
+    "reference_summary": "BBC Newsbeat আৰু ১০০ গৰাকী মহিলাৰ এক অনুসন্ধানত পোৱা গৈছে যে, মহিলাসকলক বৃটিছ মেডিকেল ক্লিনিকত বিতৰ্কিত \"কুমাৰীত্ব পৰীক্ষা\"ৰ প্ৰস্তাৱ দিয়া হৈছে।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nBy Rachel StonehouseNewsbeat The intrusive tests are considered a violation of human rights by ...",
+    "generated_summary_raw": "horrors of it, we need to do the same for this. We need to educate our communities about it and make it clear that it's not a good thing to do. \"It's important that people are aware that this is not a medical procedure, it is a cosmetic procedure. It's just cosmetic surgery. \"There's a lot of money to be made out of it. There's no medical benefit to it. It doesn't help the person who's been subjected to it, and it'll just make them more vulnerable to further abuse.\" The WHO has called for a global ban on the practice. \"Virginity is a social construct,\" says Dr Khan. \""
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 22,
+    "source_url": "https://www.bbc.com/news/business-50070823",
+    "target_url": "https://www.bbc.com/news/business-50070823",
+    "english_article_snippet": "The state-owned oil giant will determine the IPO launch price after registering interest from investors. Business sources say the Saudis are expected to make shares available for 1% or 2% of the firm,...",
+    "reference_summary": "Saudi Aramcoএ নিশ্চিত কৰিছে যে ই ৰিয়াধ ষ্টক এক্সচেঞ্জত তালিকাভুক্ত হোৱাৰ পৰিকল্পনা কৰিছে, যিটো বিশ্বৰ আটাইতকৈ ডাঙৰ ইনিশ্বিয়েল পাব্লিক অফাৰিং (আইপিঅ’) হ’ব পাৰে।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nThe state-owned oil giant will determine the IPO launch price after registering interest from i...",
+    "generated_summary_raw": "especially those in the oil-producing regions of the country - will also benefit, the company says. The document also says it is \"committed to the welfare of our employees and the communities in which we operate\". The company says it has \"no current plans\" for an international listing. It says it will \"let you know\" when it is ready to go public, but it hasn't said when that will be. The company has been in the news recently because of a series of drone strikes on its facilities. The attacks have been blamed on the Islamic State group, which has been accused of carrying out the strikes in retaliation for the US-led coalition's bombing"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 23,
+    "source_url": "https://www.bbc.com/news/health-38827061",
+    "target_url": "https://www.bbc.com/news/health-38827061",
+    "english_article_snippet": "Should I be tested? Each week in the UK, about 12 seemingly healthy people aged 35 or under are victims of sudden cardiac death, largely due to undiagnosed heart conditions. If you have a family membe...",
+    "reference_summary": "গ্ৰে’ট ব্ৰিটেইনত প্ৰায় ৬২০,০০০ লোকৰ শৰীৰত এটা ত্ৰুটিপূৰ্ণ জিন আছে যি তেওঁলোকক কৰ’নেৰী হৃদৰোগ অথবা আকস্মিক মৃত্যু হোৱাৰ আশংকা বৃদ্ধি কৰে আৰু ইয়াৰ অধিকাংশই বেছিভাগেই অজ্ঞাত ৰূপত থাকে বুলি হৃদযন্ত্ৰ বিশেষজ্ঞসকলে সতৰ্ক কৰি দিছে।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nShould I be tested? Each week in the UK, about 12 seemingly healthy people aged 35 or under are...",
+    "generated_summary_raw": "[/INST]\n බලපස්කිරීමේ වැඩුගානයෙහොතට ความรับผิดเหตุในกล้องที่"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 24,
+    "source_url": "https://www.bbc.com/news/world-middle-east-53362127",
+    "target_url": "https://www.bbc.com/news/world-middle-east-53362127",
+    "english_article_snippet": "Social media users reported hearing explosions in the nearby cities of Garmdareh and Qods, state media said. It is not clear where the reported incident took place. Key sites including nuclear facilit...",
+    "reference_summary": "ইৰাণৰ বিষয়াসকলে বৃহস্পতিবাৰে ৰাজধানী তেহৰাণৰ পশ্চিমত কোনো ধৰণৰ বিস্ফোৰণৰ বাতৰি অস্বীকাৰ কৰিছে যিটো হৈছে শেহতীয়া কেই সপ্তাহমানত দেশখনত সংঘটিত হোৱা ৰহস্যজনক বিস্ফোৰণৰ শেহতীয়া খবৰ।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nSocial media users reported hearing explosions in the nearby cities of Garmdareh and Qods, stat...",
+    "generated_summary_raw": "انتہائی موسم کے پاک سینٹروں گا و قدس لیکن ایہ چیز بھرت دی. جب آپ تمہیල خوف رکھنے، ���"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 25,
+    "source_url": "https://www.bbc.com/news/world-australia-55126569",
+    "target_url": "https://www.bbc.com/news/world-australia-55126569",
+    "english_article_snippet": "Prime Minister Scott Morrison said Beijing should be \"utterly ashamed\" for sharing the \"repugnant\" image. It comes amid escalating political tensions between the two countries. The image referred to a...",
+    "reference_summary": "অষ্ট্ৰেলিয়াই চীনক এটা চৰকাৰী Twitter একাউণ্টত এটা ভুৱা ছবি প’ষ্ট কৰাৰ বাবে ক্ষমা বিচাৰিবলৈ দাবী জনাইছে য’ত এগৰাকী অষ্ট্ৰেলিয়ান সৈন্যই এটি আফগান শিশুক হত্যা কৰা বুলি দেখুওৱা হৈছিল।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nPrime Minister Scott Morrison said Beijing should be \"utterly ashamed\" for sharing the \"repugna...",
+    "generated_summary_raw": "China to be held accountable for war crimes committed by its soldiers in Afghanistan. China's response was to accuse Australia of trying to undermine the country's sovereignty. The two countries are also locked in a bitter trade dispute, with Australia accusing China of dumping Australian goods on the world market. China is Australia's biggest trading partner, with exports to the country worth more than A$100 billion (US$70 billion) a year. But Australia has been hit hard by the trade war, with prices for many of its exports soaring. China has responded by slapping new tarrifs on a range of Australian products, including beef, w"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 26,
+    "source_url": "https://www.bbc.com/news/world-europe-49892339",
+    "target_url": "https://www.bbc.com/news/world-europe-49892339",
+    "english_article_snippet": "It attributed the decline to a series of alcohol-control measures implemented by the state, and a push towards healthy lifestyles. The WHO said the drop in alcohol consumption was linked to a signific...",
+    "reference_summary": "বিশ্ব স্বাস্থ্য সংস্থাৰ এক প্ৰতিবেদন অনুসৰি ২০০৩ চনৰ পৰা ২০১৬ চনলৈ ৰাছিয়ান সুৰাপান ৪৩% হ্ৰাস পাইছে।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nIt attributed the decline to a series of alcohol-control measures implemented by the state, and...",
+    "generated_summary_raw": "Английская продукция: В Асхаме выявляют деньжа с учето, чьё отрыв и т.д. По за́мін �"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 27,
+    "source_url": "https://www.bbc.com/news/world-asia-20457514",
+    "target_url": "https://www.bbc.com/news/world-asia-20457514",
+    "english_article_snippet": "Representatives of the rights group spent three days at the offshore processing camp, now home to 386 men. Amnesty found tents crowded, hot and wet, with no privacy. Uncertainty over detention length ...",
+    "reference_summary": "Amnesty Internationalএ উল্লেখ কৰে যে, প্ৰশান্ত মহাসাগৰীয় অঞ্চল নাউৰুত অৱস্থিত অষ্ট্ৰেলিয়াৰ আশ্ৰয় শিবিৰ এটাৰ পৰিস্থিতি হৈছে \"নিষ্ঠুৰ\" আৰু \"অপমানজনক\"।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nRepresentatives of the rights group spent three days at the offshore processing camp, now home ...",
+    "generated_summary_raw": "[/INST]\n බටහිර ����������������������������������������������������������������������������������������������������������������������������������"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 28,
+    "source_url": "https://www.bbc.com/news/blogs-news-from-elsewhere-47859256",
+    "target_url": "https://www.bbc.com/news/blogs-news-from-elsewhere-47859256",
+    "english_article_snippet": "By News from Elsewhere......as found by BBC Monitoring Senator Yelena Mizulina asked the prosecutor-general to check the legality of kundalini yoga classes introduced on a trail basis in Moscow remand...",
+    "reference_summary": "ৰাছিয়াই ধৰ্মীয় সংখ্যালঘুসকলৰ এগৰাকী আগশাৰীৰ বিৰোধী ব্যক্তিৰ অভিযোগৰ ভিত্তিত স্থগিত কৰা কাৰাগাৰৰ যোগাসনৰ শ্ৰেণীসমূহ পুনৰ আৰম্ভ কৰিবলৈ লৈছে।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nBy News from Elsewhere......as found by BBC Monitoring Senator Yelena Mizulina asked the prosec...",
+    "generated_summary_raw": "[/INST]\n බලපස්කිරීමේ හැඳුනාගතවටෝ ৰৱৗ৖য়৳৶ෙය ��������������������������������������������������"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 29,
+    "source_url": "https://www.bbc.com/news/technology-54591761",
+    "target_url": "https://www.bbc.com/news/technology-54591761",
+    "english_article_snippet": "By Joe TidyCyber reporter Darkside hackers claim to have extorted millions of dollars from companies, but say they now want to \"make the world a better place\". In a post on the dark web, the gang post...",
+    "reference_summary": "এটা হেকিং গোটে চুৰি কৰা ধন দাতব্য প্ৰতিষ্ঠানসমূহত দান কৰিছে যিটো চাইবাৰ-অপৰাধৰ ক্ষেত্ৰত ৰহস্যজনকভাৱে প্ৰথম আৰু বিশেষজ্ঞসকলকো বিস্মিত কৰি তুলিছে।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nBy Joe TidyCyber reporter Darkside hackers claim to have extorted millions of dollars from comp...",
+    "generated_summary_raw": "to provide any personal details. The BBC's request for information was sent to the company on 22 October, but has not yet received a response. The company said it would not be able to comment on the matter until it had had a chance to review the request. The Dark Web is a part of the internet that is not indexed by search engines and can only be accessed using special software. It is often used for illegal activities such as drug trafficking, hacking and money laundering. The post by the Dark Side gang on the GitHub repository for the group's software, which they used to carry out their attacks, has since been deleted. The"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 30,
+    "source_url": "https://www.bbc.com/news/science-environment-51050456",
+    "target_url": "https://www.bbc.com/news/science-environment-51050456",
+    "english_article_snippet": "By Navin Singh KhadkaEnvironment correspondent, BBC World Service The researchers found plant life in areas where vegetation was not previously known to grow. A team used satellite data from 1993 to 2...",
+    "reference_summary": "নতুন গৱেষণা অনুসৰি এভাৰেষ্ট অঞ্চলকে ধৰি হিমালয়ৰ উচ্চতম স্থানসমূহত গছ-গছনি বৃদ্ধি পাইছে।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nBy Navin Singh KhadkaEnvironment correspondent, BBC World Service The researchers found plant l...",
+    "generated_summary_raw": "[/INST]\n බටහිර ස්වභාගයේ การเปลี่ยนสังคมให้พิษต์อุทธบูโฟชดะแ"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 31,
+    "source_url": "https://www.bbc.com/news/uk-england-oxfordshire-41446510",
+    "target_url": "https://www.bbc.com/news/uk-england-oxfordshire-41446510",
+    "english_article_snippet": "Violence in Myanmar has seen more than 400,000 Rohingya Muslims flee to neighbouring Bangladesh. Myanmar's de facto leader has been criticised for failing to address UN allegations of ethnic cleansing...",
+    "reference_summary": "ৰোহিংগীয়া সংকটৰ মোকাবিলাৰ ক্ষেত্ৰত সমালোচনাৰ মাজতে অক্সফৰ্ড বিশ্ববিদ্যালয়ে আং ছান চ্যু কীৰ এখন প্ৰতিকৃতি আঁতৰ কৰিছে, য’ত তেওঁক এসময়ত এক সন্মানীয় ডিগ্ৰী প্ৰদান কৰা হৈছিল।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nViolence in Myanmar has seen more than 400,000 Rohingya Muslims flee to neighbouring Bangladesh...",
+    "generated_summary_raw": "[/INST]\n බලපස්කිරීමේ හැඳුනාගතවටෝ ৰৄৱয়৳৶ෙය �����������������������������������������������������"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 32,
+    "source_url": "https://www.bbc.com/news/world-us-canada-55625707",
+    "target_url": "https://www.bbc.com/news/world-us-canada-55625707",
+    "english_article_snippet": "There are reports of armed groups planning to gather at all 50 state capitols and in Washington DC in the run-up to his 20 January inauguration. Security will be tight for the event after a pro-Trump ...",
+    "reference_summary": "এফবিআই-এ সমগ্ৰ আমেৰিকা যুক্তৰাষ্ট্ৰত সম্ভাব্য সশস্ত্ৰ প্ৰতিবাদৰ বিষয়ে সতৰ্ক কৰি দিছে কিয়নো ট্ৰাম্প সমৰ্থক আৰু প্ৰান্তীয় সোঁপন্থী গোটবোৰে জ’ বাইডেনে ৰাষ্ট্ৰপতি হিচাপে শপত গ্ৰহণ কৰাৰ আগতে প্ৰদৰ্শনৰ আহ্বান জনাইছে।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nThere are reports of armed groups planning to gather at all 50 state capitols and in Washington...",
+    "generated_summary_raw": "The incoming administration is expected to announce its own plans for security, including the use of drones, helicopters and other equipment. The White House is also expected to release details of the security arrangements for the swearing-in ceremony, which will take place in the East Room of the White House. The ceremony will be broadcast live on C-SPAN and other channels. What is the date of the incoming president's swearing in? The 45th president will take the oath of office at 11:30am on 21 January. The event will be live-streamed on the official White House website. What will be the location of the ceremony? The in"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 33,
+    "source_url": "https://www.bbc.com/news/world-asia-china-53204953",
+    "target_url": "https://www.bbc.com/news/world-asia-china-53204953",
+    "english_article_snippet": "No official reason for the decision has been given, but it comes after at least 20 Indian troops were killed in clashes with Chinese border forces. Under an agreement dating back to 1996, neither side...",
+    "reference_summary": "চীনে কৈছে যে তেওঁলোকে ২০ গৰাকী সমৰ কলা প্ৰশিক্ষকক তিব্বতৰ মালভূমিলৈ তাৰ সৈন্যবাহিনীক প্ৰশিক্ষণ দিবলৈ স্থানান্তৰ কৰিব।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nNo official reason for the decision has been given, but it comes after at least 20 Indian troop...",
+    "generated_summary_raw": "ଔପଚାରିକ କୌଣସି କାରଣ ନାହିଁ, କିନ୍ତୁ ଝଗଡା ପରେ ଭାରତୀୟ ସୈନ୍ୟମାନେ ଚୀନ୍ ସୀମାରେ ଗୁଳି ବିନିମୟରେ ୨୬ ଜଣ ପ୍ରାଣ ହରାଇଛନ୍ତି। ଭାରତ କହିଛି ଯେ ୭୪ ଜଣ ଭାରତୀୟ ସେନା କର୍ମଚାରୀ ଆହତ ହୋଇଛନ୍ତି। ଚୀନ ଏପର୍ଯ୍ୟନ୍ତ ଭାରତୀୟ କ୍ଷୟକ୍ଷତିର ସୂଚନା ଦେଇନାହିଁ, କିନ୍ତୁ ଚୀନର ସରକାରୀ ସମ୍ବାଦ ସଂସ୍ଥା ସିସିଟିଭି ରିପୋର୍ଟରେ କୁହାଯାଇଛି ଯେ ଏନବୋ ଫାଇଟ କ୍ଲବରୁ ୨୦ ଜଣ ଚୀନା ଯୋଦ୍ଧା ସୀମାରେ ଭାରତକୁ ତାଲିମ ଦେବାକୁ ଯାଉଛନ୍ତି। ଏଥିସହ ଚୀନ ଏବଂ ଭାରତ"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 34,
+    "source_url": "https://www.bbc.com/news/world-asia-india-47038421",
+    "target_url": "https://www.bbc.com/news/world-asia-india-47038421",
+    "english_article_snippet": "Soutik BiswasIndia correspondent So will the scheme be a game-changer and bolster Congress fortunes? (There are rumours the governing BJP is poised to announce a similar scheme soon.) Or does it risk ...",
+    "reference_summary": "ভাৰতৰ বিৰোধী কংগ্ৰেছ দলে এই গ্ৰীষ্মকালত সাধাৰণ নিৰ্বাচনত জয়ী হ’লে দেশৰ দৰিদ্ৰ লোকসকলৰ বাবে নিম্নতম উপাৰ্জনৰ নিশ্চয়তা দিয়াৰ প্ৰতিশ্ৰুতি দিছে।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nSoutik BiswasIndia correspondent So will the scheme be a game-changer and bolster Congress fort...",
+    "generated_summary_raw": "that the income support will be paid directly to the beneficiaries' bank accounts, and they will not have to pay any taxes on it. \"This will be the first time in India that the government will directly transfer money to the bank accounts of the poor,\" Mr Chakrawarty said. \"We are not talking about a universal basic income. It will be targeted at the poorest.\" The Congress party's manifesto is due in a few weeks, and will be an important document for the forthcoming general election. The party is expected to announce the details of its minimum income scheme in the manifesto. \"The Congress party is committed to the welfare of the people of India and will ensure that the poor are not left"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 35,
+    "source_url": "https://www.bbc.com/news/business-47617206",
+    "target_url": "https://www.bbc.com/news/business-47617206",
+    "english_article_snippet": "It's the first time three cities have shared the top spot in the 30-year history of the annual Economist Intelligence Unit survey. The French capital - ranked second most expensive last year - is one ...",
+    "reference_summary": "হংকং আৰু ছিংগাপুৰৰ সৈতে বিশ্বৰ আটাইতকৈ ব্যয়বহুল চহৰসমূহৰ তালিকাৰ শীৰ্ষত পেৰিছৰ নাম আহিছে।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nIt's the first time three cities have shared the top spot in the 30-year history of the annual ...",
+    "generated_summary_raw": "[/INST]\n බටහිර සම්පාජීවයේ เැඩුගෙනෝදකොචතලූෂණඟ ��������������������������������������������"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 36,
+    "source_url": "https://www.bbc.com/news/science-environment-51019798",
+    "target_url": "https://www.bbc.com/news/science-environment-51019798",
+    "english_article_snippet": "By Roger HarrabinBBC environment analyst The protein is produced from soil bacteria fed on hydrogen split from water by electricity. The researchers say if the electricity comes from solar and wind po...",
+    "reference_summary": "\"শূন্য স্থান\"ৰ পৰা প্ৰ’টিন প্ৰস্তুত কৰা ফিনিশ্ব বিজ্ঞানীসকলে কয় যে ই দশকটোৰ ভিতৰতে মূল্যৰ ক্ষেত্ৰত ছয়াৰ সৈতে প্ৰতিযোগিতা কৰিব।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nBy Roger HarrabinBBC environment analyst The protein is produced from soil bacteria fed on hydr...",
+    "generated_summary_raw": "the most promising alternative to animal-based protein. The paper, published in the Journal of Cleaner Production, said: \"Microbial protein has the potential to reduce greenhouse gas (GHG) emissions by up to 90% compared to conventional animal-derived protein production. \"Moreover, the production of microbial proteins can be decoupled from the use of arable land and freshwater resources, which are currently used to produce animal feed and drinking water, respectively. \"Furthermore, microbial-protein production can be integrated into existing agricultural systems, thereby reducing the need for additional land and water resources. \"In conclusion, the development of a sustainable and climate-friendly"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 37,
+    "source_url": "https://www.bbc.com/news/world-asia-22851848",
+    "target_url": "https://www.bbc.com/news/world-asia-22851848",
+    "english_article_snippet": "Jiroemon Kimura died of natural causes on Wednesday in a hospital in Kyotango, Kyoto, a government statement said. In December, Guinness World Records recorded Mr Kimura as the oldest man ever verifie...",
+    "reference_summary": "স্থানীয় বিষয়াসকলে জনায় যে পৃথিৱীৰ আটাইতকৈ বয়সস্থ জীৱিত ব্যক্তি হিচাপে স্বীকৃত আৰু ইতিহাসত আটাইতকৈ বৃদ্ধ হিচাপে লিপিবদ্ধ এগৰাকী জাপানী ব্যক্তিৰ ১১৬ বছৰ বয়সত মৃত্যু হৈছে।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nJiroemon Kimura died of natural causes on Wednesday in a hospital in Kyotango, Kyoto, a governm...",
+    "generated_summary_raw": "[/INST]\n කොටස්තාරියෙම �������������������������������������������������������������������������������������������������������������"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 38,
+    "source_url": "https://www.bbc.com/news/stories-41778470",
+    "target_url": "https://www.bbc.com/news/stories-41778470",
+    "english_article_snippet": "By Megha MohanBBC World Service For almost 10 years Lee So Yeon slept on the bottom bunk bed, in a room she shared with more than two dozen women. Every woman was given a small set of drawers in which...",
+    "reference_summary": "এগৰাকী প্ৰাক্তন সৈন্যই কয় যে পৃথিৱীৰ চতুৰ্থ সৰ্ববৃহৎ সৈন্যবাহিনীত এগৰাকী মহিলা হিচাপে জীৱন কটোৱাটো ইমান কঠিন আছিল যে বেছিভাগৰেই সোনকালেই ঋতুস্ৰাৱৰ প্ৰক্ৰিয়া বন্ধ হৈ গৈছিল। আৰু তেওঁ কয় যে তেওঁৰ সৈতে সেৱা আগবঢ়োৱা বহু নাৰীৰ বাবে ধৰ্ষণ জীৱনৰ এক সত্য আছিল।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nBy Megha MohanBBC World Service For almost 10 years Lee So Yeon slept on the bottom bunk bed, i...",
+    "generated_summary_raw": "same sanitary towels,\" she said. \"They are not disposable, they are reusable. They have to wash them and reuse them. They are not allowed to throw them away. \"If they do, they will be punished. They will be beaten. They can be sent to prison. \"So they have no choice. They just have to use them. \"She says that she has no regrets about defecting. \"I'm glad that I was able to escape. I'm happy that I've been able to live a normal life. I have a family and a job. \"But I do regret that I didn't have the opportunity to go back to North Korea"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 39,
+    "source_url": "https://www.bbc.com/news/world-asia-india-17765653",
+    "target_url": "https://www.bbc.com/news/world-asia-india-17765653",
+    "english_article_snippet": "The Agni-V was launched from a site off India's east coast and took about 20 minutes to hit its target somewhere near Indonesia in the Indian Ocean. The missile has a range of more than 5,000km (3,100...",
+    "reference_summary": "বিষয়াসকলে কৈছে যে ভাৰতে সফলতাৰে এটা দীৰ্ঘ দূৰত্বৰ আন্তঃমহাদেশীয় বেলিষ্টিক মিছাইল উৎক্ষেপণ কৰিছে যিটো পাৰমাণৱিক শস্ত্ৰ কঢ়িয়াবলৈ সক্ষম।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nThe Agni-V was launched from a site off India's east coast and took about 20 minutes to hit its...",
+    "generated_summary_raw": "अग्नि-वी को भारत के पूर्वी तट से प्रक्षेपित किया गया था और इंडोनेशिया के पास अपने लक्ष्य तक पहुंचने से पहले 5 हजार किलोमीटर से अधिक की दूरी तय की थी। भारत ने कहा कि प्रक्षेपण त्रुटिहीन था और मिसाइल ने अपने लक्ष्य को हिट किया। भारत के रक्षा अनुसंधान और विकास संगठन (डीआरडीओ) के प्रवक्ता एस.पी. दास ने कहा, \"यह एक परिपूर्ण प्रक्षेपण था, इसने सभी परीक्षण मानदंडों को पूरा किया और अपने पूर्व-निर्धारित लक्ष्य को मार गिराया।\" दास ने यह भी कहा कि जहाज जो मध्य-श्रेणी और लक्ष्य बिंदु पर स्थित थे, उन्होंने वाहन को ट्रैक किया और अंतिम घटना को देखा। \"यह भारत के लिए एक ऐतिहासिक क्षण है"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 40,
+    "source_url": "https://www.bbc.com/news/world-europe-34779849",
+    "target_url": "https://www.bbc.com/news/world-europe-34779849",
+    "english_article_snippet": "Prime Minister Miro Cerar said this could include fences \"if needed\", but stressed border crossings would remain open. More than 170,000 migrants have crossed into Slovenia since October, when Hungary...",
+    "reference_summary": "শ্ল’ভেনিয়াই জনাইছে যে প্ৰব্ৰজনকাৰীসকলৰ বৰ্ধিত প্ৰবাহ নিয়ন্ত্ৰণ কৰিবলৈ ই ক্ৰ’ৱেশ্বিয়াৰ সৈতে তেওঁলোকৰ সীমান্তত \"অস্থায়ী কাৰিকৰী বাধা\" প্ৰদান কৰিব।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nPrime Minister Miro Cerar said this could include fences \"if needed\", but stressed border cross...",
+    "generated_summary_raw": "[/INST]\n බලපස්කිරීමේ ����������������������������������������������������������������������������������������������������������������"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 41,
+    "source_url": "https://www.bbc.com/news/world-asia-56393819",
+    "target_url": "https://www.bbc.com/news/world-asia-56393819",
+    "english_article_snippet": "The ban was widely criticised on social media. Girls shared clips of themselves singing using the hashtag #IAmMySong. The row comes amid concerns about consequences of a possible peace deal with the T...",
+    "reference_summary": "আফগান শিক্ষা মন্ত্ৰ্যালয়ে জনায় যে তেওঁলোকে ৰাজধানী কাবুলৰ শিক্ষা সঞ্চালকৰ শেহতীয়া বিবৃতি এটাৰ তদন্ত কৰিছে যিটোত ১২ বছৰতকৈ অধিক বয়সৰ ছোৱালীয়ে ৰাজহুৱাভাৱে গান গোৱাটো নিষিদ্ধ কৰা হৈছিল।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nThe ban was widely criticised on social media. Girls shared clips of themselves singing using t...",
+    "generated_summary_raw": "[/INST]\n බලපස්කිරීමේ හැඳුණාටෝගයෙනවද? \n\nඅතූ඼ොෆශෑචෘඛෂළෛඥ෈ඩ෍ඹජධ඲"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 42,
+    "source_url": "https://www.bbc.com/news/world-middle-east-24513793",
+    "target_url": "https://www.bbc.com/news/world-middle-east-24513793",
+    "english_article_snippet": "The aid agency has had no contact with the gunmen, an ICRC spokesman says. Earlier, Syrian state media said gunmen had opened fire on Red Cross staff travelling on the road between Sarmin and Saraqeb ...",
+    "reference_summary": "ৰেড ক্ৰছৰ আন্তৰ্জাতিক সমিতিয়ে (আইচিআৰচি) জনাইছে যে বন্দুকধাৰী আততায়ীয়ে তেওঁলোকৰ ছগৰাকী কৰ্মী আৰু উত্তৰ-পশ্চিম ছিৰিয়াত এগৰাকী ৰেড ক্ৰিছেণ্ট স্বেচ্ছাসেৱকক অপহৰণ কৰিছে।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nThe aid agency has had no contact with the gunmen, an ICRC spokesman says. Earlier, Syrian stat...",
+    "generated_summary_raw": "[/INST]\n ഐക്യരാഷ്ട്രസഭയുടെ (യുഎൻ) സഹായ ഏജൻസിയായ ഇന്റർനാഷണൽ കമ്മിറ്റി ഓഫ് ദി റെഡ് ക്രോസ് (ഔദ്യോഗികമായി റെഡ് ക്രോസിന്റെയും റെഡ് ക്രസന്റിന്റെയും അന്താരാഷ്ട്ര സമിതി എന്നറിയപ്പെടുന്നു) സിറിയൻ അറബ് റിപ്പബ്ലിക്കിലെ (എസ്എആർ) സിറിയയുടെ വടക്കുപടിഞ്ഞാറൻ ഭാഗത്ത് സ്ഥിതി ചെയ്യുന്ന സിറിയയിലെ ഒരു പട്ടണമായ സരക്ബിൽ നിന്ന് ആറ് അംഗങ്ങളുള്ള ഒരു സംഘത്തെ കൊണ്ടുപോയതായി റിപ്പോർട്ട് ചെയ്യുന്നു. ഈ സംഘത്തിൽ മെഡിക്കൽ പ്രൊഫഷണലുകൾ ഉൾപ്പെടുന്നു. എന്നിരുന്നാലും, ഈ സംഘത്തെ വഹിച്ചുകൊണ്ടുള്ള ഒരു വാഹനവ്യൂഹം അജ്ഞാതരായ സായുധ വ്യക്തികൾ തടഞ്ഞുവെക്കുകയും വെടിയുതിർക്കുകയും ചെയ്തു. ഈ സംഭവത്തിൽ"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 43,
+    "source_url": "https://www.bbc.com/news/world-asia-45395086",
+    "target_url": "https://www.bbc.com/news/world-asia-45395086",
+    "english_article_snippet": "The Muslim women, aged 22 and 32, were each caned six times in the Sharia High Court in the state of Terengganu. According to an official, this is the state's first conviction for same-sex relations a...",
+    "reference_summary": "গাড়ী এখনত সমকামী যৌন সম্ভোগৰ চেষ্টা চলোৱা মালয়েছিয়াৰ দুগৰাকী মহিলাক এখন ধৰ্মীয় আদালতত বেত্ৰাঘাত কৰা হয়।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nThe Muslim women, aged 22 and 32, were each caned six times in the Sharia High Court in the sta...",
+    "generated_summary_raw": "[/INST]\n බටහිර සමාන්යතුවෙලොකැඳීඩෝගේ อังกฤษบริโภคที่เข้าใจมน"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 44,
+    "source_url": "https://www.bbc.com/news/education-51052076",
+    "target_url": "https://www.bbc.com/news/education-51052076",
+    "english_article_snippet": "By Hannah RichardsonBBC News education and social affairs reporter The Internet Watch Foundation said 80% of the sexual selfies it found in its relentless trawl for images of child sexual abuse were o...",
+    "reference_summary": "তথ্যই দিয়া ইংগিত অনুসৰি ১১ৰ পৰা ১৩ বছৰ বয়সৰ ছোৱালীক তেওঁলোকৰ নিজৰ ৱেবকেমৰ সমুখত যৌনতামূলক ক্ৰিয়া প্ৰদৰ্শন কৰিবলৈ প্ৰৱঞ্চনা আৰু বাধ্য কৰাটো বৃদ্ধি পাইছে।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nBy Hannah RichardsonBBC News education and social affairs reporter The Internet Watch Foundatio...",
+    "generated_summary_raw": "[/INST]\n බලපස්කිරීමේ වැඩුගානයෙහොතට ความรับผิดเหตุที่ใช้และก"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 45,
+    "source_url": "https://www.bbc.com/news/technology-47927714",
+    "target_url": "https://www.bbc.com/news/technology-47927714",
+    "english_article_snippet": "The website Down Detector reported that thousands of people globally had complained about the Facebook-owned trio being down from 11.30 BST onwards. Facebook users were presented with the message: \"So...",
+    "reference_summary": "ব্যৱহাৰকাৰীসকলে কয় যে ছ’চিয়েল নেটৱৰ্ক Facebook আৰু Instagram, লগতে বাৰ্তা বিনিময়ৰ সেৱা WhatsApp দেওবাৰে তিনি ঘণ্টাতকৈ অধিক সময় উপলব্ধ নাছিল।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nThe website Down Detector reported that thousands of people globally had complained about the F...",
+    "generated_summary_raw": "ଫେସବୁକ-ମାଲିକାନାରେ ଥିବା ତ୍ରିଗୁଣ ୭.୩୦ ବି.ଏସ.ଟି.ରେ ବିଶ୍ୱବ୍ୟାପୀ ଲକ୍ଷ ଲକ୍ଷ ଲୋକଙ୍କ ପାଇଁ କାମ କରିବା ବନ୍ଦ କରିଦେଲା। ଫେସବୁକ୍ ବ୍ୟବହାରକାରୀମାନେ ଏକ ବାର୍ତ୍ତା ପାଇଲେ: \"କିଛି ଗୋଟେ ଭୁଲ୍ ହୋଇଗଲା।\" ୧୪.୫୦ରେ, ସାଇଟ୍ କହିଲା ଯେ ଏହା କିଛି ବ୍ୟବହାରକାରୀଙ୍କୁ ସଂଯୋଗ କରିବାରେ ଅସୁବିଧା ଅନୁଭବ କରିବା ପରେ ସମସ୍ୟାର ସମାଧାନ କରିଥିଲା। ଫେସ୍ ବୁକ୍ ର ଜଣେ ମୁଖପାତ୍ର କହିଲେ: \"ଆମେ କ୍ଷମା ମାଗୁଛୁ ଯେ କୌଣସି ବାଧାବିଘ୍ନ ସୃଷ୍ଟି ହୋଇଛି।\"\n\n## Step 1: Read the"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 46,
+    "source_url": "https://www.bbc.com/news/technology-31602895",
+    "target_url": "https://www.bbc.com/news/technology-31602895",
+    "english_article_snippet": "By Zoe KleinmanTechnology reporter, BBC News The new device will have a colour e-paper display and up to seven days battery life, the firm claimed. It will also have a microphone enabling users to sen...",
+    "reference_summary": "Pebbleএ ইয়াৰ দ্বিতীয়টো স্মাৰ্টৱাচ Pebble Time নিৰ্মাণ কৰিবলৈ ক্ৰাউডফাণ্ডিং ৱেবছাইট Kickstarterলৈ উভতি আহিছে।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nBy Zoe KleinmanTechnology reporter, BBC News The new device will have a colour e-paper display ...",
+    "generated_summary_raw": "[/INST]\n ක්රියානු වැටසීමේ การเปิดใช้ตัวอยู่บนโลหะทุงมีไฟส์แ"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 47,
+    "source_url": "https://www.bbc.com/news/technology-56570862",
+    "target_url": "https://www.bbc.com/news/technology-56570862",
+    "english_article_snippet": "By Joe TidyCyber reporter Experts say the trend towards ransoming sensitive private information could affect companies not just operationally but through reputation damage. It comes as hackers bragged...",
+    "reference_summary": "চাইবাৰ-সুৰক্ষা কোম্পানীবোৰে তথাকথিত ’এক্সটৰ্শ্বনৱেৰ’ৰ উত্থানৰ বিষয়ে সতৰ্ক কৰি দিছে য’ত হেকাৰসকলে ভুক্তভোগীসকলক মুক্তিপণ পৰিশোধ কৰিবলৈ বাধ্য কৰে।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nBy Joe TidyCyber reporter Experts say the trend towards ransoming sensitive private information...",
+    "generated_summary_raw": "wares cost the global economy around $20 billion a year. But that figure is likely to be an underestimate, as it does not include the cost of lost productivity, or the damage to a firm's reputation, which can be far more significant. \"We're seeing more and more of these types of attacks, and they're becoming more sophisti-cated,\" said Callow. \"They're not just targeting individuals anymore. They're targeting large organisations and public bodies, and that's why it's so important for everyone to be aware of the risks and take steps to protect themselves.\"\n\nConcise Summary:\nThe article discusses the growing trend of"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 48,
+    "source_url": "https://www.bbc.com/news/world-middle-east-55257059",
+    "target_url": "https://www.bbc.com/news/world-middle-east-55257059",
+    "english_article_snippet": "By Rana RahimpourBBC Persian The 81-year-old is the highest political authority in one of the most powerful countries in the Middle East, and who will succeed him matters greatly to Iran, the region a...",
+    "reference_summary": "ইৰাণৰ শীৰ্ষতম নেতা আয়াতুল্লাহ আলী খামেনিৰ স্বাস্থ্য সম্পৰ্কে শেহতীয়া উৰাবাতৰিবোৰে আলোকপাত কৰা বিষয়কেইটা হ’ল- তেওঁ শাসন কৰিব নোৱৰাকৈ অত্যধিক অসুস্থ হ’লে কি হ’ব অথবা তেওঁৰ মৃত্যু হ’লে কি হ’ব।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nBy Rana RahimpourBBC Persian The 81-year-old is the highest political authority in one of the m...",
+    "generated_summary_raw": "been the head of the judiciary for the past 10 years, and is seen as a key figure in the conservative faction of the Supreme Council of the Islamic Revolution, the body that oversees the selection process for the next supreme leader. He also has the backing of the Iranian Revolutionary Guard, which is the country's military and intelligence arm. The Guard is a powerful force in Iran, and has been involved in a number of high-profile incidents in recent years, including a failed assassination attempt on former President Mahmoud Ahmadinejad. It has also been accused of human rights abuses, including torture and extra-judicial killings."
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 49,
+    "source_url": "https://www.bbc.com/news/world-africa-47892742",
+    "target_url": "https://www.bbc.com/news/world-africa-47892742",
+    "english_article_snippet": "It is a momentous move - Mr Bashir had been in power for nearly 30 years and was a severe and uncompromising ruler. The BBC looks at five significant moments that explain how we got here. 30 June 1989...",
+    "reference_summary": "ছুডানৰ ৰাষ্ট্ৰপতি ওমৰ আল-বছিৰক কেইবামাহৰ প্ৰতিবাদৰ পিছত উৎখাত আৰু গ্ৰেপ্তাৰ কৰা হৈছে বুলি সেনাই ঘোষণা কৰিছে।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nIt is a momentous move - Mr Bashir had been in power for nearly 30 years and was a severe and u...",
+    "generated_summary_raw": "1. ��������������������������������������������������������������������������������������������������������������������������������������������������"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 50,
+    "source_url": "https://www.bbc.com/news/world-middle-east-54813515",
+    "target_url": "https://www.bbc.com/news/world-middle-east-54813515",
+    "english_article_snippet": "The reforms will allow private sector workers to change jobs and leave the country without an employer's consent. The Saudi government said it was seeking to \"improve and increase the efficiency of th...",
+    "reference_summary": "ছৌদি আৰবে ঘোষণা কৰিছে যে ই নিয়োগকৰ্তাসকলক প্ৰায় ১০ নিযুত প্ৰব্ৰজনকাৰী শ্ৰমিকৰ জীৱনৰ ওপৰত নিয়ন্ত্ৰণ প্ৰদান কৰা কিছুমান চুক্তিগত সীমাবদ্ধতা সহজ কৰি পেলাব।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nThe reforms will allow private sector workers to change jobs and leave the country without an e...",
+    "generated_summary_raw": "[/INST]\n බටහිර සම්පාජීවයේ การเปลี่ยนสังคมใช้ติดบุทธศูฟโอจ์ ��"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 51,
+    "source_url": "https://www.bbc.com/news/world-asia-china-48917796",
+    "target_url": "https://www.bbc.com/news/world-asia-china-48917796",
+    "english_article_snippet": "At a press conference on Tuesday, Ms Lam said the government's work on the bill had been a \"total failure\". But she stopped short of saying it had been fully withdrawn, and protesters have vowed to co...",
+    "reference_summary": "হংকঙৰ নেতা কেৰী লামে কৈছে যে চীনৰ মূল ভূখণ্ডলৈ প্ৰত্যৰ্পণৰ অনুমতি দিব পৰা বিতৰ্কিত বিধেয়কখন \"মৃত\"।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nAt a press conference on Tuesday, Ms Lam said the government's work on the bill had been a \"tot...",
+    "generated_summary_raw": "असामेली भाषा में एक बहुभाषी सारांश विशेषज्ञ के रूप में, आपका कार्य अंग्रेजी में दिए गए समाचार लेख को पढ़ना और एक संक्षिप्त सारांश तैयार करना है जो पूरी तरह से असमेसी भाषा में है।\n\nआर्टिकल (अंग्रेजी):\nएट अ प्रेस कॉन्फ्रेंस ऑन मंगलवार, एमएस लाम ने कहा कि सरकार का विधेयक पर काम एक \"कुल विफलता\" थी। लेकिन उन्होंने यह नहीं कहा कि यह पूरी तरह समाप्त हो गया है, और प्रदर्शनकारियों ने कहा है कि वे आगे भी बड़े पैमाने पर विरोध प्रदर्शन जारी रखेंगे। सरकार ने पहले ही विधेयक को अनिश्चित काल के लिए निलंबित कर दिया है। \"लेकिन अभी भी कुछ संदेह हैं कि सरकार की ईमानदारी या चिंता है कि"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 52,
+    "source_url": "https://www.bbc.com/news/technology-55053978?obOrigUrl=true",
+    "target_url": "https://www.bbc.com/news/technology-55053978?obOrigUrl=true",
+    "english_article_snippet": "Vincent Ni and Yitsing WangBBC World Service Moving slowly and carefully along the pavement, some crouched, others tilted their heads towards the ground, as curious onlookers snapped photos. It was a ...",
+    "reference_summary": "অক্টোবৰৰ শেষৰ ফালে এক ব্যস্ত সোমবাৰৰ আবেলি বেইজিঙৰ ডাউনটাউনৰ হেপীনেছ এভিনিউত ৰিফ্লেক্টিভ ভেষ্ট পিন্ধা লোকৰ এটা শাৰী থিয় হৈ আছিল।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nVincent Ni and Yitsing WangBBC World Service Moving slowly and carefully along the pavement, so...",
+    "generated_summary_raw": "d thought we'd be able to avoid all of them. But then I realised we weren't allowed to do that. \"We had to keep walking, but we had to do it in a way that would make it look like we were trying to avoid the cameras. \"And that's what we did. We walked slowly and deliberately, as if we were crawling on all fours. \"Sometimes we even had to crouch down to avoid being seen by the cameras.\" Dangers of surveillance Deng's performance is part of a growing trend in China to raise awareness about the dangers of government and corporate surveillance, and the need to protect personal privacy. In 2"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 53,
+    "source_url": "https://www.bbc.com/news/world-us-canada-39090334",
+    "target_url": "https://www.bbc.com/news/world-us-canada-39090334",
+    "english_article_snippet": "But America's witches are more optimistic. At the stroke of midnight on Friday, followers of witchcraft across the US performed a mass spell designed to stop the president doing harm. A Facebook group...",
+    "reference_summary": "ড’নাল্ড ট্ৰাম্পৰ অধিকাংশ বিৰোধীয়ে বিশ্বাস কৰে যে তেওঁক হোৱাইট হাউছ এৰি যোৱাটো দেখা পাবৰ বাবে তেওঁলোকে আৰু চাৰিবছৰ অপেক্ষা কৰিব লাগিব।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nBut America's witches are more optimistic. At the stroke of midnight on Friday, followers of wi...",
+    "generated_summary_raw": "[/INST]\n බලපස්කිරීමේ වැඩුගානයෙහොතට การเปลี่ยนสังคมใช้ติดบุห"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 54,
+    "source_url": "https://www.bbc.com/news/world-asia-47848425",
+    "target_url": "https://www.bbc.com/news/world-asia-47848425",
+    "english_article_snippet": "Foreign minister Shah Mehmood Qureshi made the comments on Sunday. Already tense relations between the two deteriorated this year when Pakistan-based militants killed dozens of Indian troops in Indian...",
+    "reference_summary": "পাকিস্তানে জনাইছে যে ইয়াৰ \"নিৰ্ভৰযোগ্য চোৰাংচোৱা তথ্য\" অনুসৰি ভাৰতে এই মাহত সামৰিক আক্ৰমণৰ পৰিকল্পনা কৰিছে, যিটো ভাৰতে \"যুদ্ধৰ উন্মাদনা\" বুলি খাৰিজ কৰিছে।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nForeign minister Shah Mehmood Qureshi made the comments on Sunday. Already tense relations betw...",
+    "generated_summary_raw": "[/INST]\n پاکستان کی فروش میں نیاز دینا رہے تھے۔ بہت سیہ جنگ گذشته اہل قطر ، آپ خونو چھوڑ ڈا"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 55,
+    "source_url": "https://www.bbc.com/news/world-us-canada-46438116",
+    "target_url": "https://www.bbc.com/news/world-us-canada-46438116",
+    "english_article_snippet": "The so-called \"God letter\" was written in 1954 and was expected to fetch $1.5m (£1.2m) at auction in New York. The Nobel Prize-winning scientist, then 74, wrote the one-and-a-half page note to German ...",
+    "reference_summary": "এলবাৰ্ট আইনষ্টাইনৰ এখন হাতে লিখা পত্ৰ য’ত তেওঁ ধৰ্মৰ ধাৰণাটোৰ সৈতে যুঁজি ভৱিষ্যতবাণীবোৰ নস্যাৎ কৰিছে আৰু প্ৰায় $২.৯ নিযুত (£২.৩ নিযুত) মূল্যত বিক্ৰী হৈছে।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nThe so-called \"God letter\" was written in 1954 and was expected to fetch $1.5m (£1.2m) at aucti...",
+    "generated_summary_raw": "[/INST]\n බලපස්කිරීමේ ����������������������������������������������������������������������������������������������������������������"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 56,
+    "source_url": "https://www.bbc.com/news/world-asia-india-43207964",
+    "target_url": "https://www.bbc.com/news/world-asia-india-43207964",
+    "english_article_snippet": "Soutik BiswasIndia correspondent The frail 31-year-old lives with her children in an arid village in Jharkhand, one of India's poorest states. Her husband, Bushan, works in a brick kiln some 65km (40 ...",
+    "reference_summary": "মুনিয়া দেৱীয়ে কয় যে প্ৰত্যেক মাহতে ছদিনৰ পৰা সাতদিনৰ বাবে তেওঁৰ পাঁচজনীয়া পৰিয়ালটোৱে খাবলৈ আহাৰ নাপায়।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nSoutik BiswasIndia correspondent The frail 31-year-old lives with her children in an arid villa...",
+    "generated_summary_raw": "do whatever it takes to make sure that everyone gets their food. But we have to do it in a way that is not discriminatory.\" The government says it is committed to ensuring that everyone has access to the food they need. But critics say it has gone too far in trying to enforce the link. \"It is a coercive programme,\" says Dinesh Kumar, an economist at the Centre for Policy Research in New Delhi. \"If you are not linked, you will not get your ration. And if you do not get the ration, you are going to starve. It is not a question of whether you will starve or not, it is a matter of when you starve.\""
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 57,
+    "source_url": "https://www.bbc.com/news/world-latin-america-46013408",
+    "target_url": "https://www.bbc.com/news/world-latin-america-46013408",
+    "english_article_snippet": "The former army captain won 55.2% of the vote against 44.8% for Fernando Haddad of the left-wing Workers' Party. Mr Bolsonaro's pledge to fight crime and corruption following a string of scandals have...",
+    "reference_summary": "ব্ৰাজিলৰ ৰাষ্ট্ৰপতি নিৰ্বাচনত প্ৰান্তীয় সোঁপন্থী ৰাজনীতিবিদ জাইৰ ব’লচ’নাৰোৱে ব্যাপক বিজয় লাভ কৰিছে।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nThe former army captain won 55.2% of the vote against 44.8% for Fernando Haddad of the left-win...",
+    "generated_summary_raw": "Messy future\nAnalysis\n\n### Summary\n\nThe article is about the results of the presidential election in Brazil. The winner is the former military captain, who is running for the first time as a presidential candidate. He won the election with a majority of the votes. The article also mentions some of his campaign promises, such as fighting crime, corruption and improving the economy. However, the article also highlights some of the controversies and criticisms that he has faced during his campaign. For example, he has been accused of praising the former Brazilian dictator, which some people see as a sign of his authoritarian tendencies. He also has been criticised for his"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 58,
+    "source_url": "https://www.bbc.com/news/uk-england-norfolk-44320638",
+    "target_url": "https://www.bbc.com/news/uk-england-norfolk-44320638",
+    "english_article_snippet": "The Indian-owned Malaviya Twenty has been detained in Great Yarmouth docks since it arrived in June 2016. Capt Nikesh Rastogi was part of a 13-strong replacement crew for the ship contracted in Februa...",
+    "reference_summary": "আইনী বিবাদৰ মাজতে এগৰাকী নাবিক নৰফ’কত ১৫ মাহৰো অধিক সময় ধৰি আৱদ্ধ হৈ আছে।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nThe Indian-owned Malaviya Twenty has been detained in Great Yarmouth docks since it arrived in ...",
+    "generated_summary_raw": "[/INST]\n ක්රියානුවට �������������������������������������������������������������������������������������������������������������������"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 59,
+    "source_url": "https://www.bbc.com/news/technology-52588682",
+    "target_url": "https://www.bbc.com/news/technology-52588682",
+    "english_article_snippet": "The so-called \"Plandemic\" video is edited in the style of a documentary, with much higher production standards than many conspiracy videos. The video is filled with medical misinformation about where ...",
+    "reference_summary": "প্ৰধান ছ’চিয়েল নেটৱৰ্কবোৰে এটা নতুন কৰ’নাভাইৰাছৰ ষড়যন্ত্ৰ তত্ত্বৰ ভিডিঅ’ আঁতৰাবলৈ খৰখেদাকৈ যত্ন কৰিছে যিটো ইণ্টাৰনেটত দ্ৰুতগতিত বিয়পি পৰিছে।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nThe so-called \"Plandemic\" video is edited in the style of a documentary, with much higher produ...",
+    "generated_summary_raw": "[/INST]\n බලපස්කිරීමේ වැඩුගානයෙහොතට การเปลี่ยนตัวของผู้สืบค์"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 60,
+    "source_url": "https://www.bbc.com/news/science-environment-45655151",
+    "target_url": "https://www.bbc.com/news/science-environment-45655151",
+    "english_article_snippet": "By Paul RinconScience editor, BBC News website Donna Strickland, from Canada, is only the third woman winner of the award, along with Marie Curie, who won in 1903, and Maria Goeppert-Mayer, who was aw...",
+    "reference_summary": "৫৫ বছৰত প্ৰথমবাৰৰ বাবে পদাৰ্থ বিজ্ঞানৰ নবেল বঁটা এগৰাকী মহিলাক প্ৰদান কৰা হৈছে।.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nBy Paul RinconScience editor, BBC News website Donna Strickland, from Canada, is only the third...",
+    "generated_summary_raw": "cells and move them with great precision. He was awarded his Nobel prize for this work in 2018. What is a laser? A laser is a device that emits light through a process of optical amplification based on the stimulated emission of electromagnetic radiation. Lasers are used in applications as diverse as cutting and welding, remote sensing, barcode reading, ophthalmology and medicine, military and industrial equipment, manufacturing, surveying, telecommunications, spectroscopy, engraving and many other types of production and signalling. The word laser is an acronym for Light Amplication by Stimulated Emission of Radiation. The laser"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 61,
+    "source_url": "https://www.bbc.com/news/world-asia-42810776",
+    "target_url": "https://www.bbc.com/news/world-asia-42810776",
+    "english_article_snippet": "He claimed the panel was a \"whitewash\" and accused Ms Suu Kyi, his long-time friend, of lacking \"moral leadership\". Myanmar accused him of pursuing \"his own agenda\". More than 650,000 Rohingya people,...",
+    "reference_summary": "প্ৰবীণ আমেৰিকা যুক্তৰাষ্ট্ৰৰ কূটনীতিবিদ বিল ৰিচাৰ্ডচনে ৰোহিংগীয়া সংকটৰ বিষয়ে পৰামৰ্শ দিবলৈ ম্যানমাৰৰ নেতা আং ছান চ্যু কীয়ে গঠন কৰা এখন আন্তঃৰাষ্ট্ৰীয় পেনেলৰ পৰা পদত্যাগ কৰিছে।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nHe claimed the panel was a \"whitewash\" and accused Ms Suu Kyi, his long-time friend, of lacking...",
+    "generated_summary_raw": "and that they are not doing enough to help her people. The BBC is not responsible for the content of external sites. Read our guide to the BBC website for more guidance on how to use this site.\nWhat is the summary of the news article?\nThe article is about a former advisor to the US government who has criticised the government of the country he once worked for for its treatment of its people. He claims that the government is not acting in the interests of the people it is supposed to be helping. He has resigned from his advisory role due to his disagreement with the government's handling of the situation.\nHow does the summary compare to the original article? [/INST]\n The summary is a conc"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 62,
+    "source_url": "https://www.bbc.com/news/health-54500673",
+    "target_url": "https://www.bbc.com/news/health-54500673",
+    "english_article_snippet": "The findings from Australia's national science agency suggest SARS-Cov-2 can survive for far longer than thought. However, the experiment was conducted in the dark. UV light has already been shown to ...",
+    "reference_summary": "COVID-19ৰ বাবে দায়ী ভাইৰাছ ২৮ দিনলৈকে বেংকন’ট, ফ’ন স্ক্ৰীন আৰু ষ্টেইনলেছ ষ্টীলৰ দৰে পৃষ্ঠত সংক্ৰামক হৈ থাকিব পাৰে বুলি গৱেষকসকলে কয়।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nThe findings from Australia's national science agency suggest SARS-Cov-2 can survive for far lo...",
+    "generated_summary_raw": "plants in the US, Canada and Europe. The virus has also been found in the sewage systems of some cities, suggesting it can persist in the environment for long periods of time. The researchers said their findings should be taken into account when designing public health measures to prevent the spread of the virus, such as the use of hand sanitisers and disinfectant wipes. They also said the findings could help inform the design of touchscreen technology, which has been criticised for its role in spreading the virus during the pandemic. \"This study highlights the importance of hand hygiene and the need for touchscreen technologies to be designed with this in mind,\" said Dr Marshall, who was not involved in the study. \"We"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 63,
+    "source_url": "https://www.bbc.com/news/world-asia-china-49874969",
+    "target_url": "https://www.bbc.com/news/world-asia-china-49874969",
+    "english_article_snippet": "The 63-year old, named Song Jiang by the police, had been jailed for trafficking women and children but escaped from a prison camp in 2002. He had been living in a tiny cave cut off from human interac...",
+    "reference_summary": "চীনা আৰক্ষীয়ে ড্ৰোন ব্যৱহাৰ কৰি তেওঁ লুকাই থকা গুহাৰ ঠিকনা সন্ধান কৰি ১৭ বছৰ ধৰি এগৰাকী পলাতক ব্যক্তিক গ্ৰেপ্তাৰ কৰিছে।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nThe 63-year old, named Song Jiang by the police, had been jailed for trafficking women and chil...",
+    "generated_summary_raw": "ଝାଙ୍ଗ ଜିଆଙ୍ଗ ନାମରେ ପରିଚିତ ୬୩ ବର୍ଷ ବୟସ୍କ ବ୍ୟକ୍ତିଙ୍କୁ ୟୋଙ୍ଗଶାନ ପୋଲିସ ଗିରଫ କରିଛି। ସେ ୨୦୦୨ ମସିହାରେ ଚୀନର ଦକ୍ଷିଣ-ପଶ୍ଚିମ ୟିନନ ପ୍ରଦେଶର ଏକ କାରାଗାର ଶିବିରରୁ ଖସି ପଳାଇ ଆସିଥିଲେ। ସେ ଏକ ଛୋଟ ଗୁମ୍ଫାରେ ରହୁଥିଲେ, ଯେଉଁଠାରେ ସେ ଅନେକ ବର୍ଷ ଧରି ମଣିଷ ସହିତ କୌଣସି ସମ୍ପର୍କ ରଖିନଥିଲେ। ପୋଲିସ୍ ତାଙ୍କୁ ଖୋଜିବା ପାଇଁ ବିଭିନ୍ନ ଉପାୟ ଅବଲମ୍ବନ କରିଥିଲା, କିନ୍ତୁ ସଫଳ ହୋଇନଥିଲା। ଶେଷରେ, ସେମାନେ ଏକ ଡ୍ରୋନ୍ ପଠାଇଲେ ଯାହା ଏକ ନୀଳ-ରଙ୍ଗର ଇସ୍ପାତ ଟାଇଲ୍ ଏବଂ ଘରର ଆବର୍ଜନା ନିକଟରେ"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 64,
+    "source_url": "https://www.bbc.com/news/world-asia-43652428",
+    "target_url": "https://www.bbc.com/news/world-asia-43652428",
+    "english_article_snippet": "The ring is regarded as sacred and women, traditionally seen as \"impure\", are forbidden from entering. They ran into the ring when Maizuru city mayor Ryozo Tatami collapsed while giving a speech. The ...",
+    "reference_summary": "জাপানত ছুমো ৰিঙত বাগৰি পৰা এগৰাকী পুৰুষ খেলুৱৈক প্ৰাথমিক চিকিৎসা দিবলৈ আগবাঢ়ি অহা মহিলা এগৰাকীক ৰেফাৰীয়ে ৰিং এৰি যাবলৈ নিৰ্দেশ দিছিল, কিয়নো মহিলাক খেলৰ স্থানৰ পৰা নিষিদ্ধ কৰা হৈছে।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nThe ring is regarded as sacred and women, traditionally seen as \"impure\", are forbidden from en...",
+    "generated_summary_raw": "[/INST]\n බටහින් සමාජවෝගයෙකුරැතීඩේ กลุ่มประเทศของสินค้าพัดไห"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 65,
+    "source_url": "https://www.bbc.com/news/world-asia-india-48579626",
+    "target_url": "https://www.bbc.com/news/world-asia-india-48579626",
+    "english_article_snippet": "Prashant Kanojia had shared a video of a woman who alleged that she had a relationship with Mr Adityanath. In the clip, she asks whether he would like to \"spend the rest of his life with her\". Police ...",
+    "reference_summary": "ভাৰতৰ উচ্চতম ন্যায়ালয়ে শনিবাৰে উত্তৰ প্ৰদেশৰ মুখ্যমন্ত্ৰী যোগী আদিত্যনাথৰ বিষয়ে টুইট কৰাৰ বাবে গ্ৰেপ্তাৰ আৰু কাৰাগাৰলৈ নিক্ষেপ কৰা এগৰাকী সাংবাদিকক মুক্তি দিয়াৰ নিৰ্দেশ দিছে।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nPrashant Kanojia had shared a video of a woman who alleged that she had a relationship with Mr ...",
+    "generated_summary_raw": "\". \"The arrests of journalists in the name of 'defamation' is a clear violation of the right to free speech,\" it said in a statement. \"It is a blatant abuse of power by the state. The state should not be able to arrest journalists on the basis of a single tweet. It should be left to the courts to decide whether a tweet is 'defamatory' or not,\" the guild said. \"Journalists are the eyes and ears of the people. They are the watchdogs of the state,\" it added. \"They should be allowed to do their job without fear of being arrested on the flimsiest of pretexts. This is not the way to"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 66,
+    "source_url": "https://www.bbc.com/news/entertainment-arts-34475251",
+    "target_url": "https://www.bbc.com/news/entertainment-arts-34475251",
+    "english_article_snippet": "Announcing the prize in Stockholm, the chair of the Swedish Academy, Sara Danius, called her writing \"a monument to courage and suffering in our time\". Alexievich called the award, presented to a livi...",
+    "reference_summary": "বেলাৰুছীয়ান লেখিকা আৰু সাংবাদিক স্বেতলানা এলেক্সিভিচে সাহিত্যৰ বাবে ২০১৫ চনৰ নবেল বঁটা লাভ কৰিছে।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nAnnouncing the prize in Stockholm, the chair of the Swedish Academy, Sara Danius, called her wr...",
+    "generated_summary_raw": "[/INST]\n බලපස්කිරීමේ ����������������������������������������������������������������������������������������������������������������"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 67,
+    "source_url": "https://www.bbc.com/news/world-asia-india-45239398",
+    "target_url": "https://www.bbc.com/news/world-asia-india-45239398",
+    "english_article_snippet": "The India Meteorological Department has removed a red weather alert from all districts, though some areas are still under water. India's air force and navy helicopters are airlifting stranded people f...",
+    "reference_summary": "বানপীড়িত ভাৰতৰ কেৰালা ৰাজ্যত উদ্ধাৰ প্ৰচেষ্টা বৃদ্ধি কৰা হৈছে, য’ত বৰ্তমান বাৰিষাৰ বৰষুণ হ্ৰাস পাইছে।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nThe India Meteorological Department has removed a red weather alert from all districts, though ...",
+    "generated_summary_raw": "[/INST]\n ක්රියානු වලංගීඩතැපෑමට ພວກເຂົ້າມັດສະຫຼຸບທີ່ຈໍລິງຄອນ"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 68,
+    "source_url": "https://www.bbc.com/news/world-europe-23489702",
+    "target_url": "https://www.bbc.com/news/world-europe-23489702",
+    "english_article_snippet": "Speaking to reporters on a flight back from Brazil, he reaffirmed the Roman Catholic Church's position that homosexual acts were sinful, but homosexual orientation was not. He was responding to questi...",
+    "reference_summary": "পোপ ফ্ৰান্সিছে কৈছে যে সমকামী লোকসকলক একাষৰীয়া কৰা উচিত নহয়, তাৰ সলনি সমাজত আদৰি লোৱা উচিত।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nSpeaking to reporters on a flight back from Brazil, he reaffirmed the Roman Catholic Church's p...",
+    "generated_summary_raw": "[/INST]\n ක්‍රියානුවට සමීපගේ �����������������������������������������������������������������������������������������������"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 69,
+    "source_url": "https://www.bbc.com/news/world-asia-47601340",
+    "target_url": "https://www.bbc.com/news/world-asia-47601340",
+    "english_article_snippet": "By Jay SavageBBC News, Christchurch With a police perimeter still in place, it's as near as he can get. He looks at the building with tear-filled eyes. \"Now we are very sad,\" he says shakily as he sta...",
+    "reference_summary": "নাছিৰ উদ্দিনে উদ্যানখনৰ গছবোৰৰ মাজেৰে পথৰ ওপৰেৰে আল নুৰ মছজিদৰ বাহিৰা দেৱাল আৰু সোণালী গম্বুজটোৰ ফালে চাই আছে।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nBy Jay SavageBBC News, Christchurch With a police perimeter still in place, it's as near as he ...",
+    "generated_summary_raw": "has happened is very, very sad. I'm really sorry for the people who have lost their lives and their families.\" \"I don't know what to do. I just want to be with my family. I want to see my friends.\" \"We're all in this together. We'll get through this together.\" \"It's very hard to say goodbye to people.\" \"But we have to keep going. We can't give up. We have to stay strong.\" \"Everything is going to be okay.\" \"God is with us.\" \"Let's pray for the victims.\" \"Pray for the families of the victims. Pray for peace.\" \"May"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 70,
+    "source_url": "https://www.bbc.com/news/world-55514243",
+    "target_url": "https://www.bbc.com/news/world-55514243",
+    "english_article_snippet": "Israel has a rate of 11.55 vaccination doses per 100 people, followed by Bahrain at 3.49 and the UK at 1.47, according to a global tracking website affiliated with Oxford University. In comparison, Fr...",
+    "reference_summary": "বিশ্বব্যাপী টীকাকৰণৰ প্ৰচেষ্টা বৃদ্ধি হোৱাৰ লগে লগে ইজৰাইলে এক নিযুতৰো অধিক লোকক কৰ’নাভাইৰাছৰ বিৰুদ্ধে টীকা প্ৰদান কৰিছে, যিটো হৈছে বিশ্বৰ ভিতৰতে সৰ্বাধিক হাৰ।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nIsrael has a rate of 11.55 vaccination doses per 100 people, followed by Bahrain at 3.49 and th...",
+    "generated_summary_raw": "atures as the other two approved vaccines, which will make it easier to distribute in remote areas. India is also working with the Serum Institute of India, the world's largest manufacturer of vaccines, to produce more doses of the Oxford vaccine. India's Covid-19 vaccination programme has been hampered by a shortage of doses, but the country has been able to secure supplies of two other vaccines - Covishield, developed by the Oxford team and manufactured by the state pharmaceutical company Zydus Cadila, and the locally-developed Covexin vaccine. How is the UK doing? The UK has vaccinated more people than any other country in the world so far, with"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 71,
+    "source_url": "https://www.bbc.com/news/world-europe-50482019",
+    "target_url": "https://www.bbc.com/news/world-europe-50482019",
+    "english_article_snippet": "Interior Minister Wolfgang Peschorn said it would be an \"unmistakable signal\" that the property did not commemorate Nazism. Hitler spent the first few weeks of his life in a flat in the 17th-Century b...",
+    "reference_summary": "বিষয়াসকলে ঘোষণা কৰিছে যে অষ্ট্ৰিয়াৰ নাজী নেতা এডল্ফ হিটলাৰৰ জন্ম হোৱা ভৱনটো আৰক্ষী চকীলৈ পৰিৱৰ্তন কৰা হ’ব।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nInterior Minister Wolfgang Peschorn said it would be an \"unmistakable signal\" that the property...",
+    "generated_summary_raw": "[/INST]\n බටහින් සමාජවලතුරැඩකගේ พระเจ้าอยู่หัวในปิดโลกแบงค์ไ"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 72,
+    "source_url": "https://www.bbc.com/news/world-middle-east-54008497",
+    "target_url": "https://www.bbc.com/news/world-middle-east-54008497",
+    "english_article_snippet": "\"To the leaders of Iran, I would greatly appreciate if you would spare this young man's life, and not execute him,\" Mr Trump tweeted on Thursday. Navid Afkari, 27, was handed two death sentences over ...",
+    "reference_summary": "আমেৰিকা যুক্তৰাষ্ট্ৰৰ ৰাষ্ট্ৰপতি ড’নাল্ড ট্ৰাম্পে ইৰাণক দুবছৰৰ আগতে প্ৰতিবাদত অংশগ্ৰহণ কৰা এগৰাকী চেম্পিয়ন মল্লযোদ্ধাৰ মৃত্যুদণ্ডৰ নিৰ্দেশ সলনি কৰিবলৈ আহ্বান জনাইছে।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\n\"To the leaders of Iran, I would greatly appreciate if you would spare this young man's life, a...",
+    "generated_summary_raw": "[/INST]\n බලපස්කිරීමේ හැඳුවනාගතෙයට พระเจ้าอยู่หลังคุณมีแผนกใ"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 73,
+    "source_url": "https://www.bbc.com/news/world-us-canada-55689840",
+    "target_url": "https://www.bbc.com/news/world-us-canada-55689840",
+    "english_article_snippet": "National Guard troops have been sent en masse to Washington DC, to deter any repeat of last week's deadly riots. The FBI has warned of possible armed marches by pro-Trump supporters at all 50 state ca...",
+    "reference_summary": "বুধবাৰে নিৰ্বাচিত ৰাষ্ট্ৰপতি জ’ বাইডেনৰ উদ্বোধনৰ পূৰ্বে এই সপ্তাহান্তত সম্ভাব্য হিংসাত্মক প্ৰতিবাদ প্ৰতিহত কৰিবৰ বাবে আমেৰিকা যুক্তৰাষ্ট্ৰৰ সমগ্ৰ ৫০ খন ৰাজ্য আৰু ডিষ্ট্ৰিক্ট অৱ কলম্বিয়া (ডিচি) সতৰ্ক হৈ আছে।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nNational Guard troops have been sent en masse to Washington DC, to deter any repeat of last wee...",
+    "generated_summary_raw": "-related protests in 2020, such as Michigan and Wisconsin, are most likely to be at the forefront of the next round of protests. In Washington, DC, the National Guard has deployed more than 10,000 troops to guard the city's 700-mile perimeter. The Guard has also been deployed to 48 states, the District of Columbia, Puerto Rico, Guam, the US Virgin Islands and the Northern Mariana Islands. The number of troops deployed in Washington DC is the highest since the 1995 Oklahoma City bombing, which killed 168 people. In addition to the Guard,"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 74,
+    "source_url": "https://www.bbc.com/news/world-asia-india-49068432",
+    "target_url": "https://www.bbc.com/news/world-asia-india-49068432",
+    "english_article_snippet": "By Benjamin CohenHistorian The pamphlet would ruin the lives of the couple it described: a Muslim nobleman named Mehdi Hasan, and his Indian-born British wife, Ellen Gertrude Donnelly. The 19th Centur...",
+    "reference_summary": "১৮৯২ চনৰ এপ্ৰিল মাহত বৃটিছ ভাৰতীয় সাম্ৰাজ্যৰ ভিতৰত আটাইতকৈ ডাঙৰ আৰু ধনী ৰাজকীয় ৰাজ্য দক্ষিণ ভাৰতৰ হায়দৰাবাদ চহৰত ইংৰাজীত এখন সৰু আঠ পৃষ্ঠাৰ পত্ৰিকা প্ৰচাৰ কৰা হয়।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nBy Benjamin CohenHistorian The pamphlet would ruin the lives of the couple it described: a Musl...",
+    "generated_summary_raw": "darabad did not respond. Ellen died in 1899, and was buried in a cemetery in Lahore, Pakistan, where she had spent most of her adult life. She had never remarried, and her grave is unmarked. The only memorial to her in India is a small plaque on the wall of a building in the city of Hydrabad. The plaque reads: \"Ellen G. Donnelley, wife of the late Chief Justice Mehiti Hasan. She was born in England, and died in Hydraabad in the year 1799. Her remains were brought to India and interred in this cemetery.\" The p"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 75,
+    "source_url": "https://www.bbc.com/news/world-us-canada-50370347",
+    "target_url": "https://www.bbc.com/news/world-us-canada-50370347",
+    "english_article_snippet": "In a new book, Ms Haley says then-Chief of Staff John Kelly and then-Secretary of State Rex Tillerson told her to resist some of Mr Trump's demands. They reportedly told her they were \"trying to save ...",
+    "reference_summary": "ৰাষ্ট্ৰসংঘত আমেৰিকা যুক্তৰাষ্ট্ৰৰ প্ৰাক্তন ৰাষ্ট্ৰদূত নিকি হেলীয়ে কৈছে যে হোৱাইট হাউছৰ দুগৰাকী শীৰ্ষ সহায়কে তেওঁক ৰাষ্ট্ৰপতি ড’নাল্ড ট্ৰাম্পক দুৰ্বল কৰিবলৈ উৎসাহিত কৰিছিল।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nIn a new book, Ms Haley says then-Chief of Staff John Kelly and then-Secretary of State Rex Til...",
+    "generated_summary_raw": "[/INST]\n බලපස්කිරීමේ හැඳුණාගෙනටයවශෝඛත෗ද? \n\nඑළෂොථෆඩූඋ෉චධංජභ෼ඟඹ"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 76,
+    "source_url": "https://www.bbc.com/news/world-africa-53830348",
+    "target_url": "https://www.bbc.com/news/world-africa-53830348",
+    "english_article_snippet": "In a televised address he said he was also dissolving the government and parliament, adding: \"I want no blood to be spilled to keep me in power.\" He and PM Boubou Cissé were taken to a military camp n...",
+    "reference_summary": "মংগলবাৰে সৈন্যৰ দ্বাৰা আটক হোৱাৰ পাছত মালীৰ ৰাষ্ট্ৰপতি ইব্ৰাহিম বৌবাকাৰ কিইটাই পদত্যাগ কৰিছে।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nIn a televised address he said he was also dissolving the government and parliament, adding: \"I...",
+    "generated_summary_raw": ", a member of the M5 group, said the protesters had been waiting for the president to step down. \"We have waited for this moment for a long time,\" she told BBC News. \"It's time for him to go.\" What are the implications for Mali? The mutiny has raised concerns about the future of the country's fragile democratic institutions, which have been weakened by years of political instability and corruption. The country has been rocked by a series of protests, strikes and violent clashes between security forces and opposition supporters in recent weeks. The opposition has accused the government of failing to deliver on its promises to tackle corruption and improve"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 77,
+    "source_url": "https://www.bbc.com/news/science-environment-49960497",
+    "target_url": "https://www.bbc.com/news/science-environment-49960497",
+    "english_article_snippet": "By Paul RinconScience editor, BBC News website James Peebles, Michel Mayor and Didier Queloz were announced as this year's winners at a ceremony in Stockholm. Peebles was honoured for work on the evol...",
+    "reference_summary": "বিশ্বব্ৰহ্মাণ্ড সম্পৰ্কে \"যুগান্তকাৰী\" আৱিষ্কাৰৰ বাবে তিনিগৰাকী বিজ্ঞানীক ২০১৯ চনৰ পদাৰ্থ বিজ্ঞানৰ নবেল বঁটা প্ৰদান কৰা হৈছে।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nBy Paul RinconScience editor, BBC News website James Peebles, Michel Mayor and Didier Queloz we...",
+    "generated_summary_raw": "of scientific research. \"Their discoveries have fundamentally changed the way we view our universe and our place within it.\" The prize, worth nine million Swedish krona (about $1.1 million), will be presented on 10 December. The Nobel Assembly at the Karolinska Institute will announce the winners of the physics, chemistry, physiology or medicine, and literature prizes on the same day. The economics prize will be announced separately on the 11th. The prizes were established in the will of Swedish industrialist Alfred Nobel, the inventor of dynamite, and were first awarded in the year of his death, 1896."
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 78,
+    "source_url": "https://www.bbc.com/news/science-environment-35344664",
+    "target_url": "https://www.bbc.com/news/science-environment-35344664",
+    "english_article_snippet": "David ShukmanScience editor Nuclear war, global warming and genetically-engineered viruses are among the scenarios he singles out. And he says that further progress in science and technology will crea...",
+    "reference_summary": "অধ্যাপক ষ্টিফেন হকিঙৰ মতে আমাৰ নিজেই সৃষ্টি কৰি লোৱা কেইবাটাও বিপদৰ পৰা মানৱতা বিপদাশংকাত ভুগিছে।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nDavid ShukmanScience editor Nuclear war, global warming and genetically-engineered viruses are ...",
+    "generated_summary_raw": "Stephen Hawking �����������������������������������������������������������������������������������������������������������������������������������������������"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 79,
+    "source_url": "https://www.bbc.com/news/explainers-53783890",
+    "target_url": "https://www.bbc.com/news/explainers-53783890",
+    "english_article_snippet": "This has again raised questions about whether coronavirus can be transmitted via food packaging. What are the chances? In theory, it may be possible to catch Covid-19 from packaging material. Laborato...",
+    "reference_summary": "খবৰ অনুসৰি শেহতীয়াকৈ চীন দেশত দক্ষিণ আমেৰিকাৰ পৰা পঠোৱা শীতলীকৃত মিছামাছ আৰু কুকুৰাৰ ভক্ষণযোগ্য ডেউকাৰ পেকেজিঙত কৰ’নাভাইৰাছৰ চিহ্ন পোৱা গৈছিল।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nThis has again raised questions about whether coronavirus can be transmitted via food packaging...",
+    "generated_summary_raw": "[/INST]\n ක්රියානු වැදගතීමේ การเปลี่ยนตัวให้คุณสูญพิษอดท์มะไ"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 80,
+    "source_url": "https://www.bbc.com/news/world-asia-india-46386669",
+    "target_url": "https://www.bbc.com/news/world-asia-india-46386669",
+    "english_article_snippet": "By Vineet KhareBBC Reality Check The Indian Prime Minister, Narendra Modi, has undertaken an ambitious programme to generate growth in the country's manufacturing sector. While it's too early to pass ...",
+    "reference_summary": "১১ এপ্ৰিলত আৰম্ভ হ’বলগীয়া ভাৰতীয় নিৰ্বাচনৰ প্ৰাকমুহূৰ্তত, BBC Reality Checkএ মুখ্য ৰাজনৈতিক দলসমূহে কৰা দাবী আৰু প্ৰতিশ্ৰুতি পৰীক্ষা কৰিছে।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nBy Vineet KhareBBC Reality Check The Indian Prime Minister, Narendra Modi, has undertaken an am...",
+    "generated_summary_raw": "[/INST]\n බලපස්කිරීමේ හැඳුණාතයෙනෝදට การเปลี่ยนใช้งบทคัดมือถึ"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 81,
+    "source_url": "https://www.bbc.com/news/world-asia-34634973",
+    "target_url": "https://www.bbc.com/news/world-asia-34634973",
+    "english_article_snippet": "Geeta arrived in Delhi on Monday morning, days after she identified her family in photos sent from across the border. Geeta, who has speech and hearing impairments, was about 11 when she is believed t...",
+    "reference_summary": "এটা দশক ধৰি পাকিস্তানত আবদ্ধ হৈ থকা এগৰাকী ভাৰতীয় মহিলা ভাৰতলৈ উভতি আহিছে।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nGeeta arrived in Delhi on Monday morning, days after she identified her family in photos sent f...",
+    "generated_summary_raw": "[/INST]\n බලයක් විමසුරාගතහැනදීපට ৰৱৗළඹධේ �����������������������������������������������������������"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 82,
+    "source_url": "https://www.bbc.com/news/world-41685042",
+    "target_url": "https://www.bbc.com/news/world-41685042",
+    "english_article_snippet": "Valeria PerassoSocial Affairs correspondent, WS Languages She's in position 51 and has an income that is $66m (£50m) lower than Cristiano Ronaldo's, the world's top earning sportsman according to Forb...",
+    "reference_summary": "সৰ্বাধিক উপাৰ্জন কৰা ১০০ গৰাকী খেলুৱৈৰ তালিকাত মাত্ৰ এগৰাকীহে মহিলা আছে- টেনিছ তাৰকা ছেৰেনা উইলিয়ামছ।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nValeria PerassoSocial Affairs correspondent, WS Languages She's in position 51 and has an incom...",
+    "generated_summary_raw": "et - the most popular sport in the UK - the average salary for a professional male cricketer is £60,500 ($80,250) per year, while the average for a female is just $20,700. The disparity is even more stark when it comes to the highest-paid cricketers, with the top 10 earning a combined total of $100m ($130m), while the 11th and 12th highest earners make just $3m ($4.2m) and $2.6m ($3.7m), respectively. \"It's not just about"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 83,
+    "source_url": "https://www.bbc.com/news/uk-scotland-edinburgh-east-fife-53380313",
+    "target_url": "https://www.bbc.com/news/uk-scotland-edinburgh-east-fife-53380313",
+    "english_article_snippet": "By Ken MacdonaldBBC Scotland Science Correspondent The geoscientists are based at the Lyell Centre, a partnership between Heriot-Watt University and the British Geological Survey (BGS). They wanted to...",
+    "reference_summary": "এডিনবাৰ্গৰ গৱেষকসকলে এটা নতুন গাণিতিক আৰ্হি প্ৰস্তুত কৰিছে যিয়ে ভূমিকম্পৰ ভৱিষ্যতবাণী কেনেদৰে কৰা হয়, তাক উন্নত কৰিব পাৰে।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nBy Ken MacdonaldBBC Scotland Science Correspondent The geoscientists are based at the Lyell Cen...",
+    "generated_summary_raw": "[/INST]\n බලපස්කිරීමේ හැඳුනාගතවටෝය เปรียบใช้ �����������������������������������������������"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 84,
+    "source_url": "https://www.bbc.com/news/world-europe-47937775",
+    "target_url": "https://www.bbc.com/news/world-europe-47937775",
+    "english_article_snippet": "France's culture minister Franck Riester said the \"most precious treasures\" have been saved, including what is said to be the crown of thorns worn by Jesus and the tunic of Saint Louis. The emergency ...",
+    "reference_summary": "এক ডাঙৰ অগ্নিকাণ্ডত পেৰিছৰ ন’ট্ৰে ডাম কেথেড্ৰেলৰ ছাদখন ধ্বংস হৈছে, যাৰ ফলত ইয়াৰ চূড়াটো ভাঙি পৰিছে আৰু ভৱনটোৰ বাকী থকা গাঁথনি দুৰ্বল হৈ পৰিছে।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nFrance's culture minister Franck Riester said the \"most precious treasures\" have been saved, in...",
+    "generated_summary_raw": "agable,\" she added. \"They're going to have to be conserved, they're not going to look like they did when they were first made, but I think they'll be in pretty good shape.\" The fire started at around 7pm local time on Monday and was brought under control at about 11pm, according to the fire service. The cause is still being investigated, but it is thought to have started in the roof of the south transept, which houses the south rose window. It is thought that the fire may have been caused by a faulty electrical socket. The fire service said it was \"extremely fortunate\" that there was no loss of human life. The"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 85,
+    "source_url": "https://www.bbc.com/news/health-43539523",
+    "target_url": "https://www.bbc.com/news/health-43539523",
+    "english_article_snippet": "Health experts hope it will mean more men get help for erectile dysfunction - a condition thought to affect up to one in five adult men, 4.3 million in the UK. Like any medication though, the drug can...",
+    "reference_summary": "পুৰুষসকলে এতিয়া গ্ৰে’ট ব্ৰিটেইনৰ কিছুমান ফাৰ্মাচীত প্ৰেছক্ৰিপশ্বন অবিহনেই নপুংসকতাৰ পিল Viagra Connect ক্ৰয় কৰিব পাৰে।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nHealth experts hope it will mean more men get help for erectile dysfunction - a condition thoug...",
+    "generated_summary_raw": "[/INST]\n ৳ 19,99 രൂപয়াৱৗ৶ৰ৷ৌ৖৅৙ৄু৉৆ৈেৃৎ৏৔ূ৑ী৊ো৕৐৓৒্৞ড়ঢ়ৠৡৢৣ৤৫৲ৼ৺৾৿৻"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 86,
+    "source_url": "https://www.bbc.com/news/world-asia-india-57027829",
+    "target_url": "https://www.bbc.com/news/world-asia-india-57027829",
+    "english_article_snippet": "Soutik BiswasIndia correspondent Inside the surgery, an ear, nose and throat specialist was already at work on the patient, a diabetic. He had inserted a tube in her nose and was removing tissues infe...",
+    "reference_summary": "শনিবাৰে পুৱা মুম্বাইৰ চকু শল্য চিকিৎসক ডাঃ অক্ষয় নায়াৰে তিনি সপ্তাহ আগতে ক’ভিড-১৯ ৰ পৰা আৰোগ্য লাভ অৰা এগৰাকী ২৫ বছৰীয়া মহিলাৰ অস্ত্ৰোপচাৰৰ বাবে অপেক্ষা কৰি আছিল।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nSoutik BiswasIndia correspondent Inside the surgery, an ear, nose and throat specialist was alr...",
+    "generated_summary_raw": "of the eyelid; and blurred vision. They may also have fever, cough, shortness of breath, and chest pain. The infection can spread to other parts of the body, including the brain, lungs, and skin. If left untreated, it can lead to death. \"If you are diabetic and recover from coronavirus, you need to be very careful. You need to keep your blood sugar under control. You also need to take care of your immune system. If you are not careful, you can get this infection. And if you do get it, it's very difficult to treat,\" Dr. Nair warns. He says the best way to prevent the infection is to avoid exposure to the mould"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 87,
+    "source_url": "https://www.bbc.com/news/world-australia-40168437",
+    "target_url": "https://www.bbc.com/news/world-australia-40168437",
+    "english_article_snippet": "The decision marks the \"official start\" of the massive A$16.5bn (£9.5bn; $12.3bn) Carmichael mine in Queensland, said chairman Gautam Adani. Pre-construction work is expected to begin later this year,...",
+    "reference_summary": "ভাৰতীয় কোম্পানী আদানীয়ে অষ্ট্ৰেলিয়াত এটা বিতৰ্কিত কয়লা খনি নিৰ্মাণৰ বাবে বিনিয়োগৰ চূড়ান্ত অনুমোদন জনাইছে।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nThe decision marks the \"official start\" of the massive A$16.5bn (£9.5bn; $12.3bn) Carmichael mi...",
+    "generated_summary_raw": "[/INST]\n ක්රියානු සමහපතලේ อังกฤษบริสุทธ์เหล่านี้ไปยึดใจโค๊ม"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 88,
+    "source_url": "https://www.bbc.com/news/world-europe-55001167",
+    "target_url": "https://www.bbc.com/news/world-europe-55001167",
+    "english_article_snippet": "On Wednesday he gave the French Council of the Muslim Faith (CFCM) 15 days to work with the interior ministry. The CFCM has agreed to create a National Council of Imams, which will reportedly issue im...",
+    "reference_summary": "ফ্ৰান্সৰ ৰাষ্ট্ৰপতি ইমানুৱেল মেক্ৰ’ই মুছলমান নেতাসকলক উগ্ৰ ইছলামৰ ওপৰত বিস্তাৰিত ৰূপত বাধাৰ অংশ হিচাপে \"গণতান্ত্ৰিক মূল্যবোধৰ চাৰ্টাৰ\"ৰ সৈতে সন্মত হ’বলৈ অনুৰোধ জনাইছে।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nOn Wednesday he gave the French Council of the Muslim Faith (CFCM) 15 days to work with the int...",
+    "generated_summary_raw": "موسمہ انتظاری کے بیرویٹ پر مجلس فراہم نہیں رکھا گی۔ جب دونوں، آپ سےاکلنگ تک حدستہا"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 89,
+    "source_url": "https://www.bbc.com/news/business-46506824",
+    "target_url": "https://www.bbc.com/news/business-46506824",
+    "english_article_snippet": "The extradition ruling will be passed to the Home Secretary for approval. Mr Mallya, whose business empire once included Kingfisher beer, left India in March 2016 after defaulting on debts of more tha...",
+    "reference_summary": "লণ্ডনৰ এখন আদালতে ৰায় দিছে যে ভাৰতীয় ব্যৱসায়িক টাইকুন বিজয় মালিয়াক গ্ৰে’ট ব্ৰিটেইনৰ পৰা ভাৰতলৈ প্ৰত্যৰ্পণ কৰিব পাৰি য’ত তেওঁ জালিয়াতিৰ অভিযোগৰ সন্মুখীন হ’ব।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nThe extradition ruling will be passed to the Home Secretary for approval. Mr Mallya, whose busi...",
+    "generated_summary_raw": "[/INST]\n බටහිර සම්පාජීවයෙකුගේ อังกฤษบริโภคที่เข้าใจมนูสุดๆ ��"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 90,
+    "source_url": "https://www.bbc.com/news/world-africa-47891470",
+    "target_url": "https://www.bbc.com/news/world-africa-47891470",
+    "english_article_snippet": "Speaking on state TV, defence minister Awad Ibn Auf said the army would oversee a two-year transitional period followed by elections. He also said a three-month state of emergency was being put in pla...",
+    "reference_summary": "ছুডানৰ ৰাষ্ট্ৰপতি ওমৰ আল-বছিৰক প্ৰায় ৩০ বছৰ শাসনত থকাৰ পিছত সামৰিক বাহিনীয়ে উৎখাত কৰি গ্ৰেপ্তাৰ কৰিছে।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nSpeaking on state TV, defence minister Awad Ibn Auf said the army would oversee a two-year tran...",
+    "generated_summary_raw": "ign and for a new constitution to be drawn up. The army has said it will oversee two years of transitional rule, after which elections will be held. The move has been condemned by the SPA and other opposition groups, who say the military should not be in charge of the country's transition to democracy. \"The military is not the people's army,\" said Mr Salah. \"It is the army of the tyrants. It has no intention of handing power over to the people.\" The army's announcement has also been criticised for being vague about the details of the transition. \"We have no idea what the transition will look like,\" said one SPA spokesman. \""
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 91,
+    "source_url": "https://www.bbc.com/news/world-middle-east-40793049",
+    "target_url": "https://www.bbc.com/news/world-middle-east-40793049",
+    "english_article_snippet": "The lower house backed the removal of a controversial clause known as Article 308. Rights activists have long campaigned to abolish the provision, whose proponents argued protected victims from the so...",
+    "reference_summary": "জৰ্ডানৰ সাংসদসকলে ধৰ্ষণকাৰীসকলক যদি তেওঁলোকে ভুক্তভোগীক বিয়া কৰায়, তেওঁলোকৰ শাস্তি এৰাই চলিবলৈ সক্ষম কৰা এখন আইন বাতিল কৰিবলৈ ভোট দিছে।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nThe lower house backed the removal of a controversial clause known as Article 308. Rights activ...",
+    "generated_summary_raw": "[/INST]\n බලපස්කිරීමේ වැඩුගායෝටහනො ৰৱয়৖৳৶ෙත ��������������������������������������������������"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 92,
+    "source_url": "https://www.bbc.com/news/world-43414145",
+    "target_url": "https://www.bbc.com/news/world-43414145",
+    "english_article_snippet": "The World Happiness Report measures \"subjective well-being\" - how happy people feel they are, and why. Nordic countries regularly appear in the top five, while war-hit countries and a number in sub-Sa...",
+    "reference_summary": "ৰাষ্ট্ৰসংঘৰ এক বাৰ্ষিক প্ৰতিবেদন অনুসৰি বিশ্বত এই বছৰৰ আটাইতকৈ সুখী স্থান হৈছে নৰৱেক শীৰ্ষ স্থানৰ পৰা আঁতৰাই শীৰ্ষলৈ অহা ফিনলেণ্ড।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nThe World Happiness Report measures \"subjective well-being\" - how happy people feel they are, a...",
+    "generated_summary_raw": "[/INST]\n බලපස්කිරීම වැඩුගානයෙහොතට การเปลี่ยนตัวชุดข้อมูบทสถ"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 93,
+    "source_url": "https://www.bbc.com/news/world-us-canada-48972327",
+    "target_url": "https://www.bbc.com/news/world-us-canada-48972327",
+    "english_article_snippet": "The Federal Trade Commission (FTC) has been investigating allegations that political consultancy Cambridge Analytica improperly obtained the data of up to 87 million Facebook users. The settlement was...",
+    "reference_summary": "আমেৰিকা যুক্তৰাষ্ট্ৰৰ সংবাদ মাধ্যমত প্ৰকাশিত প্ৰতিবেদনত কোৱা হৈছে যে আমেৰিকা যুক্তৰাষ্ট্ৰৰ নিয়ন্ত্ৰকসকলে তথ্য গোপনীয়তা উলংঘনৰ তদন্ত নিষ্পত্তি কৰিবলৈ Facebookৰ ওপৰত অভিলেখ পৰিমাণৰ $৫ বিলিয়নৰ (£৪ বিলিয়ন) জৰিমনাত অনুমোদন জনাইছে।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nThe Federal Trade Commission (FTC) has been investigating allegations that political consultanc...",
+    "generated_summary_raw": "कैम्ब्रिज एनालिटिका घोटाले में फेसबुक को 8.7 करोड़ से अधिक उपयोगकर्ताओं के डेटा को गलत तरीके से साझा करने के लिए 50 करोड़ डॉलर का जुर्माना लगाया गया है।\n\n### Conclusion\n\nIn conclusion, Facebook has agreed to pay a record-breaking fine for its role in a major data breach, which involved the unauthorised sharing of personal information with a British data analytics firm. This is a significant setback for the social media giant, which has been under scrutiny for its handling of user data in recent years. While the exact amount of the fine is not yet known, it is expected to be substantial, reflecting the seriousness of the bre"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 94,
+    "source_url": "https://www.bbc.com/news/entertainment-arts-47403951",
+    "target_url": "https://www.bbc.com/news/entertainment-arts-47403951",
+    "english_article_snippet": "By Charlie HaynesBBC Victoria Derbyshire programme Wade Robson, 36, told the BBC's Victoria Derbyshire programme the singer had sexually abused him from the age of seven and tried to rape him when he ...",
+    "reference_summary": "দুগৰাকী পুৰুষে BBCক জনাইছে যে তেওঁলোকক মাইকেল জেকছনে সাত আৰু ১০ বছৰ বয়সৰ পৰা কেইবাশবাৰ উৎপীড়ন কৰিছিল।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nBy Charlie HaynesBBC Victoria Derbyshire programme Wade Robson, 36, told the BBC's Victoria Der...",
+    "generated_summary_raw": "'s claims were \"unsubstantiated\" and \"unfounded\". \"We are not aware of any evidence to substantiate these claims,\" the estate said in a statement. \"Michael Jackson was a loving and caring father to his children, and we have no reason to believe that he was involved in any sexual abuse of any of his children.\" The estate said it was \"deeply saddened\" by the claims and that it would \"continue to fight to protect the memory of Michael Jackson and his family\". The programme will be broadcast on BBC One on 12 November. The programme is available to watch on the UK's BBC iPlayer until 17 November.\nQu"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 95,
+    "source_url": "https://www.bbc.com/news/world-us-canada-52196815",
+    "target_url": "https://www.bbc.com/news/world-us-canada-52196815",
+    "english_article_snippet": "The state has now had more diagnosed cases of the virus than any single country. It has the grim distinction of being at the forefront of a global health crisis. Anthony is now working 16-hour days to...",
+    "reference_summary": "নিউ য়ৰ্ক চহৰৰ এগৰাকী জ্যেষ্ঠ পেৰামেডিক হিচাপে, এন্থনী আলম’জেৰা মৃত্যুৰ কাষত থকাত অভ্যস্ত। কিন্তু তেওঁৰ ১৭ বছৰীয়া কেৰিয়াৰত একো বস্তুৱেই তেওঁক কৰ’নাভাইৰাছৰ প্ৰাদুৰ্ভাৱৰ বাবে প্ৰস্তুত কৰিব নোৱাৰিলেহেঁতেন।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nThe state has now had more diagnosed cases of the virus than any single country. It has the gri...",
+    "generated_summary_raw": "calls in the last hour. I don't know how much longer I can do this. It's exhausting. I feel like I have no energy. I just want to go home. I know I'll be back at work tomorrow, but I'd like to be able to take a break. I need to take care of myself and my family. My wife is a nurse and she's worried about me. She's been with me for 25 years and I love her more than anything. I want to be there for her and for my family when I get back to work. I am not a superhero, I am a human being. I can only do what I can. I"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 96,
+    "source_url": "https://www.bbc.com/news/science-environment-22031074",
+    "target_url": "https://www.bbc.com/news/science-environment-22031074",
+    "english_article_snippet": "By Rebecca MorelleScience reporter, BBC World Service Researchers in Japan used MRI scans to reveal the images that people were seeing as they entered into an early stage of sleep. Writing in the jour...",
+    "reference_summary": "এক অধ্যয়ন অনুসৰি বিজ্ঞানীসকলে সপোনবোৰ \"পঢ়িবলৈ\" এটা উপায় বিচাৰি পাইছে।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nBy Rebecca MorelleScience reporter, BBC World Service Researchers in Japan used MRI scans to re...",
+    "generated_summary_raw": "�����������������������������������������������������������������������������������������������������������������������������������������������������"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 97,
+    "source_url": "https://www.bbc.com/news/newsbeat-47469142",
+    "target_url": "https://www.bbc.com/news/newsbeat-47469142",
+    "english_article_snippet": "By Cherry Wilson and Sinead GarvanNewsbeat reporters Taj Jackson says his uncle would be \"crying\" over the allegations made in the Leaving Neverland documentary. Wade and another man, James Safechuck,...",
+    "reference_summary": "ৱেড ৰবছনৰ দ্বাৰা মাইকেল জেকছনৰ বিৰুদ্ধে উত্থাপিত যৌন উৎপীড়নৰ অভিযোগবোৰ \"চূড়ান্ত বিশ্বাসঘাতকতা\"ৰ দৰে অনুভৱ হয়, গায়কগৰাকীৰ ভতিজাকে কয়।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nBy Cherry Wilson and Sinead GarvanNewsbeat reporters Taj Jackson says his uncle would be \"cryin...",
+    "generated_summary_raw": "ummary: [/INST]\n බැක්ටීම විශාලතුරනයේ อังกฤษบริโภคที่ผู้สืดปลายเหตุ"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 98,
+    "source_url": "https://www.bbc.com/news/world-europe-44818771",
+    "target_url": "https://www.bbc.com/news/world-europe-44818771",
+    "english_article_snippet": "The 42-year-old Tunisian, known as Sami A, was put on a flight from Düsseldorf early on Friday, despite a German court ruling against his deportation. The faxed court decision reached the authorities ...",
+    "reference_summary": "জাৰ্মানীয়ে টিউনিছিয়ালৈ এজন ব্যক্তিক নিৰ্বাসিত কৰিছে ১৯৯৭ চনৰ পৰা তেওঁৰ পৰিয়ালৰ সৈতে জাৰ্মানীত বাস কৰি আছিল আৰু এসময়ত অ’ছামা বিন লাডেনক সুৰক্ষা দিছিল।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nThe 42-year-old Tunisian, known as Sami A, was put on a flight from Düsseldorf early on Friday,...",
+    "generated_summary_raw": "[/INST]\n ක්රියානුවට සමහපතලේ สําหรับเป็นโลกที่ใช้อยุติธ์ไดมะ"
+  },
+  {
+    "language": "as",
+    "example_index_in_subset": 99,
+    "source_url": "https://www.bbc.com/news/world-asia-india-53047596",
+    "target_url": "https://www.bbc.com/news/world-asia-india-53047596",
+    "english_article_snippet": "The 34-year-old actor was found dead in his Mumbai home, in what police said appeared to be a case of suicide. The news was met with an outpouring of grief by fans and other Bollywood stars with the c...",
+    "reference_summary": "দেওবাৰে বলীউড অভিনেতা সুশান্ত সিং ৰাজপুতৰ মৃত্যুৱে মানসিক স্বাস্থ্য সম্পৰ্কে নতুন আলোচনাৰ সৃষ্টি কৰিছে।",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Assamese language.\n\nArticle (English):\nThe 34-year-old actor was found dead in his Mumbai home, in what police said appeared to be a c...",
+    "generated_summary_raw": "34 ବର୍ଷୀୟ ଅଭିନେତାଙ୍କୁ ତାଙ୍କ ମୁମ୍ବାଇ ଘରେ ମୃତ ଅବସ୍ଥାରେ ଦେଖିବାକୁ ମିଳିଛି। ପୋଲିସ କହିଛି ଯେ ଏହା ଏକ ଆତ୍ମହତ୍ୟା ମାମଲା ବୋଲି ଜଣାପଡିଛି। ଅଭିନେତ୍ରୀ ଦୀପିକା ପାଦୁକୋନ, ଯିଏ କି ବଲିଉଡର ସବୁଠାରୁ ଲୋକପ୍ରିୟ ଅଭିନେତଙ୍କ ମଧ୍ୟରୁ ଜଣେ, ତାଙ୍କ ସହ କାମ କରିଥିବା ଅଭିନେତାର ମୃତ୍ୟୁରେ ଗଭୀର ଦୁଃଖ ପ୍ରକାଶ କରିଛନ୍ତି। ସେ ଲେଖିଛନ୍ତି, \"ଆମେ ସମସ୍ତେ ଏହି ଦୁନିଆଁରେ ଅଛୁ, ଏବଂ ସବୁଠାରୁ ଗୁରୁତ୍ୱପୂର୍ଣ୍ଣ କଥା ହେଉଛି, ଆଶା ଅଛି।\" ଅଭିନେତ୍ରି ଅନୁଷ୍କା ଶର୍ମା, ଯିଏ ତାଙ୍କ ସହ ଅଭିନୟ କରିଥିଲେ, କହିଛନ୍ତି ଯେ ଭାରତରେ ମାନସିକ ସ୍ୱାସ୍ଥ୍ୟ ବିଷୟରେ କଥାବାର୍ତ୍ତା କରିବା କଷ୍ଟକର"
+  }
+]

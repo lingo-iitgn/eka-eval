@@ -1,0 +1,1030 @@
+{
+  "evaluation_metadata": {
+    "pair_name": "flores_en-mr",
+    "timestamp": "2025-06-27T00:03:52.461007",
+    "model_name": "sarvamai/sarvam-1",
+    "translation_direction": "enxx",
+    "num_samples": 100,
+    "config": {
+      "batch_size": 4,
+      "max_new_tokens": 128,
+      "use_few_shot": true,
+      "num_few_shot_examples": 3
+    }
+  },
+  "results": {
+    "chrf++": 56.46741329414715,
+    "valid_samples": 100,
+    "total_samples": 100,
+    "validity_rate": 1.0,
+    "quality_analysis": {
+      "avg_prediction_length": 16.79,
+      "avg_reference_length": 18.22,
+      "length_ratio": 0.9215148188803512,
+      "empty_predictions": 0,
+      "very_short_predictions": 0
+    }
+  },
+  "detailed_logs": [
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 0,
+      "source_text": "On the accordion, to get extra volume, you use the bellows with more pressure or speed.",
+      "reference_translation": "अकॉर्डियनवर, अतिरिक्त व्हॉल्यूम मिळविण्यासाठी, तुम्ही अधिक दाब किंवा गतीसह भाता वापरा.",
+      "model_translation": "ॲकॉर्डियनवर, जास्तीचा आवाज मिळवण्यासाठी, तुम्ही अधिक दाब किंवा गतीसह बेलोस वापरता.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: On the accordion, to get extra volume, you use the bellows with more pressure or speed.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 1,
+      "source_text": "A traveller with piles of money might consider a round the world flight, broken up with stays in many of these hotels.",
+      "reference_translation": "खूप पैसे असलेला प्रवासी कदाचित यापैकी अधिकतर हॉटेलमध्ये राहण्याच्या विश्रांतीसह जगाला प्रदक्षिणा घालणाऱ्या विमान प्रवासाचा विचार करू शकतो.",
+      "model_translation": "एका प्रवाशाकडे खूप पैसे असतील, तर तो जगभरातल्या एका फेरीचा विचार करू शकेल, ज्यात अनेक हॉटेल्समध्ये थांबे असतील.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: A traveller with piles of money might consider a round the world flight, broken up with stays in many of these hotels.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 2,
+      "source_text": "Protesters hope to collect a petition of 1.2 million signatures to present to the National Congress in November.",
+      "reference_translation": "निषेधकर्त्यांना नोव्हेंबरमध्ये नॅशनल कॉंग्रेसकडे सादर करण्यासाठी 1.2  दशलक्ष सह्यांची याचिका संकलित करण्याची आशा आहे.",
+      "model_translation": "प्रदर्शनकर्ते राष्ट्रीय काँग्रेसला नोव्हेंबरमध्ये सादर करण्यासाठी १.२ दशलक्ष स्वाक्षऱ्यांची याचिका गोळा करण्याची आशा करतात.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: Protesters hope to collect a petition of 1.2 million signatures to present to the National Congress in November.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 3,
+      "source_text": "He graduated from the College of Arts & Sciences of the University of Virginia in 1950 and was a significant donor to that institution.",
+      "reference_translation": "त्याने १९५० मध्ये व्हर्जिनिया विद्यापीठाच्या आर्ट्स आणि सायन्य महाविद्यालयातून पदवी प्राप्त केली होती आणि तो त्या संस्थेचा एक महत्त्वाचा दाता होता.",
+      "model_translation": "ते कला आणि विज्ञान महाविद्यालयाच्या युनिव्हर्सिटी ऑफ व्हर्जिनियामधून पदवीधर झाले आणि त्या संस्थेला एक महत्त्वपूर्ण देणगीदार होते.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: He graduated from the College of Arts & Sciences of the University of Virginia in 1950 and was a significant donor to that institution.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 4,
+      "source_text": "Unwanted murals or scribble is known as graffiti.",
+      "reference_translation": "नको आलेली भित्तिचित्रे आणि खरडणे हे ग्राफिटी म्हणून ओळखले जाते.",
+      "model_translation": "अवांछित भित्तिचित्रे किंवा स्क्रिब्लिंगला ग्रॅफिटी म्हणतात.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: Unwanted murals or scribble is known as graffiti.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 5,
+      "source_text": "How would Io's gravity pull on me? If you stood on the surface of Io, you would weigh less than you do on Earth.",
+      "reference_translation": "Io चे गुरुत्व मला कसे ओढेल? तुम्ही Io च्या पृष्ठभागावर उभे राहिल्यावर, तुमचे वजन हे तुमच्या पृथ्वीवरील वजनापेक्षा कमी वजन असेल.",
+      "model_translation": "Io च्या गुरुत्वाकर्षणामुळे पृथ्वीवरील तुमच्या वजनावर कसा परिणाम होईल? जर तुम्ही Io वर उभे असता, तर तुमचे वजन पृथ्वीवरील वजनापेक्षा कमी असेल.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: How would Io's gravity pull on me? If you stood on the surface of Io, you would weigh less than you do on Earth.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 6,
+      "source_text": "Cinque Terre, which means Five Lands, comprises the five small coastal villages of Riomaggiore, Manarola, Corniglia, Vernazza and Monterosso located in the Italian region of Liguria.",
+      "reference_translation": "सिनेक टेर, म्हणजे पाच भूभाग, लिगुरियाच्या इटालियन प्रदेशामध्ये रिओमाग्गीओर, मॅनरोला, कॉर्निगलिया, वेर्नाझा आणि मॉन्टरोझो ही किनारपट्टीलगतची पाच लहान गावे आहेत.",
+      "model_translation": "पाच भूमी, म्हणजे पाच लहान किनारपट्टीची गावे, म्हणजेच रिओमाग्गियोरे, मॅनारोला, कॉर्निग्लिया, व्हर्नॅझ्झा आणि मोन्टेरोसो, हे इटालियन प्रदेशातील लिगुरीयामध्ये स्थित आहेत.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: Cinque Terre, which means Five Lands, comprises the five small coastal villages of Riomaggiore, Manarola, Corniglia, Vernazza and Monterosso located in the Italian region of Liguria.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 7,
+      "source_text": "Students can also submit questions to instructors at any time of day and expect reasonably quick responses, rather than waiting until the next face-to-face meeting.",
+      "reference_translation": "पुढील समोरासमोर होणाऱ्या भेटीपर्यंत वाट पाहण्यापेक्षा, विद्यार्थ्यांना दिवसभरात कधीही शिक्षकांना प्रश्न विचारता येतील आणि त्यांना अतिशय कमी वेळात प्रतिसादही मिळेल.",
+      "model_translation": "विद्यार्थी कोणत्याही वेळी शिक्षकांना प्रश्न विचारू शकतात आणि त्यांना त्वरित प्रतिसाद मिळण्याची अपेक्षा करू शकतात, जे प्रत्यक्ष भेटीच्या बैठकीची वाट पाहण्यापेक्षा अधिक सोयीचे आहे. </s>",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: Students can also submit questions to instructors at any time of day and expect reasonably quick responses, rather than waiting until the next face-to-face meeting.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 8,
+      "source_text": "Some of the applications in this category can even translate texts in foreign languages on signs or other objects in the real world when the user points the smartphone towards those objects.",
+      "reference_translation": "या श्रेणीतील काही अॅप्लिकेशन्स वापरकर्ता त्या वस्तूंकडे स्मार्टफोन दर्शवितो तेव्हा अगदी वास्तविक जगातील चिन्हे किंवा इतर वस्तूंवरील परदेशी भाषांमधील मजकूर अनुवादित देखील करू शकतात.",
+      "model_translation": "या श्रेणीतील काही ॲप्लिकेशन्स वास्तविक जगातल्या चिन्हांवर किंवा इतर वस्तूंवर परदेशी भाषांमध्ये मजकूर अनुवादित करू शकतात, जेव्हा वापरकर्ता स्मार्टफोनला त्या वस्तूंकडे निर्देश करतो.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: Some of the applications in this category can even translate texts in foreign languages on signs or other objects in the real world when the user points the smartphone towards those objects.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 9,
+      "source_text": "The study found that depression, fear and catastrophising mediated the relationship between pain and disability in lower back pain sufferers.",
+      "reference_translation": "या अभ्यासात दिसून आले की उद्विग्नता, भिती आणि अवास्तविकता यामुळे पाठीच्या खालच्या भागातील वेदनेचा त्रास असणाऱ्यांची वेदना आणि असमर्थता यांच्यातील संबंधांच्या मध्ये समेट झाला.",
+      "model_translation": "या अभ्यासात असे आढळून आले आहे की वेदना आणि अपंगत्व यांच्यातील संबंधात नैराश्य, भीती आणि catastrophizing हे मध्यस्थी करणारे घटक आहेत.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: The study found that depression, fear and catastrophising mediated the relationship between pain and disability in lower back pain sufferers.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 10,
+      "source_text": "In some cross-border trains inspections are done on the running train and you should have valid ID with you when boarding one of those trains.",
+      "reference_translation": "काही सीमापार ट्रेन मध्ये तपासणी धावत्या ट्रेन मध्ये केली जाते आणि तुम्ही जर अशा 1 ट्रेन मध्ये स्वार असाल तर तुमच्या कडे वैध ओळखपत्र हवे.",
+      "model_translation": "ऋषिकेश-देहरादून एक्स्प्रेसमध्ये काही क्रॉस-बॉर्डर ट्रेन्समध्ये बोर्डिंगच्या वेळी चालणाऱ्या ट्रेनची तपासणी केली जाते आणि त्यासाठी तुमच्याकडे वैध आयडी असायला हवी.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: In some cross-border trains inspections are done on the running train and you should have valid ID with you when boarding one of those trains.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 11,
+      "source_text": "If you want to see the world on the cheap, for necessity, lifestyle or challenge, there are some ways to do that.",
+      "reference_translation": "जर तुम्हाला हे जग स्वतः पहायचे असेल, गरज असेल, जीवनशैली किंवा आव्हान म्हणून पहायचे असेल तर त्यासाठी काही मार्ग आहेत.",
+      "model_translation": "जर तुम्हाला जगाला स्वस्त पाहायचे असेल, तर गरजेसाठी, जीवनशैलीसाठी किंवा आव्हानासाठी, त्यासाठी काही मार्ग आहेत.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: If you want to see the world on the cheap, for necessity, lifestyle or challenge, there are some ways to do that.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 12,
+      "source_text": "In 1981, Vanda Miss Joaquim, an orchid hybrid, was chosen as the nation's national flower.",
+      "reference_translation": "1981 मध्ये, वांदा मिस जोक्विम एक संकरित ऑर्किड, हे राष्ट्राचे राष्ट्रीय फुल म्हणून निवडण्यात आले.",
+      "model_translation": "Vanda miss joaquin, ek orchida hybrid, hai, jisko desh ka rashtriya phool chuna gaya hai.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: In 1981, Vanda Miss Joaquim, an orchid hybrid, was chosen as the nation's national flower.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 13,
+      "source_text": "However, new evidence suggests that the Moriori were a group of mainland Maori who migrated from New Zealand to the Chatham Islands, developing their own distinctive, peaceful culture.",
+      "reference_translation": "तथापी काही पुरावे हे सुचवतात के मोरीओरी हा मुख्य भागातील मावरींचा समूह होता जो न्यूझीलंड मधून चाथम बेटावर स्थलांतरीत झाले, त्यांची  स्वत:चे असे वेगळे, शांततापूर्ण संस्कृती विकसित करणारे.",
+      "model_translation": "Parantu, naya purava madhye sangat aahe ki, moriori he mukhya bhumichya Maori che ek gat hote je New Zealand pasun chatham dweep paryant pravas karun tyanchya svatantra sanskrutiche vikas kela.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: However, new evidence suggests that the Moriori were a group of mainland Maori who migrated from New Zealand to the Chatham Islands, developing their own distinctive, peaceful culture.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 14,
+      "source_text": "Fifteen of these rocks are attributed to the meteorite shower last July.",
+      "reference_translation": "यापैकी पंधरा दगड गेल्या जुलैतील उल्का वर्षावातील आहेत.",
+      "model_translation": "या खडकांपैकी पंधरा जुलैच्या उल्कावृष्टीशी संबंधित आहेत.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: Fifteen of these rocks are attributed to the meteorite shower last July.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 15,
+      "source_text": "As of the night of August 9, the eye of Morakot was about seventy kilometres away from the Chinese province of Fujian.",
+      "reference_translation": "9 ऑगस्टच्या रात्री, मोराकोटचा डोळा फुजियान या चिनी प्रांतापासून सत्तर किलोमीटर्स दूर होता.",
+      "model_translation": "मोराकोटचा डोळा रात्री ९ ऑगस्ट रोजी चीनच्या फुजियान प्रांतापासून सुमारे ७० किलोमीटर अंतरावर होता.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: As of the night of August 9, the eye of Morakot was about seventy kilometres away from the Chinese province of Fujian.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 16,
+      "source_text": "Antarctica is the coldest place on Earth, and surrounds the South Pole.",
+      "reference_translation": "अंटार्क्टिका हे पृथ्वीवरील सर्वात थंड ठिकाण आहे आणि दक्षिण ध्रुव देखील याने वेढलेला आहे.",
+      "model_translation": "अंटार्क्टिका हे पृथ्वीवरील सर्वात थंड ठिकाण आहे आणि दक्षिण ध्रुवाभोवती फिरते.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: Antarctica is the coldest place on Earth, and surrounds the South Pole.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 17,
+      "source_text": "At 1:15 a.m. Saturday, according to witnesses, the bus was going through a green light when the car made a turn in front of it.",
+      "reference_translation": "शनिवारी दुपारी 1:15 वाजता, साक्षीदारांच्या म्हणण्यानुसार, बस ग्रीन लाईटमधून जात होती जेव्हा कारने त्याच्या समोरून वळण घेतले होते.",
+      "model_translation": "Shukravaar sakalachya 1.15 vajanyachya sumaras, ghadleylya ghatnenusar, bas gadivarun jat hoti, jevha ek vahan tyachya samorun gadi chalavat hote tevha tyachi gati thambavli geli.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: At 1:15 a.m. Saturday, according to witnesses, the bus was going through a green light when the car made a turn in front of it.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 18,
+      "source_text": "Although most agencies are willing to take on most regular bookings, many agents specialise in particular types of travel, budget ranges or destinations.",
+      "reference_translation": "बहुतांश एजन्सीज बहुतांश नियमित बुकींग्ज घेण्यास इ्च्छुक असल्या तरी, अनेक एजंट्स विशिष्ट प्रकारचा प्रवास, कमी खर्चिक रेंजेस किंवा गंतव्यस्थानांमध्ये वाकबगार असतात.",
+      "model_translation": "बहुतेक एजन्सीज सामान्य बुकिंग्स घेण्यास तयार असतात, परंतु अनेक एजंट्स विशिष्ट प्रकारच्या प्रवास, बजेट श्रेणी किंवा गंतव्यस्थानांमध्ये विशेषज्ञ असतात.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: Although most agencies are willing to take on most regular bookings, many agents specialise in particular types of travel, budget ranges or destinations.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 19,
+      "source_text": "Convergent thinking patterns are problem solving techniques that unite different ideas or fields to find a solution.",
+      "reference_translation": "अभिसारी विचार पद्धती हे समस्या सोडवण्याचे तंत्र आहे ज्यामध्ये विविध कल्पना किंवा क्षेत्रे एक निराकरण शोधण्यासाठी एकत्र येतात.",
+      "model_translation": "एकत्रीकरण विचार पद्धती ही समस्या सोडवण्याची तंत्रे आहेत जी वेगवेगळ्या कल्पना किंवा क्षेत्रांना एकत्र आणून एक उपाय शोधतात.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: Convergent thinking patterns are problem solving techniques that unite different ideas or fields to find a solution.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 20,
+      "source_text": "In addition, there are fewer time restrictions with the possibility of flexible working hours. (Bremer, 1998)",
+      "reference_translation": "याव्यतिरिक्त, कामाचे तास लवचिक असण्याच्या शक्यतेसह वेळेचे निर्बंध कमी आहेत. (ब्रेमर, १९९८)",
+      "model_translation": "याशिवाय, वेळ मर्यादा कमी आहेत आणि लवचिक कामाच्या तासांची शक्यता आहे.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: In addition, there are fewer time restrictions with the possibility of flexible working hours. (Bremer, 1998)\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 21,
+      "source_text": "It can also be a good way to stretch a budget to allow a longer stay somewhere since many volunteer jobs provide room and board and a few pay a small salary.",
+      "reference_translation": "अर्थसंकल्प विस्तारित करणे हा देखील एक चांगला मार्ग असू शकतो ज्यामुळे अनेक स्वयंसेवकांना नोकरी, रूम आणि बोर्ड उपलब्ध करून देत असल्याने ते कुठेतरी दीर्घ काळ मुक्काम करू शकतात आणि काही जण थोडे वेतन मिळवू शकतात.",
+      "model_translation": "Budget can be stretched by volunteering.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: It can also be a good way to stretch a budget to allow a longer stay somewhere since many volunteer jobs provide room and board and a few pay a small salary.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 22,
+      "source_text": "The atom can be considered to be one of the fundamental building blocks of all matter.",
+      "reference_translation": "अणूला सर्व वस्तूंच्या मूलभूत रचनात्मक घटकांपैकी 1 घटक मानला जाऊ शकतो.",
+      "model_translation": "अणू हा सर्व पदार्थांचा मूलभूत घटक मानला जाऊ शकतो.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: The atom can be considered to be one of the fundamental building blocks of all matter.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 23,
+      "source_text": "Given how remote many of the pueblos are, you won't be able to find a significant amount of nightlife without traveling to Albuquerque or Santa Fe.",
+      "reference_translation": "अनेक शहरांमधील अंतर जास्त असल्यामुळे, तुम्हाला अल्बुकर्क किंवा सांता फे येथे गेल्याशिवाय नाइट लाइफ पाहता येणार नाही.",
+      "model_translation": "प्यूब्लोसच्या अनेक भागांपर्यंत पोहोचणे कठीण आहे, त्यामुळे तुम्हाला अल्बुकर्क किंवा सांता फेला प्रवास न करता जास्त नाईटलाइफ मिळणार नाही.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: Given how remote many of the pueblos are, you won't be able to find a significant amount of nightlife without traveling to Albuquerque or Santa Fe.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 24,
+      "source_text": "Visitors with limited time would be best to spend their time elsewhere.",
+      "reference_translation": "मर्यादित वेळ असणारे भेट देणारे हे त्यांचा वेळ कुठेतरी घालवण्यासाठी सर्वोत्तम",
+      "model_translation": "मर्यादित वेळेच्या पाहुण्यांसाठी, इतरत्र वेळ घालवणे चांगले.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: Visitors with limited time would be best to spend their time elsewhere.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 25,
+      "source_text": "Other scientists argue that these plants are very poisonous so it is unlikely that any dinosaur ate them, even though today the sloth and other animals like the parrot (a descendant of the dinosaurs) can eat poisonous leaves or fruit.",
+      "reference_translation": "इतर शास्त्रज्ञांचा असा तर्क आहे की ही झाडे अतिशय विषारी आहेत त्यामुळे कोणत्याही डायनासोरने ते खाल्लेच असण्याची शक्यता नाही, असे असले तरी आज स्लॉथ तसेच पोपटासारखे  (डायनासोरचा वंशज) इतर प्राणी विषारी पाने किंवा फळ खाऊ शकतात.",
+      "model_translation": "इतर शास्त्रज्ञांचा असा युक्तिवाद आहे की हे वनस्पती खूप विषारी आहेत, त्यामुळे असे होण्याची शक्यता नाही की कोणत्याही डायनासोरने त्यांना खाऊन टाकले, जरी आजचे स्लोथ आणि इतर प्राणी जसे की पॅराकीट (डायनासोरचे वंशज) विषारी पाने किंवा फळे खाऊ शकतात.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: Other scientists argue that these plants are very poisonous so it is unlikely that any dinosaur ate them, even though today the sloth and other animals like the parrot (a descendant of the dinosaurs) can eat poisonous leaves or fruit.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 26,
+      "source_text": "This will ensure that your particular interests and/or constraints are matched with the ship most suitable to them.",
+      "reference_translation": "हे तुमची विशिष्ट स्वारस्ये आणि/किंवा प्रतिबंध यांच्यासाठी सर्वात अनुरूप जहाज शोधणे सुनिश्चित करेल.",
+      "model_translation": "हे सुनिश्चित करेल की तुमच्या विशिष्ट आवडी आणि/किंवा अडथळे सर्वात योग्य जहाजासह जुळवून घेतले जातील.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: This will ensure that your particular interests and/or constraints are matched with the ship most suitable to them.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 27,
+      "source_text": "Victoria Falls is a town in the western portion of Zimbabwe, across the border from Livingstone, Zambia, and near Botswana.",
+      "reference_translation": "व्हिक्टोरिया फॉल हे झिम्बाब्वेच्या पश्चिम भागातील शहर आहे, ते लिव्हिंगस्टोन, झाम्बिया आणि बोट्स्वानाजवळ सीमेवर वसलेले आहे.",
+      "model_translation": "व्हिक्टोरिया धबधबा हा झिम्बाब्वेच्या पश्चिम भागातला एक शहर आहे, जो लिव्हिंगस्टोन, झांबियाच्या सीमेवर आणि बोत्सवानाजवळ आहे. </s>",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: Victoria Falls is a town in the western portion of Zimbabwe, across the border from Livingstone, Zambia, and near Botswana.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 28,
+      "source_text": "The NBA's decision followed a Utah Jazz player testing positive for the COVID-19 virus.",
+      "reference_translation": "यूटा जॅझ खेळाडूची कोविड-19 व्हायरस टेस्ट पॉझिटिव्ह आल्यानंतर NBA चा निर्णय आला.",
+      "model_translation": "एन.बी.ए.च्या निर्णयानंतर, उटाह जॅझचा खेळाडू कोविड-१९ विषाणूची चाचणी सकारात्मक आली. </s>",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: The NBA's decision followed a Utah Jazz player testing positive for the COVID-19 virus.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 29,
+      "source_text": "This is believed to be the fifth time in history that people have observed what turned out to be chemically confirmed martian material falling to Earth.",
+      "reference_translation": "इतिहासातील ही पाचवी वेळ असल्याचे मानले जाते की लोकांनी पृथ्वीवर कोसळणार्‍या रासायनिकदृष्ट्या पुष्टी झालेल्या मंगळावरील वस्तूंचे निरीक्षण केले आहे.",
+      "model_translation": "Yaacha vishvas aahe ki ya ghatnemadhye Martian padarth prithvivar padtatana pahile gele aahet, he pahilch vel nahi.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: This is believed to be the fifth time in history that people have observed what turned out to be chemically confirmed martian material falling to Earth.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 30,
+      "source_text": "Eighteen holes are played during a regular round, with players usually starting on the first hole on the course and finishing on the eighteenth.",
+      "reference_translation": "सामान्य फेरी खेळताना त्यात अठरा छिद्रांचा समावेश असतो, ज्यामध्ये खेळाडू मैदानावरील पहिल्या छिद्रापासून सुरुवात करून अठराव्या छिद्रावर खेळ संपवतात.",
+      "model_translation": "अठरा छिद्रे एका नियमित फेरीत खेळल्या जातात, ज्यात खेळाडू सहसा पहिल्या छिद्रावर कोर्सवर सुरू होतात आणि आठव्या छिद्रात संपतात.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: Eighteen holes are played during a regular round, with players usually starting on the first hole on the course and finishing on the eighteenth.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 31,
+      "source_text": "That means everything has to be put back,\" said researcher at the Rift Valley Research Service in Ethiopia and a co-author of the study, Berhane Asfaw.",
+      "reference_translation": "\"त्याचा अर्थ सगळे पूर्वीच्या जागी ठेवायला हवे,\"\" इथिओपियातील रिफ्ट व्हॅली रिसर्च सर्व्हिस येथील संशोधक आणि बर्हन अस्फाव अभ्यासाचा सह लेखक म्हणाला.\"",
+      "model_translation": "याचा अर्थ सर्व काही परत ठेवावे लागेल,\" इथिओपियाच्या रिफ्ट व्हॅली रिसर्च सर्व्हिसमधील संशोधक आणि या अभ्यासाचे सह-लेखक बेरहान अस्फावा म्हणाले.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: That means everything has to be put back,\" said researcher at the Rift Valley Research Service in Ethiopia and a co-author of the study, Berhane Asfaw.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 32,
+      "source_text": "This contradicts earlier reports, which said that cancelling the runoff would have been against the constitution.",
+      "reference_translation": "हा अहवाल रनऑफ रद्द करणे हे संविधानाच्या विरूद्ध आहे या अहवालाच्या विरूद्ध आहे.",
+      "model_translation": "Yesterday's reports contradicted earlier ones, saying that canceling the run-off would be against the Constitution.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: This contradicts earlier reports, which said that cancelling the runoff would have been against the constitution.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 33,
+      "source_text": "Permits must be reserved in advance. You must have a permit to stay overnight at Sirena.",
+      "reference_translation": "परमिट्स अगोदरच आरक्षित करणे आवश्यक असते. तुम्हाला सिरेना येथे रात्रभर मुक्काम करण्यासाठी परमिट आवश्यक असते.",
+      "model_translation": "Sirenavar parmit rakhava lagto. Tumhala sirenaavar rahaayasathi permit rakhavan lagat.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: Permits must be reserved in advance. You must have a permit to stay overnight at Sirena.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 34,
+      "source_text": "If you are going to camp out, bring a camp cot or hammock to keep you away from snakes, scorpions and such.",
+      "reference_translation": "तुम्ही शिबिरासाठी बाहेर जात असाल तर साप, विंचू वगैरेंना दूर ठेवण्यासाठी कॅम्प कॉट किंवा झोपाळा सोबत घ्या.",
+      "model_translation": "जर तुम्ही कॅम्पिंगला जात असाल, तर साप, बिबळे इत्यादींपासून दूर राहण्यासाठी कॅम्पिंगची खुर्ची किंवा हॅमॉक आणा. </s>",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: If you are going to camp out, bring a camp cot or hammock to keep you away from snakes, scorpions and such.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 35,
+      "source_text": "Volunteering while travelling is a great way to make a difference but it's not just about giving.",
+      "reference_translation": "प्रवासादरम्यान स्वयंसेवक म्हणून काम करणे हा बदल घडवून आणण्याचा उत्तम मार्ग असू शकतो मात्र ते म्हणजे फक्त देणे नव्हे.",
+      "model_translation": "Traveling while volunteering is an excellent way to have a positive impact on the world, but it isn't just about donating.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: Volunteering while travelling is a great way to make a difference but it's not just about giving.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 36,
+      "source_text": "Army ant colonies march and nest in different phases as well.",
+      "reference_translation": "मुंग्यांच्या सैन्याच्या वसाहती मार्चमध्ये वेगवेगळ्या टप्प्यात आणि वारूळ तयार करतात.",
+      "model_translation": "Army ants च्या colonies वेगवेगळ्या phases मध्ये march आणि nest करतात.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: Army ant colonies march and nest in different phases as well.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 37,
+      "source_text": "But, if this ever does happen probably won't happen for a very long time. The stars are so spread out that there are trillions of miles between stars that are \"neighbors\".",
+      "reference_translation": "\"परंतु, जर असे कधी झाले तर बहुधा फार काळ घडणार नाही. तारे इतके दूरवर पसरलेले आहेत की ते \"\"शेजारी\"\" असलेल्या ताऱ्यांपासून कोट्यवधी मैल दूर आहेत.\"",
+      "model_translation": "पण, जर हे कधी घडलं, तर ते फार काळ होणार नाही. तारे इतके पसरलेले आहेत की ते एकमेकांच्या शेजारी नाहीत.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: But, if this ever does happen probably won't happen for a very long time. The stars are so spread out that there are trillions of miles between stars that are \"neighbors\".\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 38,
+      "source_text": "Architecture overlaps considerably with other fields including urban planning, civil engineering, decorative arts, interior design and landscape design.",
+      "reference_translation": "आर्किटेक्चरमध्ये शहरी नियोजन, सिव्हील इंजिनीअरिंग, सुशोभिकरणासंबंधित कला, इन्टिरीअर डिझाइन आणि लॅन्डस्केप डिझाइन यांचा बऱ्यापैकी समावेश होतो.",
+      "model_translation": "आर्किटेक्चर शहरी नियोजन, सिव्हिल इंजिनिअरिंग, डेकोरेटिव्ह आर्ट्स, इंटीरियर डिझाईन आणि लँडस्केप डिझाईन यासारख्या इतर क्षेत्रांशी ओव्हरलॅप करते. </s>",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: Architecture overlaps considerably with other fields including urban planning, civil engineering, decorative arts, interior design and landscape design.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 39,
+      "source_text": "French law was changed. His activism went back to age 15 when he joined the French Resistance during World War II.",
+      "reference_translation": "फ्रेंच कायदा बदलला होता. द्वितीय विश्वयुद्धात फ्रेंच प्रतिकारात सामील झाला तेव्हा त्याची सक्रियता 15 व्या वर्षात परत गेली.",
+      "model_translation": "फ्रेंच कायदा बदलला. त्यांच्या सक्रियतेने वयाच्या १५ व्या वर्षी फ्रेंच प्रतिकारादरम्यान सुरुवात केली.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: French law was changed. His activism went back to age 15 when he joined the French Resistance during World War II.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 40,
+      "source_text": "We will never overhaul a car, build a fountain in our backyard, travel to Peru to examine ancient ruins, or remodel our neighbour's house.",
+      "reference_translation": "आपण कधीही आपली कार दुरुस्तीसाठी पूर्ण तपासणार नाही, एखादा कारंजा मागच्या अंगणात बांधणार नाही, प्राचीन अवशेष पाहण्यासाठी पेरुकडे प्रयाण करणार नाही किवा आपल्या शेजाऱ्याचे घर पुनरारेखीत करणार नाही.",
+      "model_translation": "आम्ही कधीही कार, फव्वारे, पेरूला प्रवास करणार नाही, प्राचीन अवशेषांची तपासणी करणार नाही किंवा आपल्या शेजाऱ्याच्या घराची पुनर्रचना करणार नाही.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: We will never overhaul a car, build a fountain in our backyard, travel to Peru to examine ancient ruins, or remodel our neighbour's house.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 41,
+      "source_text": "Athletes may feel that they prefer a product even when it provides no real benefits.",
+      "reference_translation": "खेळाडूंना असे वाटू शकते की ते एखाद्या अशा उत्पादनास प्राधान्य देतात ज्यामुळे कोणतेही वास्तविक फायदे मिळत नाहीत.",
+      "model_translation": "ऍथलीट्सना वाटू शकते की ते एखाद्या उत्पादनाचे समर्थन करतात, जरी ते त्याला पाठिंबा देत नसले तरी.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: Athletes may feel that they prefer a product even when it provides no real benefits.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 42,
+      "source_text": "Keep in mind while planning that although Southern Africa is stable not all neighboring countries are.",
+      "reference_translation": "नियोजन करताना दक्षिण आफ्रिका स्थिर असली तरी सर्व शेजारी देश स्थिर नाहीत हे लक्षात ठेवा.",
+      "model_translation": "लक्षात ठेवा, जरी दक्षिण आफ्रिका स्थिर आहे, तरी सर्व शेजारील देश स्थिर नाहीत.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: Keep in mind while planning that although Southern Africa is stable not all neighboring countries are.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 43,
+      "source_text": "After it became apparent that many families were seeking legal help to fight the evictions, a meeting was held on March 20 at the East Bay Community Law Center for the victims of the housing scam.",
+      "reference_translation": "ते स्पष्ट झाल्यानंतर अनेक कुटुंबे बेकायदेशीर कारवाईसाठी लढा देण्यासाठी कायदेशीर मदतीची मागणी करत होते, गृहनिर्माण घोटाळ्यातील पीडित व्यक्तींसाठी 20 मार्च रोजी पूर्व बे समुदाय कायदा केंद्र येथे एक बैठक आयोजित करण्यात आली होती.",
+      "model_translation": "ऍट द ईस्ट बे कम्युनिटी लॉ सेंटर फॉर द विक्टिम्स ऑफ द हाउसिंग स्कॅम, अ मीटिंग वाज़ हेल्ड फॉर द फॅमिलीज हू व्हेअर सर्चिंग फॉर लीगल हेल्प टू फाइट द इव्हिक्शन्स.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: After it became apparent that many families were seeking legal help to fight the evictions, a meeting was held on March 20 at the East Bay Community Law Center for the victims of the housing scam.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 44,
+      "source_text": "Batten was ranked 190th on the 2008 400 Richest Americans list with an estimated fortune of $2.3 billion.",
+      "reference_translation": "२००८ च्या सर्वांत श्रीमंत ४०० अमेरिकन लोकांच्या यादीमध्ये बॅटन अंदाजे $२.३ बिलियन एवढ्या संपत्तीसह १९० व्या क्रमांकावर होता.",
+      "model_translation": "बॅटनने २००८ मध्ये ४०० श्रीमंत अमेरिकन लोकांच्या यादीत $२.३ अब्ज अंदाजित संपत्तीसह १९०० व्या क्रमांकावर स्थान मिळवले.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: Batten was ranked 190th on the 2008 400 Richest Americans list with an estimated fortune of $2.3 billion.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 45,
+      "source_text": "In developed countries today, providing deluxe bed and breakfasts has been raised to a sort of art-form.",
+      "reference_translation": "आज विकसित देशांमध्ये, उत्तम बिछाना आणि नाश्ता पुरवणे हे जणू एका कला प्रकाराप्रमाणे मोठे झाले आहे.",
+      "model_translation": "विकसित देशात आज, लक्झरी बेड आणि ब्रेकफास्ट पुरविणे हे एक कलाप्रकार म्हणून उंचावले गेले आहे.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: In developed countries today, providing deluxe bed and breakfasts has been raised to a sort of art-form.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 46,
+      "source_text": "The Icelandic Meteorological Office also reported no earthquake activity in the Hekla area in the past 48 hours.",
+      "reference_translation": "आइसलँडच्या हवामान कार्यालयाने हेल्का भागात गेल्या ४८ तासांत भूकंप झाला नसल्याचेही नोंदवले आहे.",
+      "model_translation": "आइसलँडिक मेटिओरोलॉजिकल ऑफिसने सांगितले की हेकला भागात भूकंपाची कोणतीही हालचाल नाही.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: The Icelandic Meteorological Office also reported no earthquake activity in the Hekla area in the past 48 hours.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 47,
+      "source_text": "Humans have been making and using lenses for magnification for thousands and thousands of years.",
+      "reference_translation": "विस्तृतीकरणासाठी मानव हजारि वर्षांपासून भिंग तयार करत आणि वापरत आहेत.",
+      "model_translation": "मानव हजारो आणि हजारो वर्षांपासून लेंस बनवत आहेत आणि वापरत आहेत.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: Humans have been making and using lenses for magnification for thousands and thousands of years.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 48,
+      "source_text": "There are positive aspects to these websites, which include, being able to easily setup a class page which can include blogs, videos, photos, and other features.",
+      "reference_translation": "या वेबसाइट्सचे सकारात्मक पैलू आहेत, ज्यामध्ये ब्लॉग्ज, व्हिडिओ, फोटो आणि इतर वैशिष्ट्यांच्या सहित क्लास पेज सहजपणे सेट करण्यात सक्षम होणे समाविष्ट आहे.",
+      "model_translation": "या संकेतस्थळांचे काही सकारात्मक पैलू आहेत, जसे की, वर्ग पृष्ठ तयार करण्याची क्षमता जी ब्लॉग, व्हिडिओ, फोटो आणि इतर वैशिष्ट्यांसह सेट केली जाऊ शकते.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: There are positive aspects to these websites, which include, being able to easily setup a class page which can include blogs, videos, photos, and other features.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 49,
+      "source_text": "In London, about 200 people protested outside some major copyright holders' offices.",
+      "reference_translation": "लंडनमध्ये, सुमारे २०० लोकांनी काही मुख्य कॉपीराइट धारकांच्या कार्यालयांबाहेर आंदोलन केले.",
+      "model_translation": "लंडनमध्ये, काही प्रमुख कॉपीराइट धारकांच्या कार्यालयांच्या बाहेर सुमारे २०० लोकांनी निदर्शने केली.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: In London, about 200 people protested outside some major copyright holders' offices.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 50,
+      "source_text": "Tourist visits are costly, demand physical fitness, can only take place in summer Nov-Feb, and are largely limited to the Peninsula, Islands and Ross Sea.",
+      "reference_translation": "पर्यटकांच्या भेटी महागड्या आणि शारीरिक तंदुरुस्तीची मागणी करणाऱ्या, फक्त उन्हाळ्यात नोव्हेंबर-फेब्रुवारीदरम्यान होऊ शकणाऱ्या आणि त्या मुख्यतः पेनिन्सुला, आइसलँड आणि रॉस समुद्रापर्यंतच मर्यादीत आहेत.",
+      "model_translation": "पर्यटक भेटी महाग आहेत, शारीरिक तंदुरुस्तीची आवश्यकता आहे, फक्त उन्हाळ्यात नोव्हेंबर-फेब्रुवारीमध्ये होऊ शकतात आणि प्रामुख्याने द्वीपकल्प, बेटे आणि रॉस समुद्रात मर्यादित आहेत.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: Tourist visits are costly, demand physical fitness, can only take place in summer Nov-Feb, and are largely limited to the Peninsula, Islands and Ross Sea.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 51,
+      "source_text": "The earliest known book in the world was written in Sanskrit. After the compilation of Upanishads, Sanskrit just faded due to hierarchy.",
+      "reference_translation": "आतापर्यंत ज्ञात असलेले सर्वात प्राचीन पुस्तक संस्कृत मध्ये लिहिले गेले होते. उपनिषदे रचल्यानंतर संस्कृत उतरंडी मुळे लयाला गेली.",
+      "model_translation": "सङ्स्कृतेषु उपनिषदेषु संकलनस्य अनन्तरं संस्कृतं केवलं पौरुषेयम् आसीत्, यतः पदान्तरैः ह्यः उच्चैः वर्चस्वम् आचरिताम्।",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: The earliest known book in the world was written in Sanskrit. After the compilation of Upanishads, Sanskrit just faded due to hierarchy.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 52,
+      "source_text": "In April this year, a temporary restaining order was issued by Judge Glynn against the facility to enforce the release of those held more than 24 hours after their intake who did not receive a hearing by a court commissioner.",
+      "reference_translation": "यावर्षी एप्रिल मध्ये, न्यायमूर्ती ग्लेन यांनी ताब्यात घेतल्यानंतर ज्यांची न्यायालय किंवा आयुक्त यांच्याकडून सुनावणी न होता 24 तासापेक्षा अधिक काळ असलेल्या लोकांच्या सुटकेच्या सुविधेविरुद्ध एक तात्पुरता तहकुबी आदेश काढला होता.",
+      "model_translation": "या वर्षी एप्रिलमध्ये, न्यायालयाने न्यायाधीश ग्लाइन यांनी सुविधेसाठी तात्पुरता स्थगिती आदेश जारी केला होता, ज्यांनी न्यायालयाच्या कमिशनरद्वारे सुनावणी न झालेल्या आणि २४ तासांपेक्षा जास्त काळ तुरुंगात ठेवलेल्या लोकांना सोडण्यास नकार दिला होता. </s>",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: In April this year, a temporary restaining order was issued by Judge Glynn against the facility to enforce the release of those held more than 24 hours after their intake who did not receive a hearing by a court commissioner.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 53,
+      "source_text": "Its remnants produced showers across most of the islands, though as of yet, no damage or flooding has been reported.",
+      "reference_translation": "त्याच्या अवशेषांचा या बेटांच्या बहुतांश भागांवर वर्षाव झाला, तथापि अद्याप, कोणतेही नुकसान किंवा पूर आल्याची नोंद नाही.",
+      "model_translation": "Typhoon Haiyan च्या अवशेषांनी बहुतेक बेटांवर पाऊस पाडला आहे, परंतु अद्याप कोणतीही हानी किंवा पूर आलेला नाही.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: Its remnants produced showers across most of the islands, though as of yet, no damage or flooding has been reported.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 54,
+      "source_text": "This theory contradicts the claim that the moon is completely devoid of geologic activity.",
+      "reference_translation": "हा सिद्धांत चंद्र भूगर्भीय क्रियाकलापांपासून पूर्णपणे विरहित असल्याच्या दाव्याला विरोध करतो.",
+      "model_translation": "हा सिद्धांत चंद्रावर भूगर्भीय क्रियाकलाप नसल्याच्या दाव्याला विरोध करतो.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: This theory contradicts the claim that the moon is completely devoid of geologic activity.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 55,
+      "source_text": "Check with the institution, as well as the immigration department for the country you wish to study in for detailed requirements.",
+      "reference_translation": "तपशीलवार आवश्यकतांसाठी संस्था तसेच तुम्ही ज्या देशामध्ये शिकू इच्छित आहात तेथील इमिग्रेशन डिपार्टमेंटची तपासणी करा.",
+      "model_translation": "Institution आणि immigration department सोबत check करा, तुम्हाला ज्या देशात शिकायचे आहे त्या देशासाठी तपशीलवार आवश्यकता काय आहेत ते जाणून घेण्यासाठी.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: Check with the institution, as well as the immigration department for the country you wish to study in for detailed requirements.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 56,
+      "source_text": "During his time with the team, he scored 403 goals in 468 appearances.",
+      "reference_translation": "तो जेव्हा संघाबरोबर होता तेव्हा, त्याने 468 खेळी मध्ये 403 गोल नोंदवले.",
+      "model_translation": "ते त्यांच्या संघासोबत असताना, त्यांनी ४०० गोल केले आणि ४६८ वेळा खेळले.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: During his time with the team, he scored 403 goals in 468 appearances.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 57,
+      "source_text": "The major organ of the circulatory system is the heart, which pumps the blood.",
+      "reference_translation": "रक्ताभिसरण संस्थेमधील सर्वात महत्वाचा अवयव हा हृदय आहे, जे रक्त अभिसारीत करते.",
+      "model_translation": "ह्रदय हा रक्तवहिन्यासंबंधी प्रणालीचा प्रमुख अवयव आहे, जो रक्त पंप करतो.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: The major organ of the circulatory system is the heart, which pumps the blood.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 58,
+      "source_text": "Traditionally, the heir to the throne would go straight into the military after finishing school.",
+      "reference_translation": "परंपरेने, सत्तेचा वारस शालेय शिक्षण संपल्यानंतर थेट लष्करात जाईल.",
+      "model_translation": "परंपरागतपणे, सिंहासनाचा वारस थेट लष्करात प्रवेश करेल.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: Traditionally, the heir to the throne would go straight into the military after finishing school.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 59,
+      "source_text": "Some German monks wanted to bring God closer to the native people, so they invented the Estonian literal language.",
+      "reference_translation": "काही जर्मन भिक्षू देवाला मूळ लोकांजवळ आणू इच्छित होते, म्हणून त्यांनी एस्टोनियन शाब्दिक भाषेचा शोध लावला.",
+      "model_translation": "काही जर्मन भिक्षूंनी स्थानिक लोकांना देवाची अधिक जवळीक आणण्यासाठी एस्टोनियन भाषेची निर्मिती केली.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: Some German monks wanted to bring God closer to the native people, so they invented the Estonian literal language.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 60,
+      "source_text": "The Twin Otter had been trying to land at Kokoda yesterday as Airlines PNG Flight CG4684, but had aborted once already.",
+      "reference_translation": "द ट्विन ऑटर विमान पीनजी उड्डाण सीजी4684 म्हणून काल कोकोडा इथे उतरण्याचा प्रयत्न करीत होते, एकदा आधीच ते रद्द करण्यात आले  होते..",
+      "model_translation": "The twin otters had tried landing at koko daga the previous day as airlines png flight cg4648 had been aborted one time.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: The Twin Otter had been trying to land at Kokoda yesterday as Airlines PNG Flight CG4684, but had aborted once already.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 61,
+      "source_text": "These websites have gotten a lot of attention, especially in the education setting.",
+      "reference_translation": "या वेबसाईट ने खूप लक्ष वेधून घेतले आहे, विशेषत: शैक्षणिक सेटिंग मध्ये.",
+      "model_translation": "या वेबसाईट्सना खूप लक्ष मिळाले आहे, खास करून शिक्षण क्षेत्रात.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: These websites have gotten a lot of attention, especially in the education setting.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 62,
+      "source_text": "A Triceratops could have used its strong beak to strip off the leaves before eating the trunk.",
+      "reference_translation": "ट्रायसेरॉटॉप्स खोड खाण्यापूर्वी पाने काढून टाकण्यासाठी जोरदार चोचीचा वापर करू शकले असते.",
+      "model_translation": "Трицертоп был маленький, но доступн и слушат во-вс-мя пр-т. Он, ча-к за к",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: A Triceratops could have used its strong beak to strip off the leaves before eating the trunk.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 63,
+      "source_text": "During the last three decades, despite officially remaining a communist state, China has developed a market economy.",
+      "reference_translation": "चीनने मागील ३ दशकांत अधिकृतपणे कम्युनिस्ट राज्य असूनही मार्केट इकोनॉमी विकसित केली आहे.",
+      "model_translation": "गेल्या तीन दशकांत, चीनने अधिकृतपणे साम्यवादी राज्य असूनही बाजारपेठेवर आधारित अर्थव्यवस्था विकसित केली आहे.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: During the last three decades, despite officially remaining a communist state, China has developed a market economy.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 64,
+      "source_text": "Today's announcement also extended the government's commitment made in March of this year to fund extra carriages.",
+      "reference_translation": "आजच्या घोषणेमुळे या वर्षीच्या मार्चमध्ये अतिरिक्त गाड्यांसाठी निधी पुरवण्याच्या सरकारच्या वचनबद्धतेत वाढ केली आहे.",
+      "model_translation": "आजच्या घोषणेत मार्चमध्ये केलेल्या सरकारच्या वचनाची पुष्टी केली गेली आहे, जी अतिरिक्त वाहनांना निधी देईल.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: Today's announcement also extended the government's commitment made in March of this year to fund extra carriages.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 65,
+      "source_text": "Until now, AOL has been able to move and develop the IM market at its own pace, due to its widespread use within the United States.",
+      "reference_translation": "आतापर्यंत, युनायटेड स्टेट्समधील व्यापक वापरामुळे, AOL स्वत:च्या गतीने IM मार्केटला पुढे सरकवण्यात आणि विकसित करण्यात सक्षम ठरले आहे.",
+      "model_translation": "ऍओएलने युनायटेड स्टेट्समध्ये त्याच्या व्यापक वापरामुळे आयएम बाजारपेठेत आपले स्वतःचे गती आणि विकास राखून ठेवला आहे.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: Until now, AOL has been able to move and develop the IM market at its own pace, due to its widespread use within the United States.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 66,
+      "source_text": "The aircraft had been headed to Irkutsk and was being operated by interior troops.",
+      "reference_translation": "विमान इर्कुत्स्कच्या दिशेने जात होते आणि अंतर्गत सैन्याकडून चालवले जात होते.",
+      "model_translation": "विमाने इर्कुटस्कला जात होती आणि इंटरिअर सैनिकांनी ती चालवली जात होती.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: The aircraft had been headed to Irkutsk and was being operated by interior troops.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 67,
+      "source_text": "The pattern should be deep enough, 5 mm (1/5 inch) or more, and the material soft enough in cold temperatures.",
+      "reference_translation": "नमुना पुरेसा खोल, 5 मिमी (1/5 इंच) किंवा अधिक असावा आणि थंड तापमानात सामग्री पुरेशी मऊ असावी.",
+      "model_translation": "नमुना खोल असावा, ५ मिमी (१/५ इंच) किंवा अधिक, आणि थंड तापमानात सामग्री मऊ असावी.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: The pattern should be deep enough, 5 mm (1/5 inch) or more, and the material soft enough in cold temperatures.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 68,
+      "source_text": "Only the effects of catastrophizing, not depression and fear was conditional of regular weekly structured PA sessions.",
+      "reference_translation": "नैराश्य आणि भीती नव्हे तर केवळ आपत्तिजनक परिणाम हे नियमित साप्ताहिक संरचित पीए सत्र सशर्त होते.",
+      "model_translation": "फक्त नैराश्य आणि भीतीचे परिणाम, नियमित साप्ताहिक संरचित PA सत्रांच्या अधीन नव्हते.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: Only the effects of catastrophizing, not depression and fear was conditional of regular weekly structured PA sessions.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 69,
+      "source_text": "In essence, the Renaissance made a significant change in the approach to learning and the dissemination of knowledge.",
+      "reference_translation": "थोडक्यात सांगायचे तर पुनरुज्जीवन काळात अध्ययना कडे पाहण्याचा दृष्टीकोन आणि ज्ञानाचे प्रसारण यात महत्वाचा बदल घडवून आणला.",
+      "model_translation": "पुनर्जागरणाने शिकण्याच्या दृष्टिकोनात आणि ज्ञानाच्या प्रसारात लक्षणीय बदल घडवून आणले.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: In essence, the Renaissance made a significant change in the approach to learning and the dissemination of knowledge.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 70,
+      "source_text": "Blake was also convicted of attempting to pervert the course of justice.",
+      "reference_translation": "न्याय प्रक्रियेत बाधा आणण्याचा प्रयत्न केल्याबद्दल देखील ब्लेकला दोषी ठरविण्यात आलं होतं.",
+      "model_translation": "ब्लेकवर न्यायाच्या मार्गात अडथळा आणण्याचा प्रयत्न केल्याचाही आरोप होता.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: Blake was also convicted of attempting to pervert the course of justice.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 71,
+      "source_text": "For a few pennies some children will tell you the story.",
+      "reference_translation": "काही मुले तुम्हाला काही पैशांसाठी गोष्ट सांगतील.",
+      "model_translation": "काही मुले काही नाण्यांसाठी कथा सांगतील.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: For a few pennies some children will tell you the story.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 72,
+      "source_text": "Nitrogen as a gas still has the same properties as liquid nitrogen. The liquid state is denser but the molecules are still the same.",
+      "reference_translation": "वायू स्वरूपातील नायट्रोजनमध्ये देखील द्रव नायट्रोजनसारखेच गुणधर्म असतात. द्रव अवस्थेत तो घट्टसर असतो, परंतु रेणू समान स्वरूपाचेच असतात.",
+      "model_translation": "नायट्रोजन हा वायू अजूनही त्याच गुणधर्मांचा आहे. Liquid nitrogen हा घन अवस्थेपेक्षा दाट असतो, परंतु तो अजूनही त्याच रेणूंनी बनलेला असतो.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: Nitrogen as a gas still has the same properties as liquid nitrogen. The liquid state is denser but the molecules are still the same.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 73,
+      "source_text": "For that, they had to get rid of British bases and ships in Egypt. Besides those actions, Italy's battleships were not supposed to do anything else.",
+      "reference_translation": "त्यासाठी त्यांना इजिप्तमधील ब्रिटीश तळ आणि जहाजे यांच्यापासून सुटका करून घ्यायची होती. त्या अॅक्शन्स व्यतिरिक्त, इटलीच्या युद्धनौकांना आणखी काही करण्याची गरज नव्हती.",
+      "model_translation": "त्या कारणास्तव, त्यांना इजिप्तमधील ब्रिटीश तळ आणि जहाजे काढून टाकावी लागली. शिवाय, इटलीच्या युद्धनौका काहीच करू शकल्या नाहीत.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: For that, they had to get rid of British bases and ships in Egypt. Besides those actions, Italy's battleships were not supposed to do anything else.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 74,
+      "source_text": "You can mark the passing of time yourself by observing the repetition of a cyclical event. A cyclical event is something that happens again and again regularly.",
+      "reference_translation": "एका चक्राकार घटनेच्या वारंवारतेचे निरीक्षण करुन तुम्ही जाणाऱ्या काळाची नोंद स्वतःच घेऊ शकता. एक चक्राकार घटना म्हणजे नियमितपणे वारंवार घडणारी एक गोष्ट असते.",
+      "model_translation": "तुम्ही स्वतःच वेळेचा मागोवा घेऊ शकता, चक्रीय घटनेच्या पुनरावृत्तीचे निरीक्षण करून. एक चक्रीय घटना ही अशी गोष्ट आहे जी पुन्हा पुन्हा घडते.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: You can mark the passing of time yourself by observing the repetition of a cyclical event. A cyclical event is something that happens again and again regularly.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 75,
+      "source_text": "In some federal countries, such as the United States and Canada, income tax is levied both at the federal level and at the local level, so the rates and brackets can vary from region to region.",
+      "reference_translation": "काही संघराज्य देशांमध्ये, उदाहरणार्थ युनायटेड स्टेट्स आणि  कॅनडा, आयकर हा संघराज्य पातळीवर आणि स्थानिक पातळी दोन्हीकडे आकारला जातो, म्हणून प्रत्येक विभागवार दर आणि ब्रॅकेट्स हे वेगवेगळे असतात.",
+      "model_translation": "संयुक्त राज्य अमेरिका आणि कॅनडामध्ये, संघराज्यीय स्तरावर आणि स्थानिक स्तरावर उत्पन्न कर आकारला जातो, त्यामुळे दर आणि ब्रॅकेट प्रदेशानुसार बदलू शकतात.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: In some federal countries, such as the United States and Canada, income tax is levied both at the federal level and at the local level, so the rates and brackets can vary from region to region.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 76,
+      "source_text": "Dark energy is a completely invisible force that is constantly acting upon the universe.",
+      "reference_translation": "गडद उर्जा हे पूर्णतः अदृश्य असे बल आहे जे सातत्याने विश्वामध्ये कार्य करीत असते.",
+      "model_translation": "डार्क एनर्जी ही एक अदृश्य शक्ती आहे जी सतत विश्वावर कार्य करते.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: Dark energy is a completely invisible force that is constantly acting upon the universe.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 77,
+      "source_text": "Most boomerangs available in Australia are in fact non-returning. It is best for beginners to not try throwing in windy",
+      "reference_translation": "ऑस्ट्रेलियामध्ये उपलब्ध असलेले बहुतांश बुमरॅंग्स प्रत्यक्षात परत न येणारे आहेत. नवशिक्यांसाठी हवेत फेकण्याचा प्रयत्न न करणे हे सर्वोत्तम आहे",
+      "model_translation": "ॲम्युझर्सनी वाऱ्यात फेकण्याचा प्रयत्न करू नये कारण ते परत येणार नाही. हे नवशिक्यांसाठी सर्वोत्तम आहे.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: Most boomerangs available in Australia are in fact non-returning. It is best for beginners to not try throwing in windy\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 78,
+      "source_text": "This includes waiting in line, as drug-sniffing dogs could be used at any time without notice.",
+      "reference_translation": "यामध्ये रांगेत प्रतीक्षा करणे समाविष्ट आहे, कारण औषधाचा वास घेणारे डॉग  कोणत्याही वेळी सूचनेशिवाय वापरले जाऊ शकतात.",
+      "model_translation": "यामध्ये रांगेत थांबणे समाविष्ट आहे, कारण अंमली पदार्थांचा शोध घेणारे कुत्रे कोणत्याही सूचनेशिवाय वापरले जाऊ शकतात. </s>",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: This includes waiting in line, as drug-sniffing dogs could be used at any time without notice.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 79,
+      "source_text": "Sikhs consider their faith to be a separate religion from Hinduism though they acknowledge its Hindu roots and traditions.",
+      "reference_translation": "शीख लोक त्यांची श्रद्धा हिंदुत्वापेक्षा एक स्वतंत्र धर्म म्हणून विचारात घेतात तथापि त्याचा मूलाधार हिंदू आणि परंपरांमध्ये असल्याचे ते मान्य करतात.",
+      "model_translation": "सिख अपने धर्म को हिंदू धर्म से अलग मानते हैं, हालांकि वे इसकी हिंदू जड़ों और परंपराओं को स्वीकार करते हैं। </s>",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: Sikhs consider their faith to be a separate religion from Hinduism though they acknowledge its Hindu roots and traditions.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 80,
+      "source_text": "The New Zealand police had trouble using their speed radar guns to see how fast Mr Reid was going because of how low Black Beauty is, and the only time the police managed to clock Mr Reid was when he slowed down to 160km/h.",
+      "reference_translation": "ब्लॅक ब्यूटीचा वेग किती कमी आहे आणि मिस्टर रीड किती वेगवान आहे हे पाहण्यासाठी न्यूझीलंड पोलिसांना त्यांच्या स्पीड रडार गन्स वापरण्यात अडचण आली आणि जेव्हा पोलिस मिस्टर रीडला पाहण्यात यशस्वी झाले तेव्हा तिचा वेग 160 किमी/ताशी पर्यंत कमी झाला होता.",
+      "model_translation": "New Zealand च्या पोलिसांना त्यांच्या speed radars वापरून Mr. Reid किती वेगाने जात होते हे शोधण्यात अडचण येत होती कारण Blackie खूप कमी उंचीवर होता, आणि फक्त तेव्हाच ते त्याला पकडू शकले जेव्हा तो 100 km/h पेक्षा कमी वेगाने जात होता.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: The New Zealand police had trouble using their speed radar guns to see how fast Mr Reid was going because of how low Black Beauty is, and the only time the police managed to clock Mr Reid was when he slowed down to 160km/h.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 81,
+      "source_text": "AU trade and industry commissioner Albert Muchanga announced Benin was to join.",
+      "reference_translation": "AU व्यापार आणि उद्योग आयुक्त अल्बर्ट मुचांग यांनी बेनिन सामील होणार होते असे जाहीर केले.",
+      "model_translation": "अॅल्बर्ट मचांगा यांनी बेनिनला ए.यू. व्यापार आणि उद्योग आयोगात सामील होण्याचे जाहीर केले.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: AU trade and industry commissioner Albert Muchanga announced Benin was to join.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 82,
+      "source_text": "Setting up a tent on private property or in a town of any size can easily attract unwanted attention.",
+      "reference_translation": "एखाद्या खाजगी मालमत्तेवर किंवा एखाद्या गावात  कोणत्याही आकाराचा तंबू उभारणे अगदी सहज कोणाचेही अवांछित लक्ष वेधून घेऊ शकते.",
+      "model_translation": "ऍटॅचिंग अ टेंट ऑन प्रायव्हेट प्रॉपर्टी किंवा इन अ टाऊन ऑफ एनी साईज कॅन इझिली अट्रॅक्ट अनवांटेड अ‍ॅटेंशन.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: Setting up a tent on private property or in a town of any size can easily attract unwanted attention.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 83,
+      "source_text": "Following the process, HJR-3 will be reviewed again by the next elected legislature in either 2015 or 2016 to remain in process.",
+      "reference_translation": "या प्रक्रियेनंतर, HJR-3 चा आढावा पुन्हा एकतर 2015 किंवा 2016 मध्ये पुढील निर्वाचित विधीमंडळाद्वारे प्रक्रियेत राहण्यासाठी घेतला जाईल.",
+      "model_translation": "प्रक्रिया अनुसरत, एच.जे.आर.-३ पुढील निवडलेल्या विधिमंडळाद्वारे पुनरावलोकन केले जाईल, एकतर २०१५ किंवा २०१६ मध्ये, ते प्रक्रिया चालू ठेवेल.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: Following the process, HJR-3 will be reviewed again by the next elected legislature in either 2015 or 2016 to remain in process.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 84,
+      "source_text": "Since Pakistani independence from British rule in 1947, the Pakistani President has appointed \"Political Agents\" to govern FATA, who exercise near-complete autonomous control over the areas.",
+      "reference_translation": "\"पाकिस्तानला 1947 मध्ये ब्रिटीशांच्या राजवटीपासून स्वातंत्र्य मिळाल्यापासून, पाकिस्तानी राष्ट्रपतींनी FATA संचालित करण्यासाठी \"\"पॉलिटिकल एजंट्स\"\" नियुक्त केले आहेत जे प्रदेशावर जवळपास संपूर्ण स्वायत्त नियंत्रण राखतात.\"",
+      "model_translation": "पाकिस्तानच्या स्वातंत्र्यापासून, पाकिस्तानच्या राष्ट्राध्यक्षांनी एफएटीएसाठी \"राजकीय एजंट्स\" नियुक्त केले आहेत, जे या भागांवर जवळजवळ संपूर्ण स्वायत्त नियंत्रण ठेवतात.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: Since Pakistani independence from British rule in 1947, the Pakistani President has appointed \"Political Agents\" to govern FATA, who exercise near-complete autonomous control over the areas.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 85,
+      "source_text": "Nevertheless, all French-speaking Belgians and Swiss would have learned standard French in school, so they would be able to understand you even if you used the standard French numbering system.",
+      "reference_translation": "तथापि, सर्व फ्रेंच बोलणाऱ्या बेल्जियन आणि स्विस लोकांनी शाळेमध्ये सामान्य फ्रेंच शिकायला हवे होते, म्हणजे तुम्ही प्रमाण फ्रेंच अंक प्रणाली वापरल्यास त्यांना ती समजू शकली असती.",
+      "model_translation": "पण तरीही, सर्व फ्रेंच बोलणारे बेल्जियन आणि स्वित्झर्लंडचे लोक शाळेत मानक फ्रेंच शिकले आहेत, त्यामुळे ते तुम्हाला समजतील, जरी तुम्ही प्रमाण फ्रेंच क्रमांकन प्रणाली वापरत असाल.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: Nevertheless, all French-speaking Belgians and Swiss would have learned standard French in school, so they would be able to understand you even if you used the standard French numbering system.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 86,
+      "source_text": "The main reason for this phenomenon is the result of the lucid dreams expanding the length of time between REM states.",
+      "reference_translation": "या अपूर्व गोष्टीचे मुख्य कारण हे REM स्टेट्स दरम्यानच्या काळातील विस्तृत स्वप्नांचा परिणाम आहे.",
+      "model_translation": "या घटनेचे मुख्य कारण आर.ई.एम. अवस्थांदरम्यानच्या कालावधीत वाढ झाल्यामुळे आहे.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: The main reason for this phenomenon is the result of the lucid dreams expanding the length of time between REM states.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 87,
+      "source_text": "These can be dangerous if the traveler pursue the mirage, wasting precious energy and remaining water.",
+      "reference_translation": "प्रवाशाने मृगजळामागे जाऊन आपली अमूल्य ताकद आणि उर्वरित पाणी वाया घालवणे धोकादायक असू शकते.",
+      "model_translation": "Ye mirage paas chalne se traveler ko nuksan ho sakta hai, jisse paisa aur pani ki barbaadi hoti hai.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: These can be dangerous if the traveler pursue the mirage, wasting precious energy and remaining water.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 88,
+      "source_text": "Many of their writers have gone on to wield great influence on Jon Stewart and Stephen Colbert's news parody shows.",
+      "reference_translation": "जॉन स्टीवर्ट आणि स्टीफन कोलबर्टच्या न्यूज पॅरोडी शोवर त्यांच्या अनेक लेखकांचा मोठा प्रभाव पडला आहे.",
+      "model_translation": "त्यांच्या अनेक लेखकांनी स्टीफन कोलबर्ट आणि जॉन स्टीवर्टच्या बातम्यांच्या विडंबन कार्यक्रमांवर प्रभाव पाडला आहे. </s>",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: Many of their writers have gone on to wield great influence on Jon Stewart and Stephen Colbert's news parody shows.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 89,
+      "source_text": "This can be done in a normal car with careful planning but a 4x4 is highly advised and many locations are only accessible with a high wheel base 4x4.",
+      "reference_translation": "हे साध्या कारने  व्यवस्थित नियोजनाद्वारे करता येते परंतु एखाद्या  4x4  ची अधिक शिफारस केली जाते आणि बरीच स्थळे केवळ 4x4 चाकी  उंच बेस असलेल्यानेच गाठता येतात.",
+      "model_translation": "4×4 ऍडव्हायझरीची आवश्यकता आहे आणि काही ठिकाणे फक्त 4-wheel-drive 4X4 सह प्रवेशयोग्य आहेत.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: This can be done in a normal car with careful planning but a 4x4 is highly advised and many locations are only accessible with a high wheel base 4x4.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 90,
+      "source_text": "Beijing will host the opening and closing ceremonies and the indoor ice events.",
+      "reference_translation": "बीजिंग उद्घाटन व समारोप समारंभ तसेच इनडोर आईस इव्हेंट्सचे आयोजन करेल.",
+      "model_translation": "बेजिंग उद्घाटन आणि समारोप समारंभ आणि अंतर्गेही बर्फ स्पर्धांचे आयोजन करेल.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: Beijing will host the opening and closing ceremonies and the indoor ice events.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 91,
+      "source_text": "Peter Costello, Australian treasurer and the man most likely to succeed Prime Minister John Howard as Liberal party leader has thrown his support behind a nuclear power industry in Australia.",
+      "reference_translation": "पीटर कॉस्टेलो , ऑस्ट्रेलियन खजानीस आणि पंतप्रधान जॉन हॉवर्ड यांच्या नंतर उदारमतवादी पक्षाचे नेते mhanun जागा घेण्याची सर्वाधिक शक्यता असणारे, यांनी आपला पाठींबा ऑस्ट्रेलियातील अणुउर्जा उद्योगाला देऊ केलेला आहे.",
+      "model_translation": "पीटर कोस्टेल्लो, ऑस्ट्रेलियन खजिनदार आणि लिबरल पक्षाचे नेते जॉन हॉवर्ड यांना पंतप्रधान म्हणून यशस्वी होण्याची सर्वात जास्त शक्यता आहे, त्यांनी ऑस्ट्रेलियाच्या अणुऊर्जा उद्योगाला पाठिंबा दिला आहे.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: Peter Costello, Australian treasurer and the man most likely to succeed Prime Minister John Howard as Liberal party leader has thrown his support behind a nuclear power industry in Australia.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 92,
+      "source_text": "The town lies immediately next to the falls, and they are the major attraction, but this popular tourist destination offers both adventure seekers and sightseers plenty of opportunities for a longer stay.",
+      "reference_translation": "शहर एक मोठे आकर्षण असलेल्या धबधब्यांच्या जवळ आहे, पण हे प्रसिद्ध पर्यटन स्थळ खूप काळ राहण्यासाठी, सहसांचे आकर्षण असणाऱ्या आणि निसर्ग सौंदर्य पाहण्याकरिता आलेल्या अशा दोघांसाठीही अनेक संधी उपलब्ध करून देते.",
+      "model_translation": "हे शहर धबधब्याच्या अगदी शेजारी आहे आणि ते एक प्रमुख आकर्षण आहे, परंतु हे एक लोकप्रिय पर्यटन स्थळ आहे जे साहसी शोधक आणि पर्यटक दोघांसाठीही भरपूर संधी प्रदान करते. </s>",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: The town lies immediately next to the falls, and they are the major attraction, but this popular tourist destination offers both adventure seekers and sightseers plenty of opportunities for a longer stay.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 93,
+      "source_text": "In this resonance, magnetic field and radio waves cause atoms to give off tiny radio signals.",
+      "reference_translation": "या प्रतिध्वनीमध्ये, चुंबकीय क्षेत्र आणि रेडिओ लहरींमुळे अणूंमधून अगदी लहान रेडिओ सिग्नल्स निर्माण होतात.",
+      "model_translation": "या रेझोनन्समध्ये, चुंबकीय क्षेत्र आणि रेडिओ लहरी अणूंना लहान रेडिओ संकेत सोडण्यास कारणीभूत ठरतात. </s>",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: In this resonance, magnetic field and radio waves cause atoms to give off tiny radio signals.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 94,
+      "source_text": "The artistic event is also part of a campaign by the Bucharest City Hall that seeks to relaunch the image of the Romanian capital as a creative and colourful metropolis.",
+      "reference_translation": "कलात्मक कार्यक्रम हा देखील रोमानियन राजधानीची प्रतिमा पुन्हा सर्जनशील आणि असंख्य रंगांनी नटलेले शहर अशी करू इच्छिणाऱ्या बुखारेस्ट सिटी हॉलच्या मोहिमेचा एक भाग आहे.",
+      "model_translation": "आर्टिस्टिक इव्हेंट हा बुचारेस्ट सिटी हॉलच्या एका मोहिमेचा भाग आहे, जो रोमानियन राजधानीला एक सर्जनशील आणि रंगीबेरंगी शहर म्हणून पुन्हा सुरू करण्याचा प्रयत्न करत आहे.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: The artistic event is also part of a campaign by the Bucharest City Hall that seeks to relaunch the image of the Romanian capital as a creative and colourful metropolis.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 95,
+      "source_text": "Lead researchers say this may bring early detection of cancer, tuberculosis, HIV and malaria to patients in low-income countries, where the survival rates for illnesses such as breast cancer can be half those of richer countries.",
+      "reference_translation": "सुप्रसिद्ध संशोधकांच्या मते, यामुळे अल्प उत्पन्न असलेल्या देशांमध्ये कर्करोग, क्षयरोग, एचआयव्ही आणि मलेरियाच्या रुग्णांचे लवकर निदान होऊ शकते. श्रीमंत देशांपेक्षा या देशांमध्ये स्तनाच्या कर्करोगासारख्या आजारांमुळे जगण्याचा दर निम्म्यापेक्षा कमी असतो.",
+      "model_translation": "Leading researchers say that this may lead to earlier detection of diseases such as cancer, TB, HIV, and malaria in low income countries where survival rates are half of those in richer nations.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: Lead researchers say this may bring early detection of cancer, tuberculosis, HIV and malaria to patients in low-income countries, where the survival rates for illnesses such as breast cancer can be half those of richer countries.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 96,
+      "source_text": "General John Cadwalder would launch a diversionary attack against the British garrison at Bordentown, in order to block off any reinforcements.",
+      "reference_translation": "जनरल जॉन कॅडवाल्डर कोणतेही मजबुतीकरण रोखण्यासाठी बॉर्डनटाउन येथे ब्रिटीश सैन्याच्या विरूद्ध डायव्हर्शनरी हल्ला सुरु करतील.",
+      "model_translation": "जनरल जॉन कॅडवालाडर ब्रिटीश गडावर हल्ला करण्यासाठी एक विचलनकारी हल्ला करेल.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: General John Cadwalder would launch a diversionary attack against the British garrison at Bordentown, in order to block off any reinforcements.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 97,
+      "source_text": "The pit is either heated with hot stones from a fire, or in some places geothermal heat makes areas of ground naturally hot.",
+      "reference_translation": "खड्डा आगीतील गरम दगडांनी गरम केला जातो किंवा काही ठिकाणी भूगर्भातील उष्णता जमिनीचा भाग नैसर्गिकपणे गरम करते.",
+      "model_translation": "भूगर्भातून येणारी उष्णता म्हणजे भूतापीय उष्णता.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: The pit is either heated with hot stones from a fire, or in some places geothermal heat makes areas of ground naturally hot.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 98,
+      "source_text": "\"It is now important from both a public health and criminal justice perspective that the legislation be enacted as soon as possible\", said a government spokesperson.",
+      "reference_translation": "\"\"\"आता हे सार्वजनिक आरोग्य आणि गुन्हे संबधी न्यायाच्या दृष्टीकोनातून महत्वाचे आहे की तो कायदा आता लवकरात लवकर लागू करण्यात यायला हवा,\"\" एक सरकारी प्रतिनिधी म्हणाला.\"",
+      "model_translation": "सार्वजनिक आरोग्य आणि फौजदारी न्याय या दोन्ही दृष्टिकोनातून कायद्याची त्वरित अंमलबजावणी करणे आवश्यक आहे, असे सरकारी प्रवक्त्याने सांगितले.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: \"It is now important from both a public health and criminal justice perspective that the legislation be enacted as soon as possible\", said a government spokesperson.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    },
+    {
+      "pair_key": "flores_en-mr",
+      "example_index": 99,
+      "source_text": "Christopher Garcia, a spokesperson of the Los Angeles Police Department, said the suspected male offender is being investigated for trespassing rather than vandalism.",
+      "reference_translation": "लॉस एंजेलिस पोलिस विभागाचे प्रवक्ते ख्रिस्तोफर गार्सिया म्हणाले की संशयित पुरुष गुन्हेगाराची विध्वंसक कृत्याऐवजी अतिक्रमण केल्याबद्दल चौकशी केली जात आहे.",
+      "model_translation": "लॉस एंजेलेस पोलीस विभागाचे प्रवक्ते ख्रिस्तोफर गार्सिया म्हणाले की, संशयित पुरुष गुन्हेगार अतिक्रमण करण्याऐवजी विध्वंसक कारवायांसाठी तपासला जात आहे.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nMarathi: वेगवान तपकिरी कोल्हा आळशी कुत्र्यावर उडी मारतो।\n\nEnglish: I love learning new languages.\nMarathi: मला नवीन भाषा शिकायला आवडतात।\n\nEnglish: Technology is advancing rapidly.\nMarathi: तंत्रज्ञान वेगाने प्रगती करत आहे।\n\nEnglish: Christopher Garcia, a spokesperson of the Los Angeles Police Department, said the suspected male offender is being investigated for trespassing rather than vandalism.\nMarathi:",
+      "source_lang": "en",
+      "target_lang": "mr"
+    }
+  ]
+}

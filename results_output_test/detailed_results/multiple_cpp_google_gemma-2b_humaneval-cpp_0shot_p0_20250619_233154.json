@@ -1,0 +1,74 @@
+{
+  "summary": {
+    "model_name": "google/gemma-2b",
+    "language": "cpp",
+    "dataset_name": "humaneval-cpp",
+    "num_few_shot": 0,
+    "total_problems": 3,
+    "passed_problems": 0,
+    "pass_at_1": 0.0,
+    "timestamp": "2025-06-19T23:31:54.457554",
+    "process_id": 0,
+    "generation_failures": 3,
+    "compilation_failures": 3
+  },
+  "detailed_results": [
+    {
+      "name": "HumanEval_0_has_close_elements",
+      "language": "cpp",
+      "sample_index": 0,
+      "problem_prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n// Check if in given vector of numbers, are any two numbers closer to each other than\n// given threshold.\n// >>> has_close_elements((std::vector<float>({(float)1.0f, (float)2.0f, (float)3.0f})), (0.5f))\n// (false)\n// >>> has_close_elements((std::vector<float>({(float)1.0f, (float)2.8f, (float)3.0f, (float)4.0f, (float)5.0f, (float)2.0f})), (0.3f))\n// (true)\nbool has_close_elements(std::vector<float> numbers, float threshold) {\n",
+      "entry_point": "has_close_elements",
+      "full_llm_prompt": "Complete the following CPP function by implementing the function body. Only provide the implementation code that goes inside the function.\n\n#include<assert.h>\n#include<bits/stdc++.h>\n// Check if in given vector of numbers, are any two numbers closer to each other than\n// given threshold.\n// >>> has_close_elements((std::vector<float>({(float)1.0f, (float)2.0f, (float)3.0f})), (0.5f))\n// (false)\n// >>> has_close_elements((std::vector<float>({(float)1.0f, (float)2.8f, (float)3.0f, (float)4.0f, (float)5.0f, (float)2.0f})), (0.3f))\n// (true)\nbool has_close_elements(std::vector<float> numbers, float threshold) {\n",
+      "raw_generation": "[GENERATION_ERROR]",
+      "extracted_completion": "// GENERATION ERROR: There are one or more stop strings, either in the arguments to `generate` or in the model's generation config, but we could not locate a tokenizer. When generating with stop strings, you must pass the model's tokenizer to the `tokenizer` argument of `generate`.",
+      "full_code_for_eval": "#include<assert.h>\n#include<bits/stdc++.h>\n// Check if in given vector of numbers, are any two numbers closer to each other than\n// given threshold.\n// >>> has_close_elements((std::vector<float>({(float)1.0f, (float)2.0f, (float)3.0f})), (0.5f))\n// (false)\n// >>> has_close_elements((std::vector<float>({(float)1.0f, (float)2.8f, (float)3.0f, (float)4.0f, (float)5.0f, (float)2.0f})), (0.3f))\n// (true)\nbool has_close_elements(std::vector<float> numbers, float threshold) {\n\n    // GENERATION ERROR: There are one or more stop strings, either in the arguments to `generate` or in the model's generation config, but we could not locate a tokenizer. When generating with stop strings, you must pass the model's tokenizer to the `tokenizer` argument of `generate`.",
+      "test_script": "}\nint main() {\n    auto candidate = has_close_elements;\n    assert(candidate((std::vector<float>({(float)1.0f, (float)2.0f, (float)3.9f, (float)4.0f, (float)5.0f, (float)2.2f})), (0.3f)) == (true));\n    assert(candidate((std::vector<float>({(float)1.0f, (float)2.0f, (float)3.9f, (float)4.0f, (float)5.0f, (float)2.2f})), (0.05f)) == (false));\n    assert(candidate((std::vector<float>({(float)1.0f, (float)2.0f, (float)5.9f, (float)4.0f, (float)5.0f})), (0.95f)) == (true));\n    assert(candidate((std::vector<float>({(float)1.0f, (float)2.0f, (float)5.9f, (float)4.0f, (float)5.0f})), (0.8f)) == (false));\n    assert(candidate((std::vector<float>({(float)1.0f, (float)2.0f, (float)3.0f, (float)4.0f, (float)5.0f, (float)2.0f})), (0.1f)) == (true));\n    assert(candidate((std::vector<float>({(float)1.1f, (float)2.2f, (float)3.1f, (float)4.1f, (float)5.1f})), (1.0f)) == (true));\n    assert(candidate((std::vector<float>({(float)1.1f, (float)2.2f, (float)3.1f, (float)4.1f, (float)5.1f})), (0.5f)) == (false));\n}\n",
+      "stop_tokens": [
+        "\n}"
+      ],
+      "generation_successful": false,
+      "compilation_successful": false,
+      "passed": false,
+      "error_message": "There are one or more stop strings, either in the arguments to `generate` or in the model's generation config, but we could not locate a tokenizer. When generating with stop strings, you must pass the model's tokenizer to the `tokenizer` argument of `generate`."
+    },
+    {
+      "name": "HumanEval_1_separate_paren_groups",
+      "language": "cpp",
+      "sample_index": 0,
+      "problem_prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n// Input to this function is a string containing multiple groups of nested parentheses. Your goal is to\n// separate those group into separate strings and return the vector of those.\n// Separate groups are balanced (each open brace is properly closed) and not nested within each other\n// Ignore any spaces in the input string.\n// >>> separate_paren_groups((\"( ) (( )) (( )( ))\"))\n// (std::vector<std::string>({(std::string)\"()\", (std::string)\"(())\", (std::string)\"(()())\"}))\nstd::vector<std::string> separate_paren_groups(std::string paren_string) {\n",
+      "entry_point": "balanced",
+      "full_llm_prompt": "Complete the following CPP function by implementing the function body. Only provide the implementation code that goes inside the function.\n\n#include<assert.h>\n#include<bits/stdc++.h>\n// Input to this function is a string containing multiple groups of nested parentheses. Your goal is to\n// separate those group into separate strings and return the vector of those.\n// Separate groups are balanced (each open brace is properly closed) and not nested within each other\n// Ignore any spaces in the input string.\n// >>> separate_paren_groups((\"( ) (( )) (( )( ))\"))\n// (std::vector<std::string>({(std::string)\"()\", (std::string)\"(())\", (std::string)\"(()())\"}))\nstd::vector<std::string> separate_paren_groups(std::string paren_string) {\n",
+      "raw_generation": "[GENERATION_ERROR]",
+      "extracted_completion": "// GENERATION ERROR: There are one or more stop strings, either in the arguments to `generate` or in the model's generation config, but we could not locate a tokenizer. When generating with stop strings, you must pass the model's tokenizer to the `tokenizer` argument of `generate`.",
+      "full_code_for_eval": "#include<assert.h>\n#include<bits/stdc++.h>\n// Input to this function is a string containing multiple groups of nested parentheses. Your goal is to\n// separate those group into separate strings and return the vector of those.\n// Separate groups are balanced (each open brace is properly closed) and not nested within each other\n// Ignore any spaces in the input string.\n// >>> separate_paren_groups((\"( ) (( )) (( )( ))\"))\n// (std::vector<std::string>({(std::string)\"()\", (std::string)\"(())\", (std::string)\"(()())\"}))\nstd::vector<std::string> separate_paren_groups(std::string paren_string) {\n\n    // GENERATION ERROR: There are one or more stop strings, either in the arguments to `generate` or in the model's generation config, but we could not locate a tokenizer. When generating with stop strings, you must pass the model's tokenizer to the `tokenizer` argument of `generate`.",
+      "test_script": "}\nint main() {\n    auto candidate = separate_paren_groups;\n    assert(candidate((\"(()()) ((())) () ((())()())\")) == (std::vector<std::string>({(std::string)\"(()())\", (std::string)\"((()))\", (std::string)\"()\", (std::string)\"((())()())\"})));\n    assert(candidate((\"() (()) ((())) (((())))\")) == (std::vector<std::string>({(std::string)\"()\", (std::string)\"(())\", (std::string)\"((()))\", (std::string)\"(((())))\"})));\n    assert(candidate((\"(()(())((())))\")) == (std::vector<std::string>({(std::string)\"(()(())((())))\"})));\n    assert(candidate((\"( ) (( )) (( )( ))\")) == (std::vector<std::string>({(std::string)\"()\", (std::string)\"(())\", (std::string)\"(()())\"})));\n}\n",
+      "stop_tokens": [
+        "\n}"
+      ],
+      "generation_successful": false,
+      "compilation_successful": false,
+      "passed": false,
+      "error_message": "There are one or more stop strings, either in the arguments to `generate` or in the model's generation config, but we could not locate a tokenizer. When generating with stop strings, you must pass the model's tokenizer to the `tokenizer` argument of `generate`."
+    },
+    {
+      "name": "HumanEval_2_truncate_number",
+      "language": "cpp",
+      "sample_index": 0,
+      "problem_prompt": "#include<assert.h>\n#include<bits/stdc++.h>\n// Given a positive floating point number, it can be decomposed into\n// and integer part (largest integer smaller than given number) and decimals\n// (leftover part always smaller than 1).\n// Return the decimal part of the number.\n// >>> truncate_number((3.5f))\n// (0.5f)\nfloat truncate_number(float number) {\n",
+      "entry_point": "part",
+      "full_llm_prompt": "Complete the following CPP function by implementing the function body. Only provide the implementation code that goes inside the function.\n\n#include<assert.h>\n#include<bits/stdc++.h>\n// Given a positive floating point number, it can be decomposed into\n// and integer part (largest integer smaller than given number) and decimals\n// (leftover part always smaller than 1).\n// Return the decimal part of the number.\n// >>> truncate_number((3.5f))\n// (0.5f)\nfloat truncate_number(float number) {\n",
+      "raw_generation": "[GENERATION_ERROR]",
+      "extracted_completion": "// GENERATION ERROR: There are one or more stop strings, either in the arguments to `generate` or in the model's generation config, but we could not locate a tokenizer. When generating with stop strings, you must pass the model's tokenizer to the `tokenizer` argument of `generate`.",
+      "full_code_for_eval": "#include<assert.h>\n#include<bits/stdc++.h>\n// Given a positive floating point number, it can be decomposed into\n// and integer part (largest integer smaller than given number) and decimals\n// (leftover part always smaller than 1).\n// Return the decimal part of the number.\n// >>> truncate_number((3.5f))\n// (0.5f)\nfloat truncate_number(float number) {\n\n    // GENERATION ERROR: There are one or more stop strings, either in the arguments to `generate` or in the model's generation config, but we could not locate a tokenizer. When generating with stop strings, you must pass the model's tokenizer to the `tokenizer` argument of `generate`.",
+      "test_script": "}\nint main() {\n    auto candidate = truncate_number;\n    assert(candidate((3.5f)) == (0.5f));\n    assert(candidate((1.25f)) == (0.25f));\n    assert(candidate((123.0f)) == (0.0f));\n}\n",
+      "stop_tokens": [
+        "\n}"
+      ],
+      "generation_successful": false,
+      "compilation_successful": false,
+      "passed": false,
+      "error_message": "There are one or more stop strings, either in the arguments to `generate` or in the model's generation config, but we could not locate a tokenizer. When generating with stop strings, you must pass the model's tokenizer to the `tokenizer` argument of `generate`."
+    }
+  ]
+}

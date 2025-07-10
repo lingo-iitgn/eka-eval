@@ -1,0 +1,1030 @@
+{
+  "evaluation_metadata": {
+    "pair_name": "flores_en-ur",
+    "timestamp": "2025-06-27T01:33:26.591416",
+    "model_name": "sarvamai/sarvam-1",
+    "translation_direction": "enxx",
+    "num_samples": 100,
+    "config": {
+      "batch_size": 4,
+      "max_new_tokens": 128,
+      "use_few_shot": true,
+      "num_few_shot_examples": 3
+    }
+  },
+  "results": {
+    "chrf++": 6.523178121302873,
+    "valid_samples": 100,
+    "total_samples": 100,
+    "validity_rate": 1.0,
+    "quality_analysis": {
+      "avg_prediction_length": 14.91,
+      "avg_reference_length": 27.27,
+      "length_ratio": 0.5467546754675467,
+      "empty_predictions": 0,
+      "very_short_predictions": 0
+    }
+  },
+  "detailed_logs": [
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 0,
+      "source_text": "Enceladus is the most reflective object in the solar system, reflecting about 90 percent of the sunlight that hits it.",
+      "reference_translation": "اینسیلاڈس شمسی نظام کی سب سے زیادہ انعکاسی چیز ہے، یہ خود سے ٹکرانے والی سورج کی روشنی کے تقریبا 90 فیصد کو منعکس کرتی ہے۔",
+      "model_translation": "Enceladus ڈاؤنڈیو خاک شدہ جوڑا۔ دوہن حدگل صحيح عشق آنها (90%) طرگ فر)",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: Enceladus is the most reflective object in the solar system, reflecting about 90 percent of the sunlight that hits it.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 1,
+      "source_text": "For a long time during the nineteenth and twentieth centuries, it was believed the first inhabitants of New Zealand were the Maori people, who hunted giant birds called moas.",
+      "reference_translation": "انیسویں اور بیسویں صدی کے دوران ایک طویل عرصے تک یہ سمجھا جاتا رہا کہ نیوزی لینڈ کے پہلے باشندے ماوری لوگ تھے جو ماوس نامی بڑے پرندے شکار کرتے تھے۔",
+      "model_translation": "Nineteenth و twentieth دویہ قبل آج همین حاصلہ، فوڑھ جنگ شاہِ خاک صدی (مو) علگِب ضرھا (تھک) ���",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: For a long time during the nineteenth and twentieth centuries, it was believed the first inhabitants of New Zealand were the Maori people, who hunted giant birds called moas.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 2,
+      "source_text": "Protons have a positive electric charge while neutrons have no charge. The electrons have a negative electric charge.",
+      "reference_translation": "پروٹونز میں مثبت الیکٹرسٹی چارج ہوتی ہے جبکہ نیوٹرونز میں کوئی چارج نہیں ہوتا- الیکٹرونز میں منفی الیکٹرک چارج ہوتا ہے-",
+      "model_translation": "این دو شخص حاصل آپ جملہ وہاں، فرک صحيح علتها. قطع هم خوچشمہنگا (ا) كتھ چھ",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: Protons have a positive electric charge while neutrons have no charge. The electrons have a negative electric charge.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 3,
+      "source_text": "The earliest known book in the world was written in Sanskrit. After the compilation of Upanishads, Sanskrit just faded due to hierarchy.",
+      "reference_translation": "دنیا کی قدیم ترین مشہور کتاب سنسکرت میں لکھی گئی تھی- اپنشدوں کی تدوین کے بعد، مذہبی رہنماوں کی وجہ سے سنسکرت کمزور ہو گئی-",
+      "model_translation": "این آدمي شائع خاک صفحه جس طبيعہ علیہم گرچه، قدھ فلتو دےتھا. ثب حضوں، بی",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: The earliest known book in the world was written in Sanskrit. After the compilation of Upanishads, Sanskrit just faded due to hierarchy.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 4,
+      "source_text": "Nigeria previously announced it planned to join the AfCFTA in the week leading up to the summit.",
+      "reference_translation": "نائیجیریا نے پہلے اعلان کیا تھا کہ سربراہ اجلاس کے آنے والے ہفتے میں اس نے AfCFTA میں شامل ہونے کا منصوبہ بنایا ہے۔",
+      "model_translation": "نگاہویہ قبل آپ جمّاعتِ علیّ فضلاک صفّه دوں؟ حصہ، و خا노 شدہ.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: Nigeria previously announced it planned to join the AfCFTA in the week leading up to the summit.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 5,
+      "source_text": "However, Charles went to university at Trinity College, Cambridge where he studied Anthropology and Archaeology, and later History, earning a 2:2 (a lower second class degree).",
+      "reference_translation": "تاہم چارلس یونیورسٹی کے ٹرینیٹی کالج، کیمبرج، گئے جہاں اس نے بشریات اور آثار قدیمہ کے علوم حاصل کئے اور بعد میں تاریخ، 2:2 کمائی (ایک درجہ دوم کی ڈگری)۔",
+      "model_translation": "اس قدیم شخص چلرک جنگلہ دھاگےتو طبل حضایہ، فوڑھ آب ڈا리 علگ گا, �����������������",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: However, Charles went to university at Trinity College, Cambridge where he studied Anthropology and Archaeology, and later History, earning a 2:2 (a lower second class degree).\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 6,
+      "source_text": "Hostels cater primarily to young people – a typical guest is in their twenties – but you can often find older travellers there too.",
+      "reference_translation": "ہوسٹلس بالخصوص نوجوانوں - بیس سالہ عمر والے خاص مہمانوں کی میزبانی کرتے ہیں - لیکن آپ کو وہاں دوسرے مسافر بھی مل جائیں گے۔",
+      "model_translation": "شارڈینڈ جوڑایہ دو قتل آئين وہاں، فلک حصہنم علی - شمی스ڈن - چہڑ خا니ب ها - ۔",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: Hostels cater primarily to young people – a typical guest is in their twenties – but you can often find older travellers there too.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 7,
+      "source_text": "Crime, and ill-will toward foreigners in general, is virtually unknown in Greenland. Even in the towns, there are no \"rough areas.\"",
+      "reference_translation": "عام طور پر گرین لینڈ میں غیر ملکیوں کے ساتھ، جرم، اور غیر منصفانہ رویہ، عملی طور پر نامعلوم ہے۔ یہاں تک کہ قصبوں میں بھی، کوئی \"برے علاقے\" نہیں ہیں۔",
+      "model_translation": "Greenland is a very safe place to live. There are no gangs, no crime, and no foreigners are harassed.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: Crime, and ill-will toward foreigners in general, is virtually unknown in Greenland. Even in the towns, there are no \"rough areas.\"\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 8,
+      "source_text": "Architecture is concerned with the design and construction of buildings. The architecture of a place is often a tourist attraction in its own right.",
+      "reference_translation": "فن تعمیر عمارتوں کی طرزِ اور تعمیر سے متعلقہ ہے۔ کسی جگہ کا فن تعمیر اکثر اپنی طرز تعمیر کے باعث ایک سیاحتی کشش بن جاتا ہے۔",
+      "model_translation": "اعضایہ طبق آرڈاک جا้ دین خطہ، قدم و شا等 فوڑھ صفحہِ عمل گھب حس همے،۔ ثا",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: Architecture is concerned with the design and construction of buildings. The architecture of a place is often a tourist attraction in its own right.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 9,
+      "source_text": "These monster storms have winds up to 480 km/h (133 m/s; 300 mph).",
+      "reference_translation": "اِن عظیم الجثہ طوفانوں میں 480 کلومیٹر/گھنٹہ (133 میل/سیکنڈ؛ 300 میٹر فی گھنٹہ) تک کی ہوائیں موجود ہیں۔",
+      "model_translation": "یہ خطاب دینگاڑ وہو قبل 400 چڑھ جوڑا۔ شہرک آن صدمہ",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: These monster storms have winds up to 480 km/h (133 m/s; 300 mph).\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 10,
+      "source_text": "In fact, region codes have absolutely no effect on illegal copying; a bit-for-bit copy of a disk will play just fine on any device where the original will.",
+      "reference_translation": "در حقیقت، غیر قانونی کاپی کرنے پر علاقائی کوڈ کا قطعی کوئی اثر نہیں ہوتا ہے۔ ڈسک کی تھوڑی تھوڑی سی نقل کسی بھی ڈیوائس پر جہاں ڈسک اصلی ہوگی وہی ڈسک بالکل ٹھیک چلے گی۔",
+      "model_translation": "این حاصل جو شخص قبلیہ دوں، وہلاگ آرک چھتھ طر인 ڈیḍ فاṭ خوṛ گا (تنگی) هم",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: In fact, region codes have absolutely no effect on illegal copying; a bit-for-bit copy of a disk will play just fine on any device where the original will.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 11,
+      "source_text": "Canyoning (or: canyoneering) is about going in a bottom of a canyon, which is either dry or full of water.",
+      "reference_translation": "Canoyoning سے مراد کسی دریائی کھڈ کی تہہ میں اترنا جو یا تو خشک ہو سکتی ہے یا پانی سے پُر۔",
+      "model_translation": "(میٹھا) آب خاک شدیہ ۔ جوڑ ڈائٹا (جس حصہ) چھڑا۔ (بہنڈی) قنين و دوہر (پہچے)",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: Canyoning (or: canyoneering) is about going in a bottom of a canyon, which is either dry or full of water.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 12,
+      "source_text": "There is a surcharge for having more than 2 passengers, so this option might be more expensive than necessary.",
+      "reference_translation": "2 سے زیادہ مسافر رکھنے پر جرمانہ ہے، لہذا یہ انتخاب ضرورت سے زیادہ مہنگا پڑسکتا ہے۔",
+      "model_translation": "این شارڈ آپ دو قطع خوڑ گاڑتویہ جا (تک حملہ) صفحہ، فہم علا - همے،بلڑنگ غا) و",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: There is a surcharge for having more than 2 passengers, so this option might be more expensive than necessary.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 13,
+      "source_text": "This includes waiting in line, as drug-sniffing dogs could be used at any time without notice.",
+      "reference_translation": "اس میں ویٹنگ لائن بھی ہوتی ہے، اس لئے کہ بغیر کسی اطلاع کے سونگھنے والے کتوں کا کسی بھی وقت استعمال کیا جاسکتا ہے۔",
+      "model_translation": "یہ جوڑ دینگارک آپ قبل طو شاں، وہلڑا۔ خا노 صنف چھتھ عملےم حو-می-ن فر-ا-س ���",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: This includes waiting in line, as drug-sniffing dogs could be used at any time without notice.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 14,
+      "source_text": "Submarines are ships designed to travel underwater, and remain there for an extended amount of time.",
+      "reference_translation": "سب میرین (پن ڈبی) وہ جہاز ہے جو پانی کے اندر چلنے کے لئے بنایا گیا ہے۔ وہ طویل میعاد کے لئے پانی کے اندر رہ سکتا ہے۔",
+      "model_translation": "بہنو شارڈ فایل خاک دوں، وہ آتن جا (جنگل) قبلیہ (تھا) حصہ(س) چھڑا(می)ت(ہ) ۔۔ �",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: Submarines are ships designed to travel underwater, and remain there for an extended amount of time.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 15,
+      "source_text": "This is just as exhausting as if you were to wake up every twenty or thirty minutes and watch TV.",
+      "reference_translation": "یہ بالکل ویسے ہی تھکا دینے والا ہے جیسے آپکو ہر بیس یا تیس منٹوں میں جاگنا ہو اور ٹیلی ویژن دیکھنا ہو-",
+      "model_translation": "یہ جوڑھ دینگا۔ خاص قدم و شاک آن چل فرگ طبقه حملہ، همیвہ",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: This is just as exhausting as if you were to wake up every twenty or thirty minutes and watch TV.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 16,
+      "source_text": "Learning to create interactive media requires conventional and traditional skills, as well as tools mastered in interactive classes (storyboarding, audio and video editing, story telling, etc.)",
+      "reference_translation": "تعاملی میڈیا کی تخلیق سیکھنے کے لئے رائج اور تقلیدی مہارات کے ساتھ وہ آلیات بھی ضروری ہیں جن کو تم نے تعاملی کلاسوں میں سیکھا (اسٹوری ۔بورڈنگ، آڈیو اور ویڈیو ایڈیٹنگ، اسٹوری ٹیلنگ، وغیرہ۔",
+      "model_translation": "یہ آپ خاص قدیم و شاہدن جوڑ فرک حصہ (وہلاگ علی) ، همه چنگل طبق صحيح ضمیσتو (",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: Learning to create interactive media requires conventional and traditional skills, as well as tools mastered in interactive classes (storyboarding, audio and video editing, story telling, etc.)\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 17,
+      "source_text": "Even standing amidst thousand year-old ruins it is easy to bring to mind the sounds and smells of battles long gone, to almost hear the clatter of hooves on the cobbles and to smell the fear rising from the dungeon pits.",
+      "reference_translation": "زمین دوز قلعه کے گڑھے سے اٹھنے والے خوف کو سونگهنے، تقریبا کھروں پر کھردریوں کا ہنگامہ سننے کے لئے یہاں تک کہ ہزار سالہ کھنڈرات کے درمیان کھڑے طویل مددتی لڑائیوں کی آوازوں اور بو کو محسوس کرنا آسان ہے۔",
+      "model_translation": "این آدم حاصل شدہ جاگرچہ، فلک و خوچشمیہو۔ قبلی تو منگلا سگ دھڑک پہچھتھ �",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: Even standing amidst thousand year-old ruins it is easy to bring to mind the sounds and smells of battles long gone, to almost hear the clatter of hooves on the cobbles and to smell the fear rising from the dungeon pits.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 18,
+      "source_text": "However, very few Royal Navy ships were based near the likely invasion routes as the admirals were afraid they would be sunk by German air attack.",
+      "reference_translation": "تاہم رائل نیوی (برطانوی بحریہ) کے چند ہی جہاز محتمل ہجومی راستوں کے قریب رکھے گئے کیوں کہ اڈمرلس کو خوف تھا کہ جرمن ان کو ہوائی حملہ کرکے ڈبو دیں گے۔",
+      "model_translation": "اگرچہ خاص شاہدین جنگل فوڑھ دوی۔ آدھک عملگ حک만 قدнتم و طر인 صفحہم۔بلغت",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: However, very few Royal Navy ships were based near the likely invasion routes as the admirals were afraid they would be sunk by German air attack.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 19,
+      "source_text": "The Colonists, seeing this activity, had also called for reinforcements.",
+      "reference_translation": "اس سرگرمی کو دیکھ کر، آباد کاروں نے کمک منگوائی تھی۔",
+      "model_translation": "The colonists saw this activity and had also requested reinforcement.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: The Colonists, seeing this activity, had also called for reinforcements.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 20,
+      "source_text": "Individuals who had been involved for several decades helped us appreciate our strengths and passions while candidly assessing difficulties and even failures.",
+      "reference_translation": "جو افراد کئی دہائیوں سے شامل تھے انھوں نے مشکلات اور ناکامیوں کا دوٹوک جائزہ لے کر ہماری طاقتوں اور جذبات کی قدر دانی میں ہماری مدد کی۔",
+      "model_translation": "بین شخصياتوں، قبل هم آنهایہ دنگل،اگرچشمہ،ملک و فرж حق طب جا (جو) علی (ع) گ",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: Individuals who had been involved for several decades helped us appreciate our strengths and passions while candidly assessing difficulties and even failures.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 21,
+      "source_text": "These events normally last anywhere between three and six months, and are held on sites no smaller than 50 hectares.",
+      "reference_translation": "یہ ایونٹس کہیں بھی عموماً تین سے چھ ماہ تک جاری رہتے ہیں، اور ایسے مقامات پر منعقد ہوتے ہیں جن کا رقبہ 50 ہیکٹرز سے نہ ہو۔",
+      "model_translation": "این حادِثو جس چه؟ خوں، قبل صحيح شدہ عاگش ضمنِ 3-6 أشه آئين. وہ،بہنگي فرک",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: These events normally last anywhere between three and six months, and are held on sites no smaller than 50 hectares.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 22,
+      "source_text": "This contradicts earlier reports, which said that cancelling the runoff would have been against the constitution.",
+      "reference_translation": "یہ پہلے والی ان رپورٹس سے متضاد ہے جن میں کہا گیا تھا کہ دوبارہ انتخابات کو منسوخ کرنا دستور کے منافی ہوتا.",
+      "model_translation": "این دوہ حاصل آپ جو گفتوں، قبلہ،اگرچہنگی۔ فقلتھا \"منٹ خر\" چھڑا.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: This contradicts earlier reports, which said that cancelling the runoff would have been against the constitution.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 23,
+      "source_text": "The civilisation flourished in the basins of the Indus River wherefore it derives its name.",
+      "reference_translation": "تہذیب دریائے سندھ کی ترائیوں میں پھلی پھولی جہاں سے اسے اپنا نام ملا۔",
+      "model_translation": "این دنوں، فاطمه آب و قلعہ خاک شیہ،،پہچہنگ جم علی (پل) حضر (می) گرچه،چھتھ �",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: The civilisation flourished in the basins of the Indus River wherefore it derives its name.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 24,
+      "source_text": "Athletes may feel that they prefer a product even when it provides no real benefits.",
+      "reference_translation": "کھلاڑی یہ محسوس کرسکتے ہیں کہ وہ ایسی مصنوعات کو ترجیح دیں حالانکہ اس سے کوئی حقیقی فوائد بھی فراہم نہ ہوتے ہوں۔",
+      "model_translation": "یہ شخص حصہ، قابل آزمن جو دوہنگ چھاڑ فوڑک خیلی تو بہگا۔۔ علاп هم صحيح طب",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: Athletes may feel that they prefer a product even when it provides no real benefits.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 25,
+      "source_text": "Architecture overlaps considerably with other fields including urban planning, civil engineering, decorative arts, interior design and landscape design.",
+      "reference_translation": "شہری منصوبہ بندی، سول انجینئرنگ، آرائشی آرٹس، داخلہ ڈیزائن اور زمین کی تزئین کے ڈیزائن سمیت دیگر شعبوں سے فن تعمیر کافی حد تک بڑھ جاتا ہے۔",
+      "model_translation": "اعضایہ عملیوں، فلک و جوہرڈ گاڑا, خا름 آب دنگی, چل قطعہ, همہن شر가 حک༊م ���",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: Architecture overlaps considerably with other fields including urban planning, civil engineering, decorative arts, interior design and landscape design.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 26,
+      "source_text": "The Brazilian suffered a serious head injury after a crash during the 2009 Hungarian Grand Prix.",
+      "reference_translation": "2009 کے ہنگیرین گرانڈ پرز کے دوران گرنے سے برازیلین کو سر کی شدید چوٹ لگی۔",
+      "model_translation": "این جنگ شارژ دویہ خاک آر๊س حدگہ، فر길 طا้ صحنو عدی بوں، پہلے مہچہ ��������",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: The Brazilian suffered a serious head injury after a crash during the 2009 Hungarian Grand Prix.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 27,
+      "source_text": "The ACMA also found that despite the video being streamed on the Internet, Big Brother had not breached online content censorship laws as the media had not been stored on Big Brother's website.",
+      "reference_translation": "اے سی ایم اے کو یہ بھی پتہ لگا کہ انٹرنیٹ پر ویڈیو کو نشر کیے جانے کے باوجود، بگ برادر نے آن لائن مشمولات کی سنسرشپ کے قوانین کی خلاف ورزی نہیں کی تھی کیونکہ میڈیا فائل بگ برادر کی ویب سائٹ پر محفوظ نہیں کی گئی تھی۔",
+      "model_translation": "ACCMā وہ جوڑ دین آپ قابل حرک صفحه علیہم خدمه، فقلتو شاہدگاڑتھ طب ذر (بہگے) �",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: The ACMA also found that despite the video being streamed on the Internet, Big Brother had not breached online content censorship laws as the media had not been stored on Big Brother's website.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 28,
+      "source_text": "They called themselves the Moriori there were a few skirmishes and in the end, the Moriori were wiped out",
+      "reference_translation": "وہ خود کو موریوری کہتے تھے، ان کے درمیان کئی جھڑپیں بھی ہوتی تھیں اور آخر کار موریوری لوگوں کا صفایا کردیا گیا",
+      "model_translation": "میلادیہ جنگل شاہِ دوہس و خاک آتِش فوڑھ طرگ علی تھا ، پہچے سچھ بن گے، �����",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: They called themselves the Moriori there were a few skirmishes and in the end, the Moriori were wiped out\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 29,
+      "source_text": "Antarctica is the coldest place on Earth, and surrounds the South Pole.",
+      "reference_translation": "انٹارکٹیکا، زمین پر سب سے سرد ترین جگہ ہے اور اس نے جنوبی قطب کو گھیرا ہوا ہے۔",
+      "model_translation": "این جنگلہ آرڈاتوں، قبل صف فلک و خط دوی۔ حق طبی",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: Antarctica is the coldest place on Earth, and surrounds the South Pole.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 30,
+      "source_text": "Brazil is the largest Roman Catholic country on Earth, and the Roman Catholic Church has consistently opposed the legalization of same-sex marriage in the country.",
+      "reference_translation": "برازیل زمین پر سب سے بڑا رومن کیتھولک ملک ہے، اور رومن کیتھولک چرچ نے مستقل طور پر ملک میں ہم جنس شادی کو قانونی حیثیت دینے کی مخالفت کی ہے۔",
+      "model_translation": "Brazil ڈاؤنڈ جوڑایہ صدیق آن دو قبلہ، وہلاک خا년 علگ حرکat شرоف ها (منفعت) في كل چ",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: Brazil is the largest Roman Catholic country on Earth, and the Roman Catholic Church has consistently opposed the legalization of same-sex marriage in the country.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 31,
+      "source_text": "The glaciers are not stable, but flow down the mountain. This will cause cracks, crevasses, which may be obscured by snow bridges.",
+      "reference_translation": "گلیشیرس پائیدار نہیں ہوتے ہیں، لیکن پہاڑ کے نیچے بہتے ہیں۔ اس سے سوراخ، گہرے شگاف ہوتے ہیں، جو برف کی چٹانوں سے ڈھک جاتے ہیں۔",
+      "model_translation": "Glaciers are unstable, but they flow downhill, causing cracks and crevices, which can be hidden by a layer of snow.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: The glaciers are not stable, but flow down the mountain. This will cause cracks, crevasses, which may be obscured by snow bridges.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 32,
+      "source_text": "Day hiking involves distances of less than a mile up to longer distances that can be covered in a single day.",
+      "reference_translation": "دن کے وقت میں پیدل سفر ایک میل سے کم فاصلے سے لے کر زیادہ لمبے فاصلے پر مشتمل ہوتا ہے جو ایک دن میں طے کیا جا سکے۔",
+      "model_translation": "دیو گھڑک چھاڑ شاخایہ جوڑتن آپ دوہٹ ڈیịھ فوkنگ طرگش حکmم صحبه عمل خوа �����",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: Day hiking involves distances of less than a mile up to longer distances that can be covered in a single day.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 33,
+      "source_text": "Wildlife is among the most challenging motifs for a photographer, and needs a combination of good luck, patience, experience and good equipment.",
+      "reference_translation": "جنگلی زندگی فوٹو گرافر کے لئے سب سے چیلنجینگ خیالات میں سے ہے جس کے لئے خوش قسمتی، صبر، تجربہ اور اچھے آلات کے مجموعے کی ضرورت ہوتی ہے۔",
+      "model_translation": "Wildlife ڈائبین شاہدوں، وہ جو خاک آرڈنگ حصّہنٹ دیی, چل عملا, صدھ طر인 ها , فاน �����",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: Wildlife is among the most challenging motifs for a photographer, and needs a combination of good luck, patience, experience and good equipment.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 34,
+      "source_text": "The city is holy to the three monotheistic religions - Judaism, Christianity and Islam, and serves as a spiritual, religious, and cultural center.",
+      "reference_translation": "یہ شہرتین توحیدی مذاہب یعنی یہودیت، مسیحیت، اور اسلام کے لئےمقدس ہے، اور اس کا مقام ایک روحانی، دینی، اور ثقافتی مرکز کا ہے۔",
+      "model_translation": "بہتمین دوہ علیہم و صاحب جنگل ، كاک حلبي همه شعب (جدی) خوچشم, قاہچ فلک, آزم",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: The city is holy to the three monotheistic religions - Judaism, Christianity and Islam, and serves as a spiritual, religious, and cultural center.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 35,
+      "source_text": "For most countries, you will need an offer letter from the institution you wish to study at, and also evidence of funds to support yourself for at least the first year of your course.",
+      "reference_translation": "زیادہ تر ممالک میں جہاں آپ تعلیم حاصل کرنا چاہتے ہیں وہاں کے ادارے سے آفر لیٹر اور کم سے کم خود کیلئے پہلے تعلیمی سال کے اخراجات کے واسطے فنڈ کے ثبوت کی ضرورت ہوگی۔",
+      "model_translation": "بلاک دوہ شائع آپ جوڑ خو گایہ، فلینڈ حس قرچنٹ چے؟",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: For most countries, you will need an offer letter from the institution you wish to study at, and also evidence of funds to support yourself for at least the first year of your course.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 36,
+      "source_text": "Some of the rocks, which are very rare on Earth, are being sold from US$11,000 to $22,500 per ounce, which is about ten times more than the cost of gold.",
+      "reference_translation": "کُچھ چٹانیں، جو زمین پر بہت نایاب ہیں، وہ 11،000 سے 22،500 امریکی ڈالر فی اونس فروخت ہوتی ہیں جو کہ سونے کی قیمت سے کم از کم دس گُنا زیادہ ہے۔",
+      "model_translation": "یہ خاص گاڑوں۔ جو دوہس قدیم طبقه آنلاۓ حدگل فلک شرکa ِ عملے، همےنگ صحيح و",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: Some of the rocks, which are very rare on Earth, are being sold from US$11,000 to $22,500 per ounce, which is about ten times more than the cost of gold.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 37,
+      "source_text": "The focus of this mindset is speed, logic and accuracy, also identification of facts, reapplying existing techniques, gathering information.",
+      "reference_translation": "اس ذہنیت کا نقطہ ارتکاز، رفتار، منطق اور درستگی کے علاوہ حقائق کی شناخت کرنا، موجودہ تکنیک کا دوبارہ استعمال کرنا، معلومات جمع کرنا بھی ہے-",
+      "model_translation": "This mindset focuses on speed, logical thinking, and accuracy. It also identifies facts and reapplies existing techniques.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: The focus of this mindset is speed, logic and accuracy, also identification of facts, reapplying existing techniques, gathering information.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 38,
+      "source_text": "Volunteering while travelling is a great way to make a difference but it's not just about giving.",
+      "reference_translation": "سفر کے دوران رضاکارانہ خدمات انجام دینا کچھ الگ کرنے کے لئے ایک اچھا طریقہ ہے لیکن اس کا مطلب صرف دینا ہی نہیں ہے۔",
+      "model_translation": "بہاؤنڈیو چھاڑ جاۓ شخصیہ آزمنٹ دوں۔ حصّل گرچه طر인 فوہن خوи علی تک قدھ ���",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: Volunteering while travelling is a great way to make a difference but it's not just about giving.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 39,
+      "source_text": "Protesters hope to collect a petition of 1.2 million signatures to present to the National Congress in November.",
+      "reference_translation": "مظاہرین نے امید جتائی ہے کہ نومبر میں نیشنل کانگریس کے سامنے عرضی دائر کرنے کیلئے ان کے پاس 1.2 ملین درخواستیں جمع ہوجائیں گی۔",
+      "model_translation": "میلادیہ جوڑ دو قاہرڈ شاں، 12000 صفحه آپ خوہل گا تک حصہ پڑھا جس طر인م چلے ���",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: Protesters hope to collect a petition of 1.2 million signatures to present to the National Congress in November.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 40,
+      "source_text": "In the beginning of the war they mostly travelled on top of the sea, but as radar began developing and becoming more accurate the submarines were forced to go under water to avoid being seen.",
+      "reference_translation": "جنگ کے آغاز میں، وہ زیادہ تر سمندر کی سطح پر سفر کرتی تھی، لیکن جیسے ہی راڈار تیار ہونا اور زیادہ درست ہونا شروع ہوا، آبدوزیں نظر میں آنے سے بچنے کے لئے پانی کے نیچے جانے پر مجبور ہوگئیں۔",
+      "model_translation": "میلادیہ دو قتل شاہِ جوڑ آزمن خاک علی بنگے تھا جس طر인 صحت پہچے، وہ سڑک ا",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: In the beginning of the war they mostly travelled on top of the sea, but as radar began developing and becoming more accurate the submarines were forced to go under water to avoid being seen.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 41,
+      "source_text": "The Irish government is stressing the urgency of parliamentary legislation to rectify the situation.",
+      "reference_translation": "آئرش حکومت صورتحال کو درست کرنے کے لیے پارلیمانی قانون سازی کی عجلت پر زور دے رہی ہے۔",
+      "model_translation": "The یہدیٰ جنگل خاص دوہ شرک آن حق و عملاں، فوڑھ قاہم گا (می)شے،۔ صحتِ طر인ی (س)",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: The Irish government is stressing the urgency of parliamentary legislation to rectify the situation.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 42,
+      "source_text": "Passengers were given water as they waited in 90(F)-degree heat.",
+      "reference_translation": "مسافروں کو پانی دیا گیا جب وہ 90 ڈگری فارن ہائیٹ کی گرمی میں انتظار کرتے تھے۔",
+      "model_translation": "بہادگایہ جوڑ دینگے، فوہلاک خو شدن آپ قبل صحتِ عا시 هم طرھ حملہ(90°F) چڑھا.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: Passengers were given water as they waited in 90(F)-degree heat.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 43,
+      "source_text": "Arrows from their deadly crossbows could penetrate the armor of rival soldiers. About 1000 B.C., the Assyrians introduced the first cavalry.",
+      "reference_translation": "ان کی جان لیوا آڑی کمان سے تیر نکل کر حریف فوجیوں کی زرہ میں گھس سکتے تھے۔ تقریبا 1000 برس قبل مسیح سب سے پہلے اشوریوں نے پہلا گھڑسوار دستہ متعارف کرایا۔",
+      "model_translation": "ہم خاص طیف شاہدوں، قطع آبویہ و جنگل ڈاک چھڑا (جس حدے) دھب گرچه عملگی. صد-۵",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: Arrows from their deadly crossbows could penetrate the armor of rival soldiers. About 1000 B.C., the Assyrians introduced the first cavalry.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 44,
+      "source_text": "In Rogaland and Agder they are usually called \"hei\" meaning a treeless moorland often covered in heather.",
+      "reference_translation": "روجالینڈ اور ایگڈر میں انہیں عام طور پر \"ہائی'' کہا جاتا ہے جس کا مطلب ہوتا ہے بغیر درخت والے مورلینڈ جو خلنج سے ڈھکے ہوتے ہیں۔",
+      "model_translation": "این جنگل و آغادیہ دوہس شرک فوڑ خاک (پہلے) حی (تو) گا (جا) هے (منٹ) ۔ ، قدھ صحت (",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: In Rogaland and Agder they are usually called \"hei\" meaning a treeless moorland often covered in heather.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 45,
+      "source_text": "The attack put a huge strain on relations between India and Pakistan.",
+      "reference_translation": "اس حملے نے ہندوستان اور پاکستان کے تعلقات کو بہت پیچیدہ کر دیا ہے۔",
+      "model_translation": "این جنگ دویہ خطاب آپ گھڑاک شدہ، فلس و علی بوڑھ حق صحتمنٹ چھتڑ ذہن",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: The attack put a huge strain on relations between India and Pakistan.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 46,
+      "source_text": "No airline alliance covers all three ocean crossings in the Southern Hemisphere (and SkyTeam covers none of the crossings).",
+      "reference_translation": "جنوبی نِصف کُرہ میں کوئی بھی ایئر لائن الائنس ان تینوں سمندی کراسسنگز کا احاطہ نہیں کرتا (اور سکائی ٹیم کسی بھی کراسسنگز کا احاطہ نہیں کرتی)-",
+      "model_translation": "No عمل آلہ حمیم دو قطاع خاک صفحہ (وہ) شاہدی (تو) چھتھ جنگل، فوڑا (سچر) و (شیہن)",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: No airline alliance covers all three ocean crossings in the Southern Hemisphere (and SkyTeam covers none of the crossings).\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 47,
+      "source_text": "Coffee is one of the world's most traded commodities, and you can probably find many types in your home region.",
+      "reference_translation": "کافی دنیا کی سب سے زیادہ تجارت والی اشیاء میں سے ایک ہے، اور آپکو اپنے آبائی علاقے میں اسکی کئی قسمیں مل جائیں گی۔",
+      "model_translation": "میلادیہ دو شخص جاۓ آپ چل وہاں، فلک حوڑ گرچھ صحتمنٹ علی سگ قطعہ تھا.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: Coffee is one of the world's most traded commodities, and you can probably find many types in your home region.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 48,
+      "source_text": "Piquet Jr. was sacked after the 2009 Hungarian Grand Prix.",
+      "reference_translation": "2009 کے ہنگری گرانڈ پری کے بعد پیکیٹ جونیئر کو برخواست کر دیا گیا تھا-",
+      "model_translation": "پیٹ جو دوہ صاحب خاک شدہ، قرچنٹا۔ فوڑ آپ گر리 طبقه حل علیہم ضمن ذلتها",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: Piquet Jr. was sacked after the 2009 Hungarian Grand Prix.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 49,
+      "source_text": "Lead researchers say this may bring early detection of cancer, tuberculosis, HIV and malaria to patients in low-income countries, where the survival rates for illnesses such as breast cancer can be half those of richer countries.",
+      "reference_translation": "سرکردہ محققین کہتے ہیں کہ اس سے کم آمدنی والے ممالک کے مریضوں میں کینسر، تپ و دق، ایچ آئی وی اور ملیریا کا جلد پتہ چل سکتا ہے، جہاں چھاتی کے کینسر جیسی بیماریوں سے بچنے کی شرح امیر ممالک کی مقابلے میں نصف ہو سکتی ہے۔",
+      "model_translation": "میلادیہ شرک و جنگل دوہس فوڑ آزمن خاک, طبقه حو-ای, هم صحتِ عاмم-بہنو, �������",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: Lead researchers say this may bring early detection of cancer, tuberculosis, HIV and malaria to patients in low-income countries, where the survival rates for illnesses such as breast cancer can be half those of richer countries.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 50,
+      "source_text": "We experience time as a series of events passing from the future through the present to the past.",
+      "reference_translation": "ہم وقت کو واقعات کے ایک سلسلے کے طور پر گُزارتے ہیں جو کہ مستقبل سے حال کے ذریعے ماضی تک جاپہنچتا ہے۔",
+      "model_translation": "تمہاذب جو قدیم آئين شده ، وہ خاک حس فرگزنموں؟",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: We experience time as a series of events passing from the future through the present to the past.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 51,
+      "source_text": "San Francisco is also one of the best places in the nation for other Asian cuisine: Korean, Thai, Indian, and Japanese.",
+      "reference_translation": "سان فرانسسکو بھی قوم میں دیگر ایشیائی پکوانوں کے لیے سب سے بہترین جگہوں میں سے ایک ہے: کوریائی، تھائی، بھارتی اور جاپانی۔",
+      "model_translation": "SAN FRANCISCO آپ دین خاص یہ جس شاہدو قوڑ فرک وہنگ طبلہ: چنين, گاڑا, علبی, كو리ا , حمی",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: San Francisco is also one of the best places in the nation for other Asian cuisine: Korean, Thai, Indian, and Japanese.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 52,
+      "source_text": "\"Apart from the fever and a sore throat, I feel well and in good shape to carry out my work by telecommuting.",
+      "reference_translation": "\"بُخار اور خراب گلا ہونے کے علاوہ، مَیں خُود کو اچھی اور بہتر حالت میں محسوس کررہا ہوں کہ ٹیلی کمیوٹنگ کے ذریعے اپنا کام جاری رکھ سکوں۔",
+      "model_translation": "\"اس قدیم و حق شخص آپ جوڑ گای۔ دوہ عمل چھاڑنُں۔\"",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: \"Apart from the fever and a sore throat, I feel well and in good shape to carry out my work by telecommuting.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 53,
+      "source_text": "Phases happen because only the side of Venus (or of the Moon) facing the Sun is lighted. The phases of Venus supported the theory of Copernicus that the planets go around the Sun.",
+      "reference_translation": "یہ فیزز صرف اس لیے رونما ہوتے ہیں کیونکہ زھرہ (یا چاند کی) سورج کی جانب عیاں ہونے والی محض ایک جانب روشن ہوتی ہے۔ زھرہ کے کاپرنیکس کے اس نظریے کی حمایت کرتے ہیں کہ سیارے سورج کے گرد چکر لگاتے ہیں۔",
+      "model_translation": "این فاصلہ جو شب آبوی (یہ) خوڑ چھاڑا (تو) قرک دے، هم طر인 صحت (ہم) گئي ۔ عمل ���",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: Phases happen because only the side of Venus (or of the Moon) facing the Sun is lighted. The phases of Venus supported the theory of Copernicus that the planets go around the Sun.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 54,
+      "source_text": "This can be done in a normal car with careful planning but a 4x4 is highly advised and many locations are only accessible with a high wheel base 4x4.",
+      "reference_translation": "یہ کام ایک محتاط منصوبہ بندی کے ساتھ ایک معمولی کار میں ہو سکتا ہے۔ تاہم ایک 4x4 کی شدید صلاح دی جاتی ہے اور بہت سے مقامات 4x4 کے بیس والے پہیوں کے ساتھ ہی قابل رسائی ہو سکتے ہیں۔",
+      "model_translation": "یہ جوڑ شائع آپ خاک دینگا۔ وہ، قدم صدھ چھتو طرگ عمل فقه ها (پہلے) ڈی리 حس ���",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: This can be done in a normal car with careful planning but a 4x4 is highly advised and many locations are only accessible with a high wheel base 4x4.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 55,
+      "source_text": "The modern sport of fencing is played at many levels, from students learning at a university to professional and Olympic competition.",
+      "reference_translation": "تلوار بازی کا جدید کھیل، یونیورسٹی میں پڑھنے والے طلبہ سے لے کر پیشہ ور اور اولمپک کے مقابلوں تک، کافی سطحوں پر کھیلا جاتا ہے۔",
+      "model_translation": "Fencing is a modern sport that is played by many people at different levels.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: The modern sport of fencing is played at many levels, from students learning at a university to professional and Olympic competition.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 56,
+      "source_text": "The unmanned lunar orbiter Chandrayaan-1 ejected its Moon Impact Probe (MIP), which hurtled across the surface of the Moon at 1.5 kilometres per second (3000 miles per hour), and successfully crash landed near the Moon's south pole.",
+      "reference_translation": "غیر انسان بردار قمری طوّاف چندرائن-1 نے اپنے مون امپیکٹ پروب کو خارج کیا جو چاند کی سطح پر 1.5 کلومیٹر فی سیکنڈ (3000 میل فی گھنٹہ) کی رفتار سے چکر لگا کر چاند کے جنوبی قطب کے قریب کامیابی سے اتر گیا۔",
+      "model_translation": "चन्द्रयान-1 चंद्रमा की कक्षा से बाहर निकल गया और चंद्रमा के दक्षिणी ध्रुव के पास एक उथले गड्ढे में दुर्घटनाग्रस्त हो गया।",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: The unmanned lunar orbiter Chandrayaan-1 ejected its Moon Impact Probe (MIP), which hurtled across the surface of the Moon at 1.5 kilometres per second (3000 miles per hour), and successfully crash landed near the Moon's south pole.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 57,
+      "source_text": "\"The CCTV would certainly send a strong signal to those people working with animals that their welfare is of the highest priority.\"",
+      "reference_translation": "\"سی سی ٹی وی یقیناً حیوانات کے ساتھ کام کرنے والے افراد کو یہ سگنل دے گا کہ جانوروں کی بہبود اعلیٰ ترجیح کی حامل ہے۔\"",
+      "model_translation": "\"این چھاڑ جوڑا، وہ شخص قبل آپ دو طرک گر (CCTV) حق عملیہ (مہم صحت) فر-و-لا (پہچے)",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: \"The CCTV would certainly send a strong signal to those people working with animals that their welfare is of the highest priority.\"\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 58,
+      "source_text": "Lodin also said officials decided to cancel the runoff in order to save Afghans the expense and security risk of another election.",
+      "reference_translation": "لوڈین نے یہ بھی بتایا کہ عہدیداروں نے افغانوں کو دوسرے انتخابات کے اخراجات اور سیکیورٹی کے خطرے سے بچانے کیلئے فیصلہ کُن انتخاب منسوخ کرنے کا فیصلہ کیا ہے۔",
+      "model_translation": "لدین وہ خاتمہ، فقط آفاک جنگل دو حصہنم گای۔ عملڈوںِ طرگ چھتھ شد.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: Lodin also said officials decided to cancel the runoff in order to save Afghans the expense and security risk of another election.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 59,
+      "source_text": "First, the switch for the light fixture needs to be turned off or the cable disconnected.",
+      "reference_translation": "سب سے پہلے، بجلی ٹھیک کرنے کے لئے سوئچ کو بند کرنے یا کیبل منقطع کرنے کی ضرورت ہے۔",
+      "model_translation": "بلاغتو دوں، وہ شخص آپ چل جاۓ یہاں۔ حدیق طرگ ڈا리 گئا",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: First, the switch for the light fixture needs to be turned off or the cable disconnected.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 60,
+      "source_text": "In the rainy season (November to March), the water volume will be higher and the Falls will be more dramatic.",
+      "reference_translation": "بارش کے موسم (نومبر سے مارچ) میں پانی کی سطح بلند ہوگی اور آبشار بھی بہت ڈرامائی ہوں گے۔",
+      "model_translation": "بہنو صفحات (جوڑ آٹھا) دوہ شدہ (میٹنڈی) قبل جاۓ فلاڈ گرچه ڈا리 چھڑا.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: In the rainy season (November to March), the water volume will be higher and the Falls will be more dramatic.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 61,
+      "source_text": "Sometimes the original trigging event is the sun warming the snow, sometimes some more snowfall, sometimes other natural events, often a human.",
+      "reference_translation": "بعض اوقات اصل محرک واقعہ برف کو گرما دینے والا سورج ہوتا ہے، کبھی کبھی کچھ زیادہ برف باری ہوتی ہے، کبھی دوسرے قدرتی مظاہر، تو اکثر کوئی انسان۔",
+      "model_translation": "یہ دو قدیم جوڑ شائع آپ خاک صفحہ، وہلڑا۔ فقه عمل گرچہ",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: Sometimes the original trigging event is the sun warming the snow, sometimes some more snowfall, sometimes other natural events, often a human.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 62,
+      "source_text": "Space for the most popular areas, such as the Bright Angel Campground adjacent to Phantom Ranch, generally fill up by the requests received on first date they are opened to reservations.",
+      "reference_translation": "سب سے مقبول علاقوں کی جگہ، جیسا کہ فینٹم رینچ سے متصل برائٹ اینجل کیمپ گراؤنڈ، عموماً رزرویشن کھلنے کی پہلی تاریخ پر موصول ہونے والی درخواستوں سے بھر جاتی ہے۔",
+      "model_translation": "Space دینگاہ آپ خاص شاک جو قدم فوڑ حل علیہُ طبقه صفحہ، همه،بہچرچ وہ- ذا - ثا- گ",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: Space for the most popular areas, such as the Bright Angel Campground adjacent to Phantom Ranch, generally fill up by the requests received on first date they are opened to reservations.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 63,
+      "source_text": "Doctors began to be recruited by Emperor Augustus and even formed the first Roman Medical Corps for use in the aftermath of battles.",
+      "reference_translation": "شہنشاہ آگسٹس کے ذریعے ڈاکٹروں کی بھرتی شروع ہوئی اور انہوں نے جنگوں کے بعد استعمال ہونے والا سب سے پہلا رومن میڈیکل کارپس بھی بنایا۔",
+      "model_translation": "ایمن دوہ عاشق آقا بنگلی و جوڑ گرچه شدہ تک حضر میہاں جس طر위 خا년 و پہلا ا",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: Doctors began to be recruited by Emperor Augustus and even formed the first Roman Medical Corps for use in the aftermath of battles.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 64,
+      "source_text": "Nitrogen as a gas still has the same properties as liquid nitrogen. The liquid state is denser but the molecules are still the same.",
+      "reference_translation": "گیس کے لحاظ سے نائٹروجن میں مائع نائٹروجن جیسی خصوصیات موجود ہیں۔ مائع حالت زیادہ کثیف ہے لیکن سالمے اب بھی یکساں ہیں۔",
+      "model_translation": "این جادو شدہ طا산 آب خاک صفحہ، وہلڑ قبل علیہ (منگل) فوڑھتھ حس دھڑا (پہچے) ،",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: Nitrogen as a gas still has the same properties as liquid nitrogen. The liquid state is denser but the molecules are still the same.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 65,
+      "source_text": "Most televisions are made in a way to please the general public.",
+      "reference_translation": "زیادہ تر ٹیلی ویژن لوگوں کو خوش کرنے کیلئے بنائے گئے ہیں۔",
+      "model_translation": "این خاص قدم طیہ جوڑ شاک آنڈے، وہو حس علی (تو) دھب گرچه صحيح ضمني هو (می) �����",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: Most televisions are made in a way to please the general public.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 66,
+      "source_text": "A traveller with piles of money might consider a round the world flight, broken up with stays in many of these hotels.",
+      "reference_translation": "ایک مسافر جس کے پاس بہت زیادہ رقم ہو وہ دنیا کے گرد جہاز میں سفر کرنے پر غور کرنا چاہیئے اور ان ہی میں سے کئی ہوٹلز میں علیٰحدہ قیام کرنا۔",
+      "model_translation": "این شخص حاصل آپ دو قطعہ جوڑ چک گاڑویے، فرگہنگ علی تو منٹ ها پہچے.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: A traveller with piles of money might consider a round the world flight, broken up with stays in many of these hotels.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 67,
+      "source_text": "During the 18th century Cambodia found itself squeezed between two powerful neighbors, Thailand and Vietnam.",
+      "reference_translation": "اٹھارہویں (18) صدی میں کمبوڈیا نے خود کو دو طاقتور پڑوسیوں تھائی لینڈ اور ویتنام کے مابین دبا ہوا پایا۔",
+      "model_translation": "Công khánh ấy ở ကျွန်တော့ ��������������������������������������������������������������������������������",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: During the 18th century Cambodia found itself squeezed between two powerful neighbors, Thailand and Vietnam.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 68,
+      "source_text": "If you visit Greenland during cold seasons (considering that the further north you go, the colder it will be), it is essential to bring warm enough clothing.",
+      "reference_translation": "اگر آپ سردی کے موسم میں گرین لینڈ کی سیاحت کرنا چاہتے ہیں (تو اس بات کو مدِ نظر رکھتے ہوئے کہ جتنی دور شمال میں جائیں گے اتنی ہی زیادہ سردی ہو گی) لازم ہے کہ آپ کافی تعداد میں گرم کپڑے لے جائیں۔",
+      "model_translation": "اس قدیم طبقه شدن گرچہ جوڑایہ، فلک آب دھاگےتو حصہنگيتھ خلاm چل صحيفت.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: If you visit Greenland during cold seasons (considering that the further north you go, the colder it will be), it is essential to bring warm enough clothing.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 69,
+      "source_text": "Unattended bags are a target for theft and can also attract attention from authorities wary of bomb threats.",
+      "reference_translation": "لاوارث بیگس چوروں کے نشانے پر ہوتے ہیں اور بم کے خطرات سے چوکنےحکّام کی اس طرف نگاہ پڑسکتی ہے۔",
+      "model_translation": "بلاک خاص آپ چل دینگ، وہ جو حصّہِ شاہدوںُ قب عملیہ (تو) فرگِس طبی(ا) �����������",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: Unattended bags are a target for theft and can also attract attention from authorities wary of bomb threats.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 70,
+      "source_text": "Time is something that is all around us, and affects everything we do, yet is difficult to understand.",
+      "reference_translation": "وقت ایسی چیز ہے جو ہمارے ارد گرد موجود ہے اور ہم جو بھی کرتے ہیں اس کو متاثر کرتا ہے، پھر بھی اس کو سمجھنا دشوار ہے۔",
+      "model_translation": "تمین شدہ یہاں اس قدم و خوچہ سگر بلاہوی ملک آپ چل جو چھڑا پہڑ فرڑھتھ حس ر",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: Time is something that is all around us, and affects everything we do, yet is difficult to understand.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 71,
+      "source_text": "How would Io's gravity pull on me? If you stood on the surface of Io, you would weigh less than you do on Earth.",
+      "reference_translation": "لو کی کشش مجھے کیسے کھینچ سکتی ہے؟ اگر تم لو کی سطح پر کھڑے ہو تو تمہارا وزن زمین پر تمہارے وزن سے کم ہو گا۔",
+      "model_translation": "Io ڈاؤن گرچہ دینگے؟ جو آپ چلتوں، وہلک شاہدگ خاڑتھ صحبه عمل فر-می-نٹا.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: How would Io's gravity pull on me? If you stood on the surface of Io, you would weigh less than you do on Earth.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 72,
+      "source_text": "The whole district is designated as a UNESCO World Heritage Site for its unique cultural and historical value, and its property values are among the highest of the country.",
+      "reference_translation": "پورے ضلع سے اس کی منفرد ثقافتی اور تاریخی اہمیت کے لئے ایک یونیسکو عالمی ثقافتی ورثہ سائٹ کے طور پر نامزد کیا جاتا ہے، اور اس کی خاصیت ملک کی اعلی اقدار میں سے ایک ہے.",
+      "model_translation": "بین جنگل قائم في حملہ و خاک شدہ، هرگزِ آدمیےنوڑ طبقه صفحہِس علاۓ دھا-���",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: The whole district is designated as a UNESCO World Heritage Site for its unique cultural and historical value, and its property values are among the highest of the country.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 73,
+      "source_text": "The different constructions have different capabilities, are sensitive to different wave-lengths and have differing degrees of acuity, also they require different processing to make sense of the input and different numbers to work optimally.",
+      "reference_translation": "مختلف تعمیراتی ہیکلوں کی مختلف صلاحیتیں ہوتی ہیں، وہ مختلف طول کی لہر کے لئے حساس ہوتے ہیں اور ان میں حدت کے مختلف درجات ہوتے ہیں، ان کو بہتر طریقے سے کام کرنے کے واسطے ان-پٹس اور مختلف نمبرات کو سمجھنے کے لیے مختلف پروسیسنگ کی ضرورت بھی پڑتی ہے۔",
+      "model_translation": "این آدم خلاصہ جو شخصيتوں، فوہاں, قو : حس دیے, طنف ها, چڑھ صح عمل كرچه يو, ی",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: The different constructions have different capabilities, are sensitive to different wave-lengths and have differing degrees of acuity, also they require different processing to make sense of the input and different numbers to work optimally.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 74,
+      "source_text": "250 years later, Guinness has grown to a global business that turns over 10 billion euros (US$14.7 billion) every year.",
+      "reference_translation": "250 سال بعد گینز ترقی کر کے ایک عالمی کاروبار بن گیا ہے جس کا سالانہ ٹرن اوور10 بلین یورو (14.7 بلین امریکی ڈالر) سے زیادہ ہے۔",
+      "model_translation": "۲۶۰ شش دن قبل گینِس حاصلایہ عملک جنگلہ، فوڑھاڑ آپ خرچ ۱۴۰۸۔۔ ۹۵۰٪ وہٹر",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: 250 years later, Guinness has grown to a global business that turns over 10 billion euros (US$14.7 billion) every year.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 75,
+      "source_text": "He was immediately attended to by the on-track medical staff and transported to a local hospital where he later died.",
+      "reference_translation": "اس کو فوری طور پر جگہ پر موجود طبی عملے نے دیکھا اور اُنہیں ایک مقامی ہسپتال میں منتقل کیا گیا جہاں بعد میں وہ وفات پاگیا۔",
+      "model_translation": "یہ جنگل حاصلین وہاگ دوڑا۔ آپ قبلا تو طرک عملڈش فضح شد۔، هم خدھ گا",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: He was immediately attended to by the on-track medical staff and transported to a local hospital where he later died.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 76,
+      "source_text": "Mr Reid managed to drive the New Zealand's A1GP car, Black Beauty at speeds over 160km/h seven times over the bridge.",
+      "reference_translation": "مسٹر ریڈ نے پل کے اوپر سات بار 160 کلومیٹر سے بھی زیادہ فی گھنٹہ کی رفتار سے نیوزی لینڈ کی A1GP کار, بلیک بیوٹی کو چلانے میں کامیابی حاصل کی۔",
+      "model_translation": "Mīr Rīdī mānī ṭīzī sē tārqī kar rāhī hūṇī hai. Ḥaṛī bīḍī nājīmī vāṣī tīs baḥtī pīlā vēṃ 1,600 km/h 7 vaar",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: Mr Reid managed to drive the New Zealand's A1GP car, Black Beauty at speeds over 160km/h seven times over the bridge.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 77,
+      "source_text": "The judge told Blake it was \"almost inevitable\" he was going to be sent to jail.",
+      "reference_translation": "جج نے بلیک کو بتایا کہ اسے جیل بھیجے جانے کا فیصلہ “تقریباً ناگزیر” ہو گیا تھا۔",
+      "model_translation": "اس جنگل دوہ شاہدیو آپ خاک چھتھ فوڑ گئي حصہمیے، قرچنه عملگ ڈیḍ ذی",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: The judge told Blake it was \"almost inevitable\" he was going to be sent to jail.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 78,
+      "source_text": "Humans have been making and using lenses for magnification for thousands and thousands of years.",
+      "reference_translation": "انسان ہزاروں برسوں سے بڑی بینائی کے لئے چشمے بناتے رہے ہيں اور اسے استعمال کرتے رہے ہیں۔",
+      "model_translation": "ملاحظہ شاہدین جوڑ دو قبل هم خاک آئنڈے، وہلچھ طرگ علیہ (عجا) صحيح ضر",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: Humans have been making and using lenses for magnification for thousands and thousands of years.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 79,
+      "source_text": "Middle distance running is a relatively inexpensive sport; however, there are many misconceptions regarding the few pieces of equipment required to participate.",
+      "reference_translation": "درمیانہ دوری کی دوڑ نسبتا ایک سستا کھیل ہے۔ تاہم شرکت کرنے کے لئے مطلوب کچھ آلات کے تعلق سے بہت سی غلط فہمیاں ہیں۔",
+      "model_translation": "میلادیہ شاک دوں، وہو جاۓ حصہ،۔ آپ چل گا",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: Middle distance running is a relatively inexpensive sport; however, there are many misconceptions regarding the few pieces of equipment required to participate.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 80,
+      "source_text": "The failure of the second sentence, which proposes to ban same-sex civil unions, could possibly open the door for civil unions in the future.",
+      "reference_translation": "دوسرے جملے کی ناکامی، جو ہم جنس سول یونینوں پر پابندی عائد کرنے کی تجویز پیش کرتا ہے، ممکنہ طور پر مستقبل میں سول یونینوں کیلئے دروازے کھول سکتا ہے۔",
+      "model_translation": "یہ جنگل دوین خاص شرک آنلاگ قبلہ، فلڈس و عموںم گاہڈ چھتھ طر인 صحتمی (ج) حق",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: The failure of the second sentence, which proposes to ban same-sex civil unions, could possibly open the door for civil unions in the future.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 81,
+      "source_text": "Families with children are a rare sight, but some hostels do allow them in private rooms.",
+      "reference_translation": "بچوں کے ساتھ خاندان شاز و نادر دیکھنے کو ملتے ہیں لیکن کچھ ہاسٹلز پرائویٹ کمروں میں ان کو اجازت دیتے ہیں۔",
+      "model_translation": "بہادگی۔ دوڑ خاک و جنگل آئين فلاینٹ قرچہ شدہو۔، هم چلے،بلڑھ حصّہ",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: Families with children are a rare sight, but some hostels do allow them in private rooms.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 82,
+      "source_text": "Beware: small-town bars here are not always good places for the out-of-state visitor to hang out.",
+      "reference_translation": "خبردار: چھوٹی بستیوں کے بار یا زرابگاہیں پردیسیوں کے لیے آنے اور بیٹھنے کے لیے ہمیشہ اچھی جگہیں نہیں ہوتیں۔",
+      "model_translation": "بہادگی: یہ شخص قبل آزمین جوڑ دو حک عاگش فوہنگ ها۔ خلا",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: Beware: small-town bars here are not always good places for the out-of-state visitor to hang out.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 83,
+      "source_text": "maybe you'll discover a simple beverage that you can make for breakfast when you're back to your daily routine.",
+      "reference_translation": "شاید آپ کوئی آسان مشروب دریافت کریں گے جو آپ اپنے روز مرہ کے معمول میں واپس آکر اسے ناشتہ بناسکتے ہیں۔",
+      "model_translation": "یہ شخص حاصل آپ دو قدیم عمل karegi, jab aap apne daily routine mein vapas aayenge.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: maybe you'll discover a simple beverage that you can make for breakfast when you're back to your daily routine.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 84,
+      "source_text": "England had experienced a long period of peace after the reconquest of the Danelaw.",
+      "reference_translation": "ڈین لاء پر دوبارہ غالب آنے کے بعد برطانیہ میں ایک طویل عرصے تک امن قائم رہا۔",
+      "model_translation": "این جنگلہ دنلاک حاصل شدہ، وہلڑ آئيں۔ خا년 گرچه قدھ فوڑھا.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: England had experienced a long period of peace after the reconquest of the Danelaw.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 85,
+      "source_text": "This is when people go to a place that is very different from their regular day-to-day life to relax and have fun.",
+      "reference_translation": "یہ تب واقع ہوتا ہے جب لوگ سکون پانے اور لطف اندوز ہونے کے لیے اپنی روز بہ روز کی باقاعدہ زندگی سے بالکل مختلف جگہ پر جاتے ہیں۔",
+      "model_translation": "یہ دو جائزگا۔ شخص آپ چل قبیلہ، فوڑک ڈاگ گے؟",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: This is when people go to a place that is very different from their regular day-to-day life to relax and have fun.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 86,
+      "source_text": "Although most agencies are willing to take on most regular bookings, many agents specialise in particular types of travel, budget ranges or destinations.",
+      "reference_translation": "اگرچہ بہت ساری ایجنسیاں اس بات پر راضی ہیں کہ وہ باقاعدہ بکنگ کرتی رہیں، بہت سارے ایجنٹس خاص قسم کے سفر، بجٹ کی حدود یا منزل مقصود کے متعلق مہارت رکھتے ہیں۔",
+      "model_translation": "بلادیوں، قاہتن شاک و دنگل آزمنٹ جویہ طر인 خو-ب حصے،بہم علگ گرچه صحيح �����",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: Although most agencies are willing to take on most regular bookings, many agents specialise in particular types of travel, budget ranges or destinations.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 87,
+      "source_text": "With the same time zone as Hawaii, the islands are sometimes thought of as \"Hawaii down under\".",
+      "reference_translation": "ہوائی کی ہی طرح ایک ہی ٹائم زون والے یہ جزیرے کبھی کبھار \"ہوائی ڈاؤن انڈر\" تصور کیا جاتا ہے۔",
+      "model_translation": "Hāwārī دین حائلیہ صفحه شده۔ جنوච خاک آنچل طبق علتها۔، وہو قدھ ظاย فقهوں",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: With the same time zone as Hawaii, the islands are sometimes thought of as \"Hawaii down under\".\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 88,
+      "source_text": "This type of thinking is associated with certain science or standard procedures.",
+      "reference_translation": "اس قسم کی سوچ کا تعلق بعض سائنس یا معیاری طریقہ کار سے وابستہ ہوتا ہے۔",
+      "model_translation": "این جوڑ شعبہ طبق آپ چہائٹ دیےتو قدم علاک صحب خط فوہنگ گرچه ضمنو.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: This type of thinking is associated with certain science or standard procedures.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 89,
+      "source_text": "There were protests worldwide, several criminal prosecutions, and the leaders of the governments of Iceland and Pakistan both resigned.",
+      "reference_translation": "دنیا بھر میں مظاہرے ہوئے تھے، فوجداری کے متعدد استغاثے قائم کئے گئے، اور آئس لینڈ اور پاکستان دونوں سرکاروں کے قائدین کو استعفی دینا پڑا تھا۔",
+      "model_translation": "بین جنگلہ و قائل فوڑھ دوہس آنلاک شاہِ علگی۔ حضوݢتِہچِرچ همه خا년 طر인 ���",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: There were protests worldwide, several criminal prosecutions, and the leaders of the governments of Iceland and Pakistan both resigned.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 90,
+      "source_text": "He did, however, reiterate his earlier statement that Roe v. Wade was the \"settled law of the land\", emphasizing the importance of consistent Supreme Court rulings.",
+      "reference_translation": "تاہم، انہوں نے اپنے پہلے بیان کا اعادہ کیا کہ رو وی ویڈ ہی \"ملک کا مقررہ قانون\" ہے، جس سے سپریم کورٹ کے مستقل احکام کی اہمیت کی تاکید ہوتی ہے۔",
+      "model_translation": "یہ جوڑ دینگاہو شارڈ وہاں، قبل آپ گو́ش چک خوиم حوʼلے،۔۔ عدمِ ثقلگ صدھ طا",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: He did, however, reiterate his earlier statement that Roe v. Wade was the \"settled law of the land\", emphasizing the importance of consistent Supreme Court rulings.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 91,
+      "source_text": "General James Ewing would take 700 militia across the river at Trenton Ferry, seize the bridge over the Assunpink Creek and prevent any enemy troops from escaping.",
+      "reference_translation": "جنرل جیمز ایونگ کو ٹرینٹن فیری میں دریا کے پار 700 رضاکار افواج کو لے کر، اسونپنک کریک کے پل پر قبضہ کرنا تھا اور دشمن کے کسی بھی دستے کو فرار ہونے سے روکنا تھا-",
+      "model_translation": "جنگلہ عاصم يوڈیو دوہس جاۓ شاگرچے، قطن آبیہل خا니گ چھتھ حک گےنٹ فا่ک (تو",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: General James Ewing would take 700 militia across the river at Trenton Ferry, seize the bridge over the Assunpink Creek and prevent any enemy troops from escaping.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 92,
+      "source_text": "Car camping is possible if you have a large minivan, SUV, Sedan or Station Wagon with seats that lay down.",
+      "reference_translation": "کار کیمپنگ اسی صورت میں ممکن ہے جب تمہارے پاس منی وین یا سپورٹ یوٹیلیٹی ویھیکل یا سیڈن یا اسٹیشن ویگن جس میں ایسی سیٹیں ہوں جن پر آدمی لیٹ سکے۔",
+      "model_translation": "این دو شخص حاصل آپ جملہ صحيحہ، وہلاک فوڑ ها, قطر, غرچل, گلڈی, یہڈا (سڑھا) �",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: Car camping is possible if you have a large minivan, SUV, Sedan or Station Wagon with seats that lay down.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 93,
+      "source_text": "The US Navy also said they were investigating the incident.",
+      "reference_translation": "اقوام متحدہ کی بحری فوج نے یہ بھی کہا کہ وہ حادثے کی تحقیق کر رہی ہے۔",
+      "model_translation": "اس ویلیہ جنگل ، فلاک آپ دوں؟ شاہدی.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: The US Navy also said they were investigating the incident.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 94,
+      "source_text": "Born in Hong Kong, Ma studied at New York University and Harvard Law School and once held an American permanent resident \"green card\".",
+      "reference_translation": "ہانگ کانگ میں پیدا ہونے والے ما نے نیویارک یونیورسٹی اور ہارورڈ کے اسکول برائے قانون میں تعلیم حاصل کی اور ایک بار ان کے پاس امریکی مستقل رہائش کیلئے مطلوب \"گرین کارڈ\" بھی تھا۔",
+      "model_translation": "میلادہ هوگنگ قبل حملہ، وہو خاک جنم آپ شاہڈی۔ علگی-عجب طبی faculties ِ فلอ ���������",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: Born in Hong Kong, Ma studied at New York University and Harvard Law School and once held an American permanent resident \"green card\".\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 95,
+      "source_text": "He would need to be judged differently if he had lost his car keys and it was his own car that he was trying to break into.",
+      "reference_translation": "ہمیں اسکے الگ طرح سے سوچنا ہوگا کہ شاید ان کے گاڑی کی کنجی کھو گئی ہے اور یہ اسکی اپنی ہی کار تھی جسے وہ توڑنے کی کوشش کر رہا تھا-",
+      "model_translation": "یہ جو خاص طویل حصہ، قدم آزمن شاہنٹ دے؟ وڈ چھاڑ صفحہ",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: He would need to be judged differently if he had lost his car keys and it was his own car that he was trying to break into.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 96,
+      "source_text": "We know many Greek politicians, scientists, and artists. Possibly the most known person of this culture is Homer, the legendary blind poet, who composed two masterpieces of Greek literature: the poems Iliad and Odyssey.",
+      "reference_translation": "ہم بہت سے یونانی سیاستدانوں، سائنسدانوں اور فنکاروں کو جانتے ہیں- ممکنہ طور پر اس تہذيب کا سب سے معروف شخص ایک افسانوی نابینہ شاعر ہومر ہے، جنہوں نے یونانی ادب کے دو شاہکاریں: الییاد اور اوڈیسی نظمیں مرتب کیں۔",
+      "model_translation": "Gırımın ışıkı politikaları, fizikçi ve kültüründeki mükemmel insanlar olarak bilinenlerden biri İsrailçı Homer'dur. Homer tarafından oluşturulmuş olan iki mahsûlüdur Iliyas ve Odysyas.",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: We know many Greek politicians, scientists, and artists. Possibly the most known person of this culture is Homer, the legendary blind poet, who composed two masterpieces of Greek literature: the poems Iliad and Odyssey.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 97,
+      "source_text": "Already reporting in English and Japanese, the global organization is launching Spanish, Italian, and Korean-language programs, for television, the web, and mobile devices.",
+      "reference_translation": "پہلے سے انگلش اور جاپانی میں رپورٹ کرنے والی یہ عالمی تنظیم اب ٹیلی وژن، ویب، اور موبائل ڈیوائسز کے لئے اسپینیش؛ اٹالیان، اور کورین زبانوں کے پروگرام لانچ کرنے جا رہی ہے۔",
+      "model_translation": "این جنگلہ علائم دو شخصیہ، فلک وہنوگ آزمن, حرچمہ, قاچے, چھتھ طر인 ِ صدی (تو",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: Already reporting in English and Japanese, the global organization is launching Spanish, Italian, and Korean-language programs, for television, the web, and mobile devices.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 98,
+      "source_text": "Every corner store is filled with a confusing array of pre-paid phone cards that can be used from pay phones or ordinary telephones.",
+      "reference_translation": "رہائشی علاقوں کی ہر چھوٹی دکان میں پیشگی ادائیگی کردہ فون کارڈز کی پریشان کن صفوں کی بھرمار ہے جو کہ پے فونز یا عام ٹیلیفونز سے استعمال کیے جا سکتے ہیں۔",
+      "model_translation": "میلادیہ دو قطرک آپ جوڑ شاہٹ فلڈس وہاگ صحتمنٹنگے، هم علی “پی” خا니ب حل ضر",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: Every corner store is filled with a confusing array of pre-paid phone cards that can be used from pay phones or ordinary telephones.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    },
+    {
+      "pair_key": "flores_en-ur",
+      "example_index": 99,
+      "source_text": "They include financial restrictions and a ban by the European Union on the export of crude oil, from which the Iranian economy receives 80% of its foreign income.",
+      "reference_translation": "ان میں اقتصادی پابندیاں اور یوروپی یونین کی جانب سے خام تیل کی برآمد پر پابندی شامل ہے،جس سے ایرانی معیشت کو اس کی غیر ملکی آمدنی کا 80٪ حاصل ہوتا ہے۔",
+      "model_translation": "میلادیہ دوہس و جنگل شاک آئين خطاہوں، فرگزنم ���������� همه حق صحبه،،پہچہ-بی",
+      "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nUrdu: تیز بھورا لومڑی سست کتے کے اوپر سے کودتا ہے۔\n\nEnglish: I love learning new languages.\nUrdu: مجھے نئی زبانیں سیکھنا پسند ہے۔\n\nEnglish: Technology is advancing rapidly.\nUrdu: ٹیکنالوجی تیزی سے ترقی کر رہی ہے۔\n\nEnglish: They include financial restrictions and a ban by the European Union on the export of crude oil, from which the Iranian economy receives 80% of its foreign income.\nUrdu:",
+      "source_lang": "en",
+      "target_lang": "ur"
+    }
+  ]
+}

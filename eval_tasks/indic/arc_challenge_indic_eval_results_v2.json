@@ -1,0 +1,79 @@
+{
+  "bn": {
+    "accuracy": 0.0,
+    "total_processed": 0,
+    "valid_for_metric": 0,
+    "results": [],
+    "error": "name 'all_individual_accuracies' is not defined"
+  },
+  "en": {
+    "accuracy": 0.0,
+    "total_processed": 0,
+    "valid_for_metric": 0,
+    "results": [],
+    "error": "name 'all_individual_accuracies' is not defined"
+  },
+  "gu": {
+    "accuracy": 0.0,
+    "total_processed": 0,
+    "valid_for_metric": 0,
+    "results": [],
+    "error": "name 'all_individual_accuracies' is not defined"
+  },
+  "hi": {
+    "accuracy": 0.0,
+    "total_processed": 0,
+    "valid_for_metric": 0,
+    "results": [],
+    "error": "name 'all_individual_accuracies' is not defined"
+  },
+  "kn": {
+    "accuracy": 0.0,
+    "total_processed": 0,
+    "valid_for_metric": 0,
+    "results": [],
+    "error": "name 'all_individual_accuracies' is not defined"
+  },
+  "ml": {
+    "accuracy": 0.0,
+    "total_processed": 0,
+    "valid_for_metric": 0,
+    "results": [],
+    "error": "name 'all_individual_accuracies' is not defined"
+  },
+  "mr": {
+    "accuracy": 0.0,
+    "total_processed": 0,
+    "valid_for_metric": 0,
+    "results": [],
+    "error": "name 'all_individual_accuracies' is not defined"
+  },
+  "or": {
+    "accuracy": 0.0,
+    "total_processed": 0,
+    "valid_for_metric": 0,
+    "results": [],
+    "error": "name 'all_individual_accuracies' is not defined"
+  },
+  "pa": {
+    "accuracy": 0.0,
+    "total_processed": 0,
+    "valid_for_metric": 0,
+    "results": [],
+    "error": "name 'all_individual_accuracies' is not defined"
+  },
+  "ta": {
+    "accuracy": 0.0,
+    "total_processed": 0,
+    "valid_for_metric": 0,
+    "results": [],
+    "error": "name 'all_individual_accuracies' is not defined"
+  },
+  "te": {
+    "accuracy": 0.0,
+    "total_processed": 0,
+    "valid_for_metric": 0,
+    "results": [],
+    "error": "name 'all_individual_accuracies' is not defined"
+  }
+}

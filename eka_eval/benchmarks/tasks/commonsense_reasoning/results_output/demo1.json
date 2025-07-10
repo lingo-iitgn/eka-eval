@@ -1,0 +1,183 @@
+{
+  "model_name": "meta-llama/Meta-Llama-3-8B",
+  "dataset_name": "commonsense_qa",
+  "dataset_split": "validation[:10]",
+  "num_few_shot": 3,
+  "total_examples": 10,
+  "accuracy": 50.0,
+  "correct_predictions": 5,
+  "process_id": 0,
+  "gpu_id": 0,
+  "examples": [
+    {
+      "id": "1afa02df02c908a558b4036e80242fac",
+      "question": "A revolving door is convenient for two direction travel, but it also serves as a security measure at a what?",
+      "choices": {
+        "A": "bank",
+        "B": "library",
+        "C": "department store",
+        "D": "mall",
+        "E": "new york"
+      },
+      "correct_answer": "A",
+      "predicted_answer": "C",
+      "is_correct": false,
+      "prompt": "Answer the following multiple-choice question by providing ONLY the letter (e.g., A, B, C, D, or E) of the correct answer. Here are some examples:\n\nQ: What do people use to absorb body odor?\nA. deodorant\nB. perfume\nC. cologne\nA: A\n\nQ: Where would you find a towel in a house?\nA. kitchen\nB. bedroom\nC. bathroom\nD. living room\nE. garage\nA: C\n\nQ: What is the primary purpose of a refrigerator?\nA. heating food\nB. storing clothes\nC. keeping food cold\nA: C\n\nNow, answer this question:\nQ: A revolving door is convenient for two direction travel, but it also serves as a security measure at a what?\nA. bank\nB. library\nC. department store\nD. mall\nE. new york\nA:",
+      "raw_response": "Answer the following multiple-choice question by providing ONLY the letter (e.g., A, B, C, D, or E) of the correct answer. Here are some examples:\n\nQ: What do people use to absorb body odor?\nA. deodorant\nB. perfume\nC. cologne\nA: A\n\nQ: Where would you find a towel in a house?\nA. kitchen\nB. bedroom\nC. bathroom\nD. living room\nE. garage\nA: C\n\nQ: What is the primary purpose of a refrigerator?\nA. heating food\nB. storing clothes\nC. keeping food cold\nA: C\n\nNow, answer this question:\nQ: A revolving door is convenient for two direction travel, but it also serves as a security measure at a what?\nA. bank\nB. library\nC. department store\nD. mall\nE. new york\nA: C\n\nQ: What",
+      "extracted_completion": "C\n\nQ: What"
+    },
+    {
+      "id": "a7ab086045575bb497933726e4e6ad28",
+      "question": "What do people aim to do at work?",
+      "choices": {
+        "A": "complete job",
+        "B": "learn from each other",
+        "C": "kill animals",
+        "D": "wear hats",
+        "E": "talk to each other"
+      },
+      "correct_answer": "A",
+      "predicted_answer": "B",
+      "is_correct": false,
+      "prompt": "Answer the following multiple-choice question by providing ONLY the letter (e.g., A, B, C, D, or E) of the correct answer. Here are some examples:\n\nQ: What do people use to absorb body odor?\nA. deodorant\nB. perfume\nC. cologne\nA: A\n\nQ: Where would you find a towel in a house?\nA. kitchen\nB. bedroom\nC. bathroom\nD. living room\nE. garage\nA: C\n\nQ: What is the primary purpose of a refrigerator?\nA. heating food\nB. storing clothes\nC. keeping food cold\nA: C\n\nNow, answer this question:\nQ: What do people aim to do at work?\nA. complete job\nB. learn from each other\nC. kill animals\nD. wear hats\nE. talk to each other\nA:",
+      "raw_response": "Answer the following multiple-choice question by providing ONLY the letter (e.g., A, B, C, D, or E) of the correct answer. Here are some examples:\n\nQ: What do people use to absorb body odor?\nA. deodorant\nB. perfume\nC. cologne\nA: A\n\nQ: Where would you find a towel in a house?\nA. kitchen\nB. bedroom\nC. bathroom\nD. living room\nE. garage\nA: C\n\nQ: What is the primary purpose of a refrigerator?\nA. heating food\nB. storing clothes\nC. keeping food cold\nA: C\n\nNow, answer this question:\nQ: What do people aim to do at work?\nA. complete job\nB. learn from each other\nC. kill animals\nD. wear hats\nE. talk to each other\nA: B\n\nQ: What",
+      "extracted_completion": "B\n\nQ: What"
+    },
+    {
+      "id": "b8c0a4703079cf661d7261a60a1bcbff",
+      "question": "Where would you find magazines along side many other printed works?",
+      "choices": {
+        "A": "doctor",
+        "B": "bookstore",
+        "C": "market",
+        "D": "train station",
+        "E": "mortuary"
+      },
+      "correct_answer": "B",
+      "predicted_answer": "B",
+      "is_correct": true,
+      "prompt": "Answer the following multiple-choice question by providing ONLY the letter (e.g., A, B, C, D, or E) of the correct answer. Here are some examples:\n\nQ: What do people use to absorb body odor?\nA. deodorant\nB. perfume\nC. cologne\nA: A\n\nQ: Where would you find a towel in a house?\nA. kitchen\nB. bedroom\nC. bathroom\nD. living room\nE. garage\nA: C\n\nQ: What is the primary purpose of a refrigerator?\nA. heating food\nB. storing clothes\nC. keeping food cold\nA: C\n\nNow, answer this question:\nQ: Where would you find magazines along side many other printed works?\nA. doctor\nB. bookstore\nC. market\nD. train station\nE. mortuary\nA:",
+      "raw_response": "Answer the following multiple-choice question by providing ONLY the letter (e.g., A, B, C, D, or E) of the correct answer. Here are some examples:\n\nQ: What do people use to absorb body odor?\nA. deodorant\nB. perfume\nC. cologne\nA: A\n\nQ: Where would you find a towel in a house?\nA. kitchen\nB. bedroom\nC. bathroom\nD. living room\nE. garage\nA: C\n\nQ: What is the primary purpose of a refrigerator?\nA. heating food\nB. storing clothes\nC. keeping food cold\nA: C\n\nNow, answer this question:\nQ: Where would you find magazines along side many other printed works?\nA. doctor\nB. bookstore\nC. market\nD. train station\nE. mortuary\nA: B\n\nQ: What",
+      "extracted_completion": "B\n\nQ: What"
+    },
+    {
+      "id": "e68fb2448fd74e402aae9982aa76e527",
+      "question": "Where are  you likely to find a hamburger?",
+      "choices": {
+        "A": "fast food restaurant",
+        "B": "pizza",
+        "C": "ground up dead cows",
+        "D": "mouth",
+        "E": "cow carcus"
+      },
+      "correct_answer": "A",
+      "predicted_answer": "A",
+      "is_correct": true,
+      "prompt": "Answer the following multiple-choice question by providing ONLY the letter (e.g., A, B, C, D, or E) of the correct answer. Here are some examples:\n\nQ: What do people use to absorb body odor?\nA. deodorant\nB. perfume\nC. cologne\nA: A\n\nQ: Where would you find a towel in a house?\nA. kitchen\nB. bedroom\nC. bathroom\nD. living room\nE. garage\nA: C\n\nQ: What is the primary purpose of a refrigerator?\nA. heating food\nB. storing clothes\nC. keeping food cold\nA: C\n\nNow, answer this question:\nQ: Where are  you likely to find a hamburger?\nA. fast food restaurant\nB. pizza\nC. ground up dead cows\nD. mouth\nE. cow carcus\nA:",
+      "raw_response": "Answer the following multiple-choice question by providing ONLY the letter (e.g., A, B, C, D, or E) of the correct answer. Here are some examples:\n\nQ: What do people use to absorb body odor?\nA. deodorant\nB. perfume\nC. cologne\nA: A\n\nQ: Where would you find a towel in a house?\nA. kitchen\nB. bedroom\nC. bathroom\nD. living room\nE. garage\nA: C\n\nQ: What is the primary purpose of a refrigerator?\nA. heating food\nB. storing clothes\nC. keeping food cold\nA: C\n\nNow, answer this question:\nQ: Where are  you likely to find a hamburger?\nA. fast food restaurant\nB. pizza\nC. ground up dead cows\nD. mouth\nE. cow carcus\nA: A",
+      "extracted_completion": "A"
+    },
+    {
+      "id": "2435de612dd69f2012b9e40d6af4ce38",
+      "question": "James was looking for a good place to buy farmland.  Where might he look?",
+      "choices": {
+        "A": "midwest",
+        "B": "countryside",
+        "C": "estate",
+        "D": "farming areas",
+        "E": "illinois"
+      },
+      "correct_answer": "A",
+      "predicted_answer": "D",
+      "is_correct": false,
+      "prompt": "Answer the following multiple-choice question by providing ONLY the letter (e.g., A, B, C, D, or E) of the correct answer. Here are some examples:\n\nQ: What do people use to absorb body odor?\nA. deodorant\nB. perfume\nC. cologne\nA: A\n\nQ: Where would you find a towel in a house?\nA. kitchen\nB. bedroom\nC. bathroom\nD. living room\nE. garage\nA: C\n\nQ: What is the primary purpose of a refrigerator?\nA. heating food\nB. storing clothes\nC. keeping food cold\nA: C\n\nNow, answer this question:\nQ: James was looking for a good place to buy farmland.  Where might he look?\nA. midwest\nB. countryside\nC. estate\nD. farming areas\nE. illinois\nA:",
+      "raw_response": "Answer the following multiple-choice question by providing ONLY the letter (e.g., A, B, C, D, or E) of the correct answer. Here are some examples:\n\nQ: What do people use to absorb body odor?\nA. deodorant\nB. perfume\nC. cologne\nA: A\n\nQ: Where would you find a towel in a house?\nA. kitchen\nB. bedroom\nC. bathroom\nD. living room\nE. garage\nA: C\n\nQ: What is the primary purpose of a refrigerator?\nA. heating food\nB. storing clothes\nC. keeping food cold\nA: C\n\nNow, answer this question:\nQ: James was looking for a good place to buy farmland.  Where might he look?\nA. midwest\nB. countryside\nC. estate\nD. farming areas\nE. illinois\nA: D\n\nQ: What",
+      "extracted_completion": "D\n\nQ: What"
+    },
+    {
+      "id": "a4892551cb4beb279653ae52d0de4c89",
+      "question": "What island country is ferret popular?",
+      "choices": {
+        "A": "own home",
+        "B": "north carolina",
+        "C": "great britain",
+        "D": "hutch",
+        "E": "outdoors"
+      },
+      "correct_answer": "C",
+      "predicted_answer": "C",
+      "is_correct": true,
+      "prompt": "Answer the following multiple-choice question by providing ONLY the letter (e.g., A, B, C, D, or E) of the correct answer. Here are some examples:\n\nQ: What do people use to absorb body odor?\nA. deodorant\nB. perfume\nC. cologne\nA: A\n\nQ: Where would you find a towel in a house?\nA. kitchen\nB. bedroom\nC. bathroom\nD. living room\nE. garage\nA: C\n\nQ: What is the primary purpose of a refrigerator?\nA. heating food\nB. storing clothes\nC. keeping food cold\nA: C\n\nNow, answer this question:\nQ: What island country is ferret popular?\nA. own home\nB. north carolina\nC. great britain\nD. hutch\nE. outdoors\nA:",
+      "raw_response": "Answer the following multiple-choice question by providing ONLY the letter (e.g., A, B, C, D, or E) of the correct answer. Here are some examples:\n\nQ: What do people use to absorb body odor?\nA. deodorant\nB. perfume\nC. cologne\nA: A\n\nQ: Where would you find a towel in a house?\nA. kitchen\nB. bedroom\nC. bathroom\nD. living room\nE. garage\nA: C\n\nQ: What is the primary purpose of a refrigerator?\nA. heating food\nB. storing clothes\nC. keeping food cold\nA: C\n\nNow, answer this question:\nQ: What island country is ferret popular?\nA. own home\nB. north carolina\nC. great britain\nD. hutch\nE. outdoors\nA: C\n\nQ: What",
+      "extracted_completion": "C\n\nQ: What"
+    },
+    {
+      "id": "118a9093a30695622363455e4d911866",
+      "question": "In what Spanish speaking North American country can you get a great cup of coffee?",
+      "choices": {
+        "A": "mildred's coffee shop",
+        "B": "mexico",
+        "C": "diner",
+        "D": "kitchen",
+        "E": "canteen"
+      },
+      "correct_answer": "B",
+      "predicted_answer": "B",
+      "is_correct": true,
+      "prompt": "Answer the following multiple-choice question by providing ONLY the letter (e.g., A, B, C, D, or E) of the correct answer. Here are some examples:\n\nQ: What do people use to absorb body odor?\nA. deodorant\nB. perfume\nC. cologne\nA: A\n\nQ: Where would you find a towel in a house?\nA. kitchen\nB. bedroom\nC. bathroom\nD. living room\nE. garage\nA: C\n\nQ: What is the primary purpose of a refrigerator?\nA. heating food\nB. storing clothes\nC. keeping food cold\nA: C\n\nNow, answer this question:\nQ: In what Spanish speaking North American country can you get a great cup of coffee?\nA. mildred's coffee shop\nB. mexico\nC. diner\nD. kitchen\nE. canteen\nA:",
+      "raw_response": "Answer the following multiple-choice question by providing ONLY the letter (e.g., A, B, C, D, or E) of the correct answer. Here are some examples:\n\nQ: What do people use to absorb body odor?\nA. deodorant\nB. perfume\nC. cologne\nA: A\n\nQ: Where would you find a towel in a house?\nA. kitchen\nB. bedroom\nC. bathroom\nD. living room\nE. garage\nA: C\n\nQ: What is the primary purpose of a refrigerator?\nA. heating food\nB. storing clothes\nC. keeping food cold\nA: C\n\nNow, answer this question:\nQ: In what Spanish speaking North American country can you get a great cup of coffee?\nA. mildred's coffee shop\nB. mexico\nC. diner\nD. kitchen\nE. canteen\nA: B\n\nQ: What",
+      "extracted_completion": "B\n\nQ: What"
+    },
+    {
+      "id": "05ea49b82e8ec519e82d6633936ab8bf",
+      "question": "What do animals do when an enemy is approaching?",
+      "choices": {
+        "A": "feel pleasure",
+        "B": "procreate",
+        "C": "pass water",
+        "D": "listen to each other",
+        "E": "sing"
+      },
+      "correct_answer": "D",
+      "predicted_answer": "D",
+      "is_correct": true,
+      "prompt": "Answer the following multiple-choice question by providing ONLY the letter (e.g., A, B, C, D, or E) of the correct answer. Here are some examples:\n\nQ: What do people use to absorb body odor?\nA. deodorant\nB. perfume\nC. cologne\nA: A\n\nQ: Where would you find a towel in a house?\nA. kitchen\nB. bedroom\nC. bathroom\nD. living room\nE. garage\nA: C\n\nQ: What is the primary purpose of a refrigerator?\nA. heating food\nB. storing clothes\nC. keeping food cold\nA: C\n\nNow, answer this question:\nQ: What do animals do when an enemy is approaching?\nA. feel pleasure\nB. procreate\nC. pass water\nD. listen to each other\nE. sing\nA:",
+      "raw_response": "Answer the following multiple-choice question by providing ONLY the letter (e.g., A, B, C, D, or E) of the correct answer. Here are some examples:\n\nQ: What do people use to absorb body odor?\nA. deodorant\nB. perfume\nC. cologne\nA: A\n\nQ: Where would you find a towel in a house?\nA. kitchen\nB. bedroom\nC. bathroom\nD. living room\nE. garage\nA: C\n\nQ: What is the primary purpose of a refrigerator?\nA. heating food\nB. storing clothes\nC. keeping food cold\nA: C\n\nNow, answer this question:\nQ: What do animals do when an enemy is approaching?\nA. feel pleasure\nB. procreate\nC. pass water\nD. listen to each other\nE. sing\nA: D\n\nQ: What",
+      "extracted_completion": "D\n\nQ: What"
+    },
+    {
+      "id": "c0c07ce781653b2a2c01871ba2bcba93",
+      "question": "Reading newspaper one of many ways to practice your what?",
+      "choices": {
+        "A": "literacy",
+        "B": "knowing how to read",
+        "C": "money",
+        "D": "buying",
+        "E": "money bank"
+      },
+      "correct_answer": "A",
+      "predicted_answer": "B",
+      "is_correct": false,
+      "prompt": "Answer the following multiple-choice question by providing ONLY the letter (e.g., A, B, C, D, or E) of the correct answer. Here are some examples:\n\nQ: What do people use to absorb body odor?\nA. deodorant\nB. perfume\nC. cologne\nA: A\n\nQ: Where would you find a towel in a house?\nA. kitchen\nB. bedroom\nC. bathroom\nD. living room\nE. garage\nA: C\n\nQ: What is the primary purpose of a refrigerator?\nA. heating food\nB. storing clothes\nC. keeping food cold\nA: C\n\nNow, answer this question:\nQ: Reading newspaper one of many ways to practice your what?\nA. literacy\nB. knowing how to read\nC. money\nD. buying\nE. money bank\nA:",
+      "raw_response": "Answer the following multiple-choice question by providing ONLY the letter (e.g., A, B, C, D, or E) of the correct answer. Here are some examples:\n\nQ: What do people use to absorb body odor?\nA. deodorant\nB. perfume\nC. cologne\nA: A\n\nQ: Where would you find a towel in a house?\nA. kitchen\nB. bedroom\nC. bathroom\nD. living room\nE. garage\nA: C\n\nQ: What is the primary purpose of a refrigerator?\nA. heating food\nB. storing clothes\nC. keeping food cold\nA: C\n\nNow, answer this question:\nQ: Reading newspaper one of many ways to practice your what?\nA. literacy\nB. knowing how to read\nC. money\nD. buying\nE. money bank\nA: B\n\nQ: What",
+      "extracted_completion": "B\n\nQ: What"
+    },
+    {
+      "id": "1d24f406b6828492040b405d3f35119c",
+      "question": "What do people typically do while playing guitar?",
+      "choices": {
+        "A": "cry",
+        "B": "hear sounds",
+        "C": "singing",
+        "D": "arthritis",
+        "E": "making music"
+      },
+      "correct_answer": "C",
+      "predicted_answer": "E",
+      "is_correct": false,
+      "prompt": "Answer the following multiple-choice question by providing ONLY the letter (e.g., A, B, C, D, or E) of the correct answer. Here are some examples:\n\nQ: What do people use to absorb body odor?\nA. deodorant\nB. perfume\nC. cologne\nA: A\n\nQ: Where would you find a towel in a house?\nA. kitchen\nB. bedroom\nC. bathroom\nD. living room\nE. garage\nA: C\n\nQ: What is the primary purpose of a refrigerator?\nA. heating food\nB. storing clothes\nC. keeping food cold\nA: C\n\nNow, answer this question:\nQ: What do people typically do while playing guitar?\nA. cry\nB. hear sounds\nC. singing\nD. arthritis\nE. making music\nA:",
+      "raw_response": "Answer the following multiple-choice question by providing ONLY the letter (e.g., A, B, C, D, or E) of the correct answer. Here are some examples:\n\nQ: What do people use to absorb body odor?\nA. deodorant\nB. perfume\nC. cologne\nA: A\n\nQ: Where would you find a towel in a house?\nA. kitchen\nB. bedroom\nC. bathroom\nD. living room\nE. garage\nA: C\n\nQ: What is the primary purpose of a refrigerator?\nA. heating food\nB. storing clothes\nC. keeping food cold\nA: C\n\nNow, answer this question:\nQ: What do people typically do while playing guitar?\nA. cry\nB. hear sounds\nC. singing\nD. arthritis\nE. making music\nA: E\n\nQ: What",
+      "extracted_completion": "E\n\nQ: What"
+    }
+  ]
+}

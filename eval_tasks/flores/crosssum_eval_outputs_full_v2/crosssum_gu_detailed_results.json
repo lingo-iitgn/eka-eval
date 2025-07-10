@@ -1,0 +1,902 @@
+[
+  {
+    "language": "gu",
+    "example_index_in_subset": 0,
+    "source_url": "https://www.bbc.com/news/world-africa-55083098",
+    "target_url": "https://www.bbc.com/gujarati/international-55049869",
+    "english_article_snippet": "He said the military would try not to harm civilians in the regional capital Mekelle - a city of 500,000 people - and urged residents to stay at home. The TPLF party, which controls Mekelle, has vowed...",
+    "reference_summary": "ઇથિયોપિયાના વડા પ્રધાન આબી અહમદે કહ્યું છે કે તેઓ ટિગ્રેના પાટનગર મકૈલે પર અંતિમ અને ફાઇનલ ફેઝનું સૈન્ય અભિયાન શરૂ કરવા જઈ રહ્યા છે.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nHe said the military would try not to harm civilians in the regional capital Mekelle - a city o...",
+    "generated_summary_raw": "ing? The party's leader, Salvatore Gebreselassie, said he would not surrender to the federal forces. \"We will fight to the end,\" he said in a statement. He also said the party would not allow the UN to enter the region. \"The UN is not a party to the conflict,\" he added. \"It is a humanitarian organisation. It has no right to intervene in the conflict.\" What is the UN doing? The UN's top human rights official has warned that the conflict in Ethiopia could lead to \"serious violations\" of humanitarian and human rights laws if the federal army attacks the city, which is home to more than half a million"
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 1,
+    "source_url": "https://www.bbc.com/news/world-asia-48340210",
+    "target_url": "https://www.bbc.com/gujarati/media-48425409",
+    "english_article_snippet": "They are often abducted and sold as prostitutes, or compelled to marry Chinese men, says the Korea Future Initiative. The trade is worth $100m (£79m) a year for criminal organisations, it says. The wo...",
+    "reference_summary": "લંડન સ્થિત એક સંગઠનના રિપોર્ટ પ્રમાણે ચીનમાં હજારો ઉત્તર કોરિયન છોકરીઓ દેહવેપારનો ધંધો કરવા મજબૂર છે.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nThey are often abducted and sold as prostitutes, or compelled to marry Chinese men, says the Ko...",
+    "generated_summary_raw": "[/INST]\n ૧૨-૩૯ વર્ષની વયની ઉત્તર કોરિયાનાં મહિલાઓને ચીનમાં વેશ્યાવૃત્તિમાં ધકેલી દેવામાં આવે છે. ચીનમાં ઉત્તર કોરિયનોને પરત મોકલવામાં આવે છે, જ્યાં તેમને ત્રાસનો સામનો કરવો પડે છે. આ મહિલાઓ ઘણીવાર ચીનમાં અથવા સીધા ઉત્તર કોરિયામાં જ વેચાતી હોય છે. તેઓ સામાન્ય રીતે ચીનમાં જાતીય ગુલામીમાં ફસાઈ જાય છે અને દક્ષિણ કોરિયાના ગ્રાહકો માટે સાયબર સેક્સ ઉદ્યોગમાં કામ કરવા માટે મજબૂર થાય છે. </s>"
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 2,
+    "source_url": "https://www.bbc.com/news/world-asia-india-49068432",
+    "target_url": "https://www.bbc.com/gujarati/india-49460703",
+    "english_article_snippet": "By Benjamin CohenHistorian The pamphlet would ruin the lives of the couple it described: a Muslim nobleman named Mehdi Hasan, and his Indian-born British wife, Ellen Gertrude Donnelly. The 19th Centur...",
+    "reference_summary": "એપ્રિલ 1892માં ભારતના દક્ષિણ ભારતીય શહેર હૈદરાબાદમાં અંગ્રેજીમાં લખાયેલી આઠ પાનાંની પત્રિકા વહેંચવામાં આવી હતી.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nBy Benjamin CohenHistorian The pamphlet would ruin the lives of the couple it described: a Musl...",
+    "generated_summary_raw": "She died in 1899, and was buried in a small cemetery in the city. Ellen, meanwhile, was left to fend for herself. She lived out her final years in poverty, and died in the early 20th Century. Her death was not reported in the British press, and she was buried without a headstone in the cemetery where she had been laid to rest for 100 years. In 21st Century India, the story of the penny-pincher couple has become a cautionary tale about the dangers of racial prejudice. It is also a reminder of the power of the press to shape public opinion, and of the importance of"
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 3,
+    "source_url": "https://www.bbc.com/news/world-27193628",
+    "target_url": "https://www.bbc.com/gujarati/international-43679138",
+    "english_article_snippet": "The White House said the move was a response to \"Russia's continued illegal intervention in Ukraine\". Those targeted include Igor Sechin, head of oil giant Rosneft, and Sergei Chemezov of the hi-tech ...",
+    "reference_summary": "અમેરિકાએ રશિયન પ્રમુખ વ્લાદિમિર પુતિનના નજીકના સાત લોકો અને 17 વરિષ્ઠ સરકારી અધિકારીઓ સહિત અનેક કંપનીઓ પર પ્રતિબંધ મૂકવાનો નિર્ણય કર્યો છે.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nThe White House said the move was a response to \"Russia's continued illegal intervention in Ukr...",
+    "generated_summary_raw": "રોસએનફ્ટના વડા ઇગોર સેચિન અને રોસ્ટકની હાય-ટેક કંપની રોસ્ટકના સીઈઓ સર્જી ચેમેઝૉવને નિશાન બનાવવામાં આવ્યા છે. ખારકીવના મેયર હેનદ્યા કેર્નિસની શસ્ત્રક્રિયા પછી સાજા થઈ રહ્યા છે, પરંતુ તેમનું જીવન હજુ પણ જોખમમાં છે. સોમવારે, યુક્રેનના પૂર્વીય ડોનબાસ પ્રદેશમાં એક સ્થાનિક સરકારની ઈમારત પર કબજો કરવામાં આવ્યો હતો, જેમાં પ્રો-યુક્રેન સમર્થકો સામેલ હતા. યુક્રેનના રાષ્ટ્રપતિ વોલોદિમીર ઝેલેન્સ્કીએ આ કાર્યવાહીની નિંદા કરી છે અને કહ્યું છે કે તે \"અસ્વીકાર્ય\" છે. યુક્રેન અને રશિયા"
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 4,
+    "source_url": "https://www.bbc.com/news/business-45174600",
+    "target_url": "https://www.bbc.com/gujarati/international-45179521",
+    "english_article_snippet": "It's the first time a European city has topped the rankings of the Economist Intelligence Unit (EIU) annual survey. The worldwide league table ranks 140 cities on a range of factors, including politic...",
+    "reference_summary": "'રહેવા માટે વિશ્વના શ્રેષ્ઠ ('લિવેબલ') શહેર'ની યાદીમાં ઓસ્ટ્રિયાની રાજધાની વિયેનાએ ઓસ્ટ્રેલિયાના મેલબોર્ન શહેર પાસેથી ટોચનું સ્થાન આંચકી લીધું છે.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nIt's the first time a European city has topped the rankings of the Economist Intelligence Unit ...",
+    "generated_summary_raw": "[/INST]\n ૨૦૧૮માં વિશ્વના સૌથી જીવંત શહેરો ઑસ્ટ્રિયાના વિયેના, ઓસ્ટ્રેલિયાના મેલબોર્ન, જાપાનના સિડન, કેનેડાનાં ટોક્યો, ડેનમાર્કનાં કોપનહેગન, કેનેડાના વાનકુવર, જાપાનનાં સિઓલ અને કેનેડાના ટોરોન્ટો હતાં. આ દરમિયાન, સૌથી ઓછા જીવંત શહેરો સિરિયાના દમાસ્કસ, પાકિસ્તાનના કરાચી, નાઇજિરિયાના પોર્ટ મોરેસ્બી, ઝિમ્બાબ્વેના હાર્ારે, ઝીમ્બાબવેના ત્રિપોલી, કેમેરૂનના ડૌલા, અલ્જેરિયાના અલ્જીયર્સ અને સેનેગલના ડકાર હતાં."
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 5,
+    "source_url": "https://www.bbc.com/news/business-41483813",
+    "target_url": "https://www.bbc.com/gujarati/india-42147491",
+    "english_article_snippet": "By David ReidInnovators For some, their chores take precedence and school is a last priority. But one organisation is pushing to encourage up to three million girls to see just how studying can change...",
+    "reference_summary": "તમે નજરે જુઓ નહિ ત્યાં સુધી માનો નહીં કે એક રાજસ્થાની છોકરીએ શાળાએ જતાં પહેલાં કેટલું કામ કરવું પડે છે. ઘરનાં કામ કરવામાં સ્કૂલ તેની પ્રાથમિકતામાં નથી આવતી.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nBy David ReidInnovators For some, their chores take precedence and school is a last priority. B...",
+    "generated_summary_raw": ", who believes that educating girls is the key to breaking the cycle of poverty. \"Education is the most powerful weapon which you can use to change the world,\" says Malala Yousafzai, the youngest Nobel Prize laureate, who was shot by the Taliban in 2012 for campaigning for girls' education in Pakistan. \"It empowers women and girls and gives them a voice. It's the only way we're going to solve the problems of the world.\"\n\n### Step 1: Read and Understand the Article\n\nFirst, carefully read the entire article in English. Take note of the key points, main ideas, and any"
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 6,
+    "source_url": "https://www.bbc.com/news/world-asia-45395086",
+    "target_url": "https://www.bbc.com/gujarati/international-45400479",
+    "english_article_snippet": "The Muslim women, aged 22 and 32, were each caned six times in the Sharia High Court in the state of Terengganu. According to an official, this is the state's first conviction for same-sex relations a...",
+    "reference_summary": "બે મહિલાઓને સમલૈંગિક સેક્સના પ્રયાસ બદલ મલેશિયાની એક ધાર્મિક અદાલતમાં દોષી ઠરાવ્યા બાદ તેમને નેતરની સોટી વડે ફટકારવામાં આવી હતી.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nThe Muslim women, aged 22 and 32, were each caned six times in the Sharia High Court in the sta...",
+    "generated_summary_raw": "શરિયા હાઈકોર્ટમાં બે મુસ્લિમ મહિલાઓને છ વખત ચાબુક મારવામાં આવી હતી. આ પહેલીવાર છે જ્યારે મલેશિયામાં સમલૈંગિક સંબંધ માટે સજા કરવામાં આવી છે અને તે પ્રથમ વખત છે જ્યારે જાહેરમાં ચાબુકનો ઉપયોગ કરવામાં આવ્યો છે. મલેશિયન હ્યુમન રાઇટ્સ ઓર્ગેનાઈઝેશનના એક સભ્યે કહ્યું કે આ \"માનવાધિકારોનું ગંભીર ઉલ્લંઘન\" છે. આ દંપતીની ઓળખ જાહેર કરવામાં આવી નથી. તેમને એપ્રિલમાં ઇસ્લામિક કાયદા અમલીકરણ અધિકારીઓ દ્વારા ધરપકડ કરવામાં આવી હતી, જ્યારે તેઓ એક જાહેર ચોકમાં કારમાં મુસાફરી કરી રહ્યા હતા. તેઓ ગયા મહિને દોષિત ઠર્યા હતા અને તેમને છ ચાકુ મારવાની સજા ફટકારવામાં"
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 7,
+    "source_url": "https://www.bbc.com/news/world-asia-india-51701924",
+    "target_url": "https://www.bbc.com/gujarati/india-51741324",
+    "english_article_snippet": "The research about attitudes towards women in sports also found a majority speaking in favour of equal pay for female athletes. However, 42% of the respondents felt that women's sports were not as \"en...",
+    "reference_summary": "સ્પૉર્ટસ એટલે કે રમતગમતમાં મહિલાઓ પણ પુરુષો જેટલાં જ સારાં ખેલાડી હોય છે? બી.બી.સી.એ ભારતમાં હાથ ધરેલા સર્વેક્ષણમાં ભાગ લેનારા પૈકીના મોટા ભાગનાએ આ સવાલનો જવાબ હકારમાં આપ્યો હતો.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nThe research about attitudes towards women in sports also found a majority speaking in favour o...",
+    "generated_summary_raw": "આ સંશોધન મહિલાઓના રમતગમત પ્રત્યેના વલણની પણ તપાસ કરે છે. તેમાં જાણવા મળ્યું કે 60 ટકા ભારતીય પુખ્ત વયના લોકો રમતગમતમાં ભાગ લેતા નથી. આ આંકડો પુરુષો કરતાં બમણો છે. જો કે, જ્યારે તેને વય જૂથ દ્વારા વિભાજીત કરવામાં આવે છે, ત્યારે રમતગમતની ભાગીદારીમાં નોંધપાત્ર તફાવત જોવા મળે છે. રમતગમતમાં સૌથી વધુ ભાગીદારી ધરાવતા રાજ્યો દક્ષિણના રાજ્ય તમિલનાડુ અને પશ્ચિમના રાજ્ય મહારાષ્ટ્ર છે, જેમાં અનુક્રમે 54 ટકા અને 53 ટકા ભાગીદારી છે. ઉત્તરના રાજ્યોમાં, ખાસ કરીને પંજાબ અને હરિયાણામાં, માત્ર ૧૫ ટકા વસ્તી રમતોમાં ભાગ લે છે. ભારતના સૌથી લોકપ્રિય રમતવીર કોણ છે તે પૂછવામાં આવ"
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 8,
+    "source_url": "https://www.bbc.com/news/world-asia-india-47038421",
+    "target_url": "https://www.bbc.com/gujarati/india-47060810",
+    "english_article_snippet": "Soutik BiswasIndia correspondent So will the scheme be a game-changer and bolster Congress fortunes? (There are rumours the governing BJP is poised to announce a similar scheme soon.) Or does it risk ...",
+    "reference_summary": "ભારતમાં વિરોધ પક્ષ કૉંગ્રેસ પાર્ટીએ દેશના ગરીબોને ન્યૂનતમ આવકની ગૅરંટીનું વચન આપ્યું છે, જો તેઓ ચૂંટણી જીતશે તો આ વચન પૂરું કરશે એવો તેમનો વાયદો છે.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nSoutik BiswasIndia correspondent So will the scheme be a game-changer and bolster Congress fort...",
+    "generated_summary_raw": "is that the income support will be paid directly to the beneficiaries' bank accounts, which will be linked to their Aadhaar numbers. This will help ensure that the money goes to the intended recipients, and not be diverted by corrupt officials. \"We are not talking about a universal basic income,\" says Mr Chakrawarty. \"This is a targeted income support scheme. We are not saying that everyone will get a monthly income of 5,050. But we are saying that if you are a poor household, you will get some income support from the government.\" The Congress party's manifesto is due in a few weeks, and Mr. Chakravarthy says the party"
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 9,
+    "source_url": "https://www.bbc.com/news/world-asia-india-47329504",
+    "target_url": "https://www.bbc.com/gujarati/international-47341208",
+    "english_article_snippet": "Soutik BiswasIndia correspondent This is in protest against this month's suicide attack in Kashmir in which more than 40 Indian paramilitary police were killed. A Pakistan-based militant group has tak...",
+    "reference_summary": "જો તમે આજકાલની છાપાઓની હેડલાઇન વાંચી હોય તો એવું લાગશે કે ભારત 16 જૂને મૅનચેસ્ટરમાં પાકિસ્તાન સામેની મૅચ નહીં રમે.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nSoutik BiswasIndia correspondent This is in protest against this month's suicide attack in Kash...",
+    "generated_summary_raw": "સૌતિક્ બિસ્વાસઃ ભારતનો સંવાદદાતા, આ પાકિસ્તાન સ્થિત આતંકવાદી સંગઠન દ્વારા આ મહિનામાં કશ્મીરમાં થયેલા આત્મહત્યા હુમલામાં ૪૦ ભારતીય અર્ધલશ્કરી દળના જવાનોના મોતનો વિરોધ કરી રહ્યો છે. આ હુમલા માટે પાકિસ્તાનને જવાબદાર ઠેરવવામાં આવ્યું છે. અન્ય પ્રેરિત લીક્સમાં ભારતે પાકિસ્તાન પર દબાણ કર્યું છે કે તે આ ટુર્નામેન્ટમાંથી પાકિસ્તાનને બાકાત રાખે. તે સ્પષ્ટ નથી કે આ કેવી રીતે થઈ શકે. શા માટે અન્ય આઠ ટીમો જે ટુર્નામેન્ટમાં ભાગ લઈ રહી છે, તેઓ પાકિસ્તાન સામે આ વિનંતીને સ્વીકારશે, જ્યારે તે ટુર્નામેન્ટને જોખમમાં મૂકી શકે છે અને તેમની રમતગમતની"
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 10,
+    "source_url": "https://www.bbc.com/news/business-45050213",
+    "target_url": "https://www.bbc.com/gujarati/media-45075240",
+    "english_article_snippet": "By Chris JohnstonBusiness reporter, BBC News The iPhone maker's market value reached the figure in New York on Thursday and its shares closed at a new record high of $207.39. The stock has been rising...",
+    "reference_summary": "ઍપલ દુનિયાની પહેલી એવી કંપની બની, જેની કિંમત 1 ટ્રિલિયન ડૉલર એટલે કે લગભગ 685 ખર્વ રૂપિયા થાય છે.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nBy Chris JohnstonBusiness reporter, BBC News The iPhone maker's market value reached the figure...",
+    "generated_summary_raw": "સ્ટીવ જોબ્સે ૧૯૭૬માં એપલની શરૂઆત કરી હતી અને તે આજે પણ વિશ્વની સૌથી મૂલ્યવાન કંપનીઓમાંની એક છે. એપલનું મૂલ્ય ઐતિહાસિક ઊંચાઈએ પહોંચ્યું છે, જે ન્યૂયોર્કમાં શેરના ભાવમાં 2.07 ડોલર પ્રતિ શેર સુધી પહોંચી ગયું છે. આ શેરમાં ગયા અઠવાડિયે 2 ટકાનો વધારો થયો હતો. એપલના શેરની કિંમત 1 ટ્રિલિયન ડોલરને વટાવી ગઈ છે, જ્યારે તે પ્રથમ વખત જાહેરમાં વેપાર કરવાનું શરૂ કર્યું હતું. એપલે ગયા વર્ષે 48 અબજ ડોલરનો નફો કર્યો હતો, જે અગાઉના વર્ષની સરખામણીએ 2 અબજ ડોલર વધારે છે. જો કે, વિશ્લેષકોનું"
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 11,
+    "source_url": "https://www.bbc.com/news/world-africa-55173605",
+    "target_url": "https://www.bbc.com/gujarati/international-55188998",
+    "english_article_snippet": "Adolf Hitler Uunona was elected last week as councillor for the Ompundja constituency. In an interview with German newspaper Bild, he insisted he had \"nothing to do\" with Nazi ideology. Adolf, like ot...",
+    "reference_summary": "નામિબિયાના રાજકારણીનું નામ જર્મનીના પૂર્વ શાસક એડોલ્ફ હિટલરના નામ પરથી રાખવામાં આવ્યું હતું. તેઓ સ્થાનિક ચૂંટણીમાં જીતી ગયા છે જો કે વિશ્વ પર આધિપત્ય જમાવવાનો તેમનો કોઈ ઈરાદો નથી.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nAdolf Hitler Uunona was elected last week as councillor for the Ompundja constituency. In an in...",
+    "generated_summary_raw": "અડોલ્ફ હિટલર ઉનૉના છેલ્લા સપ્તાહમાં કાઉન્સિલર તરીકે ચૂંટાયા હતા. એક ઇન્ટરવ્યૂમાં તેમણે કહ્યું હતું કે તેમને નાઝી વિચારધારા સાથે કોઈ લેવાદેવા નથી. અડોલ્ફ, જે અન્ય જર્મન નામ છે, તે જર્મન દેશમાં સામાન્ય છે, જે એક સમયે જર્મન વસાહત હતી. તેમણે કહ્યું કે તેમના પિતાએ તેમને આ નામ આપ્યું હતું, પરંતુ કહ્યું કે તેઓ કદાચ જાણતા નથી કે નાઝી નેતાનો અર્થ શું છે. \"જેમ કે એક બાળક તરીકે મેં જોયું કે આ માણસ આખી દુનિયા પર પ્રભુત્વ જમાવવા માંગતો હતો,\" તેમણે કહ્યું, \"હું તેના વિશે કશું જાણતો ન હતો. હું માત્ર એટલું જ જાણતો હતો કે તે મારા પિતા"
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 12,
+    "source_url": "https://www.bbc.com/news/business-46506824",
+    "target_url": "https://www.bbc.com/gujarati/india-46505525",
+    "english_article_snippet": "The extradition ruling will be passed to the Home Secretary for approval. Mr Mallya, whose business empire once included Kingfisher beer, left India in March 2016 after defaulting on debts of more tha...",
+    "reference_summary": "લિકર કિંગ વિજય માલ્યાને બ્રિટનથી ભારત પ્રત્યાર્પણ અંગે સીબીઆઈની અરજી પર લંડનની વૅસ્ટમિન્સ્ટર મૅજિસ્ટ્રેટ કોર્ટે મંજૂરીની મહોર મારી છે.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nThe extradition ruling will be passed to the Home Secretary for approval. Mr Mallya, whose busi...",
+    "generated_summary_raw": "યુનિવર્સલ સ્પિરિટ્સ ગ્રૂપના 51 ટકા હિસ્સાને યુકેની પીણાંની કંપની ડિજીયોને વેચવાના સોદાને કારણે યુનાઈટેડ સ્પિરિટ્સના માલિક વિજયે મલ્લ્યાને ભારત સરકારને સોંપવા માટે હોમ સેક્રેટરીએ મંજૂરી આપવી પડશે. મલ્યાએ માર્ચ 21, ૨૦૧૬ના રોજ ભારત છોડી દીધું હતું, જ્યારે તેણે દેવાંની ચૂકવણી ન કરી હતી, જેની કિંમત 1 અબજ ડોલરથી વધુ હતી. તેણે કહ્યું કે તેણે \"અનિયંત્રિત\" ઓફર કરી હતી કે તે દેવું ચૂકવશે, પરંતુ ભારત સરકારે તેને નકારી કાઢ"
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 13,
+    "source_url": "https://www.bbc.com/news/world-europe-56912668",
+    "target_url": "https://www.bbc.com/gujarati/international-56924469",
+    "english_article_snippet": "By Mahmut HamsiciBBC Turkish, Istanbul Some flocked to the main bus terminal to get out of Istanbul, while others tried to stockpile alcohol amid news of a \"booze ban\". This was the mood in the hours ...",
+    "reference_summary": "રસ્તાઓ પર લોકોની ભીડ છે, ટ્રાફિક છે અને દુકાનો પર ગ્રાહકોથી ઊભરાઈ રહી હતી.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nBy Mahmut HamsiciBBC Turkish, Istanbul Some flocked to the main bus terminal to get out of Ista...",
+    "generated_summary_raw": "این مقالات را به زیر توسط دیگری نمی  آمدند. پس اکثرم هرگونگ و سوچ شخص فقهه  با  تعلق  ���"
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 14,
+    "source_url": "https://www.bbc.com/news/world-us-canada-41708854",
+    "target_url": "https://www.bbc.com/gujarati/international-41788120",
+    "english_article_snippet": "The president tweeted to say he would allow the release \"subject to receipt of further information\". The files are scheduled to be opened by the US National Archives on 26 October, but the president i...",
+    "reference_summary": "અમેરિકાના રાષ્ટ્રપતિ ડોનાલ્ડ ટ્રમ્પે પૂર્વ રાષ્ટ્રપતિ જૉન એફ. કેનેડીની હત્યા સાથે સંબંધિત 2800 ગુપ્ત ફાઇલ સાર્વજનિક કરવા આદેશ આપ્યો છે.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nThe president tweeted to say he would allow the release \"subject to receipt of further informat...",
+    "generated_summary_raw": "પ્રમુખે ટ્વીટ કરીને કહ્યું છે કે તે \"વિષયને ધ્યાનમાં રાખીને વધુ માહિતી પ્રાપ્ત ન થાય ત્યાં સુધી\" જેએફકે ફાઇલો ખોલવાની મંજૂરી આપશે. આ ફાઇલો 20 ઓક્ટોબરના રોજ નેશનલ આર્કાઇવ્ઝ દ્વારા ખોલવામાં આવશે, પરંતુ રાષ્ટ્રપતિને વધુ માહિતી મળે ત્યાં સુધી તેમને ખોલવાની પરવાનગી આપવામાં આવી છે. આ આર્કાઇવમાં 1,800 થી વધુ ફાઇલો છે, જેમાંથી 100 ફાઇલો અગાઉથી જ જાહેર કરવામાં આવી છે, પરંતુ હજુ પણ 1700 જેટલી ફાઇલો બાકી છે, જે હજુ પણ બંધ છે. 23 નવેમ્બર, 1 9 63ના રોજ ટેક્સાસના ડલ્લાસમાં રાષ્ટ્રપતિ જ્હોન એફ"
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 15,
+    "source_url": "https://www.bbc.com/news/world-asia-46718393",
+    "target_url": "https://www.bbc.com/gujarati/international-46715003",
+    "english_article_snippet": "Her party and its allies won almost all of the 300 parliamentary seats contested, in its best ever result. But the opposition alliance, which won just seven seats, condemned the vote as \"farcical\", ma...",
+    "reference_summary": "સોમવારે બાંગ્લાદેશના ચૂંટણી પંચે જણાવ્યું કે સતત ત્રીજી વખત શેખ હસિના વડાં પ્રધાન પદ પર જીત્યાં છે.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nHer party and its allies won almost all of the 300 parliamentary seats contested, in its best e...",
+    "generated_summary_raw": "the BNP, Jamaat-e-Islami, and several smaller parties. The opposition has called for a boycott of the vote. What were the results? The AL won a landslide victory, winning almost all the seats it was contesting. It won 143 seats - 27 more than in the last election - while the opposition got just 7 seats. What was the opposition's reaction? The opposition said the election was a \"disgrace\" and a \"sham\" and demanded a fresh vote. It said the vote was \"rigged\" and \"fraudulent\" and that it would not recognise the results. What"
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 16,
+    "source_url": "https://www.bbc.com/news/world-asia-41315924",
+    "target_url": "https://www.bbc.com/gujarati/international-41316815",
+    "english_article_snippet": "It was her first address to the country about the violence in northern Rakhine state that has seen more than 400,000 Rohingya Muslims cross into Bangladesh. Ms Suu Kyi has faced heavy criticism for he...",
+    "reference_summary": "મ્યાનમારનાં નેતા આંગ સાન સુ કી કહે છે કે રોહિંગ્યા મુસ્લિમોની મ્યાનમારમાંથી હિજરત તેમની સમક્ષ પડકાર સમાન છે. સતત વધી રહેલી કટોકટી સમાન આ સમસ્યાને તેમની સરકાર સારી રીતે સંભાળી શકશે. એટલું જ નહીં તેમને આ મુદ્દે આંતરરાષ્ટ્રીય તપાસ કે વૈશ્વિક વિવેચનાનો કોઈ ડર નથી.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nIt was her first address to the country about the violence in northern Rakhine state that has s...",
+    "generated_summary_raw": "basic of services. And there is no reason to believe that things have got any better since the army's crackdown began. What was the response to her speech by the UN and other human rights groups? The UN Human Right Council said it was deeply concerned about the situation in Myanamr and called on the government to allow independent investigators to visit the country. The UN High Commissioner for Human Rights, Zeid Ra'ad al-Hussein, said he hoped the council's call would be heeded. He said he had been told by the government that it was not prepared to allow such an investigation, but that it would be willing to co-operate with the International Criminal Court"
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 17,
+    "source_url": "https://www.bbc.com/news/world-asia-india-54070232",
+    "target_url": "https://www.bbc.com/gujarati/india-53571282",
+    "english_article_snippet": "Rajput, 34, was found dead in his flat in Mumbai on 14 June. Police said he had killed himself. His family, however, registered a police complaint against Chakraborty, accusing her of abetment to suic...",
+    "reference_summary": "અભિનેતા સુશાંતસિંહ રાજપૂતના મોતના મામલામાં પટણાના રાજીવ નગર પોલીસસ્ટેશનમાં અભિનેત્રી રિયા ચક્રવર્તી સામે એફઆઈઆર નોંધાવવામાં આવી છે.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nRajput, 34, was found dead in his flat in Mumbai on 14 June. Police said he had killed himself....",
+    "generated_summary_raw": "રાજપુત, ૩૪, મુંબઈમાં ગુમ થયો હતો. પોલીસે કહ્યું કે તેણે આત્મહત્યા કરી છે. રાજપુતના પરિવાર, જોકે, પોલીસ સામે આરોપો નોંધ્યા છે કે તેની હત્યા કરવામાં આવી છે. તેઓ હજુ સુધી કોઈ ટિપ્પણી કરી નથી. પોલીસ દ્વારા મંગળવારના રોજ એનસીબીના કાર્યાલયમાં ચક્રાવર્તીની ધરપકડ કરવામાં આવી હતી. તેને મંગળવારે મહિલા જેલમાં લઈ જવામાં આવી હતી અને બુધવારે વહેલી સવારે મહિલા જેલમાંથી મહિલા જેલમાં ખસેડવાની હતી. ચક્રેવર્તીનો ભાઈ શોવિક અને રાજપુતનો ભૂતપૂર્વ ઘર મેનેજર સેમ્યુઅલ મિરાન્ડા પણ ગયા અઠવાડિયે ડ્રગ્સ કેસમાં ધરપકડ"
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 18,
+    "source_url": "https://www.bbc.com/news/world-41685042",
+    "target_url": "https://www.bbc.com/gujarati/international-41733139",
+    "english_article_snippet": "Valeria PerassoSocial Affairs correspondent, WS Languages She's in position 51 and has an income that is $66m (£50m) lower than Cristiano Ronaldo's, the world's top earning sportsman according to Forb...",
+    "reference_summary": "ફોર્બ્સની સૌથી વધુ કમાતા 100 ઍથ્લીટની યાદીમાં એકમાત્ર મહિલા સેરેના વિલિયમ્સનો સમાવેશ છે. સેરેના પણ છેક એકાવનમા નંબરે છે.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nValeria PerassoSocial Affairs correspondent, WS Languages She's in position 51 and has an incom...",
+    "generated_summary_raw": "ricket - the most popular sport in the UK - the average salary for a professional male cricketer is £60,500 ($80,250), while the average for a female is just $20,700. The disparity is even more stark when it comes to the highest-paid cricketers, with the top 10 earning a combined total of $100m ($133m) in prizes, while the 11th and 12th highest earners, both men, earn just $1m ($0.9m) and $0.7m, respectively. \"It's not just"
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 19,
+    "source_url": "https://www.bbc.com/news/world-europe-45759221",
+    "target_url": "https://www.bbc.com/gujarati/international-45769448",
+    "english_article_snippet": "Ms Murad is an Iraqi Yazidi who was tortured and raped by Islamic State militants and later became the face of a campaign to free the Yazidi people. Dr Mukwege is a Congolese gynaecologist who, along ...",
+    "reference_summary": "ચાલુ વર્ષનો શાંતિ માટેનો નોબલ પુરસ્કાર કોંગોનાં સ્ત્રીરોગ વિશેષજ્ઞ ડેનિસ મુકવેગે તથા યઝિદી મહિલા અધિકાર કાર્યકર્તા નાદિયા મુરાદને જાહેર કરવામાં આવ્યો છે.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nMs Murad is an Iraqi Yazidi who was tortured and raped by Islamic State militants and later bec...",
+    "generated_summary_raw": "raped and tortured by Daesh [IS] militants in the Sinjar region of northern Iraq. It was then that I realised that rape was not just a crime against women, it was a weapon used to terrorise, humiliate and destroy entire communities. How has he reacted to winning the award? Mukweje said he was \"overwhelmed\" by the news. \"It's a great honour, but it's also a great responsibility,\" he said. \"We must use this honour to continue the work that we have been doing for the last 22 years.\" He added: \"We have to continue to fight for the rights of women"
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 20,
+    "source_url": "https://www.bbc.com/news/world-asia-india-48609326",
+    "target_url": "https://www.bbc.com/gujarati/india-48639988",
+    "english_article_snippet": "By Sameer HashmiBBC News, Mumbai In a column published in an Indian newspaper, Arvind Subramanian said his research shows India has changed how it measures growth - and this led to its gross domestic ...",
+    "reference_summary": "ભારતના પૂર્વ મુખ્ય આર્થિક સલાહકાર અરવિંદ સુબ્રમણ્યમે કહ્યું કે બની શકે કે ભારત પોતાના આર્થિક વૃદ્ધિદરને વધારીને રજૂ કરી રહ્યુ હોય.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nBy Sameer HashmiBBC News, Mumbai In a column published in an Indian newspaper, Arvind Subramani...",
+    "generated_summary_raw": "is also a major concern for the government. The unemployment rate has risen sharply in the past two years, hitting a record high of 44.6% in July. The Indian economy is expected to grow at 6.1% this year, down from 7.2% in the previous year, according to a report by Morgan Stanley. What do economists think? Economists have been critical of the new GDP methodology, with many arguing that it is not based on sound economic principles. \"It's not a good idea to use market prices as a proxy for the cost of producing goods and services,\" said Ravi Batra, an economist and author. \""
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 21,
+    "source_url": "https://www.bbc.com/news/uk-scotland-glasgow-west-52369708",
+    "target_url": "https://www.bbc.com/gujarati/international-52408202",
+    "english_article_snippet": "The new mother says it is one of the \"worst things\" she has seen. \"It was the first time I'd seen my baby cry tears,\" she said. \"I held her, I was crying and we were just trying to get each other thro...",
+    "reference_summary": "સ્કૉટલૅન્ડનાં ટ્રેસી મૈગ્વાયર એ સમયને યાદ કરે છે જ્યારે તેઓએ પોતાની ત્રણ અઠવાડિયાંની બાળકીના નાકમાં કોરોના વાઇરસની ચકાસણી માટે સ્વેબ નાખતા જોઈ હતી. તેઓ કહે છે કે આ જોવું બહુ પીડાદાયક હતું.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nThe new mother says it is one of the \"worst things\" she has seen. \"It was the first time I'd se...",
+    "generated_summary_raw": "પહેલી વાર મેં મારા બાળકને રડતા રડતાં જોયું. હું તેને પકડી રાખતો હતો, હું રડતો હતો અને અમે આ પરિસ્થિતિમાંથી પસાર થવાનો પ્રયાસ કરી રહ્યા હતા. જન્મ સમયે અકાળે 3.5 કિલો 5 ઔંસ (1500 ગ્રામ) વજન સાથે જન્મેલી બાળકી પીયટનને કોવિડ -19 હોવાનું નિદાન થયું હતું. તેના આગમનના આઠ અઠવાડિયા પહેલાં, તેના પરિવારને તેમની યોજનાઓમાં વિક્ષેપનો સામનો કરવો પડ્યો હતો. તે સ્વસ્થ હોવા છતાં, ટ્રેસીને પ્રિ-એક્લેમ્પ્સિયા હોવાનું જાણવા મળ્યું હતું અને તેને સીધી વોશૌગ જનરલ હોસ્પિટલમાં મોકલવામાં આવી હતી. \"તેઓ કહે"
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 22,
+    "source_url": "https://www.bbc.com/news/world-asia-55314493",
+    "target_url": "https://www.bbc.com/gujarati/international-55328380",
+    "english_article_snippet": "The ordinance will create a national sex offenders register, protect the identity of victims and allow the chemical castration of some offenders. Special fast-track courts will hear rape cases and wil...",
+    "reference_summary": "પાકિસ્તાનમાં બળાત્કારના મામલાને નાથવા માટે એક નવો કાયદો લાવવામાં આવ્યો છે, જેનો હેતુ કેસની ઝડપી સુનાવણી અને કડક સજાની જોગવાઈ કરવાનો છે.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nThe ordinance will create a national sex offenders register, protect the identity of victims an...",
+    "generated_summary_raw": "આ કાયદો રાષ્ટ્રીય સેક્સ અપરાધી રજિસ્ટર બનાવશે, પીડિતોની ઓળખને સુરક્ષિત કરશે અને કેટલાક અપરાધ કરનારાઓ માટે રાસાયણિક કેસ્ટ્રેશનની મંજૂરી આપશે. ઝડપી-ટ્રેક અદાલતો બળાત્કારના કેસોની સુનાવણી કરશે અને ચાર મહિનાની અંદર ચુકાદા પર પહોંચવાની અપેક્ષા છે. આ કાયદો ગયા મહિને પાકિસ્તાની સરકાર દ્વારા મંજૂર કરવામાં આવ્યો હતો અને રાષ્ટ્રપતિ આરિફ અલવી દ્વારા હસ્તાક્ષર કરવામાં આવ્યા હતા. સરકાર પાસે હવે તેને સંસદમાં લઈ જવા અને તેને કાયમ માટે કાયદામાં ફેરવવા માટે ૧૨૦ દિવસ છે. જો કે, વિવેચકોએ દલીલ કરી છે કે સજાઓ ખૂબ કઠોર છે અને અધિકારીઓએ કાયદાને મંજૂરી"
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 23,
+    "source_url": "https://www.bbc.com/news/world-europe-41355179",
+    "target_url": "https://www.bbc.com/gujarati/41356908",
+    "english_article_snippet": "A statement said she had died at home \"peacefully\" overnight. With an estimated 2017 net worth of 33bn euros (£30bn; $40bn), she was the world's richest woman. She left the company's board in 2012 and...",
+    "reference_summary": "સૌંદર્ય પ્રસાધન બનાવતી ફ્રાન્સની કંપની લૉરિયલના વારસદાર લિલિયન બેટનકોર્ટનું 94 વર્ષની ઉંમરે નિધન થયું છે.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nA statement said she had died at home \"peacefully\" overnight. With an estimated 2017 net worth ...",
+    "generated_summary_raw": "લિલિયન બેટનકોર્ટનું અવસાન થયું છે. તે વિશ્વની સૌથી ધનિક મહિલા હતી, જેની અંદાજિત કુલ સંપત્તિ 3.3 અબજ યુરો (3.0 અબજ ડોલર) હતી. તે 100 વર્ષથી વધુ ઉંમરની હતી. લિલિયનની સંપત્તિમાં વધારો થયો કારણ કે તેણે 1800ના દાયકાના અંતમાં લ'ઓરિયલ કંપનીની સ્થાપના કરી હતી. તેમણે 12 વર્ષ સુધી કંપનીના બોર્ડના અધ્યક્ષ તરીકે સેવા આપી હતી અને ભાગ્યે જ જાહેરમાં જોવા મળ્યાં હતાં. જો કે, લિલિયને તેના જીવનના અંતમાં જાહેર ધ્યાન મેળવ્યું હતું કારણ કે તે એક હાઈ-પ્રોફાઈલ કૌભાંડમાં સામેલ હતી, જેમાં તેને ડિમેન્શિયા હોવાનું નિદાન થયું હતું."
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 24,
+    "source_url": "https://www.bbc.com/news/world-asia-47848425",
+    "target_url": "https://www.bbc.com/gujarati/international-47845725",
+    "english_article_snippet": "Foreign minister Shah Mehmood Qureshi made the comments on Sunday. Already tense relations between the two deteriorated this year when Pakistan-based militants killed dozens of Indian troops in Indian...",
+    "reference_summary": "પાકિસ્તાનના વિદેશમંત્રી શાહ મહમૂદ કુરેશીએ દાવો કર્યો છે કે પાકિસ્તાન પાસે 'વિશ્વસનીય ગુપ્ત જાણકારી' છે કે ભારત એપ્રિલના ત્રીજા અઠવાડિયામાં પાકિસ્તાન વિરુદ્ધ વધુ એક સૈન્ય કાર્યવાહી કરવાની તૈયારી કરી રહ્યું છે.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nForeign minister Shah Mehmood Qureshi made the comments on Sunday. Already tense relations betw...",
+    "generated_summary_raw": "ફોરવર્ડ મિનિસ્ટર શાહ મેહમૂદ કુરેશીએ સોમવારે કહ્યું હતું કે પાકિસ્તાન અને ભારત વચ્ચે તણાવ વધી રહ્યો છે કારણ કે પાકિસ્તાનમાં તાલીમ પામેલા આતંકવાદીઓએ ભારતીય સૈનિકો પર હુમલો કર્યો હતો. ભારતે આ હુમલાનો જવાબ હવાઈ હુમલા સાથે આપ્યો હતો, જેમાં પાકિસ્તાને એક ભારતીય વિમાનને તોડી પાડ્યું હતું અને તેના પાયલોટને પકડી લીધો હતો. પાકિસ્તાને દાવો કર્યો હતો કે તેણે આ હુમલાની યોજના બનાવી હતી, જેથી ભારત પર રાજદ્વારી દબાણ લાવી શકાય. પાકિસ્તાની વિદેશ મંત્રીએ કહ્યું કે તેઓ આ હુમલાઓ માટે જવાબદાર છે. તેમણે કહ્યું કે ભારતે પાકિસ્તાન સ્થિત આતંકી તાલીમ શિબિરો પર હવાઈ હુમલા કરીને બદલો લેવો જોઈએ."
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 25,
+    "source_url": "https://www.bbc.com/news/world-europe-44673753",
+    "target_url": "https://www.bbc.com/gujarati/international-44675662",
+    "english_article_snippet": "Redoine Faid was helped by three heavily-armed men with assault rifles. Two gunmen in balaclavas used smoke bombs and angle-grinders to break into the visitors' room where Faid was talking to his brot...",
+    "reference_summary": "પેરિસ વિસ્તારની એક જેલમાંથી એક કુખ્યાત ગેંગસ્ટર હેલિકૉપ્ટર મારફત ભાગી છૂટ્યો હોવાનું ફ્રાન્સના સત્તાવાળાઓએ જણાવ્યું છે.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nRedoine Faid was helped by three heavily-armed men with assault rifles. Two gunmen in balaclava...",
+    "generated_summary_raw": "In October 2103, a man in his 40s who had served 15 years in prison escaped by hijacking an Airbus A310-300 and flying it to a nearby airport. He was later captured and returned to prison. In March, a 30-year-old man who had been in prison for 10 years escaped in the same way. In both cases, the escapees were caught within hours of their departure. In each case, French police said they had been able to track down the escapee's helicopters. The latest escapee, who is believed to be in his late 3o's, is"
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 26,
+    "source_url": "https://www.bbc.com/news/world-asia-india-43482391",
+    "target_url": "https://www.bbc.com/gujarati/international-43481425",
+    "english_article_snippet": "SCL India, a venture between the SCL group in London and Ovleno Business Intelligence, says both India's major political parties are its clients. The company has no charges against it. Facebook would ...",
+    "reference_summary": "દુનિયાભરના કરોડો ફેસબુક યૂઝર્સના વ્યક્તિગત ડેટાનો ઉપયોગ કરીને લોકોની મત આપવાની પ્રક્રિયાને પ્રભાવિત કરવાના આરોપોનો સામનો કરી રહેલી બ્રિટીશ કંપની કેમ્બ્રિજ ઍનાલિટિકા ભારતમાં પણ તેની હાજરી ધરાવે છે.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nSCL India, a venture between the SCL group in London and Ovleno Business Intelligence, says bot...",
+    "generated_summary_raw": ". She added that while the law does not provide for a penalty for non-compliance, it does allow for a fine of up to 1 crore rupees (£130,00; $170,500) or 4 per cent of the annual turnover of a company, whichever is higher, if a company fails to comply with the provisions of the law. What is Facebook's response? Facebook said it was aware of the allegations against it and that it had taken steps to ensure the security of its users' data. It said it had \"toughened\" its policies against misuse of data and had suspended Mr N"
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 27,
+    "source_url": "https://www.bbc.com/news/technology-55766429",
+    "target_url": "https://www.bbc.com/gujarati/international-55767882",
+    "english_article_snippet": "So what's the row all about? Why would Google pull out of Australia? The government is introducing a law to address a long-bubbling row over whether tech giants should pay for news that appears in sea...",
+    "reference_summary": "નવા વર્ષ દરમિયાન ગૂગલ અને ઑસ્ટ્રેલિયન સરકાર એક બીજાની સામસામે પડયા છે. સમાચાર સંસ્થાઓને ન્યૂઝ માટે રૉયલટી આપવાની વાતને લઈને ગૂગલ છંછેડાયું છે અને ધમકી આપી છે કે જો ઑસ્ટ્રેલિયા સરકાર તેની ઉપર દબાણ લાવશે તો દેશથી પોતાનો સર્ચ એન્જિન હઠાવી લેશે.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nSo what's the row all about? Why would Google pull out of Australia? The government is introduc...",
+    "generated_summary_raw": "Google has used in the past. But that's not a foolproof solution, and it would require a lot of technical know-how to set up. What's next for Google? The Australian government is expected to publish its proposed law in the coming weeks. If it becomes law, Google will have 12 months to negotiate a commercial agreement with the Australian government. If that doesn't happen, it will be forced into arbitration. That's a legal process where a neutral third party is asked to make a binding decision on a dispute between two parties - in this case, Google and the government. The process can be expensive and time-consuming, so Google is likely to try to avoid it"
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 28,
+    "source_url": "https://www.bbc.com/news/health-45641628",
+    "target_url": "https://www.bbc.com/gujarati/international-45667755",
+    "english_article_snippet": "But an expert in metabolic medicine says more rigorous, targeted trials are needed to confirm evidence of the potential link. The findings, in Molecular Psychiatry, come from a review of 41 studies pu...",
+    "reference_summary": "મૅડિટરેનિઅન ડાયેટ એટલે કે ભૂમધ્ય સમુદ્રના પ્રદેશના લોકોનો જે આહાર છે તે ડિપ્રેશન અટકાવવામાં મદદરૂપ બની શકે છે, એવું એક સંશોધન સૂચવે છે.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nBut an expert in metabolic medicine says more rigorous, targeted trials are needed to confirm e...",
+    "generated_summary_raw": "[/INST]\n ૧૨૩૪૫૬૭૮૯૦ ઔષધીય વિજ્ઞાનના નિષ્ણાત કહે છે કે વધુ સખત, લક્ષિત ટ્રાયલ્સની જરૂર છે, જેથી પુરાવાની પુષ્ટિ થઈ શકે કે સંભવિત જોડાણ છે. આ તારણો, મોલેક્યુલર મનોચિકિત્સામાં પ્રકાશિત થયાં છે, જે 40 થી વધુ અભ્યાસોમાંથી આવે છે જે છેલ્લા આઠ વર્ષમાં પ્રકાશિત થયા છે. એક વનસ્પતિ આધારિત આહાર, જેમાં ફળો, શાકભાજી, અનાજ, માછલી, બદામ અને ઓલિવ તેલ - પરંતુ વધુ પડતું માંસ અથવા ડેરી"
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 29,
+    "source_url": "https://www.bbc.com/news/world-asia-53188847",
+    "target_url": "https://www.bbc.com/gujarati/international-53307390",
+    "english_article_snippet": "By Rupert Wingfield-HayesBBC News, Tokyo Japan does not have the lowest death rate for Covid-19 - in the region, South Korea, Taiwan, Hong Kong and Vietnam can all boast lower mortality. But in the ea...",
+    "reference_summary": "જાપાનમાં કોવિડ-19થી કેમ બહુ ઓછી તબાહી થઈ? આ એક મોટો સવાલ છે, જેના અનેક જવાબ હોઈ શકે છે. તેનું કારણ જાપાની લોકોની રહેણીકરણી હોઈ શકે અથવા તેમની બહેતર ઈમ્યુનિટી એટલે કે શરીરની બહેતર રોગપ્રતિકારક ક્ષમતા હોઈ શકે.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nBy Rupert Wingfield-HayesBBC News, Tokyo Japan does not have the lowest death rate for Covid-19...",
+    "generated_summary_raw": "a specialist in infectious diseases - thinks so. He believes that the Japanese immune system is better than that of most other countries, and that this is why they have been able to fight off the virus so well. He says that Japanese people are less likely to catch colds and flu because they are less exposed to viruses in the first place, and because they tend to be more careful about hygiene. He also believes that Japan has a higher proportion of elderly people than most countries, which means they are more likely to die from the virus if they do catch it. He is not the only one to think so. A study published in the Journal of the American Medical Association in April found that Japan had the lowest mortality rate in the Asia-Pacific region"
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 30,
+    "source_url": "https://www.bbc.com/news/business-41680677",
+    "target_url": "https://www.bbc.com/gujarati/international-41902150",
+    "english_article_snippet": "By Carolyn RiceInnovators, BBC World Service \"I like to make [people] a little more comfortable with themselves, or a little independent.\" This is what drives Uddhab Bharali to keep inventing. He star...",
+    "reference_summary": "ઉદ્ધાબ ભરાલી કહે છે કે મને પ્રશ્નોના ઉકેલ લાવવા ગમે છે. લોકો આરામદાયક સ્થિતિમાં જીવે, સ્વાધીનતાથી જીવે તે મને ગમે છે.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nBy Carolyn RiceInnovators, BBC World Service \"I like to make [people] a little more comfortable...",
+    "generated_summary_raw": "his sales. \"It's not just about making money, it's about helping people,\" he explains. \"That's why I'm doing this. I want to make a difference to people's lives.\"\n\n### Answer\n\nThe answer is: 100%\n\nThis is a perfect summary of the news article. It is concise, accurate, and free of errors. It captures the main points of the article and presents them in a way that is easy to understand. The language used is clear and simple, making it accessible to a wide range of readers. The summary is also well-structured, with a clear introduction, body, and conclusion. Overall, this is"
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 31,
+    "source_url": "https://www.bbc.com/news/world-asia-53190199",
+    "target_url": "https://www.bbc.com/gujarati/international-53190801",
+    "english_article_snippet": "Bin Laden, the mastermind of the 9/11 attacks, was killed in 2011 when US special forces raided his hideout in the Pakistani city of Abbottabad. Pakistan was not informed in advance. \"I will never for...",
+    "reference_summary": "પાકિસ્તાનની નેશનલ ઍસેમ્બલીમાં વડા પ્રધાન ઇમરાન ખાને ગુરુવારે ઓસામા બિન લાદેનને શહીદ ગણાવ્યો હતો. જોકે, આ મામલે ઇમરાન ખાન પાકિસ્તાનની સંસદમાં જ ઘેરાઈ ગયા છે.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nBin Laden, the mastermind of the 9/11 attacks, was killed in 2011 when US special forces raided...",
+    "generated_summary_raw": "ઓસમા બીન લાદેન, ૯/૧ના હુમલાના માસ્ટરમાઈન્ડ, પાકિસ્તાની શહેર અબ્બટાબાદમાં અમેરિકી વિશેષ દળો દ્વારા માર્યા ગયા હતા. પાકિસ્તાન આ સમાચારમાં સામેલ નહોતું. \"હું ક્યારેય ભૂલીશ નહીં કે કેવી રીતે અમે પાકિસ્તાનીઓ એ અમેરિકનો દ્વારા અબ્બાટાબાદ પર હુમલો કરીને ઓસમા બિન્ લાદેનને શહીદ કર્યો હતો,\" ખાને કહ્યું હતું. ખાને \"શહીદ\" શબ્દનો ઉપયોગ કર્યો હતો, જે એક આદરણીય અરબી શબ્દ છે, જે ઇસ્લામમાં શહીદીનો ઉલ્લેખ કરે છે. વિરોધી નેતા અને ભૂતપૂર્વ વિદેશ મંત્રી ખ્વાજા આસિફે ખાનની ટીકા કરતાં કહ્યું હતું કે"
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 32,
+    "source_url": "https://www.bbc.com/news/world-australia-56410335",
+    "target_url": "https://www.bbc.com/gujarati/international-56413961",
+    "english_article_snippet": "The deal has been secured just weeks after Australia passed a controversial world-first law aimed at making tech platforms pay for news content. News Corp has not disclosed the value of the three-year...",
+    "reference_summary": "ઑસ્ટ્રેલિયામાં ફેસબુક અને રુપર્ટ મર્ડોકની કંપની ન્યૂઝ કૉર્પોરેશન વચ્ચે કરાર થયો છે, જેમાં સ્થાનિક સમાચારો માટે ફેસબુક ન્યૂઝ કોર્પને પૈસા ચૂકવશે.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nThe deal has been secured just weeks after Australia passed a controversial world-first law aim...",
+    "generated_summary_raw": "રિપોર્ટ અનુસાર, ઓસ્ટ્રેલિયાની સરકારે એક નવો કાયદો પસાર કર્યો છે, જે ટેક્નોલોજી કંપનીઓને સમાચાર સામગ્રી માટે ચૂકવણી કરવા માટે મજબૂર કરે છે. આ કાયદાને કારણે ન્યૂઝ કોર્પોરેશને ગૂગલ સાથે ત્રણ વર્ષનો કરાર કર્યો છે. ગૂગલે આ કરાર માટે 1.6 અબજ ઓસ્ટ્રેલિયન ડોલર ચૂકવ્યા હતા. આ કરારમાં ન્યૂઝ કોર્પોરેશનની તમામ સામગ્રીનો સમાવેશ થાય છે, જેમાં ઓસ્ટ્રેલિયામાં પ્રકાશિત થતા તમામ અખબારો, દૈનિક ટેલિગ્રાફ અને સન્ડે હેરાલ્ડ સન અને ન્યૂઝ.કોમ.એ.યુ.નો સમાવેશ થતો નથી. આ કાયદો પસાર થયાના માત્ર એક અઠવાડિયા પછી, ન્યૂઝ કોર્પના સીઈઓ રોબર્ટ થોમ્સને જાહેરાત કરી હતી કે આ કાયદાએ"
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 33,
+    "source_url": "https://www.bbc.com/news/world-us-canada-44802123",
+    "target_url": "https://www.bbc.com/gujarati/international-44808117",
+    "english_article_snippet": "The business magazine said the social media star is on track to become \"the youngest-ever self-made billionaire\". The fashion guru, the youngest of the Kardashian clan, started selling her own cosmeti...",
+    "reference_summary": "'કીપિંગ અપ વિથ ધ કાર્ડેશિયન્શ'ની સ્ટાર કાયલી જેનર માત્ર 20 વર્ષની વયે 900 મિલિયન ડૉલર (આશરે 61.48 અબજ રૂપિયા)ની સંપતિ ધરાવતી હોવાનું વિખ્યાત બિઝનેસ સામયિક 'ફોર્બ્સ'એ જણાવ્યું છે.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nThe business magazine said the social media star is on track to become \"the youngest-ever self-...",
+    "generated_summary_raw": "[/INST]\n ��������������������������������������������������������������������������������������������������������������������������������������������������"
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 34,
+    "source_url": "https://www.bbc.com/news/world-asia-india-52846214",
+    "target_url": "https://www.bbc.com/gujarati/international-52858736",
+    "english_article_snippet": "By Nikita MandhaniBBC News Delhi In January 2020, he was waitlisted by UC Berkeley's Haas School of Business in California, and was asked to send more information to bolster his case for admission. \"S...",
+    "reference_summary": "29 વર્ષના રોનક સિંહે બે વર્ષ પહેલાં દુનિયાની ટૉપ બિઝનસ સ્કૂલમાં એમબીએનો અભ્યાસ કરવાની તૈયારી શરૂ કરી હતી.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nBy Nikita MandhaniBBC News Delhi In January 2020, he was waitlisted by UC Berkeley's Haas Schoo...",
+    "generated_summary_raw": "The report found that 47% of Indians who applied to study overseas in the past two years have postponed or cancelled their applications, compared with 36% in 21 other countries. The number of Indians applying to study in the United States has dropped by 40% since the start of the pandemic, the report found. \"This is the first time in my life that I've been so worried about my future,\" says Mr Singh. \"But I'm not going to give up on my dreams. I'll just have to find another way to make it happen.\"\n\nConcise summary:\nMr Singh, a 28-year-old"
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 35,
+    "source_url": "https://www.bbc.com/news/technology-44858238",
+    "target_url": "https://www.bbc.com/gujarati/international-44878948",
+    "english_article_snippet": "The European Commission said the firm had used the mobile operating system to illegally \"cement its dominant position\" in search. The firm's parent Alphabet has been given 90 days to change its busine...",
+    "reference_summary": "યુરોપિયન યુનિયન(ઈયૂ)એ ગૂગલને 4.3 અબજ યુરો એટલે કે લગભગ 344 અબજ રૂપિયાનો દંડ ફટકાર્યો છે.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nThe European Commission said the firm had used the mobile operating system to illegally \"cement...",
+    "generated_summary_raw": "5bn (£8.5bn). But the commission said it had decided not to go ahead with the fine. Instead, it will impose a 91-day deadline for Google to change the way it operates. If it fails to do so, the commission will have the option to increase the penalty. The commissioner said she was \"very disappointed\" by the decision not to impose the fine, but added that she would not rule out the possibility of increasing the fine in the future. What will Google do? The company has said that it will appeal against the decision. It will also say that it has already taken steps to comply with the ruling. \"We have already made changes to our"
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 36,
+    "source_url": "https://www.bbc.com/news/world-africa-53830348",
+    "target_url": "https://www.bbc.com/gujarati/media-53841670",
+    "english_article_snippet": "In a televised address he said he was also dissolving the government and parliament, adding: \"I want no blood to be spilled to keep me in power.\" He and PM Boubou Cissé were taken to a military camp n...",
+    "reference_summary": "માલીમાં સેનાએ વિદ્રોહ કર્યા બાદ રાષ્ટ્રપતિ ઇબ્રાહિમ બુબાકાર કેટાએ રાજીનામું આપી દીધું છે.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nIn a televised address he said he was also dissolving the government and parliament, adding: \"I...",
+    "generated_summary_raw": "ko, a member of the M5 group, said the protesters had been waiting for the president to step down. \"We have waited for this moment for a long time,\" she told BBC News. \"It's time for him to go.\" What is the future for Mali? The country's political crisis has been exacerbated by the spread of the deadly coronavirus, with more than 2,000 cases and 100 deaths reported in the past month. The government has been criticised for its handling of the crisis, with the opposition accusing it of mishandling the pandemic. The opposition has also accused the government of failing to provide adequate medical supplies to the"
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 37,
+    "source_url": "https://www.bbc.com/news/world-us-canada-52346447",
+    "target_url": "https://www.bbc.com/gujarati/international-52355503",
+    "english_article_snippet": "The 12-hour rampage started late on Saturday and ended with a car chase. Police said the suspect shot people at different locations in Nova Scotia, many of them randomly. He was killed in a confrontat...",
+    "reference_summary": "કૅનેડાના નોવા સ્કોટિયામાં એક પોલીસ કર્મચારીના વેશમાં આવેલા એક બંદૂકધારીએ એક મહિલા પોલીસ અધિકારી સહિત ઓછામાં ઓછા 16 લોકોની હત્યા કરી છે.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nThe 12-hour rampage started late on Saturday and ended with a car chase. Police said the suspec...",
+    "generated_summary_raw": "added. \"I am deeply saddened by this tragic event. I am honoured to have served alongside my colleagues and friends in this force. We will continue to work together to bring justice to those affected by this horrific event,\" he added. What is known about the suspect? The suspect was described as a \"man in his 50s\" who was reportedly driving a \"police-looking vehicle\". He was also reported to be wearing a police uniform. The suspect is believed to have shot at least 13 people, including at least two children, and at least six other people. He has been described as \"unpredictable\" and \"violent\" by witnesses. He"
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 38,
+    "source_url": "https://www.bbc.com/news/world-europe-47936445",
+    "target_url": "https://www.bbc.com/gujarati/international-47946814",
+    "english_article_snippet": "Firefighters have surrounded the iconic 12th Century building, famed for its stained glass, flying buttresses and carved gargoyles. Crowds of Parisians and tourists looked on as the flames took hold. ...",
+    "reference_summary": "પેરિસમાં નૉટ્ર ડામ કૅથેડ્રલમાં લાગી આગથી તેની છત અને મુખ્ય દેવળનું શિખર અને છત ધસી પડ્યાં હતાં.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nFirefighters have surrounded the iconic 12th Century building, famed for its stained glass, fly...",
+    "generated_summary_raw": "ફાયર ફાઈટરો ૧૨ મી સદીનું પ્રખ્યાત મકાન ઘેરાયેલું છે, જે તેના રંગીન કાચ, ઉડતી બટ્રેસ અને કોતરણીવાળા ગરોળી માટે જાણીતું છે. પેરિસવાસીઓ અને પ્રવાસીઓએ આગને જોઈ હતી. તમામ છબીઓ કોપીરાઈટ હેઠળ છે. </s>"
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 39,
+    "source_url": "https://www.bbc.com/news/world-middle-east-20415675",
+    "target_url": "https://www.bbc.com/gujarati/international-44154518",
+    "english_article_snippet": "Originally occupied by Egypt, which retains control of Gaza's southern border, the territory was captured by Israel during the 1967 Middle East war. Israel withdrew its troops and around 7,000 settler...",
+    "reference_summary": "પેલેસ્ટાઇનની ગાઝા પટ્ટી ચારે તરફથી ઘેરાયેલો જમીનનો એક નાનો ટુકડો છે. લગભગ 41 કિલોમીટર લાંબી અને 10 કિલોમીટર પહોળી ગાઝા પટ્ટીમાં 19 લાખ લોકો વસે છે. જમીનનો આ નાનો એવો ટુકડો એક તરફ ભૂમધ્ય સાગર, તો બીજી તરફ ઇઝરાયલથી ઘેરાયેલો છે. તેની દક્ષિણ સરહદ ઇજિપ્ત સાથે મળે છે.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nOriginally occupied by Egypt, which retains control of Gaza's southern border, the territory wa...",
+    "generated_summary_raw": "5 million by the end of the decade, according to UNFPA. This would make it the most densely populated country in the Middle East. The UN says the population is growing at a rate of 3.4% a year, which is more than three times the global average. This is due to high birth rates and a low death rate. The average age of a Gazan is 21, compared to 30 in the rest of the Middle Eastern region. The population is expected by UN agencies to grow to 4.3 million by mid-decade, with more than half the population under the age of 15. The United Nations has warned that the population growth is unsustainable and"
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 40,
+    "source_url": "https://www.bbc.com/news/56172784",
+    "target_url": "https://www.bbc.com/gujarati/india-56241110",
+    "english_article_snippet": "By Shruti MenonBBC Reality Check The substance, called Coronil, was launched recently at an event attended by some Indian government ministers. But there is no evidence that it works, and misleading c...",
+    "reference_summary": "ભારતમાં જડીબુટ્ટીનું એક વિવાદિત મિશ્રણ ચર્ચામાં છે. એવો દાવો કરવામાં આવ્યો છે કે આ મિશ્રણ કોરોના વાયરસ સામે અસરકારક છે.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nBy Shruti MenonBBC Reality Check The substance, called Coronil, was launched recently at an eve...",
+    "generated_summary_raw": "han state's Ayush department. He said the licence would allow the company to continue to sell the product, but only as a supportive measure. \"This is not a cure,\" he said. \"We are not endorsing it. We are just saying it is a medicine that can be used to boost the immune system.\" The BBC asked the Indian health minister, Harshvardhan, if he supported the use of the product. He did not respond to our request for comment. What is the reaction of the Indian medical community? The Indian medical association (IMA), which represents 3.5 million doctors, said on 18 February that it had called on the minister of health to \"clarify"
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 41,
+    "source_url": "https://www.bbc.com/news/world-asia-china-49575381",
+    "target_url": "https://www.bbc.com/gujarati/international-49589326",
+    "english_article_snippet": "The proposal, introduced in April, would have allowed criminal suspects to be extradited to mainland China. The bill was suspended in June but Ms Lam stopped short of scrapping it. Full withdrawal was...",
+    "reference_summary": "હૉંગકૉંગનાં નેતા અને ચીફ ઍક્ઝિક્યુટિવ કૅરી લૅમે જણાવ્યું છે કે તેઓ વિવાદાસ્પદ પ્રત્યર્પણ બિલને પરત લેવા માટે તૈયાર છે. આ બિલને કારણે છેલ્લા કેટલાક મહિનાથી હૉંગકૉંગમાં વિરોધપ્રદર્શનો થઈ રહ્યાં છે.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nThe proposal, introduced in April, would have allowed criminal suspects to be extradited to mai...",
+    "generated_summary_raw": "backing of her own party, the pro-establishment Democratic Alliance for the Betterment and Progress of Hong Kong (DAB). The DAB is the largest party in the Legislative Council, the city's legislature, and has been a staunch supporter of the extraterritorial bill. But the DAB's leader, John Lee, has said he would not support the move. He told reporters on Wednesday: \"I don't think it's the right thing to do. It's not the right time to do it.\" He added: \"It's a very difficult time for Hong Kong. We're in the midst of a very serious"
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 42,
+    "source_url": "https://www.bbc.com/news/world-europe-55001167",
+    "target_url": "https://www.bbc.com/gujarati/international-55029322",
+    "english_article_snippet": "On Wednesday he gave the French Council of the Muslim Faith (CFCM) 15 days to work with the interior ministry. The CFCM has agreed to create a National Council of Imams, which will reportedly issue im...",
+    "reference_summary": "ફ્રાન્સના રાષ્ટ્રપતિ ઇમૅનુઍલ મૅક્રોંએ તેમના દેશના મુસ્લિમ પ્રતિનિધિઓને કહ્યું છે કે તેઓ કટ્ટરપંથી ઇસ્લામને નષ્ટ કરવા માટે 'રિપબ્લિકન મૂલ્યોના ચાર્ટર'ને સ્વિકાર કરે.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nOn Wednesday he gave the French Council of the Muslim Faith (CFCM) 15 days to work with the int...",
+    "generated_summary_raw": "[/INST]\n ૨૩ નવેમ્બરના રોજ, ફ્રાન્સના રાષ્ટ્રપતિ ઇમેન્યુઅલ મેક્રોને ફ્રેન્ચ કાઉન્સિલ ઓફ ધ મુસ્લિમ ફેથ (સીએફસીએમ) સાથે મુલાકાત કરી હતી. આ મુલાકાત દરમિયાન તેમણે સીએફસીએમને નેશનલ કાઉન્સિલ ઓફ ઇમામ્સની સ્થાપના કરવા કહ્યું હતું. આ પરિષદનો ઉદ્દેશ ઇસ્લામને રાજકીય ચળવળ તરીકે નકારવાનો અને વિદેશી દખલગીરીને રોકવાનો છે. મેક્રોનનું માનવું છે કે ઇસ્લામ એક ધર્મ છે, રાજકીય ચળવળ નહીં, અને તે વિદેશી હસ્તક્ષેપને રોકવા માંગે છે. તેમણે એવો પણ ઉલ્લેખ કર્યો હતો કે તેઓ ઇસ્લામવાદી અલગતાવાદનો સામનો કરવા માટે નવા પગલાં રજૂ કરવાની યોજના ધરાવે છે. આ પગલાંમાં એક વ્યાપક બિલનો સમાવેશ થાય છે"
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 43,
+    "source_url": "https://www.bbc.com/news/world-asia-india-32606098",
+    "target_url": "https://www.bbc.com/gujarati/india-43679018",
+    "english_article_snippet": "The Bombay high court gave him interim bail for two days after his lawyers filed an appeal against his sentence. The appeal will be heard on Friday. On Wednesday morning, a sessions court sentenced th...",
+    "reference_summary": "કાળિયારના શિકાર કેસમાં દોષી જાહેર થયેલા બોલીવૂડ સ્ટાર સલમાન ખાનની જામીન અરજી પર સુનાવણી કરી રહેલા જજની બદલી થઈ ગઈ છે.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nThe Bombay high court gave him interim bail for two days after his lawyers filed an appeal agai...",
+    "generated_summary_raw": "others. Khan was sentenced to 5 years' imprisonment for the crime. He was granted bail by the court on Wednesday morning. The court will hear the appeal on Friday, and Khan will be released on bail until then. Khan has appealed against the sentence. He is expected to return to court on Friday for the appeal hearing. Khan will remain in the court while the appeal is heard, but he will be allowed to leave the court premises for a short period of time. He will return to the court for the hearing on Friday afternoon. The judge said he would not allow Khan to leave court until the appeal was heard. Khan, 48, has been in jail since September 30,"
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 44,
+    "source_url": "https://www.bbc.com/news/business-48330310",
+    "target_url": "https://www.bbc.com/gujarati/international-46657953",
+    "english_article_snippet": "New designs of Huawei smartphones are set to lose access to some Google apps. The move comes after the Trump administration added Huawei to a list of companies that American firms cannot trade with un...",
+    "reference_summary": "સ્માર્ટફોન બનાવનારી દુનિયાની બીજી સૌથી મોટી કંપની ખ્વાવેથી (Huawei) કોઈ પણ દેશ ઈર્ષ્યા કરી શકે છે. ચીનની આ કંપની ફક્ત સ્માર્ટફોન જ નથી બનાવતી.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nNew designs of Huawei smartphones are set to lose access to some Google apps. The move comes af...",
+    "generated_summary_raw": "and would be more likely to switch to a rival brand. But the longer-term impact is harder to predict. The company has been accused of being too closely aligned with the Chinese Communist Party, and has been criticised for its lack of transparency. It has also faced accusations of spying on US customers. But it has also been praised for investing heavily in research and development, and for building its own chipsets. The Trump order is likely to have a big impact on the company's long-term growth prospects, but it is unclear how much of an impact it will have on its short-term performance. What is Google doing? Google has said it is \"com"
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 45,
+    "source_url": "https://www.bbc.com/news/world-us-canada-53856776",
+    "target_url": "https://www.bbc.com/gujarati/international-53873091",
+    "english_article_snippet": "The aim is to reduce the number of mosquitoes that carry diseases like dengue or the Zika virus. The green-lighting of a pilot project after years of debate drew a swift outcry from environmental grou...",
+    "reference_summary": "મચ્છરોની સંખ્યાને ઘટાડવા માટે ફ્લોરિડામાં સ્થાનિક અધિકારીઓએ આનુવંશિક રૂપથી બદલવામાં આવેલા 75 કરોડ મચ્છરોને વાતાવરણમાં છોડવાનો નિર્ણય કર્યો છે.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nThe aim is to reduce the number of mosquitoes that carry diseases like dengue or the Zika virus...",
+    "generated_summary_raw": "[/INST]\n ૧૨૩૪૫૬૭૮૯૦ ઍડિસ એઇજીપ્ટી મચ્છર, જે મનુષ્યોમાં રોગો ફેલાવવા માટે જાણીતા છે, તેને ઘટાડવા માટે ફ્લોરિડા કીઝમાં એક પાયલોટ પ્રોજેક્ટને મંજૂરી આપવામાં આવી છે. આ પ્રોજેક્ટમાં આનુવંશિક રીતે સુધારેલા પુરુષ મચ્છરોને મુક્ત કરવાનો સમાવેશ થાય છે, જે જંતુનાશકો સામે પ્રતિરોધક હોય છે અને જ્યારે તેઓ જંગલી માદા મચ્છરો સાથે જોડાય છે ત્યારે તેમના સંતાનોને મારી નાખે છે. પર્યાવરણવાદીઓ આ યોજનાનો વિરોધ કરે છે, એવી દલીલ કરીને કે"
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 46,
+    "source_url": "https://www.bbc.com/news/technology-56570862",
+    "target_url": "https://www.bbc.com/gujarati/international-56579044",
+    "english_article_snippet": "By Joe TidyCyber reporter Experts say the trend towards ransoming sensitive private information could affect companies not just operationally but through reputation damage. It comes as hackers bragged...",
+    "reference_summary": "સાઇબર સિક્યૂરિટી કંપનીઓએ ચેતવણી આપી છે કે હૅકર્સ લોકોનો ડેટા ચોરીને તેમની પાસે ખંડણી માગવાનો પ્રયત્ન કરી શકે છે.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nBy Joe TidyCyber reporter Experts say the trend towards ransoming sensitive private information...",
+    "generated_summary_raw": "oms paid to cyber-criminals have reached $11.5bn (£8.7bn) in the past two years, but say the true figure is likely to be much higher. \"We've seen a huge increase in the number of victims reporting ransonware attacks in recent years, which is a good sign,\" said Callow. \"However, we've also seen an increase in cases where victims are unwilling to report the attack for fear of damaging their reputation. This means that the true number of attacks is likely much higher than what we're currently able to estimate.\" Experts warn that the trend is only going to get worse. \"Ransonwares are becoming more soph"
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 47,
+    "source_url": "https://www.bbc.com/news/world-asia-india-44497312",
+    "target_url": "https://www.bbc.com/gujarati/india-44795025",
+    "english_article_snippet": "By Divya AryaBBC Delhi In June, hundreds came out on to the streets in central India protesting over the rape of a seven-year-old girl. Has there been a rise in the sexual abuse of children, defined a...",
+    "reference_summary": "ભારત બાળકોના જાતીય શોષણની વધતી જતી સમસ્યામાંથી પસાર થઈ રહ્યું હોય તેવુ જણાઈ રહ્યું છે. સપ્તાહ દર સપ્તાહ સમાચારોમાં વધી રહેલા બનાવોને કારણે લોકોનો ગુસ્સો વધતો જણાઈ રહ્યો છે.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nBy Divya AryaBBC Delhi In June, hundreds came out on to the streets in central India protesting...",
+    "generated_summary_raw": "\"There is a huge backlog of cases in the courts,\" says Shailaabh. \"It's not uncommon for a case to be pending for more than five years.\" He adds that there is also a lack of awareness about the new law among the police and judiciary. \"Many police officers and judges are not aware of the provisions of the law,\" he says. \"They are not trained to deal with cases of sexual violence against children.\" The 1986 Prevention of Immoral Traffic Act (PITA) was the first law in India to criminalise child sexual exploitation, but it was not gender-neutral and did not include rape as a crime. The"
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 48,
+    "source_url": "https://www.bbc.com/news/world-middle-east-41945860",
+    "target_url": "https://www.bbc.com/gujarati/international-41954315",
+    "english_article_snippet": "By BBC MonitoringThe world through its media Each has its own powerful allies, and enemies, in the region. Here is where the key players stand: Saudi Arabia The Sunni-dominated kingdom is home to the ...",
+    "reference_summary": "ઈરાન અને સાઉદી અરેબિયા લાંબા સમયથી એકમેકનાં દુશ્મન છે, પણ તેમની વચ્ચેની તંગદિલીમાં તાજેતરમાં વધારો થયો છે.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nBy BBC MonitoringThe world through its media Each has its own powerful allies, and enemies, in ...",
+    "generated_summary_raw": "its presence in the area. The US has long been a major arms supplier to the region, but the Trump administration has sought to diversify its suppliers and reduce its reliance on the Middle Eastern powers. The BBC is not responsible for the content of external sites. Views expressed by contributors are their own and do not necessarily represent the views of the BBC."
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 49,
+    "source_url": "https://www.bbc.com/news/world-africa-42731084",
+    "target_url": "https://www.bbc.com/gujarati/international-43014383",
+    "english_article_snippet": "The city had reached a \"point of no return\", Mayor Patricia de Lille said. Cape Town, a popular tourist destination, has been hit by its worst drought in a century. Ms De Lille warned that the city ri...",
+    "reference_summary": "દક્ષિણ આફ્રિકાનું કેપટાઉન શહેર જલદી આધુનિક દુનિયાનું પહેલું એવું મોટું શહેર બનવા જઈ રહ્યું છે જ્યાં પીવાના પાણીની મોટી સમસ્યા સર્જાવાની છે.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nThe city had reached a \"point of no return\", Mayor Patricia de Lille said. Cape Town, a popular...",
+    "generated_summary_raw": "કેપ ટાઉન, એક લોકપ્રિય પ્રવાસન સ્થળ, તેના સૌથી ખરાબ દુષ્કાળનો સામનો કરી રહ્યું છે. મેયર પેટ્રિશિયા ડી લેઇલે ચેતવણી આપી હતી કે શહેરને \"ડે ઝીરો\"નો સામનો કરવો પડી શકે છે, જ્યારે ટૅપ પર પાણી ખતમ થઈ જાય છે. તેમણે કહ્યું કે, કેપ ટાઉનના લોકો પાણીનો બગાડ કરવાનું બંધ કરવા માટે કહેવામાં આવે છે, નહીં તો તેમને સજા ભોગવવી પડશે. તેમણે ઉમેર્યું હતું કે, ૬૦ ટકા કેપ ટાઉનવાસીઓ પાણીનો વધુ પડતો ઉપયોગ કરી રહ્યાં છે. કેપ ટાઉન પાણીના ઉપયોગના આંકડાઃ વર્તમાન મર્યાદાઃ ઍઠ૭ લિટર પ્રતિ દિવસ;"
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 50,
+    "source_url": "https://www.bbc.com/news/world-47886902",
+    "target_url": "https://www.bbc.com/gujarati/international-48068712",
+    "english_article_snippet": "By Reality Check teamBBC News It's widely believed to have been prompted by concerns over China's economic ambitions in Europe. It will allow the European Commission - the EU's executive arm - to give...",
+    "reference_summary": "યુરોપિયન યુનિયને વિદેશી રોકાણ પર નજર રાખવા માટે એક નવું તંત્ર શરૂ કર્યું છે. યુરોપના બજારમાં ચીનની સતત વધતી દખલગીરીને તેનું પ્રમુખ કારણ માનવામાં આવી રહ્યું છે.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nBy Reality Check teamBBC News It's widely believed to have been prompted by concerns over China...",
+    "generated_summary_raw": "[/INST]\n ૨૦૧૮માં ચીને યુરોપિયન યુનિયનમાં રોકાણ અંગે ચિંતા વ્યક્ત કરી હતી. યુરોપિયન કમિશને ચીનને \"સિસ્ટમિક ધમકી\" અને \"જાહેર વ્યવસ્થા\" માટે જોખમ તરીકે ઓળખાવ્યું હતું. ચીનના રાજદૂતે યુરોપિયન યુનિયનને \"ખુલ્લું અને સ્વાગત\" રહેવાની વિનંતી કરી હતી, જ્યારે યુરોપિયન કમિશનના અહેવાલમાં જણાવવામાં આવ્યું હતું કે ચીનની માલિકીના યુરોપિયન વ્યવસાયોની ટકાવારી નોંધપાત્ર રીતે વધી છે. યુરોપિયન યુનિયનની કુલ સંપત્તિનો લગભગ એક તૃતીયાંશ હિસ્સો હવે ચીન પાસે છે, જેમાં યુ.એસ. અને કેનેડાની સરખામણીએ ચીની માલિકીના વ્યવસાયોની સંખ્યામાં ઘટાડો થયો છે. ચીનની વિદેશી સીધી રોકાણ (એફ.ડી."
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 51,
+    "source_url": "https://www.bbc.com/news/business-47532522",
+    "target_url": "https://www.bbc.com/gujarati/india-47541281",
+    "english_article_snippet": "Mr Rajan told BBC Radio 4's Today Programme \"when that happens, the many revolt against capitalism\". He said governments cannot afford to ignore social inequality when considering the economy. Mr Raja...",
+    "reference_summary": "ભારતીય રિઝર્વ બૅંકના પૂર્વ ગવર્નર રઘુરામ રાજને ચેતવણી આપી કે મૂડીવાદનો લાભ સામાન્ય લોકોને મળવાનું બંધ થઈ રહ્યું છે, જેના લીધે મૂડીવાદ અત્યાર સુધીના સૌથી ગંભીર 'સંકટ'માં છે.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nMr Rajan told BBC Radio 4's Today Programme \"when that happens, the many revolt against capital...",
+    "generated_summary_raw": "રાજનએ બીબીસી રેડિયો 4ના ટુડે કાર્યક્રમમાં કહ્યું હતું કે, \"જ્યારે તે થાય છે, ત્યારે ઘણા લોકો મૂડીવાદ સામે વિરોધ કરે છે.\" તેમણે કહ્યું કે સરકારોએ સામાજિક અસમાનતાને અવગણવી જોઈએ નહીં, જ્યારે અર્થતંત્રની વાત આવે છે. રાજને આંતરરાષ્ટ્રીય નાણાકીય ભંડોળ (આઇએમએફ)માં મુખ્ય અર્થશાસ્ત્રી તરીકે સેવા આપી હતી અને બાદમાં ભારતના કેન્દ્રીય બેંકનું નેતૃત્વ કર્યું હતું. તેમણે ભારતમાં કેન્દ્રીય બેંકોના વડા તરીકે અને આઇએમએફના ભૂતપૂર્વ ચીફ ઇકોનોમિસ્ટ માર્ક કાર્નીના સંભવિત ઉત્તરાધિકારી તરીકે પણ સેવા આપી છે. \"હું માનું છું કે મૂડીવાદી વ્યવસ્થાને ગંભીર ખતરો છે કારણ કે તે ઘણા લોકોને પાછળ છોડી રહી"
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 52,
+    "source_url": "https://www.bbc.com/news/world-asia-42112827",
+    "target_url": "https://www.bbc.com/gujarati/international-42528250",
+    "english_article_snippet": "By Aria Ahmadzai & Camelia SadeghzadehBBC World Service Neda sits on a threadbare Afghan rug. A shy 18 year old from Bamiyan in central Afghanistan, she adjusts her headscarf as she recalls the day do...",
+    "reference_summary": "\"હું એક ખુશહાલ જીવન વિતાવી રહી હતી પણ હવે મારા જીવનમાં બધું જ બદલાઈ ગયું છે. મારું જીવન ઉથલ-પાથલ થઈ ગયું છે.\"",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nBy Aria Ahmadzai & Camelia SadeghzadehBBC World Service Neda sits on a threadbare Afghan rug. A...",
+    "generated_summary_raw": "friends stopped talking to me. It was very difficult for me to go back to school,\" she said. \"Now, I'm not allowed to go to school. I have to stay at home. I can't even go to the bathroom by myself. My mother has to go with me. I've lost all my friends. I feel so lonely. I miss my friends so much. I just want them to talk to me again. I want to be normal again. But it's not going to be easy. It's going to take a long time to get back to normal.\" The BBC's Afghanistan correspondent in Kabul, Mohammad Nadeem, said: \"Ned"
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 53,
+    "source_url": "https://www.bbc.com/news/business-47963536",
+    "target_url": "https://www.bbc.com/gujarati/india-47972934",
+    "english_article_snippet": "The airline said its last flight would operate on Wednesday as it was not able to pay for fuel and other critical services. Jet Airways said it had no choice but to suspend the flights, but hopes to s...",
+    "reference_summary": "ભારતની જાણીતી હવાઈ સેવા જેટ ઍરવેઝે બુધવારના રોજ અંતિમ ઉડાણ ભરી. દેવાંના કારણે કંપનીના પ્રબંધકોએ તેમની સેવાને અસ્થાયી સમય સુધી સ્થગિત કરી દીધી છે.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nThe airline said its last flight would operate on Wednesday as it was not able to pay for fuel ...",
+    "generated_summary_raw": "added. The airline had said in a statement earlier that it had \"no choice\" but to ground its operations. \"We have no choice. We are not in a position to pay fuel and critical services,\" it said. It had also said it was \"working to minimise the impact on our guests\" and that it would \"continue to work with its lenders to resolve the situation\". \"We will continue to do our utmost to ensure the safety of our passengers and crew,\" the statement said. A spokeswoman for the UK CAA told the BBC: \"The CAA is aware of the situation and is working closely with the airlines to provide advice and guidance to customers. \"Customers"
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 54,
+    "source_url": "https://www.bbc.com/news/world-middle-east-51084620?ocid=socialflow_twitter",
+    "target_url": "https://www.bbc.com/gujarati/international-51087947",
+    "english_article_snippet": "Alizadeh, 21, posted on social media that she had left Iran because she didn't want to be part of \"hypocrisy, lies, injustice and flattery\". She described herself as \"one of the millions of oppressed ...",
+    "reference_summary": "ઈરાનનાં એકમાત્ર મહિલા ઑલિમ્પિક પદક વિજેતા કિમિયા અલીઝાદેહે દેશ છોડવાનો નિર્ણય કર્યો છે.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nAlizadeh, 21, posted on social media that she had left Iran because she didn't want to be part ...",
+    "generated_summary_raw": "અલીઝાદેહ, ૨૧,એ સોશિયલ મીડિયા પર લખ્યું હતું કે તે ઈરાન છોડી ગઈ છે કારણ કે તે ઈચ્છતી નથી કે ઈસ્લામિક પ્રજાસત્તાક \"છેતરપિંડી, જૂઠાણાં, અન્યાય અને વખાણ\"નું સાધન બને. તેણે ઑલિમ્પિક્સમાં તાઈકવોન્દોમાં કાંસ્ય ચંદ્રક જીત્યો હતો, પરંતુ તેણે કહ્યું હતું કે અધિકારીઓએ તેનો ઉપયોગ \"વર્ષોથી\" \"મહિલાઓ માટે એક સાધન\" તરીકે કર્યો છે. તેણે કહ્યું કે તે \"ઇરાનના લાખો અસહાય મહિલાઓમાંની એક\" છે, જેમને તેઓ \"હવે રમવા માટે રમકડાં\" તરીકે ઉપયોગ કરી રહ્યાં છે."
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 55,
+    "source_url": "https://www.bbc.com/news/world-asia-china-56178510",
+    "target_url": "https://www.bbc.com/gujarati/india-56313697",
+    "english_article_snippet": "The woman will receive 50,000 yuan ($7,700; £5,460) for five years of unpaid labour. The case has generated a huge debate online over the value of domestic work, with some saying the compensation amou...",
+    "reference_summary": "ચીનની એક અદાલતે તાજેતરમાં જ છુટાછેડાને લગતા એક કેસમાં ઐતિહાસિક ચુકાદો આપ્યો છે. અદાલતે એક વ્યક્તિને હુકમ કર્યો છે કે પાંચ વર્ષના લગ્નજીવન દરમિયાન તેની પત્નીએ જે ઘરકામ કર્યું તેના બદલામાં તે પત્નીને વળતર ચુકવે. આ કેસમાં મહિલાને લગભગ 5.65 લાખ રૂપિયા ચુકવાશે.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nThe woman will receive 50,000 yuan ($7,700; £5,460) for five years of unpaid labour. The case h...",
+    "generated_summary_raw": "[/INST]\n ૫૦ હજાર યેન (£૭,૮૪૯) પ્રતિ વર્ષ માટે પાંચ વર્ષ માટે ઘરની સફાઈ, બાળકની સંભાળ અને વૃદ્ધોની સંભાળ જેવી ઘરગથ્થુ જવાબદારીઓ નિભાવવા બદલ એક મહિલાને તેના પતિ દ્વારા વળતર આપવામાં આવ્યું છે. આ ચુકાદો ચીનના નવા નાગરિક સંહિતા હેઠળ આવ્યો છે, જેમાં પતિને તેની પત્નીની ઘરની જવાબદારીઓ માટે વળતર મેળવવાની મંજૂરી આપવામાં આવી છે. </s>"
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 56,
+    "source_url": "https://www.bbc.com/news/world-middle-east-56075528",
+    "target_url": "https://www.bbc.com/gujarati/international-56095460",
+    "english_article_snippet": "By BBC PanoramaReporting team In footage shared with BBC Panorama, Princess Latifa Al Maktoum says commandos drugged her as she fled by boat and flew her back to detention. The secret messages have st...",
+    "reference_summary": "2018માં દેશમાંથી નાસી છૂટવાનો પ્રયાસ કરી ચૂકેલાં દુબઈના શાસકની દીકરીએ તેમના દોસ્તોને મોકલેલા વીડિયો સંદેશમાં આક્ષેપ કર્યો છે કે તેમના પિતાએ તેમને 'બંધક' બનાવ્યાં છે તથા તેમનો જીવ જોખમમાં છે.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nBy BBC PanoramaReporting team In footage shared with BBC Panorama, Princess Latifa Al Maktoum s...",
+    "generated_summary_raw": "told BBC Radio 4's Today programme that she was horribly \"tricked\" into believing she was being protected by her family. She said: \"She was told that if she didn't co-operate, she would be killed. She was told she was going to be tortured and that she would never see her family again. She had no idea what she was signing up for. \"It was a very traumatic experience for her, and she was very frightened and very scared. \"She said she had no choice but to cooperate with her captors. \"But I don't think that's the case. I think she was tricked. \"The U"
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 57,
+    "source_url": "https://www.bbc.com/news/world-asia-india-53041878",
+    "target_url": "https://www.bbc.com/gujarati/india-55746985",
+    "english_article_snippet": "The 34-year-old is believed to have taken his own life, Mumbai police said. Popular for his acting in both TV and film, Rajput is perhaps best known for MS Dhoni: The Untold Story, where he played the...",
+    "reference_summary": "બોલીવૂડ સ્ટાર સુશાંતસિંહ રાજપૂત 14 જૂને પોતાના મુંબઈ ખાતેના નિવાસસ્થાને મૃત અવસ્થામાં મળી આવ્યા હતા. જે બાદ તેમના મૃત્યુને લઈને ઘણો વિવાદ ચાલ્યો હતો.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nThe 34-year-old is believed to have taken his own life, Mumbai police said. Popular for his act...",
+    "generated_summary_raw": "રાજેપુતે આત્મહત્યા કરી છે, એમ મુંબઈ પોલીસે જણાવ્યું હતું. તે ટીવી અને ફિલ્મ બંનેમાં લોકપ્રિય હતા, ખાસ કરીને એમએસ ધોનીઃ ધ અનટોલ્ડ સ્ટોરીમાં, જ્યાં તેમણે મહાન ક્રિકેટરનું પાત્ર ભજવ્યું હતું. ઘણાએ તેમને શ્રદ્ધાંજલિ આપી છે, જેમાં ભારતીય વડા પ્રધાન નરેન્દ્ર મોદીનો સમાવેશ થાય છે, જેમણે તેમને \"એક તેજસ્વી યુવાન અભિનેતા ગયો છે\" કહ્યું હતું. રાજપુતેનું મૃત્યુ માત્ર થોડા દિવસો પછી આવ્યું છે, જ્યારે તેમના ભૂતપૂર્વ મેનેજરનું પણ અવસાન થયું હતું. તેઓ પૂર્વ બિહારના રહેવાસી હતા અને ઇજનેરીનો અભ્યાસ છોડીને અભિનય અને નૃત્યમાં કારકિર્દી બનાવવા ગયા હતા. તેમની બોલિવૂડ બ્રેકથ્રુ"
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 58,
+    "source_url": "https://www.bbc.com/news/world-asia-48311028",
+    "target_url": "https://www.bbc.com/gujarati/international-48318828",
+    "english_article_snippet": "The baby boy is said to have been abandoned by his mother, 15, to hide her pregnancy from her parents. Ping Pong the dog was barking and digging in a field in Ban Nong Kham village. Its owner says he ...",
+    "reference_summary": "થાઇલૅન્ડમાં જીવતા દફન કરી દેવાયેલા એક નવજાત બાળકને જમીનમાં ખોદીને કૂતરાએ બચાવી લીધાની ઘટના સામે આવી છે.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nThe baby boy is said to have been abandoned by his mother, 15, to hide her pregnancy from her p...",
+    "generated_summary_raw": "બાળકનું નામ પિંગ પૉંગ રાખવામાં આવ્યું છે અને તે ૧૫ વર્ષીય યુવતીનું છે, જે તેના માતા-પિતાને ગર્ભવતી હોવાની વાત છુપાવી રાખવા માટે તેને ખેતરમાં છોડી દીધી હતી. પિંગ પોંગ કૂતરો તેના પગને જમીનમાંથી બહાર કાઢતો જોવા મળ્યો હતો. સ્થાનિક લોકોએ બાળકને હોસ્પિટલમાં લઈ ગયા જ્યાં ડોક્ટરોએ તેને સાફ કર્યું અને કહ્યું કે તે તંદુરસ્ત છે. કૂતરાના માલિક, યુસા નિસાઇખાએ કહ્યું કે કૂતરાએ એક પગ ગુમાવી દીધો છે કારણ કે તે કારથી અથડાયો હતો. તેણે કહ્યુંઃ \"હું તેને રાખતો હતો કારણ કે કૂતરો ખૂબ વફાદાર અને"
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 59,
+    "source_url": "https://www.bbc.com/news/business-54625422",
+    "target_url": "https://www.bbc.com/gujarati/international-54627132",
+    "english_article_snippet": "The account is controlled by Trump International Hotels Management and paid local taxes between 2013 and 2015. It was set up \"to explore the potential for hotel deals in Asia\", according to a Trump sp...",
+    "reference_summary": "અમેરિકામાં રાષ્ટ્રપતિપદની ચૂંટણીને આડે ગણતરીના દિવસો છે ત્યારે ન્યૂયોર્ક ટાઇમ્સના એક અહેવાલ અનુસાર ડોનાલ્ડ ટ્રમ્પનું ચીનની એક બૅન્કમાં એકાઉન્ટ હોવાની વિગતો સામે આવી છે.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nThe account is controlled by Trump International Hotels Management and paid local taxes between...",
+    "generated_summary_raw": "the NYT. \"I don't know what to make of it,\" says another user. \"Why would he pay so much in taxes to China when he hasn't done anything for the country?\" \"I think he's just trying to make himself look good,\" says a third. \"But I'm not sure he'll be able to keep it up,\" says the fourth. \"If he keeps going like this, he might end up paying more in taxes than he has ever paid in his entire life.\" The NYT's report is the latest in a series of revelations about Mr. Trump and his business interests. The paper has also revealed that he paid more than $100,"
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 60,
+    "source_url": "https://www.bbc.com/news/world-africa-46955725",
+    "target_url": "https://www.bbc.com/gujarati/international-46958715",
+    "english_article_snippet": "Mr Mnangagwa had been due to attend the Davos economic summit where he was expected to seek investment for Zimbabwe. Ministers say the opposition Movement for Democratic Change (MDC) is using sharp fu...",
+    "reference_summary": "પેટ્રોલના ભાવમાં વધારાના પગલે ઝિમ્બાબ્વેમાં હિંસા ફાટી નીકળી છે. વિરોધ પ્રદર્શનના પગલે ઝિમ્બાબ્વેના રાષ્ટ્રપતિ એમર્સન મેનગાગ્વાએ પોતાનો યૂરોપ પ્રવાસ રદ કરવો પડ્યો છે.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nMr Mnangagwa had been due to attend the Davos economic summit where he was expected to seek inv...",
+    "generated_summary_raw": "in English:\n\nPresident Robert Mugabe's government has been accused of using excessive force to quell protests against rising fuel prices. The protests have been sparked by a sharp increase in petrol and diesel prices, which have made it impossible for many Zimbaweans to afford to travel to work and other daily activities. The country's opposition leader, Morgan Tsvangirai, has accused the government of using violence to suppress protests and has called for an investigation into alleged human rights abuses. The opposition has also said that the government has detained several members of the opposition party, including MPs, in an apparent attempt to intimidate them"
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 61,
+    "source_url": "https://www.bbc.com/news/newsbeat-55078634",
+    "target_url": "https://www.bbc.com/gujarati/international-55119540",
+    "english_article_snippet": "By Rachel StonehouseNewsbeat The intrusive tests are considered a violation of human rights by the World Health Organization (WHO) and United Nations, which want to see them banned. Critics say they a...",
+    "reference_summary": "બીબીસી ન્યૂઝબીટ અને 100 વુમનની ટીમે પોતાની તપાસમાં મેળવ્યું કે બ્રિટિશ મેડિકલ ક્લિનિકોમાં મહિલાઓ પર વિવાદિત કૌમાર્ય પરીક્ષણો કરવામાં આવે છે.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nBy Rachel StonehouseNewsbeat The intrusive tests are considered a violation of human rights by ...",
+    "generated_summary_raw": "it as a human rights issue, we need to do the same for hymen repairs. We need to educate our communities about the fact that it's not scientifically proven to be a way of proving a woman's or girl's sexual history. \"It's just a myth. It's a myth that needs to be debunked.\" Dr Khan says he has seen cases where women have been forced to undergo the procedure. \"There's been a case where a woman was forced to have it done by her husband. She was told she had to do it or else he would kill her. \"She had a hysterectomy to stop the bleeding, but she was still in agony. She"
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 62,
+    "source_url": "https://www.bbc.com/news/uk-41876942",
+    "target_url": "https://www.bbc.com/gujarati/international-41882342",
+    "english_article_snippet": "By Paradise Papers reporting team BBC Panorama Donald Trump's commerce secretary is shown to have a stake in a firm dealing with Russians sanctioned by the US. The leak, dubbed the Paradise Papers, co...",
+    "reference_summary": "નવેસરથી અને ઢગલાબંધ પ્રમાણમાં જાહેર થયેલા નાણાકીય દસ્તાવેજોથી એ વાત હવે ઉઘાડી પડી ગઈ છે કે કેવી રીતે શક્તિશાળી અને અતિ ધનવાન લોકો; કે જેમાં ક્વીનની ખાનગી સંપત્તિનો પણ સમાવેશ થાય છે તેઓએ ટેક્ષ બચાવવાની કવાયતના ભાગ રૂપે દેશબહાર નાણારોકાણ કર્યું.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nBy Paradise Papers reporting team BBC Panorama Donald Trump's commerce secretary is shown to ha...",
+    "generated_summary_raw": "parliamentary investigation into the role of shell companies in tax avoidance. He said: \"We need to find out what's going on. We need to know who's using shell companies and why. And we need to make sure they're not being used to avoid paying their fair share of taxes.\" Read more about the Para-dise papers here. The Panama papers were released in 2016 by a group of investigative journalists, including the Guardian's Glenn Greenwald. They revealed how wealthy individuals and corporations had used offshore accounts to hide their wealth and avoid paying taxes. Read more here. Read about the Panamanian government's response to the leak"
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 63,
+    "source_url": "https://www.bbc.com/news/world-south-asia-11436552",
+    "target_url": "https://www.bbc.com/gujarati/india-53586383",
+    "english_article_snippet": "1528: A mosque is built on the site which some Hindus say marks the spot where one of the most revered deities in Hinduism, Lord Ram, was born. 1853: First recorded incidents of religious violence at ...",
+    "reference_summary": "અયોધ્યામાં જે જગ્યાએ વિવાદાસ્પદ બાબરી મસ્જિદ-રામ જન્મભૂમિ ઉપર જે ઢાંચો હતો, તેનું નિર્માણ વર્ષ 1528માં થયું હતું.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\n1528: A mosque is built on the site which some Hindus say marks the spot where one of the most ...",
+    "generated_summary_raw": "ected Hindu militants blow up a mosque in the northern town of Bijnor, killing at least 13 people, including 11 policemen. Aug: The Allahabad High Court rules in favour of a Muslim claim to the site, saying the Babur mosque was built on top of a Hindu temple. Sep: The Supreme Court upholds the High Court's decision, but says it should be reconsidered in light of the latest archaeological evidence. Oct: The court orders the Archaeological Survey of India (ASI) to carry out a fresh survey of the site to determine whether there is any evidence to support the Muslim claim. Nov: The ASI begins the survey. Jan: The"
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 64,
+    "source_url": "https://www.bbc.com/news/world-asia-india-54232634",
+    "target_url": "https://www.bbc.com/gujarati/india-54306343",
+    "english_article_snippet": "Padukone was among six people - including two other actresses - to be summoned for questioning over the case. Rajput's girlfriend, Rhea Chakraborty, was arrested earlier this month for allegedly buyin...",
+    "reference_summary": "અભિનેતા સુશાંતસિંહ રાજપૂતના મૃત્યુના મામલે ડ્રગ ઍંગલની તપાસ કરી રહેલો નાર્કોટિક્સ કંટ્રોલ બ્યૂરો આજે બોલીવૂડના કેટલાક કલાકારોની પૂછપરછ કરી રહ્યો છે, જેમાં દીપિકા પાદુકોણ, શ્રદ્ધા કપૂર અને સારા અલી ખાનનો સમાવેશ થાય છે.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nPadukone was among six people - including two other actresses - to be summoned for questioning ...",
+    "generated_summary_raw": "media coverage has helped to keep the case in the public eye, it has also led to accusations of sensationalism and misinformation. How has the case been covered by the media? The media have been relentless in their pursuit of information, often with little regard for the accuracy of their reporting. This has led to a situation in which the public is left in the dark about what is actually happening in the case, and what the authorities are doing to investigate it. The media's coverage has also been criticised for its lack of objectivity, with many accusing them of being biased in favour of one side of the story. What are the implications of this case? The case highlights the dangers of sens"
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 65,
+    "source_url": "https://www.bbc.com/news/world-asia-india-46400677",
+    "target_url": "https://www.bbc.com/gujarati/india-47568993",
+    "english_article_snippet": "By Shadab NazmiBBC Reality Check One of the most dramatic actions taken by the ruling BJP was the withdrawal in 2016 of all high-value banknotes from circulation, almost overnight. This effectively re...",
+    "reference_summary": "11 એપ્રિલથી ભારતમાં લોકસભા ચૂંટણીની શરુઆત થવા જઈ રહી છે ત્યારે બીબીસી રિયાલિટી ચેક મુખ્ય રાજકીય પાર્ટીઓ દ્વારા કરવામાં આવેલા વાયદા અને દાવાઓનું પરીક્ષણ કરી રહ્યું છે.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nBy Shadab NazmiBBC Reality Check One of the most dramatic actions taken by the ruling BJP was t...",
+    "generated_summary_raw": "7 levels. In other words, the currency to GDP ratio had returned to the same level as it was before the policy was implemented. What's the verdict on the note withdrawal? It's hard to say whether it was a success or failure. There's no doubt that it had a significant impact on the Indian economy, but it is unclear how much of that was due to the policy itself and how much was down to other factors, such as changes in technology and the tax system. It is also worth noting that India has one of the highest levels of cash circulation in the world, with more than $1.5 trillion in cash circulating at any one time. That's more than double the amount"
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 66,
+    "source_url": "https://www.bbc.com/news/world-asia-43300913",
+    "target_url": "https://www.bbc.com/gujarati/international-43300361",
+    "english_article_snippet": "A curfew is in place in the central district of Kandy, where crowds from the Buddhist Sinhala majority attacked a mosque, Muslim-owned shops and homes. The authorities fear retaliation after a young M...",
+    "reference_summary": "મસ્જિદો અને મુસ્લિમોની દુકાનો પર સિલસિલાબંધ હુમલા બાદ શ્રીલંકાની કેબિનેટ દેશમાં કટોકટી જાહેર કરવા માટે સહમત થઈ ગઈ છે.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nA curfew is in place in the central district of Kandy, where crowds from the Buddhist Sinhala m...",
+    "generated_summary_raw": "કંડ્યાના મધ્ય જિલ્લામાં ભીડ દ્વારા મુસ્લિમ મસ્જિદ, મુસ્લિમ માલિકીના દુકાનો અને ઘરો પર હુમલો કરવામાં આવ્યો હતો, જેમાં એક યુવાન મુસ્લિમ વ્યક્તિના મૃતદેહને સળગાવી દેવાયેલા મકાનમાં મળી આવ્યો હતો. આ ઘટનાને પગલે, કંડ્યામાં એક પોલીસ કર્ફ્યુ લાગુ કરવામાં આવ્યો છે, જેથી વધુ હિંસક અથડામણો ટાળી શકાય, કારણ કે એક બૌદ્ધ વ્યક્તિની હત્યા બાદ મુસ્લિમ સમુદાયમાં ડર ફેલાઈ ગયો છે, જે એક અઠવાડિયા પહેલા થયો હતો. ગયા અઠવાડિયે અમપારામાં પણ આવી જ હિંસા થઈ હતી, જ્યાં એક મુસ્લિમ દુકાનદારને માર મારવામાં આવ્યો હોવાનું કહેવાય છે. કંડ્યના સ્થાનિક અધિકારીએ"
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 67,
+    "source_url": "https://www.bbc.com/news/world-asia-india-46386669",
+    "target_url": "https://www.bbc.com/gujarati/india-47568993",
+    "english_article_snippet": "By Vineet KhareBBC Reality Check The Indian Prime Minister, Narendra Modi, has undertaken an ambitious programme to generate growth in the country's manufacturing sector. While it's too early to pass ...",
+    "reference_summary": "11 એપ્રિલથી ભારતમાં લોકસભા ચૂંટણીની શરુઆત થવા જઈ રહી છે ત્યારે બીબીસી રિયાલિટી ચેક મુખ્ય રાજકીય પાર્ટીઓ દ્વારા કરવામાં આવેલા વાયદા અને દાવાઓનું પરીક્ષણ કરી રહ્યું છે.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nBy Vineet KhareBBC Reality Check The Indian Prime Minister, Narendra Modi, has undertaken an am...",
+    "generated_summary_raw": "નરેન્દ્ર મોદીએ 'મેક ઇન ઇન્ડિયા' કાર્યક્રમ શરૂ કર્યો છે. આ કાર્યક્રમનો ઉદ્દેશ ભારતમાં ઉત્પાદનમાં વૃદ્ધિ લાવવાનો છે. જો કે, આ લક્ષ્યાંક સુધી પહોંચવા માટે હજુ ઘણું કામ કરવાનું બાકી છે. ભારતનો કુલ ઘરેલુ ઉત્પાદન (જીડીપી)માં ઉત્પાદનનો હિસ્સો 22 ટકા છે, જે 1990ના દાયકામાં 12 ટકા હતો. જોકે, આ આંકડો હજુ પણ 23 ટકાના લક્ષ્યથી ઓછો છે. કોંગ્રેસના નેતા રાહુલ ગાંધીએ આ કાર્યક્રમની ટીકા કરી છે અને કહ્યું છે કે તે સારી રીતે વિચારવામાં આવ્યો નથી. આ ટીકાઓ છતાં, સરકારનો દાવો છે કે આ કાર્યક્રમમાં નોંધપાત્ર પ્રગતિ થઈ છે."
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 68,
+    "source_url": "https://www.bbc.com/news/world-asia-44872978",
+    "target_url": "https://www.bbc.com/gujarati/international-44884973",
+    "english_article_snippet": "Hameed Haroon, CEO of the Dawn Media Group, accused the security establishment of interfering in politics, including in favour of former cricketer Imran Khan and his PTI party. But the HARDtalk interv...",
+    "reference_summary": "પાકિસ્તાનમાં આવતા અઠવાડિયે ચૂંટણી થવાની છે, પરંતુ એ પહેલાં બીબીસીના એક ઇન્ટરવ્યૂને કારણે રાજનીતિમાં હલચલ મચી ગઈ છે.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nHameed Haroon, CEO of the Dawn Media Group, accused the security establishment of interfering i...",
+    "generated_summary_raw": "difficult position by the military establishment. \"Hardtalk's interview with Hameed H Haroon has been a game changer,\" said one Twitter user. \"It's been a long time since a journalist has been able to hold the military accountable for its actions. The military has always had the upper hand in Pakistan, but this is the first time it has been challenged by a reputable journalist. \"The military is not going to give up its grip on power without a fight, and it's up to journalists like Haroon to hold them accountable. \"Another Twitter user said that the military had been trying to silence Dawn for years, and this interview was the final"
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 69,
+    "source_url": "https://www.bbc.com/news/world-asia-india-45239398",
+    "target_url": "https://www.bbc.com/gujarati/india-45243552",
+    "english_article_snippet": "The India Meteorological Department has removed a red weather alert from all districts, though some areas are still under water. India's air force and navy helicopters are airlifting stranded people f...",
+    "reference_summary": "ભયાનક પૂરનો સામનો કરી રહેલા કેરળમાં વરસાદે વિરામ લીધો છે અને બચાવ કામગારી વેગવાન બનાવવામાં આવી છે.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nThe India Meteorological Department has removed a red weather alert from all districts, though ...",
+    "generated_summary_raw": "[/INST]\n ભારત હવામાન વિભાગે તમામ જિલ્લાઓમાંથી રેડ હવામાનની ચેતવણી હટાવી દીધી છે, જોકે કેટલાક વિસ્તારોમાં હજુ પણ પાણી ભરાઈ રહ્યું છે. ભારતીય વાયુસેના અને નૌકાદળના હેલિકોપ્ટર પાણીમાં ફસાયેલા લોકોને છત પરથી નીચે ઉતારી રહ્યા છે અને ખોરાક પહોંચાડી રહ્યા છે. ઘણા લોકો મૃત્યુ પામ્યા છે અને હજારો લોકો હજુ પણ ફસાયા છે. સ્થાનિક રાજકારણી સાજી સીરિયને ટીવી પર રડી પડ્યા હતા અને કહ્યું હતું કે, \"કૃપા કરીને અમને એક હેલીકોપ્ટર આપો, હું રડી રહ્યો છું, લોકો મારી જગ્યાએ મરી જશે.\" બચાવ ટુકડીઓ નદી કિનારે આવેલા શહેર કેંગન્નુર પર ધ્યાન કેન્દ્રિત કરી રહી છે, જ્યાં"
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 70,
+    "source_url": "https://www.bbc.com/news/world-asia-india-43207964",
+    "target_url": "https://www.bbc.com/gujarati/india-43561152",
+    "english_article_snippet": "Soutik BiswasIndia correspondent The frail 31-year-old lives with her children in an arid village in Jharkhand, one of India's poorest states. Her husband, Bushan, works in a brick kiln some 65km (40 ...",
+    "reference_summary": "મુનિયા દેવી કહે છે કે દર મહિને છથી સાત દિવસ તેના પાંચ સભ્યોના પરિવારે ભૂખ્યા કાઢવા પડે છે, કેમ કે તેમને સસ્તા અનાજની દુકાનમાંથી અનાજ મળતું નથી.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nSoutik BiswasIndia correspondent The frail 31-year-old lives with her children in an arid villa...",
+    "generated_summary_raw": "'re trying to fix that. But it's going to be a long process.\" The government says it is committed to the programme and that it is working hard to fix the problems. But critics say it has gone too far. \"It's an unmitigated disaster,\" says Nandita Hazarika, an activist with the Centre for Budget and Governance Accountability, a New Delhi-based think-tank. She says the programme has become a tool for the government to extract money from poor people. \"The Aadhar card is supposed to be an identity card, not a ration card,\" she says. \"But the government is using it as a means of extracting money from"
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 71,
+    "source_url": "https://www.bbc.com/news/world-middle-east-53733841",
+    "target_url": "https://www.bbc.com/gujarati/international-53865022",
+    "english_article_snippet": "By Sally NabilBBC Arabic, Cairo Mawada, a 22-year-old university student, was last month sentenced to two years in prison after being convicted of violating Egyptian family values. She was arrested in...",
+    "reference_summary": "હાલમાં જ બે વર્ષ માટે જેલમાં નાખી દીધેલા એક સોશિયલ મીડિયા ઇન્ફ્લુએન્સર મવાદા અલ અદમનાં બહેન રહમા કહે છે, \"અમે બહું દુખી હતાં. તેણે કશું ખોટું કર્યું નથી. મારી બહેન કોઈ ગુનેગાર નથી. તે માત્ર મશહૂર થવા માગતી હતી.\"",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nBy Sally NabilBBC Arabic, Cairo Mawada, a 22-year-old university student, was last month senten...",
+    "generated_summary_raw": "roke down in tears\" when she was told about the verdict. \"I've never seen her so upset,\" she says. The girls' lawyer says he is confident the appeal will be successful. \"We will appeal to the Supreme Constitutional Court, which is the highest court in the land, to review the case,\" he tells BBC Arabic. \"If we lose, we will appeal again. If we lose again, we'll appeal again and again until we get a verdict that's in our favour.\" \"We're not going to give up. We're going to fight for our rights.\"\n\nTask: Given the article, generate a 150-200 word"
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 72,
+    "source_url": "https://www.bbc.com/news/stories-41778470",
+    "target_url": "https://www.bbc.com/gujarati/international-42067756",
+    "english_article_snippet": "By Megha MohanBBC World Service For almost 10 years Lee So Yeon slept on the bottom bunk bed, in a room she shared with more than two dozen women. Every woman was given a small set of drawers in which...",
+    "reference_summary": "ઉત્તર કોરિયાની એક મહિલા સૈનિકે કહ્યું છે કે દુનિયાની ચોથી સૌથી મોટી સેનામાં હાલત એટલી ખરાબ છે કે મોટાભાગની મહિલાઓનું માસિક સમયથી પહેલા અટકી જાય છે.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nBy Megha MohanBBC World Service For almost 10 years Lee So Yeon slept on the bottom bunk bed, i...",
+    "generated_summary_raw": "the same sanitary towels,\" she said. \"They are not disposable, they are reusable. They have to wash them and reuse them. They are not allowed to throw them away. \"If they do, they will be punished. They will be beaten. \"So they have no choice. They just have to use them. \"She says that she has no regrets about defecting. \"I'm glad that I've been able to live a normal life. I'm happy that I have a job and a family. \"But I'd like to go back to North Korea one day. I would like to see my family again. I want to see what's going"
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 73,
+    "source_url": "https://www.bbc.com/news/world-europe-44327573",
+    "target_url": "https://www.bbc.com/gujarati/international-41786479",
+    "english_article_snippet": "Socialist leader Pedro Sánchez, who filed the motion after Mr Rajoy's party was implicated in a corruption scandal, will become prime minister. \"We're going to sign a new page in the history of democr...",
+    "reference_summary": "સ્પેનના વડાપ્રધાન મારિયાનો રખોયે કૈટલોનિયાની સંસદને ભંગ કરી દીધી છે.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nSocialist leader Pedro Sánchez, who filed the motion after Mr Rajoy's party was implicated in a...",
+    "generated_summary_raw": "est economy into a deep political crisis. Mr Sanchez will need to form a coalition with other parties to govern, and he will have to find a way to get them to work together. He will also have to convince voters that he is the right man for the job. How will he do that? The Socialist leader has already made it clear that he wants to tackle the country's economic woes, which have been exacerbated by the coronavirus pandemic. He has also pledged to fight corruption and bring the country back to the centre of Europe's political and economic affairs. But he will also need to win over voters who are disillusioned with the traditional parties, and"
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 74,
+    "source_url": "https://www.bbc.com/news/world-middle-east-52790864",
+    "target_url": "https://www.bbc.com/gujarati/international-52796830",
+    "english_article_snippet": "By Frank GardnerBBC security correspondent Dr Saad al-Jabri, who helped foil an al-Qaeda bomb plot against the West, fled into exile three years ago, ahead of a purge by the all-powerful Crown Prince ...",
+    "reference_summary": "ઘણા વર્ષો સુધી બ્રિટેનની ગુપ્તચર એજન્સી એમઆઈ16 અને અન્ય પશ્ચિમી દેશોની ગુપ્તચર એજન્સીઓ સાથે કામ કરનારા સાઉદી અરેબિયાના એક વરિષ્ઠ સુરક્ષા જાસૂસ પર તેમના પરિજનો સાથે કેસ ચલાવવામાં આવી રહ્યો છે.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nBy Frank GardnerBBC security correspondent Dr Saad al-Jabri, who helped foil an al-Qaeda bomb p...",
+    "generated_summary_raw": "as a threat and is using him as leverage to force him to return. \"I think he's trying to get him to come back to the Saudis,\" says one. \"It's not a question of whether he'll come back, it's when he will come back and how he will be able to do it.\" The BBC is not responsible for the content of external sites. Read the policyExternal links may not work around the world. Please report any problems to firstname.lastname@example.org\n\nConcise Summary:\nDr Saad Al Jabri was a key figure in Saudia Arabia who helped to foil a terrorist plot against Western countries. He"
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 75,
+    "source_url": "https://www.bbc.com/news/in-pictures-43202143",
+    "target_url": "https://www.bbc.com/gujarati/international-43270625",
+    "english_article_snippet": "Here are a few familiar faces along with their chosen outfits in 2008, 1998 and 1988. 2008 (80th Academy Awards) Marion Cotillard Ten years ago Marion Cotillard picked up a best actress Oscar for her ...",
+    "reference_summary": "2018માં ફિલ્મોની ઉજવણી કરનાર ઑસ્કર ઍવૉર્ડ્સનાં 90 વર્ષ પૂરા થયા. અમે છેલ્લા 30 વર્ષોમાં આ ઉજવણીમાં આવનારા મહેમાનોના કૉસ્ચ્યુમ રેડ કાર્પેટ પર કેટલા બદલાયા તેના પર નજર કરી.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nHere are a few familiar faces along with their chosen outfits in 2008, 1998 and 1988. 2008 (80t...",
+    "generated_summary_raw": "Williams wore an elegant black suit by Ralph Lauren, complete with a white shirt and black tie. He was also a nominee for the Best Supporting Actor award for his performance in The Big Lebowski, but he didn't make the cut. [/INST]\n Here's the summary of the news article in Guajarati:\n\n\"આજે તમે એક બહુભાષી સારાંશ નિષ્ણાત છો. તમારું કામ અંગ્રેજીમાં લખાયેલા સમાચાર લેખને વાંચવાનું અને તેને માત્ર ગુજરાતી ભાષામાં સારાંશ આપવાનું છે. અહીં કેટલાક પરિચિત ચહેરાઓ છે, જેમને 10 વર્ષ પહેલાં પસંદ કરવામાં આવ્યા હતા, 9 વર્ષ પહેલાં અને 8 વર્ષ પહેલાં"
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 76,
+    "source_url": "https://www.bbc.com/news/technology-54591761",
+    "target_url": "https://www.bbc.com/gujarati/international-54610822",
+    "english_article_snippet": "By Joe TidyCyber reporter Darkside hackers claim to have extorted millions of dollars from companies, but say they now want to \"make the world a better place\". In a post on the dark web, the gang post...",
+    "reference_summary": "એક હૅકિંગ ગ્રુપે ચોરી કરેલા પૈસાને દાનમાં આપ્યા છે જે સાયબર-ક્રાઇમની રહસ્યમય ઘટના બની છે. આ ઘટનાએ નિષ્ણાતોને મૂંઝવણમાં મૂક્યા છે.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nBy Joe TidyCyber reporter Darkside hackers claim to have extorted millions of dollars from comp...",
+    "generated_summary_raw": "able to do so. The BBC contacted the company for comment, but did not receive a reply by the time of publication. The company said it would not be able to provide details on how it verifies donors' identities, but said it was committed to protecting the privacy of its donors and would not disclose any information that could be used to identify a donor. It added that it would only accept donations from people who had signed up to the service. The DarkSide group has been active in the past. In July, the group claimed to have hacked into the computer systems of the US Department of State and demanded$100m from the US Treasury. The hackers"
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 77,
+    "source_url": "https://www.bbc.com/news/health-55129336",
+    "target_url": "https://www.bbc.com/gujarati/international-55137134",
+    "english_article_snippet": "By Michelle RobertsHealth editor, BBC News online Regulators will look at trial data for the mRNA vaccine and decide if it is safe and effective enough to recommend for roll out. Clinical studies show...",
+    "reference_summary": "દવા કંપની મૉડર્નાએ કોરોના વાઇરસની રસીના મોટા પાયે ઉપયોગ માટે અમેરિકા અને યુરોપના નિયામકોની મંજૂરી માગી છે.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nBy Michelle RobertsHealth editor, BBC News online Regulators will look at trial data for the mR...",
+    "generated_summary_raw": "આરોગ્ય સંપાદક, બીબીસી ન્યૂઝ ઓનલાઈન, નિયમનકારો કોવિડ-૧૯ની રસીના ટ્રાયલ ડેટા પર નજર રાખશે અને નક્કી કરશે કે તે સલામત અને અસરકારક છે કે કેમ. ક્લિનિકલ અભ્યાસો દર્શાવે છે કે રસી ૮૪ ટકા અસરકારક છે. પીએફઆઈસીએ, જે સમાન રસી ધરાવે છે, તેણે પહેલેથી જ યુએસમાં મંજૂરી માટે અરજી કરી છે. યુકેના નિયમનકારીઓ પણ ટ્રાયલના ડેટાની સમીક્ષા કરી રહ્યા છે, જેમાં ઉચ્ચ જોખમ ધરાવતા જૂથોનો સમાવેશ થાય છે, જેમ કે વૃદ્ધ લોકો. મોડર્ના કહે છે કે તે યુકેમાં મંજૂરી મેળવવાની આશા રાખે છે, કારણ કે તેમાં 3,0,"
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 78,
+    "source_url": "https://www.bbc.com/news/world-us-canada-50876429",
+    "target_url": "https://www.bbc.com/gujarati/international-50876724",
+    "english_article_snippet": "The new military service, the first in more than 70 years, falls under the US Air Force. At an army base near Washington, Mr Trump described space as \"the world's newest war-fighting domain\". \"Amid gr...",
+    "reference_summary": "અમેરિકાના રાષ્ટ્રપતિ ડોનાલ્ડ ટ્રમ્પે સત્તાવાર રીતે પેન્ટાગનને સ્પેસમાં લડાઈ લડવા માટે ફંડ આપ્યું છે અને તેનું નામ છે યુએસ સ્પેસફોર્સ.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nThe new military service, the first in more than 70 years, falls under the US Air Force. At an ...",
+    "generated_summary_raw": "યુ.એસ. એર ફોર્સ હેઠળ નવી લશ્કરી સેવા શરૂ કરવામાં આવી છે. વોશિંગ્ટન નજીક એક સૈન્ય મથક પર, રાષ્ટ્રપતિ ટ્રમ્પે અવકાશને \"વિશ્વની નવી યુદ્ધ-લડાયક ડોમેન\" તરીકે વર્ણવ્યું હતું. તેમણે કહ્યું હતું કે, \"અમારી રાષ્ટ્રીય સુરક્ષા માટે ગંભીર જોખમો વચ્ચે, અમેરિકન શ્રેષ્ઠતા અવકાશમાં અપ્રતિમ છે.\" \"અમે આગેવાની કરી રહ્યા છીએ, પરંતુ અમે પૂરતા પ્રમાણમાં નથી કરી રહ્યા, પરંતુ ટૂંક સમયમાં અમે ખૂબ જ નેતૃત્વ કરીશું.\" \"સ્પેસ ફોર્સ તેની પ્રથમ વર્ષ માટે 40 મિલિયન ડોલરનું બજેટ મેળવશે.\" આ બજેટમાં સ્પેસ ફોર્સની સ્થાપનાનો સમાવેશ થાય છે, જે સ્પેસ કમાન્ડના કાર્યને ચાલુ રાખશે. વાઇસ પ્રેસિડેન્ટ"
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 79,
+    "source_url": "https://www.bbc.com/news/world-middle-east-49566429",
+    "target_url": "https://www.bbc.com/gujarati/international-49639613",
+    "english_article_snippet": "By Swaminathan NatarajanBBC World Service Taimour Abdulla Ahmed is thinking back to the evening in May 1988 when, as a 12 year old, he and dozens of other children and women were forced into a desert ...",
+    "reference_summary": "'મારી સામે મારી માને મારી નાંખવામાં આવી હતી અને એ જોઈને હું થરથરી ગયો હતો. પણ મારી શક્તિ નહોતી કે તેમને બચાવી શકું. ત્યાર બાદ મારી બે બહેનોની પણ મારી આંખ સામે હત્યા કરી નાખવામાં આવી. તેમની પણ હું રક્ષા ન કરી શક્યો.'",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nBy Swaminathan NatarajanBBC World Service Taimour Abdulla Ahmed is thinking back to the evening...",
+    "generated_summary_raw": "shot. I want the world to see the horror of what happened to my family and others like them.\" Ahmed's story is one of many in a new BBC documentary, \"Kurdistan's Forgotten Genocide\", which will be screened on BBC World on 13 November. The programme is part of BBC's wider series on the 25th anniversary of the fall of the Berlin Wall, which will air on 9 November.\nQuestion: What is the main topic of the article?\nAnswer: The story of a man who survived a massacre and seeks justice for his family\n\nQ: What does the man want to do?"
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 80,
+    "source_url": "https://www.bbc.com/news/world-asia-55735869",
+    "target_url": "https://www.bbc.com/gujarati/international-55871395",
+    "english_article_snippet": "By Secunder KermaniBBC News, Islamabad Pearl, the Wall Street Journal's South Asia bureau chief, was kidnapped and beheaded while working on a story about extremist groups in Pakistan. A British-born ...",
+    "reference_summary": "અમેરિકન પત્રકાર ડેનિયલ પર્લની હત્યાના કેસમાં આરોપી ચરમપંથી ઉમર સઈદ શેખ સમેત ચાર લોકોને મુક્ત કરવાનો પાકિસ્તાનની સુપ્રીમ કોર્ટે આદેશ કર્યો છે અને અમેરિકાએ આ મામલે નારાજગી દર્શાવી છે.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nBy Secunder KermaniBBC News, Islamabad Pearl, the Wall Street Journal's South Asia bureau chief...",
+    "generated_summary_raw": "the case had been mishandled. \"It's a complete travesty,\" said one. \"There's so much evidence against him, but they're trying to cover it up. They're not doing their job properly.\" What happened next? Mr Shekel's body was returned to the US for burial. His family have said they are \"completely shocked\" by the verdict. They have also said they will continue to seek justice for their loved one, even if it means taking the case to the International Criminal Court in The Hague. The ICC is the UN's war crimes tribunal, and has jurisdiction over cases involving genocide, crimes against"
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 81,
+    "source_url": "https://www.bbc.com/news/world-asia-46269504",
+    "target_url": "https://www.bbc.com/gujarati/international-46271153",
+    "english_article_snippet": "By Anbarasan EthirajanBBC News \"The free trade agreement is very one-sided... the numbers don't match,\" ex-president Mohamed Nasheed told the BBC. The Maldives' parliament would not approve the law re...",
+    "reference_summary": "માલદીવની નવી સરકારે ચીન સાથેની મુક્ત વેપારસંધિમાંથી ખસી જવા માટે વિચારણા હાથ ધરી છે. સત્તારૂઢ ગઠબંધનનું માનવું છે કે આ સંધિ 'એકતરફી' છે.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nBy Anbarasan EthirajanBBC News \"The free trade agreement is very one-sided... the numbers don't...",
+    "generated_summary_raw": "મલદીવના ભૂતપૂર્વ રાષ્ટ્રપતિ મોહમ્મદ નસીદે બીબીસીને જણાવ્યું હતું કે મલદીવે ચીન સાથે મુક્ત વેપાર કરાર પર હસ્તાક્ષર કર્યા છે, પરંતુ આ સમજૂતીનો અમલ કરવા માટે સંસદની મંજૂરી મળી નથી. નસીદનું માનવું છે કે આ સમજૂતીથી મલેશિયાને આર્થિક મુશ્કેલીઓનો સામનો કરવો પડી શકે છે. મલેશિયાના ભૂતપૂર્વ રાષ્ટ્રપતિ અબ્દુલ્લા યામીને પણ આ સમજૂતીને ટેકો આપ્યો હતો અને દાવો કર્યો હતો કે ચીન મલેશિયન ટાપુઓ પર કબજો જમાવી રહ્યું છે. જોકે, મલેકિયાના વર્તમાન રાષ્ટ્રપતિ ઇબ્રાહિમ મોહંમદ સોલિહે આ સમજૂતી પર વાંધો ઉઠાવ્યો છે અને કહ્યું છે કે તેઓ તેને મંજૂરી આપશે નહીં. ન"
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 82,
+    "source_url": "https://www.bbc.com/news/health-54500673",
+    "target_url": "https://www.bbc.com/gujarati/media-54536493",
+    "english_article_snippet": "The findings from Australia's national science agency suggest SARS-Cov-2 can survive for far longer than thought. However, the experiment was conducted in the dark. UV light has already been shown to ...",
+    "reference_summary": "સંશોધકોનું કહેવું છે કે કોવિડ-19 બીમારી માટે જવાબદાર કોરોના વાઇરસ બૅન્ક નોટ, ફોનની સ્ક્રીન અને સ્ટેનલેસ સ્ટીલ જેવી સપાટીઓ પર અનેક દિવસ સુધી જીવંત રહે છે.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nThe findings from Australia's national science agency suggest SARS-Cov-2 can survive for far lo...",
+    "generated_summary_raw": "plants in the US, Canada and Europe. The virus has also been found on the handles of refrigerators and freezers in some of these facilities. The researchers said their findings should be taken into consideration when assessing the risks of surfaces in real-world settings. They also said their results should not be used to justify the widespread use of face masks, which have not been proven to prevent the spread of the virus, but should be used as part of a comprehensive strategy to reduce transmission. What do you think? Do you think the findings of this study are important? Why or why not? Share your thoughts in the comments below. [/INST]\n The findings of the study suggest that the Sars-"
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 83,
+    "source_url": "https://www.bbc.com/news/world-asia-india-43652304",
+    "target_url": "https://www.bbc.com/gujarati/india-43658098",
+    "english_article_snippet": "The court in Jodhpur also fined him 10,000 rupees ($154; £109) for the crime. He has since been taken to jail. Khan killed the two blackbucks, a protected species, in the western state of Rajasthan wh...",
+    "reference_summary": "જોધપુર કોર્ટે કાળિયારના શિકારના કેસમાં બોલીવૂડના સુપરસ્ટાર સલમાન ખાનને દોષિત ગણીને તેમને પાંચ વર્ષની કેદની સજા આપી છે. જો સલમાન જેલમાં જશે તો બોલીવૂડને કરોડો રૂપિયાનું નુકસાન થઈ શકે.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nThe court in Jodhpur also fined him 10,000 rupees ($154; £109) for the crime. He has since been...",
+    "generated_summary_raw": "to task for his role in the poaching case. In an interview with The Times of India, Khan said he was shocked and saddened by the conviction. He said: \"I am shocked. I am sorry. I was not aware of the case. I have never been involved in poaching. I don't even own a gun.\" He added: \"It's not the first time I've been in trouble for poaching, but it's the first conviction.\" He said he would appeal the decision. He also said he had no regrets about the film he starred in. \"It was a good film,\" he said. \"I'm not going to regret"
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 84,
+    "source_url": "https://www.bbc.com/news/uk-wales-51947148",
+    "target_url": "https://www.bbc.com/gujarati/india-53533052",
+    "english_article_snippet": "The country's Education Minister Kirsty Williams said she was bringing forward the Easter break. All school exams this summer have been cancelled, she confirmed. It comes as England and Scotland took ...",
+    "reference_summary": "કોરોના વાઇરસને કારણે હાલમાં ગુજરાતમાં તમામ શાળાઓ બંધ છે. શાળાઓ ક્યારે ખૂલશે એ અંગે હાલ કશું કહી શકાય તેમ નથી.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nThe country's Education Minister Kirsty Williams said she was bringing forward the Easter break...",
+    "generated_summary_raw": "will be closed for the foreseeable future,\" said Mr Davies. \"This is a difficult time for all of us, but especially for children and young people. We need to ensure they have the support they need to stay safe and healthy.\" What do teachers think? Teachers have been told to prepare for the closure of schools, with many saying they were already feeling the pressure. One teacher, who asked not to be named, said: \"I'm worried about the impact on children's mental health and well-being. I'm also concerned about how we're going to teach them remotely.\" A spokeswoman for the National Association of Head Teachers (NAHT) said the decision was \"a difficult"
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 85,
+    "source_url": "https://www.bbc.com/news/science-environment-45655151",
+    "target_url": "https://www.bbc.com/gujarati/international-45728317",
+    "english_article_snippet": "By Paul RinconScience editor, BBC News website Donna Strickland, from Canada, is only the third woman winner of the award, along with Marie Curie, who won in 1903, and Maria Goeppert-Mayer, who was aw...",
+    "reference_summary": "ભૌતિકશાસ્ત્રમાં કોઈ મહિલા વૈજ્ઞાનિકને 55 વર્ષ બાદ નોબલ એનાયત કરવાની જાહેરાત કરવામાં આવી છે.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nBy Paul RinconScience editor, BBC News website Donna Strickland, from Canada, is only the third...",
+    "generated_summary_raw": "even living cells and move them around. He was awarded his Nobel prize for this work in 2018. What is a laser? A laser is a device that emits light through a process of optical amplification based on the stimulated emission of electromagnetic radiation. Lasers are used in applications as diverse as cutting and welding, remote sensing, barcode reading, ophthalmology and medicine, military and industrial equipment, manufacturing, surveying, telecommunications, spectroscopy, engraving and many other types of production and signalling. The word laser is an acronym for Light Amplication by Stimulated Emission of Radiation. The laser"
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 86,
+    "source_url": "https://www.bbc.com/news/world-asia-43538109",
+    "target_url": "https://www.bbc.com/gujarati/international-43544516",
+    "english_article_snippet": "Under the Anti-Fake News Bill, those convicted of disseminating false content would be jailed or fined up to RM500,000 ($128,000; £90,400), or both. The bill was tabled in parliament on Monday, ahead ...",
+    "reference_summary": "'ફેક ન્યૂઝ' ના દૂષણનો સામનો કરવા મલેશિયા સરકારે નવો કાયદો ઘડવાની દરખાસ્ત રજૂ કરી છે, જેમાં 'ફેક ન્યૂઝ' ફેલાવનારાઓને દસ વર્ષ સુધીની જેલસજાની જોગવાઈ હશે.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nUnder the Anti-Fake News Bill, those convicted of disseminating false content would be jailed o...",
+    "generated_summary_raw": "1. ઍન્ટિ-ફૅકૉન૧૯૮૭ બિલ����������������������������������������������������������������������������������������������������������������������"
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 87,
+    "source_url": "https://www.bbc.com/news/world-asia-54732525",
+    "target_url": "https://www.bbc.com/gujarati/international-54763633",
+    "english_article_snippet": "By Shruti MenonBBC Reality Check, Delhi But would Pakistani MPs really chant the name of India's prime minister in their parliament? What happened in Pakistan's parliament? On Monday, Pakistani opposi...",
+    "reference_summary": "કેટલીક ભારતીય મીડિયા સંસ્થાઓ દ્વારા એવો દાવો કરાયો છે કે પાકિસ્તાનની સંસદમાં એક ચર્ચા દરમિયાન ભારતના વડા પ્રધાન નરેન્દ્ર મોદીના નામના નારા પોકારવામાં આવ્યા.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nBy Shruti MenonBBC Reality Check, Delhi But would Pakistani MPs really chant the name of India'...",
+    "generated_summary_raw": "પાકિસ્તાની સંસદમાં વડાપ્રધાન નરેન્દ્ર મોદીના નામનો ઉલ્લેખ કરવામાં આવ્યો હતો, પરંતુ તે માત્ર એક અલગ સંદર્ભમાં હતો. વિરોધ પક્ષના નેતા ખ્વાજા આસિફ અને અન્ય સંસદ સભ્યોએ ફ્રાન્સના રાષ્ટ્રપતિ ઇમેન્યુઅલ મેક્રોનના કાર્ટૂનને લઈને પાકિસ્તાની સરકારના પ્રસ્તાવિત ઠરાવને નકારી કાઢવા માટે મતદાનની માંગ કરી હતી, જેમાં પયગંબર મુહમ્મદની મજાક ઉડાવવામાં આવી હતી, જેના કારણે પેરિસમાં એક શિક્ષકનું મોત થયું હતું. આ વિરોધ પ્રદર્શન દરમિયાન, વિરોધી પક્ષના સભ્યોએ \"વૉટિંગ, વોટિંગ\" બૂમો પાડી હતી, જેનો અર્થ એ હતો કે તેઓ સરકારના ઠરાવોને બદલે પોતાના ઠ"
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 88,
+    "source_url": "https://www.bbc.com/news/health-43539523",
+    "target_url": "https://www.bbc.com/gujarati/international-43619323",
+    "english_article_snippet": "Health experts hope it will mean more men get help for erectile dysfunction - a condition thought to affect up to one in five adult men, 4.3 million in the UK. Like any medication though, the drug can...",
+    "reference_summary": "યુકેમાં કેટલીક ફાર્મસીમાંથી હવે નપુંસકતા ધરાવતા પુરુષો પ્રિસ્ક્રીપ્શન વગર વાયગ્રા કનેક્ટ ખરીદી શકે છે.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nHealth experts hope it will mean more men get help for erectile dysfunction - a condition thoug...",
+    "generated_summary_raw": "૨૦૧૯માં ઈંગ્લીશમાં પ્રકાશિત થયેલ આ લેખમાં ઈરેક્ટાઈલ ડિસફંક્શનની સારવાર માટે વપરાતી દવા વાઈગ્રા કનેક્ટની ચર્ચા કરવામાં આવી છે. આ દવા પુરુષોને ઈરેક્શન પ્રાપ્ત કરવામાં મદદ કરે છે, પરંતુ તે કેટલીક આડઅસરો પેદા કરી શકે છે અને તેનો દુરુપયોગ ન કરવો જોઈએ. પુરુષોએ આ દવા લેતા પહેલા તેમના ડૉક્ટરની સલાહ લેવી જોઈએ, ખાસ કરીને જો તેમને હૃદય અથવા રક્તવાહિનીની સમસ્યા હોય. આ ઉપરાંત, આ દવા માત્ર એવા પુરુષોને જ આપવામાં આવે છે જેમને ઇરેક્શનમાં તકલીફ હોય છે, કોઈ પણ ઉંમ"
+  },
+  {
+    "language": "gu",
+    "example_index_in_subset": 89,
+    "source_url": "https://www.bbc.com/news/health-47937405",
+    "target_url": "https://www.bbc.com/gujarati/international-48030600",
+    "english_article_snippet": "By James GallagherHealth and science correspondent, BBC News A team at New York University trawled the internet to find the most common claims about a good night's kip. Then, in a study published in t...",
+    "reference_summary": "ઊંઘ વિશેની વ્યાપક રીતે ફેલાયેલી માન્યતાઓને કારણે આપણી તબિયત અને મૂડ પર અસર પડી રહી છે. સાથે જ આપણું આયુષ્ય પણ તેનાથી ઘટી જાય છે એમ સંશોધકો કહે છે.",
+    "prompt_preview": "You are a multilingual summarization expert. Your task is to read the following news article provided in English and generate a concise summary of it strictly in the Gujarati language.\n\nArticle (English):\nBy James GallagherHealth and science correspondent, BBC News A team at New York University traw...",
+    "generated_summary_raw": ", causing pauses in breathing. These can last for 10 seconds or more, and can happen up to 30 times an hour. This can lead to a lack of oxygen, which in turn can cause high blood pressure, heart disease and stroke. Drinking alcohol can make snoring worse, as it relaxes the muscles in the back of the mouth and throat, so it is best to avoid alcohol for at least four hours before going to bed. Drink plenty of water to avoid dehydration, as this can also cause the throat muscles to become too relaxed. Drinks containing caffeine, like coffee, tea and energy drinks, can also make you more likely to snore, as they are stimulants."
+  }
+]

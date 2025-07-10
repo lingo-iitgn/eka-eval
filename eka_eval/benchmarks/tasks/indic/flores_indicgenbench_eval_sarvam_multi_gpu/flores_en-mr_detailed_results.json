@@ -1,0 +1,802 @@
+[
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 0,
+    "source_text": "On the accordion, to get extra volume, you use the bellows with more pressure or speed.",
+    "reference_translation": "अकॉर्डियनवर, अतिरिक्त व्हॉल्यूम मिळविण्यासाठी, तुम्ही अधिक दाब किंवा गतीसह भाता वापरा.",
+    "model_translation": "अकॉर्डियन मध्ये अधिक आवाज मिळवण्यासाठी, तुम्ही अधिक दाब किंवा वेग वापरून बेलो वापरता.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: On the accordion, to get extra volume, you use the bellows with more pressure or speed.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 1,
+    "source_text": "A traveller with piles of money might consider a round the world flight, broken up with stays in many of these hotels.",
+    "reference_translation": "खूप पैसे असलेला प्रवासी कदाचित यापैकी अधिकतर हॉटेलमध्ये राहण्याच्या विश्रांतीसह जगाला प्रदक्षिणा घालणाऱ्या विमान प्रवासाचा विचार करू शकतो.",
+    "model_translation": "अनेक ठिकाणांवर थांबणार्‍या, ह्या हॉटेलांमध्ये काही दिवस किंवा आठवडे व्यतीत करून, एका जागतिक प्रवासासाठी पैसे उभे करण्याची कल्पना करणारा एक प्रवासी असू शकतो.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: A traveller with piles of money might consider a round the world flight, broken up with stays in many of these hotels.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 2,
+    "source_text": "Protesters hope to collect a petition of 1.2 million signatures to present to the National Congress in November.",
+    "reference_translation": "निषेधकर्त्यांना नोव्हेंबरमध्ये नॅशनल कॉंग्रेसकडे सादर करण्यासाठी 1.2  दशलक्ष सह्यांची याचिका संकलित करण्याची आशा आहे.",
+    "model_translation": "निदर्शक नोव्हेंबरमध्ये राष्ट्रीय काँग्रेसकडे १ कोटी २ लाखांच्या याचिकेचे निवेदन सादर करण्याची आशा करतात.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: Protesters hope to collect a petition of 1.2 million signatures to present to the National Congress in November.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 3,
+    "source_text": "He graduated from the College of Arts & Sciences of the University of Virginia in 1950 and was a significant donor to that institution.",
+    "reference_translation": "त्याने १९५० मध्ये व्हर्जिनिया विद्यापीठाच्या आर्ट्स आणि सायन्य महाविद्यालयातून पदवी प्राप्त केली होती आणि तो त्या संस्थेचा एक महत्त्वाचा दाता होता.",
+    "model_translation": "त्यांनी व्हर्जिनिया विद्यापीठातील कॉलेज ऑफ आर्ट्स अँड सायन्सेसमध्ये १९५०च्या सुमारास पदवी प्राप्त केली आणि त्या संस्थेसाठी ते एक प्रमुख दात्या होते.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: He graduated from the College of Arts & Sciences of the University of Virginia in 1950 and was a significant donor to that institution.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 4,
+    "source_text": "Unwanted murals or scribble is known as graffiti.",
+    "reference_translation": "नको आलेली भित्तिचित्रे आणि खरडणे हे ग्राफिटी म्हणून ओळखले जाते.",
+    "model_translation": "अवांछित भित्तिचित्र किंवा स्क्रिबलला ग्रॅफिटी म्हणतात.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: Unwanted murals or scribble is known as graffiti.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 5,
+    "source_text": "How would Io's gravity pull on me? If you stood on the surface of Io, you would weigh less than you do on Earth.",
+    "reference_translation": "Io चे गुरुत्व मला कसे ओढेल? तुम्ही Io च्या पृष्ठभागावर उभे राहिल्यावर, तुमचे वजन हे तुमच्या पृथ्वीवरील वजनापेक्षा कमी वजन असेल.",
+    "model_translation": "आयोच्या गुरुत्वाकर्षणाचा भार पृथ्वीवरील माझ्या वजनापेक्षा कमी असेल तर मी आयोवर उभे राहायचे.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: How would Io's gravity pull on me? If you stood on the surface of Io, you would weigh less than you do on Earth.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 6,
+    "source_text": "Cinque Terre, which means Five Lands, comprises the five small coastal villages of Riomaggiore, Manarola, Corniglia, Vernazza and Monterosso located in the Italian region of Liguria.",
+    "reference_translation": "सिनेक टेर, म्हणजे पाच भूभाग, लिगुरियाच्या इटालियन प्रदेशामध्ये रिओमाग्गीओर, मॅनरोला, कॉर्निगलिया, वेर्नाझा आणि मॉन्टरोझो ही किनारपट्टीलगतची पाच लहान गावे आहेत.",
+    "model_translation": "सिंक टेरे म्हणजे पाच भूमी, इटालियन प्रदेश लिगुरीयातील पाच लहान किनारपट्टीच्या खेड्यांचा समूह.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: Cinque Terre, which means Five Lands, comprises the five small coastal villages of Riomaggiore, Manarola, Corniglia, Vernazza and Monterosso located in the Italian region of Liguria.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 7,
+    "source_text": "Students can also submit questions to instructors at any time of day and expect reasonably quick responses, rather than waiting until the next face-to-face meeting.",
+    "reference_translation": "पुढील समोरासमोर होणाऱ्या भेटीपर्यंत वाट पाहण्यापेक्षा, विद्यार्थ्यांना दिवसभरात कधीही शिक्षकांना प्रश्न विचारता येतील आणि त्यांना अतिशय कमी वेळात प्रतिसादही मिळेल.",
+    "model_translation": "विद्यार्थी देखील कोणत्याही वेळी दिवसाच्या कोणत्याही वेळी आणि कारणाशिवाय वेळेवर प्रतिसाद मिळविण्याकरिता प्रशिक्षकांकडे प्रश्न सादर करू शकतात.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: Students can also submit questions to instructors at any time of day and expect reasonably quick responses, rather than waiting until the next face-to-face meeting.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 8,
+    "source_text": "Some of the applications in this category can even translate texts in foreign languages on signs or other objects in the real world when the user points the smartphone towards those objects.",
+    "reference_translation": "या श्रेणीतील काही अॅप्लिकेशन्स वापरकर्ता त्या वस्तूंकडे स्मार्टफोन दर्शवितो तेव्हा अगदी वास्तविक जगातील चिन्हे किंवा इतर वस्तूंवरील परदेशी भाषांमधील मजकूर अनुवादित देखील करू शकतात.",
+    "model_translation": "काही अनुप्रयोग या श्रेणीत अशा वस्तूंवर परदेशी भाषांमध्ये मजकूर अनुवादित करू शकतात जेव्हा वापरकर्ता स्मार्टफोनला त्या वस्तूंकडे निर्देश करतो.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: Some of the applications in this category can even translate texts in foreign languages on signs or other objects in the real world when the user points the smartphone towards those objects.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 9,
+    "source_text": "The study found that depression, fear and catastrophising mediated the relationship between pain and disability in lower back pain sufferers.",
+    "reference_translation": "या अभ्यासात दिसून आले की उद्विग्नता, भिती आणि अवास्तविकता यामुळे पाठीच्या खालच्या भागातील वेदनेचा त्रास असणाऱ्यांची वेदना आणि असमर्थता यांच्यातील संबंधांच्या मध्ये समेट झाला.",
+    "model_translation": "कमीतकचे वेदना आणि अपंगत्व यांचा संबंध आहे हे संशोधनाने दाखवून दिले आहे.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: The study found that depression, fear and catastrophising mediated the relationship between pain and disability in lower back pain sufferers.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 10,
+    "source_text": "In some cross-border trains inspections are done on the running train and you should have valid ID with you when boarding one of those trains.",
+    "reference_translation": "काही सीमापार ट्रेन मध्ये तपासणी धावत्या ट्रेन मध्ये केली जाते आणि तुम्ही जर अशा 1 ट्रेन मध्ये स्वार असाल तर तुमच्या कडे वैध ओळखपत्र हवे.",
+    "model_translation": "काही सीमापारच्या रेल्वेगाड्यांमध्ये धावत्या रेल्वेवर तपासणी केली जाते आणि त्यासाठी तुम्हाला बोर्डिंग करण्यापूर्वी वैध ओळखपत्र सोबत ठेवावे लागते.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: In some cross-border trains inspections are done on the running train and you should have valid ID with you when boarding one of those trains.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 11,
+    "source_text": "If you want to see the world on the cheap, for necessity, lifestyle or challenge, there are some ways to do that.",
+    "reference_translation": "जर तुम्हाला हे जग स्वतः पहायचे असेल, गरज असेल, जीवनशैली किंवा आव्हान म्हणून पहायचे असेल तर त्यासाठी काही मार्ग आहेत.",
+    "model_translation": "जगाला स्वस्तपणे पाहण्यासाठी, गरजेसाठी, जीवनशैलीसाठी किंवा आव्हानाच्या दृष्टीने, काही मार्ग आहेत.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: If you want to see the world on the cheap, for necessity, lifestyle or challenge, there are some ways to do that.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 12,
+    "source_text": "In 1981, Vanda Miss Joaquim, an orchid hybrid, was chosen as the nation's national flower.",
+    "reference_translation": "1981 मध्ये, वांदा मिस जोक्विम एक संकरित ऑर्किड, हे राष्ट्राचे राष्ट्रीय फुल म्हणून निवडण्यात आले.",
+    "model_translation": "१९९१ मध्ये, वंदा मिस जोआक्विम, एक ऑर्किड संकर, हा देशातील राष्ट्रीय फूल म्हणून निवडला गेला.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: In 1981, Vanda Miss Joaquim, an orchid hybrid, was chosen as the nation's national flower.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 13,
+    "source_text": "However, new evidence suggests that the Moriori were a group of mainland Maori who migrated from New Zealand to the Chatham Islands, developing their own distinctive, peaceful culture.",
+    "reference_translation": "तथापी काही पुरावे हे सुचवतात के मोरीओरी हा मुख्य भागातील मावरींचा समूह होता जो न्यूझीलंड मधून चाथम बेटावर स्थलांतरीत झाले, त्यांची  स्वत:चे असे वेगळे, शांततापूर्ण संस्कृती विकसित करणारे.",
+    "model_translation": "पण नवनवीन पुराव्यांवरून असे वाटते की मोरिओरी हा मुख्यभूमीचा माओरी होता जो न्यूझीलंडहून चथाम बेटेपर्यंत स्थलांतरित झाला आणि शांततापूर्ण संस्कृती विकसित केली.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: However, new evidence suggests that the Moriori were a group of mainland Maori who migrated from New Zealand to the Chatham Islands, developing their own distinctive, peaceful culture.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 14,
+    "source_text": "Fifteen of these rocks are attributed to the meteorite shower last July.",
+    "reference_translation": "यापैकी पंधरा दगड गेल्या जुलैतील उल्का वर्षावातील आहेत.",
+    "model_translation": "या खडकांचे १५ तुकडे जुलैच्या शेवटच्या आठवड्यात झालेल्या उल्कावृष्टीचे असल्याचे मानले जाते.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: Fifteen of these rocks are attributed to the meteorite shower last July.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 15,
+    "source_text": "As of the night of August 9, the eye of Morakot was about seventy kilometres away from the Chinese province of Fujian.",
+    "reference_translation": "9 ऑगस्टच्या रात्री, मोराकोटचा डोळा फुजियान या चिनी प्रांतापासून सत्तर किलोमीटर्स दूर होता.",
+    "model_translation": "मोराकोतच्या रात्रीपासून चीनच्या फुजियान प्रांतापासूनची मोरॅकोटची डोळा सुमारे ७० किलोमीटर दूर होती.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: As of the night of August 9, the eye of Morakot was about seventy kilometres away from the Chinese province of Fujian.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 16,
+    "source_text": "Antarctica is the coldest place on Earth, and surrounds the South Pole.",
+    "reference_translation": "अंटार्क्टिका हे पृथ्वीवरील सर्वात थंड ठिकाण आहे आणि दक्षिण ध्रुव देखील याने वेढलेला आहे.",
+    "model_translation": "अंटार्क्टिका हे पृथ्वीवरील सर्वात थंड ठिकाण आहे आणि दक्षिण ध्रुवाभोवती फिरते.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: Antarctica is the coldest place on Earth, and surrounds the South Pole.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 17,
+    "source_text": "At 1:15 a.m. Saturday, according to witnesses, the bus was going through a green light when the car made a turn in front of it.",
+    "reference_translation": "शनिवारी दुपारी 1:15 वाजता, साक्षीदारांच्या म्हणण्यानुसार, बस ग्रीन लाईटमधून जात होती जेव्हा कारने त्याच्या समोरून वळण घेतले होते.",
+    "model_translation": "शनिवारी पहाटे साडेअकराच्या सुमारास, साक्षीदारांनुसार, बस हिरव्या प्रकाशाच्या पुढे जात होती, तेव्हा कारने ती वळवली.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: At 1:15 a.m. Saturday, according to witnesses, the bus was going through a green light when the car made a turn in front of it.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 18,
+    "source_text": "Although most agencies are willing to take on most regular bookings, many agents specialise in particular types of travel, budget ranges or destinations.",
+    "reference_translation": "बहुतांश एजन्सीज बहुतांश नियमित बुकींग्ज घेण्यास इ्च्छुक असल्या तरी, अनेक एजंट्स विशिष्ट प्रकारचा प्रवास, कमी खर्चिक रेंजेस किंवा गंतव्यस्थानांमध्ये वाकबगार असतात.",
+    "model_translation": "अधिकतर संस्थांनी सामान्य बुकिंग स्वीकारायला तयार असतात, परंतु अनेक एजन्सीज विशिष्ट प्रकारच्या प्रवासाच्या, बजेटच्या, किंवा ठिकाणांवर विशेषज्ञता प्राप्त करतात.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: Although most agencies are willing to take on most regular bookings, many agents specialise in particular types of travel, budget ranges or destinations.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 19,
+    "source_text": "Convergent thinking patterns are problem solving techniques that unite different ideas or fields to find a solution.",
+    "reference_translation": "अभिसारी विचार पद्धती हे समस्या सोडवण्याचे तंत्र आहे ज्यामध्ये विविध कल्पना किंवा क्षेत्रे एक निराकरण शोधण्यासाठी एकत्र येतात.",
+    "model_translation": "एकत्रित विचार पद्धती समस्यांचे निराकरण करण्यासाठी विविध कल्पना किंवा क्षेत्रांना एकत्र करते.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: Convergent thinking patterns are problem solving techniques that unite different ideas or fields to find a solution.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 20,
+    "source_text": "In addition, there are fewer time restrictions with the possibility of flexible working hours. (Bremer, 1998)",
+    "reference_translation": "याव्यतिरिक्त, कामाचे तास लवचिक असण्याच्या शक्यतेसह वेळेचे निर्बंध कमी आहेत. (ब्रेमर, १९९८)",
+    "model_translation": "मसलन, अतिरिक्त वेळेच्या मर्यादेसह कमी वेळ असतो.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: In addition, there are fewer time restrictions with the possibility of flexible working hours. (Bremer, 1998)\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 21,
+    "source_text": "It can also be a good way to stretch a budget to allow a longer stay somewhere since many volunteer jobs provide room and board and a few pay a small salary.",
+    "reference_translation": "अर्थसंकल्प विस्तारित करणे हा देखील एक चांगला मार्ग असू शकतो ज्यामुळे अनेक स्वयंसेवकांना नोकरी, रूम आणि बोर्ड उपलब्ध करून देत असल्याने ते कुठेतरी दीर्घ काळ मुक्काम करू शकतात आणि काही जण थोडे वेतन मिळवू शकतात.",
+    "model_translation": "तंत्रज्ञान झपाट्याने पुढे जात आहे.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: It can also be a good way to stretch a budget to allow a longer stay somewhere since many volunteer jobs provide room and board and a few pay a small salary.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 22,
+    "source_text": "The atom can be considered to be one of the fundamental building blocks of all matter.",
+    "reference_translation": "अणूला सर्व वस्तूंच्या मूलभूत रचनात्मक घटकांपैकी 1 घटक मानला जाऊ शकतो.",
+    "model_translation": "अणू हा सर्व पदार्थांचा मूलभूत घटक आहे.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: The atom can be considered to be one of the fundamental building blocks of all matter.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 23,
+    "source_text": "Given how remote many of the pueblos are, you won't be able to find a significant amount of nightlife without traveling to Albuquerque or Santa Fe.",
+    "reference_translation": "अनेक शहरांमधील अंतर जास्त असल्यामुळे, तुम्हाला अल्बुकर्क किंवा सांता फे येथे गेल्याशिवाय नाइट लाइफ पाहता येणार नाही.",
+    "model_translation": "जे दूरच्या अनेक प्यूब्लोस आहेत त्यामुळे तुम्हाला अल्बुकर्क किंवा सांता फे येथे जाऊन रात्रीच्या जीवनाची काहीच मिळणार नाही.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: Given how remote many of the pueblos are, you won't be able to find a significant amount of nightlife without traveling to Albuquerque or Santa Fe.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 24,
+    "source_text": "Visitors with limited time would be best to spend their time elsewhere.",
+    "reference_translation": "मर्यादित वेळ असणारे भेट देणारे हे त्यांचा वेळ कुठेतरी घालवण्यासाठी सर्वोत्तम",
+    "model_translation": "मर्यादित वेळेत असलेल्या पाहुण्यांना इतरत्र वेळ घालवायला उत्तम.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: Visitors with limited time would be best to spend their time elsewhere.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 25,
+    "source_text": "Other scientists argue that these plants are very poisonous so it is unlikely that any dinosaur ate them, even though today the sloth and other animals like the parrot (a descendant of the dinosaurs) can eat poisonous leaves or fruit.",
+    "reference_translation": "इतर शास्त्रज्ञांचा असा तर्क आहे की ही झाडे अतिशय विषारी आहेत त्यामुळे कोणत्याही डायनासोरने ते खाल्लेच असण्याची शक्यता नाही, असे असले तरी आज स्लॉथ तसेच पोपटासारखे  (डायनासोरचा वंशज) इतर प्राणी विषारी पाने किंवा फळ खाऊ शकतात.",
+    "model_translation": "अन्य शास्त्रज्ञांचे म्हणणे आहे की या वनस्पती खूप विषारी आहेत म्हणून कोणतेही डायनासोर त्यांना खाऊ शकत नव्हते, जरी आजच्या स्लोथ आणि इतर प्राणी जसे की पॅराकीट (डायनासोर्सचे वंशज) विषारी पाने किंवा फळे खाऊ शकतात.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: Other scientists argue that these plants are very poisonous so it is unlikely that any dinosaur ate them, even though today the sloth and other animals like the parrot (a descendant of the dinosaurs) can eat poisonous leaves or fruit.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 26,
+    "source_text": "This will ensure that your particular interests and/or constraints are matched with the ship most suitable to them.",
+    "reference_translation": "हे तुमची विशिष्ट स्वारस्ये आणि/किंवा प्रतिबंध यांच्यासाठी सर्वात अनुरूप जहाज शोधणे सुनिश्चित करेल.",
+    "model_translation": "ही सुनिश्चित करते की तुमच्या आवडी आणि/किंवा निर्बंधांपैकी एक, सर्वात योग्य जहाजाशी जुळेल.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: This will ensure that your particular interests and/or constraints are matched with the ship most suitable to them.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 27,
+    "source_text": "Victoria Falls is a town in the western portion of Zimbabwe, across the border from Livingstone, Zambia, and near Botswana.",
+    "reference_translation": "व्हिक्टोरिया फॉल हे झिम्बाब्वेच्या पश्चिम भागातील शहर आहे, ते लिव्हिंगस्टोन, झाम्बिया आणि बोट्स्वानाजवळ सीमेवर वसलेले आहे.",
+    "model_translation": "विक्टोरिया धबधबा हा झांबियाच्या लिविंगस्टोन येथील सीमावर्ती भाग आहे, जो बोत्सवानापासून अगदी थोड्या अंतरावर आहे.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: Victoria Falls is a town in the western portion of Zimbabwe, across the border from Livingstone, Zambia, and near Botswana.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 28,
+    "source_text": "The NBA's decision followed a Utah Jazz player testing positive for the COVID-19 virus.",
+    "reference_translation": "यूटा जॅझ खेळाडूची कोविड-19 व्हायरस टेस्ट पॉझिटिव्ह आल्यानंतर NBA चा निर्णय आला.",
+    "model_translation": "बी.ए.च्या निर्णयानंतर एन.बी.ए.चा एक युटा जॅझ खेळाडू कोविड-१९ विषाणूची चाचणी सकारात्मक आली.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: The NBA's decision followed a Utah Jazz player testing positive for the COVID-19 virus.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 29,
+    "source_text": "This is believed to be the fifth time in history that people have observed what turned out to be chemically confirmed martian material falling to Earth.",
+    "reference_translation": "इतिहासातील ही पाचवी वेळ असल्याचे मानले जाते की लोकांनी पृथ्वीवर कोसळणार्‍या रासायनिकदृष्ट्या पुष्टी झालेल्या मंगळावरील वस्तूंचे निरीक्षण केले आहे.",
+    "model_translation": "हा इतिहासात पाचवा प्रसंग आहे की लोकांनी पृथ्वीवर पडताना जे रासायनिकरीत्या पुष्टीकृत मंगळावरील सामग्री आढळली आहे असे मानले आहे.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: This is believed to be the fifth time in history that people have observed what turned out to be chemically confirmed martian material falling to Earth.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 30,
+    "source_text": "Eighteen holes are played during a regular round, with players usually starting on the first hole on the course and finishing on the eighteenth.",
+    "reference_translation": "सामान्य फेरी खेळताना त्यात अठरा छिद्रांचा समावेश असतो, ज्यामध्ये खेळाडू मैदानावरील पहिल्या छिद्रापासून सुरुवात करून अठराव्या छिद्रावर खेळ संपवतात.",
+    "model_translation": "अठारह गडडे खेळायला साधारणपणे चाळीस मिनिटे लागतात, जे पंधरा मिनिटे सुरू होऊन शेवटपर्यंत चालतात.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: Eighteen holes are played during a regular round, with players usually starting on the first hole on the course and finishing on the eighteenth.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 31,
+    "source_text": "That means everything has to be put back,\" said researcher at the Rift Valley Research Service in Ethiopia and a co-author of the study, Berhane Asfaw.",
+    "reference_translation": "\"त्याचा अर्थ सगळे पूर्वीच्या जागी ठेवायला हवे,\"\" इथिओपियातील रिफ्ट व्हॅली रिसर्च सर्व्हिस येथील संशोधक आणि बर्हन अस्फाव अभ्यासाचा सह लेखक म्हणाला.\"",
+    "model_translation": "त्यावरून सर्वकाही मागे लावले पाहिजे असे म्हणते,\" इथिओपियातील रफ्ता व्हॅली रिसर्च सर्व्हिसमधील संशोधक आणि सह-लेखक बेरहान असाफ यांनी सांगितले.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: That means everything has to be put back,\" said researcher at the Rift Valley Research Service in Ethiopia and a co-author of the study, Berhane Asfaw.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 32,
+    "source_text": "This contradicts earlier reports, which said that cancelling the runoff would have been against the constitution.",
+    "reference_translation": "हा अहवाल रनऑफ रद्द करणे हे संविधानाच्या विरूद्ध आहे या अहवालाच्या विरूद्ध आहे.",
+    "model_translation": "याविषयी पूर्वी काही अहवाल आले होते की नाले वाहतुकीसाठी बंद केल्यास घटनात्मक नियमांचे उल्लंघन होईल; मात्र आता नवीन अहवाल आले आहेत की नाले बंद करणे घटनात्मक नियमांचे उल्लंघन नाही.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: This contradicts earlier reports, which said that cancelling the runoff would have been against the constitution.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 33,
+    "source_text": "Permits must be reserved in advance. You must have a permit to stay overnight at Sirena.",
+    "reference_translation": "परमिट्स अगोदरच आरक्षित करणे आवश्यक असते. तुम्हाला सिरेना येथे रात्रभर मुक्काम करण्यासाठी परमिट आवश्यक असते.",
+    "model_translation": "प्रावधान पूर्वक परवानगी घ्यावी लागते. तुम्हाला सिरीना येथे रात्रभर मुक्काम करण्यासाठी परमिट आवश्यक आहे.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: Permits must be reserved in advance. You must have a permit to stay overnight at Sirena.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 34,
+    "source_text": "If you are going to camp out, bring a camp cot or hammock to keep you away from snakes, scorpions and such.",
+    "reference_translation": "तुम्ही शिबिरासाठी बाहेर जात असाल तर साप, विंचू वगैरेंना दूर ठेवण्यासाठी कॅम्प कॉट किंवा झोपाळा सोबत घ्या.",
+    "model_translation": "जर तुम्हाला कॅंपिंग ला जायचे असेल तर सापांपासून दूर राहण्यासाठी आणि इतर त्रासांपासून वाचण्यासाठी कॅम्पिंग काटा किंवा हॅमॅक आणा.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: If you are going to camp out, bring a camp cot or hammock to keep you away from snakes, scorpions and such.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 35,
+    "source_text": "Volunteering while travelling is a great way to make a difference but it's not just about giving.",
+    "reference_translation": "प्रवासादरम्यान स्वयंसेवक म्हणून काम करणे हा बदल घडवून आणण्याचा उत्तम मार्ग असू शकतो मात्र ते म्हणजे फक्त देणे नव्हे.",
+    "model_translation": "प्रवास करताना स्वयंसेवा करणे हा फरक करण्याचा एक उत्तम मार्ग आहे, परंतु तो फक्त देणे नाही.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: Volunteering while travelling is a great way to make a difference but it's not just about giving.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 36,
+    "source_text": "Army ant colonies march and nest in different phases as well.",
+    "reference_translation": "मुंग्यांच्या सैन्याच्या वसाहती मार्चमध्ये वेगवेगळ्या टप्प्यात आणि वारूळ तयार करतात.",
+    "model_translation": "लष्करांतराचे गट वेगवेगळ्या टप्प्यांमधून जातात आणि राहतात.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: Army ant colonies march and nest in different phases as well.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 37,
+    "source_text": "But, if this ever does happen probably won't happen for a very long time. The stars are so spread out that there are trillions of miles between stars that are \"neighbors\".",
+    "reference_translation": "\"परंतु, जर असे कधी झाले तर बहुधा फार काळ घडणार नाही. तारे इतके दूरवर पसरलेले आहेत की ते \"\"शेजारी\"\" असलेल्या ताऱ्यांपासून कोट्यवधी मैल दूर आहेत.\"",
+    "model_translation": "पण, असं झालं तर बरं होणार नाही की बऱ्याच काळानंतर होणार नाही. तारे इतके विखुरलेले आहेत की ते \"शेजारी\" आहेत त्यातील ट्रिलियन मैल दूर आहेत.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: But, if this ever does happen probably won't happen for a very long time. The stars are so spread out that there are trillions of miles between stars that are \"neighbors\".\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 38,
+    "source_text": "Architecture overlaps considerably with other fields including urban planning, civil engineering, decorative arts, interior design and landscape design.",
+    "reference_translation": "आर्किटेक्चरमध्ये शहरी नियोजन, सिव्हील इंजिनीअरिंग, सुशोभिकरणासंबंधित कला, इन्टिरीअर डिझाइन आणि लॅन्डस्केप डिझाइन यांचा बऱ्यापैकी समावेश होतो.",
+    "model_translation": "वास्तुकला शहरी नियोजन, सिव्हिल इंजिनिअरिंग, सजावटी कला आणि अंतर्गत डिझाईन यासारख्या अनेक क्षेत्रांशी छेद घेते.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: Architecture overlaps considerably with other fields including urban planning, civil engineering, decorative arts, interior design and landscape design.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 39,
+    "source_text": "French law was changed. His activism went back to age 15 when he joined the French Resistance during World War II.",
+    "reference_translation": "फ्रेंच कायदा बदलला होता. द्वितीय विश्वयुद्धात फ्रेंच प्रतिकारात सामील झाला तेव्हा त्याची सक्रियता 15 व्या वर्षात परत गेली.",
+    "model_translation": "फ्रेंच कायदा बदलला आहे. त्यांच्या युद्धकाळातील सक्रियतेचं वय १५ होतं जेव्हा त्यांनी फ्रान्सच्या प्रतिकारात सामील झाले.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: French law was changed. His activism went back to age 15 when he joined the French Resistance during World War II.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 40,
+    "source_text": "We will never overhaul a car, build a fountain in our backyard, travel to Peru to examine ancient ruins, or remodel our neighbour's house.",
+    "reference_translation": "आपण कधीही आपली कार दुरुस्तीसाठी पूर्ण तपासणार नाही, एखादा कारंजा मागच्या अंगणात बांधणार नाही, प्राचीन अवशेष पाहण्यासाठी पेरुकडे प्रयाण करणार नाही किवा आपल्या शेजाऱ्याचे घर पुनरारेखीत करणार नाही.",
+    "model_translation": "आपण कधीच कारची पुनर्रचना करणार नाही, बागेत फव्वारा तयार करणार नाही, पेरूला जाऊन प्राचीन अवशेषांची तपासणी करणार नाही, किंवा आपल्या शेजाऱ्याच्या घराचे नूतनीकरण करणार नाही.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: We will never overhaul a car, build a fountain in our backyard, travel to Peru to examine ancient ruins, or remodel our neighbour's house.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 41,
+    "source_text": "Athletes may feel that they prefer a product even when it provides no real benefits.",
+    "reference_translation": "खेळाडूंना असे वाटू शकते की ते एखाद्या अशा उत्पादनास प्राधान्य देतात ज्यामुळे कोणतेही वास्तविक फायदे मिळत नाहीत.",
+    "model_translation": "खेळाडूंना वाटू शकते की त्यांना एक उत्पादन आवडते जे खरोखर काही फायदा देत नाही.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: Athletes may feel that they prefer a product even when it provides no real benefits.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 42,
+    "source_text": "Keep in mind while planning that although Southern Africa is stable not all neighboring countries are.",
+    "reference_translation": "नियोजन करताना दक्षिण आफ्रिका स्थिर असली तरी सर्व शेजारी देश स्थिर नाहीत हे लक्षात ठेवा.",
+    "model_translation": "दक्षिण आफ्रिका स्थैर्य राखून आहे, परंतु सर्व शेजारी देश स्थिर नाहीत हे लक्षात ठेवा.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: Keep in mind while planning that although Southern Africa is stable not all neighboring countries are.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 43,
+    "source_text": "After it became apparent that many families were seeking legal help to fight the evictions, a meeting was held on March 20 at the East Bay Community Law Center for the victims of the housing scam.",
+    "reference_translation": "ते स्पष्ट झाल्यानंतर अनेक कुटुंबे बेकायदेशीर कारवाईसाठी लढा देण्यासाठी कायदेशीर मदतीची मागणी करत होते, गृहनिर्माण घोटाळ्यातील पीडित व्यक्तींसाठी 20 मार्च रोजी पूर्व बे समुदाय कायदा केंद्र येथे एक बैठक आयोजित करण्यात आली होती.",
+    "model_translation": "पूर्व में हास्यास्पदपणे भाड्याच्या घरांच्या घोटाळ्यामुळे अनेक कुटुंबे कायदेशीर मदतीसाठी धावून गेली होती; म्हणून, भाडेकरूंच्या संघर्षासाठी एक बैठक आयोजित करण्यात आली होती.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: After it became apparent that many families were seeking legal help to fight the evictions, a meeting was held on March 20 at the East Bay Community Law Center for the victims of the housing scam.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 44,
+    "source_text": "Batten was ranked 190th on the 2008 400 Richest Americans list with an estimated fortune of $2.3 billion.",
+    "reference_translation": "२००८ च्या सर्वांत श्रीमंत ४०० अमेरिकन लोकांच्या यादीमध्ये बॅटन अंदाजे $२.३ बिलियन एवढ्या संपत्तीसह १९० व्या क्रमांकावर होता.",
+    "model_translation": "बाटेण्टला २००९ च्या ४०० श्रीमंत अमेरिकनस्यांची यादीमध्ये $२.३ अब्जच्या अंदाजे अब्जाधीशांसह २० वे स्थान मिळाले होते.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: Batten was ranked 190th on the 2008 400 Richest Americans list with an estimated fortune of $2.3 billion.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 45,
+    "source_text": "In developed countries today, providing deluxe bed and breakfasts has been raised to a sort of art-form.",
+    "reference_translation": "आज विकसित देशांमध्ये, उत्तम बिछाना आणि नाश्ता पुरवणे हे जणू एका कला प्रकाराप्रमाणे मोठे झाले आहे.",
+    "model_translation": "विकसित देशात आज आरामदायक पलंग आणि नाश्ता ही एक कलाप्रकार झाला आहे.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: In developed countries today, providing deluxe bed and breakfasts has been raised to a sort of art-form.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 46,
+    "source_text": "The Icelandic Meteorological Office also reported no earthquake activity in the Hekla area in the past 48 hours.",
+    "reference_translation": "आइसलँडच्या हवामान कार्यालयाने हेल्का भागात गेल्या ४८ तासांत भूकंप झाला नसल्याचेही नोंदवले आहे.",
+    "model_translation": "आइसलँडिक हवामान विभागानेही गेल्या 48 तासांत हेकला परिसरात भूकंपाची कोणतीही हालचाल नोंदवली नाही असे सांगितले.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: The Icelandic Meteorological Office also reported no earthquake activity in the Hekla area in the past 48 hours.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 47,
+    "source_text": "Humans have been making and using lenses for magnification for thousands and thousands of years.",
+    "reference_translation": "विस्तृतीकरणासाठी मानव हजारि वर्षांपासून भिंग तयार करत आणि वापरत आहेत.",
+    "model_translation": "मानव हजारो आणि हजारो वर्षांसाठी भिंगे करून पाहण्याच्या दृष्टीने प्राप्तां करीत आहेत.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: Humans have been making and using lenses for magnification for thousands and thousands of years.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 48,
+    "source_text": "There are positive aspects to these websites, which include, being able to easily setup a class page which can include blogs, videos, photos, and other features.",
+    "reference_translation": "या वेबसाइट्सचे सकारात्मक पैलू आहेत, ज्यामध्ये ब्लॉग्ज, व्हिडिओ, फोटो आणि इतर वैशिष्ट्यांच्या सहित क्लास पेज सहजपणे सेट करण्यात सक्षम होणे समाविष्ट आहे.",
+    "model_translation": "या संकेतस्थळांच्या सकारात्मक बाबींमध्ये, ब्लॉग, व्हिडिओज, चित्रे इत्यादींचा समावेश असलेल्या वर्गाच्या पृष्ठासारख्या साध्या सेटअपचा समावेश आहे.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: There are positive aspects to these websites, which include, being able to easily setup a class page which can include blogs, videos, photos, and other features.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 49,
+    "source_text": "In London, about 200 people protested outside some major copyright holders' offices.",
+    "reference_translation": "लंडनमध्ये, सुमारे २०० लोकांनी काही मुख्य कॉपीराइट धारकांच्या कार्यालयांबाहेर आंदोलन केले.",
+    "model_translation": "लंडनमध्ये काही प्रमुख कॉपीराइट धारकांच्या कार्यालयांबाहेर सुमारे २०० लोकांनी निदर्शने केली.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: In London, about 200 people protested outside some major copyright holders' offices.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 50,
+    "source_text": "Tourist visits are costly, demand physical fitness, can only take place in summer Nov-Feb, and are largely limited to the Peninsula, Islands and Ross Sea.",
+    "reference_translation": "पर्यटकांच्या भेटी महागड्या आणि शारीरिक तंदुरुस्तीची मागणी करणाऱ्या, फक्त उन्हाळ्यात नोव्हेंबर-फेब्रुवारीदरम्यान होऊ शकणाऱ्या आणि त्या मुख्यतः पेनिन्सुला, आइसलँड आणि रॉस समुद्रापर्यंतच मर्यादीत आहेत.",
+    "model_translation": "पर्यटक, हे, महाग आहेत, ते शारीरिक व्यायाम करण्यास सक्षम असले पाहिजेत, फक्त उन्हाळा नोव्हेंबर-फेब्रुवारीमध्येच उपलब्ध आहे आणि ते प्रामुख्याने मुख्य भूभागात, बेटांवर आणि रॉस समुद्रात आढळू शकते.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: Tourist visits are costly, demand physical fitness, can only take place in summer Nov-Feb, and are largely limited to the Peninsula, Islands and Ross Sea.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 51,
+    "source_text": "The earliest known book in the world was written in Sanskrit. After the compilation of Upanishads, Sanskrit just faded due to hierarchy.",
+    "reference_translation": "आतापर्यंत ज्ञात असलेले सर्वात प्राचीन पुस्तक संस्कृत मध्ये लिहिले गेले होते. उपनिषदे रचल्यानंतर संस्कृत उतरंडी मुळे लयाला गेली.",
+    "model_translation": "जगातील सर्वात जुना ग्रंथ संस्कृतमध्ये लिहिलेला आहे. उपनिषदांच्या संकलनानंतर संस्कृतचा दर्जा घसरला.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: The earliest known book in the world was written in Sanskrit. After the compilation of Upanishads, Sanskrit just faded due to hierarchy.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 52,
+    "source_text": "In April this year, a temporary restaining order was issued by Judge Glynn against the facility to enforce the release of those held more than 24 hours after their intake who did not receive a hearing by a court commissioner.",
+    "reference_translation": "यावर्षी एप्रिल मध्ये, न्यायमूर्ती ग्लेन यांनी ताब्यात घेतल्यानंतर ज्यांची न्यायालय किंवा आयुक्त यांच्याकडून सुनावणी न होता 24 तासापेक्षा अधिक काळ असलेल्या लोकांच्या सुटकेच्या सुविधेविरुद्ध एक तात्पुरता तहकुबी आदेश काढला होता.",
+    "model_translation": "या वर्षी एप्रिलमध्ये न्यायालयीन कमिशनरने सुनावणी न झालेल्या आणि जास्त वेळ तुरुंगात ठेवलेल्यांना सोडण्यासाठी तात्पुरता स्थगित आदेश जारी केला आहे.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: In April this year, a temporary restaining order was issued by Judge Glynn against the facility to enforce the release of those held more than 24 hours after their intake who did not receive a hearing by a court commissioner.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 53,
+    "source_text": "Its remnants produced showers across most of the islands, though as of yet, no damage or flooding has been reported.",
+    "reference_translation": "त्याच्या अवशेषांचा या बेटांच्या बहुतांश भागांवर वर्षाव झाला, तथापि अद्याप, कोणतेही नुकसान किंवा पूर आल्याची नोंद नाही.",
+    "model_translation": "त्याचे अवशेष पडझड होऊन बहुतेक बेटांवर पाऊस पडू लागला आहे; मात्र अद्याप कोणतीही हानी किंवा पूर आला नाही.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: Its remnants produced showers across most of the islands, though as of yet, no damage or flooding has been reported.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 54,
+    "source_text": "This theory contradicts the claim that the moon is completely devoid of geologic activity.",
+    "reference_translation": "हा सिद्धांत चंद्र भूगर्भीय क्रियाकलापांपासून पूर्णपणे विरहित असल्याच्या दाव्याला विरोध करतो.",
+    "model_translation": "चंद्रमाच्या हालचालीत काहीच हालचाल नाही या सिद्धांताला या सिद्धान्ताने विरोध केला आहे.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: This theory contradicts the claim that the moon is completely devoid of geologic activity.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 55,
+    "source_text": "Check with the institution, as well as the immigration department for the country you wish to study in for detailed requirements.",
+    "reference_translation": "तपशीलवार आवश्यकतांसाठी संस्था तसेच तुम्ही ज्या देशामध्ये शिकू इच्छित आहात तेथील इमिग्रेशन डिपार्टमेंटची तपासणी करा.",
+    "model_translation": "देशात प्रवेश करण्यासाठी आवश्यक ती सर्व माहिती संस्था आणि स्थलांतर विभागाशी तपासून पहा.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: Check with the institution, as well as the immigration department for the country you wish to study in for detailed requirements.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 56,
+    "source_text": "During his time with the team, he scored 403 goals in 468 appearances.",
+    "reference_translation": "तो जेव्हा संघाबरोबर होता तेव्हा, त्याने 468 खेळी मध्ये 403 गोल नोंदवले.",
+    "model_translation": "संघात असताना त्याने ४६८ वेळा सामना खेळला आणि ४०० गोल केले.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: During his time with the team, he scored 403 goals in 468 appearances.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 57,
+    "source_text": "The major organ of the circulatory system is the heart, which pumps the blood.",
+    "reference_translation": "रक्ताभिसरण संस्थेमधील सर्वात महत्वाचा अवयव हा हृदय आहे, जे रक्त अभिसारीत करते.",
+    "model_translation": "रक्तवहनी तंत्रस्य प्रमुखः अवयवः हृदयः अस्ति, यः रक्तं पंपयति।",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: The major organ of the circulatory system is the heart, which pumps the blood.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 58,
+    "source_text": "Traditionally, the heir to the throne would go straight into the military after finishing school.",
+    "reference_translation": "परंपरेने, सत्तेचा वारस शालेय शिक्षण संपल्यानंतर थेट लष्करात जाईल.",
+    "model_translation": "परंपरागतपणे, सिंहासन उत्तराधिकारी शिक्षणानंतर थेट लष्करात प्रवेश करत असे.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: Traditionally, the heir to the throne would go straight into the military after finishing school.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 59,
+    "source_text": "Some German monks wanted to bring God closer to the native people, so they invented the Estonian literal language.",
+    "reference_translation": "काही जर्मन भिक्षू देवाला मूळ लोकांजवळ आणू इच्छित होते, म्हणून त्यांनी एस्टोनियन शाब्दिक भाषेचा शोध लावला.",
+    "model_translation": "काही जर्मनिक भिक्षू मूळ रहिवाशांना देवापर्यंत पोहोचण्यासाठी त्यांना साध्या भाषेत समजावून सांगण्यासाठी ईस्टोनियनची निर्मिती करू इच्छित होते.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: Some German monks wanted to bring God closer to the native people, so they invented the Estonian literal language.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 60,
+    "source_text": "The Twin Otter had been trying to land at Kokoda yesterday as Airlines PNG Flight CG4684, but had aborted once already.",
+    "reference_translation": "द ट्विन ऑटर विमान पीनजी उड्डाण सीजी4684 म्हणून काल कोकोडा इथे उतरण्याचा प्रयत्न करीत होते, एकदा आधीच ते रद्द करण्यात आले  होते..",
+    "model_translation": "ट्विन ओटर, मागच्या दिवशी कोकोडा येथे उतरण्याचा प्रयत्न करत होते, परंतु आधी एकदाच अपयशी झाले होते.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: The Twin Otter had been trying to land at Kokoda yesterday as Airlines PNG Flight CG4684, but had aborted once already.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 61,
+    "source_text": "These websites have gotten a lot of attention, especially in the education setting.",
+    "reference_translation": "या वेबसाईट ने खूप लक्ष वेधून घेतले आहे, विशेषत: शैक्षणिक सेटिंग मध्ये.",
+    "model_translation": "या वेबसाईट्सना शिक्षण क्षेत्रातील विशेष महत्त्व मिळाले आहे.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: These websites have gotten a lot of attention, especially in the education setting.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 62,
+    "source_text": "A Triceratops could have used its strong beak to strip off the leaves before eating the trunk.",
+    "reference_translation": "ट्रायसेरॉटॉप्स खोड खाण्यापूर्वी पाने काढून टाकण्यासाठी जोरदार चोचीचा वापर करू शकले असते.",
+    "model_translation": "त्रिशिरत्स हे त्याच्या मजबूत चोचीचा वापर करून झाडाची पाने खाण्यापूर्वी काढू शकत होते.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: A Triceratops could have used its strong beak to strip off the leaves before eating the trunk.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 63,
+    "source_text": "During the last three decades, despite officially remaining a communist state, China has developed a market economy.",
+    "reference_translation": "चीनने मागील ३ दशकांत अधिकृतपणे कम्युनिस्ट राज्य असूनही मार्केट इकोनॉमी विकसित केली आहे.",
+    "model_translation": "गेल्या तीन दशकांत चीनने अधिकृतपणे साम्यवादी राज्य राहूनही बाजारपेठेत अर्थव्यवस्था विकसित केली आहे.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: During the last three decades, despite officially remaining a communist state, China has developed a market economy.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 64,
+    "source_text": "Today's announcement also extended the government's commitment made in March of this year to fund extra carriages.",
+    "reference_translation": "आजच्या घोषणेमुळे या वर्षीच्या मार्चमध्ये अतिरिक्त गाड्यांसाठी निधी पुरवण्याच्या सरकारच्या वचनबद्धतेत वाढ केली आहे.",
+    "model_translation": "आजच्या घोषणेत मार्चमध्ये केलेली सरकारची वचनबद्धता विस्तारली गेली आहे, जी अतिरिक्त गाड्यांसाठी निधी देईल.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: Today's announcement also extended the government's commitment made in March of this year to fund extra carriages.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 65,
+    "source_text": "Until now, AOL has been able to move and develop the IM market at its own pace, due to its widespread use within the United States.",
+    "reference_translation": "आतापर्यंत, युनायटेड स्टेट्समधील व्यापक वापरामुळे, AOL स्वत:च्या गतीने IM मार्केटला पुढे सरकवण्यात आणि विकसित करण्यात सक्षम ठरले आहे.",
+    "model_translation": "पूर्वीपर्यंत ए.ओ.एल. युनायटेड स्टेट्समधील आपल्या व्यापक वापरामुळे आय.एम. बाजारात स्वतंत्रपणे आणि स्वतःच पुढे जाऊ शकला.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: Until now, AOL has been able to move and develop the IM market at its own pace, due to its widespread use within the United States.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 66,
+    "source_text": "The aircraft had been headed to Irkutsk and was being operated by interior troops.",
+    "reference_translation": "विमान इर्कुत्स्कच्या दिशेने जात होते आणि अंतर्गत सैन्याकडून चालवले जात होते.",
+    "model_translation": "विमानाने इर्कुटस्कला जाण्यासाठी आणि इंटरिअर ट्रोप्सद्वारे ऑपरेशन केले जात होते.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: The aircraft had been headed to Irkutsk and was being operated by interior troops.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 67,
+    "source_text": "The pattern should be deep enough, 5 mm (1/5 inch) or more, and the material soft enough in cold temperatures.",
+    "reference_translation": "नमुना पुरेसा खोल, 5 मिमी (1/5 इंच) किंवा अधिक असावा आणि थंड तापमानात सामग्री पुरेशी मऊ असावी.",
+    "model_translation": "नमुन्यात खोल असायला हवा, ५ मिमी (१/५ इंच) किंवा अधिक आणि थंडीच्या तापमानात मऊ असावा.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: The pattern should be deep enough, 5 mm (1/5 inch) or more, and the material soft enough in cold temperatures.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 68,
+    "source_text": "Only the effects of catastrophizing, not depression and fear was conditional of regular weekly structured PA sessions.",
+    "reference_translation": "नैराश्य आणि भीती नव्हे तर केवळ आपत्तिजनक परिणाम हे नियमित साप्ताहिक संरचित पीए सत्र सशर्त होते.",
+    "model_translation": "केवळ मनोविकार आणि भीतीचे प्रभाव साप्ताहिक संरचित पीए सत्रांवर अवलंबून असतात.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: Only the effects of catastrophizing, not depression and fear was conditional of regular weekly structured PA sessions.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 69,
+    "source_text": "In essence, the Renaissance made a significant change in the approach to learning and the dissemination of knowledge.",
+    "reference_translation": "थोडक्यात सांगायचे तर पुनरुज्जीवन काळात अध्ययना कडे पाहण्याचा दृष्टीकोन आणि ज्ञानाचे प्रसारण यात महत्वाचा बदल घडवून आणला.",
+    "model_translation": "मूलतः, रेनेसान्सने शिकण्याच्या पद्धती आणि ज्ञानाच्या प्रसारात क्रांती घडवून आणली.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: In essence, the Renaissance made a significant change in the approach to learning and the dissemination of knowledge.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 70,
+    "source_text": "Blake was also convicted of attempting to pervert the course of justice.",
+    "reference_translation": "न्याय प्रक्रियेत बाधा आणण्याचा प्रयत्न केल्याबद्दल देखील ब्लेकला दोषी ठरविण्यात आलं होतं.",
+    "model_translation": "ब्लेकचाही न्यायाच्या मार्गाला बाधा आणण्याच्या हेतूने आरोप ठेवण्यात आला होता.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: Blake was also convicted of attempting to pervert the course of justice.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 71,
+    "source_text": "For a few pennies some children will tell you the story.",
+    "reference_translation": "काही मुले तुम्हाला काही पैशांसाठी गोष्ट सांगतील.",
+    "model_translation": "काही मुले थोडी पैसे देऊन कथा सांगतील.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: For a few pennies some children will tell you the story.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 72,
+    "source_text": "Nitrogen as a gas still has the same properties as liquid nitrogen. The liquid state is denser but the molecules are still the same.",
+    "reference_translation": "वायू स्वरूपातील नायट्रोजनमध्ये देखील द्रव नायट्रोजनसारखेच गुणधर्म असतात. द्रव अवस्थेत तो घट्टसर असतो, परंतु रेणू समान स्वरूपाचेच असतात.",
+    "model_translation": "द्रवता एकसारखीच असते. पण गॅसचा दाब कमी असतो आणि घनतेची जास्त असते.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: Nitrogen as a gas still has the same properties as liquid nitrogen. The liquid state is denser but the molecules are still the same.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 73,
+    "source_text": "For that, they had to get rid of British bases and ships in Egypt. Besides those actions, Italy's battleships were not supposed to do anything else.",
+    "reference_translation": "त्यासाठी त्यांना इजिप्तमधील ब्रिटीश तळ आणि जहाजे यांच्यापासून सुटका करून घ्यायची होती. त्या अॅक्शन्स व्यतिरिक्त, इटलीच्या युद्धनौकांना आणखी काही करण्याची गरज नव्हती.",
+    "model_translation": "त्यासाठी त्यांना इजिप्तमधील ब्रिटीश तळ आणि जहाजे हटवावी लागली. त्याव्यतिरिक्त, इटलीच्या युद्धनौका काहीही कराव्यात असे नव्हते.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: For that, they had to get rid of British bases and ships in Egypt. Besides those actions, Italy's battleships were not supposed to do anything else.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 74,
+    "source_text": "You can mark the passing of time yourself by observing the repetition of a cyclical event. A cyclical event is something that happens again and again regularly.",
+    "reference_translation": "एका चक्राकार घटनेच्या वारंवारतेचे निरीक्षण करुन तुम्ही जाणाऱ्या काळाची नोंद स्वतःच घेऊ शकता. एक चक्राकार घटना म्हणजे नियमितपणे वारंवार घडणारी एक गोष्ट असते.",
+    "model_translation": "वेळ स्वतःच मोजता येतो, तुम्ही हे चक्राकार घटनेच्या पुनरावृत्तीकडे बघून करू शकता.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: You can mark the passing of time yourself by observing the repetition of a cyclical event. A cyclical event is something that happens again and again regularly.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 75,
+    "source_text": "In some federal countries, such as the United States and Canada, income tax is levied both at the federal level and at the local level, so the rates and brackets can vary from region to region.",
+    "reference_translation": "काही संघराज्य देशांमध्ये, उदाहरणार्थ युनायटेड स्टेट्स आणि  कॅनडा, आयकर हा संघराज्य पातळीवर आणि स्थानिक पातळी दोन्हीकडे आकारला जातो, म्हणून प्रत्येक विभागवार दर आणि ब्रॅकेट्स हे वेगवेगळे असतात.",
+    "model_translation": "अमेरिकेच्या संयुक्त संस्थानांसारख्या काही संघराज्यीय देशांमध्ये आणि कॅनडामध्ये, संघराज्य सरकार आणि स्थानिक सरकारे दोन्हीकडून उत्पन्न कर आकारला जातो, त्यामुळे दर आणि श्रेणी प्रदेशानुसार बदलू शकतात.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: In some federal countries, such as the United States and Canada, income tax is levied both at the federal level and at the local level, so the rates and brackets can vary from region to region.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 76,
+    "source_text": "Dark energy is a completely invisible force that is constantly acting upon the universe.",
+    "reference_translation": "गडद उर्जा हे पूर्णतः अदृश्य असे बल आहे जे सातत्याने विश्वामध्ये कार्य करीत असते.",
+    "model_translation": "अंधकार ऊर्जा ही एक अदृश्य शक्ती आहे, जी नेहमी सर्वत्र कार्य करते.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: Dark energy is a completely invisible force that is constantly acting upon the universe.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 77,
+    "source_text": "Most boomerangs available in Australia are in fact non-returning. It is best for beginners to not try throwing in windy",
+    "reference_translation": "ऑस्ट्रेलियामध्ये उपलब्ध असलेले बहुतांश बुमरॅंग्स प्रत्यक्षात परत न येणारे आहेत. नवशिक्यांसाठी हवेत फेकण्याचा प्रयत्न न करणे हे सर्वोत्तम आहे",
+    "model_translation": "ऑस्ट्रेलियात मिळणारी बहुतेक बाॅम्बरांगं खरेच परत येत नाहीत.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: Most boomerangs available in Australia are in fact non-returning. It is best for beginners to not try throwing in windy\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 78,
+    "source_text": "This includes waiting in line, as drug-sniffing dogs could be used at any time without notice.",
+    "reference_translation": "यामध्ये रांगेत प्रतीक्षा करणे समाविष्ट आहे, कारण औषधाचा वास घेणारे डॉग  कोणत्याही वेळी सूचनेशिवाय वापरले जाऊ शकतात.",
+    "model_translation": "ड्रग्जच्या शोधात येणाऱ्या कुत्र्याचं या लाइनमध्ये वाट पाहणं भाग आहे का?",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: This includes waiting in line, as drug-sniffing dogs could be used at any time without notice.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 79,
+    "source_text": "Sikhs consider their faith to be a separate religion from Hinduism though they acknowledge its Hindu roots and traditions.",
+    "reference_translation": "शीख लोक त्यांची श्रद्धा हिंदुत्वापेक्षा एक स्वतंत्र धर्म म्हणून विचारात घेतात तथापि त्याचा मूलाधार हिंदू आणि परंपरांमध्ये असल्याचे ते मान्य करतात.",
+    "model_translation": "शीख धर्म हा हिंदू धर्मापासून स्वतंत्र असलेला एक वेगळा धर्म मानला जातो, परंतु तो त्याच्या हिंदू मुळांना आणि परंपरांना मान्य करतो.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: Sikhs consider their faith to be a separate religion from Hinduism though they acknowledge its Hindu roots and traditions.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 80,
+    "source_text": "The New Zealand police had trouble using their speed radar guns to see how fast Mr Reid was going because of how low Black Beauty is, and the only time the police managed to clock Mr Reid was when he slowed down to 160km/h.",
+    "reference_translation": "ब्लॅक ब्यूटीचा वेग किती कमी आहे आणि मिस्टर रीड किती वेगवान आहे हे पाहण्यासाठी न्यूझीलंड पोलिसांना त्यांच्या स्पीड रडार गन्स वापरण्यात अडचण आली आणि जेव्हा पोलिस मिस्टर रीडला पाहण्यात यशस्वी झाले तेव्हा तिचा वेग 160 किमी/ताशी पर्यंत कमी झाला होता.",
+    "model_translation": "नेपाळ पोलिसांना ब्लॅक ब्युटीचा वापर करून मिस्टर रेडी किती वेगात जात होता हे पहायला त्रास झाला कारण ती इतकी खाली होती आणि पोलिस केवळ तेव्हाच मिस्टर रेडीला 160km/h वेगाने गाडी चालवताना पकडू शकले जेव्हा तो वेग कमी करून 160 km/h पर्यंत धीमा केला.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: The New Zealand police had trouble using their speed radar guns to see how fast Mr Reid was going because of how low Black Beauty is, and the only time the police managed to clock Mr Reid was when he slowed down to 160km/h.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 81,
+    "source_text": "AU trade and industry commissioner Albert Muchanga announced Benin was to join.",
+    "reference_translation": "AU व्यापार आणि उद्योग आयुक्त अल्बर्ट मुचांग यांनी बेनिन सामील होणार होते असे जाहीर केले.",
+    "model_translation": "अवतार व्यापार आणि उद्योग आयुक्तांनी बेनीला सामील करण्याचा निर्णय जाहीर केला आहे.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: AU trade and industry commissioner Albert Muchanga announced Benin was to join.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 82,
+    "source_text": "Setting up a tent on private property or in a town of any size can easily attract unwanted attention.",
+    "reference_translation": "एखाद्या खाजगी मालमत्तेवर किंवा एखाद्या गावात  कोणत्याही आकाराचा तंबू उभारणे अगदी सहज कोणाचेही अवांछित लक्ष वेधून घेऊ शकते.",
+    "model_translation": "खाजगी मालमत्तेवर तंबू लावणे किंवा मोठ्या शहरातही, कोणालाही न कळता, लक्षात येऊ शकते.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: Setting up a tent on private property or in a town of any size can easily attract unwanted attention.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 83,
+    "source_text": "Following the process, HJR-3 will be reviewed again by the next elected legislature in either 2015 or 2016 to remain in process.",
+    "reference_translation": "या प्रक्रियेनंतर, HJR-3 चा आढावा पुन्हा एकतर 2015 किंवा 2016 मध्ये पुढील निर्वाचित विधीमंडळाद्वारे प्रक्रियेत राहण्यासाठी घेतला जाईल.",
+    "model_translation": "प्रक्रिया अनुसरून, एचजेआर-३ला २०१७ किंवा २०१८मध्ये पुढील निवडणुका होईपर्यंत प्रलंबित ठेवण्यात येईल.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: Following the process, HJR-3 will be reviewed again by the next elected legislature in either 2015 or 2016 to remain in process.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 84,
+    "source_text": "Since Pakistani independence from British rule in 1947, the Pakistani President has appointed \"Political Agents\" to govern FATA, who exercise near-complete autonomous control over the areas.",
+    "reference_translation": "\"पाकिस्तानला 1947 मध्ये ब्रिटीशांच्या राजवटीपासून स्वातंत्र्य मिळाल्यापासून, पाकिस्तानी राष्ट्रपतींनी FATA संचालित करण्यासाठी \"\"पॉलिटिकल एजंट्स\"\" नियुक्त केले आहेत जे प्रदेशावर जवळपास संपूर्ण स्वायत्त नियंत्रण राखतात.\"",
+    "model_translation": "१९४७ मध्ये ब्रिटिशांकडून पाकिस्तानच्या स्वातंत्र्यापासून, फाटा येथील राजकीय एजंट्सनी संपूर्ण स्वायत्त अधिकार प्राप्त केले आहेत.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: Since Pakistani independence from British rule in 1947, the Pakistani President has appointed \"Political Agents\" to govern FATA, who exercise near-complete autonomous control over the areas.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 85,
+    "source_text": "Nevertheless, all French-speaking Belgians and Swiss would have learned standard French in school, so they would be able to understand you even if you used the standard French numbering system.",
+    "reference_translation": "तथापि, सर्व फ्रेंच बोलणाऱ्या बेल्जियन आणि स्विस लोकांनी शाळेमध्ये सामान्य फ्रेंच शिकायला हवे होते, म्हणजे तुम्ही प्रमाण फ्रेंच अंक प्रणाली वापरल्यास त्यांना ती समजू शकली असती.",
+    "model_translation": "तरीसुद्धा सर्व फ़्रेंच भाषिक बेल्जियन्स आणि स्वित्झर्लंडचे लोक शाळेत मानक फ़्रेंच शिकतील, त्यामुळे ते तुम्हाला समजतील जरी तुम्ही प्रमाण फ्रेंच संख्या प्रणालीचा वापर केलात.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: Nevertheless, all French-speaking Belgians and Swiss would have learned standard French in school, so they would be able to understand you even if you used the standard French numbering system.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 86,
+    "source_text": "The main reason for this phenomenon is the result of the lucid dreams expanding the length of time between REM states.",
+    "reference_translation": "या अपूर्व गोष्टीचे मुख्य कारण हे REM स्टेट्स दरम्यानच्या काळातील विस्तृत स्वप्नांचा परिणाम आहे.",
+    "model_translation": "या प्रसंगांचे मुख्य कारण स्वप्न अवस्थांमधील आर.ई.एम. कालावधी दरम्यानची लुप्त अवस्था विस्तारत आहे.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: The main reason for this phenomenon is the result of the lucid dreams expanding the length of time between REM states.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 87,
+    "source_text": "These can be dangerous if the traveler pursue the mirage, wasting precious energy and remaining water.",
+    "reference_translation": "प्रवाशाने मृगजळामागे जाऊन आपली अमूल्य ताकद आणि उर्वरित पाणी वाया घालवणे धोकादायक असू शकते.",
+    "model_translation": "या प्रवाशांना जर भटकत मिरज्याला पाठलाग करावयास लागला तर त्यातील मौल्यवान ऊर्जा वाया जाईल आणि पाणीही वाया जाईल.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: These can be dangerous if the traveler pursue the mirage, wasting precious energy and remaining water.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 88,
+    "source_text": "Many of their writers have gone on to wield great influence on Jon Stewart and Stephen Colbert's news parody shows.",
+    "reference_translation": "जॉन स्टीवर्ट आणि स्टीफन कोलबर्टच्या न्यूज पॅरोडी शोवर त्यांच्या अनेक लेखकांचा मोठा प्रभाव पडला आहे.",
+    "model_translation": "त्यांच्या लेखकांनी अनेक जणांनी जोनाथन स्टोव आणि स्टीफन कोलबर्टच्या बातम्यातील विनोदाच्या कार्यक्रमावर मोठा प्रभाव पाडला आहे. </s>",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: Many of their writers have gone on to wield great influence on Jon Stewart and Stephen Colbert's news parody shows.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 89,
+    "source_text": "This can be done in a normal car with careful planning but a 4x4 is highly advised and many locations are only accessible with a high wheel base 4x4.",
+    "reference_translation": "हे साध्या कारने  व्यवस्थित नियोजनाद्वारे करता येते परंतु एखाद्या  4x4  ची अधिक शिफारस केली जाते आणि बरीच स्थळे केवळ 4x4 चाकी  उंच बेस असलेल्यानेच गाठता येतात.",
+    "model_translation": "या गोष्टीला सामान्य कारमध्ये काळजीपूर्वक नियोजन करता येते पण ४x४ची अत्यंत आवश्यकता असते आणि अनेक ठिकाणे केवळ हाय व्हील बेस ४x४ सहच प्रवेशयोग्य आहेत.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: This can be done in a normal car with careful planning but a 4x4 is highly advised and many locations are only accessible with a high wheel base 4x4.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 90,
+    "source_text": "Beijing will host the opening and closing ceremonies and the indoor ice events.",
+    "reference_translation": "बीजिंग उद्घाटन व समारोप समारंभ तसेच इनडोर आईस इव्हेंट्सचे आयोजन करेल.",
+    "model_translation": "बेजिंग उद्घाटन आणि समापन समारंभ आयोजित करेल आणि अंतर्गेही आइस इव्हेंट्स आयोजित करेल.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: Beijing will host the opening and closing ceremonies and the indoor ice events.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 91,
+    "source_text": "Peter Costello, Australian treasurer and the man most likely to succeed Prime Minister John Howard as Liberal party leader has thrown his support behind a nuclear power industry in Australia.",
+    "reference_translation": "पीटर कॉस्टेलो , ऑस्ट्रेलियन खजानीस आणि पंतप्रधान जॉन हॉवर्ड यांच्या नंतर उदारमतवादी पक्षाचे नेते mhanun जागा घेण्याची सर्वाधिक शक्यता असणारे, यांनी आपला पाठींबा ऑस्ट्रेलियातील अणुउर्जा उद्योगाला देऊ केलेला आहे.",
+    "model_translation": "पीटर कोस्टालो, ऑस्ट्रेलियन खजिनदार आणि लिबरल पक्षाचा नेता जॉन हॉवर्डला पंतप्रधान होण्यासाठी सर्वात जास्त शक्यता असलेला माणूस अणुऊर्जा उद्योगाला पाठिंबा देतो.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: Peter Costello, Australian treasurer and the man most likely to succeed Prime Minister John Howard as Liberal party leader has thrown his support behind a nuclear power industry in Australia.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 92,
+    "source_text": "The town lies immediately next to the falls, and they are the major attraction, but this popular tourist destination offers both adventure seekers and sightseers plenty of opportunities for a longer stay.",
+    "reference_translation": "शहर एक मोठे आकर्षण असलेल्या धबधब्यांच्या जवळ आहे, पण हे प्रसिद्ध पर्यटन स्थळ खूप काळ राहण्यासाठी, सहसांचे आकर्षण असणाऱ्या आणि निसर्ग सौंदर्य पाहण्याकरिता आलेल्या अशा दोघांसाठीही अनेक संधी उपलब्ध करून देते.",
+    "model_translation": "या शहराला धबधबा जवळ आहे आणि ते हे मुख्य आकर्षण आहेत, पण हा लोकप्रिय पर्यटन स्थळ साहसी शोधक आणि पर्यटक दोघांसाठीही भरपूर संधी उपलब्ध करून देते.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: The town lies immediately next to the falls, and they are the major attraction, but this popular tourist destination offers both adventure seekers and sightseers plenty of opportunities for a longer stay.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 93,
+    "source_text": "In this resonance, magnetic field and radio waves cause atoms to give off tiny radio signals.",
+    "reference_translation": "या प्रतिध्वनीमध्ये, चुंबकीय क्षेत्र आणि रेडिओ लहरींमुळे अणूंमधून अगदी लहान रेडिओ सिग्नल्स निर्माण होतात.",
+    "model_translation": "या प्रतिध्वनीमध्ये चुंबकीय क्षेत्र आणि रेडिओ लहरींमुळे अणूंमार्फत लहान रेडिओ संकेत निघतात.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: In this resonance, magnetic field and radio waves cause atoms to give off tiny radio signals.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 94,
+    "source_text": "The artistic event is also part of a campaign by the Bucharest City Hall that seeks to relaunch the image of the Romanian capital as a creative and colourful metropolis.",
+    "reference_translation": "कलात्मक कार्यक्रम हा देखील रोमानियन राजधानीची प्रतिमा पुन्हा सर्जनशील आणि असंख्य रंगांनी नटलेले शहर अशी करू इच्छिणाऱ्या बुखारेस्ट सिटी हॉलच्या मोहिमेचा एक भाग आहे.",
+    "model_translation": "कलाविधी शहराच्या हद्दीत असलेल्या, रोमानियाची राजधानी बुकारेस्टचे चित्र रंगवून, रंगवून, सर्जनशील आणि रंगाने भरलेल्या शहराचे रूपात पुन्हा आणण्याच्या प्रयत्नाचा भाग आहे.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: The artistic event is also part of a campaign by the Bucharest City Hall that seeks to relaunch the image of the Romanian capital as a creative and colourful metropolis.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 95,
+    "source_text": "Lead researchers say this may bring early detection of cancer, tuberculosis, HIV and malaria to patients in low-income countries, where the survival rates for illnesses such as breast cancer can be half those of richer countries.",
+    "reference_translation": "सुप्रसिद्ध संशोधकांच्या मते, यामुळे अल्प उत्पन्न असलेल्या देशांमध्ये कर्करोग, क्षयरोग, एचआयव्ही आणि मलेरियाच्या रुग्णांचे लवकर निदान होऊ शकते. श्रीमंत देशांपेक्षा या देशांमध्ये स्तनाच्या कर्करोगासारख्या आजारांमुळे जगण्याचा दर निम्म्यापेक्षा कमी असतो.",
+    "model_translation": "आघाडीच्या संशोधकांनी असे सांगितले आहे की, यामुळे कमी उत्पन्न असलेल्या देशांमध्ये स्तनाच्या कर्करोगाच्या रुग्णांच्या जगण्याच्या प्रमाणात दुप्पट वाढ होऊ शकते.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: Lead researchers say this may bring early detection of cancer, tuberculosis, HIV and malaria to patients in low-income countries, where the survival rates for illnesses such as breast cancer can be half those of richer countries.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 96,
+    "source_text": "General John Cadwalder would launch a diversionary attack against the British garrison at Bordentown, in order to block off any reinforcements.",
+    "reference_translation": "जनरल जॉन कॅडवाल्डर कोणतेही मजबुतीकरण रोखण्यासाठी बॉर्डनटाउन येथे ब्रिटीश सैन्याच्या विरूद्ध डायव्हर्शनरी हल्ला सुरु करतील.",
+    "model_translation": "सामान्य जॉन कॅडवलाडर ब्रिटिश गडालावर बॉर्डेंटॉवच्या किल्ल्यावर हल्ला करण्यासाठी एक विचलनकारी हल्ला करेल.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: General John Cadwalder would launch a diversionary attack against the British garrison at Bordentown, in order to block off any reinforcements.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 97,
+    "source_text": "The pit is either heated with hot stones from a fire, or in some places geothermal heat makes areas of ground naturally hot.",
+    "reference_translation": "खड्डा आगीतील गरम दगडांनी गरम केला जातो किंवा काही ठिकाणी भूगर्भातील उष्णता जमिनीचा भाग नैसर्गिकपणे गरम करते.",
+    "model_translation": "खडयात गरम दगडांनी भडकावला जात असेल किंवा काही ठिकाणी भूतापीय उष्णतेमुळे जमिनीत उबदारपणा निर्माण होत असेल तर खड्ड्यात तापमान वाढू शकते.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: The pit is either heated with hot stones from a fire, or in some places geothermal heat makes areas of ground naturally hot.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 98,
+    "source_text": "\"It is now important from both a public health and criminal justice perspective that the legislation be enacted as soon as possible\", said a government spokesperson.",
+    "reference_translation": "\"\"\"आता हे सार्वजनिक आरोग्य आणि गुन्हे संबधी न्यायाच्या दृष्टीकोनातून महत्वाचे आहे की तो कायदा आता लवकरात लवकर लागू करण्यात यायला हवा,\"\" एक सरकारी प्रतिनिधी म्हणाला.\"",
+    "model_translation": "'सार्वजनिक आरोग्य आणि फौजदारी न्याय या दोन्ही दृष्टीकोनातून कायद्याची तातडीने अंमलबजावणी करणे आवश्यक आहे', असे सरकारी प्रवक्त्याने सांगितले.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: \"It is now important from both a public health and criminal justice perspective that the legislation be enacted as soon as possible\", said a government spokesperson.\nMarathi:"
+  },
+  {
+    "pair_key": "flores_en-mr",
+    "example_index": 99,
+    "source_text": "Christopher Garcia, a spokesperson of the Los Angeles Police Department, said the suspected male offender is being investigated for trespassing rather than vandalism.",
+    "reference_translation": "लॉस एंजेलिस पोलिस विभागाचे प्रवक्ते ख्रिस्तोफर गार्सिया म्हणाले की संशयित पुरुष गुन्हेगाराची विध्वंसक कृत्याऐवजी अतिक्रमण केल्याबद्दल चौकशी केली जात आहे.",
+    "model_translation": "ख्रिस्तोफर गारेरा हा लॉस एंजेलिस पोलिस विभागाच्या प्रवक्त्या, पुरुष संशयित पर अतिक्रमण करण्याऐवजी तोडफोडीसाठी तपासला जात आहे.",
+    "prompt_used": "English: The quick brown fox jumps over the lazy dog.\nHindi: तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।\n\nEnglish: I love learning new languages.\nBengali: আমি নতুন ভাষা শিখতে ভালোবাসি।\n\nEnglish: Technology is advancing rapidly.\nGujarati: ટેકનોલોજી ઝડપથી આગળ વધી રહી છે।\n\nEnglish: Christopher Garcia, a spokesperson of the Los Angeles Police Department, said the suspected male offender is being investigated for trespassing rather than vandalism.\nMarathi:"
+  }
+]
