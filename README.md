@@ -289,7 +289,7 @@ def evaluate_my_task(pipe, tokenizer, model_name_for_logging, device, **kwargs):
     {"question": "Example question", "answer": "Example answer"}
   ]
 }
-
+```
 
 #### **3. Register in Config**
 ```python
