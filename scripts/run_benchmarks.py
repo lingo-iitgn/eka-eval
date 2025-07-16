@@ -15,8 +15,6 @@ from collections import defaultdict
 import sys
 import os
 
-# Set GPU constraint at the very beginning
-os.environ["CUDA_VISIBLE_DEVICES"] = "2,3"
 
 """Project path configuration"""
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
