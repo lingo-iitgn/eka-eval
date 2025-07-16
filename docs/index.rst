@@ -29,8 +29,8 @@ Key Features
 🎯 Comprehensive Benchmark Coverage
 -----------------------------------
 
-* **17+ English Benchmarks**: MMLU, GSM8K, HumanEval, ARC-Challenge, and more
-* **12+ Indic Benchmarks**: MMLU-IN, BoolQ-IN, ARC-Challenge-IN, MILU, and others
+* **25+ English Benchmarks**: MMLU, GSM8K, HumanEval, ARC-Challenge, and more
+* **10+ Indic Benchmarks**: MMLU-IN, BoolQ-IN, ARC-Challenge-IN, MILU, and others
 * **Specialized Tasks**: Code generation, mathematical reasoning, long-context understanding
 * **Multi-modal Support**: Text, code, and multilingual evaluation capabilities
 
@@ -81,23 +81,9 @@ Command Line Examples
 
 .. code-block:: bash
 
-   # Evaluate specific model on math benchmarks
-   python3 scripts/run_benchmarks.py \
-       --model "google/gemma-2b" \
-       --task_groups "MATH AND REASONING" \
-       --benchmarks "GSM8K,MATH"
+   # Evaluate specific model on benchmarks
+   python3 scripts/run_benchmarks.py 
 
-   # Multi-language evaluation
-   python3 scripts/run_benchmarks.py \
-       --model "sarvamai/sarvam-1" \
-       --task_groups "INDIC BENCHMARKS" \
-       --languages "hi,bn,gu"
-
-   # Code generation evaluation
-   python3 scripts/run_benchmarks.py \
-       --model "microsoft/CodeT5-large" \
-       --task_groups "CODE GENERATION" \
-       --pass_k "1,5,10"
 
 Table of Contents
 =================
