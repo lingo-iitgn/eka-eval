@@ -254,8 +254,6 @@ Select benchmark #(s): 1 2
 ### **4. Execution & Results**
 ```
 [Worker 0 (GPU 0)] Loading model: google/gemma-2b (2.0B parameters)
-[Worker 0 (GPU 0)] Running GSM8K evaluation...
-[Worker 0 (GPU 0)] GSM8K Accuracy: 42.3% (527/1247)
 [Worker 0 (GPU 0)] Running MATH evaluation...
 [Worker 0 (GPU 0)] MATH Accuracy: 12.1% (601/5000)
 
@@ -330,10 +328,11 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 python3 scripts/run_benchmarks.py \
 ### **📈 Aggregated Results (CSV)**
 Located at `results_output/calculated.csv`:
 
-| Model | Size (B) | Task | Benchmark | Score | Timestamp | Status |
-|-------|----------|------|-----------|-------|-----------|---------|
-| gemma-2b | 2.00 | MATH AND REASONING | GSM8K | 42.3% | 2024-01-15T10:30:45 | Completed |
-| gemma-2b | 2.00 | INDIC BENCHMARKS | BoolQ-IN | 67.8% | 2024-01-15T11:15:20 | Completed |
+
+| Model            | Size (B) | Task              | Benchmark | Score  | Timestamp           | Status     |
+|------------------|----------|-------------------|-----------|--------|----------------------|------------|
+| tiiuae/falcon-7b | 7.00     | MMLU              | MMLU      | 27.15% | 2024-01-15T10:30:45  | Completed  |
+| gemma-2b         | 2.00     | INDIC BENCHMARKS  | BoolQ-IN  | 67.8%  | 2024-01-15T11:15:20  | Completed  |
 
 ### **📋 Detailed Analysis (JSONL)**
 Per-benchmark detailed results in `results_output/detailed_results/`:
