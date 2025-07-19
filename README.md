@@ -352,7 +352,6 @@ Per-benchmark detailed results in `results_output/detailed_results/`:
 ```markdown
 | Model      | Task                | Benchmark      | Score   |
 |------------|--------------------|--------------------|---------|
-| gemma-2b   | MATH AND REASONING | GSM8K             | 42.3%   |
 | gemma-2b   | MATH AND REASONING | MATH              | 12.1%   |
 | gemma-2b   | INDIC BENCHMARKS   | BoolQ-IN          | 67.8%   |
 | gemma-2b   | INDIC BENCHMARKS   | MMLU-IN           | 39.2%   |
