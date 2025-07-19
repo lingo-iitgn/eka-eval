@@ -419,7 +419,7 @@ python3 scripts/run_benchmarks.py \
 We welcome contributions from the community! Here's how you can help:
 
 ### **🐛 Bug Reports**
-- Use our [issue template](https://github.com/your-org/eka-eval/issues/new?template=bug_report.md)
+- Use our [issue template](https://github.com/lingo-iitgn/eka-eval/issues/new?template=bug_report.md)
 - Include error logs, model names, and reproduction steps
 - Test with minimal examples when possible
 
