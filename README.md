@@ -328,11 +328,12 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 python3 scripts/run_benchmarks.py \
 ### **📈 Aggregated Results (CSV)**
 Located at `results_output/calculated.csv`:
 
+| Model            | Size (B) | Task              | Benchmark | Score  | Status     |
+|------------------|----------|-------------------|-----------|--------|------------|
+| tiiuae/falcon-7b | 7.00     | GENERAL           | MMLU      | 27.15% | Completed  |
+| gemma-2b         | 2.00     | INDIC BENCHMARKS  | BoolQ-IN  | 67.8%  | Completed  |
+| gemma-2b         | 2.00     | GENERAL           | MMLU      | 42.3%  | Completed  |
 
-| Model            | Size (B) | Task              | Benchmark | Score  | Timestamp           | Status     |
-|------------------|----------|-------------------|-----------|--------|----------------------|------------|
-| tiiuae/falcon-7b | 7.00     | MMLU              | MMLU      | 27.15% | 2024-01-15T10:30:45  | Completed  |
-| gemma-2b         | 2.00     | INDIC BENCHMARKS  | BoolQ-IN  | 67.8%  | 2024-01-15T11:15:20  | Completed  |
 
 ### **📋 Detailed Analysis (JSONL)**
 Per-benchmark detailed results in `results_output/detailed_results/`:
