@@ -111,9 +111,8 @@ def _create_milu_in_prompt(question: str, option1: str, option2: str, option3: s
     choices_str = "\n".join([f"{chr(ord('A') + i)}. {choice}" for i, choice in enumerate(choices)])
     main_q_data = {"question": question, "choices_str": choices_str}
     
-    # Check if this is few-shot or zero-shot
+    
     if few_shot_examples and len(few_shot_examples) > 0:
-        # Few-shot formatting
         lang_prompts = prompt_template_dict.get("language_specific_prompts", {})
         if language in lang_prompts and isinstance(lang_prompts[language], dict):
             lang_config = lang_prompts[language]
@@ -123,7 +122,6 @@ def _create_milu_in_prompt(question: str, option1: str, option2: str, option3: s
                 "template_suffix": prompt_template_dict.get("template_suffix", "प्रश्न: {question}\n\nविकल्प:\n{choices_str}\n\nउत्तर:")
             })
         
-        # Create custom template dict for few-shot
         custom_template_dict = {
             "template_prefix": prompt_template_dict.get("template_prefix", ""),
             "few_shot_example_template": lang_config.get("few_shot_example_template"),
@@ -133,7 +131,6 @@ def _create_milu_in_prompt(question: str, option1: str, option2: str, option3: s
         
         return format_few_shot_prompt(custom_template_dict, few_shot_examples, main_q_data)
     else:
-        # Zero-shot formatting
         lang_prompts = prompt_template_dict.get("language_specific_prompts", {})
         if language in lang_prompts:
             if isinstance(lang_prompts[language], str):
@@ -170,7 +167,6 @@ def _parse_predicted_answer(generated_text: str, language: str, hindi_mapping: D
             logger.debug(f"MILU-IN: Found English letter '{found_char}'")
             return found_char
     
-    # Fallback: search for standalone letter
     fallback_match = re.search(r"\b([A-D])\b", first_line, re.IGNORECASE)
     if fallback_match:
         result = fallback_match.group(1).upper()
@@ -397,13 +393,11 @@ def evaluate_milu_in(
             logger.error(f"Error processing language {lang_config_name}: {e}")
             language_accuracies[lang_config_name] = None
 
-    # Calculate overall average
     overall_average = np.mean(all_individual_accuracies) if all_individual_accuracies else 0.0
 
-    # Prepare final results
-    final_scores = {"MILU-Indic": overall_average}
+    final_scores = {"MILU": overall_average}
     for lang, acc in language_accuracies.items():
-        final_scores[f"MILU-Indic_{lang}"] = acc if acc is not None else 0.0
+        final_scores[f"MILU_{lang}"] = acc if acc is not None else 0.0
 
     logger.info(f"Overall MILU-Indic Average: {overall_average:.4f}")
     return final_scores

@@ -13,8 +13,6 @@ import evaluate as hf_evaluate
 import numpy as np
 from datetime import datetime
 import string
-
-# Add project root to path for imports
 current_script_path = os.path.abspath(__file__)
 project_root = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(current_script_path))))
 if project_root not in sys.path:
@@ -73,7 +71,7 @@ def _get_language_mappings_from_config(prompt_template_dict: Dict) -> Dict[str, 
     return prompt_template_dict.get("language_mappings", {
         "hi": {"ए": "A", "अ": "A", "बी": "B", "ब": "B", "सी": "C", "स": "C", "डी": "D", "द": "D"},
         "bn": {"এ": "A", "ক": "A", "বি": "B", "খ": "B", "সি": "C", "গ": "C", "ডি": "D", "ঘ": "D"},
-        "en": {}  # English doesn't need mapping
+        "en": {}
     })
 
 def _create_triviaqa_mcq_prompt(question: str, choices: List[str], language: str, 
@@ -82,36 +80,30 @@ def _create_triviaqa_mcq_prompt(question: str, choices: List[str], language: str
     if not choices or len(choices) != 4:
         return None
     
-    # Format choices as A, B, C, D
+
     choices_str = "\n".join([f"{chr(65+i)}. {choice}" for i, choice in enumerate(choices)])
-    
-    # Get language-specific template
+
     lang_prompts = prompt_template_dict.get("language_specific_prompts", {})
     
-    # Check if this is a few-shot template
     if few_shot_examples and len(few_shot_examples) > 0:
         if language in lang_prompts and isinstance(lang_prompts[language], dict):
-            # Few-shot template format
             example_template = lang_prompts[language].get("few_shot_example_template", 
                                                         "Question: {question}\n\nChoices:\n{choices_str}\n\nAnswer: {answer_letter}")
             template_suffix = lang_prompts[language].get("template_suffix",
                                                        "Question: {question}\n\nChoices:\n{choices_str}\n\nAnswer:")
             few_shot_separator = prompt_template_dict.get("few_shot_separator", "\n\n")
             
-            # Build few-shot examples
             few_shot_text = ""
             for example in few_shot_examples:
                 few_shot_text += example_template.format(**example) + few_shot_separator
             
-            # Combine with main question
             full_prompt = few_shot_text + template_suffix.format(question=question, choices_str=choices_str)
             return full_prompt
         else:
-            # Fallback to simple template
             template = lang_prompts.get(language, lang_prompts.get("default", 
                                       "Question: {question}\n\nChoices:\n{choices_str}\n\nAnswer:"))
     else:
-        # Zero-shot template
+
         template = lang_prompts.get(language, lang_prompts.get("default", 
                                   "Question: {question}\n\nChoices:\n{choices_str}\n\nAnswer:"))
     
@@ -129,7 +121,6 @@ def _get_few_shot_examples_from_config(language: str, num_shots: int, prompt_tem
         lang_examples = examples_data.get(language, examples_data.get("en", []))
         return lang_examples[:num_shots] if lang_examples else []
     
-    # Fallback examples if config not available
     fallback_examples = {
         "hi": [
             {
@@ -196,9 +187,8 @@ def _parse_predicted_answer_with_config(generated_text: str, language: str, prom
             found_char = match.group(1).upper()
             if found_char in "ABCD":
                 return found_char
-            # Handle number to letter conversion
             elif found_char.isdigit() and 1 <= int(found_char) <= 4:
-                return chr(64 + int(found_char))  # 1->A, 2->B, 3->C, 4->D
+                return chr(64 + int(found_char)) 
     
     # Pattern 2: Look for language-specific mappings
     lang_mappings = _get_language_mappings_from_config(prompt_template_dict)
@@ -379,7 +369,7 @@ def evaluate_triviaqa_indic_mcq(
                     continue
 
                 try:
-                    # Get generation config from prompt template or use defaults
+                   
                     eval_config = prompt_template_dict.get("evaluation_config", {})
                     gen_config = {
                         "max_new_tokens": eval_config.get("max_new_tokens", max_new_tokens),
@@ -463,76 +453,11 @@ def evaluate_triviaqa_indic_mcq(
         if saved_path:
             logger.info(f"Detailed results with {len(detailed_results)} examples saved to: {saved_path}")
 
-    # Prepare final results
-    final_scores = {"TriviaQA-Indic-MCQ": overall_average * 100}  # Convert to percentage
+
+    final_scores = {"TriviaQA-IN": overall_average * 100} 
+
     for lang, acc in language_accuracies.items():
-        final_scores[f"TriviaQA-Indic-MCQ_{lang}"] = (acc * 100) if acc is not None else 0.0
+        final_scores[f"TriviaQA-IN_{lang}"] = (acc * 100) if acc is not None else 0.0
 
-    logger.info(f"Overall TriviaQA-Indic-MCQ Average: {overall_average:.4f} ({overall_average*100:.2f}%)")
+    logger.info(f"Overall TriviaQA-IN Average: {overall_average:.4f} ({overall_average*100:.2f}%)")
     return final_scores
-
-# Test function for standalone execution
-if __name__ == '__main__':
-    import argparse
-    
-    # Setup logging
-    logging.basicConfig(
-        level=logging.INFO,
-        format='%(asctime)s [%(name)s] %(levelname)s - %(message)s'
-    )
-    
-    # Try to import eka_eval modules, use fallbacks if not available
-    try:
-        from eka_eval.utils.logging_setup import setup_logging
-        from eka_eval.core.model_loader import initialize_model_pipeline, cleanup_model_resources
-        setup_logging(level=logging.DEBUG, worker_id="TriviaQAIndicMCQTest")
-    except ImportError:
-        logger.warning("eka_eval modules not available, using fallback implementations")
-        
-        def initialize_model_pipeline(model_name, target_device_id=0):
-            """Fallback model initialization."""
-            try:
-                from transformers import pipeline
-                pipe = pipeline("text-generation", model=model_name, device=target_device_id, trust_remote_code=True)
-                return pipe, None
-            except Exception as e:
-                logger.error(f"Failed to initialize model: {e}")
-                return None, None
-        
-        def cleanup_model_resources(pipe, model):
-            """Fallback cleanup function."""
-            if pipe:
-                del pipe
-            if model:
-                del model
-            torch.cuda.empty_cache() if torch.cuda.is_available() else None
-    
-    test_parser = argparse.ArgumentParser(description="Standalone Test TriviaQA-Indic MCQ")
-    test_parser.add_argument("--model_name_test", type=str, default="sarvamai/sarvam-1")
-    test_parser.add_argument("--dataset_split_test", type=str, default="validation[:100]")
-    test_parser.add_argument("--target_languages", nargs='+', default=["hi", "en", "bn","gu","kn","ml","mr","or","pa","ta","te"])
-    test_parser.add_argument("--num_few_shot_test", type=int, default=3)
-    test_parser.add_argument("--save_detailed", action="store_true", help="Save detailed outputs to JSON file")
-    
-    triviaqa_args = test_parser.parse_args()
-    logger.info(f"--- Standalone TriviaQA-Indic MCQ Test: {triviaqa_args.model_name_test} ---")
-    
-    triviaqa_pipe, _ = initialize_model_pipeline(triviaqa_args.model_name_test, target_device_id=0)
-    if triviaqa_pipe:
-        triviaqa_eval_args = {
-            "pipe": triviaqa_pipe,
-            "tokenizer": triviaqa_pipe.tokenizer,
-            "model_name_for_logging": triviaqa_args.model_name_test,
-            "device": triviaqa_pipe.device,
-            "dataset_split": triviaqa_args.dataset_split_test,
-            "target_languages": triviaqa_args.target_languages,
-            "num_few_shot": triviaqa_args.num_few_shot_test,
-            "save_detailed": triviaqa_args.save_detailed,
-            "process_id": 0
-        }
-        try:
-            print(json.dumps(evaluate_triviaqa_indic_mcq(**triviaqa_eval_args), indent=2))
-        finally:
-            cleanup_model_resources(triviaqa_pipe, getattr(triviaqa_pipe, 'model', None))
-    else:
-        logger.error(f"Failed to init model {triviaqa_args.model_name_test} for TriviaQA-Indic MCQ test.")

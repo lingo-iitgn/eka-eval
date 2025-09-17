@@ -16,7 +16,7 @@ from eka_eval.utils.prompt_utils import get_prompt_template, format_prompt, form
 logger = logging.getLogger(__name__)
 
 DEFAULT_DATASET_NAME = "sarvamai/arc-challenge-indic"
-DEFAULT_TARGET_LANGUAGES = ["bn", "en", "gu", "hi", "kn", "ml", "mr", "or", "pa", "ta", "te"]
+DEFAULT_TARGET_LANGUAGES = ["bn", "en"]
 DEFAULT_SPLIT = 'validation[:50]'
 DEFAULT_MAX_NEW_TOKENS = 10
 PROMPT_FILE_BENCHMARK_KEY = "arc_c_in"
@@ -73,8 +73,6 @@ def _normalize_text(text: str) -> str:
     
     # Remove extra whitespace and normalize
     text = re.sub(r'\s+', ' ', text.strip())
-    
-    # Remove common prefixes and suffixes
     text = re.sub(r'^(Answer|उत्तर|जवाब|সমাধান|ответ)\s*:?\s*', '', text, flags=re.IGNORECASE)
     text = re.sub(r'^(The answer is|উত্তর হল|उत्तर है)\s*', '', text, flags=re.IGNORECASE)
     
@@ -88,7 +86,6 @@ def _parse_predicted_answer(generated_text: str, language: str, all_mappings: Di
     # Normalize the text
     generated_text = _normalize_text(generated_text)
     
-    # Get first meaningful line
     lines = [line.strip() for line in generated_text.split('\n') if line.strip()]
     if not lines:
         return None
@@ -97,29 +94,23 @@ def _parse_predicted_answer(generated_text: str, language: str, all_mappings: Di
     
     # Get language-specific mappings
     lang_mapping = all_mappings.get(language, {})
-    hindi_mapping = all_mappings.get("hi", {})  # Fallback to Hindi mapping
-    
-    # Pattern 1: Look for exact letter matches (A, B, C, D)
+    hindi_mapping = all_mappings.get("hi", {})  
     letter_match = re.search(r'\b([A-D])\b', first_line, re.IGNORECASE)
     if letter_match:
         return letter_match.group(1).upper()
     
-    # Pattern 2: Look for letter with punctuation (A., B), C:, etc.)
     punct_match = re.search(r'([A-D])[.)\s:,]', first_line, re.IGNORECASE)
     if punct_match:
         return punct_match.group(1).upper()
     
-    # Pattern 3: Look for language-specific characters
     for native_char, english_char in lang_mapping.items():
         if native_char in first_line:
             return english_char
     
-    # Pattern 4: Fallback to Hindi mapping
     for native_char, english_char in hindi_mapping.items():
         if native_char in first_line:
             return english_char
     
-    # Pattern 5: Look for spelled out options
     option_words = {
         'hi': {'पहला': 'A', 'दूसरा': 'B', 'तीसरा': 'C', 'चौथा': 'D'},
         'en': {'first': 'A', 'second': 'B', 'third': 'C', 'fourth': 'D'},
@@ -343,7 +334,7 @@ def evaluate_arc_c_in(
                         "raw_response": generated_text
                     })
 
-            # Calculate accuracy
+
             valid_pairs = [(p, r) for p, r in zip(predictions_indices, reference_indices) if r != -1]
             if valid_pairs:
                 valid_predictions = [p for p, r in valid_pairs]
@@ -362,10 +353,8 @@ def evaluate_arc_c_in(
             logger.error(f"Error processing language {lang_code}: {e}")
             language_accuracies[lang_code] = None
 
-    # Calculate overall average
     overall_average = np.mean(all_individual_accuracies) if all_individual_accuracies else 0.0
 
-    # Save detailed results
     if save_detailed and detailed_results:
         saved_path = save_detailed_arc_results(
             detailed_results,
@@ -379,54 +368,9 @@ def evaluate_arc_c_in(
         if saved_path:
             logger.info(f"Detailed results with {len(detailed_results)} examples saved to: {saved_path}")
 
-    # Prepare final results
     final_scores = {"ARC-Challenge-Indic": overall_average * 100}  # Convert to percentage
     for lang, acc in language_accuracies.items():
         final_scores[f"ARC-Challenge-Indic_{lang}"] = (acc * 100) if acc is not None else 0.0
 
     logger.info(f"Overall ARC-Challenge-Indic Average: {overall_average:.4f} ({overall_average*100:.2f}%)")
     return final_scores
-
-# Test function for standalone execution
-if __name__ == '__main__':
-    import sys
-    import os
-    import argparse
-    import os
-    os.environ["CUDA_VISIBLE_DEVICES"]="2,3,4"    
-    current_script_path = os.path.abspath(__file__)
-    project_root_for_test = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(current_script_path)))))
-    if project_root_for_test not in sys.path:
-        sys.path.insert(0, project_root_for_test)
-    
-    from eka_eval.utils.logging_setup import setup_logging
-    from eka_eval.core.model_loader import initialize_model_pipeline, cleanup_model_resources
-    
-    test_parser = argparse.ArgumentParser(description="Standalone Test ARC-Challenge-Indic")
-    test_parser.add_argument("--model_name_test", type=str, default="sarvamai/sarvam-1")
-    test_parser.add_argument("--dataset_split_test", type=str, default="validation[:50]")
-    test_parser.add_argument("--target_languages", nargs='+', default=["hi", "en","bn","gu","kn","ml","mr","or","pa","ta","te"])
-    test_parser.add_argument("--save_detailed", action="store_true", help="Save detailed outputs to JSON file")
-    
-    arc_args = test_parser.parse_args()
-    setup_logging(level=logging.DEBUG, worker_id="ARCIndicFileTest")
-    logger.info(f"--- Standalone ARC-Challenge-Indic Test: {arc_args.model_name_test} ---")
-    
-    arc_pipe, _ = initialize_model_pipeline(arc_args.model_name_test, target_device_id=0)
-    if arc_pipe:
-        arc_eval_args = {
-            "pipe": arc_pipe,
-            "tokenizer": arc_pipe.tokenizer,
-            "model_name_for_logging": arc_args.model_name_test,
-            "device": arc_pipe.device,
-            "dataset_split": arc_args.dataset_split_test,
-            "target_languages": arc_args.target_languages,
-            "save_detailed": arc_args.save_detailed,
-            "process_id": 0
-        }
-        try:
-            print(json.dumps(evaluate_arc_c_in(**arc_eval_args), indent=2))
-        finally:
-            cleanup_model_resources(arc_pipe, getattr(arc_pipe, 'model', None))
-    else:
-        logger.error(f"Failed to init model {arc_args.model_name_test} for ARC-Challenge-Indic test.")
