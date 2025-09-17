@@ -106,8 +106,6 @@ def evaluate_quac(
             if turn_id in processed_qas_ids: continue
 
             question = dialogue['questions'][turn_idx_in_dialogue]
-            # QuAC answers structure: dialogue['answers']['texts'] is List[List[str]], dialogue['answers']['answer_starts'] is List[List[int]]
-            # Each inner list corresponds to a turn.
             answer_texts_for_turn = dialogue['answers']['texts'][turn_idx_in_dialogue]
             answer_starts_for_turn = dialogue['answers']['answer_starts'][turn_idx_in_dialogue]
 
