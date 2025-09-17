@@ -78,21 +78,20 @@ BENCHMARK_CONFIG = {
         },
         
     "MATH": {
-        "GSM8K": {
-            "description": "Accuracy on GSM8K (Cobbe et al., 2021)",
-            "evaluation_function": "math.gsm8k.evaluate_gsm8k",
-            "task_args": {
-                "dataset_name": "openai/gsm8k",
-                "dataset_config_name": "main",
-                "dataset_split": "test",
-                "num_few_shot": 5,
-                "max_new_tokens": 384,
-                "generation_batch_size": 8
-            }
-        },
+# eka_eval/config/benchmark_config.py
+            "GSM8K": {
+                "evaluation_function": "math_eval.gsm8k.evaluate_gsm8k",
+                "task_args": {
+                    "dataset_name": "openai/gsm8k",
+                    "dataset_split": "test", 
+                    "num_few_shot": 5,
+                    "max_new_tokens": 384,
+                    "generation_batch_size": 8
+                },
+            },
         "MATH": {
             "description": "Accuracy on Hendrycks MATH (Hendrycks et al., 2021b)",
-            "evaluation_function": "math.math_eval.evaluate_math",
+            "evaluation_function": "math_eval.math.evaluate_math",
             "task_args": {
                 "dataset_name": "hendrycks/competition_math",
                 "dataset_split": "test",
@@ -103,7 +102,7 @@ BENCHMARK_CONFIG = {
         },
         "GPQA": {
             "description": "Accuracy on GPQA (Rein et al., 2023)",
-            "evaluation_function": "math.gpqa.evaluate_gpqa",
+            "evaluation_function": "math_eval.gpqa.evaluate_gpqa",
             "task_args": {
                 "dataset_name": "Idavidrein/gpqa",
                 "dataset_config": "gpqa_main",
@@ -176,10 +175,9 @@ BENCHMARK_CONFIG = {
             "max_new_tokens": 10,
             "generation_batch_size": 16,
             "num_few_shot": 5,
-            "evaluation_method": "likelihood",  # Options: "likelihood" or "generation"
+            "evaluation_method": "likelihood", 
             "save_outputs": False,
             "disable_progress_bar": False,
-            # Prompt template configuration
             "prompt_template_key_likelihood": "piqa_likelihood",
             "prompt_template_key_generation": "piqa_generation", 
             "prompt_template_key_few_shot_likelihood": "piqa_5shot_likelihood",
@@ -190,7 +188,7 @@ BENCHMARK_CONFIG = {
         },
         "SIQA": {
             "description": "Accuracy on SIQA (Sap et al., 2019)",
-            "evaluation_function": "reasoning.siqa.evaluate_siqa",
+            "evaluation_function": "commonsense_reasoning.siqa.evaluate_siqa",
             "task_args": {
                 "dataset_name": "allenai/social_i_qa",
                 "dataset_split": "validation",
@@ -200,7 +198,7 @@ BENCHMARK_CONFIG = {
         },
         "HellaSwag": {
             "description": "Accuracy on HellaSwag (Zellers et al., 2019a)",
-            "evaluation_function": "reasoning.hellaswag.evaluate_hellaswag",
+            "evaluation_function": "commonsense_reasoning.hellaswag.evaluate_hellaswag",
             "task_args": {
                 "dataset_name": "hellaswag",
                 "dataset_split": "validation",
@@ -210,7 +208,7 @@ BENCHMARK_CONFIG = {
         },
         "ARC-Easy": {
             "description": "Accuracy on ARC-Easy (Clark et al., 2018)",
-            "evaluation_function": "reasoning.arc_easy.evaluate_arc_easy",
+            "evaluation_function": "commonsense_reasoning.arc-e.evaluate_arc_easy",
             "task_args": {
                 "dataset_name": "ai2_arc",
                 "dataset_config_name": "ARC-Easy",
@@ -221,7 +219,7 @@ BENCHMARK_CONFIG = {
         },
         "WinoGrande": {
             "description": "Accuracy on WinoGrande (Sakaguchi et al., 2021)",
-            "evaluation_function": "reasoning.winogrande.evaluate_winogrande",
+            "evaluation_function": "commonsense_reasoning.winogrande.evaluate_winogrande",
             "task_args": {
                 "dataset_name": "winogrande",
                 "dataset_config_name": "winogrande_xl",
@@ -232,7 +230,7 @@ BENCHMARK_CONFIG = {
         },
         "CommonSenseQA": {
             "description": "Accuracy on CommonSenseQA (Talmor et al., 2018)",
-            "evaluation_function": "reasoning.commonsenseqa.evaluate_commonsenseqa",
+            "evaluation_function": "commonsense_reasoning.commonsenseqa.evaluate_commonsenseqa",
             "task_args": {
                 "dataset_name": "commonsense_qa",
                 "dataset_split": "validation",
@@ -243,7 +241,7 @@ BENCHMARK_CONFIG = {
         },
         "OpenBookQA": {
             "description": "Accuracy on OpenBookQA (Mihaylov et al., 2018)",
-            "evaluation_function": "reasoning.openbookqa.evaluate_openbookqa",
+            "evaluation_function": "commonsense_reasoning.openbookqa.evaluate_openbookqa",
             "task_args": {
                 "dataset_name": "allenai/openbookqa",
                 "dataset_config_name": "main",
@@ -280,19 +278,34 @@ BENCHMARK_CONFIG = {
     },
     "LONG CONTEXT": {
         "ZeroSCROLLS": {
-            "description": "ROUGE, F1, Acc on ZeroSCROLLS (Shaham et al., 2023)",
+            "description": "Aggregated score on selected ZeroSCROLLS sub-tasks",
             "evaluation_function": "long_context.zeroscrolls.evaluate_zeroscrolls",
-            "task_args": {}
+            "task_args": {
+                "sub_tasks_to_run": ["gov_report", "summ_screen_fd"],
+                "num_samples_per_task": 50,
+                "max_new_tokens": 512
+            }
         },
         "NeedleInAHaystack": {
-            "description": "Retrieval Acc on Needle-in-a-Haystack (Kamradt, 2023)",
+            "description": "Retrieval accuracy on Needle-in-a-Haystack",
             "evaluation_function": "long_context.niah.evaluate_niah",
-            "task_args": {}
+            "task_args": {
+                "context_lengths": [4000, 8000, 16000],
+                "depth_percents": [0, 25, 50, 75, 100],
+                "max_new_tokens": 50,
+                "save_outputs": True 
+            }
         },
         "InfiniteBench": {
-            "description": "Task-Acc on InfiniteBench (Zhang et al., 2024)",
+            "description": "Task accuracy on InfiniteBench long context tasks",
             "evaluation_function": "long_context.infinitebench.evaluate_infinitebench",
-            "task_args": {}
+            "task_args": {
+                "dataset_split": "test", 
+                "max_new_tokens": 100,
+                "num_few_shot": 3,
+                "generation_batch_size": 1, 
+                "save_outputs": True
+            }
         }
     },
     "General":
@@ -364,24 +377,38 @@ BENCHMARK_CONFIG = {
             }
         },
         "TriviaQA-IN": {
-            "description": "Accuracy",
-            "evaluation_function": "indic.triviaqa_in.evaluate_triviaqa_in",
-            "task_args": {}
+            "description": "Accuracy on TriviaQA-Indic-MCQ",
+            "evaluation_function": "indic.triviaqa_in.evaluate_triviaqa_indic_mcq",
+            "task_args": {
+                "dataset_name": "sarvamai/trivia-qa-indic-mcq",
+                "target_languages": ["bn", "te"],
+                "dataset_split": "validation",
+                "num_few_shot": 0,
+                "max_new_tokens": 10,
+                "save_detailed": False,
+                "prompt_file_benchmark_key": "triviaqa_in"
+            }
         },
-        "MILU": {
-            "description": "Accuracy",
-            "evaluation_function": "indic.milu.evaluate_milu",
-            "task_args": {}
-        },
-        "GSM-8K-IN": {
-            "description": "Accuracy",
+                "GSM-8K-IN": {
+            "description": "Accuracy on Indic GSM-8K",
             "evaluation_function": "indic.gsm8k_in.evaluate_gsm8k_in",
-            "task_args": {}
+            "task_args": {
+                "dataset_name": "sarvamai/gsm8k-indic",
+                "target_languages": ["as", "bn"],
+                "dataset_split": "test",
+                "max_new_tokens": 256
+            }
         },
         "CROSS SUM": {
-            "description": "Accuracy",
+            "description": "ROUGE-1 score on IndicGenBench CrossSum",
             "evaluation_function": "indic.cross_sum.evaluate_cross_sum",
-            "task_args": {}
+            "task_args": {
+                "dataset_name": "google/IndicGenBench_crosssum_in",
+                "target_languages": ["bn", "en", "gu", "hi", "kn", "ml", "mr", "or", "pa", "ta", "te"],
+                "dataset_split": "test",
+                "num_samples_per_lang": 100, 
+                "max_new_tokens": 256
+            }
         },
         "BOOLQ-IN": {
             "description": "Accuracy on Indic BoolQ dataset",
@@ -399,7 +426,7 @@ BENCHMARK_CONFIG = {
         "task_args": {
             "dataset_name": "sarvamai/arc-challenge-indic",
             "target_languages": ["bn", "en", "gu", "hi", "kn", "ml", "mr", "or", "pa", "ta", "te"],
-            "dataset_split": "validation[:50]",
+            "dataset_split": "validation",
             "num_few_shot": 0,
             "max_new_tokens": 10,
             "generation_batch_size": 8,
@@ -409,20 +436,68 @@ BENCHMARK_CONFIG = {
             "prompt_file_category": "indic",
         }
     },
-        "Flores-IN": {
-            "description": "BLEU, ChrF",
-            "evaluation_function": "indic.flores_in.evaluate_flores_in",
-            "task_args": {}
+            "MMLU-IN": {
+            "description": "Accuracy on MMLU-Indic",
+            "evaluation_function": "indic.mmlu_in.evaluate_mmlu_in",
+            "task_args": {
+                "dataset_name": "sarvamai/mmlu-indic",
+                "target_languages": ["hi", "bn"],
+                "dataset_split": "validation",
+                "num_few_shot": 0,
+                "max_new_tokens": 10,
+                "save_detailed": False,
+                "prompt_file_benchmark_key": "mmlu_in"
+            }
+        },
+        "MILU": {
+            "description": "Accuracy on the Massive Indic Language Understanding benchmark",
+            "evaluation_function": "indic.milu_in.evaluate_milu_in",
+            "task_args": {
+                "dataset_name": "ai4bharat/MILU",
+                "target_languages": ["Bengali", "English"],
+                "dataset_split": "test",
+                "max_new_tokens": 5,
+                "save_detailed": False,
+                "prompt_file_benchmark_key": "milu_in"
+            }
         },
         "XQuAD-IN": {
-            "description": "F1 / Exact Match",
+            "description": "F1 / Exact Match on IndicGenBench XQuAD",
             "evaluation_function": "indic.xquad_in.evaluate_xquad_in",
-            "task_args": {}
+            "task_args": {
+                "dataset_name": "google/IndicGenBench_xquad_in",
+                "target_languages": [ "bn", "en", "gu", "hi", "kn", "ml", "mr", "or", "pa", "ta", "te"],
+                "dataset_split": "test",
+                "num_samples_per_lang": 100, # For quick testing
+                "max_new_tokens": 128
+            }
         },
         "XorQA-IN": {
-            "description": "F1 / Exact Match",
+            "description": "F1 / Exact Match on IndicGenBench XorQA",
             "evaluation_function": "indic.xorqa_in.evaluate_xorqa_in",
-            "task_args": {}
+            "task_args": {
+                "dataset_name": "google/IndicGenBench_xorqa_in",
+                "target_languages": ["bn", "en", "gu", "hi", "kn", "ml", "mr", "or", "pa", "ta", "te"],
+                "dataset_split": "test",
+                "num_samples_per_lang": 100, 
+                "max_new_tokens": 256,
+                "generation_batch_size":4
+            }
+        },
+                "Flores-IN": {
+            "description": "chrF++ score for en->indic translation on Flores",
+            "evaluation_function": "indic.flores_in.evaluate_flores_in",
+            "task_args": {
+                "dataset_name": "google/IndicGenBench_flores_in",
+                "translation_direction": "enxx",
+                "target_languages": ["as", "bn"],
+                "num_samples_per_lang": 100,
+                "batch_size": 4,
+                "max_new_tokens": 128,
+                "use_few_shot": True,
+                "num_few_shot_examples": 3,
+                 "dataset_split": "test[:10]"
+            }
         }
     }
 }
