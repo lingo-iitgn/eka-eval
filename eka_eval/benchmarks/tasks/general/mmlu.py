@@ -16,11 +16,10 @@ from eka_eval.utils.prompt_utils import get_prompt_template, format_prompt, form
 
 logger = logging.getLogger(__name__)
 
-# Your original defaults
 DEFAULT_DATASET_NAME_MMLU = "cais/mmlu"
 DEFAULT_SUBSET_MMLU = "all"
 DEFAULT_SPLIT_MMLU = "test"
-DEFAULT_MAX_NEW_TOKENS_MMLU = 1  # Changed to 1 for better performance
+DEFAULT_MAX_NEW_TOKENS_MMLU = 1  
 DEFAULT_GENERATION_BATCH_SIZE_MMLU = 8
 DEFAULT_NUM_FEWSHOT_MMLU = 5
 DEFAULT_PROMPT_TEMPLATE_KEY_ZERO_SHOT = "mmlu_0shot"
@@ -45,11 +44,9 @@ def save_detailed_results(
     process_id: int = 0
 ) -> str:
 
-    # Create detailed results directory
+    
     detailed_dir = os.path.join(results_dir, "detailed_results")
     os.makedirs(detailed_dir, exist_ok=True)
-    
-    # Generate filename
     model_clean = model_name.replace("/", "_").replace(":", "_")
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     filename = f"mmlu_{model_clean}_{dataset_config}_{num_few_shot}shot_p{process_id}_{timestamp}.json"
@@ -85,13 +82,13 @@ def save_detailed_results(
     
     summary["subject_breakdown"] = subject_stats
     
-    # Prepare full data structure
+
     full_data = {
         "summary": summary,
         "detailed_results": results_data
     }
     
-    # Save to JSON
+
     try:
         with open(filepath, 'w', encoding='utf-8') as f:
             json.dump(full_data, f, indent=2, ensure_ascii=False)
@@ -189,7 +186,7 @@ def evaluate_mmlu(
     benchmark_display_name = f"MMLU_{dataset_config_name}" if dataset_config_name.lower() != "all" else "MMLU"
     logger.info(f"Starting {benchmark_display_name} ({num_few_shot}-shot): {model_name_for_logging} on {dataset_name}/{dataset_config_name}")
 
-    # Load prompt template
+    
     current_prompt_template_name = prompt_template_name_fewshot if num_few_shot > 0 else prompt_template_name_zeroshot
     prompt_template_dict = get_prompt_template(
         benchmark_name=prompt_file_benchmark_key,
@@ -199,7 +196,7 @@ def evaluate_mmlu(
     if not prompt_template_dict:
         return {"MMLU": 0.0, "error_message": f"PromptTemplate '{current_prompt_template_name}' NotFound"}
 
-    # Load few-shot examples
+   
     few_shot_examples_to_use = []
     if num_few_shot > 0:
         few_shot_examples_to_use = _get_mmlu_fewshot_examples_from_config(num_few_shot, prompt_file_category)
@@ -229,12 +226,12 @@ def evaluate_mmlu(
     if len(subset_to_process) == 0: return {"MMLU": 0.0}
     logger.info(f"P{process_id}: Processing {len(subset_to_process)} MMLU examples.")
 
-    # Initialize tracking
+
     predictions_idx_list, true_labels_idx_list = [], []
     prompts_for_batch, original_items_for_batch_info = [], []
-    detailed_results = []  # Store detailed results
+    detailed_results = []  
 
-    # Main evaluation loop
+   
     for item_idx, item_data in enumerate(tqdm(subset_to_process, desc=f"P{process_id} - MMLU Eval")):
         question = item_data.get("question")
         subject = item_data.get("subject", "general") 
@@ -247,7 +244,6 @@ def evaluate_mmlu(
         choices_str_fmt = "\n".join([f"{chr(65+i)}. {choice}" for i, choice in enumerate(choices)])
         main_q_data = {"subject": subject.replace('_', ' ').title(), "question": question, "choices_str": choices_str_fmt}
         
-        # Generate prompt
         if num_few_shot > 0 and few_shot_examples_to_use:
             prep_fs_data = []
             for ex in few_shot_examples_to_use:
@@ -267,9 +263,7 @@ def evaluate_mmlu(
             'item_idx': item_idx
         })
 
-        # Process batch
         if len(prompts_for_batch) == generation_batch_size or item_idx == len(subset_to_process) - 1:
-            # Optimized generation config
             gen_config = {
                 "do_sample": False,
                 "max_new_tokens": max_new_tokens,
@@ -278,7 +272,7 @@ def evaluate_mmlu(
                 "repetition_penalty": 1.0,
                 "pad_token_id": tokenizer.pad_token_id if tokenizer.pad_token_id is not None else tokenizer.eos_token_id,
                 "eos_token_id": tokenizer.eos_token_id,
-                "return_full_text": False,  # Only return new tokens
+                "return_full_text": False, 
                 "clean_up_tokenization_spaces": True
             }
             
@@ -289,7 +283,6 @@ def evaluate_mmlu(
                 for k, raw_out_list in enumerate(batch_raw_outputs):
                     orig_info = original_items_for_batch_info[k]
                     
-                    # Extract generated text
                     if raw_out_list and len(raw_out_list) > 0 and 'generated_text' in raw_out_list[0]:
                         generated_part = raw_out_list[0]['generated_text']
                         raw_gen = orig_info['llm_prompt'] + generated_part
@@ -297,19 +290,17 @@ def evaluate_mmlu(
                         generated_part = "[NO_GENERATION]"
                         raw_gen = orig_info['llm_prompt'] + generated_part
                     
-                    # Extract answer
                     pred_idx = _extract_mmlu_answer_index(raw_gen, orig_info['llm_prompt'])
                     true_idx = orig_info['true_answer_idx']
                     
-                    # Handle failed extraction
+    
                     if pred_idx is None: 
-                        pred_idx = (true_idx + 1) % 4  # Wrong answer as fallback
+                        pred_idx = (true_idx + 1) % 4 
                     
                     is_correct = pred_idx == true_idx
                     predictions_idx_list.append(pred_idx)
                     true_labels_idx_list.append(true_idx)
                     
-                    # Store detailed result
                     if save_detailed:
                         detailed_result = {
                             "question_id": orig_info['item_idx'],
@@ -329,7 +320,6 @@ def evaluate_mmlu(
                         }
                         detailed_results.append(detailed_result)
                     
-                    # Debug first few examples
                     if orig_info['item_idx'] < 3:
                         print(f"\n=== DEBUG Example {orig_info['item_idx']} ===")
                         print(f"Subject: {orig_info['subject']}")
@@ -366,7 +356,6 @@ def evaluate_mmlu(
                         }
                         detailed_results.append(detailed_result)
             
-            # Reset batch
             prompts_for_batch, original_items_for_batch_info = [], []
     
     # Calculate final accuracy
