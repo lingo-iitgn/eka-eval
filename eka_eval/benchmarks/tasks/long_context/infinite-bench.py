@@ -20,15 +20,15 @@ DEFAULT_MAX_NEW_TOKENS_IB = 100
 DEFAULT_FEW_SHOT_COUNT_IB = 3
 
 try:
-    infinitebench_squad_metric = hf_evaluate.load("squad")  # For EN.QA F1 scores
-    infinitebench_accuracy_metric = hf_evaluate.load("accuracy")  # For EN.MC accuracy
+    infinitebench_squad_metric = hf_evaluate.load("squad")  
+    infinitebench_accuracy_metric = hf_evaluate.load("accuracy") 
     logger.info("Metrics for InfiniteBench loaded successfully.")
 except Exception as e:
     logger.critical(f"Failed to load metrics for InfiniteBench: {e}. InfiniteBench may not run correctly.", exc_info=True)
     infinitebench_squad_metric = None
     infinitebench_accuracy_metric = None
 
-# Few-shot examples for InfiniteBench tasks
+
 DEFAULT_FEW_SHOT_EXAMPLES_EN_QA = [
     {
         "context": "The old mansion stood at the end of the winding road, its gothic architecture casting long shadows in the moonlight. Sarah approached the heavy wooden door, her heart pounding with anticipation.",
@@ -139,7 +139,6 @@ def _format_infinitebench_en_qa_prompt(context: str, question: str, few_shot_exa
             
             prompt += f"Text: {ex_context}\nQuestion: {ex_question}\nAnswer: {ex_answer}\n\n"
     
-    # Add the target question
     prompt += f"Text: {context}\nQuestion: {question}\nAnswer:"
     
     return prompt
@@ -148,7 +147,6 @@ def _format_infinitebench_en_mc_prompt(context: str, question: str, choices: Lis
     """Format prompt for InfiniteBench EN.MC task."""
     prompt = ""
     
-    # Add few-shot examples if provided
     if few_shot_examples:
         prompt += "Read the text and choose the correct answer from the given options.\n\n"
         for ex_item in few_shot_examples:
@@ -161,8 +159,7 @@ def _format_infinitebench_en_mc_prompt(context: str, question: str, choices: Lis
             for choice in ex_choices:
                 prompt += f"{choice}\n"
             prompt += f"Answer: {ex_answer}\n\n"
-    
-    # Add the target question
+
     prompt += f"Text: {context}\nQuestion: {question}\n"
     for choice in choices:
         prompt += f"{choice}\n"
@@ -177,19 +174,15 @@ def _extract_answer_en_qa(generated_text: str, prompt: str) -> str:
     else:
         response = generated_text.strip()
     
-    # Remove common prefixes
     response = re.sub(r'^[Aa]nswer\s*:?\s*', '', response)
     response = re.sub(r'^(The answer is|It is|That would be|The correct answer is)\s*', '', response, flags=re.IGNORECASE)
     
-    # Take only the first sentence/line as answer
     lines = response.split('\n')
     answer = lines[0].strip()
     
-    # Split by sentence and take first
     sentences = re.split(r'[.!?]', answer)
     answer = sentences[0].strip() if sentences else answer
     
-    # Remove quotes if they wrap the entire answer
     if (answer.startswith('"') and answer.endswith('"')) or \
        (answer.startswith("'") and answer.endswith("'")):
         answer = answer[1:-1]
@@ -202,8 +195,6 @@ def _extract_answer_en_mc(generated_text: str, prompt: str) -> str:
         response = generated_text[len(prompt):].strip()
     else:
         response = generated_text.strip()
-    
-    # Remove common prefixes
     response = re.sub(r'^[Aa]nswer\s*:?\s*', '', response)
     response = re.sub(r'^(The answer is|The correct answer is|Option|Choice)\s*', '', response, flags=re.IGNORECASE)
     
@@ -216,7 +207,7 @@ def _extract_answer_en_mc(generated_text: str, prompt: str) -> str:
     if response and response[0].upper() in 'ABCD':
         return response[0].upper()
     
-    return "A"  # Default fallback
+    return "A"  
 
 def parse_infinitebench_input(input_text: str, task_type: str) -> Tuple[str, str, List[str]]:
     """Parse InfiniteBench input format to extract context, question, and choices."""
@@ -225,7 +216,6 @@ def parse_infinitebench_input(input_text: str, task_type: str) -> Tuple[str, str
     choices = []
     
     if task_type == "longbook_qa_eng":
-        # Format: Context + Question
         if "\nQuestion:" in input_text:
             parts = input_text.split("\nQuestion:")
             context = parts[0].strip()
@@ -240,13 +230,13 @@ def parse_infinitebench_input(input_text: str, task_type: str) -> Tuple[str, str
             question = "What is the main topic discussed?"
     
     elif task_type == "longbook_choice_eng":
-        # Format: Context + Question + Multiple choices
+       
         if "\nQuestion:" in input_text:
             parts = input_text.split("\nQuestion:")
             context = parts[0].strip()
             question_and_choices = parts[1].strip()
             
-            # Extract question (before first choice)
+          
             choice_pattern = r'\n[A-D]\.'
             choice_match = re.search(choice_pattern, question_and_choices)
             if choice_match:
@@ -333,13 +323,13 @@ def evaluate_infinitebench(
             logger.warning(f"InfiniteBench: Skipping example due to missing input or output.")
             continue
 
-        # Parse input based on task type
+        
         context, question, choices = parse_infinitebench_input(input_text, task_type)
         
-        # Create appropriate prompt
+       
         if "qa" in task_type:
             prompt = _format_infinitebench_en_qa_prompt(context, question, few_shot_examples_list)
-        else:  # choice task
+        else: 
             prompt = _format_infinitebench_en_mc_prompt(context, question, choices, few_shot_examples_list)
         
         prompts_to_generate.append(prompt)
@@ -358,7 +348,7 @@ def evaluate_infinitebench(
 
     logger.info(f"P{process_id}: Starting InfiniteBench batch inference for {len(prompts_to_generate)} prompts (batch_size={generation_batch_size}).")
 
-    # Generation config optimized for long context
+
     generation_config = {
         "max_new_tokens": max_new_tokens,
         "do_sample": True,
@@ -386,7 +376,6 @@ def evaluate_infinitebench(
                 task_type = info_item['task_type']
                 prompt = info_item['prompt']
                 
-                # Extract and clean prediction
                 if output_list_item and output_list_item[0] and 'generated_text' in output_list_item[0]:
                     raw_generated = output_list_item[0]['generated_text']
                     if "qa" in task_type:
@@ -397,17 +386,14 @@ def evaluate_infinitebench(
                     raw_generated = "#GenFail"
                     pred_text = "#GenFail"
                 
-                # Evaluate based on task type
                 if "qa" in task_type:
-                    # Use F1 score for QA task
                     f1 = f1_score_ib(pred_text, reference_answer)
                     em = 1.0 if exact_match_score_ib(pred_text, reference_answer) else 0.0
-                    score = f1  # Primary metric for QA
+                    score = f1 
                 else:
-                    # Use accuracy for MC task
                     em = 1.0 if pred_text.upper() == reference_answer.upper() else 0.0
-                    f1 = em  # For MC, F1 = EM
-                    score = em  # Primary metric for MC
+                    f1 = em  
+                    score = em  
                 
                 predictions_and_scores.append({
                     'question': info_item['question'],
@@ -420,7 +406,7 @@ def evaluate_infinitebench(
                     'raw_generated': raw_generated
                 })
                 
-                # Save detailed output if requested
+              
                 if save_outputs:
                     outputs_dump.append({
                         "context": info_item['context'][:500] + "..." if len(info_item['context']) > 500 else info_item['context'],
@@ -505,51 +491,3 @@ def evaluate_infinitebench(
         "InfiniteBench_exact_match": avg_em * 100,
         "InfiniteBench_f1": avg_f1 * 100
     }
-
-if __name__ == '__main__':
-    import os
-    os.environ["CUDA_VISIBLE_DEVICES"] = "3"
-    
-    current_script_path = os.path.abspath(__file__)
-    project_root_for_test = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(current_script_path)))))
-    if project_root_for_test not in sys.path:
-        sys.path.insert(0, project_root_for_test)
-    
-    from eka_eval.utils.logging_setup import setup_logging
-    from eka_eval.core.model_loader import initialize_model_pipeline, cleanup_model_resources
-    
-    test_parser = argparse.ArgumentParser(description="Standalone Test InfiniteBench")
-    test_parser.add_argument("--model_name_test", type=str, default="meta-llama/Meta-Llama-3-8B")
-    test_parser.add_argument("--dataset_split_test", type=str, default="longbook_qa_eng", 
-                           choices=["longbook_qa_eng", "longbook_choice_eng"])
-    test_parser.add_argument("--gen_batch_size_test", type=int, default=1)
-    test_parser.add_argument("--num_few_shot_test", type=int, default=2)
-    test_parser.add_argument("--max_new_tokens", type=int, default=100, help="Maximum new tokens to generate")
-    test_parser.add_argument("--save_outputs", action="store_true", help="Save detailed outputs to JSON file")
-    
-    ib_args = test_parser.parse_args()
-    setup_logging(level=logging.DEBUG, worker_id="InfiniteBenchFileTest")
-    logger.info(f"--- Standalone InfiniteBench Test: {ib_args.model_name_test} ({ib_args.dataset_split_test}) ---")
-    
-    ib_pipe, _ = initialize_model_pipeline(ib_args.model_name_test, target_device_id=0)
-    if ib_pipe:
-        ib_eval_args = {
-            "pipe": ib_pipe,
-            "tokenizer": ib_pipe.tokenizer,
-            "model_name_for_logging": ib_args.model_name_test,
-            "device": ib_pipe.device,
-            "dataset_split": ib_args.dataset_split_test,
-            "generation_batch_size": ib_args.gen_batch_size_test,
-            "num_few_shot": ib_args.num_few_shot_test,
-            "max_new_tokens": ib_args.max_new_tokens,
-            "process_id": 0,
-            "gpu_id": 0,
-            "num_gpus": 1,
-            "save_outputs": ib_args.save_outputs
-        }
-        try:
-            print(json.dumps(evaluate_infinitebench(**ib_eval_args), indent=2))
-        finally:
-            cleanup_model_resources(ib_pipe, getattr(ib_pipe, 'model', None))
-    else:
-        logger.error(f"Failed to init model {ib_args.model_name_test} for InfiniteBench test.")
