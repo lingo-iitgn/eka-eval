@@ -51,9 +51,6 @@ def get_constrained_gpus():
     Get available GPUs respecting the CUDA_VISIBLE_DEVICES constraint.
     Returns logical GPU IDs (0, 1) which map to physical GPUs (2, 3).
     """
-    # Since we set CUDA_VISIBLE_DEVICES="2,3", PyTorch/CUDA will see:
-    # Logical GPU 0 -> Physical GPU 2
-    # Logical GPU 1 -> Physical GPU 3
     
     available_gpus = get_available_gpus()
     if not available_gpus:
@@ -953,13 +950,13 @@ def main_orchestrator():
         logger.error("Error: No workers available. Exiting.")
         return
 
-    # Prepare work items (unchanged)
+    # Prepare work items 
     work_items_to_distribute: List[PyDict[str, Any]] = []
-    for tg_name_ordered in ordered_selected_task_groups_for_processing:
-        if tg_name_ordered in tasks_to_schedule_for_workers:
+    for task_group, benchmarks_in_group in tasks_to_schedule_for_workers.items():
+        for benchmark_name in benchmarks_in_group:
             work_items_to_distribute.append({
-                'task_group': tg_name_ordered,
-                'benchmarks': tasks_to_schedule_for_workers[tg_name_ordered]
+                'task_group': task_group,
+                'benchmarks': [benchmark_name] 
             })
 
     # Launch worker processes (Updated with API support and GPU constraints)
