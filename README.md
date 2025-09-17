@@ -115,39 +115,6 @@ https://github.com/user-attachments/assets/44192d82-0cf8-499c-9ae9-750e0a00e415
 
 
 
-
----
-### **Command Line Examples**
-```bash
-# Evaluate specific model on math benchmarks
-python3 scripts/run_benchmarks.py \
-    --model "google/gemma-2b" \
-    --task_groups "MATH AND REASONING" \
-    --benchmarks "GSM8K,MATH"
-
-# Multi-language evaluation
-python3 scripts/run_benchmarks.py \
-    --model "sarvamai/sarvam-1" \
-    --task_groups "INDIC BENCHMARKS" \
-    --languages "hi,bn,gu"
-
-# Code generation evaluation
-python3 scripts/run_benchmarks.py \
-    --model "microsoft/CodeT5-large" \
-    --task_groups "CODE GENERATION" \
-    --pass_k "1,5,10"
-```
-
-### **Standalone Benchmark Testing**
-```bash
-# Test individual benchmarks
-python eka_eval/benchmarks/tasks/math/gsm8k.py --model_name_test gpt2
-python eka_eval/benchmarks/tasks/indic/boolq_in.py --target_languages_test hi en
-python eka_eval/benchmarks/tasks/long_context/infinitebench.py --dataset_split_test longdialogue_qa_eng
-```
-
----
-
 ## **🏗️ Project Structure**
 
 ```
@@ -293,7 +260,6 @@ def evaluate_my_task(pipe, tokenizer, model_name_for_logging, device, **kwargs):
 
 #### **3. Register in Config**
 ```python
-# Add to benchmark_config.py
 "MyTask": {
     "description": "My custom evaluation task",
     "evaluation_function": "my_project.my_benchmark.evaluate_my_task",
