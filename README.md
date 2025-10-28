@@ -73,6 +73,7 @@ python3 -m venv eka-env
 source eka-env/bin/activate  # On Windows: eka-env\Scripts\activate
 
 # Install dependencies
+cd docs
 pip install -r requirements.txt
 ```
 
