@@ -66,15 +66,49 @@ git clone https://github.com/lingo-iitgn/eka-eval.git
 cd eka-eval
 ```
 
-### 2. **Environment Setup**
+
+### 2. Environment Setup
+
+Follow the steps below to create and activate a virtual environment for running **eka-eval**.
+
+---
+
+### 🐧 macOS / Linux
+
 ```bash
 # Create virtual environment
 python3 -m venv eka-env
-source eka-env/bin/activate  # On Windows: eka-env\Scripts\activate
+
+# Activate the environment
+source eka-env/bin/activate
 
 # Install dependencies
 pip install -r requirements.txt
+
+# Install eka-eval in editable mode
+pip install -e .
 ```
+
+---
+
+### 🪟 Windows
+
+```cmd
+:: Create virtual environment
+python -m venv eka-env
+
+:: Activate
+eka-env\Scripts\activate.bat
+
+:: Install dependencies
+pip install -r requirements.txt
+
+:: Install eka-eval in editable mode
+pip install -e .
+```
+
+---
+
 
 ### 3. **Required Dependencies**
 ```txt
@@ -101,7 +135,7 @@ export HF_TOKEN="your_hf_token_here"
 
 ## **🚀 Quick Start**
 
-### **Basic Evaluation**
+### **Basic Evaluation - How to run ?**
 ```bash
 # Run interactive evaluation
 python3 scripts/run_benchmarks.py
