@@ -173,36 +173,98 @@ huggingface-cli login
 python3 scripts/run_benchmarks.py
 ```
 
-### Example Workflow
+### Video Demonstration 
+---
+https://github.com/user-attachments/assets/44192d82-0cf8-499c-9ae9-750e0a00e415
+---
 
-**1. Select model**
+---
 
-```
-Enter model source: 1
-Enter model name: google/gemma-2b
-```
+## Running Benchmarks (Interactive Wizard Mode)
 
-**2. Choose task groups**
+`eka-eval` includes a fully interactive CLI wizard for evaluating models across English and Indic benchmark suites.
 
-```
-Select task group(s): 2 12
-```
+To start the wizard, simply run:
 
-**3. Choose benchmarks**
-
-```
-Select benchmark(s): 1 2
+```bash
+python scripts/run_benchmarks.py
 ```
 
-**4. View results**
+This will launch a guided, step-by-step interface.
 
-```
-GSM8K: 42.3%
-MATH: 12.1%
-Results saved to results_output/
+---
+
+## 🧩 1. **Select Model Source**
+
+```plaintext
+--- Model Selection ---
+
+1. Hugging Face / Local Model
+2. API Model (OpenAI, Anthropic, etc.)
+
+Enter choice: 1
+Enter model name: google/gemma-2-2b
 ```
 
 ---
+
+## 📚 2. **Select Task Groups**
+
+```plaintext
+--- Available Benchmark Task Groups ---
+
+1. CODE GENERATION           9. INDIC BENCHMARKS
+2. MATH AND REASONING       10. ALL Task Groups
+...
+
+Select task group #(s): 2 9
+```
+
+You can select multiple groups by entering space-separated numbers (e.g., `2 9`).
+
+---
+
+## 🎯 3. **Select Specific Benchmarks**
+
+```plaintext
+--- Select benchmarks for INDIC BENCHMARKS ---
+
+1. MMLU-IN                 4. ARC-Challenge-IN
+2. BoolQ-IN                5. ALL
+3. Flores-IN               6. SKIP
+
+Select benchmark #(s): 4 5
+```
+
+Again, multiple selections are supported.
+
+---
+
+## 📊 4. **View Results & Visualize**
+
+```plaintext
+... Evaluation Complete ...
+
+| Model             | Task             | Benchmark | Score |
+|-------------------|------------------|-----------|-------|
+| google/gemma-2-2b | INDIC BENCHMARKS | ARC-IN    | 33.5% |
+```
+
+When prompted:
+
+```plaintext
+Do you want to create visualizations for the results? (yes/no): yes
+```
+
+The system will generate plots:
+
+```
+✅ Visualizations created successfully! 
+Saved to: results_output/visualizations
+```
+
+---
+
 
 # **Project Structure**
 
