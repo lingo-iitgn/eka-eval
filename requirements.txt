@@ -18,7 +18,6 @@ contourpy==1.3.2
 cycler==0.12.1
 datasets==4.3.0
 dill==0.4.0
--e git+https://github.com/sam22ridhi/eka-eval.git@1cf7eca68de3864421dcc7b9286c01d1c36a5f22#egg=eka_eval
 evaluate==0.4.6
 exceptiongroup==1.3.0
 fastapi==0.121.0
