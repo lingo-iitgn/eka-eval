@@ -1,4 +1,3 @@
-# eka_eval/benchmarks/tasks/indic/arc_c_in.py
 import torch
 import re
 import os
@@ -11,23 +10,17 @@ import evaluate as hf_evaluate
 import numpy as np
 from datetime import datetime
 
-from eka_eval.utils.prompt_utils import get_prompt_template, format_prompt, format_few_shot_prompt, get_prompt_data
+from eka_eval.utils.prompt_utils import get_prompt_template
 
 logger = logging.getLogger(__name__)
 
 DEFAULT_DATASET_NAME = "sarvamai/arc-challenge-indic"
-DEFAULT_TARGET_LANGUAGES = ["bn", "en"]
-DEFAULT_SPLIT = 'validation[:50]'
-DEFAULT_MAX_NEW_TOKENS = 10
+DEFAULT_TARGET_LANGUAGES = ["bn", "en", "gu", "hi", "kn", "ml", "mr", "or", "pa", "ta", "te"]
+DEFAULT_SPLIT = 'validation'
+DEFAULT_MAX_NEW_TOKENS = 5
 PROMPT_FILE_BENCHMARK_KEY = "arc_c_in"
 PROMPT_FILE_CATEGORY = "indic"
-
-def _get_hindi_to_english_mapping(prompt_template_dict: Dict) -> Dict[str, str]:
-    """Get Hindi to English letter mapping from config."""
-    return prompt_template_dict.get("hindi_to_english_mapping", {
-        "ए": "A", "अ": "A", "बी": "B", "ब": "B", 
-        "सी": "C", "स": "C", "डी": "D", "द": "D"
-    })
+CHECKPOINT_DIR = "checkpoints/arc_c_in_checkpoints"
 
 def _get_language_mappings() -> Dict[str, Dict[str, str]]:
     """Get comprehensive language-specific letter mappings."""
@@ -41,11 +34,12 @@ def _get_language_mappings() -> Dict[str, Dict[str, str]]:
         "or": {"ଏ": "A", "ବି": "B", "ସି": "C", "ଡି": "D"},
         "pa": {"ਏ": "A", "ਬੀ": "B", "ਸੀ": "C", "ਡੀ": "D"},
         "ta": {"ஏ": "A", "பி": "B", "சி": "C", "டி": "D"},
-        "te": {"ఏ": "A", "బి": "B", "సి": "C", "డి": "D"}
+        "te": {"ఏ": "A", "బి": "B", "సి": "C", "డి": "D"},
+        "en": {}  # English doesn't need mapping
     }
 
 def _create_arc_c_in_prompt(question: str, choices_dict: Dict, language: str, prompt_template_dict: Dict) -> Optional[str]:
-    """Create language-specific prompt for ARC-Challenge-Indic."""
+    """Create optimized language-specific prompt for ARC-Challenge-Indic."""
     if not isinstance(choices_dict, dict) or 'label' not in choices_dict or 'text' not in choices_dict:
         return None
     
@@ -62,78 +56,94 @@ def _create_arc_c_in_prompt(question: str, choices_dict: Dict, language: str, pr
     if language in lang_prompts:
         template = lang_prompts[language]
     else:
-        template = lang_prompts.get("default", prompt_template_dict.get("template", "प्रश्न: {question}\n\nविकल्प:\n{choices_str}\n\nउत्तर:"))
+        template = lang_prompts.get("default", prompt_template_dict.get("template", "Question: {question}\n\nOptions:\n{choices_str}\n\nAnswer:"))
     
     return template.format(question=question, choices_str=choices_str)
 
-def _normalize_text(text: str) -> str:
-    """Normalize text for better matching."""
-    if not text:
-        return ""
-    
-    # Remove extra whitespace and normalize
-    text = re.sub(r'\s+', ' ', text.strip())
-    text = re.sub(r'^(Answer|उत्तर|जवाब|সমাধান|ответ)\s*:?\s*', '', text, flags=re.IGNORECASE)
-    text = re.sub(r'^(The answer is|উত্তর হল|उत्तर है)\s*', '', text, flags=re.IGNORECASE)
-    
-    return text.strip()
-
 def _parse_predicted_answer(generated_text: str, language: str, all_mappings: Dict[str, Dict[str, str]]) -> Optional[str]:
-    """Parse predicted answer from generated text with improved accuracy."""
+    """Enhanced answer parsing with better accuracy."""
     if not generated_text:
         return None
     
-    # Normalize the text
-    generated_text = _normalize_text(generated_text)
+    # Clean the text
+    text = generated_text.strip()
     
-    lines = [line.strip() for line in generated_text.split('\n') if line.strip()]
-    if not lines:
-        return None
+    # Pattern 1: Exact letter match at start (A, B, C, D)
+    match = re.match(r'^([A-D])[.\s)]?', text, re.IGNORECASE)
+    if match:
+        return match.group(1).upper()
     
-    first_line = lines[0]
+    # Pattern 2: Letter with punctuation (A., B), C:, D.)
+    match = re.search(r'\b([A-D])[.)\s:,]', text, re.IGNORECASE)
+    if match:
+        return match.group(1).upper()
     
-    # Get language-specific mappings
+    # Pattern 3: Native script letters (language-specific)
     lang_mapping = all_mappings.get(language, {})
-    hindi_mapping = all_mappings.get("hi", {})  
-    letter_match = re.search(r'\b([A-D])\b', first_line, re.IGNORECASE)
-    if letter_match:
-        return letter_match.group(1).upper()
-    
-    punct_match = re.search(r'([A-D])[.)\s:,]', first_line, re.IGNORECASE)
-    if punct_match:
-        return punct_match.group(1).upper()
-    
     for native_char, english_char in lang_mapping.items():
-        if native_char in first_line:
+        if text.startswith(native_char):
+            return english_char
+        if native_char in text[:10]:  # Check first 10 chars
             return english_char
     
-    for native_char, english_char in hindi_mapping.items():
-        if native_char in first_line:
-            return english_char
-    
+    # Pattern 4: Word-based answers (option one, first, etc.)
     option_words = {
-        'hi': {'पहला': 'A', 'दूसरा': 'B', 'तीसरा': 'C', 'चौथा': 'D'},
-        'en': {'first': 'A', 'second': 'B', 'third': 'C', 'fourth': 'D'},
+        'hi': {'पहला': 'A', 'पहली': 'A', 'दूसरा': 'B', 'दूसरी': 'B', 'तीसरा': 'C', 'तीसरी': 'C', 'चौथा': 'D', 'चौथी': 'D'},
+        'en': {'first': 'A', 'second': 'B', 'third': 'C', 'fourth': 'D', 'option a': 'A', 'option b': 'B', 'option c': 'C', 'option d': 'D'},
         'bn': {'প্রথম': 'A', 'দ্বিতীয়': 'B', 'তৃতীয়': 'C', 'চতুর্থ': 'D'}
     }
     
+    text_lower = text.lower()
     if language in option_words:
         for word, letter in option_words[language].items():
-            if word in first_line.lower():
+            if word in text_lower:
                 return letter
     
-    # Pattern 6: Look for any single character that could be an answer
-    single_char_match = re.search(r'([A-D])', first_line, re.IGNORECASE)
-    if single_char_match:
-        return single_char_match.group(1).upper()
+    # Pattern 5: Any letter A-D anywhere in first 20 chars
+    match = re.search(r'([A-D])', text[:20], re.IGNORECASE)
+    if match:
+        return match.group(1).upper()
     
     return None
 
-def _letter_to_index(letter: str) -> int:
-    """Convert letter to index."""
-    if letter and 'A' <= letter.upper() <= 'D':
-        return ord(letter.upper()) - ord('A')
-    return -1
+def save_checkpoint(
+    checkpoint_data: Dict,
+    model_name: str,
+    lang_code: str,
+    process_id: int = 0
+) -> str:
+    """Save checkpoint for resuming evaluation."""
+    os.makedirs(CHECKPOINT_DIR, exist_ok=True)
+    
+    model_clean = model_name.replace("/", "_").replace(":", "_")
+    filename = f"arc_c_in_{model_clean}_{lang_code}_p{process_id}.json"
+    filepath = os.path.join(CHECKPOINT_DIR, filename)
+    
+    try:
+        with open(filepath, 'w', encoding='utf-8') as f:
+            json.dump(checkpoint_data, f, indent=2)
+        return filepath
+    except Exception as e:
+        logger.error(f"Failed to save checkpoint: {e}")
+        return ""
+
+def load_checkpoint(
+    model_name: str,
+    lang_code: str,
+    process_id: int = 0
+) -> Optional[Dict]:
+    """Load checkpoint if exists."""
+    model_clean = model_name.replace("/", "_").replace(":", "_")
+    filename = f"arc_c_in_{model_clean}_{lang_code}_p{process_id}.json"
+    filepath = os.path.join(CHECKPOINT_DIR, filename)
+    
+    if os.path.exists(filepath):
+        try:
+            with open(filepath, 'r', encoding='utf-8') as f:
+                return json.load(f)
+        except Exception as e:
+            logger.warning(f"Failed to load checkpoint {filepath}: {e}")
+    return None
 
 def save_detailed_arc_results(
     results_data: List[Dict],
@@ -180,17 +190,21 @@ def save_detailed_arc_results(
         return ""
 
 def evaluate_arc_c_in(
-    pipe: Any, tokenizer: Any, model_name_for_logging: str, device: Any,
+    pipe: Any,
+    tokenizer: Any,
+    model_name_for_logging: str,
+    device: Any,
     dataset_name: str = DEFAULT_DATASET_NAME,
     target_languages: List[str] = None,
     dataset_split: str = DEFAULT_SPLIT,
     max_new_tokens: int = DEFAULT_MAX_NEW_TOKENS,
-    generation_batch_size: int = 8,
+    generation_batch_size: int = 1,
     prompt_template_name_zeroshot: str = "arc_c_in_0shot",
     prompt_file_benchmark_key: str = PROMPT_FILE_BENCHMARK_KEY,
     prompt_file_category: str = PROMPT_FILE_CATEGORY,
     results_dir: str = "results_output",
     save_detailed: bool = True,
+    use_checkpoints: bool = True,
     process_id: int = 0,
     **kwargs
 ) -> Dict[str, float]:
@@ -199,6 +213,7 @@ def evaluate_arc_c_in(
         target_languages = DEFAULT_TARGET_LANGUAGES
 
     logger.info(f"Starting ARC-Challenge-Indic: {model_name_for_logging}")
+    logger.info(f"Using optimized generation-based evaluation")
 
     # Load prompt template
     prompt_template_dict = get_prompt_template(
@@ -211,7 +226,6 @@ def evaluate_arc_c_in(
         logger.error(f"Prompt template not found")
         return {"ARC-Challenge-Indic": 0.0, "error_message": "PromptTemplateNotFound"}
 
-    # Get comprehensive language mappings
     all_mappings = _get_language_mappings()
 
     try:
@@ -227,8 +241,15 @@ def evaluate_arc_c_in(
     for lang_code in target_languages:
         logger.info(f"--- Evaluating Language: {lang_code.upper()} ---")
         
+        # Try to load checkpoint
+        checkpoint = None
+        if use_checkpoints:
+            checkpoint = load_checkpoint(model_name_for_logging, lang_code, process_id)
+            if checkpoint:
+                logger.info(f"Loaded checkpoint for {lang_code}, resuming from example {checkpoint['last_processed_idx'] + 1}")
+        
         try:
-            dataset = load_dataset(dataset_name, name=lang_code)
+            dataset = load_dataset(dataset_name, name=lang_code, split=dataset_split, trust_remote_code=True)
             if isinstance(dataset, dict) and 'validation' in dataset:
                 lang_dataset = dataset['validation']
             elif hasattr(dataset, 'select'):
@@ -242,18 +263,26 @@ def evaluate_arc_c_in(
                 language_accuracies[lang_code] = None
                 continue
 
-            predictions_indices = []
-            reference_indices = []
+            # Resume from checkpoint if available
+            start_idx = 0
+            predictions = []
+            references = []
+            if checkpoint:
+                start_idx = checkpoint['last_processed_idx'] + 1
+                predictions = checkpoint.get('predictions', [])
+                references = checkpoint.get('references', [])
+                detailed_results.extend(checkpoint.get('detailed_results', []))
 
-            for example_idx, example in enumerate(tqdm(lang_dataset, desc=f"Eval {lang_code.upper()}")):
+            for example_idx in tqdm(range(start_idx, len(lang_dataset)), 
+                                   desc=f"Eval {lang_code.upper()}", 
+                                   initial=start_idx, 
+                                   total=len(lang_dataset)):
+                example = lang_dataset[example_idx]
                 question = example.get("question", "")
                 choices_dict = example.get("choices", {})
                 answer_key = example.get("answerKey", "").upper()
 
                 if not question or not choices_dict or answer_key not in "ABCD":
-                    predictions_indices.append(-1)
-                    reference_indices.append(_letter_to_index(answer_key))
-                    
                     if save_detailed:
                         detailed_results.append({
                             "language": lang_code,
@@ -263,17 +292,12 @@ def evaluate_arc_c_in(
                             "correct_answer": answer_key,
                             "predicted_answer": None,
                             "is_correct": False,
-                            "error": "Missing data",
-                            "prompt": None,
-                            "raw_response": None
+                            "error": "Missing data"
                         })
                     continue
 
                 prompt = _create_arc_c_in_prompt(question, choices_dict, lang_code, prompt_template_dict)
                 if not prompt:
-                    predictions_indices.append(-1)
-                    reference_indices.append(_letter_to_index(answer_key))
-                    
                     if save_detailed:
                         detailed_results.append({
                             "language": lang_code,
@@ -283,18 +307,16 @@ def evaluate_arc_c_in(
                             "correct_answer": answer_key,
                             "predicted_answer": None,
                             "is_correct": False,
-                            "error": "Prompt creation failed",
-                            "prompt": None,
-                            "raw_response": None
+                            "error": "Prompt creation failed"
                         })
                     continue
 
                 try:
                     gen_config = {
                         "max_new_tokens": max_new_tokens,
-                        "num_beams": 1,
                         "do_sample": False,
                         "temperature": 0.0,
+                        "top_p": 1.0,
                         "eos_token_id": tokenizer.eos_token_id,
                         "pad_token_id": tokenizer.pad_token_id if tokenizer.pad_token_id is not None else tokenizer.eos_token_id,
                         "return_full_text": False
@@ -312,13 +334,14 @@ def evaluate_arc_c_in(
                     generated_text = ""
 
                 predicted_letter = _parse_predicted_answer(generated_text, lang_code, all_mappings)
-                pred_idx = _letter_to_index(predicted_letter)
-                ref_idx = _letter_to_index(answer_key)
+                
+                # Convert to indices for metric computation
+                pred_idx = ord(predicted_letter) - ord('A') if predicted_letter and predicted_letter in "ABCD" else -1
+                ref_idx = ord(answer_key) - ord('A')
 
-                predictions_indices.append(pred_idx)
-                reference_indices.append(ref_idx)
+                predictions.append(pred_idx)
+                references.append(ref_idx)
 
-                # Save detailed results
                 if save_detailed:
                     is_correct = pred_idx == ref_idx and pred_idx != -1
                     detailed_results.append({
@@ -334,8 +357,18 @@ def evaluate_arc_c_in(
                         "raw_response": generated_text
                     })
 
+                # Save checkpoint every 50 examples
+                if use_checkpoints and (example_idx + 1) % 50 == 0:
+                    checkpoint_data = {
+                        "last_processed_idx": example_idx,
+                        "predictions": predictions,
+                        "references": references,
+                        "detailed_results": [r for r in detailed_results if r['language'] == lang_code]
+                    }
+                    save_checkpoint(checkpoint_data, model_name_for_logging, lang_code, process_id)
 
-            valid_pairs = [(p, r) for p, r in zip(predictions_indices, reference_indices) if r != -1]
+            # Compute accuracy
+            valid_pairs = [(p, r) for p, r in zip(predictions, references) if r != -1]
             if valid_pairs:
                 valid_predictions = [p for p, r in valid_pairs]
                 valid_references = [r for p, r in valid_pairs]
@@ -348,6 +381,13 @@ def evaluate_arc_c_in(
             else:
                 language_accuracies[lang_code] = 0.0
                 all_individual_accuracies.append(0.0)
+
+            # Clean up checkpoint after completion
+            if use_checkpoints:
+                model_clean = model_name_for_logging.replace("/", "_").replace(":", "_")
+                checkpoint_file = os.path.join(CHECKPOINT_DIR, f"arc_c_in_{model_clean}_{lang_code}_p{process_id}.json")
+                if os.path.exists(checkpoint_file):
+                    os.remove(checkpoint_file)
 
         except Exception as e:
             logger.error(f"Error processing language {lang_code}: {e}")
@@ -368,7 +408,7 @@ def evaluate_arc_c_in(
         if saved_path:
             logger.info(f"Detailed results with {len(detailed_results)} examples saved to: {saved_path}")
 
-    final_scores = {"ARC-Challenge-Indic": overall_average * 100}  # Convert to percentage
+    final_scores = {"ARC-Challenge-Indic": overall_average * 100}
     for lang, acc in language_accuracies.items():
         final_scores[f"ARC-Challenge-Indic_{lang}"] = (acc * 100) if acc is not None else 0.0
 

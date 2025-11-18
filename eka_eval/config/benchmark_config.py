@@ -93,7 +93,7 @@ BENCHMARK_CONFIG = {
             "description": "Accuracy on Hendrycks MATH (Hendrycks et al., 2021b)",
             "evaluation_function": "math_eval.math.evaluate_math",
             "task_args": {
-                "dataset_name": "hendrycks/competition_math",
+                "dataset_name": "nlile/hendrycks-MATH-benchmark",
                 "dataset_split": "test",
                 "num_few_shot": 4,
                 "max_new_tokens": 512,
@@ -165,27 +165,15 @@ BENCHMARK_CONFIG = {
             }
         }
     },
-    "COMMONSENSE REASONING": {
-        "PIQA": {
-        "description": "Accuracy on PIQA (Bisk et al., 2020)",
+    "COMMONSENSE REASONING": {       "PIQA": {
+        "description": "Physical Interaction QA - Likelihood scoring (matches lm-eval acc_norm)",
         "evaluation_function": "commonsense_reasoning.piqa.evaluate_piqa",
         "task_args": {
-            "dataset_name": "piqa",
-            "dataset_split": "validation",
-            "max_new_tokens": 10,
-            "generation_batch_size": 16,
-            "num_few_shot": 5,
-            "evaluation_method": "likelihood", 
-            "save_outputs": False,
-            "disable_progress_bar": False,
-            "prompt_template_key_likelihood": "piqa_likelihood",
-            "prompt_template_key_generation": "piqa_generation", 
-            "prompt_template_key_few_shot_likelihood": "piqa_5shot_likelihood",
-            "prompt_template_key_few_shot_generation": "piqa_5shot_generation",
-            "prompt_file_benchmark_key": "piqa",
-            "prompt_file_category": "reasoning"
+            "dataset_name": "baber/piqa",
+            "dataset_split": "validation",  # Use full validation set
+            # Note: No generation parameters needed - we use likelihood scoring!
         }
-        },
+    },
         "SIQA": {
             "description": "Accuracy on SIQA (Sap et al., 2019)",
             "evaluation_function": "commonsense_reasoning.siqa.evaluate_siqa",
@@ -216,18 +204,16 @@ BENCHMARK_CONFIG = {
                 "max_new_tokens": 5,
                 "generation_batch_size": 8
             }
-        },
-        "WinoGrande": {
-            "description": "Accuracy on WinoGrande (Sakaguchi et al., 2021)",
-            "evaluation_function": "commonsense_reasoning.winogrande.evaluate_winogrande",
-            "task_args": {
-                "dataset_name": "winogrande",
-                "dataset_config_name": "winogrande_xl",
-                "dataset_split": "validation",
-                "max_new_tokens": 5,
-                "generation_batch_size": 16
-            }
-        },
+        },"WinoGrande": {
+    "description": "Accuracy on WinoGrande (Sakaguchi et al., 2021)",
+    "evaluation_function": "commonsense_reasoning.winogrande.evaluate_winogrande",
+    "task_args": {
+        "dataset_name": "winogrande",
+        "dataset_config_name": "winogrande_xl",
+        "dataset_split": "validation",
+        "generation_batch_size": 1
+    }
+},
         "CommonSenseQA": {
             "description": "Accuracy on CommonSenseQA (Talmor et al., 2018)",
             "evaluation_function": "commonsense_reasoning.commonsenseqa.evaluate_commonsenseqa",
@@ -333,6 +319,42 @@ BENCHMARK_CONFIG = {
             "generation_batch_size": 8
         }
     },
+    "CNN_DailyMail": {
+        "description": "ROUGE scores on CNN/DailyMail Summarization (Hermann et al., 2015)",
+        "evaluation_function": "general.cnn_daily_mail.evaluate_cnn_dailymail",
+        "task_args": {
+            "dataset_name": "abisee/cnn_dailymail",
+            "dataset_config_name": "3.0.0",
+            "dataset_split": "validation",
+            "max_new_tokens": 150,
+            "generation_batch_size": 4,
+            "save_outputs": False
+        }
+    },
+    "WMT14_EN_FR": {
+        "description": "BLEU score on WMT14 English to French Translation",
+        "evaluation_function": "general.wmt.evaluate_wmt14_en_fr",
+        "task_args": {
+            "dataset_name": "presencesw/wmt14_fr_en",
+            "dataset_split": "validation",
+            "translation_direction": "en_fr",
+            "max_new_tokens": 200,
+            "generation_batch_size": 4,
+            "save_outputs": False
+        }
+    },
+    "WMT14_FR_EN": {
+        "description": "BLEU score on WMT14 French to English Translation",
+        "evaluation_function": "general.wmt.evaluate_wmt14_fr_en",
+        "task_args": {
+            "dataset_name": "presencesw/wmt14_fr_en",
+            "dataset_split": "validation",
+            "translation_direction": "fr_en",
+            "max_new_tokens": 200,
+            "generation_batch_size": 4,
+            "save_outputs": False
+        }
+    },
     "IFEval": {
         "description": "Instruction Following Accuracy on IFEval (Zhou et al., 2023)",
         "evaluation_function": "general.ifeval.evaluate_ifeval",
@@ -425,7 +447,7 @@ BENCHMARK_CONFIG = {
         "evaluation_function": "indic.arc_c_in.evaluate_arc_c_in",
         "task_args": {
             "dataset_name": "sarvamai/arc-challenge-indic",
-            "target_languages": ["bn", "en", "gu", "hi", "kn", "ml", "mr", "or", "pa", "ta", "te"],
+            "target_languages": ["bn"],
             "dataset_split": "validation",
             "num_few_shot": 0,
             "max_new_tokens": 10,
@@ -490,7 +512,7 @@ BENCHMARK_CONFIG = {
             "task_args": {
                 "dataset_name": "google/IndicGenBench_flores_in",
                 "translation_direction": "enxx",
-                "target_languages": ["as", "bn"],
+                "target_languages": ["bn"],
                 "num_samples_per_lang": 100,
                 "batch_size": 4,
                 "max_new_tokens": 128,

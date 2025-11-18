@@ -46,6 +46,19 @@ csv_path="calculated.csv"
 
 logger = logging.getLogger(__name__) 
 
+
+#new functioanlity
+def get_gpus_from_environment():
+    """Get available GPUs respecting the CUDA_VISIBLE_DEVICES constraint."""
+    available_gpus_str = os.environ.get("CUDA_VISIBLE_DEVICES")
+    if not available_gpus_str:
+        logger.warning("CUDA_VISIBLE_DEVICES is not set. Attempting to detect all GPUs.")
+        return get_available_gpus() # Fallback to original detection
+
+    physical_gpu_ids = [int(g) for g in available_gpus_str.split(',') if g.strip().isdigit()]
+    logger.info(f"Detected GPUs from CUDA_VISIBLE_DEVICES: {physical_gpu_ids}")
+    return physical_gpu_ids
+
 def get_constrained_gpus():
     """
     Get available GPUs respecting the CUDA_VISIBLE_DEVICES constraint.
@@ -86,9 +99,6 @@ def worker_process(
     Manages the execution of a single worker (evaluation_worker.py) as a subprocess.
     Now supports both local and API models with GPU constraints.
     """
-    # Ensure GPU constraint is propagated to worker processes
-    if not is_api_model:
-        os.environ["CUDA_VISIBLE_DEVICES"] = "2,3"
     
     worker_log_prefix = f"Worker {subprocess_unique_id} ({'API' if is_api_model else f'GPU {assigned_physical_gpu_id}'})"
     model_type_str = f"{api_provider} API" if is_api_model else "Local"
@@ -127,7 +137,9 @@ def worker_process(
 
         # Set environment for subprocess
         env = os.environ.copy()
-        env["CUDA_VISIBLE_DEVICES"] = "2,3"
+        #if not is_api_model and assigned_physical_gpu_id >= 0:
+            # This is the crucial fix: each worker sees ONLY its assigned GPU.
+           # env["CUDA_VISIBLE_DEVICES"] = str(assigned_physical_gpu_id)
 
         logger.debug(f"{worker_log_prefix}: Executing command: {' '.join(command[:-1])} [API_KEY_HIDDEN]" if is_api_model else f"{worker_log_prefix}: Executing command: {' '.join(command)}")
 
@@ -619,6 +631,10 @@ def main_orchestrator():
     parser.add_argument("--batch_size", type=int, default=1, help="Default batch size for worker tasks.")
     parser.add_argument("--results_dir", type=str, default=constants.DEFAULT_RESULTS_DIR if hasattr(constants, 'DEFAULT_RESULTS_DIR') else "results_output", help="Directory to save evaluation results.")
     parser.add_argument("--log_level", type=str, default="INFO", choices=["DEBUG", "INFO", "WARNING", "ERROR"], help="Logging level.")
+        # [NEW FEATURE] Add non-interactive arguments
+    parser.add_argument("--model_name", type=str, help="Full model name or path (e.g., 'google/gemma-2-9b-it'). Bypasses interactive selection.")
+    parser.add_argument("--task_groups", type=str, nargs='+', help="List of task groups to run (e.g., 'MMLU' 'HELM'). 'ALL' to select all. Bypasses interactive selection.")
+    parser.add_argument("--all_benchmarks", action="store_true", help="Automatically select all sub-benchmarks within the chosen task groups. Bypasses interactive selection.")
     
     # Visualization options
     parser.add_argument("--visualize", action="store_true", help="Create visualizations after evaluation")

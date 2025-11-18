@@ -54,8 +54,6 @@ class SimpleResultManager:
         except Exception as e:
             logger.error(f"Error saving results to CSV '{self.csv_file_path}': {e}", exc_info=True)
 
-# --- initialize_worker_model function remains the same ---
-
 def initialize_worker_model(args):
     """Initialize model pipeline based on worker arguments."""
     is_api_model = args.is_api_model.lower() == 'true'
