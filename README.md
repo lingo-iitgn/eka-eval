@@ -62,7 +62,7 @@
 
 ### 1. **Clone the Repository**
 ```bash
-git clone https://github.com/your-org/eka-eval.git
+git clone https://github.com/lingo-iitgn/eka-eval.git
 cd eka-eval
 ```
 
