@@ -175,7 +175,8 @@ python3 scripts/run_benchmarks.py
 
 ### Video Demonstration 
 ---
-https://github.com/user-attachments/assets/44192d82-0cf8-499c-9ae9-750e0a00e415
+<video src="https://github.com/user-attachments/assets/44192d82-0cf8-499c-9ae9-750e0a00e415" controls width="600"></video>
+
 ---
 
 ---
