@@ -476,7 +476,7 @@ BENCHMARK_CONFIG = {
             "evaluation_function": "indic.milu_in.evaluate_milu_in",
             "task_args": {
                 "dataset_name": "ai4bharat/MILU",
-                "target_languages": ["Bengali", "English"],
+                "target_languages": ["Bengali"],
                 "dataset_split": "test",
                 "max_new_tokens": 5,
                 "save_detailed": False,
@@ -518,7 +518,7 @@ BENCHMARK_CONFIG = {
                 "max_new_tokens": 128,
                 "use_few_shot": True,
                 "num_few_shot_examples": 3,
-                 "dataset_split": "test[:10]"
+                 "dataset_split": "test"
             }
         }
     }

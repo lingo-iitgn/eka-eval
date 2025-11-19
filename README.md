@@ -52,6 +52,9 @@ It combines:
 
 Eka-Eval provides a **uniform interface**, **structured results**, and **production-ready performance features**.
 
+![My Image](architecture.png)
+
+
 ---
 
 # **Key Features**
@@ -98,16 +101,16 @@ Eka-Eval provides a **uniform interface**, **structured results**, and **product
 
 # **Supported Benchmarks**
 
-## 🌍 Global Benchmarks
 
-| Category     | Benchmarks                          | Metrics          |
-| ------------ | ----------------------------------- | ---------------- |
-| Knowledge    | MMLU, MMLU-Pro, TriviaQA            | Accuracy         |
-| Math         | GSM8K, MATH, GPQA                   | Accuracy         |
-| Code         | HumanEval, MBPP                     | pass@1, pass@k   |
-| Reasoning    | AGIEval, BBH, WinoGrande, HellaSwag | Accuracy         |
-| Reading      | SQuAD, QuAC, BoolQ                  | EM, F1, Accuracy |
-| Long Context | ZeroSCROLLS, InfiniteBench          | Multiple         |
+| Category                 | Count | Benchmarks                                                                                                                                                               | Metrics                        |
+|--------------------------|-------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------|
+| 🇮🇳 Indic Ecosystem       | 18    | Knowledge: MMLU-IN, MILU, TriviaQA-IN<br>Reasoning: ARC-Challenge-IN, ARC-Easy-IN, HellaSwag-IN, IndicCOPA<br>NLU: IndicXNLI, IndicSentiment, IndicXParaphrase<br>QA & Reading: BoolQ-IN, XQuAD-IN, XorQA-IN<br>Math: GSM8K-IN<br>Generation: Flores-IN, CrossSum-IN, IndicNLG, Indic-Toxic | Accuracy, F1, BLEU, chrF++, ROUGE-L |
+| 🧠 Reasoning             | 10    | ARC-Challenge, ARC-Easy, HellaSwag, PIQA, SIQA, WinoGrande, OpenBookQA, CommonSenseQA, BBH, AGI-Eval                                                                     | Accuracy, Normalized Accuracy  |
+| 📚 Knowledge              | 4     | MMLU, MMLU-Pro, TriviaQA, NaturalQuestions                                                                                                                               | Accuracy, Exact Match          |
+| 🧮 Math & Code            | 7     | Math: GSM8K, MATH, GPQA<br>Code: HumanEval, MBPP, HumanEval+, MBPP+                                                                                                      | Accuracy, pass@1               |
+| 📖 Reading                | 3     | SQuAD, QuAC, BoolQ                                                                                                                                                       | F1, Exact Match                |
+| 🛠️ Tool & Context         | 6     | Long Context: InfiniteBench, ZeroSCROLLS, NeedleInAHaystack<br>Tool Use: API-Bank, API-Bench, ToolBench                                                                  | Retrieval Acc, Success Rate    |
+
 
 ---
 
@@ -212,13 +215,21 @@ Enter model name: google/gemma-2-2b
 ## 📚 2. **Select Task Groups**
 
 ```plaintext
+
 --- Available Benchmark Task Groups ---
 
-1. CODE GENERATION           9. INDIC BENCHMARKS
-2. MATH AND REASONING       10. ALL Task Groups
-...
+1. CODE GENERATION
+2. Tool use
+3. MATH
+4. READING COMPREHENSION
+5. COMMONSENSE REASONING
+6. WORLD KNOWLEDGE
+7. LONG CONTEXT
+8. General
+9. INDIC BENCHMARKS
+10. ALL Task Groups
 
-Select task group #(s): 2 9
+Select task group #(s) (e.g., '1', '1 3', 'ALL'): 2 12
 ```
 
 You can select multiple groups by entering space-separated numbers (e.g., `2 9`).
@@ -293,20 +304,122 @@ eka-eval/
 
 ---
 
-# **Advanced Usage**
+# 🎯 Advanced Configuration & Usage
 
-## 🔧 Add a Custom Benchmark
+Eka-Eval provides extensive customization for Indic languages, few-shot settings, prompt templates, and even fully custom benchmarks.
 
-### 1. Write evaluator
+---
+
+## 1. Configuring Indic Languages & Splits
+
+Benchmarks like **MILU** or **ARC-Challenge-Indic** can be restricted to specific languages by modifying:
+
+`eka_eval/config/benchmark_config.py`
+
+### **Example: Run MILU only for Bengali**
+
+```python
+"MILU": {
+    "description": "Accuracy on the Massive Indic Language Understanding benchmark",
+    "evaluation_function": "indic.milu_in.evaluate_milu_in",
+    "task_args": {
+        "dataset_name": "ai4bharat/MILU",
+        "target_languages": ["Bengali"],   # restrict to one language
+        "dataset_split": "test",
+        "max_new_tokens": 5,
+        "save_detailed": False,
+        "prompt_file_benchmark_key": "milu_in"
+    }
+}
+```
+
+---
+
+## 2. Customizing Few-Shot & Zero-Shot Settings
+
+Control the number of demonstration examples and batch sizes directly via `task_args`.
+
+### **Example: Zero-Shot ARC-Challenge-Indic**
+
+```python
+"ARC-Challenge-Indic": {
+    "description": "Zero-shot ARC-Challenge-Indic evaluation across 11 languages",
+    "evaluation_function": "indic.arc_c_in.evaluate_arc_c_in",
+    "task_args": {
+        "dataset_name": "sarvamai/arc-challenge-indic",
+        "target_languages": ["bn"],     # only Bengali
+        "dataset_split": "validation",
+        "num_few_shot": 0,              # Zero-shot; set >0 for few-shot
+        "max_new_tokens": 10,
+        "generation_batch_size": 8,
+
+        # switch prompt templates
+        "prompt_template_name_zeroshot": "arc_c_in_0shot",
+        "prompt_template_name_fewshot": "arc_c_in_5shot",
+
+        "prompt_file_benchmark_key": "arc_c_in",
+        "prompt_file_category": "indic"
+    }
+}
+```
+
+---
+
+## 3. Modifying Prompt Templates & Few-Shot Examples
+
+Prompts are stored under the **`prompts/`** directory and can be fully customized.
+
+### **Example File:** `prompts/indic/boolq_in.json`
+
+```json
+{
+  "boolq_in_0shot": {
+    "template": "Passage: {passage}\nQuestion: {question}\nAnswer (Yes/No):",
+    "description": "Standard zero-shot prompt"
+  },
+  "default_few_shot_examples_boolq_in": [
+    {
+      "passage": "भारत दक्षिण एशिया में स्थित एक देश है। यह दुनिया का सातवां सबसे बड़ा देश है।",
+      "question": "क्या भारत एशिया में है?",
+      "answer": "हाँ"
+    },
+    {
+      "passage": "सूर्य पृथ्वी के चारों ओर घूमता है। यह हमारे सौर मंडल का केंद्र है।",
+      "question": "क्या सूर्य पृथ्वी के चारों ओर घूमता है?",
+      "answer": "नहीं"
+    }
+  ]
+}
+```
+
+You can edit:
+
+* the **template**
+* instructions
+* placeholders `{question}`, `{context}`, `{choices}`
+* the few-shot examples list
+
+---
+
+## 4. Adding a Completely Custom Benchmark
+
+You can add entirely new datasets and evaluators.
+
+---
+
+### **Step 1: Create Evaluator Logic**
+
+File: `eka_eval/benchmarks/tasks/custom/my_task.py`
 
 ```python
 def evaluate_my_task(pipe, tokenizer, model_name_for_logging, device, **kwargs):
+    score = 85.5  # your logic here
     return {"MyTask": score}
 ```
 
-### 2. Add prompt
+### **Step 2: Add Prompt Templates**
 
-`prompts/custom/my_task.json`
+File: `prompts/custom/my_task.json`
 
 ```json
 {
@@ -316,36 +429,49 @@ def evaluate_my_task(pipe, tokenizer, model_name_for_logging, device, **kwargs):
 }
 ```
 
-### 3. Register benchmark
+### **Step 3: Register in Configuration**
+
+Add to `benchmark_config.py`:
 
 ```python
 "MyTask": {
-  "evaluation_function": "my_project.my_benchmark.evaluate_my_task",
-  "task_args": {...}
+  "evaluation_function": "custom.my_task.evaluate_my_task",
+  "task_args": {
+      "dataset_name": "my_org/custom_dataset",
+      "prompt_file_category": "custom"
+  }
 }
 ```
 
 ---
 
-## ⚙️ Quantization
+# ⚙️ Hardware Optimization
+
+Eka-Eval supports quantization and multi-GPU evaluation out of the box.
+
+---
+
+## **4-bit / 8-bit Quantization**
+
+Useful for running 33B–70B models on consumer GPUs.
 
 ```bash
-python3 scripts/run_benchmarks.py \
-    --model llama-2-70b \
-    --quantization 4bit
+python scripts/run_benchmarks.py \
+    --model_name "meta-llama/Llama-2-70b-hf" \
+    --quantization "4bit"
 ```
 
-## 🧠 Multi-GPU
+---
+
+## **Multi-GPU Parallel Evaluation**
+
+Distribute workload across multiple GPUs.
 
 ```bash
-CUDA_VISIBLE_DEVICES=0,1,2 python3 scripts/run_benchmarks.py --num_gpus 3
+export CUDA_VISIBLE_DEVICES=0,1,2
+python scripts/run_benchmarks.py --num_gpus 3
 ```
 
-## 🐞 Debug Mode
-
-```bash
-python3 scripts/run_benchmarks.py --log_level DEBUG
-```
 
 ---
 
@@ -362,7 +488,7 @@ gemma-2b,MATH,GSM8K,42.3
 
 ### JSONL Detailed Results
 
-`results_output/detailed_results/*.jsonl`
+`results_output/detailed_results/*.json`
 
 ```json
 {
