@@ -169,20 +169,39 @@ def _initialize_local_model(
     param_count_str = 'N/A'
     if model:
         try:
-            total_params = sum(p.numel() for p in model.parameters())
+            # Calculate physical count (will be lower if quantized)
+            total_params_physical = sum(p.numel() for p in model.parameters())
+            
             model_name_lower = model_name_or_path.lower()
-            if "gemma-2b" in model_name_lower or "gemma_2b" in model_name_lower:
+            
+            # --- UPDATED HEURISTIC LOGIC ---
+            if "gemma-2b" in model_name_lower or "2b" in model_name_lower:
                 param_count_str = "2.00"
-            elif "llama-7b" in model_name_lower:
+            elif "llama-7b" in model_name_lower or "7b" in model_name_lower:
                 param_count_str = "7.00"
-            elif total_params > 0:
-                param_count_str = f"{total_params / 1_000_000_000:.2f}"
+            elif "8b" in model_name_lower: 
+                param_count_str = "8.00"
+            elif "3b" in model_name_lower:  
+                param_count_str = "3.00"
+            elif "1b" in model_name_lower:  
+                param_count_str = "1.00"
+            elif "70b" in model_name_lower:
+                param_count_str = "70.00"
+          
+            elif total_params_physical > 0:
+                
+                is_4bit = getattr(model, 'is_loaded_in_4bit', False)
+                
+                if is_4bit:
+                     param_count_str = f"{total_params_physical / 1_000_000_000:.2f} (Quantized)"
+                else:
+                    param_count_str = f"{total_params_physical / 1_000_000_000:.2f}"
             else:
                 param_count_str = "0.00"
+                
             logger.info(f"Model parameter count: {param_count_str}B")
         except Exception as e:
             logger.warning(f"Parameter count failed: {e}", exc_info=True)
-
     hf_pipeline = None
     if model and tokenizer:
         try:
