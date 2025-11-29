@@ -61,8 +61,8 @@ Eka-Eval provides a **uniform interface**, **structured results**, and **product
 
 ## ✔️ Benchmark Coverage
 
-* **17+ Global benchmarks**: MMLU, GSM8K, ARC-Challenge, HumanEval, HellaSwag, etc.
-* **12+ Indic benchmarks**: MMLU-IN, BoolQ-IN, ARC-IN, MILU, Flores-IN, etc.
+* **25+ Global benchmarks**: MMLU, GSM8K, ARC-Challenge, HumanEval, HellaSwag, etc.
+* **20+ Indic benchmarks**: MMLU-IN, BoolQ-IN, ARC-IN, MILU, Flores-IN, etc.
 * **Long-context**: ZeroSCROLLS, InfiniteBench, Multi-Needle
 * **Code generation** with pass@k
 * **Math & logical reasoning**
@@ -142,29 +142,61 @@ git clone https://github.com/lingo-iitgn/eka-eval.git
 cd eka-eval
 ```
 
-## 2. Create Environment (macOS/Linux)
+## 2. Create Environment (Conda)
+
+We use Conda to manage Python 3.10 environments to ensure compatibility across macOS, Linux, and Windows.
+
+### **Step 1: Create and Activate**
+
+Run this on **any system**:
 
 ```bash
-python3 -m venv eka-env
-source eka-env/bin/activate
-pip install -r requirements.txt
+# Create environment with Python 3.10
+conda create -n eka-env python=3.10 pip -y
+
+# Activate the environment
+conda activate eka-env
+```
+
+### **Step 2: Install Dependencies**
+
+Choose the option that matches your hardware:
+
+#### **Option A — macOS (M1/M2/M3) or CPU-only**
+
+Uses the clean file without NVIDIA/CUDA packages.
+
+```bash
+pip install -r requirements-cpu.txt
+```
+
+#### **Option B — GPU Server (Linux + NVIDIA)**
+
+Uses the file with `bitsandbytes`, CUDA extensions, and quantization support.
+
+```bash
+pip install -r requirements-gpu.txt
+```
+
+### **Step 3: Install Project**
+
+Install the project in editable (`-e`) mode:
+
+```bash
 pip install -e .
 ```
 
-## 2. Create Environment (Windows)
-
-```cmd
-python -m venv eka-env
-eka-env\Scripts\activate.bat
-pip install -r requirements.txt
-pip install -e .
-```
 
 ## 3. (Optional) HuggingFace Login
+
+Some models require authentication (e.g., Llama 3, gemma).
+Create a token at **Hugging Face → Settings → Access Tokens** (usually “Read” or “Write”).
+Log in:
 
 ```bash
 huggingface-cli login
 ```
+
 
 ---
 
