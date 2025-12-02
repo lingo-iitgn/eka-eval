@@ -66,7 +66,7 @@ Eka-Eval provides a **uniform interface**, **structured results**, and **product
 * **Long-context**: ZeroSCROLLS, InfiniteBench, Multi-Needle
 * **Code generation** with pass@k
 * **Math & logical reasoning**
-* **Multilingual evaluation** across 11 Indian languages
+* **Multilingual evaluation** across 11 languages
 
 ## ✔️ Multilingual Support
 
