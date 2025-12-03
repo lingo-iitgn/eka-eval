@@ -19,7 +19,7 @@
 3. [Supported Benchmarks](#supported-benchmarks)
 
    * Global Benchmarks
-   * Indic Benchmarks
+   * Multilingual Benchmarks
    * Supported Languages
 4. [Installation](#installation)
 5. [Quick Start](#quick-start)
@@ -41,12 +41,12 @@
 
 # **Overview**
 
-**Eka-Eval** is the official evaluation pipeline for the **EKA project**, designed to provide **reliable, reproducible, and India-centric evaluation** of LLMs.
+**Eka-Eval** is the official evaluation pipeline for the **EKA project**, designed to provide **reliable, reproducible, and low-resource multilingual evaluation** of LLMs.
 
 It combines:
 
 * Global benchmarks
-* Indian-language benchmarks
+* Low-resource Multilingual benchmarks
 * Long-context evaluation
 * Code, math, reasoning, QA
 
@@ -62,7 +62,7 @@ Eka-Eval provides a **uniform interface**, **structured results**, and **product
 ## ✔️ Benchmark Coverage
 
 * **25+ Global benchmarks**: MMLU, GSM8K, ARC-Challenge, HumanEval, HellaSwag, etc.
-* **20+ Indic benchmarks**: MMLU-IN, BoolQ-IN, ARC-IN, MILU, Flores-IN, etc.
+* **20+ Low-resource Multilingual benchmarks**: MMLU-IN, BoolQ-IN, ARC-IN, MILU, Flores-IN, etc.
 * **Long-context**: ZeroSCROLLS, InfiniteBench, Multi-Needle
 * **Code generation** with pass@k
 * **Math & logical reasoning**
@@ -70,8 +70,8 @@ Eka-Eval provides a **uniform interface**, **structured results**, and **product
 
 ## ✔️ Multilingual Support
 
-* 11 Indic languages + English
-* Smart Hindi-English transliteration
+* 11 languages + English
+* Smart transliteration
 * Per-language scores
 * Unified prompt templates
 
@@ -104,17 +104,17 @@ Eka-Eval provides a **uniform interface**, **structured results**, and **product
 
 | Category                 | Count | Benchmarks                                                                                                                                                               | Metrics                        |
 |--------------------------|-------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------|
-| 🇮🇳 Indic Ecosystem       | 18    | Knowledge: MMLU-IN, MILU, TriviaQA-IN<br>Reasoning: ARC-Challenge-IN, ARC-Easy-IN, HellaSwag-IN, IndicCOPA<br>NLU: IndicXNLI, IndicSentiment, IndicXParaphrase<br>QA & Reading: BoolQ-IN, XQuAD-IN, XorQA-IN<br>Math: GSM8K-IN<br>Generation: Flores-IN, CrossSum-IN, IndicNLG, Indic-Toxic | Accuracy, F1, BLEU, chrF++, ROUGE-L |
-| 🧠 Reasoning             | 10    | ARC-Challenge, ARC-Easy, HellaSwag, PIQA, SIQA, WinoGrande, OpenBookQA, CommonSenseQA, BBH, AGI-Eval                                                                     | Accuracy, Normalized Accuracy  |
-| 📚 Knowledge              | 4     | MMLU, MMLU-Pro, TriviaQA, NaturalQuestions                                                                                                                               | Accuracy, Exact Match          |
-| 🧮 Math & Code            | 7     | Math: GSM8K, MATH, GPQA<br>Code: HumanEval, MBPP, HumanEval+, MBPP+                                                                                                      | Accuracy, pass@1               |
-| 📖 Reading                | 3     | SQuAD, QuAC, BoolQ                                                                                                                                                       | F1, Exact Match                |
-| 🛠️ Tool & Context         | 6     | Long Context: InfiniteBench, ZeroSCROLLS, NeedleInAHaystack<br>Tool Use: API-Bank, API-Bench, ToolBench                                                                  | Retrieval Acc, Success Rate    |
+| 🇮🇳 Multi-language Ecosystem    | 18    | Knowledge: MMLU-IN, MILU, TriviaQA-IN<br>Reasoning: ARC-Challenge-IN, ARC-Easy-IN, HellaSwag-IN, IndicCOPA<br>NLU: IndicXNLI, IndicSentiment, IndicXParaphrase<br>QA & Reading: BoolQ-IN, XQuAD-IN, XorQA-IN<br>Math: GSM8K-IN<br>Generation: Flores-IN, CrossSum-IN, IndicNLG, Indic-Toxic | Accuracy, F1, BLEU, chrF++, ROUGE-L |
+| 🧠 Reasoning                   | 10    | ARC-Challenge, ARC-Easy, HellaSwag, PIQA, SIQA, WinoGrande, OpenBookQA, CommonSenseQA, BBH, AGI-Eval                                                                     | Accuracy, Normalized Accuracy  |
+| 📚 Knowledge                   | 4     | MMLU, MMLU-Pro, TriviaQA, NaturalQuestions                                                                                                                               | Accuracy, Exact Match          |
+| 🧮 Math & Code                 | 7     | Math: GSM8K, MATH, GPQA<br>Code: HumanEval, MBPP, HumanEval+, MBPP+                                                                                                      | Accuracy, pass@1               |
+| 📖 Reading                     | 3     | SQuAD, QuAC, BoolQ                                                                                                                                                       | F1, Exact Match                |
+| 🛠️ Tool & Context              | 6     | Long Context: InfiniteBench, ZeroSCROLLS, NeedleInAHaystack<br>Tool Use: API-Bank, API-Bench, ToolBench                                                                  | Retrieval Acc, Success Rate    |
 
 
 ---
 
-## 🇮🇳 Indic Benchmarks
+## 🇮🇳 Low-resource Multilingual Benchmarks
 
 | Benchmark        | Description                      | Metric     |
 | ---------------- | -------------------------------- | ---------- |
@@ -258,7 +258,7 @@ Enter model name: google/gemma-2-2b
 6. WORLD KNOWLEDGE
 7. LONG CONTEXT
 8. General
-9. INDIC BENCHMARKS
+9. LOW-RESOURCE MULTILNGUAL BENCHMARKS
 10. ALL Task Groups
 
 Select task group #(s) (e.g., '1', '1 3', 'ALL'): 2 12
@@ -289,9 +289,9 @@ Again, multiple selections are supported.
 ```plaintext
 ... Evaluation Complete ...
 
-| Model             | Task             | Benchmark | Score |
-|-------------------|------------------|-----------|-------|
-| google/gemma-2-2b | INDIC BENCHMARKS | ARC-IN    | 33.5% |
+| Model             | Task                    | Benchmark | Score |
+|-------------------|-------------------------|-----------|-------|
+| google/gemma-2-2b | MULTILINGUAL BENCHMARKS | ARC-IN    | 33.5% |
 ```
 
 When prompted:
@@ -319,7 +319,7 @@ eka-eval/
 │  │  ├─ tasks/
 │  │  │  ├─ code/
 │  │  │  ├─ math/
-│  │  │  ├─ indic/
+│  │  │  ├─ multilingual/
 │  │  │  ├─ reasoning/
 │  │  │  ├─ long_context/
 │  │  │  └─ general/
@@ -587,11 +587,5 @@ We welcome contributions!
       primaryClass={cs.CL}
 }
 ```
-
----
-
-# **License**
-
-MIT License – see `LICENSE`.
 
 ---
