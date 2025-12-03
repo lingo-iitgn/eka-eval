@@ -35,7 +35,6 @@
 10. [Contributing](#contributing)
 11. [References](#references)
 12. [Citation](#citation)
-13. [License](#license)
 
 ---
 
