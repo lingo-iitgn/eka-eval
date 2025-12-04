@@ -7,6 +7,7 @@
   <a href="https://eka.soket.ai/">
     <img width="118" src="https://github.com/user-attachments/assets/2822b114-39bb-4c19-8808-accd8b415b3a" alt="eka-eval logo"/>
   </a>
+
   <h3><strong>Comprehensive Evaluation Framework for Large Language Models with an India-First Lens</strong></h3>
 </div>
 
@@ -51,7 +52,7 @@ It combines:
 
 Eka-Eval provides a **uniform interface**, **structured results**, and **production-ready performance features**.
 
-![My Image](architecture.png)
+<img width="5461" height="3506" alt="Eka-Eval (14 8 x 9 5 cm)" src="https://github.com/user-attachments/assets/2675906c-a79f-4d23-8b5c-63ae65e243e3" />
 
 
 ---
