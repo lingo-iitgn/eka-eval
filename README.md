@@ -8,7 +8,7 @@
     <img width="118" src="https://github.com/user-attachments/assets/2822b114-39bb-4c19-8808-accd8b415b3a" alt="eka-eval logo"/>
   </a>
 
-  <h3><strong>Comprehensive Evaluation Framework for Large Language Models with an India-First Lens</strong></h3>
+  <h3><strong>Comprehensive Evaluation Framework for Large Language Models with a focus on low-resource languages</strong></h3>
 </div>
 
 ---
