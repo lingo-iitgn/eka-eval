@@ -16,7 +16,7 @@ logger = logging.getLogger(__name__)
 
 DEFAULT_DATASET_NAME_GSM8K = "gsm8k"
 DEFAULT_CONFIG_GSM8K = "main"
-DEFAULT_SPLIT_GSM8K = "test"
+DEFAULT_SPLIT_GSM8K = "test[:5]"
 DEFAULT_MAX_NEW_TOKENS_GSM8K = 512  # Increased to match lm-harness behavior
 DEFAULT_GENERATION_BATCH_SIZE_GSM8K = 8
 DEFAULT_NUM_FEWSHOT_GSM8K = 5
