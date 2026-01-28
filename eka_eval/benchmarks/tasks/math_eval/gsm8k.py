@@ -51,99 +51,67 @@ class StopOnTokens(StoppingCriteria):
         self.tokenizer = tokenizer
         
     def __call__(self, input_ids: torch.LongTensor, scores: torch.FloatTensor, **kwargs) -> bool:
+       
         generated_text = self.tokenizer.decode(input_ids[0], skip_special_tokens=False)
+        
+        
         for stop_seq in self.stop_sequences:
-            if stop_seq in generated_text:
+            if generated_text.endswith(stop_seq):
                 return True
         return False
 
 
 def _format_gsm8k_prompt(question: str, fewshot_examples: List[Dict], num_few_shot: int) -> str:
-    logger.debug(f"[PROMPT] Formatting prompt with {num_few_shot} few-shot examples")
+    # logger.debug(f"[PROMPT] Formatting prompt with {num_few_shot} few-shot examples")
     prompt = ""
     if num_few_shot > 0 and fewshot_examples:
         actual_fewshot = fewshot_examples[:num_few_shot]
         for i, ex in enumerate(actual_fewshot):
-            logger.debug(f"[PROMPT] Adding few-shot example {i+1}/{num_few_shot}")
             prompt += f"Question: {ex['question']}\nAnswer: {ex['answer']}\n\n"
     prompt += f"Question: {question}\nAnswer:"
-    logger.debug(f"[PROMPT] Final prompt length: {len(prompt)} chars")
     return prompt
 
 
 def _extract_gsm8k_final_answer_strict(text: Optional[str]) -> Optional[str]:
-    if text is None: 
-        logger.debug("[EXTRACT] Text is None, returning None")
-        return None
-    
-    logger.debug(f"[EXTRACT] Attempting strict match on text: '{text[:100]}...'")
+    if text is None: return None
     match = re.search(r'####\s*(\-?[0-9\.\,]+)', text)
-    
     if match:
         num_str = match.group(1).strip()
-        logger.debug(f"[EXTRACT] Strict match found: '{num_str}'")
         num_str = num_str.replace(',', '').replace('$', '').rstrip('.')
-        logger.debug(f"[EXTRACT] After cleanup: '{num_str}'")
         try:
-            result = str(float(num_str))
-            logger.debug(f"[EXTRACT] Converted to float: '{result}'")
-            return result
+            return str(float(num_str))
         except ValueError:
-            logger.warning(f"[EXTRACT] Could not convert '{num_str}' to float")
             return num_str
-    
-    logger.debug("[EXTRACT] Strict match failed - no #### pattern found")
     return None
 
 
 def _extract_gsm8k_final_answer_flexible(text: Optional[str]) -> Optional[str]:
-    if text is None:
-        logger.debug("[EXTRACT-FLEX] Text is None, returning None")
-        return None
-    
-    logger.debug(f"[EXTRACT-FLEX] Attempting flexible extraction on: '{text[:100]}...'")
+    if text is None: return None
     matches = re.findall(r'(-?[$0-9.,]{2,})|(-?[0-9]+)', text)
-    logger.debug(f"[EXTRACT-FLEX] Found {len(matches)} potential numbers")
-    
     if matches:
         last_match = matches[-1]
         num_str = last_match[0] if last_match[0] else last_match[1]
-        logger.debug(f"[EXTRACT-FLEX] Taking last match: '{num_str}'")
         num_str = num_str.replace(',', '').replace('$', '').rstrip('.')
-        logger.debug(f"[EXTRACT-FLEX] After cleanup: '{num_str}'")
         try:
-            result = str(float(num_str))
-            logger.debug(f"[EXTRACT-FLEX] Converted to float: '{result}'")
-            return result
+            return str(float(num_str))
         except ValueError:
-            logger.warning(f"[EXTRACT-FLEX] Could not convert '{num_str}' to float")
             return num_str
-    
-    logger.debug("[EXTRACT-FLEX] No numbers found")
     return None
 
 
 def _extract_gsm8k_answer(text: Optional[str]) -> Optional[str]:
-    logger.debug("[EXTRACT] Starting answer extraction")
     answer = _extract_gsm8k_final_answer_strict(text)
     if answer is None:
-        logger.debug("[EXTRACT] Falling back to flexible extraction")
         answer = _extract_gsm8k_final_answer_flexible(text)
-    logger.debug(f"[EXTRACT] Final extracted answer: '{answer}'")
     return answer
 
 
 def _normalize_answer(answer: str) -> str:
-    if not answer:
-        logger.debug("[NORMALIZE] Empty answer, returning empty string")
-        return ""
-    
-    logger.debug(f"[NORMALIZE] Input: '{answer}'")
+    if not answer: return ""
     answer = re.sub(r',', '', answer)
     answer = re.sub(r'\$', '', answer)
     answer = re.sub(r'(?s).*####\s*', '', answer)
     answer = answer.rstrip('.').lower().strip()
-    logger.debug(f"[NORMALIZE] Output: '{answer}'")
     return answer
 
 
@@ -165,95 +133,45 @@ def evaluate_gsm8k(
     results_dir: str = "results_output", 
     **kwargs
 ) -> Dict[str, float]:
-    """
-    Evaluate model on GSM8K following lm-evaluation-harness specifications
-    
-    Args:
-        pipe: HuggingFace pipeline
-        tokenizer: Tokenizer
-        model_name_for_logging: Model name
-        device: Device
-        dataset_path: HF dataset path (default: "openai/gsm8k")
-        dataset_config: Dataset config (default: "main")
-        dataset_split: Split to evaluate (default: "test")
-        num_few_shot: Number of few-shot examples (default: 5)
-        few_shot_examples_list: Custom few-shot examples
-        max_new_tokens: Max tokens to generate (default: 512)
-        generation_batch_size: Batch size (default: 8)
-        process_id: Process ID
-        gpu_id: GPU ID
-        num_gpus: Total GPUs
-        results_dir: Results directory
-    
-    Returns:
-        Dict with GSM8K accuracy
-    """
 
-    logger.info(f"[INIT] ========================================")
-    logger.info(f"[INIT] Starting GSM8K Evaluation")
-    logger.info(f"[INIT] ========================================")
-    logger.info(f"[INIT] Model: {model_name_for_logging}")
-    logger.info(f"[INIT] Dataset: {dataset_path}")
-    logger.info(f"[INIT] Config: {dataset_config}")
-    logger.info(f"[INIT] Split: {dataset_split}")
-    logger.info(f"[INIT] Few-shot: {num_few_shot}")
-    logger.info(f"[INIT] Max tokens: {max_new_tokens}")
-    logger.info(f"[INIT] Batch size: {generation_batch_size}")
-    logger.info(f"[INIT] Process ID: {process_id}, GPU: {gpu_id}")
-    logger.info(f"[INIT] ========================================")
+    logger.info(f"[INIT] Model: {model_name_for_logging} | Split: {dataset_split} | GPU: {gpu_id}")
 
     if few_shot_examples_list is None:
         few_shot_examples_list = FEWSHOT_EXAMPLES_GSM8K_DEFAULT_SET
-        logger.info(f"[INIT] Using default few-shot examples ({len(few_shot_examples_list)} examples)")
 
     try:
-        logger.info(f"[DATASET] Loading dataset from '{dataset_path}' with config '{dataset_config}'...")
         full_data = load_dataset(dataset_path, dataset_config, split=dataset_split)
-        logger.info(f"[DATASET] ✓ Successfully loaded {len(full_data)} examples from split '{dataset_split}'")
     except Exception as e:
-        logger.error(f"[DATASET] ✗ Failed to load dataset: {e}", exc_info=True)
-        return {"GSM8K": 0.0, "error_message": f"DatasetLoadFailed: {e}"}
+        logger.error(f"[DATASET] ✗ Failed: {e}")
+        return {"GSM8K": 0.0, "error_message": str(e)}
 
     if num_gpus > 1:
         total = len(full_data)
         per_gpu = total // num_gpus
         start, end = process_id * per_gpu, (process_id + 1) * per_gpu
-        if process_id == num_gpus - 1: 
-            end = total
+        if process_id == num_gpus - 1: end = total
         subset_to_process = full_data.select(range(start, end))
-        logger.info(f"[SHARD] Multi-GPU mode: GPU {gpu_id} processing examples {start}-{end} ({len(subset_to_process)} examples)")
     else:
         subset_to_process = full_data
-        logger.info(f"[SHARD] Single-GPU mode: processing all {len(subset_to_process)} examples")
     
     if len(subset_to_process) == 0: 
-        logger.warning("[SHARD] ✗ No examples to process after sharding")
         return {"GSM8K": 0.0}
 
     correct_predictions = 0
     total_evaluated = 0
     prompts_for_batch, original_items_for_batch = [], []
+    saved_results_list = []
 
-    logger.info(f"[EVAL] ========================================")
-    logger.info(f"[EVAL] Starting evaluation loop...")
-    logger.info(f"[EVAL] ========================================")
+    logger.info(f"[EVAL] Starting loop on {len(subset_to_process)} items...")
     
-    for item_idx, item_data in enumerate(tqdm(subset_to_process, desc=f"P{process_id} - GSM8K Eval")):
+    for item_idx, item_data in enumerate(tqdm(subset_to_process, desc=f"P{process_id} - GSM8K")):
         question = item_data.get('question')
         true_answer_text = item_data.get('answer')
 
-        if not question or not true_answer_text:
-            logger.warning(f"[ITEM-{item_idx}] ✗ Skipping - missing question or answer")
-            continue
-        
-        logger.debug(f"[ITEM-{item_idx}] Question: {question[:80]}...")
+        if not question or not true_answer_text: continue
         
         true_final_answer_str = _extract_gsm8k_answer(true_answer_text)
-        if true_final_answer_str is None:
-            logger.warning(f"[ITEM-{item_idx}] ✗ Could not extract ground truth answer from: {true_answer_text[:100]}")
-            continue
-
-        logger.debug(f"[ITEM-{item_idx}] Ground truth: '{true_final_answer_str}'")
+        if true_final_answer_str is None: continue
 
         prompt_text = _format_gsm8k_prompt(question, few_shot_examples_list, num_few_shot)
         prompts_for_batch.append(prompt_text)
@@ -264,13 +182,15 @@ def evaluate_gsm8k(
         })
 
         if len(prompts_for_batch) == generation_batch_size or item_idx == len(subset_to_process) - 1:
-            logger.info(f"[BATCH] ========================================")
-            logger.info(f"[BATCH] Processing batch of {len(prompts_for_batch)} prompts")
-            logger.info(f"[BATCH] ========================================")
             
-            stop_sequences = ["Question:", "</s>", "<|im_end|>"]
+            # FIX: Separate active stopping tokens from truncation tokens
+            # "Question:" is dangerous for StopOnTokens because it exists in the prompt.
+            # We remove it from generation stopping, but keep it for truncation.
+            active_stop_sequences = ["</s>", "<|im_end|>", "<|endoftext|>"]
+            truncation_sequences = ["Question:", "</s>", "<|im_end|>", "<|endoftext|>"]
+            
             stopping_criteria = StoppingCriteriaList([
-                StopOnTokens(stop_sequences=stop_sequences, tokenizer=tokenizer)
+                StopOnTokens(stop_sequences=active_stop_sequences, tokenizer=tokenizer)
             ])
             
             gen_config = {
@@ -283,66 +203,62 @@ def evaluate_gsm8k(
                 "return_full_text": False
             }
             
-            logger.debug(f"[BATCH] Generation config: do_sample=False, temp=0.0, max_tokens={max_new_tokens}")
-            logger.info(f"[BATCH] Starting generation...")
-            
             try:
                 with torch.no_grad(): 
                     batch_raw_outputs = pipe(prompts_for_batch, **gen_config)
-                logger.info(f"[BATCH] ✓ Generation complete")
                 
                 for k, raw_out_list in enumerate(batch_raw_outputs):
                     original_item_info = original_items_for_batch[k]
-                    item_idx_actual = original_item_info['item_idx']
                     raw_gen_text = raw_out_list[0]['generated_text'] if raw_out_list and raw_out_list[0] else ""
                     
-                    logger.debug(f"[ITEM-{item_idx_actual}] Raw generation ({len(raw_gen_text)} chars): '{raw_gen_text[:150]}...'")
-                    
-                    for stop_seq in stop_sequences:
+                    # Truncate at "Question:" or other stop tokens here
+                    for stop_seq in truncation_sequences:
                         if stop_seq in raw_gen_text:
                             raw_gen_text = raw_gen_text.split(stop_seq)[0]
-                            logger.debug(f"[ITEM-{item_idx_actual}] Truncated at stop sequence: '{stop_seq}'")
                     
                     pred_final_answer_str = _extract_gsm8k_answer(raw_gen_text)
                     pred_normalized = _normalize_answer(pred_final_answer_str) if pred_final_answer_str else ""
                     true_normalized = _normalize_answer(original_item_info['true_final_answer_str'])
                     
-                    is_correct = pred_normalized and pred_normalized == true_normalized
-                    
-                    logger.info(f"[ITEM-{item_idx_actual}] {'='*60}")
-                    logger.info(f"[ITEM-{item_idx_actual}] Q: {original_item_info['question'][:70]}...")
-                    logger.info(f"[ITEM-{item_idx_actual}] Generated: {raw_gen_text[:100]}...")
-                    logger.info(f"[ITEM-{item_idx_actual}] Predicted: '{pred_normalized}'")
-                    logger.info(f"[ITEM-{item_idx_actual}] Expected:  '{true_normalized}'")
-                    logger.info(f"[ITEM-{item_idx_actual}] Result: {'✓ CORRECT' if is_correct else '✗ WRONG'}")
-                    logger.info(f"[ITEM-{item_idx_actual}] {'='*60}")
+                    is_correct = pred_normalized == true_normalized
 
-                    if is_correct:
-                        correct_predictions += 1
+                    result_entry = {
+                        "question": original_item_info['question'],
+                        "ground_truth_answer": true_normalized,
+                        "model_output": raw_gen_text,
+                        "predicted_answer": pred_normalized,
+                        "is_correct": is_correct
+                    }
+                    saved_results_list.append(result_entry)
+                    
+                    if is_correct: correct_predictions += 1
                     total_evaluated += 1
 
             except Exception as e_batch_gsm:
-                logger.error(f"[BATCH] ✗ Error during generation: {e_batch_gsm}", exc_info=True)
+                logger.error(f"[BATCH] ✗ Error: {e_batch_gsm}")
                 total_evaluated += len(prompts_for_batch)
             
             prompts_for_batch, original_items_for_batch = [], []
-            
-            current_accuracy = (correct_predictions / total_evaluated * 100) if total_evaluated > 0 else 0
-            logger.info(f"[PROGRESS] Evaluated: {total_evaluated} | Correct: {correct_predictions} | Accuracy: {current_accuracy:.2f}%")
-            logger.info(f"[PROGRESS] ========================================")
 
     accuracy_score = (correct_predictions / total_evaluated) * 100 if total_evaluated > 0 else 0.0
     
-    logger.info(f"")
-    logger.info(f"[FINAL] ========================================")
-    logger.info(f"[FINAL] GSM8K EVALUATION COMPLETE")
-    logger.info(f"[FINAL] ========================================")
-    logger.info(f"[FINAL] Total Evaluated: {total_evaluated}")
-    logger.info(f"[FINAL] Correct: {correct_predictions}")
-    logger.info(f"[FINAL] Wrong: {total_evaluated - correct_predictions}")
+    # Save Results
+    try:
+        if not os.path.exists(results_dir):
+            os.makedirs(results_dir, exist_ok=True)
+        
+        safe_model_name = model_name_for_logging.replace('/', '_').replace('\\', '_')
+        output_filename = f"gsm8k_results_{safe_model_name}_p{process_id}.json"
+        output_path = os.path.join(results_dir, output_filename)
+        
+        with open(output_path, 'w', encoding='utf-8') as f:
+            json.dump(saved_results_list, f, indent=4, ensure_ascii=False)
+            
+        logger.info(f"[SAVE] ✓ Saved results to: {output_path}")
+    except Exception as e:
+        logger.error(f"[SAVE] ✗ Failed to save: {e}")
+
     logger.info(f"[FINAL] Accuracy: {accuracy_score:.2f}%")
-    logger.info(f"[FINAL] ========================================")
-    
     return {"GSM8K": accuracy_score}
 
 
@@ -364,15 +280,6 @@ if __name__ == '__main__':
     gsm_args = test_parser.parse_args()
     setup_logging(level=logging.DEBUG, worker_id="GSM8KTest")
     
-    logger.info("")
-    logger.info("="*70)
-    logger.info(f"STANDALONE GSM8K TEST")
-    logger.info(f"Model: {gsm_args.model_name_test}")
-    logger.info(f"Split: {gsm_args.dataset_split_test}")
-    logger.info(f"Few-shot: {gsm_args.num_few_shot_test}")
-    logger.info("="*70)
-    logger.info("")
-    
     gsm_pipe, _ = initialize_model_pipeline(gsm_args.model_name_test, target_device_id=0)
     if gsm_pipe:
         gsm_eval_args = {
@@ -385,14 +292,12 @@ if __name__ == '__main__':
             "generation_batch_size": gsm_args.gen_batch_size_test,
             "process_id": 0, 
             "gpu_id": 0, 
-            "num_gpus": 1
+            "num_gpus": 1,
+            "results_dir": "results_output"
         }
         try: 
             result = evaluate_gsm8k(**gsm_eval_args)
-            print("\n" + "="*70)
-            print("FINAL RESULT:")
-            print(json.dumps(result, indent=2))
-            print("="*70)
+            print("\nFINAL RESULT:", json.dumps(result, indent=2))
         finally: 
             cleanup_model_resources(gsm_pipe, getattr(gsm_pipe, 'model', None))
     else:
