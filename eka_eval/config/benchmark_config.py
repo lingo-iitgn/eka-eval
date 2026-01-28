@@ -85,7 +85,7 @@ BENCHMARK_CONFIG = {
             "dataset_config": "main",             # ADDED: explicitly set config
             "dataset_split": "test", 
             "num_few_shot": 5,
-            "max_new_tokens": 512,                # CHANGED: 384 → 512 (matches lm-harness)
+            "max_new_tokens": 512,                
             "generation_batch_size": 8
         },
     },
