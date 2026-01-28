@@ -77,18 +77,18 @@ BENCHMARK_CONFIG = {
         }
         },
         
-    "MATH": {
-# eka_eval/config/benchmark_config.py
-            "GSM8K": {
-                "evaluation_function": "math_eval.gsm8k.evaluate_gsm8k",
-                "task_args": {
-                    "dataset_name": "openai/gsm8k",
-                    "dataset_split": "test", 
-                    "num_few_shot": 5,
-                    "max_new_tokens": 384,
-                    "generation_batch_size": 8
-                },
-            },
+"MATH": {
+    "GSM8K": {
+        "evaluation_function": "math_eval.gsm8k.evaluate_gsm8k",
+        "task_args": {
+            "dataset_path": "openai/gsm8k",      # CHANGED: dataset_name → dataset_path
+            "dataset_config": "main",             # ADDED: explicitly set config
+            "dataset_split": "test", 
+            "num_few_shot": 5,
+            "max_new_tokens": 512,                # CHANGED: 384 → 512 (matches lm-harness)
+            "generation_batch_size": 8
+        },
+    },
         "MATH": {
             "description": "Accuracy on Hendrycks MATH (Hendrycks et al., 2021b)",
             "evaluation_function": "math_eval.math.evaluate_math",
