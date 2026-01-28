@@ -14,10 +14,10 @@ import evaluate as hf_evaluate
 
 logger = logging.getLogger(__name__)
 
-DEFAULT_DATASET_NAME_GSM8K = "gsm8k"
+DEFAULT_DATASET_PATH_GSM8K = "openai/gsm8k"
 DEFAULT_CONFIG_GSM8K = "main"
-DEFAULT_SPLIT_GSM8K = "test[:5]"
-DEFAULT_MAX_NEW_TOKENS_GSM8K = 512  # Increased to match lm-harness behavior
+DEFAULT_SPLIT_GSM8K = "test"
+DEFAULT_MAX_NEW_TOKENS_GSM8K = 512
 DEFAULT_GENERATION_BATCH_SIZE_GSM8K = 8
 DEFAULT_NUM_FEWSHOT_GSM8K = 5
 
@@ -46,159 +46,105 @@ FEWSHOT_EXAMPLES_GSM8K_DEFAULT_SET = [
 
 
 class StopOnTokens(StoppingCriteria):
-    """Custom stopping criteria for HuggingFace transformers pipeline"""
-    
     def __init__(self, stop_sequences: List[str], tokenizer):
-        """
-        Args:
-            stop_sequences: List of strings that should trigger stopping
-            tokenizer: HuggingFace tokenizer to decode generated tokens
-        """
         self.stop_sequences = stop_sequences
         self.tokenizer = tokenizer
         
     def __call__(self, input_ids: torch.LongTensor, scores: torch.FloatTensor, **kwargs) -> bool:
-        """
-        Check if any of the stop sequences appear in the generated text
-        
-        Args:
-            input_ids: Generated token IDs so far
-            scores: Model scores (not used but required by interface)
-            
-        Returns:
-            True if generation should stop, False otherwise
-        """
-
         generated_text = self.tokenizer.decode(input_ids[0], skip_special_tokens=False)
-        
-       
         for stop_seq in self.stop_sequences:
             if stop_seq in generated_text:
                 return True
-                
         return False
 
 
 def _format_gsm8k_prompt(question: str, fewshot_examples: List[Dict], num_few_shot: int) -> str:
-    """
-    Format prompt following lm-evaluation-harness template:
-    doc_to_text: "Question: {{question}}\nAnswer:"
-    """
+    logger.debug(f"[PROMPT] Formatting prompt with {num_few_shot} few-shot examples")
     prompt = ""
     if num_few_shot > 0 and fewshot_examples:
         actual_fewshot = fewshot_examples[:num_few_shot]
-        for ex in actual_fewshot:
-           
+        for i, ex in enumerate(actual_fewshot):
+            logger.debug(f"[PROMPT] Adding few-shot example {i+1}/{num_few_shot}")
             prompt += f"Question: {ex['question']}\nAnswer: {ex['answer']}\n\n"
-    
-   
     prompt += f"Question: {question}\nAnswer:"
+    logger.debug(f"[PROMPT] Final prompt length: {len(prompt)} chars")
     return prompt
+
 
 def _extract_gsm8k_final_answer_strict(text: Optional[str]) -> Optional[str]:
     if text is None: 
+        logger.debug("[EXTRACT] Text is None, returning None")
         return None
     
-    # Fixed: single backslashes for regex
+    logger.debug(f"[EXTRACT] Attempting strict match on text: '{text[:100]}...'")
     match = re.search(r'####\s*(\-?[0-9\.\,]+)', text)
+    
     if match:
         num_str = match.group(1).strip()
-        num_str = num_str.replace(',', '')
-        num_str = num_str.replace('$', '')
-        num_str = num_str.rstrip('.')
-        
+        logger.debug(f"[EXTRACT] Strict match found: '{num_str}'")
+        num_str = num_str.replace(',', '').replace('$', '').rstrip('.')
+        logger.debug(f"[EXTRACT] After cleanup: '{num_str}'")
         try:
-            return str(float(num_str))
+            result = str(float(num_str))
+            logger.debug(f"[EXTRACT] Converted to float: '{result}'")
+            return result
         except ValueError:
-            logger.warning(f"GSM8K: Could not convert extracted answer '{num_str}' to float.")
+            logger.warning(f"[EXTRACT] Could not convert '{num_str}' to float")
             return num_str
     
-    logger.debug(f"GSM8K: Strict-match failed, text: '{text[-100:]}'")
+    logger.debug("[EXTRACT] Strict match failed - no #### pattern found")
     return None
 
 
-def _normalize_answer(answer: str) -> str:
-    if not answer:
-        return ""
-    
-    answer = re.sub(r',', '', answer)
-    answer = re.sub(r'\$', '', answer)  # Fixed
-    answer = re.sub(r'(?s).*####\s*', '', answer)
-    answer = answer.rstrip('.')
-    answer = answer.lower().strip()
-    
-    return answer
-
 def _extract_gsm8k_final_answer_flexible(text: Optional[str]) -> Optional[str]:
-    """
-    Extract answer using lm-harness "flexible-extract" filter:
-    regex_pattern: "(-?[$0-9.,]{2,})|(-?[0-9]+)"
-    group_select: -1 (take last match)
-    
-    Fallback when #### marker is not present
-    """
     if text is None:
+        logger.debug("[EXTRACT-FLEX] Text is None, returning None")
         return None
     
-    # Find all numbers matching the pattern
+    logger.debug(f"[EXTRACT-FLEX] Attempting flexible extraction on: '{text[:100]}...'")
     matches = re.findall(r'(-?[$0-9.,]{2,})|(-?[0-9]+)', text)
+    logger.debug(f"[EXTRACT-FLEX] Found {len(matches)} potential numbers")
     
     if matches:
-        # Take the last match (group_select: -1)
         last_match = matches[-1]
-        # Get the non-empty group
         num_str = last_match[0] if last_match[0] else last_match[1]
-        
-        # Clean up
-        num_str = num_str.replace(',', '')
-        num_str = num_str.replace('$', '')
-        num_str = num_str.rstrip('.')
-        
+        logger.debug(f"[EXTRACT-FLEX] Taking last match: '{num_str}'")
+        num_str = num_str.replace(',', '').replace('$', '').rstrip('.')
+        logger.debug(f"[EXTRACT-FLEX] After cleanup: '{num_str}'")
         try:
-            return str(float(num_str))
+            result = str(float(num_str))
+            logger.debug(f"[EXTRACT-FLEX] Converted to float: '{result}'")
+            return result
         except ValueError:
-            logger.warning(f"GSM8K: Flexible extract failed to convert '{num_str}' to float.")
+            logger.warning(f"[EXTRACT-FLEX] Could not convert '{num_str}' to float")
             return num_str
     
+    logger.debug("[EXTRACT-FLEX] No numbers found")
     return None
 
 
 def _extract_gsm8k_answer(text: Optional[str]) -> Optional[str]:
-    """
-    Extract answer using lm-harness filter list logic:
-    1. Try strict-match first (#### pattern)
-    2. Fall back to flexible-extract if strict fails
-    """
-    # Try strict match first
+    logger.debug("[EXTRACT] Starting answer extraction")
     answer = _extract_gsm8k_final_answer_strict(text)
-    
-    # Fall back to flexible extract
     if answer is None:
+        logger.debug("[EXTRACT] Falling back to flexible extraction")
         answer = _extract_gsm8k_final_answer_flexible(text)
-    
+    logger.debug(f"[EXTRACT] Final extracted answer: '{answer}'")
     return answer
 
 
 def _normalize_answer(answer: str) -> str:
-    """
-    Normalize answer for comparison following lm-harness rules:
-    - ignore_case: true
-    - ignore_punctuation: false (we keep punctuation)
-    - regexes_to_ignore: [",", "\\$", "(?s).*#### ", "\\."]
-    """
     if not answer:
+        logger.debug("[NORMALIZE] Empty answer, returning empty string")
         return ""
     
-    # Apply regexes_to_ignore from lm-harness config
-    answer = re.sub(r',', '', answer)           # Remove commas
-    answer = re.sub(r'\\$', '', answer)         # Remove dollar signs
-    answer = re.sub(r'(?s).*####\s*', '', answer)  # Remove everything before ####
-    answer = answer.rstrip('.')                 # Remove trailing period
-    
-    # ignore_case: true
-    answer = answer.lower()
-    
-    return answer.strip()
+    logger.debug(f"[NORMALIZE] Input: '{answer}'")
+    answer = re.sub(r',', '', answer)
+    answer = re.sub(r'\$', '', answer)
+    answer = re.sub(r'(?s).*####\s*', '', answer)
+    answer = answer.rstrip('.').lower().strip()
+    logger.debug(f"[NORMALIZE] Output: '{answer}'")
+    return answer
 
 
 def evaluate_gsm8k(
@@ -206,8 +152,8 @@ def evaluate_gsm8k(
     tokenizer: Any, 
     model_name_for_logging: str, 
     device: Any,
-    dataset_path: str = DEFAULT_DATASET_NAME_GSM8K,
-    dataset_name: str = DEFAULT_CONFIG_GSM8K,
+    dataset_path: str = DEFAULT_DATASET_PATH_GSM8K,
+    dataset_config: str = DEFAULT_CONFIG_GSM8K,
     dataset_split: str = DEFAULT_SPLIT_GSM8K,
     num_few_shot: int = DEFAULT_NUM_FEWSHOT_GSM8K,
     few_shot_examples_list: Optional[List[Dict]] = None,
@@ -222,54 +168,52 @@ def evaluate_gsm8k(
     """
     Evaluate model on GSM8K following lm-evaluation-harness specifications
     
-    Reference config from lm-harness:
-    - task: gsm8k
-    - dataset_path: gsm8k
-    - dataset_name: main
-    - output_type: generate_until
-    - doc_to_text: "Question: {{question}}\\nAnswer:"
-    - metric: exact_match with mean aggregation
-    - generation_kwargs.until: ["Question:", "</s>", "<|im_end|>"]
-    - generation_kwargs.do_sample: false
-    - generation_kwargs.temperature: 0.0
-    - num_fewshot: 5
-    
     Args:
-        pipe: HuggingFace text generation pipeline
-        tokenizer: Model tokenizer
-        model_name_for_logging: Name of model for logging
-        device: Device to run on
-        dataset_path: HuggingFace dataset path (default: "gsm8k")
-        dataset_name: Dataset configuration (default: "main")
-        dataset_split: Which split to evaluate on (default: "test")
+        pipe: HuggingFace pipeline
+        tokenizer: Tokenizer
+        model_name_for_logging: Model name
+        device: Device
+        dataset_path: HF dataset path (default: "openai/gsm8k")
+        dataset_config: Dataset config (default: "main")
+        dataset_split: Split to evaluate (default: "test")
         num_few_shot: Number of few-shot examples (default: 5)
-        few_shot_examples_list: Custom few-shot examples (optional)
-        max_new_tokens: Maximum tokens to generate (default: 512)
-        generation_batch_size: Batch size for generation
-        process_id: Process ID for multi-GPU setup
+        few_shot_examples_list: Custom few-shot examples
+        max_new_tokens: Max tokens to generate (default: 512)
+        generation_batch_size: Batch size (default: 8)
+        process_id: Process ID
         gpu_id: GPU ID
-        num_gpus: Total number of GPUs
-        results_dir: Directory to save results
-        
+        num_gpus: Total GPUs
+        results_dir: Results directory
+    
     Returns:
-        Dictionary with GSM8K accuracy score
+        Dict with GSM8K accuracy
     """
 
-    logger.info(f"Starting GSM8K ({num_few_shot}-shot): {model_name_for_logging} on {dataset_path}/{dataset_name}")
+    logger.info(f"[INIT] ========================================")
+    logger.info(f"[INIT] Starting GSM8K Evaluation")
+    logger.info(f"[INIT] ========================================")
+    logger.info(f"[INIT] Model: {model_name_for_logging}")
+    logger.info(f"[INIT] Dataset: {dataset_path}")
+    logger.info(f"[INIT] Config: {dataset_config}")
+    logger.info(f"[INIT] Split: {dataset_split}")
+    logger.info(f"[INIT] Few-shot: {num_few_shot}")
+    logger.info(f"[INIT] Max tokens: {max_new_tokens}")
+    logger.info(f"[INIT] Batch size: {generation_batch_size}")
+    logger.info(f"[INIT] Process ID: {process_id}, GPU: {gpu_id}")
+    logger.info(f"[INIT] ========================================")
 
     if few_shot_examples_list is None:
         few_shot_examples_list = FEWSHOT_EXAMPLES_GSM8K_DEFAULT_SET
+        logger.info(f"[INIT] Using default few-shot examples ({len(few_shot_examples_list)} examples)")
 
-    # Load dataset
     try:
-        full_data = load_dataset(dataset_path, dataset_name, split=dataset_split, trust_remote_code=True)
+        logger.info(f"[DATASET] Loading dataset from '{dataset_path}' with config '{dataset_config}'...")
+        full_data = load_dataset(dataset_path, dataset_config, split=dataset_split)
+        logger.info(f"[DATASET] ✓ Successfully loaded {len(full_data)} examples from split '{dataset_split}'")
     except Exception as e:
-        logger.error(f"Failed to load GSM8K dataset: {e}")
-        return {"GSM8K": 0.0, "error_message": f"DatasetLoadFailed GSM8K: {e}"}
-    
-    logger.info(f"P{process_id}: Loaded GSM8K '{dataset_path}/{dataset_name}' ({len(full_data)} examples) for split '{dataset_split}'.")
+        logger.error(f"[DATASET] ✗ Failed to load dataset: {e}", exc_info=True)
+        return {"GSM8K": 0.0, "error_message": f"DatasetLoadFailed: {e}"}
 
-    # Handle multi-GPU distribution
     if num_gpus > 1:
         total = len(full_data)
         per_gpu = total // num_gpus
@@ -277,54 +221,61 @@ def evaluate_gsm8k(
         if process_id == num_gpus - 1: 
             end = total
         subset_to_process = full_data.select(range(start, end))
+        logger.info(f"[SHARD] Multi-GPU mode: GPU {gpu_id} processing examples {start}-{end} ({len(subset_to_process)} examples)")
     else:
         subset_to_process = full_data
+        logger.info(f"[SHARD] Single-GPU mode: processing all {len(subset_to_process)} examples")
     
     if len(subset_to_process) == 0: 
+        logger.warning("[SHARD] ✗ No examples to process after sharding")
         return {"GSM8K": 0.0}
-    
-    logger.info(f"P{process_id}: Processing {len(subset_to_process)} GSM8K examples.")
 
     correct_predictions = 0
     total_evaluated = 0
-    
     prompts_for_batch, original_items_for_batch = [], []
 
+    logger.info(f"[EVAL] ========================================")
+    logger.info(f"[EVAL] Starting evaluation loop...")
+    logger.info(f"[EVAL] ========================================")
+    
     for item_idx, item_data in enumerate(tqdm(subset_to_process, desc=f"P{process_id} - GSM8K Eval")):
         question = item_data.get('question')
         true_answer_text = item_data.get('answer')
 
         if not question or not true_answer_text:
-            logger.warning(f"P{process_id}: Skipping GSM8K item due to missing data. Q: {str(question)[:50]}")
+            logger.warning(f"[ITEM-{item_idx}] ✗ Skipping - missing question or answer")
             continue
         
-        # Extract ground truth answer using same logic as predictions
+        logger.debug(f"[ITEM-{item_idx}] Question: {question[:80]}...")
+        
         true_final_answer_str = _extract_gsm8k_answer(true_answer_text)
         if true_final_answer_str is None:
-            logger.warning(f"P{process_id}: Could not extract ground truth answer for GSM8K item. Q: {str(question)[:50]}, Ans: {str(true_answer_text)[:100]}")
+            logger.warning(f"[ITEM-{item_idx}] ✗ Could not extract ground truth answer from: {true_answer_text[:100]}")
             continue
+
+        logger.debug(f"[ITEM-{item_idx}] Ground truth: '{true_final_answer_str}'")
 
         prompt_text = _format_gsm8k_prompt(question, few_shot_examples_list, num_few_shot)
         prompts_for_batch.append(prompt_text)
         original_items_for_batch.append({
             'true_final_answer_str': true_final_answer_str,
-            'question': question
+            'question': question,
+            'item_idx': item_idx
         })
 
-        # Process batch when full or at end
         if len(prompts_for_batch) == generation_batch_size or item_idx == len(subset_to_process) - 1:
-            # Create stopping criteria matching lm-harness "until" parameter
-            # generation_kwargs.until: ["Question:", "</s>", "<|im_end|>"]
+            logger.info(f"[BATCH] ========================================")
+            logger.info(f"[BATCH] Processing batch of {len(prompts_for_batch)} prompts")
+            logger.info(f"[BATCH] ========================================")
+            
             stop_sequences = ["Question:", "</s>", "<|im_end|>"]
             stopping_criteria = StoppingCriteriaList([
                 StopOnTokens(stop_sequences=stop_sequences, tokenizer=tokenizer)
             ])
             
-            # Generation configuration matching lm-harness
-            # do_sample: false, temperature: 0.0
             gen_config = {
                 "do_sample": False,
-                "temperature": 0.0,  # Explicitly set to 0.0 as per lm-harness
+                "temperature": 0.0,
                 "max_new_tokens": max_new_tokens,
                 "pad_token_id": tokenizer.pad_token_id if tokenizer.pad_token_id is not None else tokenizer.eos_token_id,
                 "eos_token_id": tokenizer.eos_token_id,
@@ -332,47 +283,65 @@ def evaluate_gsm8k(
                 "return_full_text": False
             }
             
+            logger.debug(f"[BATCH] Generation config: do_sample=False, temp=0.0, max_tokens={max_new_tokens}")
+            logger.info(f"[BATCH] Starting generation...")
+            
             try:
                 with torch.no_grad(): 
                     batch_raw_outputs = pipe(prompts_for_batch, **gen_config)
+                logger.info(f"[BATCH] ✓ Generation complete")
                 
                 for k, raw_out_list in enumerate(batch_raw_outputs):
                     original_item_info = original_items_for_batch[k]
+                    item_idx_actual = original_item_info['item_idx']
                     raw_gen_text = raw_out_list[0]['generated_text'] if raw_out_list and raw_out_list[0] else ""
                     
-                    # Clean up stop sequences from output if present
+                    logger.debug(f"[ITEM-{item_idx_actual}] Raw generation ({len(raw_gen_text)} chars): '{raw_gen_text[:150]}...'")
+                    
                     for stop_seq in stop_sequences:
                         if stop_seq in raw_gen_text:
                             raw_gen_text = raw_gen_text.split(stop_seq)[0]
+                            logger.debug(f"[ITEM-{item_idx_actual}] Truncated at stop sequence: '{stop_seq}'")
                     
-                    # Extract predicted answer using lm-harness filter logic
                     pred_final_answer_str = _extract_gsm8k_answer(raw_gen_text)
-                    
-                    # Normalize both answers for comparison (ignore_case: true)
                     pred_normalized = _normalize_answer(pred_final_answer_str) if pred_final_answer_str else ""
                     true_normalized = _normalize_answer(original_item_info['true_final_answer_str'])
                     
-                    logger.debug(
-                        f"GSM8K Q: {original_item_info['question'][:50]}...\n"
-                        f"Generated: {raw_gen_text[:150]}...\n"
-                        f"Pred: {pred_normalized}, True: {true_normalized}"
-                    )
-
-                    # Exact match comparison (metric: exact_match)
-                    if pred_normalized and pred_normalized == true_normalized:
-                        correct_predictions += 1
+                    is_correct = pred_normalized and pred_normalized == true_normalized
                     
+                    logger.info(f"[ITEM-{item_idx_actual}] {'='*60}")
+                    logger.info(f"[ITEM-{item_idx_actual}] Q: {original_item_info['question'][:70]}...")
+                    logger.info(f"[ITEM-{item_idx_actual}] Generated: {raw_gen_text[:100]}...")
+                    logger.info(f"[ITEM-{item_idx_actual}] Predicted: '{pred_normalized}'")
+                    logger.info(f"[ITEM-{item_idx_actual}] Expected:  '{true_normalized}'")
+                    logger.info(f"[ITEM-{item_idx_actual}] Result: {'✓ CORRECT' if is_correct else '✗ WRONG'}")
+                    logger.info(f"[ITEM-{item_idx_actual}] {'='*60}")
+
+                    if is_correct:
+                        correct_predictions += 1
                     total_evaluated += 1
 
             except Exception as e_batch_gsm:
-                logger.error(f"P{process_id}: Error in GSM8K gen batch: {e_batch_gsm}", exc_info=True)
+                logger.error(f"[BATCH] ✗ Error during generation: {e_batch_gsm}", exc_info=True)
                 total_evaluated += len(prompts_for_batch)
             
             prompts_for_batch, original_items_for_batch = [], []
+            
+            current_accuracy = (correct_predictions / total_evaluated * 100) if total_evaluated > 0 else 0
+            logger.info(f"[PROGRESS] Evaluated: {total_evaluated} | Correct: {correct_predictions} | Accuracy: {current_accuracy:.2f}%")
+            logger.info(f"[PROGRESS] ========================================")
 
-    # Compute accuracy (aggregation: mean)
     accuracy_score = (correct_predictions / total_evaluated) * 100 if total_evaluated > 0 else 0.0
-    logger.info(f"P{process_id}(GPU{gpu_id}) - Final GSM8K Accuracy: {accuracy_score:.2f}% ({correct_predictions}/{total_evaluated}).")
+    
+    logger.info(f"")
+    logger.info(f"[FINAL] ========================================")
+    logger.info(f"[FINAL] GSM8K EVALUATION COMPLETE")
+    logger.info(f"[FINAL] ========================================")
+    logger.info(f"[FINAL] Total Evaluated: {total_evaluated}")
+    logger.info(f"[FINAL] Correct: {correct_predictions}")
+    logger.info(f"[FINAL] Wrong: {total_evaluated - correct_predictions}")
+    logger.info(f"[FINAL] Accuracy: {accuracy_score:.2f}%")
+    logger.info(f"[FINAL] ========================================")
     
     return {"GSM8K": accuracy_score}
 
@@ -386,15 +355,23 @@ if __name__ == '__main__':
     from eka_eval.utils.logging_setup import setup_logging
     from eka_eval.core.model_loader import initialize_model_pipeline, cleanup_model_resources
     
-    test_parser = argparse.ArgumentParser(description="Standalone Test GSM8K (lm-harness compatible)")
+    test_parser = argparse.ArgumentParser(description="Standalone Test GSM8K")
     test_parser.add_argument("--model_name_test", type=str, default="gpt2")
     test_parser.add_argument("--dataset_split_test", type=str, default="test[:5]")
     test_parser.add_argument("--gen_batch_size_test", type=int, default=1)
-    test_parser.add_argument("--num_few_shot_test", type=int, default=5)  # Changed to 5 (lm-harness default)
+    test_parser.add_argument("--num_few_shot_test", type=int, default=5)
     
     gsm_args = test_parser.parse_args()
-    setup_logging(level=logging.DEBUG, worker_id="GSM8KFileTest")
-    logger.info(f"--- Standalone GSM8K Test (lm-harness compatible): {gsm_args.model_name_test} ({gsm_args.num_few_shot_test}-shot) ---")
+    setup_logging(level=logging.DEBUG, worker_id="GSM8KTest")
+    
+    logger.info("")
+    logger.info("="*70)
+    logger.info(f"STANDALONE GSM8K TEST")
+    logger.info(f"Model: {gsm_args.model_name_test}")
+    logger.info(f"Split: {gsm_args.dataset_split_test}")
+    logger.info(f"Few-shot: {gsm_args.num_few_shot_test}")
+    logger.info("="*70)
+    logger.info("")
     
     gsm_pipe, _ = initialize_model_pipeline(gsm_args.model_name_test, target_device_id=0)
     if gsm_pipe:
@@ -411,6 +388,12 @@ if __name__ == '__main__':
             "num_gpus": 1
         }
         try: 
-            print(json.dumps(evaluate_gsm8k(**gsm_eval_args), indent=2))
+            result = evaluate_gsm8k(**gsm_eval_args)
+            print("\n" + "="*70)
+            print("FINAL RESULT:")
+            print(json.dumps(result, indent=2))
+            print("="*70)
         finally: 
             cleanup_model_resources(gsm_pipe, getattr(gsm_pipe, 'model', None))
+    else:
+        logger.error("Failed to initialize model")
