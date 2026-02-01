@@ -1,16 +1,18 @@
 BENCHMARK_CONFIG = {
    "CODE GENERATION": {
-        "HumanEval": {
-            "description": "Pass@k accuracy for HumanEval (Chen et al., 2021)",
-            "evaluation_function": "code.humaneval.evaluate_humaneval",  
-            "task_args": {
-                "dataset_name": "openai_humaneval",
-                "dataset_split": "test",
-                "num_samples_per_task": 1,
-                "use_fewshot": False,
-                "max_new_tokens_completion": 384
-            }
-        },
+       "HumanEval": {
+    "description": "Pass@k accuracy for HumanEval (Chen et al., 2021)",
+    "evaluation_function": "code.humaneval.evaluate_humaneval",  
+    "task_args": {
+        "dataset_name": "openai_humaneval",
+        "dataset_split": "test",
+        "num_samples_per_task": 1,
+        "use_fewshot": True,
+        "max_new_tokens_completion": 384,
+        "generation_batch_size": 8  
+    }
+},
+
 # In your benchmark_config.py
 
 "MBPP": {
