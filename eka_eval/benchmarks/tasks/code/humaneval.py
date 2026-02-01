@@ -1,4 +1,8 @@
 # eka_eval/benchmarks/tasks/code/humaneval.py
+"""
+HumanEval benchmark evaluation - COMPLETE FIXED VERSION
+Aligned with MBPP best practices for maximum accuracy
+"""
 
 import torch
 import re
@@ -60,7 +64,10 @@ def format_prompt(problem_prompt: str, few_shot_examples: List[Dict[str, str]], 
         return "Complete the following Python function based on its docstring:\n" + problem_prompt
 
 def extract_completion(full_generated_text: str, prompt_sent_to_llm: str) -> str:
-    """Extracts the model's code completion from the full generated text."""
+    """
+    Extracts the model's code completion from the full generated text.
+    IMPROVED: More conservative stop sequences to avoid cutting valid code.
+    """
     completion_part = ""
     if full_generated_text.startswith(prompt_sent_to_llm):
         completion_part = full_generated_text[len(prompt_sent_to_llm):]
@@ -68,8 +75,18 @@ def extract_completion(full_generated_text: str, prompt_sent_to_llm: str) -> str
         logger.warning("Prompt not found at start of generation, using full text")
         completion_part = full_generated_text
 
-    # Stop at common sequences
-    stop_sequences = ["\ndef ", "\nclass ", "\nif __name__", "\nprint(", "\nassert ", "</s>", "<|EOT|>"]
+    # IMPROVED: More conservative stop sequences
+    # Remove "\nassert " from stop sequences - valid code can have assertions!
+    stop_sequences = [
+        "\ndef ",        # Next function definition
+        "\nclass ",     # Next class definition
+        "\nif __name__", # Main block
+        "\n# Test",     # Test section
+        "\n# Example",  # Example section
+        "</s>",         # End of sequence token
+        "<|EOT|>",      # End of turn token
+    ]
+    
     min_stop_index = len(completion_part)
     for seq in stop_sequences:
         found_idx = completion_part.find(seq)
@@ -88,6 +105,25 @@ def extract_completion(full_generated_text: str, prompt_sent_to_llm: str) -> str
 
     return cleaned_completion
 
+def fix_test_script(test_script: str, entry_point: str) -> str:
+    """
+    CRITICAL FIX: Add function call to test script if it doesn't have one.
+    HumanEval test scripts define check() but don't call it!
+    """
+    # Check if the script already calls check()
+    if f"check({entry_point})" in test_script:
+        return test_script
+    
+    # Add the function call at the end
+    fixed_script = test_script.rstrip()
+    if not fixed_script.endswith('\n'):
+        fixed_script += '\n'
+    
+    # Add the call to check() function with the entry_point
+    fixed_script += f"\ncheck({entry_point})\n"
+    
+    return fixed_script
+
 def evaluate_humaneval(
     pipe: Any,
     tokenizer: Any,
@@ -100,15 +136,21 @@ def evaluate_humaneval(
     use_fewshot: bool = False,
     max_new_tokens_completion: int = 384,
     generation_batch_size: int = 1,
+    process_id: int = 0,
+    gpu_id: int = 0,
+    save_detailed: bool = True,
     **kwargs
 ) -> Dict[str, float]:
-    """Evaluates the model on the HumanEval benchmark for code generation."""
+    """
+    Evaluates the model on the HumanEval benchmark for code generation.
+    IMPROVED: Aligned with MBPP best practices for better accuracy.
+    """
 
     if humaneval_pass_at_k_metric is None:
         logger.error("HumanEval: code_eval metric not available")
         return {"HumanEval": 0.0, "error_message": "CodeEvalMetricLoadFailed"}
 
-    logger.info(f"Starting HumanEval evaluation for model: {model_name_for_logging}")
+    logger.info(f"P{process_id}: Starting HumanEval evaluation for model: {model_name_for_logging}")
 
     if not hasattr(tokenizer, 'eos_token_id') or tokenizer.eos_token_id is None:
         logger.error("HumanEval: Tokenizer missing eos_token_id")
@@ -116,9 +158,9 @@ def evaluate_humaneval(
 
     try:
         humaneval_dataset = load_dataset(dataset_name, split=dataset_split, trust_remote_code=True)
-        logger.info(f"Loaded HumanEval dataset with {len(humaneval_dataset)} problems")
+        logger.info(f"P{process_id}: Loaded HumanEval dataset with {len(humaneval_dataset)} problems")
     except Exception as e:
-        logger.critical(f"Failed to load dataset '{dataset_name}': {e}")
+        logger.critical(f"P{process_id}: Failed to load dataset '{dataset_name}': {e}")
         return {"HumanEval": 0.0, "error_message": f"DatasetLoadFailed: {dataset_name}"}
 
     if len(humaneval_dataset) == 0:
@@ -128,48 +170,50 @@ def evaluate_humaneval(
     generation_inputs = []
     problem_references = {}
 
-    for problem in tqdm(humaneval_dataset, desc="Preparing HumanEval Prompts"):
+    for problem in tqdm(humaneval_dataset, desc=f"P{process_id} - Preparing HumanEval"):
         task_id = problem.get("task_id")
         problem_prompt = problem.get("prompt")
         test_script = problem.get("test")
         entry_point = problem.get("entry_point")
 
         if not all([task_id, problem_prompt, test_script, entry_point]):
-            logger.warning(f"Skipping problem {task_id} due to missing data")
+            logger.warning(f"P{process_id}: Skipping problem {task_id} due to missing data")
             continue
 
         full_prompt = format_prompt(problem_prompt, few_shot_examples, use_fewshot)
+        
+        # CRITICAL FIX: Fix the test script to actually call check()
+        fixed_test_script = fix_test_script(test_script, entry_point)
+        
         for _ in range(num_samples_per_task):
             generation_inputs.append({
                 "llm_prompt": full_prompt,
                 "problem_prompt": problem_prompt,
                 "task_id": task_id,
                 "entry_point": entry_point,
-                "test_script": test_script
+                "test_script": fixed_test_script
             })
-        problem_references[task_id] = test_script
+        problem_references[task_id] = fixed_test_script
 
     if not generation_inputs:
-        logger.error("No valid prompts prepared")
+        logger.error(f"P{process_id}: No valid prompts prepared")
         return {"HumanEval": 0.0, "error_message": "NoValidPrompts"}
 
     predictions_by_task_id = defaultdict(list)
     detailed_results_log = []
 
-    logger.info(f"Starting code generation for {len(generation_inputs)} samples")
+    logger.info(f"P{process_id}: Generating code for {len(generation_inputs)} samples")
 
+    # CRITICAL FIX: Use greedy decoding like MBPP for better pass@1 performance
     generation_params = {
-        "do_sample": True,
-        "temperature": 0.2,
-        "top_p": 0.95,
+        "do_sample": False,  # Greedy decoding (deterministic)
         "max_new_tokens": max_new_tokens_completion,
-        "num_return_sequences": 1,
-        "pad_token_id": tokenizer.eos_token_id,
+        "pad_token_id": tokenizer.pad_token_id if tokenizer.pad_token_id is not None else tokenizer.eos_token_id,
         "eos_token_id": tokenizer.eos_token_id,
         "return_full_text": True
     }
 
-    for i in tqdm(range(0, len(generation_inputs), generation_batch_size), desc="Generating Completions"):
+    for i in tqdm(range(0, len(generation_inputs), generation_batch_size), desc=f"P{process_id} - HumanEval Generation"):
         batch_inputs = generation_inputs[i:i + generation_batch_size]
         batch_prompts = [info['llm_prompt'] for info in batch_inputs]
 
@@ -195,16 +239,24 @@ def evaluate_humaneval(
                 detailed_results_log.append(HumanEvalResultDetail(
                     task_id=input_info['task_id'],
                     problem_prompt=input_info['problem_prompt'],
-                    full_llm_prompt=input_info['llm_prompt'],
+                    full_llm_prompt=input_info['llm_prompt'][:500] + "..." if len(input_info['llm_prompt']) > 500 else input_info['llm_prompt'],
                     entry_point=input_info['entry_point'],
-                    raw_generation=raw_text,
+                    raw_generation=raw_text[:1000] + "..." if len(raw_text) > 1000 else raw_text,
                     extracted_completion=extracted,
                     full_code_for_eval=full_code,
                     reference_test_script=input_info['test_script']
                 ))
+                
+                # Debug logging for first few samples
+                if i < 3:
+                    logger.info(
+                        f"\n=== HumanEval {input_info['task_id']} ===\n"
+                        f"Entry point: {input_info['entry_point']}\n"
+                        f"Extracted completion (first 200 chars):\n{extracted[:200]}...\n"
+                    )
 
         except Exception as e:
-            logger.error(f"Error during generation batch {i}: {e}")
+            logger.error(f"P{process_id}: Error during generation batch {i}: {e}", exc_info=True)
             for input_info in batch_inputs:
                 error_completion = f"# GENERATION ERROR: {e}"
                 predictions_by_task_id[input_info['task_id']].append(input_info['problem_prompt'] + error_completion)
@@ -232,10 +284,18 @@ def evaluate_humaneval(
             final_references.append(problem_references[task_id])
 
     if not final_predictions or not final_references:
-        logger.error("No valid predictions or references for evaluation")
+        logger.error(f"P{process_id}: No valid predictions or references for evaluation")
         return {"HumanEval": 0.0, "error_message": "NoSamplesForCodeEval"}
 
-    logger.info(f"Running code evaluation for {len(final_references)} problems")
+    logger.info(f"P{process_id}: Evaluating {len(final_references)} problems with code_eval")
+    
+    # Log samples for verification
+    logger.info(f"\n=== Sample Test Script ===\n{final_references[0]}\n")
+    logger.info(f"\n=== Sample Prediction ===\n{final_predictions[0][0][:500]}...\n")
+    
+    # ========== CRITICAL: CODE_EVAL SECTION - COMPLETELY FIXED ==========
+    logger.info(f"P{process_id}: Calling code_eval with {len(final_predictions)} predictions and k={k_values}")
+    
     final_scores = {}
     
     try:
@@ -245,67 +305,195 @@ def evaluate_humaneval(
             k=k_values
         )
         
+        # EXTENSIVE DEBUG LOGGING
+        logger.info(f"P{process_id}: ===== CODE_EVAL RAW RESULT =====")
+        logger.info(f"P{process_id}: Result type: {type(eval_output)}")
+        logger.info(f"P{process_id}: Result value: {eval_output}")
+        
+        # Validate and parse result
+        if eval_output is None:
+            logger.error(f"P{process_id}: code_eval returned None!")
+            return {"HumanEval": 0.0, "error_message": "code_eval_returned_none"}
+        
+        # Handle both tuple and dict return formats
         if isinstance(eval_output, tuple):
+            if len(eval_output) < 1:
+                logger.error(f"P{process_id}: code_eval tuple is empty!")
+                return {"HumanEval": 0.0, "error_message": "empty_tuple"}
+            
             scores = eval_output[0]
             detailed_results = eval_output[1] if len(eval_output) > 1 else None
+            
+            logger.info(f"P{process_id}: Tuple unpacked - scores: {scores}, detailed_results: {detailed_results is not None}")
+        elif isinstance(eval_output, dict):
+            scores = eval_output
+            detailed_results = None
+            logger.info(f"P{process_id}: Direct dict format: {scores}")
         else:
             scores = eval_output
             detailed_results = None
         
-        if scores:
-            logger.info(f"HumanEval Pass@k scores: {scores}")
-            for k_val in k_values:
-                metric_key = f"pass@{k_val}"
-                score_value = scores.get(metric_key, 0.0) * 100
+        # Validate scores is a dict
+        if not isinstance(scores, dict):
+            logger.error(f"P{process_id}: Scores is not a dict! Type: {type(scores)}, Value: {scores}")
+            return {"HumanEval": 0.0, "error_message": f"invalid_scores_type_{type(scores).__name__}"}
+        
+        # Check if scores dict is empty
+        if not scores:
+            logger.error(f"P{process_id}: Scores dict is empty!")
+            return {"HumanEval": 0.0, "error_message": "empty_scores_dict"}
+        
+        logger.info(f"P{process_id}: Available score keys: {list(scores.keys())}")
+        
+        # Extract pass@k scores
+        for k_val in k_values:
+            metric_key = f"pass@{k_val}"
+            
+            if metric_key not in scores:
+                logger.error(f"P{process_id}: {metric_key} not found in scores!")
+                logger.error(f"P{process_id}: Available keys: {list(scores.keys())}")
+                continue
+            
+            raw_score = scores[metric_key]
+            logger.info(f"P{process_id}: {metric_key} raw value: {raw_score} (type: {type(raw_score)})")
+            
+            # Validate score is a number
+            if not isinstance(raw_score, (int, float)):
+                logger.error(f"P{process_id}: {metric_key} is not a number! Type: {type(raw_score)}, Value: {raw_score}")
+                continue
+            
+            # Convert to percentage (raw_score is 0.0 to 1.0)
+            score_percentage = float(raw_score) * 100.0
+            
+            if k_val == k_values[0]:
+                final_scores["HumanEval"] = score_percentage
+            
+            final_scores[f"HumanEval_pass@{k_val}"] = score_percentage
+            
+            logger.info(f"P{process_id}: {metric_key} = {score_percentage:.2f}%")
+        
+        # Verify we got at least one score
+        if not final_scores:
+            logger.error(f"P{process_id}: No valid scores extracted from code_eval!")
+            return {"HumanEval": 0.0, "error_message": "no_valid_scores_extracted"}
+        
+        # Process detailed results
+        if detailed_results:
+            # Convert dict/defaultdict to list for uniform processing
+            if isinstance(detailed_results, dict):
+                detailed_results_list = sorted(detailed_results.items())
+                logger.info(f"P{process_id}: Processing {len(detailed_results_list)} detailed test results (from dict)")
+            elif isinstance(detailed_results, list):
+                detailed_results_list = list(enumerate(detailed_results))
+                logger.info(f"P{process_id}: Processing {len(detailed_results_list)} detailed test results (from list)")
+            else:
+                logger.warning(f"P{process_id}: Unexpected detailed_results type: {type(detailed_results)}")
+                detailed_results_list = []
+            
+            if detailed_results_list:
+                # Create a mapping of task_id to list indices
+                task_log_indices = defaultdict(list)
+                for idx, log_entry in enumerate(detailed_results_log):
+                    task_log_indices[log_entry.task_id].append(idx)
                 
-                if k_val == k_values[0]:
-                    final_scores["HumanEval"] = score_value
-                final_scores[f"HumanEval_pass@{k_val}"] = score_value
-        else:
-            logger.error("code_eval did not return valid scores")
-            final_scores["HumanEval"] = 0.0
-
-        # Update detailed results with pass/fail status
-        if detailed_results and isinstance(detailed_results, list):
-            for task_idx, task_results in enumerate(detailed_results):
-                if task_idx < len(sorted_task_ids):
-                    task_id = sorted_task_ids[task_idx]
-                    log_entry = next((entry for entry in detailed_results_log if entry.task_id == task_id), None)
+                # Update each result entry with pass/fail status
+                actual_passes = 0
+                actual_fails = 0
+                
+                for task_idx, task_results in detailed_results_list:
+                    if task_idx < len(sorted_task_ids):
+                        task_id = sorted_task_ids[task_idx]
+                        log_entry_indices = task_log_indices.get(task_id, [])
+                        
+                        if task_results and isinstance(task_results, list):
+                            for sample_idx, result in enumerate(task_results):
+                                if isinstance(result, tuple) and len(result) == 2:
+                                    completion_id = result[0]
+                                    result_dict = result[1]
+                                    
+                                    if isinstance(result_dict, dict):
+                                        passed = result_dict.get('passed', False)
+                                        error_msg = result_dict.get('result', '')
+                                        
+                                        if passed:
+                                            actual_passes += 1
+                                        else:
+                                            actual_fails += 1
+                                        
+                                        # Update log entry
+                                        if sample_idx < len(log_entry_indices):
+                                            log_idx = log_entry_indices[sample_idx]
+                                            detailed_results_log[log_idx].passed = passed
+                                            detailed_results_log[log_idx].error_message = error_msg if not passed else ""
+                                            
+                                            # Log first few for debugging
+                                            if task_idx < 5:
+                                                logger.info(
+                                                    f"P{process_id}: Task {task_id} sample {sample_idx}: "
+                                                    f"passed={passed}, "
+                                                    f"result={error_msg[:100] if error_msg else 'OK'}"
+                                                )
+                
+                total_tests = actual_passes + actual_fails
+                if total_tests > 0:
+                    actual_pass_rate = (actual_passes / total_tests) * 100
+                    logger.info(
+                        f"P{process_id}: Actual test results: "
+                        f"{actual_passes} passed, {actual_fails} failed "
+                        f"({actual_pass_rate:.2f}%)"
+                    )
                     
-                    if log_entry and task_results and isinstance(task_results, list):
-                        first_result = task_results[0]
-                        if isinstance(first_result, tuple) and len(first_result) == 2:
-                            result_dict = first_result[1]
-                            if isinstance(result_dict, dict):
-                                log_entry.passed = result_dict.get('passed', False)
-                                log_entry.error_message = result_dict.get('result', '') if not log_entry.passed else ""
+                    # Sanity check
+                    computed_score = final_scores.get("HumanEval", 0.0)
+                    if abs(computed_score - actual_pass_rate) > 0.1:
+                        logger.warning(
+                            f"P{process_id}: Score mismatch! "
+                            f"Computed: {computed_score:.2f}%, "
+                            f"Actual: {actual_pass_rate:.2f}%"
+                        )
+        else:
+            logger.warning(f"P{process_id}: No detailed results returned from code_eval")
+
+    except KeyError as e:
+        logger.error(f"P{process_id}: KeyError in code evaluation: {e}", exc_info=True)
+        final_scores = {"HumanEval": 0.0, "error_message": f"KeyError: {str(e)}"}
+
+    except ValueError as e:
+        logger.error(f"P{process_id}: ValueError in code evaluation: {e}", exc_info=True)
+        final_scores = {"HumanEval": 0.0, "error_message": f"ValueError: {str(e)}"}
 
     except Exception as e:
-        logger.error(f"Error during code evaluation: {e}")
-        final_scores["HumanEval"] = 0.0
-        final_scores["error_message"] = "CodeEvalComputationError"
+        logger.error(f"P{process_id}: Unexpected error in code evaluation: {e}", exc_info=True)
+        final_scores = {"HumanEval": 0.0, "error_message": f"Exception: {type(e).__name__}: {str(e)}"}
+    
+    # ========== END CODE_EVAL SECTION ==========
+    
+    # CRITICAL FIX: Final validation
+    if "HumanEval" not in final_scores:
+        logger.error(f"P{process_id}: HumanEval score missing from final_scores! Setting to 0.0")
+        final_scores["HumanEval"] = 0.0  # Default to 0.0, NOT 100.0!
 
     # Save detailed results
-    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    safe_model_name = model_name_for_logging.replace("/", "_").replace("-", "_")
-    filename = f"humaneval_results_{safe_model_name}_{dataset_split}_{timestamp}.jsonl"
-    
-    results_dir = os.path.join(kwargs.get("results_dir", "results_output"), "humaneval_detailed")
-    os.makedirs(results_dir, exist_ok=True)
-    filepath = os.path.join(results_dir, filename)
-    
-    try:
-        with open(filepath, 'w', encoding='utf-8') as f:
-            for result in detailed_results_log:
-                f.write(json.dumps(asdict(result), ensure_ascii=False) + "\n")
-        logger.info(f"Saved {len(detailed_results_log)} detailed results to {filepath}")
-    except Exception as e:
-        logger.error(f"Failed to save detailed results: {e}")
+    if save_detailed and detailed_results_log:
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        safe_model_name = model_name_for_logging.replace("/", "_").replace("-", "_")
+        filename = f"humaneval_{safe_model_name}_{dataset_split.replace(':', '_')}_{timestamp}.jsonl"
+        
+        results_dir = kwargs.get("results_dir", "results_output")
+        detailed_dir = os.path.join(results_dir, "detailed_results")
+        os.makedirs(detailed_dir, exist_ok=True)
+        filepath = os.path.join(detailed_dir, filename)
+        
+        try:
+            with open(filepath, 'w', encoding='utf-8') as f:
+                for result in detailed_results_log:
+                    f.write(json.dumps(asdict(result), ensure_ascii=False) + "\n")
+            logger.info(f"P{process_id}: Saved {len(detailed_results_log)} detailed results to {filepath}")
+        except Exception as e:
+            logger.error(f"P{process_id}: Failed to save detailed results: {e}")
 
-    if "HumanEval" not in final_scores:
-        final_scores["HumanEval"] = 0.0
-
-    logger.info(f"HumanEval evaluation finished. Final scores: {final_scores}")
+    logger.info(f"P{process_id}(GPU{gpu_id}) - Final HumanEval Pass@1: {final_scores.get('HumanEval', 0.0):.2f}%")
+    
     return final_scores
 
 
