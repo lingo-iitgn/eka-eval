@@ -1,7 +1,7 @@
 <p align="center"> <img src="https://img.shields.io/badge/python-3.9%2B-blue?style=for-the-badge" /> <img src="https://img.shields.io/badge/license-MIT-green?style=for-the-badge" /> <img src="https://img.shields.io/badge/build-passing-brightgreen?style=for-the-badge" /> <img src="https://img.shields.io/badge/benchmarks-English%20%2B%20Indic-orange?style=for-the-badge" /> </p> <p align="center"> <img src="https://img.shields.io/github/stars/lingo-iitgn/eka-eval?style=flat-square" /> <img src="https://img.shields.io/github/forks/lingo-iitgn/eka-eval?style=flat-square" /> <img src="https://img.shields.io/github/contributors/lingo-iitgn/eka-eval?style=flat-square" /> <img src="https://img.shields.io/github/last-commit/lingo-iitgn/eka-eval?style=flat-square" /> </p>
 
 
-# **Eka-Eval**
+# <p align="center"> **Eka-Eval**
 
 <div align="center">
   <a href="https://eka.soket.ai/">
