@@ -11,20 +11,23 @@ BENCHMARK_CONFIG = {
                 "max_new_tokens_completion": 384
             }
         },
-        "MBPP": {
-            "description": "Pass@k accuracy for MBPP (Austin et al., 2021)",
-            "evaluation_function": "code.mbpp.evaluate_mbpp",
-            "task_args": {
-                "dataset_name_primary": "google-research-datasets/mbpp",
-                "dataset_config_primary": "full",
-                "dataset_name_fallback": "mbpp",
-                "dataset_config_fallback": "sanitized",
-                "dataset_split": "test",
-                "num_samples_per_task": 1,
-                "include_tests_in_prompt": False,
-                "max_new_tokens_completion": 512
-            }
-        },
+# In your benchmark_config.py
+
+"MBPP": {
+    "description": "Pass@k accuracy for MBPP (Austin et al., 2021)",
+    "evaluation_function": "code.mbpp.evaluate_mbpp",
+    "task_args": {
+        "dataset_name": "google-research-datasets/mbpp",
+        "dataset_config": "sanitized",
+        "dataset_split": "test",
+        "num_few_shot": 3,
+        "num_samples_per_task": 1,
+        "k_values": [1],
+        "max_new_tokens": 1024,  
+        "generation_batch_size": 1,  #
+        "save_detailed": True
+    }
+},
         "HumanEval+": {
             "description": "Pass@k accuracy for HumanEval+ (Liu et al., 2024a)",
             "evaluation_function": "code.humanevalplus.evaluate_humanevalplus",
@@ -41,7 +44,7 @@ BENCHMARK_CONFIG = {
             "task_args": {
                 "dataset_name_primary": "evalplus/mbppplus",
                 "dataset_config_primary": None,
-                "dataset_split": "test",
+                "dataset_split": "test[:10]",
                 "num_samples_per_task": 1,
                 "max_new_tokens_completion": 512
             }
