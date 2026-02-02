@@ -30,6 +30,34 @@ BENCHMARK_CONFIG = {
         "save_detailed": True
     }
 },
+"PythonSaga": {
+    "description": "Pass@k accuracy for PythonSaga - Indian context coding benchmark",
+    "evaluation_function": "code.pythonsaga.evaluate_pythonsaga",
+    "task_args": {
+        "dataset_name": "LingoIITGN/PythonSaga",
+        "dataset_split": "train",  # PythonSaga uses "train" split (185 problems)
+        "num_samples_per_task": 1,
+        "k_values": [1],
+        "use_fewshot": True,  # 3-shot like HumanEval and MBPP
+        "max_new_tokens_completion": 512,
+        "generation_batch_size": 8,
+        "save_detailed": True
+    }
+},
+
+"MathQA-Python": {
+            "description": "Math word problems solved with Python code",
+            "evaluation_function": "code.mathqapython.evaluate_mathqa_python",
+            "task_args": {
+                "dataset_name": "dtruong46me/mathqa-python",
+                "dataset_split": "test",
+                "num_samples_per_task": 1,
+                "use_fewshot": True,
+                "max_new_tokens": 256,
+                "generation_batch_size": 8,
+                "save_detailed": True
+            }
+        },
         "HumanEval+": {
             "description": "Pass@k accuracy for HumanEval+ (Liu et al., 2024a)",
             "evaluation_function": "code.humanevalplus.evaluate_humanevalplus",

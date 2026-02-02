@@ -1,8 +1,5 @@
 # eka_eval/benchmarks/tasks/code/humaneval.py
-"""
-HumanEval benchmark evaluation - COMPLETE FIXED VERSION
-Aligned with MBPP best practices for maximum accuracy
-"""
+
 
 import torch
 import re
