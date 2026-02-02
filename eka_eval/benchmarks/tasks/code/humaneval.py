@@ -1,5 +1,8 @@
 # eka_eval/benchmarks/tasks/code/humaneval.py
-
+"""
+HumanEval benchmark evaluation - COMPLETE FIXED VERSION
+Aligned with MBPP best practices for maximum accuracy
+"""
 
 import torch
 import re
@@ -71,7 +74,7 @@ def format_prompt(problem_prompt: str, few_shot_examples: List[Dict[str, str]], 
 def extract_completion(full_generated_text: str, prompt_sent_to_llm: str) -> str:
     """
     Extracts the model's code completion from the full generated text.
-    IMPROVED: More conservative stop sequences to avoid cutting valid code.
+    FIXED: Properly removes ALL markdown code fences and stops at next function/code block.
     """
     completion_part = ""
     if full_generated_text.startswith(prompt_sent_to_llm):
@@ -80,16 +83,17 @@ def extract_completion(full_generated_text: str, prompt_sent_to_llm: str) -> str
         logger.warning("Prompt not found at start of generation, using full text")
         completion_part = full_generated_text
 
-    # IMPROVED: More conservative stop sequences
-    # Remove "\nassert " from stop sequences - valid code can have assertions!
+    # CRITICAL FIX: Stop at beginning of NEXT code block or function
+    # This prevents including the next few-shot example in the completion
     stop_sequences = [
-        "\ndef ",        # Next function definition
-        "\nclass ",     # Next class definition
-        "\nif __name__", # Main block
-        "\n# Test",     # Test section
-        "\n# Example",  # Example section
-        "</s>",         # End of sequence token
-        "<|EOT|>",      # End of turn token
+        "\n```",           # CRITICAL: Stop at next code fence (prevents including next example)!
+        "\ndef ",          # Next function definition
+        "\nclass ",        # Next class definition  
+        "\nif __name__",   # Main block
+        "\nfrom typing",   # Next import (indicates new example)
+        "\nimport ",       # Next import statement
+        "</s>",            # End of sequence token
+        "<|EOT|>",         # End of turn token
     ]
     
     min_stop_index = len(completion_part)
@@ -100,15 +104,23 @@ def extract_completion(full_generated_text: str, prompt_sent_to_llm: str) -> str
     
     cleaned_completion = completion_part[:min_stop_index].rstrip()
 
-    # Remove markdown code blocks
+    # Remove markdown code blocks (both at start and scattered throughout)
+    # Remove leading markdown
     if cleaned_completion.startswith("```python"):
         cleaned_completion = cleaned_completion[len("```python"):].lstrip()
-    if cleaned_completion.startswith("```"):
+    elif cleaned_completion.startswith("```"):
         cleaned_completion = cleaned_completion[len("```"):].lstrip()
+    
+    # Remove trailing markdown
     if cleaned_completion.endswith("```"):
         cleaned_completion = cleaned_completion[:-len("```")].rstrip()
+    
+    # CRITICAL: Remove any remaining ``` that might be in the middle
+    # This handles cases where model generates code fences within completion
+    cleaned_completion = cleaned_completion.replace("```python", "")
+    cleaned_completion = cleaned_completion.replace("```", "")
 
-    return cleaned_completion
+    return cleaned_completion.strip()
 
 def fix_test_script(test_script: str, entry_point: str) -> str:
     """
