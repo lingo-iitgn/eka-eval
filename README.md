@@ -52,7 +52,7 @@ It combines:
 
 Eka-Eval provides a **uniform interface**, **structured results**, and **production-ready performance features**.
 
-<img width="5461" height="3506" alt="Eka-Eval (14 8 x 9 5 cm)" src="https://github.com/user-attachments/assets/2675906c-a79f-4d23-8b5c-63ae65e243e3" />
+<img width="1748" height="1122" alt="Eka-Eval-" src="https://github.com/user-attachments/assets/6ce5b853-fdd9-4d36-8f31-081cc6c04694" />
 
 
 ---
