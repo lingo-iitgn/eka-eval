@@ -129,7 +129,8 @@ Eka-Eval provides a **uniform interface**, **structured results**, and **product
 
 ## 🗣️ Supported Languages
 
-Hindi (hi), Bengali (bn), Gujarati (gu), Kannada (kn), Malayalam (ml), Marathi (mr), Odia (or), Punjabi (pa), Tamil (ta), Telugu (te), English (en)
+Arabic, Swahili, Hindi, Bengali (bn), Gujarati (gu), Kannada (kn), Malayalam (ml), Marathi (mr), Odia (or), Punjabi (pa), Tamil (ta),
+Telugu (te), Assamese (as), Urdu (ur), Indonesian (id), Greek (el), Quechua (qu), Yoruba (yo), Oromo (om), English (en)
 
 ---
 
