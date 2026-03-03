@@ -61,8 +61,8 @@ Eka-Eval provides a **uniform interface**, **structured results**, and **product
 
 ## ✔️ Benchmark Coverage
 
-* **25+ Global benchmarks**: MMLU, GSM8K, ARC-Challenge, HumanEval, HellaSwag, etc.
-* **20+ Low-resource Multilingual benchmarks**: MMLU-IN, BoolQ-IN, ARC-IN, MILU, Flores-IN, etc.
+* **30+ Global benchmarks**: MMLU, GSM8K, ARC-Challenge, HumanEval, HellaSwag, etc.
+* **23 Low-resource Multilingual benchmarks**: MMLU-IN, BoolQ-IN, ARC-IN, MILU, Flores-IN, etc.
 * **Long-context**: ZeroSCROLLS, InfiniteBench, Multi-Needle
 * **Code generation** with pass@k
 * **Math & logical reasoning**
@@ -70,7 +70,7 @@ Eka-Eval provides a **uniform interface**, **structured results**, and **product
 
 ## ✔️ Multilingual Support
 
-* 11 languages + English
+* 120+ languages 
 * Smart transliteration
 * Per-language scores
 * Unified prompt templates
